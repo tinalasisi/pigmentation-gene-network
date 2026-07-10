@@ -22,10 +22,9 @@ discordance is almost purely a genetic-architecture phenomenon (Zhu 2004; Morgan
 unlike environment-confounded complex disease. What is being built here is a method — reading genotype→phenotype
 discordance off the structure of a signed directed network — and that method is not specific to pigmentation;
 pigmentation is where it can be validated cleanly. Whether it helps at a given disease locus is an empirical
-question for the grant stage, not something this build asserts. (Many pigmentation signalling genes are also
-studied in cancer, but shared genes alone would not establish that the method transfers — so we do not lean on
-that.) Where population-genetic data enters (grant stage), it is an analytical input to mechanism and
-conditionality — how variation distributes across the network's control points.
+question for the grant stage, not something this build asserts. Where population-genetic data enters (grant
+stage), it is an analytical input to mechanism and conditionality — how variation distributes across the
+network's control points.
 
 **The finding.** A signed directed network that explains genotype→phenotype discordance in **both directions**
 with the same machinery:
@@ -215,6 +214,10 @@ mechanism.
    in hackathon scope (deferred to grant).
 8. **Case validation pre-registers each case's mechanism from the paper** before the network is consulted.
 9. **License:** MIT (Tina Lasisi). MCP acquisition documented.
+10. **Notebook format & site publishing:** `.qmd` is the sole committed source of truth (`.ipynb` converted
+    once, removed, never a hand-maintained twin). No-kernel rendering only (`enabled: false` or
+    `freeze: auto` + committed `_freeze/`). Publish via GitHub Pages + Actions, `_site/` git-ignored.
+    Enforced by RESEARCH_SITE_PUBLISHER + the quarto-github-pages skill.
 
 ### Writing rules
 
@@ -288,6 +291,17 @@ retired files sort to the bottom, states plainly that they are not source-of-tru
 This exists because superseded copies under near-identical names (`project_dashboard.md` vs
 `repo_project_dashboard.md`; `CANONICAL_STATE.md` as a second "source of truth") had drifted out of sight in
 the artifact store; the prefix is how a future session tells current from retired at a glance.
+
+**Single-source rule for the dashboard (standing rule, adopted 2026-07-10).** The dashboard has exactly one
+name — **`project_dashboard.md`**, the git-tracked file at the repo root — and exactly one store artifact
+(`artifact_id e4103019-a821-470d-893f-cebf33512291`). Every update edits that file in place and is saved as a
+**new version of that one artifact** (`version_of`), never as a new artifact under a variant name. Do not create
+`repo_project_dashboard.md`, `project_dashboard_v2.md`, `dashboard_final.md`, or any other alias: a second name
+is a second source of truth, and the two silently diverge. If you find a divergent copy, the repo-tracked
+`project_dashboard.md` wins; merge any newer content into it, then retire the alias by tombstone (below). The
+earlier `repo_project_dashboard.md` artifact was exactly this failure — a mis-named parallel copy that recent
+sessions edited while the repo file went stale; it was consolidated back into `project_dashboard.md` and
+tombstoned on 2026-07-10.
 
 **Archived — retired, recorded in `internal/archive/ARCHIVE_MANIFEST.md`.** The prior build plan, the redundant
 dashboard views, the two handoff briefs, the per-notebook TODO, the FINDING/SOURCE_DECISION/PLAN working drafts,
