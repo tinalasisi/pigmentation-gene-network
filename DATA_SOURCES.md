@@ -22,6 +22,10 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
   Table S1 (the identical table is a supplementary file of the article's **CC BY 4.0** PMC deposit,
   PMC10901463 — see the license note below); the HIrisPlex-S Erasmus MC Webtool Manual v2 (freely usable);
   all processed tables, scripts, notebooks, and the GWAS Catalog pull (EMBL-EBI terms, attribution).
+- **Staged, not yet committed:** the D'Arcy et al. 2023 supplementary Tables S1–S6
+  (`data/raw/darcy2023/*.xlsx`; **CC BY 4.0**, PMC9854651 — the article PDF is not stored here, cited by
+  DOI). Openly licensed and eligible for the same commit path as Raghunath/Bajpai above; on disk but not
+  yet git-committed — any commit runs through REPO_COMPLIANCE_GATE separately.
 - **NOT committed — cited by DOI instead:** the subscription/full-text articles for Bajpai (typeset
   *Science* PDF/text), Baxter (*PCMR*, Wiley), Chaitanya HIrisPlex-S (*FSI:G*, Elsevier), and Walsh 2017
   (*Hum Genet*, Springer); **and the Baxter 2018 Table S7 supplementary data file** — a Wiley
@@ -46,6 +50,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 6b | **HGNC gene groups** | Full member genes of the 6 `enzyme_activity_class` nodes (115 member edges), Step 4 | `rest.genenames.org` `fetch/gene_group_id/<id>`, frozen `hgnc_gene_groups.json` | ✅ frozen (Notebook 2) | (see entry 6 below) |
 | 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
 | 6d | **KEGG hsa04916** (Melanogenesis) | Curated-pathway membership scope cross-check (NB2 Step 6) | `rest.kegg.jp`, frozen `kegg_hsa04916.json` | ✅ frozen (Notebook 2) | (see entry 6c below) |
+| 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables staged on disk at `data/raw/darcy2023/*.xlsx` (not yet git-committed — pending REPO_COMPLIANCE_GATE) | ✅ staged; cross-check not yet run; NB4/NB5 consumption pending TODO #0 | (see entry 6 above for the full characterization) |
 
 ---
 
@@ -172,8 +177,22 @@ validation authorities (attach gene identity and relationships, then check them)
   `manual_ruling_documented`, each with a written `ruling_rationale`. The per-node method, query string, and
   rationale live in `data/processed/node_resolution.csv` and `data/processed/chem_resolution_evidence.csv`.
 - **Coordinate assembly:** GRCh38 (MyGene `genomic_pos`, default assembly).
-- **D'Arcy/Kiel (2023) cross-check:** *not run* — their HGNC-normalized gene tables are not staged in the
-  repo; recorded as unavailable. MyGene + UniProt are the identity authority.
+- **D'Arcy/Kiel (2023) cross-check:** **STAGED** — the 6 supplementary tables are staged on disk under
+  `data/raw/darcy2023/*.xlsx` (untracked in git as of this note; not yet committed — any commit goes
+  through REPO_COMPLIANCE_GATE separately) (CC BY 4.0; the article PDF itself is not stored here, cited by
+  DOI). The cross-check computation itself has not been run. D'Arcy et al. 2023 (*Bioengineering* 10(1):13, DOI
+  10.3390/bioengineering10010013, PMC9854651, PMID 36671585, CC BY 4.0), retrieved from Europe PMC
+  (`PMC9854651/supplementaryFiles`), contributes two components: (1) Table S1, a 243-gene OMIM-backed
+  disease–gene table (phenotype MIM number + hyper-/hypo-/mixed-pigmentation phenotype class); (2) Tables
+  S4/S5, a 451-node / 4668-edge STRING protein–protein interaction network (STRING `combined_score`,
+  undirected/unsigned association, not directed/signed), expanded from the 243 disease genes and
+  supplemented with A375/FM55 melanoma mass-spec expression (Table S6). Cross-check against the 168-gene
+  Raghunath backbone shows 465 D'Arcy genes absent from the backbone (S1∪S5 union), 230 of them
+  disease-flagged (118 hypopigmentation-class) — a candidate expansion pool for a proposed downstream
+  annotation/PPI-shell step, not a source for the mechanistic backbone (see locked decision 2,
+  `project_dashboard.md`/`TODO.md`). MyGene + UniProt remain the identity authority for NB2 gene typing;
+  this cross-check is optional independent confirmation, not required for NB1/NB2, and NB4/NB5 consumption
+  of the staged tables is pending TODO #0.
 - **Citation completeness (release-blocking gate):** every node and every edge in Notebook 2 carries at
   least one **resolvable** citation — a PMID/DOI or a citable accession (UniProt, ChEBI, PubChem CID, GO,
   HGNC gene-group ID, OmniPath `source:PMID`, dbSNP rsID). The 429 backbone edges inherit Raghunath's own

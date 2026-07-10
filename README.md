@@ -62,15 +62,13 @@ pigmentation-gene-network/
 ├── README.md                      # this file (the public entry point)
 ├── DATA_SOURCES.md                # provenance manifest (the reproducibility contract)
 ├── LICENSE                        # MIT (Tina Lasisi)
-├── _quarto.yml                    # Quarto website config (renders the .qmd docs to _site/)
-├── index.qmd                      # rendered-site landing page
 ├── docs/
 │   ├── specs/                     # one structured spec per data source
 │   │   ├── gwas_catalog.spec.md
 │   │   ├── bajpai2023.spec.md
 │   │   ├── baxter2018.spec.md
 │   │   └── hirisplexs2018.spec.md
-│   └── NB3_case_assembly_provenance.qmd   # how the 13-paper validation-case set was acquired & extracted
+│   └── NB3_case_assembly_provenance.md    # how the 13-paper validation-case set was acquired & extracted
 ├── notebooks/                     # every processed table is derived here from committed raw
 │   ├── 01_reconstruct_published_network.ipynb  # Raghunath MOESM1-2 → 265/429 typed signed network
 │   ├── 02_resolve_network_to_genes.ipynb       # annotate → gene network (168 nodes) + OmniPath validation (Raghunath-only)
@@ -155,21 +153,13 @@ canonical count so drift fails loudly.
 - **01d** `01d_reproduce_gwas_catalog` — runs `scripts/gwas_catalog.py`; validates the frozen 1,072-SNP pull
   and asserts the SLC24A5/HERC2/MC1R anchors.
 
-### Rendering the documentation site
+### Documentation
 
-Prose documents are authored as [Quarto](https://quarto.org) `.qmd` and render to a static HTML site. With
-Quarto installed (`quarto --version`):
-
-```
-quarto render          # builds the whole site into _site/ (gitignored)
-quarto preview         # live-reload preview while editing
-```
-
-`_quarto.yml` defines the site; `index.qmd` is the landing page. `docs/NB3_case_assembly_provenance.qmd` is a
-frozen document — its execution engine is disabled (`execute.enabled: false`), so it renders with the extractor
-code shown but not run, and needs neither a kernel nor the withheld source PDFs. To re-run its extraction after
-obtaining the papers (see the withheld-files note above), render with execution on:
-`quarto render docs/NB3_case_assembly_provenance.qmd -M execute:enabled:true`.
+Prose documents are plain Markdown and notebooks are `.ipynb`; both render directly on GitHub with no build
+step. `docs/NB3_case_assembly_provenance.md` is a frozen provenance record — the extractor code is shown for
+provenance and is not executed as part of viewing it, so it needs neither a kernel nor the withheld source
+PDFs. To re-run its extraction, obtain the papers (see the withheld-files note above) and execute the driver
+code shown in that document.
 
 ### What is built and agreed
 
@@ -189,7 +179,7 @@ settled — see below): the **validation-case set** — the PI's 13 genotype→p
 extracted from the authoritative publisher PDFs (694 records across committed per-paper CSVs; grain differs by
 paper), each classified by direction (3 D1 / 5 D2 / 5 both) with verbatim page/table evidence. Outputs:
 `data/processed/discordance_case_classification.csv` + per-paper CSVs in `data/case_records/`; provenance in
-`docs/NB3_case_assembly_provenance.qmd`.
+`docs/NB3_case_assembly_provenance.md`.
 
 ### Proposed downstream direction (not yet agreed)
 

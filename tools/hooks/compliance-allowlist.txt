@@ -23,6 +23,13 @@ data/raw/bajpai2023/*.xlsx
 # --- cleared: Raghunath 2015 — CC BY 4.0 (paper + MOESM1-5 supplements) ---
 data/raw/raghunath2015/*
 
+# --- cleared: D'Arcy 2023 — CC BY 4.0 (6 supplementary .xlsx tables) ---
+# Gold OA, CC BY 4.0 (DOI 10.3390/bioengineering10010013, PMC9854651). The 6
+# supplement tables (S1 disease-gene/OMIM; S2/S4/S5 STRING PPI; S3 disorders;
+# S6 mass-spec) are redistributable with attribution. Article PDF/figures stay
+# gitignored (data/raw/darcy2023/*.pdf) — cited by DOI.
+data/raw/darcy2023/*.xlsx
+
 # --- cleared: HIrisPlex-S Erasmus MC Webtool Manual v2 — free to use (DATA_SOURCES.md) ---
 # The Chaitanya 2018 paper PDF (1-s2.0-...-main.pdf) + mmc*.pdf in the same folder stay
 # gitignored — do NOT add them.

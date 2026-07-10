@@ -3,7 +3,7 @@
 gwas_catalog.py — Portable, config-driven extraction of trait-associated loci from
 the live NHGRI-EBI GWAS Catalog.
 
-The pull engine behind this repo's catalog workbook (analysis/01_catalog_pull.qmd).
+The pull engine behind this repo's catalog notebook (notebooks/01d_reproduce_gwas_catalog.ipynb).
 There are no hardcoded gene or trait lists here — the traits to query are described
 by a small JSON config next to this file (scripts/traits_pigmentation.json). Lifted
 verbatim (bar output paths) from the SAPPHIRE_genetics project, where it was the

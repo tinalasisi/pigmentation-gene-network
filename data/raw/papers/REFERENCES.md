@@ -19,7 +19,7 @@ per-paper subfolder under `data/raw/papers/<folder tag>/` containing the publish
 supplements, and (for open-access papers) a PubMed-Central text capture. **The copyrighted files are not
 redistributed**; our own extracted records are committed under `data/case_records/EXTRACT_*_records.csv` and
 carry every genetic fact the build consumes. **No notebook reads these paper files** — the repo rebuilds from
-the committed EXTRACT records (see `docs/NB3_case_assembly_provenance.qmd` §8); the papers are needed only to
+the committed EXTRACT records (see `docs/NB3_case_assembly_provenance.md` §8); the papers are needed only to
 manually verify a record against the typeset source. DOIs below were read from
 `data/processed/discordance_case_classification.csv`; journal / access status from the collection's
 `DOWNLOAD_MANIFEST.md`.
