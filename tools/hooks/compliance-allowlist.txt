@@ -1,0 +1,29 @@
+# Reviewed-and-cleared allowlist for the pre-commit compliance check.
+#
+# A file matching any pattern below will NOT be flagged by tools/hooks/pre-commit,
+# even if its extension or path looks non-shareable. Use this to record that a
+# human (or the REPO_COMPLIANCE_GATE specialist) has confirmed the file is OK to
+# commit and redistribute. Rulings trace to DATA_SOURCES.md.
+#
+# Rules:
+#   - one repo-relative path or glob per line
+#   - '#' starts a comment
+#   - globs use shell syntax:  docs/figures/*.pdf   or   data/raw/*/  (single *)
+#
+# Best practice: when you add a line, say WHY in your commit message.
+#
+# --- cleared: committable data tables (DATA_SOURCES.md) ---
+# Bajpai Table S1: the identical table is a supplementary file of the CC BY 4.0
+# PMC deposit (PMC10901463), so the DATA is redistributable with attribution.
+data/raw/bajpai2023/*.xlsx
+# NOTE: data/raw/baxter2018/*.xlsx is NOT cleared. The Baxter Table S7 is a Wiley
+# Version-of-Record supplement with no open-license copy (PMC10413850 = not OA);
+# it is withheld by .gitignore and re-obtained via DOI 10.1111/pcmr.12743.
+
+# --- cleared: Raghunath 2015 — CC BY 4.0 (paper + MOESM1-5 supplements) ---
+data/raw/raghunath2015/*
+
+# --- cleared: HIrisPlex-S Erasmus MC Webtool Manual v2 — free to use (DATA_SOURCES.md) ---
+# The Chaitanya 2018 paper PDF (1-s2.0-...-main.pdf) + mmc*.pdf in the same folder stay
+# gitignored — do NOT add them.
+data/raw/hirisplexs2018/hirisplex.erasmusmc.nl.pdf

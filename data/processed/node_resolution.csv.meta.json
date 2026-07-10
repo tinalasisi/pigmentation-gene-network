@@ -1,0 +1,57 @@
+{
+  "artifact": "node_resolution.csv",
+  "description": "Notebook 2 frozen node-type + gene-identity resolution for the 183 pending_db_resolution base symbols from the Raghunath network. Deterministic input consumed by 02_resolve_network_to_genes.ipynb.",
+  "queried_utc": "2026-07-08T13:43:17.304774+00:00",
+  "frozen_utc": "2026-07-08T19:35:31.245934+00:00",
+  "n_base_symbols": 183,
+  "resolved_type_counts": {
+    "protein": 134,
+    "small_molecule": 25,
+    "process": 16,
+    "protein_family": 6,
+    "peptide_ligand": 2
+  },
+  "cascade": [
+    "1. exact case-sensitive official HGNC symbol (MyGene symbol scope) & protein-coding -> protein",
+    "2. documented alias->single official protein-coding symbol -> protein (mygene symbol,alias scope)",
+    "3. gene-family / enzyme-class node -> protein_family (representative member recorded)",
+    "4. ChEBI curated peptide-hormone entity -> peptide_ligand",
+    "5. small_molecule/peptide identity resolved by DATABASE SYNONYM LOOKUP: the raw network abbreviation (underscores mechanically removed only) is sent to the PubChem name/synonym index; a hit is accepted ONLY when it is unambiguous (n_cids_total==1). 19/27 resolved this way. The 8 that no synonym search resolves unambiguously (or that return a chemically wrong entity, e.g. Singlet_oxygen->'oxidane') are flagged 'manual_ruling_documented' with a ruling_rationale recorded per node in node_resolution.csv and chem_resolution_evidence.csv. No hand-authored abbreviation->name dictionary is used for typing.",
+    "6. GO biological_process term -> process",
+    "7. none -> unresolved (0 nodes fell here)"
+  ],
+  "trap_guard": "MyGene matches symbols case-insensitively; cAMP collides with official gene CAMP (entrez 820). Exact protein type requires a CASE-EXACT symbol match, so cAMP is rejected as protein and resolved to ChEBI:17489 (3',5'-cyclic AMP) instead.",
+  "connectors_used": {
+    "genes-ontologies": [
+      "query_genes (MyGene, symbol & symbol,alias & entrezgene scopes)",
+      "search_ontology_terms (OLS GO)",
+      "get_ontology_term (OLS GO)",
+      "get_uniprot_entries (UniProt reviewed authority pass)"
+    ],
+    "chemistry": [
+      "pubchem_search_compounds",
+      "chebi_search",
+      "chebi_get_entity"
+    ]
+  },
+  "uniprot_authority": "All 139 distinct protein symbols map to a reviewed Swiss-Prot accession whose gene_names contains the HGNC symbol (0 flagged).",
+  "coordinate_assembly": "GRCh38 (MyGene genomic_pos, default assembly; genomic_pos_hg38 field not populated by the API in this response).",
+  "darcy_kiel_crosscheck": "NOT run \u2014 D'Arcy/Kiel (2023) gene tables are not staged in the repo; recorded as unavailable. MyGene+UniProt are the identity authority. Optional independent confirmation to fold in if the tables are later pinned.",
+  "paper_target_totals": {
+    "protein": 189,
+    "small_molecule": 33,
+    "complex": 23,
+    "process": 18,
+    "environmental": 2
+  },
+  "residual_note": "Node type is a reconstruction (not stored in the published files). Resolved node-level totals (protein-bucket 184, small_molecule 31, complex 24, process 20, environmental 2, peptide_ligand 4) differ modestly from the paper's counts; residuals are reported with per-node evidence, not forced to match.",
+  "ensembl_backfill_note": "Ensembl gene IDs re-extracted list-aware from the same frozen MyGene response (handoff/mygene_raw.json); records returning ensembl as a list had been missed by the initial dict-only parse. PRSS1 (Trypsin family rep) has no Ensembl gene in its MyGene record.",
+  "small_molecule_resolution": {
+    "method": "PubChem name/synonym index queried with the raw network token; unambiguous (n==1) hits accepted, formula cross-checked against prior ChEBI evidence.",
+    "db_synonym_resolved": 19,
+    "manual_ruling_documented": 8,
+    "manual_ruling_reasons": "compartment-tagged token (Calcium_cyt); collapsed pathway-intermediate token not DB-indexed (Cysteinyl_DOPA, Glutathionyl_DOPA, Indole_5_6_quinone, Indole_5_6_quinone_carboxylic_acid); ambiguous acronym with no compound hit (DAG); explicit compound class (ROS); DB returned wrong entity (Singlet_oxygen). Each rationale stored per-node.",
+    "evidence_table": "chem_resolution_evidence.csv"
+  },
+  "revision_note": "Small-molecule/peptide typing re-derived by database synonym lookup on the raw network abbreviations, replacing the earlier hand-authored abbreviation->name dictionary. The abbreviation->entity decision is now the database's for 19/27 nodes; the remaining 8 are explicit, individually-justified rulings, not a silent list."
+}

@@ -1,0 +1,249 @@
+canonical_id,node_type,hgnc_symbol,entrez,ensembl,uniprot_acc,chr,start,end,strand,compartments,states,type_source,type_evidence_id,is_endpoint,n_source_nodes,source_nodes
+AHR:SRC:HSP90AA1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,AHR:SRC:HSP90AA1_kerat
+APAF1:CYCS_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,APAF1:CYCS_kerat
+CDK4:CCND1_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,CDK4:CCND1_melan
+CSF2RA:JAK1_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,CSF2RA:JAK1_melan
+CTNNB1:LEF1_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,CTNNB1:LEF1_melan
+Calcium_cyt:Calmodulin_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,Calcium_cyt:Calmodulin_melan
+DFFB:DFFA_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,DFFB:DFFA_kerat
+FAS:FADD_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,FAS:FADD_kerat
+FOS_kerat:JUN_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,FOS_kerat:JUN_kerat
+FOS_kerat:JUN_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,FOS_kerat:JUN_melan
+GAB1:PIK3CA_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,GAB1:PIK3CA_melan
+IL1R1:MYD88:IRAK1:IRAK4_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,IL1R1:MYD88:IRAK1:IRAK4_kerat
+IRAK1_Active:TRAF6:ECSIT_kerat,complex,,,,,,,,,keratinocyte,active,raghunath_file_syntax,,False,1,IRAK1_Active:TRAF6:ECSIT_kerat
+IRAK1_Active:TRAF6_kerat,complex,,,,,,,,,keratinocyte,active,raghunath_file_syntax,,False,1,IRAK1_Active:TRAF6_kerat
+MAP3K7:TAB1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,MAP3K7:TAB1_kerat
+MCL1:BAK1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,MCL1:BAK1_kerat
+MCL1:BAX_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,MCL1:BAX_kerat
+MITF:EP300_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,MITF:EP300_melan
+RAC1:PARD6A:CDC42_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,RAC1:PARD6A:CDC42_melan
+SOS1:GRB2:SHC1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,SOS1:GRB2:SHC1_kerat
+SOS1:GRB2:SHC1_melan,complex,,,,,,,,,melanocyte,,raghunath_file_syntax,,False,1,SOS1:GRB2:SHC1_melan
+TNFRSF1A:NSMAF:GNB2L1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,TNFRSF1A:NSMAF:GNB2L1_kerat
+TNFRSF1A:TRADD:FADD_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,TNFRSF1A:TRADD:FADD_kerat
+TNFRSF1A:TRAF2:RIPK1_kerat,complex,,,,,,,,,keratinocyte,,raghunath_file_syntax,,False,1,TNFRSF1A:TRAF2:RIPK1_kerat
+UVA,environmental,,,,,,,,,none,,raghunath_paper_text,,False,1,UVA
+UVB,environmental,,,,,,,,,none,,raghunath_paper_text,,False,1,UVB
+ACTH_kerat,peptide_ligand,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:16132265,False,1,ACTH_kerat
+ACTH_melan,peptide_ligand,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:16132265,False,1,ACTH_melan
+alpha_MSH_kerat,peptide_ligand,,,,,,,,,keratinocyte,,pubchem_synonym_deunderscored,CID:16133793,False,1,alpha_MSH_kerat
+alpha_MSH_melan,peptide_ligand,,,,,,,,,melanocyte,,pubchem_synonym_deunderscored,CID:16133793,False,1,alpha_MSH_melan
+Apoptosis_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0006915,True,1,Apoptosis_kerat
+Apoptosis_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0006915,True,1,Apoptosis_melan
+Cell_cycle_arrest_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0007050,True,1,Cell_cycle_arrest_kerat
+Cell_cycle_arrest_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0007050,True,1,Cell_cycle_arrest_melan
+Cell_differentiation_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0030154,False,1,Cell_differentiation_kerat
+Cell_proliferation_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0008283,True,1,Cell_proliferation_kerat
+Cell_proliferation_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0008283,True,1,Cell_proliferation_melan
+Cell_survival_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0043066,True,1,Cell_survival_kerat
+Cell_survival_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0043066,True,1,Cell_survival_melan
+DNA_Damage_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0006974,False,1,DNA_Damage_kerat
+DNA_Repair_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0006281,False,1,DNA_Repair_kerat
+Dendrite_formation_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0016358,True,1,Dendrite_formation_melan
+Eumelanin_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0006583,True,1,Eumelanin_melan
+Lipid_Peroxidation_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0034440,False,1,Lipid_Peroxidation_kerat
+Melanocyte_migration,process,,,,,,,,,none,,go_biological_process,GO:0097324,False,1,Melanocyte_migration
+Melanosome_biogenesis,process,,,,,,,,,none,,go_biological_process,GO:0032438,True,1,Melanosome_biogenesis
+Melanosome_phagocytosis_kerat,process,,,,,,,,,keratinocyte,,go_biological_process,GO:0006909,True,1,Melanosome_phagocytosis_kerat
+Pheomelanin_melan,process,,,,,,,,,melanocyte,,go_biological_process,GO:0042438,True,1,Pheomelanin_melan
+Skin_aging,process,,,,,,,,,none,,go_biological_process,GO:0007568,False,1,Skin_aging
+Skin_inflammation,process,,,,,,,,,none,,go_biological_process,GO:0006954,False,1,Skin_inflammation
+ADCY4,protein,ADCY4,196883,ENSG00000129467,Q8NFM4,14,24318349,24335093,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:196883,False,2,ADCY4_kerat|ADCY4_melan
+AHR,protein,AHR,196,ENSG00000106546,,7,16916359,17346152,,none,,mygene_exact_symbol,entrez:196,False,0,(complex member only)
+AKT1,protein,AKT1,207,ENSG00000142208,P31749,14,104769348,104799934,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:207,False,2,AKT1_kerat|AKT1_melan
+APAF1,protein,APAF1,317,ENSG00000120868,,12,98645149,98735433,,none,,mygene_exact_symbol,entrez:317,False,0,(complex member only)
+ATF2,protein,ATF2,1386,ENSG00000115966,P15336,2,175072250,175168382,-1,keratinocyte,,mygene_exact_symbol,entrez:1386,False,1,ATF2_kerat
+BAD,protein,BAD,572,ENSG00000002330,Q92934,11,64269828,64291946,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:572,False,2,BAD_kerat|BAD_melan
+BAK1,protein,BAK1,578,ENSG00000030110,Q16611,6,33572547,33580305,-1,keratinocyte,,mygene_exact_symbol,entrez:578,False,1,BAK1_kerat
+BAX,protein,BAX,581,ENSG00000087088,Q07812,19,48954815,48961798,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:581,False,2,BAX_kerat|BAX_melan
+BBC3,protein,BBC3,27113,ENSG00000105327,Q9BXH1,19,47220822,47233019,-1,melanocyte,,mygene_exact_symbol,entrez:27113,False,1,BBC3_melan
+BCL2,protein,BCL2,596,ENSG00000171791,P10415,18,63123346,63320128,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:596,False,2,BCL2_kerat|BCL2_melan
+BCL2L1,protein,BCL2L1,598,ENSG00000171552,Q07817,20,31664452,31723989,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:598,False,2,BCL2L1_kerat|BCL2L1_melan
+BID,protein,BID,637,ENSG00000015475,P55957,22,17734138,17774770,-1,keratinocyte,,mygene_exact_symbol,entrez:637,False,1,BID_kerat
+CALM1,protein,CALM1,801,ENSG00000198668,,14,90396502,90408268,,none,,mygene_family_representative,entrez:801,False,0,(complex member only)
+CASP3,protein,CASP3,836,ENSG00000164305,P42574,4,184627695,184650418,-1,keratinocyte,,mygene_exact_symbol,entrez:836,False,1,CASP3_kerat
+CASP8,protein,CASP8,841,ENSG00000064012,Q14790,2,201233443,201361836,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:841,False,2,CASP8_kerat|CASP8_melan
+CASP9,protein,CASP9,842,ENSG00000132906,P55211,1,15490832,15526534,-1,keratinocyte,,mygene_exact_symbol,entrez:842,False,1,CASP9_kerat
+CCND1,protein,CCND1,595,ENSG00000110092,P24385,11,69641143,69654474,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:595,False,2,CCND1_kerat|CCND1_melan
+CDC42,protein,CDC42,998,ENSG00000070831,P60953,1,22052627,22101360,1,keratinocyte,,mygene_exact_symbol,entrez:998,False,1,CDC42_kerat
+CDH2,protein,CDH2,1000,ENSG00000170558,P19022,18,27932879,28177946,-1,melanocyte,,mygene_exact_symbol,entrez:1000,False,1,CDH2_melan
+CDK2,protein,CDK2,1017,ENSG00000123374,P24941,12,55966781,55972789,1,keratinocyte,,mygene_exact_symbol,entrez:1017,False,1,CDK2_kerat
+CDK4,protein,CDK4,1019,ENSG00000135446,P11802,12,57747722,57756013,-1,melanocyte,,mygene_exact_symbol,entrez:1019,False,1,CDK4_melan
+CDKN1A,protein,CDKN1A,1026,ENSG00000124762,P38936,6,36676441,36687397,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:1026,False,2,CDKN1A_kerat|CDKN1A_melan
+CFLAR,protein,CFLAR,8837,ENSG00000003402,O15519,2,201116154,201176687,1,keratinocyte,,mygene_exact_symbol,entrez:8837,False,1,CFLAR_kerat
+CHUK,protein,CHUK,1147,ENSG00000213341,O15111,10,100188300,100229596,-1,keratinocyte,,mygene_alias_official_update,entrez:1147,False,1,IKBKA_kerat
+CREB1,protein,CREB1,1385,ENSG00000118260,P16220,2,207529737,207605988,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:1385,False,2,CREB1_kerat|CREB1_melan
+CSF2,protein,CSF2,1437,ENSG00000164400,P04141,5,132073789,132076170,1,keratinocyte,,mygene_exact_symbol,entrez:1437,False,1,CSF2_kerat
+CSF2RA,protein,CSF2RA,1438,ENSG00000292357,P15509,X,1268779,1325373,1,melanocyte,,mygene_exact_symbol,entrez:1438,False,1,CSF2RA_melan
+CTNNB1,protein,CTNNB1,1499,ENSG00000168036,P35222,3,41194741,41260096,1,melanocyte,,mygene_exact_symbol,entrez:1499,False,1,CTNNB1_melan
+CXCL8,protein,CXCL8,3576,ENSG00000169429,P10145,4,73740519,73747379,1,keratinocyte,,mygene_alias_official_update,entrez:3576,False,1,IL8_kerat
+CYCS,protein,CYCS,54205,ENSG00000172115,P99999,7,25118656,25125266,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:54205,False,2,CYCS_kerat|CYCS_melan
+DCT,protein,DCT,1638,ENSG00000080166,P40126,13,94436811,94479682,-1,melanocyte,,mygene_exact_symbol,entrez:1638,False,1,DCT_melan
+DFFA,protein,DFFA,1676,ENSG00000160049,O00273,1,10456522,10472549,-1,keratinocyte,,mygene_exact_symbol,entrez:1676,False,1,DFFA_kerat
+DFFB,protein,DFFB,1677,ENSG00000169598,O76075,1,3857267,3885429,1,keratinocyte,,mygene_exact_symbol,entrez:1677,False,1,DFFB_kerat
+DUSP1,protein,DUSP1,1843,ENSG00000120129,P28562,5,172766992,172771198,-1,keratinocyte,,mygene_exact_symbol,entrez:1843,False,1,DUSP1_kerat
+ECSIT,protein,ECSIT,51295,ENSG00000130159,,19,11505927,11530564,,none,,mygene_exact_symbol,entrez:51295,False,0,(complex member only)
+EDN1,protein,EDN1,1906,ENSG00000078401,P05305,6,12287459,12297194,1,keratinocyte,,mygene_exact_symbol,entrez:1906,False,1,EDN1_kerat
+EDNRB,protein,EDNRB,1910,ENSG00000136160,P24530,13,77895481,77975529,-1,melanocyte,,mygene_exact_symbol,entrez:1910,False,1,EDNRB_melan
+EGFR,protein,EGFR,1956,ENSG00000146648,P00533,7,55018820,55211628,1,keratinocyte,,mygene_exact_symbol,entrez:1956,False,1,EGFR_kerat
+ELK1,protein,ELK1,2002,ENSG00000126767,P19419,X,47631621,47650604,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:2002,False,2,ELK1_kerat|ELK1_melan
+EP300,protein,EP300,2033,ENSG00000100393,,22,41091816,41180077,,none,,mygene_exact_symbol,entrez:2033,False,0,(complex member only)
+EZR,protein,EZR,7430,ENSG00000092820,P15311,6,158765741,158819413,-1,melanocyte,,mygene_exact_symbol,entrez:7430,False,1,EZR_melan
+F10,protein,F10,2159,ENSG00000126218,P00742,13,113122788,113149531,1,none,,mygene_exact_symbol,entrez:2159,False,1,F10
+F2RL1,protein,F2RL1,2150,ENSG00000164251,P55085,5,76818933,76835315,1,keratinocyte,,mygene_exact_symbol,entrez:2150,False,1,F2RL1_kerat
+F7,protein,F7,2155,ENSG00000057593,P08709,13,113105762,113120685,1,none,,mygene_exact_symbol,entrez:2155,False,1,F7
+FADD,protein,FADD,8772,ENSG00000168040,,11,70203295,70207395,,none,,mygene_exact_symbol,entrez:8772,False,0,(complex member only)
+FAS,protein,FAS,355,ENSG00000026103,P25445,10,88953813,89029605,1,keratinocyte,,mygene_exact_symbol,entrez:355,False,1,FAS_kerat
+FASLG,protein,FASLG,356,ENSG00000117560,P48023,1,172659102,172666876,1,keratinocyte,,mygene_exact_symbol,entrez:356,False,1,FASLG_kerat
+FOS,protein,FOS,2353,ENSG00000170345,P01100,14,75278826,75283190,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:2353,False,2,FOS_kerat|FOS_melan
+FZD3,protein,FZD3,7976,ENSG00000104290,Q9NPG1,8,28494205,28574267,1,melanocyte,,mygene_exact_symbol,entrez:7976,False,1,FZD3_melan
+GAB1,protein,GAB1,2549,ENSG00000109458,Q13480,4,143336402,143474565,1,melanocyte,,mygene_exact_symbol,entrez:2549,False,1,GAB1_melan
+GADD45A,protein,GADD45A,1647,ENSG00000116717,P24522,1,67685201,67688334,1,keratinocyte,,mygene_exact_symbol,entrez:1647,False,1,GADD45A_kerat
+GRB2,protein,GRB2,2885,ENSG00000177885,,17,75318076,75405709,,none,,mygene_exact_symbol,entrez:2885,False,0,(complex member only)
+GSK3B,protein,GSK3B,2932,ENSG00000082701,P49841,3,119821321,120094994,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:2932,False,2,GSK3B_kerat|GSK3B_melan
+GUCY1A2,protein,GUCY1A2,2977,ENSG00000152402,P33402,11,106674019,107018476,-1,melanocyte,,mygene_exact_symbol,entrez:2977,False,1,GUCY1A2_melan
+HGF,protein,HGF,3082,ENSG00000019991,P14210,7,81699010,81770438,-1,keratinocyte,,mygene_exact_symbol,entrez:3082,False,1,HGF_kerat
+HIF1A,protein,HIF1A,3091,ENSG00000100644,Q16665,14,61695456,61748263,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:3091,False,2,HIF1A_kerat|HIF1A_melan
+HRAS,protein,HRAS,3265,ENSG00000276536,P01112,11,532242,537343,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:3265,False,2,HRAS_kerat|HRAS_melan
+HSP90AA1,protein,HSP90AA1,3320,ENSG00000080824,,14,102080738,102139699,,none,,mygene_exact_symbol,entrez:3320,False,0,(complex member only)
+ICAM1,protein,ICAM1,3383,ENSG00000090339,P05362,19,10271093,10286615,1,keratinocyte,,mygene_exact_symbol,entrez:3383,False,1,ICAM1_kerat
+IL10,protein,IL10,3586,ENSG00000136634,P22301,1,206767602,206774541,-1,keratinocyte,,mygene_exact_symbol,entrez:3586,False,1,IL10_kerat
+IL12A,protein,IL12A,3592,ENSG00000168811,P29459,3,159988835,159996019,1,keratinocyte,,mygene_exact_symbol,entrez:3592,False,1,IL12A_kerat
+IL1A,protein,IL1A,3552,ENSG00000115008,P01583,2,112773925,112784493,-1,keratinocyte,,mygene_exact_symbol,entrez:3552,False,1,IL1A_kerat
+IL1R1,protein,IL1R1,3554,ENSG00000115594,P14778,2,102063933,102179874,1,keratinocyte,,mygene_exact_symbol,entrez:3554,False,1,IL1R1_kerat
+IL6,protein,IL6,3569,ENSG00000136244,P05231,7,22725884,22732002,1,keratinocyte,,mygene_exact_symbol,entrez:3569,False,1,IL6_kerat
+IL6R,protein,IL6R,3570,ENSG00000160712,P08887,1,154405193,154469450,1,keratinocyte,,mygene_exact_symbol,entrez:3570,False,1,IL6R_kerat
+IRAK1,protein,IRAK1,3654,ENSG00000184216,P51617,X,154010504,154019927,-1,keratinocyte,,mygene_exact_symbol,entrez:3654,False,1,IRAK1_Active_kerat
+IRAK4,protein,IRAK4,51135,ENSG00000198001,,12,43758944,43798307,,none,,mygene_exact_symbol,entrez:51135,False,0,(complex member only)
+IVL,protein,IVL,3713,ENSG00000163207,P07476,1,152908546,152911886,1,keratinocyte,,mygene_exact_symbol,entrez:3713,False,1,IVL_kerat
+JAK1,protein,JAK1,3716,ENSG00000162434,P23458,1,64833223,65067754,-1,keratinocyte,,mygene_exact_symbol,entrez:3716,False,1,JAK1_kerat
+JUN,protein,JUN,3725,ENSG00000177606,P05412,1,58776845,58784048,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:3725,False,2,JUN_kerat|JUN_melan
+KIT,protein,KIT,3815,ENSG00000157404,P10721,4,54657267,54740783,1,melanocyte,,mygene_exact_symbol,entrez:3815,False,1,KIT_melan
+KITLG,protein,KITLG,4254,ENSG00000049130,P21583,12,88492789,88580851,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:4254,False,2,KITLG_kerat|KITLG_melan
+LEF1,protein,LEF1,51176,ENSG00000138795,,4,108047545,108168956,,none,,mygene_exact_symbol,entrez:51176,False,0,(complex member only)
+MAP2K1,protein,MAP2K1,5604,ENSG00000169032,Q02750,15,66386825,66491656,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5604,False,2,MAP2K1_kerat|MAP2K1_melan
+MAP2K2,protein,MAP2K2,5605,ENSG00000126934,P36507,19,4090317,4124216,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5605,False,2,MAP2K2_kerat|MAP2K2_melan
+MAP2K3,protein,MAP2K3,5606,ENSG00000034152,P46734,17,21284672,21315240,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5606,False,2,MAP2K3_kerat|MAP2K3_melan
+MAP2K4,protein,MAP2K4,6416,ENSG00000065559,P45985,17,12020828,12143830,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:6416,False,2,MAP2K4_kerat|MAP2K4_melan
+MAP2K6,protein,MAP2K6,5608,ENSG00000108984,P52564,17,69414683,69553865,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5608,False,2,MAP2K6_kerat|MAP2K6_melan
+MAP2K7,protein,MAP2K7,5609,ENSG00000076984,O14733,19,7903843,7914480,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5609,False,2,MAP2K7_kerat|MAP2K7_melan
+MAP3K1,protein,MAP3K1,4214,ENSG00000095015,Q13233,5,56815538,56896152,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:4214,False,2,MAP3K1_kerat|MAP3K1_melan
+MAP3K14,protein,MAP3K14,9020,ENSG00000006062,Q99558,17,45263119,45317112,-1,keratinocyte,,mygene_exact_symbol,entrez:9020,False,1,MAP3K14_kerat
+MAP3K5,protein,MAP3K5,4217,ENSG00000197442,Q99683,6,136557034,136793097,-1,keratinocyte,,mygene_exact_symbol,entrez:4217,False,1,MAP3K5_kerat
+MAP3K7,protein,MAP3K7,6885,ENSG00000135341,,6,90513573,90587093,,none,,mygene_exact_symbol,entrez:6885,False,0,(complex member only)
+MAP4K2,protein,MAP4K2,5871,ENSG00000168067,Q12851,11,64784918,64803241,-1,keratinocyte,,mygene_exact_symbol,entrez:5871,False,1,MAP4K2_kerat
+MAPK1,protein,MAPK1,5594,ENSG00000100030,P28482,22,21755537,21867680,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5594,False,2,MAPK1_kerat|MAPK1_melan
+MAPK14,protein,MAPK14,1432,ENSG00000112062,Q16539,6,36027738,36122511,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:1432,False,2,MAPK14_kerat|MAPK14_melan
+MAPK3,protein,MAPK3,5595,ENSG00000102882,P27361,16,30114105,30123506,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5595,False,2,MAPK3_kerat|MAPK3_melan
+MAPK8,protein,MAPK8,5599,ENSG00000107643,P45983,10,48306639,48439360,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5599,False,2,MAPK8_kerat|MAPK8_melan
+MC1R,protein,MC1R,4157,ENSG00000258839,Q01726,16,89912119,89920977,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:4157,False,2,MC1R_kerat|MC1R_melan
+MCL1,protein,MCL1,4170,ENSG00000143384,Q07820,1,150560895,150579738,-1,keratinocyte,,mygene_exact_symbol,entrez:4170,False,1,MCL1_kerat
+MET,protein,MET,4233,ENSG00000105976,P08581,7,116672051,116798386,1,melanocyte,,mygene_exact_symbol,entrez:4233,False,1,MET_melan
+MITF,protein,MITF,4286,ENSG00000187098,O75030,3,69738536,69968336,1,melanocyte,,mygene_exact_symbol,entrez:4286,False,1,MITF_melan
+MLANA,protein,MLANA,2315,ENSG00000120215,Q16655,9,5890889,5910606,1,none,,mygene_exact_symbol,entrez:2315,False,1,MLANA
+MMP1,protein,MMP1,4312,ENSG00000196611,P03956,11,102789401,102798160,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:4312,False,2,MMP1_kerat|MMP1_melan
+MSN,protein,MSN,4478,ENSG00000147065,P26038,X,65588377,65741936,1,melanocyte,,mygene_exact_symbol,entrez:4478,False,1,MSN_melan
+MYD88,protein,MYD88,4615,ENSG00000172936,,3,38138552,38143024,,none,,mygene_exact_symbol,entrez:4615,False,0,(complex member only)
+NFATC1,protein,NFATC1,4772,ENSG00000131196,O95644,18,79395856,79529325,1,keratinocyte,,mygene_alias_official_update,entrez:4772,False,1,NFAT2_kerat
+NFKB1,protein,NFKB1,4790,ENSG00000109320,P19838,4,102500937,102617302,1,keratinocyte,,mygene_exact_symbol,entrez:4790,False,1,NFKB1_kerat
+NGF,protein,NGF,4803,ENSG00000134259,P01138,1,115285904,115338770,-1,keratinocyte,,mygene_exact_symbol,entrez:4803,False,1,NGF_kerat
+NOS2,protein,NOS2,4843,ENSG00000007171,P35228,17,27756766,27800758,-1,keratinocyte,,mygene_exact_symbol,entrez:4843,False,1,NOS2_kerat
+NOX1,protein,NOX1,27035,ENSG00000007952,Q9Y5S8,X,100843324,100874464,-1,keratinocyte,,mygene_exact_symbol,entrez:27035,False,1,NOX1_kerat
+NSMAF,protein,NSMAF,8439,ENSG00000035681,,8,58583504,58659959,,none,,mygene_exact_symbol,entrez:8439,False,0,(complex member only)
+NTRK1,protein,NTRK1,4914,ENSG00000198400,P04629,1,156815636,156881850,1,melanocyte,,mygene_exact_symbol,entrez:4914,False,1,NTRK1_melan
+OCA2,protein,OCA2,4948,ENSG00000104044,Q04671,15,27754874,28099664,-1,none,,mygene_exact_symbol,entrez:4948,False,1,OCA2
+PAK1,protein,PAK1,5058,ENSG00000149269,Q13153,11,77321548,77474635,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5058,False,2,PAK1_kerat|PAK1_melan
+PARD6A,protein,PARD6A,50855,ENSG00000102981,,16,67660909,67662777,,none,,mygene_exact_symbol,entrez:50855,False,0,(complex member only)
+PAX3,protein,PAX3,5077,ENSG00000135903,P23760,2,222199887,222298998,-1,melanocyte,,mygene_exact_symbol,entrez:5077,False,1,PAX3_melan
+PDE4B,protein,PDE4B,5142,ENSG00000184588,Q07343,1,65792514,66374579,1,none,,mygene_family_representative,entrez:5142,False,0,(family representative only)
+PDPK1,protein,PDPK1,5170,ENSG00000140992,O15530,16,2537978,2603190,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5170,False,2,PDPK1_kerat|PDPK1_melan
+PIAS3,protein,PIAS3,10401,ENSG00000131788,Q9Y6X2,1,145848521,145859836,-1,melanocyte,,mygene_exact_symbol,entrez:10401,False,1,PIAS3_melan
+PIK3CA,protein,PIK3CA,5290,ENSG00000121879,P42336,3,179148114,179240093,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5290,False,2,PIK3CA_kerat|PIK3CA_melan
+PLA2G1B,protein,PLA2G1B,5319,ENSG00000170890,P04054,12,120322115,120327779,-1,none,,mygene_family_representative,entrez:5319,False,0,(family representative only)
+PLCB1,protein,PLCB1,23236,ENSG00000182621,Q9NQ66,20,8077251,8968360,1,none,,mygene_family_representative,entrez:23236,False,0,(family representative only)
+PMAIP1,protein,PMAIP1,5366,ENSG00000141682,Q13794,18,59899644,59904305,1,keratinocyte,,mygene_exact_symbol,entrez:5366,False,1,PMAIP1_kerat
+PMEL,protein,PMEL,6490,ENSG00000185664,P40967,12,55954104,55973317,-1,melanocyte,,mygene_exact_symbol,entrez:6490,False,1,PMEL_melan
+PPP3CA,protein,PPP3CA,5530,ENSG00000138814,Q08209,4,101023409,101348278,-1,keratinocyte,,mygene_exact_symbol,entrez:5530,False,1,PPP3CA_kerat
+PRKACA,protein,PRKACA,5566,ENSG00000288516,P17612,19,14091688,14118084,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5566,False,2,PRKACA_kerat|PRKACA_melan
+PRKCA,protein,PRKCA,5578,ENSG00000154229,P17252,17,66302613,66810743,1,none,,mygene_family_representative,entrez:5578,False,0,(family representative only)
+PRKCB,protein,PRKCB,5579,ENSG00000166501,P05771,16,23835959,24220611,1,melanocyte,,mygene_exact_symbol,entrez:5579,False,1,PRKCB_melan
+PRKCD,protein,PRKCD,5580,ENSG00000163932,Q05655,3,53156009,53192717,1,keratinocyte,,mygene_exact_symbol,entrez:5580,False,1,PRKCD_kerat
+PRKCH,protein,PRKCH,5583,ENSG00000027075,P24723,14,61187559,61550980,1,keratinocyte,,mygene_exact_symbol,entrez:5583,False,1,PRKCH_kerat
+PRKCZ,protein,PRKCZ,5590,ENSG00000067606,Q05513,1,2050411,2185395,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5590,False,2,PRKCZ_kerat|PRKCZ_melan
+PRKG1,protein,PRKG1,5592,ENSG00000185532,Q13976,10,50990888,52298423,1,melanocyte,,mygene_exact_symbol,entrez:5592,False,1,PRKG1_melan
+PRSS1,protein,PRSS1,5644,,P07477,7,142749468,142753072,1,none,,mygene_family_representative,entrez:5644,False,0,(family representative only)
+PTGER1,protein,PTGER1,5731,ENSG00000160951,P34995,19,14472466,14477272,-1,melanocyte,,mygene_exact_symbol,entrez:5731,False,1,PTGER1_melan
+PTGER2,protein,PTGER2,5732,ENSG00000125384,P43116,14,52314305,52329822,1,keratinocyte,,mygene_exact_symbol,entrez:5732,False,1,PTGER2_kerat
+PTGER3,protein,PTGER3,5733,ENSG00000050628,P43115,1,70852353,71047816,-1,melanocyte,,mygene_exact_symbol,entrez:5733,False,1,PTGER3_melan
+PTGER4,protein,PTGER4,5734,ENSG00000171522,P35408,5,40679915,40693735,1,keratinocyte,,mygene_exact_symbol,entrez:5734,False,1,PTGER4_kerat
+PTGS2,protein,PTGS2,5743,ENSG00000073756,P35354,1,186671791,186680922,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5743,False,2,PTGS2_kerat|PTGS2_melan
+RAC1,protein,RAC1,5879,ENSG00000136238,P63000,7,6374098,6403998,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5879,False,2,RAC1_kerat|RAC1_melan
+RACK1,protein,RACK1,10399,ENSG00000204628,,5,181236897,181248096,,none,,mygene_alias_official_update,entrez:10399,False,0,(complex member only)
+RAF1,protein,RAF1,5894,ENSG00000132155,P04049,3,12582101,12664201,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:5894,False,2,RAF1_kerat|RAF1_melan
+RAP1A,protein,RAP1A,5906,ENSG00000116473,P62834,1,111542218,111716691,1,melanocyte,,mygene_exact_symbol,entrez:5906,False,1,RAP1A_melan
+RDX,protein,RDX,5962,ENSG00000137710,P35241,11,109864295,110296712,-1,none,,mygene_exact_symbol,entrez:5962,False,1,RDX
+RHOA,protein,RHOA,387,ENSG00000067560,P61586,3,49359136,49412998,-1,keratinocyte,,mygene_exact_symbol,entrez:387,False,1,RHOA_kerat
+RIPK1,protein,RIPK1,8737,ENSG00000137275,,6,3063824,3115187,,none,,mygene_exact_symbol,entrez:8737,False,0,(complex member only)
+RPS6KA1,protein,RPS6KA1,6195,ENSG00000281877,Q15418,1,26529756,26575030,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:6195,False,2,RPS6KA1_kerat|RPS6KA1_melan
+RYR1,protein,RYR1,6261,ENSG00000196218,P21817,19,38433691,38595273,1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:6261,False,2,RYR1_kerat|RYR1_melan
+SHC1,protein,SHC1,6464,ENSG00000160691,,1,154962284,154974395,,none,,mygene_exact_symbol,entrez:6464,False,0,(complex member only)
+SMPD1,protein,SMPD1,6609,ENSG00000166311,P17405,11,6390414,6394998,1,keratinocyte,,mygene_exact_symbol,entrez:6609,False,1,SMPD1_kerat
+SMPD2,protein,SMPD2,6610,ENSG00000135587,O60906,6,109440678,109443920,1,keratinocyte,,mygene_exact_symbol,entrez:6610,False,1,SMPD2_kerat
+SOS1,protein,SOS1,6654,ENSG00000115904,,2,38962206,39124345,,none,,mygene_exact_symbol,entrez:6654,False,0,(complex member only)
+SOX10,protein,SOX10,6663,ENSG00000100146,P56693,22,37970686,37987422,-1,melanocyte,,mygene_exact_symbol,entrez:6663,False,1,SOX10_melan
+SPTLC1,protein,SPTLC1,10558,ENSG00000090054,O15269,9,92000087,92115433,-1,keratinocyte,,mygene_exact_symbol,entrez:10558,False,1,SPTLC1_kerat
+SPTLC2,protein,SPTLC2,9517,ENSG00000100596,O15270,14,77505997,77616672,-1,keratinocyte,,mygene_exact_symbol,entrez:9517,False,1,SPTLC2_kerat
+SRC,protein,SRC,6714,ENSG00000291971,P12931,20,37344673,37406050,1,keratinocyte,,mygene_exact_symbol,entrez:6714,False,1,SRC_kerat
+STAT1,protein,STAT1,6772,ENSG00000115415,P42224,2,190908460,191020960,-1,keratinocyte,,mygene_exact_symbol,entrez:6772,False,1,STAT1_kerat
+STAT3,protein,STAT3,6774,ENSG00000168610,P40763,17,42313324,42388568,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:6774,False,2,STAT3_kerat|STAT3_melan
+TAB1,protein,TAB1,10454,ENSG00000100324,,22,39399778,39437060,,none,,mygene_exact_symbol,entrez:10454,False,0,(complex member only)
+TFAP2A,protein,TFAP2A,7020,ENSG00000137203,P05549,6,10393186,10419659,-1,keratinocyte,,mygene_exact_symbol,entrez:7020,False,1,TFAP2A_kerat
+TNF,protein,TNF,7124,ENSG00000228321,P01375,6,31575565,31578336,1,keratinocyte,,mygene_exact_symbol,entrez:7124,False,1,TNF_kerat
+TNFRSF1A,protein,TNFRSF1A,7132,ENSG00000067182,P19438,12,6328757,6342114,-1,keratinocyte,,mygene_exact_symbol,entrez:7132,False,1,TNFRSF1A_kerat
+TP53,protein,TP53,7157,ENSG00000141510,P04637,17,7661779,7687546,-1,keratinocyte|melanocyte,,mygene_exact_symbol,entrez:7157,False,2,TP53_kerat|TP53_melan
+TPSAB1,protein,TPSAB1,7177,ENSG00000172236,Q15661,16,1239266,1242555,1,none,,mygene_exact_symbol,entrez:7177,False,1,TPSAB1
+TRADD,protein,TRADD,8717,ENSG00000102871,,16,67153969,67163760,,none,,mygene_exact_symbol,entrez:8717,False,0,(complex member only)
+TRAF2,protein,TRAF2,7186,ENSG00000127191,,9,136881903,136929221,,none,,mygene_exact_symbol,entrez:7186,False,0,(complex member only)
+TRAF6,protein,TRAF6,7189,ENSG00000175104,,11,36483769,36510292,,none,,mygene_exact_symbol,entrez:7189,False,0,(complex member only)
+TYR,protein,TYR,7299,ENSG00000077498,P14679,11,89177875,89295759,1,melanocyte,,mygene_exact_symbol,entrez:7299,False,1,TYR_melan
+TYRP1,protein,TYRP1,7306,ENSG00000107165,P17643,9,12685439,12710285,1,melanocyte,,mygene_exact_symbol,entrez:7306,False,1,TYRP1_melan
+USF1,protein,USF1,7391,ENSG00000158773,P22415,1,161039249,161045977,-1,melanocyte,,mygene_exact_symbol,entrez:7391,False,1,USF1_melan
+WNT5A,protein,WNT5A,7474,ENSG00000114251,P41221,3,55465715,55490539,-1,none,,mygene_exact_symbol,entrez:7474,False,1,WNT5A
+MMPs,protein_family,MMP1,4312,ENSG00000196611,P03956,11,102789401,102798160,-1,keratinocyte,,mygene_family_representative,entrez:4312,False,1,MMPs_kerat
+PKC,protein_family,PRKCA,5578,ENSG00000154229,P17252,17,66302613,66810743,1,keratinocyte,,mygene_family_representative,entrez:5578,False,1,PKC_kerat
+PLA2,protein_family,PLA2G1B,5319,ENSG00000170890,P04054,12,120322115,120327779,-1,keratinocyte,,mygene_family_representative,entrez:5319,False,1,PLA2_kerat
+PLC,protein_family,PLCB1,23236,ENSG00000182621,Q9NQ66,20,8077251,8968360,1,keratinocyte|melanocyte,,mygene_family_representative,entrez:23236,False,2,PLC_kerat|PLC_melan
+Phosphodiesterase,protein_family,PDE4B,5142,ENSG00000184588,Q07343,1,65792514,66374579,1,melanocyte,,mygene_family_representative,entrez:5142,False,1,Phosphodiesterase_melan
+Trypsin,protein_family,PRSS1,5644,,P07477,7,142749468,142753072,1,none,,mygene_family_representative,entrez:5644,False,1,Trypsin
+4HNE_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:5283344,False,1,4HNE_kerat
+Arachidonic_Acid_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:5312542,False,1,Arachidonic_Acid_kerat
+Arachidonic_Acid_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:5312542,False,1,Arachidonic_Acid_melan
+Calcium_cyt_kerat,small_molecule,,,,,,,,,keratinocyte,,manual_ruling_documented,CHEBI:29108,False,1,Calcium_cyt_kerat
+Calcium_cyt_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CHEBI:29108,False,1,Calcium_cyt_melan
+Ceramide_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:139583739,False,1,Ceramide_kerat
+Cysteine_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:5862,False,1,Cysteine_melan
+Cysteinyl_DOPA_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CID:29719,False,1,Cysteinyl_DOPA_melan
+DAG_kerat,small_molecule,,,,,,,,,keratinocyte,,manual_ruling_documented,CHEBI:18035,False,1,DAG_kerat
+DAG_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CHEBI:18035,False,1,DAG_melan
+DHICA_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:54691355,False,1,DHICA_melan
+DHI_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:114683,False,1,DHI_melan
+DOPA_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:6047,False,1,DOPA_melan
+DOPAchrome_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:119399,False,1,DOPAchrome_melan
+DOPAquinone_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:439316,False,1,DOPAquinone_melan
+FICZ_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:1863,False,1,FICZ_kerat
+GSH_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:124886,False,1,GSH_melan
+Glutathionyl_DOPA_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CID:124212,False,1,Glutathionyl_DOPA_melan
+IP3_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:439456,False,1,IP3_kerat
+IP3_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:439456,False,1,IP3_melan
+Indole_5_6_quinone_carboxylic_acid_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CID:17796835,False,1,Indole_5_6_quinone_carboxylic_acid_melan
+Indole_5_6_quinone_melan,small_molecule,,,,,,,,,melanocyte,,manual_ruling_documented,CHEBI:27406,False,1,Indole_5_6_quinone_melan
+Nitric_oxide_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_deunderscored,CID:145068,False,1,Nitric_oxide_kerat
+PGE2_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:5280360,False,1,PGE2_kerat
+PGE2_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:5280360,False,1,PGE2_melan
+ROS_kerat,small_molecule,,,,,,,,,keratinocyte,,manual_ruling_documented,CHEBI:26523,False,1,ROS_kerat
+Singlet_oxygen_kerat,small_molecule,,,,,,,,,keratinocyte,,manual_ruling_documented,CHEBI:26689,False,1,Singlet_oxygen_kerat
+Tyrosine_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:6057,False,1,Tyrosine_melan
+cAMP_kerat,small_molecule,,,,,,,,,keratinocyte,,pubchem_synonym_raw_token,CID:6076,False,1,cAMP_kerat
+cAMP_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:6076,False,1,cAMP_melan
+cGMP_melan,small_molecule,,,,,,,,,melanocyte,,pubchem_synonym_raw_token,CID:135398570,False,1,cGMP_melan

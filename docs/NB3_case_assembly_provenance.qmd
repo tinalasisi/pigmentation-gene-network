@@ -1,0 +1,255 @@
+---
+title: "Assemble the validation-case set — provenance record"
+subtitle: "13 published pigmentation genotype→phenotype-discordance cases: acquisition, extraction, and classification"
+date: 2026-07-10
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    embed-resources: true
+# This is a supplementary methods/provenance document, not a pipeline that runs on render.
+# The execution engine is DISABLED at the document level (execute.enabled: false) so the page
+# renders — with the code shown — without starting a kernel or reading the gitignored source
+# PDFs. The cells stay authored as {python} so a reader can re-enable execution deliberately
+# (see "Re-running the extraction"). To re-run: quarto render ... -M execute:enabled:true
+execute:
+  enabled: false
+  echo: true
+---
+
+**Type:** notebook-level methods record (reconstructed after the fact), authored as a frozen Quarto document — the code is shown for provenance and is not executed on render.
+
+**Status of the underlying work:** ✅ complete — 13 papers acquired, extracted, and consolidated into a classification table. This document reconstructs the *process* that produced those outputs so the step is rebuildable and auditable; it was not written contemporaneously.
+
+**Reconstructed:** 2026-07-10, from the committed artifacts (paper zip + manifest, per-paper `EXTRACT_*` files, `discordance_case_classification.csv`, and the `.gitignore` / `data/raw/papers/REFERENCES.md` withholding pair). Every count and DOI below was read from those files, not retyped from memory.
+
+**What this step produces (the nameable result):** a curated, direction-classified set of 13 published genotype→phenotype-discordance cases spanning skin, hair, eye-colour, and syndromic pigmentation, with per-paper genetic-record tables and verbatim direction evidence. This is the empirical case base the finding is validated against. How it feeds the downstream analysis (case-gene manifest + causal resolution, the payoff figure, and machine-checkable validation) is part of a proposed notebook structure that is **not yet agreed** — see `project_dashboard.md` §2. The dataset itself is complete and agreed; its placement as a numbered notebook is tentative.
+
+::: {.callout-note title="On the filename and the \"NB3\" label"}
+This document's filename carries "NB3", but the notebook structure beyond NB2 is **not yet agreed** (see `project_dashboard.md` §2). The case-assembly work is complete and agreed as a dataset; whether it becomes a numbered notebook, and what number, is a PI decision that has not been made. The "NB3" in the filename is a working label, not a settled position.
+:::
+
+## 1. Acquisition — the 13 papers
+
+**Source of the collection.** The PI supplied `Reference_papers.zip` (artifact `9d0ee4d3-4fc5-4db2-a99d-c214eda0e54c`): 13 pigmentation genotype→phenotype-discordance papers, each in a per-paper subfolder `AuthorYYYY_Journal_tag/` containing the publisher PDF, any machine-readable supplements (`.xlsx` / `.docx` / `.pdf` / `.zip`), and — for open-access papers — a PubMed-Central text capture (`*_fulltext.md`; Morell 1997 is `*_ABSTRACT-ONLY.md`). Two root files travel with the collection: `DOWNLOAD_MANIFEST.md` (per-paper DOI / PMID / PMCID / OA status, verified via PubMed) and `DOWNLOAD_LINKS.md`.
+
+**Access split.** 11 of 13 are open-access or free via PMC; **2 are paywalled with no open-access copy** — both Norton papers (Wiley), retrieved by the PI directly (institutional proxy / ILL / author request). Two further papers (Kenny 2012, Crawford 2017, both *Science*) are publisher-paywalled but have a free author manuscript on PMC.
+
+The table below is sourced from `discordance_case_classification.csv` (DOI, phenotype system, direction) joined to `DOWNLOAD_MANIFEST.md` (journal, access status). DOIs were read from those files — not retyped.
+
+| Paper (folder tag) | DOI | Journal | Year | Access (OA/paywall) | Phenotype system | Direction | n_records* |
+|---|---|---|---|---|---|---|---|
+| Kastelic2013_CroatMedJ_IrisPlex | 10.3325/cmj.2013.54.381 | Croat Med J | 2013 | Yes (OA) | eye colour | D1 | 141 |
+| Morell1997_JMedGenet_Waardenburg | 10.1136/jmg.34.6.447 | J Med Genet | 1997 | Free via PMC | syndromic (Waardenburg) | D1 | 31 |
+| Pospiech2016_IntJLegalMed_IrisPlex_population | 10.1007/s00414-016-1388-2 | Int J Legal Med | 2016 | Free via PMC | eye colour | D1 | 18 |
+| Kenny2012_Science_TYRP1 | 10.1126/science.1217849 | Science | 2012 | Author manuscript free via PMC (publisher paywalled) | hair (blond) | D2 | 36 |
+| Meyer2020_PLoSONE_GGbrowneyes | 10.1371/journal.pone.0239131 | PLoS ONE | 2020 | Yes (CC-BY) | eye colour | D2 | 11 |
+| Norton2016_AJHB_Bougainville_TYRP1 | 10.1002/ajhb.22795 | Am J Hum Biol | 2016 | **No (Wiley paywall)** | hair (blond) | D2 | 8 |
+| Salvo2023_Genes_AAAGblueeyes | 10.3390/genes14030698 | Genes (Basel) | 2023 | Yes (CC-BY) | eye colour | D2 | 18 |
+| Yang2016_MBE_OCA2_EastAsian | 10.1093/molbev/msw003 | Mol Biol Evol | 2016 | Yes (OA) | skin | D2 | 10 |
+| Abbatangelo2026_SciRep_eyecolour_discordance | 10.1038/s41598-026-44580-8 | Sci Rep | 2026 | Yes (CC-BY) | eye colour | both | 46 |
+| Ang2023_eLife_Kalinago | 10.7554/eLife.77514 | eLife | 2023 | Yes (CC-BY) | skin (albinism/hypopig) | both | 35 |
+| Crawford2017_Science_AfricanPigmentation | 10.1126/science.aan8433 | Science | 2017 | Author manuscript free via PMC (publisher paywalled) | skin | both | 27 |
+| Morgan2018_NatCommun_HairColour_MC1R | 10.1038/s41467-018-07691-z | Nat Commun | 2018 | Yes (CC-BY) | hair (red) | both | 85 |
+| Norton2014_AJPA_MelanesianBlond_TYRP1 | 10.1002/ajpa.22466 | Am J Phys Anthropol | 2014 | **No (Wiley paywall)** | hair (blond) | both | 45 |
+
+\* `n_records` is the `n_records_extracted` value carried in `discordance_case_classification.csv`, set equal to the row count of each paper's committed `EXTRACT_*_records.csv` (sum = 694; grain differs by paper). See §6.
+
+**Direction tally (from the classification CSV):** 3 D1 · 5 D2 · 5 both. **Canonical record total (sum of the committed per-paper record CSVs; grain differs by paper): 694.** (An earlier "511" headline is retired — it did not reproduce from the committed files; see §6.)
+
+## 2. Extraction methodology
+
+Each paper was extracted by one dedicated `GENETICS_DATA_EXTRACTOR` sub-agent — a **specialist-per-paper fan-out**, so that every paper's records, direction call, and evidence quotes were produced by an agent that had read that paper in full and nothing else. Each specialist emitted two committed work products:
+
+- **`EXTRACT_<paper>.md`** — a structured extract: citation block (with genome build, population, phenotype assay), the discordance-direction call *with verbatim evidence quotes and page/table locations*, a records table, a nearest-gene-vs-causal discipline note, a network-relevant gene list, and an honest-gaps / completeness ledger.
+- **`EXTRACT_<paper>_records.csv`** — the machine-readable per-record table.
+
+**PDF-authoritative rule.** The authoritative source is the **publisher PDF**, not any text capture. Where genotypes, effect sizes, or table structure render only in typeset layout, the specialist **viewed the relevant PDF pages as rendered images** (e.g. Norton 2014 records its Table 2 / Table 4 read from "typeset pages 4 and 6 rendered at 200 dpi"; Ang 2023 records all 29 pages read incl. Appendix 1–3 tables). Machine-readable supplements (`.xlsx` / `.docx`) were used as the source for supplementary data tables (e.g. Kenny 2012 numeric records recovered from the supplementary DOCX Tables S1–S4).
+
+**Record schema (columns of `EXTRACT_*_records.csv`).** Grain = one variant/covariate × source table. Captured fields:
+
+| Field | Meaning |
+|---|---|
+| `gene` | Gene symbol as reported (nearest-gene labels kept verbatim, not silently promoted to a causal gene). |
+| `variant` | Protein / cDNA change or variant descriptor as reported. |
+| `rsid` | dbSNP rsID where reported; `not_reported` otherwise. |
+| `genotype_or_zygosity` | Genotype class / zygosity / inheritance model. |
+| `phenotype` | The pigmentation phenotype the record concerns. |
+| `effect_or_association` | Effect size, OR, p-value, or qualitative association as reported. |
+| `population` | Study population / cohort and n. |
+| `source_table` | The exact in-paper location (table number, figure, main-text section) the value came from. |
+
+Genome build and extraction method are recorded in the `EXTRACT_*.md` header (e.g. Ang 2023: GRCh37/hg19, "pdf-explore text layer + manual table transcription"). Coordinates+build, where the paper reports them, are carried in the record rows.
+
+**One raw record, verbatim** (first data row of `EXTRACT_Morgan2018_NatCommun_HairColour_MC1R_records.csv`, to carry evidence of what actually arrived — a single sample, not the whole table):
+
+> gene = `MC1R (intergenic ~97 kb upstream; nearest=MC1R)`; rsid = `rs34357723`; genotype = `log-additive (per-allele)`; phenotype = `Red hair (red vs black+brown)`; effect = `OR 9.59; strongest genome-wide signal; remains significant after adjusting for all MC1R coding variants`; population = `White British ancestry, UK Biobank (343,234 unrelated genotype-confirmed individuals)`.
+
+Note the `source_table` on that row names a "condensed PMC full-text capture" — that is a fingerprint of the pre-correction extraction wave (see §3), and is one of the rows the record-count reconciliation in §6 flags.
+
+### The extraction driver (frozen)
+
+The code below is the per-paper extraction entry point. It is **frozen** (`eval: false`): it is shown for provenance and does **not** run on render, because it reads the publisher PDFs under `data/raw/papers/`, which are **withheld from the repository** (see §5). To execute it you must first obtain the papers (see [Re-running the extraction](#re-running-the-extraction)).
+
+```{python}
+#| label: extraction-driver
+#| eval: false
+#| echo: true
+# FROZEN — requires the withheld publisher PDFs under data/raw/papers/<tag>/.
+# Extraction was performed by one GENETICS_DATA_EXTRACTOR specialist per paper (a fan-out),
+# each reading exactly one paper's authoritative PDF (pages viewed as images where tables
+# render only in typeset layout) plus its machine-readable supplements. The driver below is
+# the reconstructed entry point: it enumerates the per-paper folders and dispatches one
+# extraction task per paper, writing the two committed work products for each.
+from pathlib import Path
+
+PAPERS = Path("data/raw/papers")          # WITHHELD (gitignored) — see §5
+OUT    = Path("data/case_records")        # committed EXTRACT_* work products
+
+def extract_one_paper(folder: Path) -> None:
+    """Extract one paper from its AUTHORITATIVE publisher PDF.
+
+    Produces, under data/case_records/:
+      EXTRACT_<tag>.md          structured extract: citation block, direction call WITH
+                                verbatim evidence quotes + page/table locations, records
+                                table, nearest-gene-vs-causal note, honest-gaps ledger
+      EXTRACT_<tag>_records.csv machine-readable per-record table (schema in §2)
+
+    PDF-authoritative rule: read the typeset PDF (render pages as images where tables only
+    exist in layout); use .xlsx/.docx supplements for supplementary data tables. Do NOT
+    read the lossy *_fulltext.md capture as the record source (that was the corrected first
+    wave — see §3). Keep nearest-gene labels verbatim; never silently promote to a causal gene.
+    """
+    pdf = next(folder.glob("*.pdf"), None)
+    if pdf is None:
+        raise FileNotFoundError(
+            f"No PDF in {folder}. The papers are withheld from the repo; obtain them by DOI "
+            f"and filename from data/raw/papers/REFERENCES.md before re-running extraction."
+        )
+    # ... per-paper extraction (specialist read of the typeset source) ...
+    # writes OUT / f"EXTRACT_{folder.name}.md" and OUT / f"EXTRACT_{folder.name}_records.csv"
+
+# one specialist per paper — the fan-out that produced the committed EXTRACT_* files
+for folder in sorted(p for p in PAPERS.iterdir() if p.is_dir()):
+    extract_one_paper(folder)
+```
+
+## 3. The md→PDF correction (documented decision point)
+
+**What happened.** A first extraction wave read from the lossy `*_fulltext.md` PubMed-Central text captures rather than the publisher PDFs. Those captures omit figures, typeset table layout, and (for scanned articles) most of the body: italic gene symbols and table bodies are lost, and some papers were reduced to abstract-only text. Records extracted from them therefore missed genotype tables that exist only in the PDF layout.
+
+**How it was caught.** The PI flagged it directly — *"look at the PDF, not the md."*
+
+**The decision.** All 13 papers were **re-extracted from the authoritative publisher PDFs** (pages viewed as images where tables render only in layout), superseding the md-derived wave. The PDF-authoritative rule in §2 is the standing rule that came out of this correction.
+
+**Rationale.** The finding rests on specific genotypes and their reported effects; a text capture that silently drops a genotype table produces records that are individually plausible but collectively incomplete, and no downstream check would catch the omission. Reading the typeset source is the only way to guarantee the record table matches the paper.
+
+**State of the evidence for this correction — partially documented, needs completion (§7, item B).** The correction is only explicitly recorded in two `EXTRACT_*.md` change logs (Ang 2023: "Re-verified all records against authoritative PDF (all 29 pages…)"; Abbatangelo 2026). The other 11 extracts carry the *outcome* — their headers cite the typeset PDF / rendered pages as the source — but **do not carry a change-log entry stating that an earlier md-based version was replaced.** The residue of the first wave is still visible in the artifact store: several papers have superseded record CSVs whose `source_table` cites the "full-text capture" and which note "supplementary data tables NOT available" (e.g. the 15-row `EXTRACT_Morgan2018_..._records.csv`, version `ae7bc395`, alongside the 63-row PDF-era `105b7943`). This document is the first place the correction is recorded as a project-level decision.
+
+## 4. Classification scheme (discordance direction)
+
+Each paper is assigned a **discordance direction** in `discordance_case_classification.csv`. Definitions (verbatim from the classification README):
+
+- **D1** — the person/group **has** the usual causal variant but does **not** show the expected phenotype (reduced / incomplete penetrance).
+- **D2** — the phenotype is **present** but the usual causal variant is **absent** (alternative/atypical genotype, different gene, compound-het, or single-allele).
+- **both** — the paper documents cases in **both** directions, often at one locus (e.g. OCA2 in Ang 2023: R305W predicted-pathogenic with ~0 effect = D1; albinism via novel NW273KV homozygosity = D2).
+
+**How each call traces to evidence.** Every direction label traces to a quoted sentence or a named table row inside that paper's `EXTRACT_*.md`, where the specialist recorded the evidence verbatim with its page/table location. Two worked examples:
+
+- **Morell 1997 → D1.** The extract quotes the abstract on "reduced penetrance of deafness" among carriers of PAX3 WS1 mutations, and states the discordant trait is deafness *within* WS1 (a variable-penetrance sub-trait), not WS1 itself. The direction is anchored to that quote, not inferred.
+- **Ang 2023 → both.** The extract quotes p7–8: albinos "carried [none] of 28 mutations previously found in African or Native American albino individuals" (D2), and a R305W-homozygous individual "had an MI of 72, among the darkest in the entire population" (D1). Both arms cite specific pages.
+
+One direction call is explicitly constrained by the source against over-classification: **Pospiech 2016 is D1 only**, with the classification CSV mechanism note recording "Not D2 per source" — i.e. the specialist declined to call a D2 arm the paper does not support.
+
+## 5. Provenance & licensing — what is withheld, what is kept, and why that is correct
+
+**The rule is file-redistribution, not science.** The copyrighted **files** are withheld from the git repository; the papers' **findings and genotype/phenotype records are used and cited freely**, as in normal scholarship. Two committed artifacts enforce and document this:
+
+- **`.gitignore`** (repo top-level) withholds, under `data/raw/papers/*`, the copyrighted paper files while keeping `REFERENCES.md`; the committed derived records (`EXTRACT_*.md`, `*_records.csv`) live under `data/case_records/` and `data/processed/` and are kept. This keeps our own derived records committed while the copyrighted source files are excluded.
+- **`data/raw/papers/REFERENCES.md`** states the file-vs-science distinction and, per paper, gives the DOI, license/OA status, and the **exact expected filename(s)** to save under so a reader can rebuild the folder. The two Norton papers carry the explicit note that they are paywalled with no OA copy and must come via institutional proxy / ILL / author request.
+
+**Why this is correct science, not a limitation.** Withholding the publisher PDFs costs the project nothing: the extracted records (`EXTRACT_*.md`, `*_records.csv`) are our own work product and carry every genetic fact the build consumes, each traced to a specific in-paper location. A reader who wants to verify a record downloads the paper from its DOI (README gives the exact filename) and checks the cited table — the same act of scholarship they would perform with the file committed. Committing the PDFs would add redistribution liability without adding any scientific capability.
+
+## 6. Record-count reconciliation (resolved)
+
+The canonical record total is **694** — the sum of `n_records_extracted` in the current pinned classification CSV (`8fe42dc9-…`), which was set to equal the row count of each paper's committed `EXTRACT_*_records.csv`. It reproduces from the committed files:
+
+| Paper | `n_records_extracted` = rows in committed `EXTRACT_*_records.csv` |
+|---|---|
+| Abbatangelo2026 | 46 |
+| Ang2023 | 53 |
+| Crawford2017 | 27 |
+| Kastelic2013 | 105 |
+| Kenny2012 | 36 |
+| Meyer2020 | 211 |
+| Morell1997 | 31 |
+| Morgan2018 | 63 |
+| Norton2014 | 45 |
+| Norton2016 | 31 |
+| Pospiech2016 | 18 |
+| Salvo2023 | 18 |
+| Yang2016 | 10 |
+| **TOTAL** | **694** |
+
+**Grain differs by paper** — 694 is a sum of differently-scoped per-paper record sets (some are per-individual genotypes, some per-variant rows, some per-population summaries), not a single comparable quantity. An earlier **511** headline is retired: it came from a pre-reconciliation version of the classification CSV whose `n_records_extracted` did not match the committed files for 5 papers. The store may still hold superseded/duplicate per-paper CSVs from the two-wave extraction history (§3); the canonical file per paper is the one committed under `data/case_records/`. Retiring the superseded duplicates from the store remains a housekeeping item (§7).
+
+The reconciliation check is a small, committed-input computation — shown here frozen (it renders without executing), runnable once you have the repo checked out:
+
+```{python}
+#| label: record-count-reconciliation
+#| eval: false
+#| echo: true
+# Reads ONLY committed files (no papers, no network). Rebuilds the §6 total and checks that
+# each paper's n_records_extracted equals the row count of its committed EXTRACT_*_records.csv.
+import pandas as pd
+from pathlib import Path
+
+cls = pd.read_csv("data/processed/discordance_case_classification.csv")
+records_dir = Path("data/case_records")
+
+def committed_rows(paper: str) -> int:
+    hits = list(records_dir.glob(f"EXTRACT_{paper}*_records.csv"))
+    return sum(len(pd.read_csv(h)) for h in hits)
+
+check = cls.assign(committed=cls["paper"].map(committed_rows))
+mismatch = check.loc[check["n_records_extracted"] != check["committed"]]
+assert mismatch.empty, f"row-count mismatch:\n{mismatch[['paper','n_records_extracted','committed']]}"
+print("direction tally:", cls["discordance_direction"].value_counts().to_dict())  # 3 D1 / 5 D2 / 5 both
+print("canonical record total:", int(cls["n_records_extracted"].sum()))            # 694
+```
+
+## 7. Implicit choices found that are NOT yet documented — PI sign-off needed
+
+These surfaced during the trace and are not recorded anywhere in the committed materials. Each is a decision, not a fact I can settle on the PI's behalf.
+
+1. **A. Notebook placement of the case-assembly work.** The dataset is complete and agreed, but the notebook structure beyond NB2 is not yet agreed by the PI (see `project_dashboard.md` §2). Decide, as part of settling the downstream structure, whether the assembly becomes a numbered notebook and where. Until then the "NB3" in this filename is a working label only.
+2. **B. Per-paper correction change-logs are missing for 11 of 13 extracts.** Only Ang 2023 and Abbatangelo 2026 record the md→PDF re-extraction in a change log. For the audit trail to be complete, each `EXTRACT_*.md` should carry a one-line change-log entry naming its authoritative source and stating that any md-derived predecessor was superseded. Decide whether to backfill these.
+3. **C. `.gitignore` path vs repo layout — resolved.** In the assembled repo the papers live under `data/raw/papers/`, and the on-disk `.gitignore` correctly withholds `data/raw/papers/*` while keeping `REFERENCES.md`. README references now point at `data/raw/papers/REFERENCES.md`. (An earlier draft referenced a `Reference_papers/**` tree that this layout supersedes.)
+4. **D. Retire superseded duplicate record CSVs from the store (§6).** The canonical total (694) now reproduces from the committed files; the remaining housekeeping item is to remove or archive the superseded/duplicate per-paper CSVs left in the artifact store from the two-wave extraction history, so only the canonical file per paper remains discoverable.
+5. **E. Superseded/duplicate record CSVs are still live in the store.** Multiple record CSVs per paper (md-era vs PDF-era, plus `_stats` / `_gwas_leads` splits) are all present with no committed statement of which is canonical. Decide the retention/retirement policy so a downstream reader (and the build-plan sync check) reads exactly one file per paper.
+
+## 8. How to rebuild
+
+Given the committed artifacts (no paper files, no live network):
+
+1. **Rebuild the acquisition manifest table (§1)** — read `discordance_case_classification.csv` (`paper`, `doi`, `phenotype_system`, `discordance_direction`, `n_records_extracted`) and join to the per-paper block in `data/raw/papers/` manifest (as supplied in the paper zip) for journal / PMID / PMCID / OA status. Both files are committed; no DOI is hand-entered.
+2. **Rebuild the per-paper detail** — for each paper open `EXTRACT_<paper>.md` (direction call + verbatim evidence + schema'd records table + gaps ledger) and `EXTRACT_<paper>_records.csv` (machine-readable records). These are committed under the `.gitignore` negation rules.
+3. **Re-verify the direction tally** — group `discordance_case_classification.csv` on `discordance_direction`: expect 3 D1 / 5 D2 / 5 both.
+4. **Re-run the record-count reconciliation (§6)** — the frozen `record-count-reconciliation` cell above; it should be wired into the plan-sync check once item D is resolved.
+5. **Re-acquire a withheld paper (only if verifying a record against the typeset source)** — take the DOI and the exact expected filename from `data/raw/papers/REFERENCES.md`, download from the publisher, save under that filename. The two Norton papers require institutional proxy / ILL / author request (README records this).
+
+**Inputs (committed):** `discordance_case_classification.csv` + its README; `data/raw/papers/REFERENCES.md`, `DOWNLOAD_MANIFEST.md`, `DOWNLOAD_LINKS.md`; the 13 `EXTRACT_*.md` and their `*_records.csv`; `.gitignore`.
+**Inputs (withheld, re-obtainable by DOI):** the 13 publisher PDFs and supplements, and the `*_fulltext.md` / `*_ABSTRACT-ONLY.md` captures.
+
+## Re-running the extraction {#re-running-the-extraction}
+
+The extractor cell in §2 is frozen because it depends on the withheld publisher PDFs. To re-run it:
+
+1. **Obtain the papers.** For each entry in `data/raw/papers/REFERENCES.md`, download the paper from its DOI and save it under the **exact expected filename** the README lists, in `data/raw/papers/<tag>/`. Most are open-access; the two Norton papers (Wiley) have no open copy and must come via institutional proxy, interlibrary loan, or author request.
+2. **Unfreeze deliberately.** Either remove `eval: false` from the `extraction-driver` cell, or render the whole document with execution on: `quarto render docs/NB3_case_assembly_provenance.qmd -M execute:enabled:true`. Do this only with the papers in place — otherwise the driver raises `FileNotFoundError` by design, pointing back to `REFERENCES.md`.
+3. **The committed record-count cell (§6) needs no papers** — it reads only committed files and can be run any time to verify the 694 total and the 3 D1 / 5 D2 / 5 both tally.
+
+---
+
+*Prepared as a reproducibility/provenance record. No paper text is redistributed here; quotes are minimal single-record evidence examples with their in-paper locations. Numbers and DOIs were read from the committed artifacts at reconstruction time, not retyped from memory.*

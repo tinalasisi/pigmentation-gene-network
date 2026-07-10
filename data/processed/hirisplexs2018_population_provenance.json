@@ -1,0 +1,40 @@
+{
+ "source": "HIrisPlex-S DNA Phenotyping Webtool User Manual v2.0 (2018), Erasmus MC",
+ "url": "https://hirisplex.erasmusmc.nl/",
+ "accessed_utc": "2026-07-08",
+ "model_training_populations": {
+  "eye_colour": {
+   "n_total": 9466,
+   "composition": "9,188 from 8 European countries (NL, NO, EE, UK, FR, IT, ES, GR) [Liu 2009 + Walsh 2012] + 278 US-based [Walsh 2017]",
+   "european_fraction_approx": 0.97
+  },
+  "hair_colour": {
+   "n_total": 1878,
+   "composition": "1,601 from Ireland/Greece/Poland [Walsh 2013] + 50 Japanese (black hair) + 277 US-based [Walsh 2017]",
+   "european_fraction_approx": 0.85
+  },
+  "skin_colour": {
+   "n_total": 1423,
+   "composition": "Ireland/Greece/Poland + US-based (parental origins incl. Nigeria, Mexico, India, Bangladesh, China, Japan, etc.) + CEPH-HGDP Senegal/Nigeria/Kenya/Papua New Guinea [Walsh 2017]",
+   "european_fraction_approx": null,
+   "note": "most ancestrally diverse of the three models"
+  }
+ },
+ "reported_accuracy_european_derived": {
+  "red_hair_AUC_full_MC1R": 0.92,
+  "red_hair_AUC_no_HIrisPlex_variants": 0.64,
+  "eye_correct_all_categories": "80% (155/194)",
+  "eye_correct_brown_blue_only": "96% (156/162)",
+  "hair_correct": "77% (149/194)",
+  "red_shade_incorrect": 8,
+  "blue_predicted_actually_intermediate": 26,
+  "skin_AUC_by_category": {
+   "Very Pale": 0.83,
+   "Pale": 0.76,
+   "Intermediate": 0.78,
+   "Dark": 0.98,
+   "Dark-to-Black": 0.99
+  }
+ },
+ "interpretation": "Eye and hair models are ~85-97% European-derived; reported accuracies are European accuracies. Discordance is expected to be structured by genomic background (ancestry), not random \u2014 this patterning is the project's thesis and is documented, not computed, this week."
+}

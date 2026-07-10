@@ -1,0 +1,430 @@
+source,target,verb,interaction_norm,sign,reference
+4HNE_kerat,DNA_Damage_kerat,induces,induces,+,NetProTM
+ACTH_kerat,MC1R_kerat,activates,activates,+,[1]
+ACTH_kerat,MC1R_melan,activates,activates,+,NetProTM
+ACTH_kerat,NFKB1_kerat,inhibits,inhibits,-,[2]
+ACTH_melan,MC1R_melan,activates,activates,+,[3]
+ADCY4_kerat,cAMP_kerat,Increases level,increases level,+,NetProTM
+ADCY4_melan,cAMP_melan,increases level,increases level,+,[4]
+AHR:SRC:HSP90AA1_kerat,SRC_kerat,dissociates to,dissociates to,-,[5]
+AKT1_kerat,BAD_kerat,inhibits,inhibits,-,[6]
+AKT1_kerat,CASP8_kerat,inhibits,inhibits,-,[7]
+AKT1_kerat,GSK3B_kerat,inhibits,inhibits,-,[8]
+AKT1_melan,BAD_melan,inhibits,inhibits,-,[9]
+AKT1_melan,CASP8_melan,inhibits,inhibits,-,NetProTM
+AKT1_melan,CREB1_melan,activates,activates,+,[10]
+AKT1_melan,CTNNB1_melan,increases stability,increases stability,+,[11]
+AKT1_melan,EZR_melan,activates,activates,+,[12]
+AKT1_melan,FOS_melan,activates,activates,+,NetProTM
+AKT1_melan,GSK3B_melan,inhibits,inhibits,-,[13]
+AKT1_melan,MSN_melan,activates,activates,+,[12]
+AKT1_melan,RDX,activates,activates,+,[12]
+alpha_MSH_kerat,MC1R_melan,activates,activates,+,NetProTM
+alpha_MSH_kerat,NFKB1_kerat,inhibits,inhibits,-,[2]
+alpha_MSH_melan,MC1R_melan,activates,activates,+,[14]
+APAF1:CYCS_kerat,CASP9_kerat,activates,activates,+,[15]
+Arachidonic_Acid_kerat,PGE2_kerat,gets converted to,gets converted to,+,[16]
+Arachidonic_Acid_melan,PGE2_melan,gets converted to,gets converted to,+,[17]
+BAD_kerat,CYCS_kerat,increases release,increases release,+,[6]
+BAD_melan,CYCS_melan,increases release,increases release,+,[18]
+BAK1_kerat,CYCS_kerat,increases release,increases release,+,[19]
+BAX_kerat,CYCS_kerat,increases release,increases release,+,[20]
+BAX_melan,CYCS_melan,increases release,increases release,+,NetProTM
+BBC3_melan,BAX_melan,activates,activates,+,NetProTM
+BCL2_kerat,Cell_survival_kerat,induces,induces,+,[21]
+BCL2_melan,BAX_melan,inhibits,inhibits,-,NetProTM
+BCL2L1_kerat,Cell_survival_kerat,induces,induces,+,[22]
+BCL2L1_melan,Cell_survival_melan,induces,induces,+,[23]
+BID_kerat,CYCS_kerat,increases release,increases release,+,[24]
+Calcium_cyt:Calmodulin_melan,Phosphodiesterase_melan,activates,activates,+,[25]
+Calcium_cyt_kerat,PKC_kerat,activates,activates,+,[26]
+Calcium_cyt_kerat,PPP3CA_kerat,activates,activates,+,[27]
+Calcium_cyt_melan,Calcium_cyt:Calmodulin_melan,forms complex,forms complex,+,[28]
+Calcium_cyt_melan,PRKCB_melan,activates,activates,+,NetProTM
+cAMP_kerat,PRKACA_kerat,activates,activates,+,NetProTM
+cAMP_melan,PRKACA_melan,activates,activates,+,[29]
+cAMP_melan,RAP1A_melan,activates,activates,+,NetProTM
+CASP3_kerat,CDKN1A_kerat,Inhibits,inhibits,-,[30]
+CASP3_kerat,DFFB:DFFA_kerat,induces complex dissociation,induces complex dissociation,-,NetProTM
+CASP3_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+CASP3_kerat,PRKCD_kerat,activates,activates,+,[30]
+CASP8_kerat,BID_kerat,activates,activates,+,[24]
+CASP8_kerat,CASP3_kerat,activates,activates,+,[31]
+CASP9_kerat,CASP3_kerat,activates,activates,+,[32]
+CASP9_kerat,CASP8_kerat,activates,activates,+,[32]
+CCND1_kerat,Cell_proliferation_kerat,induces,induces,+,[21]
+CCND1_melan,CDK4:CCND1_melan,forms complex,forms complex,+,[33]
+CDC42_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+CDC42_kerat,RAC1_kerat,activates,activates,+,[34]
+CDH2_melan,Melanocyte_migration,induces,induces,+,[12]
+CDK4:CCND1_melan,Cell_proliferation_melan,induces,induces,+,[33]
+CDK4_melan,CDK4:CCND1_melan,forms complex,forms complex,+,[33]
+CDKN1A_kerat,Cell_cycle_arrest_kerat,induces,induces,+,[35]
+CDKN1A_melan,Cell_cycle_arrest_melan,induces,induces,+,[36]
+Ceramide_kerat,PLA2_kerat,activates,activates,+,[37]
+Ceramide_kerat,PRKCZ_kerat,activates,activates,+,[38]
+Ceramide_kerat,TFAP2A_kerat,increases expression,increases expression,+,[39]
+CFLAR_kerat,MAP2K7_kerat,inhibits,inhibits,-,[40]
+cGMP_melan,Phosphodiesterase_melan,activates,activates,+,NetProTM
+cGMP_melan,PRKG1_melan,activates,activates,+,[41]
+CREB1_kerat,CFLAR_kerat,increases expression,increases expression,+,NetProTM
+CREB1_kerat,DUSP1_kerat,increases expression,increases expression,+,NetProTM
+CREB1_kerat,PTGS2_kerat,increases expression,increases expression,+,[42]
+CREB1_melan,BCL2_melan,increases expression,increases expression,+,NetProTM
+CREB1_melan,MITF_melan,increases expression,increases expression,+,[43]
+CREB1_melan,PTGS2_melan,increases expression,increases expression,+,NetProTM
+CSF2_kerat,CSF2RA_melan,activates,activates,+,NetProTM
+CSF2RA:JAK1_melan,STAT3_melan,activates,activates,+,NetProTM
+CSF2RA_melan,CSF2RA:JAK1_melan,forms complex,forms complex,+,NetProTM
+CTNNB1:LEF1_melan,MITF_melan,increase expression,increase expression,+,"[43], [44]"
+CTNNB1_melan,CTNNB1:LEF1_melan,forms complex,forms complex,+,[45]
+CYCS_kerat,APAF1:CYCS_kerat,forms complex,forms complex,+,[15]
+CYCS_kerat,Apoptosis_kerat,induces,induces,+,[20]
+CYCS_kerat,TFAP2A_kerat,activates,activates,+,[46]
+CYCS_melan,Apoptosis_melan,induces,induces,+,[47]
+Cysteine_melan,Cysteinyl_DOPA_melan,gets converted to,gets converted to,+,[48]
+Cysteinyl_DOPA_melan,Pheomelanin_melan,gets converted to,gets converted to,+,[48]
+DAG_kerat,SMPD1_kerat,activates,activates,+,NetProTM
+DAG_melan,PRKCB_melan,activates,activates,+,NetProTM
+DCT_melan,DHICA_melan,catalysis,catalysis,+,[48]
+DFFB:DFFA_kerat,DFFA_kerat,dissociates to,dissociates to,-,NetProTM
+DFFB:DFFA_kerat,DFFB_kerat,dissociates to,dissociates to,-,NetProTM
+DFFB_kerat,DNA_Damage_kerat,induces,induces,+,NetProTM
+DHI_melan,Indole_5_6_quinone_melan,gets converted to,gets converted to,+,[48]
+DHICA_melan,Indole_5_6_quinone_carboxylic_acid_melan,gets converted to,gets converted to,+,[48]
+DNA_Damage_kerat,NFKB1_kerat,activates,activates,+,[49]
+DNA_Damage_kerat,TP53_kerat,activates,activates,+,[50]
+DOPA_melan,DOPAquinone_melan,gets converted to,gets converted to,+,[48]
+DOPAchrome_melan,DHI_melan,gets converted to,gets converted to,+,[48]
+DOPAchrome_melan,DHICA_melan,gets converted to,gets converted to,+,[48]
+DOPAquinone_melan,Cysteinyl_DOPA_melan,gets converted to,gets converted to,+,[48]
+DOPAquinone_melan,DOPAchrome_melan,gets converted to,gets converted to,+,[48]
+DOPAquinone_melan,Glutathionyl_DOPA_melan,gets converted to,gets converted to,+,[48]
+DUSP1_kerat,MAPK1_kerat,inhibits,inhibits,-,NetProTM
+DUSP1_kerat,MAPK3_kerat,inhibits,inhibits,-,NetProTM
+DUSP1_kerat,MAPK8_kerat,inhibits,inhibits,-,[51]
+EDN1_kerat,EDNRB_melan,activates,activates,+,[52]
+EDNRB_melan,ADCY4_melan,activates,activates,+,NetProTM
+EDNRB_melan,PLC_melan,activates,activates,+,NetProTM
+EGFR_kerat,PIK3CA_kerat,activates,activates,+,[7]
+EGFR_kerat,SOS1:GRB2:SHC1_kerat,activates,activates,+,[53]
+EGFR_kerat,STAT1_kerat,activates,activates,+,NetProTM
+ELK1_kerat,CDKN1A_kerat,increases expression,increases expression,+,[54]
+ELK1_melan,CDKN1A_melan,increases expression,increases expression,+,[54]
+EZR_melan,Melanocyte_migration,induces,induces,+,[12]
+F10,F2RL1_kerat,activates,activates,+,[55]
+F2RL1_kerat,PLC_kerat,activates,activates,+,[56] 
+F2RL1_kerat,RHOA_kerat,activates,activates,+,[57]
+F7,F2RL1_kerat,activates,activates,+,[55]
+FAS:FADD_kerat,CASP8_kerat,activates,activates,+,[31]
+FAS_kerat,FAS:FADD_kerat,forms complex,forms complex,+,[58]
+FASLG_kerat,FAS_kerat,activates,activates,+,[58]
+FICZ_kerat,AHR:SRC:HSP90AA1_kerat,induces complex dissociation,induces complex dissociation,-,[5]
+FOS_kerat,FOS_kerat:JUN_kerat,forms complex,forms complex,+,NetProTM
+FOS_kerat:JUN_kerat,BCL2_kerat,increases expression,increases expression,+,[59]
+FOS_kerat:JUN_kerat,CCND1_kerat,increases expression,increases expression,+,[60]
+FOS_kerat:JUN_kerat,EDN1_kerat,increases expression,increases expression,+,NetProTM
+FOS_kerat:JUN_kerat,IL1A_kerat,increases expression,increases expression,+,[61]
+FOS_kerat:JUN_kerat,IL6_kerat,inhibits expression,inhibits expression,-,[62]
+FOS_kerat:JUN_kerat,IVL_kerat,increases expression,increases expression,+,[63]
+FOS_kerat:JUN_kerat,MMPs_kerat,increases expression,increases expression,+,[64]
+FOS_kerat:JUN_kerat,NGF_kerat,increases expression,increases expression,+,NetProTM
+FOS_kerat:JUN_kerat,PTGS2_kerat,increases expression,increases expression,+,[65]
+FOS_kerat:JUN_kerat,TNF_kerat,increases expression,increases expression,+,[66]
+FOS_kerat:JUN_melan,BCL2_melan,increases expression,increases expression,+,NetProTM
+FOS_kerat:JUN_melan,CCND1_melan,increases expression,increases expression,+,NetProTM
+FOS_kerat:JUN_melan,MMP1_melan,increases expression,increases expression,+,[67]
+FZD3_melan,AKT1_melan,activates,activates,+,[68]
+GAB1:PIK3CA_melan,AKT1_melan,activates,activates,+,NetProTM
+GAB1_melan,GAB1:PIK3CA_melan,forms complex,forms complex,+,NetProTM
+GADD45A_kerat,DNA_Repair_kerat,induces,induces,+,[69]
+Glutathionyl_DOPA_melan,Pheomelanin_melan,gets converted to,gets converted to,+,[48]
+GSH_melan,Glutathionyl_DOPA_melan,gets converted to,gets converted to,+,[48]
+GSK3B_kerat,NFAT2_kerat,inhibits,inhibits,-,[27]
+GSK3B_melan,CTNNB1_melan,inhibits,inhibits,-,NetProTM
+GUCY1A2_melan,cGMP_melan,increases level,increases level,+,[41]
+HGF_kerat,MET_melan,activates,activates,+,NetProTM
+HIF1A_kerat,PMAIP1_kerat,increases expression,increases expression,+,[70]
+HIF1A_melan,KITLG_melan,increases expression,increases expression,+,[71]
+HRAS_kerat,RAF1_kerat,activates,activates,+,[72]
+HRAS_melan,RAF1_melan,activates,activates,+,NetProTM
+IKBKA_kerat,NFKB1_kerat,activates,activates,+,NetProTM
+IL10_kerat,Skin_inflammation,regulates,regulates,0,[73]
+IL12A_kerat,DNA_Repair_kerat,induces,induces,+,[74]
+IL1A_kerat,IL1R1_kerat,activates,activates,+,[72]
+IL1R1:MYD88:IRAK1:IRAK4_kerat,IRAK1_Active_kerat,activates,activates,+,NetProTM
+IL1R1_kerat,IL1R1:MYD88:IRAK1:IRAK4_kerat,forms complex,forms complex,+,NetProTM
+IL6_kerat,IL6R_kerat,activates,activates,+,[75]
+IL6R_kerat,JAK1_kerat,activates,activates,+,[75]
+IL8_kerat,Skin_inflammation,regulates,regulates,0,[76]
+Indole_5_6_quinone_carboxylic_acid_melan,Eumelanin_melan,gets converted to,gets converted to,+,[48]
+Indole_5_6_quinone_melan,Eumelanin_melan,gets converted to,gets converted to,+,[48]
+IP3_kerat,RYR1_kerat,activates,activates,+,[26]
+IP3_melan,RYR1_melan,activates,activates,+,NetProTM
+IRAK1_Active:TRAF6:ECSIT_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+IRAK1_Active:TRAF6_kerat,IRAK1_Active:TRAF6:ECSIT_kerat,forms complex,forms complex,+,NetProTM
+IRAK1_Active:TRAF6_kerat,MAP3K7:TAB1_kerat,associates,associates,0,[72]
+IRAK1_Active_kerat,IRAK1_Active:TRAF6_kerat,forms complex,forms complex,+,[72]
+IVL_kerat,Cell_differentiation_kerat,involved in,involved in,0,[77]
+JAK1_kerat,STAT3_kerat,activates,activates,+,[75]
+JUN_kerat,FOS_kerat:JUN_kerat,forms complex,forms complex,+,NetProTM
+KIT_melan,PIK3CA_melan,activates,activates,+,[78]
+KIT_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM
+KITLG_kerat,KIT_melan,activates,activates,+,NetProTM
+KITLG_melan,KIT_melan,activates,activates,+,[79]
+Lipid_Peroxidation_kerat,4HNE_kerat,increases level,increases level,+,[80]
+MAP2K1_kerat,MAPK1_kerat,activates,activates,+,[53]
+MAP2K1_kerat,MAPK3_kerat,activates,activates,+,[53]
+MAP2K1_melan,MAPK1_melan,activates,activates,+,NetProTM
+MAP2K1_melan,MAPK3_melan,activates,activates,+,NetProTM
+MAP2K2_kerat,MAPK1_kerat,activates,activates,+,[53]
+MAP2K2_kerat,MAPK3_kerat,activates,activates,+,[53]
+MAP2K2_melan,MAPK1_melan,activates,activates,+,NetProTM
+MAP2K2_melan,MAPK3_melan,activates,activates,+,NetProTM
+MAP2K3_kerat,MAPK14_kerat,activates,activates,+,
+MAP2K3_melan,MAPK14_melan,activates,activates,+,[67]
+MAP2K4_kerat,MAPK8_kerat,activates,activates,+,[67]
+MAP2K4_melan,MAPK8_melan,activates,activates,+,NetProTM
+MAP2K6_kerat,MAPK14_kerat,activates,activates,+,[67]
+MAP2K6_melan,MAPK14_melan,activates,activates,+,[67]
+MAP2K7_kerat,MAPK8_kerat,activates,activates,+,[67]
+MAP2K7_melan,MAPK8_melan,activates,activates,+,NetProTM
+MAP3K1_kerat,MAP3K14_kerat,activates,activates,+,NetProTM
+MAP3K1_melan,MAP2K4_melan,activates,activates,+,NetProTM
+MAP3K1_melan,MAP2K7_melan,activates,activates,+,NetProTM
+MAP3K14_kerat,IKBKA_kerat,activates,activates,+,NetProTM
+MAP3K5_kerat,MAP2K3_kerat,activates,activates,+,[81]
+MAP3K5_kerat,MAP2K4_kerat,activates,activates,+,[81]
+MAP3K5_kerat,MAP2K6_kerat,activates,activates,+,[81]
+MAP3K5_kerat,MAP2K7_kerat,activates,activates,+,NetProTM
+MAP3K5_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+MAP3K7:TAB1_kerat,IKBKA_kerat,activates,activates,+,[72]
+MAP3K7:TAB1_kerat,MAP2K3_kerat,activates,activates,+,NetProTM
+MAP3K7:TAB1_kerat,MAP2K4_kerat,activates,activates,+,NetProTM
+MAP3K7:TAB1_kerat,MAP2K6_kerat,activates,activates,+,NetProTM
+MAP4K2_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+MAPK1_kerat,ATF2_kerat,activates,activates,+,[72]
+MAPK1_kerat,ELK1_kerat,activates,activates,+,[72]
+MAPK1_kerat,FOS_kerat,activates,activates,+,[82]
+MAPK1_kerat,JUN_kerat,activates,activates,+,[72]
+MAPK1_kerat,PLA2_kerat,activates,activates,+,NetProTM
+MAPK1_kerat,RPS6KA1_kerat,activates,activates,+,[83]
+MAPK1_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[84]
+MAPK1_melan,RPS6KA1_melan,activates,activates,+,NetProTM
+MAPK1_melan,TP53_melan,activates,activates,+,[85]
+MAPK14_kerat,ATF2_kerat,activates,activates,+,[86]
+MAPK14_kerat,BCL2L1_kerat,increases expression [mRNA stability],increases expression [mrna stability],+,[87]
+MAPK14_kerat,CASP3_kerat,activates,activates,+,[88]
+MAPK14_kerat,FOS_kerat,activates,activates,+,[82]
+MAPK14_kerat,HIF1A_kerat,activates,activates,+,[89]
+MAPK14_melan,BAX_melan,activates,activates,+,[82]
+MAPK14_melan,CREB1_melan,activates,activates,+,[90]
+MAPK14_melan,ELK1_melan,activates,activates,+,NetProTM
+MAPK14_melan,FOS_melan,increases expression,increases expression,+,[91]
+MAPK14_melan,USF1_melan,activates,activates,+,[92]
+MAPK3_kerat,ATF2_kerat,activates,activates,+,[72]
+MAPK3_kerat,ELK1_kerat,activates,activates,+,[72]
+MAPK3_kerat,FOS_kerat,activates,activates,+,[82]
+MAPK3_kerat,JUN_kerat,activates,activates,+,[72]
+MAPK3_kerat,PLA2_kerat,activates,activates,+,NetProTM
+MAPK3_kerat,RPS6KA1_kerat,activates,activates,+,[83]
+MAPK3_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[84]
+MAPK3_melan,RPS6KA1_melan,activates,activates,+,NetProTM
+MAPK3_melan,TP53_melan,activates,activates,+,[85]
+MAPK8_kerat,ATF2_kerat,activates,activates,+,[72]
+MAPK8_kerat,JUN_kerat,activates,activates,+,[91]
+MAPK8_kerat,MCL1:BAK1_kerat,induces complex dissociation,induces complex dissociation,-,[93]
+MAPK8_kerat,MCL1:BAX_kerat,induces complex dissociation,induces complex dissociation,-,[93]
+MAPK8_melan,JUN_melan,activates,activates,+,NetProTM
+MC1R_kerat,NFKB1_kerat,inhibits,inhibits,-,[23]
+MC1R_melan,ADCY4_melan,activates,activates,+,[14] 
+MCL1:BAK1_kerat,BAK1_kerat,dissociates to,dissociates to,-,[94]
+MCL1:BAK1_kerat,MCL1_kerat,dissociates to,dissociates to,-,[94]
+MCL1:BAX_kerat,BAX_kerat,dissociates to,dissociates to,-,[94]
+MCL1:BAX_kerat,MCL1_kerat,dissociates to,dissociates to,-,[94]
+MET_melan,GAB1_melan,activates,activates,+,NetProTM
+MET_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM
+MITF:EP300_melan,MITF_melan,activates,activates,+,[95]
+MITF_melan,BCL2_melan,increases expression,increases expression,+,[96]
+MITF_melan,CDK4_melan,increases expression,increases expression,+,[97]
+MITF_melan,DCT_melan,increases expression,increases expression,+,[98]
+MITF_melan,EDNRB_melan,increases expression,increases expression,+,NetProTM
+MITF_melan,MC1R_melan,increases expression,increases expression,+,[99]
+MITF_melan,MET_melan,increases expression,increases expression,+,NetProTM
+MITF_melan,MITF:EP300_melan,forms complex,forms complex,+,[95]
+MITF_melan,MITF_melan,increases expression,increases expression,+,NetProTM
+MITF_melan,MLANA,increases expression,increases expression,+,[100]
+MITF_melan,OCA2,increases expression,increases expression,+,[101]
+MITF_melan,PMEL_melan,increases expression,increases expression,+,[84]
+MITF_melan,PRKCB_melan,increases expression,increases expression,+,NetProTM
+MITF_melan,TYR_melan,increases expression,increases expression,+,[98]
+MITF_melan,TYRP1_melan,increases expression,increases expression,+,[98]
+MLANA,Melanosome_biogenesis,induces,induces,+,[102]
+MMP1_kerat,Skin_aging,regulates,regulates,0,[103]
+MMP1_melan,Skin_aging,regulates,regulates,0,[103]
+MMPs_kerat,Skin_aging,regulates,regulates,0,[103]
+MSN_melan,CDH2_melan,increases expression,increases expression,+,[12]
+MSN_melan,Melanocyte_migration,induces,induces,+,[12]
+NFAT2_kerat,PTGS2_kerat,increases expression,increases expression,+,[27]
+NFKB1_kerat,BCL2_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,CDKN1A_kerat,increases expression,increases expression,+,[35]
+NFKB1_kerat,CSF2_kerat,increases expression,increases expression,+,[104]
+NFKB1_kerat,EDN1_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,F2RL1_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,FASLG_kerat,increases expression,increases expression,+,[105]
+NFKB1_kerat,ICAM1_kerat,increases expression,increases expression,+,[106]
+NFKB1_kerat,IL10_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,IL12A_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,IL1A_kerat,increases expression,increases expression,+,[107]
+NFKB1_kerat,IL6_kerat,increases expression,increases expression,+,[108]
+NFKB1_kerat,IL8_kerat,increases expression,increases expression,+,[109]
+NFKB1_kerat,KITLG_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,MMPs_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,NOS2_kerat,increases expression,increases expression,+,[110]
+NFKB1_kerat,PRKCD_kerat,increases expression,increases expression,+,NetProTM
+NFKB1_kerat,PTGS2_kerat,increases expression,increases expression,+,[111]
+NFKB1_kerat,TNF_kerat,increases expression,increases expression,+,[112]
+NFKB1_kerat,TP53_kerat,increases expression,increases expression,+,NetProTM
+NGF_kerat,NTRK1_melan,activates,activates,+,NetProTM
+Nitric_oxide_kerat,GUCY1A2_melan,activates,activates,+,[41]
+NOS2_kerat,Nitric_oxide_kerat,increases level,increases level,+,NetProTM
+NOX1_kerat,ROS_kerat,increases level,increases level,+,[113]
+NTRK1_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM
+OCA2,Melanosome_biogenesis,induces,induces,+,[114]
+PAK1_kerat,MAP2K3_kerat,activates,activates,+,NetProTM
+PAK1_kerat,MAP2K6_kerat,activates,activates,+,NetProTM
+PAK1_melan,MAP2K3_melan,activates,activates,+,NetProTM
+PAK1_melan,MAP2K6_melan,activates,activates,+,NetProTM
+PAX3_melan,MITF_melan,increase expression,increase expression,+,"[115], [43]"
+PDPK1_kerat,AKT1_kerat,activates,activates,+,NetProTM
+PDPK1_kerat,PRKCH_kerat,activates,activates,+,[116]
+PDPK1_melan,AKT1_melan,activates,activates,+,[117]
+PGE2_kerat,PTGER1_melan,activates,activates,+,NetProTM
+PGE2_kerat,PTGER2_kerat,activates,activates,+,[118]
+PGE2_kerat,PTGER3_melan,activates,activates,+,NetProTM
+PGE2_kerat,PTGER4_kerat,activates,activates,+,[118]
+PGE2_melan,PTGER1_melan,activates,activates,+,[119]
+PGE2_melan,PTGER3_melan,activates,activates,+,[119]
+Phosphodiesterase_melan,PRKACA_melan,inhibits,inhibits,-,NetProTM
+PIAS3_melan,MITF_melan,inhibits,inhibits,-,NetProTM
+PIAS3_melan,STAT3_melan,inhibits,inhibits,-,NetProTM
+PIK3CA_kerat,PDPK1_kerat,activates,activates,+,NetProTM
+PIK3CA_melan,PDPK1_melan,activates,activates,+,[117]
+PIK3CA_melan,RAC1_melan,activates,activates,+,[12]
+PKC_kerat,NFKB1_kerat,activates,activates,+,[120]
+PLA2_kerat,Arachidonic_Acid_kerat,increases level,increases level,+,[121]
+PLC_kerat,DAG_kerat,Increases level,increases level,+,NetProTM
+PLC_kerat,IP3_kerat,increases level,increases level,+,[26]
+PLC_melan,DAG_melan,increases level,increases level,+,NetProTM
+PLC_melan,IP3_melan,increases level,increases level,+,NetProTM
+PMAIP1_kerat,BAK1_kerat,activates,activates,+,[122]
+PPP3CA_kerat,NFAT2_kerat,activates,activates,+,[27]
+PRKACA_kerat,CREB1_kerat,activates,activates,+,NetProTM
+PRKACA_melan,CREB1_melan,activates,activates,+,[123]
+PRKCB_melan,GAB1_melan,activates,activates,+,NetProTM
+PRKCB_melan,TYR_melan,activates,activates,+,NetProTM
+PRKCD_kerat,CASP3_kerat,activates,activates,+,[20]
+PRKCD_kerat,CASP8_kerat,activates,activates,+,[20]
+PRKCD_kerat,CASP9_kerat,activates,activates,+,[20]
+PRKCD_kerat,MCL1:BAK1_kerat,induces complex dissociation,induces complex dissociation,-,[94]
+PRKCD_kerat,MCL1:BAX_kerat,induces complex dissociation,induces complex dissociation,-,[94]
+PRKCD_kerat,NFKB1_kerat,activates,activates,+,NetProTM
+PRKCH_kerat,CASP3_kerat,inhibits,inhibits,-,[124]
+PRKCH_kerat,CDK2_kerat,inhibits,inhibits,-,[125]
+PRKCH_kerat,MAPK14_kerat,activates,activates,+,[124]
+PRKCZ_kerat,NFKB1_kerat,activates,activates,+,[126]
+PRKCZ_melan,Dendrite_formation_melan,induces,induces,+,[127]
+PRKG1_melan,CREB1_melan,activates,activates,+,[128]
+PTGER1_melan,PLC_melan,activates,activates,+,NetProTM
+PTGER2_kerat,ADCY4_kerat,activates,activates,+,NetProTM
+PTGER3_melan,PLC_melan,activates,activates,+,NetProTM
+PTGER4_kerat,ADCY4_kerat,activates,activates,+,NetProTM
+PTGS2_kerat,PGE2_kerat,increases level,increases level,+,[16]
+PTGS2_melan,PGE2_melan,Increases level,increases level,+,[17]
+RAC1:PARD6A:CDC42_melan,PRKCZ_melan,activates,activates,+,[129]
+RAC1_kerat,MAP3K1_kerat,activates,activates,+,NetProTM
+RAC1_kerat,NOX1_kerat,activates,activates,+,NetProTM
+RAC1_melan,MAP2K3_melan,activates,activates,+,NetProTM
+RAC1_melan,MAP2K6_melan,activates,activates,+,NetProTM
+RAC1_melan,MAP3K1_melan,activates,activates,+,[130]
+RAC1_melan,PAK1_melan,activates,activates,+,[131]
+RAC1_melan,RAC1:PARD6A:CDC42_melan,forms complex,forms complex,+,[129]
+RAF1_kerat,MAP2K1_kerat,activates,activates,+,[72]
+RAF1_kerat,MAP2K2_kerat,activates,activates,+,[72]
+RAF1_melan,MAP2K1_melan,activates,activates,+,NetProTM
+RAF1_melan,MAP2K2_melan,activates,activates,+,NetProTM
+RAP1A_melan,RAC1_melan,activates,activates,+,NetProTM
+RDX,Melanocyte_migration,induces,induces,+,[12]
+RHOA_kerat,Melanosome_phagocytosis_kerat,Induces,induces,+,[57]
+ROS_kerat,EGFR_kerat,activates,activates,+,[132]
+ROS_kerat,MAP3K5_kerat,activates,activates,+,[82]
+ROS_kerat,SMPD2_kerat,activates,activates,+,NetProTM
+RPS6KA1_kerat,BAD_kerat,inhibits,inhibits,-,[133]
+RPS6KA1_kerat,CREB1_kerat,activates,activates,+,[133]
+RPS6KA1_melan,CREB1_melan,activates,activates,+,[134]
+RPS6KA1_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[135]
+RYR1_kerat,Calcium_cyt_kerat,increases level,increases level,+,[26]
+RYR1_melan,Calcium_cyt_melan,increases level,increases level,+,NetProTM
+Singlet_oxygen_kerat,Ceramide_kerat,increases level,increases level,+,[136]
+SMPD1_kerat,Ceramide_kerat,Increases level,increases level,+,NetProTM
+SMPD2_kerat,Ceramide_kerat,increases level,increases level,+,NetProTM
+SOS1:GRB2:SHC1_kerat,HRAS_kerat,activates,activates,+,[72]
+SOS1:GRB2:SHC1_melan,HRAS_melan,activates,activates,+,NetProTM
+SOX10_melan,DCT_melan,increases expression,increases expression,+,[137]
+SOX10_melan,MITF_melan,increases expression,increases expression,+,[138]
+SOX10_melan,PAX3_melan,binds,binds,+,[139]
+SOX10_melan,TYR_melan,increases expression,increases expression,+,[140]
+SOX10_melan,TYRP1_melan,increases expression,increases expression,+,[141]
+SPTLC1_kerat,Ceramide_kerat,increases level,increases level,+,[142]
+SPTLC2_kerat,Ceramide_kerat,increases level,increases level,+,[142]
+SRC_kerat,EGFR_kerat,activates,activates,+,[113]
+STAT1_kerat,MMP1_kerat,increases expression,increases expression,+,NetProTM
+STAT3_kerat,BCL2_kerat,increases expression,increases expression,+,[21]
+STAT3_kerat,CCND1_kerat,increases expression,increases expression,+,[21]
+STAT3_kerat,PTGS2_kerat,increases expression,increases expression,+,[143]
+STAT3_melan,BCL2L1_melan,increases expression,increases expression,+,NetProTM
+STAT3_melan,CCND1_melan,increases expression,increases expression,+,NetProTM
+TFAP2A_kerat,ICAM1_kerat,increases expression,increases expression,+,[46]
+TFAP2A_kerat,SPTLC1_kerat,increases expression,increases expression,+,[144]
+TFAP2A_kerat,SPTLC2_kerat,increases expression,increases expression,+,[144]
+TFAP2A_kerat,TNF_kerat,decreases,decreases,-,NetProTM
+TNF_kerat,TNFRSF1A_kerat,activates,activates,+,[72]
+TNFRSF1A:NSMAF:GNB2L1_kerat,SMPD2_kerat,activates,activates,+,NetProTM
+TNFRSF1A:TRADD:FADD_kerat,CASP8_kerat,activates,activates,+,[35]
+TNFRSF1A:TRAF2:RIPK1_kerat,CDC42_kerat,activates,activates,+,NetProTM
+TNFRSF1A:TRAF2:RIPK1_kerat,IKBKA_kerat,activates,activates,+,[35]
+TNFRSF1A:TRAF2:RIPK1_kerat,MAP3K5_kerat,activates,activates,+,NetProTM
+TNFRSF1A:TRAF2:RIPK1_kerat,MAP4K2_kerat,activates,activates,+,NetProTM
+TNFRSF1A:TRAF2:RIPK1_kerat,PAK1_kerat,activates,activates,+,NetProTM
+TNFRSF1A_kerat,PLC_kerat,activates,activates,+,NetProTM
+TNFRSF1A_kerat,TNFRSF1A:NSMAF:GNB2L1_kerat,forms complex,forms complex,+,NetProTM
+TNFRSF1A_kerat,TNFRSF1A:TRADD:FADD_kerat,forms complex,forms complex,+,[35]
+TNFRSF1A_kerat,TNFRSF1A:TRAF2:RIPK1_kerat,forms complex,forms complex,+,[35]
+TP53_kerat,ACTH_kerat,increases expression,increases expression,+,[145]
+TP53_kerat,alpha_MSH_kerat,increases expression,increases expression,+,[145]
+TP53_kerat,Apoptosis_kerat,induces,induces,+,[146]
+TP53_kerat,DUSP1_kerat,increases expression,increases expression,+,[147]
+TP53_kerat,GADD45A_kerat,increases expression,increases expression,+,[148]
+TP53_melan,BBC3_melan,increases expression,increases expression,+,[149]
+TP53_melan,HIF1A_melan,increases expression,increases expression,+,NetProTM
+TP53_melan,TYR_melan,decreases expression,decreases expression,-,[148]
+TP53_melan,TYRP1_melan,increases expression,increases expression,+,[150]
+TPSAB1,F2RL1_kerat,activates,activates,+,[151]
+Trypsin,F2RL1_kerat,activates,activates,+,[151]
+TYR_melan,DOPA_melan,catalysis,catalysis,+,[48]
+TYR_melan,DOPAquinone_melan,catalysis,catalysis,+,[48]
+TYR_melan,Eumelanin_melan,Increases level,increases level,+,[48]
+TYR_melan,Indole_5_6_quinone_carboxylic_acid_melan,catalysis,catalysis,+,[48]
+TYR_melan,Indole_5_6_quinone_melan,catalysis,catalysis,+,[48]
+Tyrosine_melan,DOPA_melan,catalysis,catalysis,+,[48]
+TYRP1_melan,Indole_5_6_quinone_carboxylic_acid_melan,catalysis,catalysis,+,[48]
+USF1_melan,ACTH_melan,increases,increases,+,[92]
+USF1_melan,alpha_MSH_melan,increases,increases,+,[92]
+USF1_melan,MC1R_melan,increases,increases,+,[92]
+UVA,Lipid_Peroxidation_kerat,induces,induces,+,[152]
+UVA,ROS_kerat,induces,induces,+,[153]
+UVA,Singlet_oxygen_kerat,increases level,increases level,+,[136]
+UVB,FICZ_kerat,increases level,increases level,+,[5]
+UVB,Lipid_Peroxidation_kerat,induces,induces,+,[154]
+UVB,SMPD2_kerat,inhibits,inhibits,-,[88]
+WNT5A,FZD3_melan,activates,activates,+,"[68],[155]"

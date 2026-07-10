@@ -1,0 +1,62 @@
+# =============================================================================
+# .gitignore — pigmentation gene-network repo
+# Withholds material that CANNOT be redistributed. Redistribution policy and
+# per-file rulings: DATA_SOURCES.md ("Redistribution policy") and
+# data/raw/papers/REFERENCES.md. This file is deliberately TARGETED, not a
+# blanket "*.pdf" — some PDFs (Raghunath CC-BY paper, HIrisPlex webtool manual)
+# and the Bajpai Table S1 .xlsx (CC BY via PMC) ARE committed; the Baxter Table S7
+# .xlsx is WITHHELD (Wiley subscription, no open copy). See tools/hooks/compliance-allowlist.txt.
+# =============================================================================
+
+# --- Publisher full-text articles: cited by DOI, NEVER committed ---
+# data/raw/papers/ holds REFERENCES.md only.
+data/raw/papers/*
+!data/raw/papers/
+!data/raw/papers/REFERENCES.md
+
+# HIrisPlex-S — Chaitanya 2018 (Elsevier) full text + mmc supplements.
+# NOTE: the free Erasmus MC Webtool Manual in the SAME folder IS committed.
+data/raw/hirisplexs2018/1-s2.0-S1872497318302205-main.pdf
+data/raw/hirisplexs2018/mmc*.pdf
+
+# Bajpai 2023 (Science/AAAS) — Table S1 .xlsx IS committed: the identical data
+# table is a supplementary file of the CC BY 4.0 PMC deposit (PMC10901463,
+# license_ref=ccbylicense), so the data is redistributable with attribution.
+# The typeset article PDF/text is NOT committed.
+data/raw/bajpai2023/*.pdf
+
+# Baxter 2018 (Wiley/PCMR) — Table S7 .xlsx is WITHHELD. It is a Version-of-Record
+# supplement under Wiley subscription copyright with NO open-license copy
+# (PMC10413850 = not Open Access; Crossref license = VOR terms only). Both the
+# article PDF and the SI .xlsx are withheld; re-obtain via DOI 10.1111/pcmr.12743
+# (see data/raw/papers/REFERENCES.md). The derived CSV in data/processed/ IS committed.
+data/raw/baxter2018/*.pdf
+data/raw/baxter2018/*.xlsx
+
+# Walsh 2017 (Springer, Hum Genet) — coefficients source, cited by DOI.
+**/walsh2017*.pdf
+
+# --- Local / environment cruft ---
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Internal working notes — not part of the published repo
+internal/
+
+# Archived documents — retired working docs, renamed with a z_archived_ prefix.
+# Standing convention (project_dashboard.md §6): a retired document is renamed
+# z_archived_<name> and moved to internal/archive/. These are never committed to
+# the public repo. The prefix rule is belt-and-suspenders with internal/ above,
+# and also catches any z_archived_ file that lands outside internal/ by mistake.
+z_archived_*
+**/z_archived_*
+internal/archive/
+
+/.quarto/
+**/*.quarto_ipynb
+# Quarto rendered site output — a build artifact; regenerate with `quarto render`
+/_site/

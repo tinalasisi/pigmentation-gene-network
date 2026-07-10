@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+# Pre-commit compliance check — pigmentation gene-network repo.
+# CONSERVATIVE, BLOCKING: if a staged file looks copyrighted or
+# non-redistributable, it ABORTS the commit (exit 1) so you get a beat to
+# fix it before anything enters history. Override with: git commit --no-verify
+# It is a safety stop backed by the REPO_COMPLIANCE_GATE specialist.
+#
+# Install: tools/hooks/install-hooks.sh   (or: git config core.hooksPath tools/hooks)
+#
+# "I checked, this file is fine" — two ways to clear a flag:
+#   1. Durable + on the record: add the path (or a glob) to
+#      tools/hooks/compliance-allowlist.txt. That file is tracked in git, so
+#      the clearance is auditable and persists across commits.
+#   2. One-off: git commit --no-verify  (skips this check for one commit).
+
+set -u
+
+# --- what looks non-shareable (heuristics; the gate makes the real ruling) ---
+# File extensions that are usually copyrighted documents / supplements.
+EXT_RE='\.(pdf|docx?|xlsx?|pptx?)$'
+# Path fragments the project treats as withheld-by-convention.
+PATH_RE='(^|/)(data/raw/papers/|.*full[_-]?text|.*supplement)'
+
+# --- reviewed-and-cleared allowlist ("I checked, we're good") ---
+# One path or glob per line; '#' starts a comment. Tracked in git = auditable.
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null || echo .)"
+ALLOWLIST="$ROOT/tools/hooks/compliance-allowlist.txt"
+is_allowlisted() {  # $1 = repo-relative path; 0 if a cleared pattern matches
+  [ -f "$ALLOWLIST" ] || return 1
+  local pat
+  while IFS= read -r pat; do
+    pat="${pat%%#*}"; pat="${pat#"${pat%%[![:space:]]*}"}"; pat="${pat%"${pat##*[![:space:]]}"}"
+    [ -z "$pat" ] && continue
+    # shellcheck disable=SC2254
+    case "$1" in $pat) return 0 ;; esac
+  done < "$ALLOWLIST"
+  return 1
+}
+
+staged="$(git diff --cached --name-only --diff-filter=AM)"
+[ -z "$staged" ] && exit 0
+
+flagged=""
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  if printf '%s\n' "$f" | grep -Eiq "$EXT_RE" || printf '%s\n' "$f" | grep -Eiq "$PATH_RE"; then
+    # Exempt anything explicitly whitelisted as shareable (REFERENCES/README/spec files).
+    case "$f" in
+      *REFERENCES.md|*README*|*.spec.md) continue ;;
+    esac
+    # Skip files the author has reviewed and cleared on the record.
+    is_allowlisted "$f" && continue
+    flagged="${flagged}${f}"$'\n'
+  fi
+done <<< "$staged"
+
+if [ -n "$flagged" ]; then
+  {
+    echo ""
+    echo "============================================================"
+    echo " PRE-COMMIT COMPLIANCE STOP (commit blocked)"
+    echo "============================================================"
+    echo " These staged files may be copyrighted or non-redistributable:"
+    echo ""
+    printf '%s' "$flagged" | sed 's/^/   • /'
+    echo ""
+    echo " Before pushing to GitHub, run the REPO_COMPLIANCE_GATE specialist:"
+    echo "   - confirm each file's redistribution status against DATA_SOURCES/license"
+    echo "   - if it cannot be shared: add it to .gitignore and document it in the"
+    echo "     nearest local README + the top-level README (DOI, description,"
+    echo "     exact expected filename for papers/supplements)."
+    echo ""
+    echo " Already reviewed and it IS fine to share? Two ways to clear it:"
+    echo "   • durable + on the record: add the path to"
+    echo "       tools/hooks/compliance-allowlist.txt"
+    echo "   • one-off: git commit --no-verify"
+    echo "============================================================"
+    echo ""
+  } >&2
+  exit 1   # block: give the author a beat to fix before it enters history
+fi
+
+exit 0   # nothing flagged — allow the commit

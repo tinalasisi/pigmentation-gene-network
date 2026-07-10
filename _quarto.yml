@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - docs/NB3_case_assembly_provenance.qmd
+
+website:
+  title: "Pigmentation gene-network build"
+  description: "An expanded, gene-level pigmentation network for genotype→phenotype discordance"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: docs/NB3_case_assembly_provenance.qmd
+        text: Case-set provenance
+  page-footer:
+    left: "Pigmentation gene-network build · MIT (code) · CC-BY sources cited by DOI"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    embed-resources: false
+    # Keep the site self-contained and offline-reproducible: don't fetch web fonts at render.
+    mainfont: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+
+# Documents are rendered as authored: cells marked `eval: false` stay frozen. Nothing on
+# this site executes live network calls or reads withheld files on render.
+execute:
+  freeze: auto
