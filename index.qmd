@@ -1,32 +1,21 @@
 ---
-title: "Pigmentation gene-network build"
+title: "Pigmentation Gene Network"
 ---
 
-An expanded, gene-level pigmentation network — built from the Raghunath (2015) directed model plus
-pigmentation genes discovered since — used to produce a network-derived, ranked list of candidate modifier
-genes ("GWAS by node") that explains why genotype→phenotype prediction succeeds for some people and fails
-for others.
+A reconstructed, gene-resolved network of published pigmentation
+genotype→phenotype findings, with a curated validation-case set.
 
-Pigmentation is the instrument because its environmental variance is near-zero and its heritability is high,
-so discordance is almost purely a genetic-architecture phenomenon — a clean model system for the
-genotype→phenotype map.
+## Contents
 
-## The finding
+- **[1 · Reconstruct network](notebooks/01_reconstruct_published_network.ipynb)** —
+  assemble the published network (nodes and signed, sourced edges).
+- **[2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** —
+  resolve network entities to canonical genes.
+- **[3 · Case provenance](docs/NB3_case_assembly_provenance.md)** —
+  acquisition and extraction record for the validation cases.
 
-A signed directed network that explains genotype→phenotype discordance in **both directions** with the same
-machinery:
-
-- **D1 — genotype without phenotype:** a causal variant is present but modifier-node states block the path
-  to the pigment endpoint (incomplete penetrance / epistasis).
-- **D2 — phenotype without the usual genotype:** the phenotype is present but the catalogued causal variant
-  is absent — the endpoint is reachable by alternative routes.
-
-## This site
-
-- **[Case-set provenance](docs/NB3_case_assembly_provenance.qmd)** — how the 13-paper validation-case set
-  was acquired, extracted, and direction-classified (694 records; 3 D1 / 5 D2 / 5 both). Authored as a frozen
-  Quarto document: the extractor code is shown for provenance but does not run on render.
-
-Authoritative project documents live in the repository: `README.md` (public rebuild guide),
-`project_dashboard.md` (internal control surface), `DATA_SOURCES.md` (provenance manifest). Data provenance
-for every node and edge traces to a recorded source.
+::: {.callout-note}
+This site is built from the committed notebooks by GitHub Actions and served on
+GitHub Pages. Pages show results computed on the author's machine; notebooks are
+not re-executed at build time.
+:::

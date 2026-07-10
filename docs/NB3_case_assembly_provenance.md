@@ -1,24 +1,9 @@
----
-title: "Assemble the validation-case set — provenance record"
-subtitle: "13 published pigmentation genotype→phenotype-discordance cases: acquisition, extraction, and classification"
-date: 2026-07-10
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    code-fold: false
-    embed-resources: true
-# This is a supplementary methods/provenance document, not a pipeline that runs on render.
-# The execution engine is DISABLED at the document level (execute.enabled: false) so the page
-# renders — with the code shown — without starting a kernel or reading the gitignored source
-# PDFs. The cells stay authored as {python} so a reader can re-enable execution deliberately
-# (see "Re-running the extraction"). To re-run: quarto render ... -M execute:enabled:true
-execute:
-  enabled: false
-  echo: true
----
+# Assemble the validation-case set — provenance record
 
-**Type:** notebook-level methods record (reconstructed after the fact), authored as a frozen Quarto document — the code is shown for provenance and is not executed on render.
+_13 published pigmentation genotype→phenotype-discordance cases: acquisition, extraction, and classification. Date: 2026-07-10._
+
+
+**Type:** notebook-level methods record (reconstructed after the fact), the code is shown for provenance and is not meant to be executed as part of viewing this document.
 
 **Status of the underlying work:** ✅ complete — 13 papers acquired, extracted, and consolidated into a classification table. This document reconstructs the *process* that produced those outputs so the step is rebuildable and auditable; it was not written contemporaneously.
 
@@ -26,9 +11,9 @@ execute:
 
 **What this step produces (the nameable result):** a curated, direction-classified set of 13 published genotype→phenotype-discordance cases spanning skin, hair, eye-colour, and syndromic pigmentation, with per-paper genetic-record tables and verbatim direction evidence. This is the empirical case base the finding is validated against. How it feeds the downstream analysis (case-gene manifest + causal resolution, the payoff figure, and machine-checkable validation) is part of a proposed notebook structure that is **not yet agreed** — see `project_dashboard.md` §2. The dataset itself is complete and agreed; its placement as a numbered notebook is tentative.
 
-::: {.callout-note title="On the filename and the \"NB3\" label"}
-This document's filename carries "NB3", but the notebook structure beyond NB2 is **not yet agreed** (see `project_dashboard.md` §2). The case-assembly work is complete and agreed as a dataset; whether it becomes a numbered notebook, and what number, is a PI decision that has not been made. The "NB3" in the filename is a working label, not a settled position.
-:::
+> **Note — On the filename and the "NB3" label**
+>
+> This document's filename carries "NB3", but the notebook structure beyond NB2 is **not yet agreed** (see `project_dashboard.md` §2). The case-assembly work is complete and agreed as a dataset; whether it becomes a numbered notebook, and what number, is a PI decision that has not been made. The "NB3" in the filename is a working label, not a settled position.
 
 ## 1. Acquisition — the 13 papers
 
@@ -90,12 +75,9 @@ Note the `source_table` on that row names a "condensed PMC full-text capture" �
 
 ### The extraction driver (frozen)
 
-The code below is the per-paper extraction entry point. It is **frozen** (`eval: false`): it is shown for provenance and does **not** run on render, because it reads the publisher PDFs under `data/raw/papers/`, which are **withheld from the repository** (see §5). To execute it you must first obtain the papers (see [Re-running the extraction](#re-running-the-extraction)).
+The code below is the per-paper extraction entry point. It is shown for provenance and is **not** executed as part of viewing this document, because it reads the publisher PDFs under `data/raw/papers/`, which are **withheld from the repository** (see §5). To execute it you must first obtain the papers (see [Re-running the extraction](#re-running-the-extraction)).
 
-```{python}
-#| label: extraction-driver
-#| eval: false
-#| echo: true
+```python
 # FROZEN — requires the withheld publisher PDFs under data/raw/papers/<tag>/.
 # Extraction was performed by one GENETICS_DATA_EXTRACTOR specialist per paper (a fan-out),
 # each reading exactly one paper's authoritative PDF (pages viewed as images where tables
@@ -133,6 +115,7 @@ def extract_one_paper(folder: Path) -> None:
 # one specialist per paper — the fan-out that produced the committed EXTRACT_* files
 for folder in sorted(p for p in PAPERS.iterdir() if p.is_dir()):
     extract_one_paper(folder)
+
 ```
 
 ## 3. The md→PDF correction (documented decision point)
@@ -196,10 +179,7 @@ The canonical record total is **694** — the sum of `n_records_extracted` in th
 
 The reconciliation check is a small, committed-input computation — shown here frozen (it renders without executing), runnable once you have the repo checked out:
 
-```{python}
-#| label: record-count-reconciliation
-#| eval: false
-#| echo: true
+```python
 # Reads ONLY committed files (no papers, no network). Rebuilds the §6 total and checks that
 # each paper's n_records_extracted equals the row count of its committed EXTRACT_*_records.csv.
 import pandas as pd
@@ -217,6 +197,7 @@ mismatch = check.loc[check["n_records_extracted"] != check["committed"]]
 assert mismatch.empty, f"row-count mismatch:\n{mismatch[['paper','n_records_extracted','committed']]}"
 print("direction tally:", cls["discordance_direction"].value_counts().to_dict())  # 3 D1 / 5 D2 / 5 both
 print("canonical record total:", int(cls["n_records_extracted"].sum()))            # 694
+
 ```
 
 ## 7. Implicit choices found that are NOT yet documented — PI sign-off needed
@@ -247,7 +228,7 @@ Given the committed artifacts (no paper files, no live network):
 The extractor cell in §2 is frozen because it depends on the withheld publisher PDFs. To re-run it:
 
 1. **Obtain the papers.** For each entry in `data/raw/papers/REFERENCES.md`, download the paper from its DOI and save it under the **exact expected filename** the README lists, in `data/raw/papers/<tag>/`. Most are open-access; the two Norton papers (Wiley) have no open copy and must come via institutional proxy, interlibrary loan, or author request.
-2. **Unfreeze deliberately.** Either remove `eval: false` from the `extraction-driver` cell, or render the whole document with execution on: `quarto render docs/NB3_case_assembly_provenance.qmd -M execute:enabled:true`. Do this only with the papers in place — otherwise the driver raises `FileNotFoundError` by design, pointing back to `REFERENCES.md`.
+2. **Run the extraction deliberately.** Execute the `extraction-driver` code above in a notebook or script. Do this only with the papers in place — otherwise the driver raises `FileNotFoundError` by design, pointing back to `REFERENCES.md`.
 3. **The committed record-count cell (§6) needs no papers** — it reads only committed files and can be run any time to verify the 694 total and the 3 D1 / 5 D2 / 5 both tally.
 
 ---

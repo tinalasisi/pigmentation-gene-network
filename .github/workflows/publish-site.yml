@@ -1,0 +1,45 @@
+# Renders the Quarto site from committed notebook outputs (no kernel) and
+# deploys to GitHub Pages via the native Pages-from-Actions path.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One in-flight deploy at a time; don't cancel a running publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      # No Python/kernel: _quarto.yml sets execute.enabled=false, so Quarto
+      # renders the outputs already stored in the notebooks. If you later want
+      # CI to execute notebooks, add actions/setup-python + deps and flip
+      # execute.enabled, but only for notebooks whose inputs are committed.
+      - name: Render
+        run: quarto render
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site        # must equal project.output-dir in _quarto.yml
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

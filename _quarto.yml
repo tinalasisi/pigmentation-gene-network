@@ -1,31 +1,36 @@
 project:
   type: website
   output-dir: _site
+  # Explicit render list: only these documents become the site. The extract
+  # notebooks (01a-01d) are pipeline steps that read withheld inputs and carry
+  # no stored outputs, so they are deliberately NOT rendered.
   render:
     - index.qmd
-    - docs/NB3_case_assembly_provenance.qmd
+    - notebooks/01_reconstruct_published_network.ipynb
+    - notebooks/02_resolve_network_to_genes.ipynb
+    - docs/NB3_case_assembly_provenance.md
 
 website:
-  title: "Pigmentation gene-network build"
-  description: "An expanded, gene-level pigmentation network for genotype→phenotype discordance"
+  title: "Pigmentation Gene Network"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - href: docs/NB3_case_assembly_provenance.qmd
-        text: Case-set provenance
-  page-footer:
-    left: "Pigmentation gene-network build · MIT (code) · CC-BY sources cited by DOI"
+      - href: notebooks/01_reconstruct_published_network.ipynb
+        text: "1 · Reconstruct network"
+      - href: notebooks/02_resolve_network_to_genes.ipynb
+        text: "2 · Resolve to genes"
+      - href: docs/NB3_case_assembly_provenance.md
+        text: "3 · Case provenance"
 
 format:
   html:
     theme: cosmo
     toc: true
-    embed-resources: false
-    # Keep the site self-contained and offline-reproducible: don't fetch web fonts at render.
-    mainfont: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+    code-fold: true
 
-# Documents are rendered as authored: cells marked `eval: false` stay frozen. Nothing on
-# this site executes live network calls or reads withheld files on render.
+# No kernel, no network, no withheld data at render time: Quarto renders the
+# outputs already stored in the committed notebooks. This is why the CI build
+# cannot fail on execution. Notebooks are re-executed only on your own machine.
 execute:
-  freeze: auto
+  enabled: false
