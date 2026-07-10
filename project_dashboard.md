@@ -301,8 +301,9 @@ Their content is either absorbed here or preserved as a dated archive record; no
 
 ## 7. File custody — assembled repo (MVP)
 
-The project has been assembled into the git repository at `pigmentation-gene-network/` (62 files, staged, not
-yet committed — a compliance gate runs first). Paths below are the real repo locations; the pinned version IDs
+The project has been assembled into the git repository at `pigmentation-gene-network/` and committed
+(2026-07-10, commit `74f472b`, 65 files, after clearing the REPO_COMPLIANCE_GATE; `internal/` and
+`z_archived_*` excluded). Paths below are the real repo locations; the pinned version IDs
 identify the artifact each file was written from. The full per-file inventory across all conversations is
 regenerable via the `project-file-dashboard` skill.
 
