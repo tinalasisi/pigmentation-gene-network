@@ -1,0 +1,169 @@
+TY  - JOUR
+TI  - GeneMANIA: a real-time multiple association network integration algorithm for predicting gene function
+AU  - Sara Mostafavi
+PY  - 2008
+JO  - Genome biology
+DO  - 10.1186/gb-2008-9-s1-s4
+AN  - PMID:18613948
+N1  - framing:A_network_medicine; cited_by:1127
+ER  - 
+
+TY  - JOUR
+TI  - Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network
+AU  - Yongjin Li
+PY  - 2010
+JO  - Bioinformatics
+DO  - 10.1093/bioinformatics/btq108
+AN  - PMID:20215462
+N1  - framing:A_network_medicine; cited_by:448
+ER  - 
+
+TY  - JOUR
+TI  - Prioritizing candidate disease genes by network-based boosting of genome-wide association data
+AU  - Insuk Lee
+PY  - 2011
+JO  - Genome Research
+DO  - 10.1101/gr.118992.110
+AN  - PMID:21536720
+N1  - framing:A_network_medicine; cited_by:715
+ER  - 
+
+TY  - JOUR
+TI  - Functional mapping and annotation of genetic associations with FUMA
+AU  - Kyoko Watanabe
+PY  - 2017
+JO  - Nature Communications
+DO  - 10.1038/s41467-017-01261-5
+AN  - PMID:29184056
+N1  - framing:B_locus_to_gene; cited_by:4513
+ER  - 
+
+TY  - JOUR
+TI  - Modeling polypharmacy side effects with graph convolutional networks
+AU  - Marinka Žitnik
+PY  - 2018
+JO  - Bioinformatics
+DO  - 10.1093/bioinformatics/bty294
+AN  - PMID:29949996
+N1  - framing:C_graph_ml_kg; cited_by:1398
+ER  - 
+
+TY  - JOUR
+TI  - A knowledge graph approach to predict and interpret disease-causing gene interactions
+AU  - Alexandre Renaux
+PY  - 2023
+JO  - BMC Bioinformatics
+DO  - 10.1186/s12859-023-05451-5
+AN  - PMID:37644440
+N1  - framing:C_graph_ml_kg; cited_by:26
+ER  - 
+
+TY  - JOUR
+TI  - Biomedical knowledge graph learning for drug repurposing by extending guilt-by-association to multiple layers
+AU  - Dongmin Bang
+PY  - 2023
+JO  - Nature Communications
+DO  - 10.1038/s41467-023-39301-y
+AN  - PMID:37322032
+N1  - framing:C_graph_ml_kg; cited_by:109
+ER  - 
+
+TY  - JOUR
+TI  - Predicting disease-causing variant combinations
+AU  - Sofia Papadimitriou
+PY  - 2019
+JO  - Proceedings of the National Academy of Sciences
+DO  - 10.1073/pnas.1815601116
+AN  - PMID:31127050
+N1  - framing:D_penetrance_modifier; cited_by:112
+ER  - 
+
+TY  - JOUR
+TI  - Polygenic background modifies penetrance of monogenic variants for tier 1 genomic conditions
+AU  - Akl C. Fahed
+PY  - 2020
+JO  - Nature Communications
+DO  - 10.1038/s41467-020-17374-3
+AN  - PMID:32820175
+N1  - framing:D_penetrance_modifier; cited_by:483
+ER  - 
+
+TY  - JOUR
+TI  - Determinants of penetrance and variable expressivity in monogenic metabolic conditions across 77,184 exomes
+AU  - Julia K. Goodrich
+PY  - 2021
+JO  - Nature Communications
+DO  - 10.1038/s41467-021-23556-4
+AN  - PMID:34108472
+N1  - framing:D_penetrance_modifier; cited_by:110
+ER  - 
+
+TY  - JOUR
+TI  - Polygenic risk alters the penetrance of monogenic kidney disease
+AU  - Atlas Khan
+PY  - 2023
+JO  - Nature Communications
+DO  - 10.1038/s41467-023-43878-9
+AN  - PMID:38097619
+N1  - framing:D_penetrance_modifier; cited_by:66
+ER  - 
+
+TY  - JOUR
+TI  - Six Degrees of Epistasis: Statistical Network Models for GWAS
+AU  - Brett A. McKinney
+PY  - 2012
+JO  - Frontiers in Genetics
+DO  - 10.3389/fgene.2011.00109
+AN  - PMID:22303403
+N1  - framing:E_boolean_signed; cited_by:65
+ER  - 
+
+TY  - JOUR
+TI  - Genetic interaction networks: better understand to better predict
+AU  - Benjamin Boucher
+PY  - 2013
+JO  - Frontiers in Genetics
+DO  - 10.3389/fgene.2013.00290
+AN  - PMID:24381582
+N1  - framing:E_boolean_signed; cited_by:121
+ER  - 
+
+TY  - JOUR
+TI  - The Conditional Nature of Genetic Interactions: The Consequences of Wild-Type Backgrounds on Mutational Interactions in a Genome-Wide Modifier Screen
+AU  - Sudarshan Chari
+PY  - 2013
+JO  - PLoS Genetics
+DO  - 10.1371/journal.pgen.1003661
+AN  - PMID:23935530
+N1  - framing:E_boolean_signed; cited_by:87
+ER  - 
+
+TY  - JOUR
+TI  - Signaling Pathways in Melanogenesis
+AU  - Stacey Ann N. D’mello
+PY  - 2016
+JO  - International Journal of Molecular Sciences
+DO  - 10.3390/ijms17071144
+AN  - PMID:27428965
+N1  - framing:F_pigmentation; cited_by:1044
+ER  - 
+
+TY  - JOUR
+TI  - Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations
+AU  - Alicia R. Martin
+PY  - 2017
+JO  - The American Journal of Human Genetics
+DO  - 10.1016/j.ajhg.2017.03.004
+AN  - PMID:28366442
+N1  - framing:G_prs_architecture; cited_by:1568
+ER  - 
+
+TY  - JOUR
+TI  - Trans Effects on Gene Expression Can Drive Omnigenic Inheritance
+AU  - Xuanyao Liu
+PY  - 2019
+JO  - Cell
+DO  - 10.1016/j.cell.2019.04.014
+AN  - PMID:31051098
+N1  - framing:G_prs_architecture; cited_by:607
+ER  - 

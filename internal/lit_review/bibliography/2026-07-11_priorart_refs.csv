@@ -1,0 +1,18 @@
+framing,first_author,year,title,source,doi,pmid,cited_by,n_authors,retracted
+A_network_medicine,Sara Mostafavi,2008,GeneMANIA: a real-time multiple association network integration algorithm for predicting gene function,Genome biology,10.1186/gb-2008-9-s1-s4,18613948,1127,5,False
+A_network_medicine,Yongjin Li,2010,Genome-wide inferring gene–phenotype relationship by walking on the heterogeneous network,Bioinformatics,10.1093/bioinformatics/btq108,20215462,448,2,False
+A_network_medicine,Insuk Lee,2011,Prioritizing candidate disease genes by network-based boosting of genome-wide association data,Genome Research,10.1101/gr.118992.110,21536720,715,5,False
+B_locus_to_gene,Kyoko Watanabe,2017,Functional mapping and annotation of genetic associations with FUMA,Nature Communications,10.1038/s41467-017-01261-5,29184056,4513,4,False
+C_graph_ml_kg,Marinka Žitnik,2018,Modeling polypharmacy side effects with graph convolutional networks,Bioinformatics,10.1093/bioinformatics/bty294,29949996,1398,3,False
+C_graph_ml_kg,Alexandre Renaux,2023,A knowledge graph approach to predict and interpret disease-causing gene interactions,BMC Bioinformatics,10.1186/s12859-023-05451-5,37644440,26,6,False
+C_graph_ml_kg,Dongmin Bang,2023,Biomedical knowledge graph learning for drug repurposing by extending guilt-by-association to multiple layers,Nature Communications,10.1038/s41467-023-39301-y,37322032,109,4,False
+D_penetrance_modifier,Sofia Papadimitriou,2019,Predicting disease-causing variant combinations,Proceedings of the National Academy of Sciences,10.1073/pnas.1815601116,31127050,112,10,False
+D_penetrance_modifier,Akl C. Fahed,2020,Polygenic background modifies penetrance of monogenic variants for tier 1 genomic conditions,Nature Communications,10.1038/s41467-020-17374-3,32820175,483,17,False
+D_penetrance_modifier,Julia K. Goodrich,2021,"Determinants of penetrance and variable expressivity in monogenic metabolic conditions across 77,184 exomes",Nature Communications,10.1038/s41467-021-23556-4,34108472,110,100,False
+D_penetrance_modifier,Atlas Khan,2023,Polygenic risk alters the penetrance of monogenic kidney disease,Nature Communications,10.1038/s41467-023-43878-9,38097619,66,8,False
+E_boolean_signed,Brett A. McKinney,2012,Six Degrees of Epistasis: Statistical Network Models for GWAS,Frontiers in Genetics,10.3389/fgene.2011.00109,22303403,65,2,False
+E_boolean_signed,Benjamin Boucher,2013,Genetic interaction networks: better understand to better predict,Frontiers in Genetics,10.3389/fgene.2013.00290,24381582,121,2,False
+E_boolean_signed,Sudarshan Chari,2013,The Conditional Nature of Genetic Interactions: The Consequences of Wild-Type Backgrounds on Mutational Interactions in a Genome-Wide Modifier Screen,PLoS Genetics,10.1371/journal.pgen.1003661,23935530,87,2,False
+F_pigmentation,Stacey Ann N. D’mello,2016,Signaling Pathways in Melanogenesis,International Journal of Molecular Sciences,10.3390/ijms17071144,27428965,1044,4,False
+G_prs_architecture,Alicia R. Martin,2017,Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations,The American Journal of Human Genetics,10.1016/j.ajhg.2017.03.004,28366442,1568,9,False
+G_prs_architecture,Xuanyao Liu,2019,Trans Effects on Gene Expression Can Drive Omnigenic Inheritance,Cell,10.1016/j.cell.2019.04.014,31051098,607,3,False

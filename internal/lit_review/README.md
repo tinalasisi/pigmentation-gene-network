@@ -38,10 +38,17 @@ locked in prose. Every entry carries a resolvable DOI or PMID.
   an actual connector result — not a recalled citation.
 - **DOI/PMID only, no copyrighted full text.** This folder is public; do not paste article full text or
   withheld supplements. Cite by identifier, following the repo's redistribution policy (`DATA_SOURCES.md`).
-- **Commits go through `REPO_COMPLIANCE_GATE`.** Files are written and organized here; the actual commit is
-  gated separately (see the `precommit-compliance-gate` skill).
+- **Commits follow the tiered pre-commit gate** (`precommit-compliance-gate` skill). Prose docs here
+  (`.md`) are **Tier 1** — a fast local self-check, commit directly. Adding a **new** data-type file to
+  `bibliography/` (`.csv`, `.ris`, `.bib`) is **Tier 2** — route that commit through `REPO_COMPLIANCE_GATE`.
+  All references are DOI/PMID metadata only (no article full text), so redistribution risk is nil either way.
 
 ## Current contents
 
 - `2026-07-11_1222_SCOPING_ideas_and_prior_art_map.md` — scoping of the project's ideas and the prior-art
   framings (A–H) to search; framing H (sex-hormone × primate expansion) is deferred per `TODO.md` (c) D4.
+- `2026-07-11_1308_PRIORART_MAP_cross_field.md` — the cross-field prior-art map: 17 connector-verified close
+  works across framings A–G, each tagged Overlaps / Adjacent / Background against the project's claim.
+- `2026-07-11_1308_NOVELTY_RISK_top_claims.md` — novelty-risk memo on the top-4 exposed claims (does each
+  survive its closest prior art, and on what distinction).
+- `bibliography/2026-07-11_priorart_refs.csv` / `.ris` — the 17 verified references, machine-readable.
