@@ -201,3 +201,29 @@ outcomes of this proposal, not decided results.
   literature** for mechanistic edge creation; **Bajpai / Baxter / GWAS Catalog / HIrisPlex-S** as per-gene
   evidence tags only, never as a source of mechanistic edges) are intended to feed the *proposed* downstream
   work above, and their notebook assignments depend on a structure not yet agreed.
+
+## Publishing the research website (one-time GitHub setup)
+
+The site is built and deployed by `.github/workflows/publish-site.yml` on every push to
+`main` (Quarto renders the committed notebook outputs — no kernel — and deploys via the
+native Pages-from-Actions path). The workflow provisions the Pages site itself
+(`configure-pages` runs with `enablement: true`), so no manual step is strictly required
+before the first push. If the first run still fails at the `Get Pages site` step, a
+repository admin does this once in the GitHub UI:
+
+1. **Settings → Pages → Build and deployment → Source:** confirm it reads **GitHub
+   Actions** (not "Deploy from a branch"). `enablement: true` creates a missing Pages site
+   automatically, but it will not flip an existing *branch* source — a repo previously
+   configured for "Deploy from a branch" must be switched here by hand once.
+2. **Settings → Actions → General → Workflow permissions:** ensure Actions are allowed to
+   run for the repository.
+3. Push to `main` (or **Actions → Publish site → Run workflow**). On success the **deploy**
+   job prints the live URL.
+4. The site is served at `https://tinalasisi.github.io/pigmentation-gene-network/`. Confirm
+   it loads and that no withheld file is reachable.
+
+The *"Node 20 is being deprecated / running with Node 24 by default"* line the runner
+prints is a warning, not an error; the pinned actions run on Node 24. If a run fails just
+after it, read the next `Error:` line for the real cause. Preview locally with `quarto
+preview` / `quarto render` on your own machine — Quarto does not run in the Claude Science
+sandbox.

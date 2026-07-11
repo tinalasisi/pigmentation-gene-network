@@ -30,6 +30,12 @@ jobs:
       - name: Render
         run: quarto render
       - uses: actions/configure-pages@v5
+        with:
+          # Self-provision the Pages site via the API on the first run, so this
+          # step does not hard-fail ("Get Pages site failed ... Not Found") when
+          # Settings -> Pages -> Source has not yet been set to "GitHub Actions"
+          # by hand. Authorized by the pages:write + id-token:write perms above.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site        # must equal project.output-dir in _quarto.yml
