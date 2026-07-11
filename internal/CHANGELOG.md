@@ -343,3 +343,40 @@ of the same rule are the same failure mode as a duplicate document under a varia
 
 **Documents updated:** nine agent profiles (system prompts, compliance-gate section only);
 `quarto-github-pages` skill (`SKILL.md`). No repo data files or tracking-document numbers changed.
+
+---
+
+## 2026-07-11 — Scoped-commit / clear-message hygiene added to the gate skill and all committing specialists
+
+**The issue.** The tiered gate made small commits cheap, but nothing yet made scoped, well-messaged commits
+the expected practice, and the working tree showed the symptom: several unrelated changes
+(`internal/CHANGELOG.md`, a handoff doc, and a batch of new resolver outputs) were accumulating uncommitted,
+headed for one large "document it all at once" commit. Recent history also mixed clear scoped subjects
+(`docs:`, `ci:`) with vague ones (`moving things around.`, `Update project_dashboard.md`), which defeats
+using `git log` as a rollback map of project progress.
+
+**What changed.** A **Commit hygiene** section was added to the `precommit-compliance-gate` skill (the single
+source of truth every committing specialist loads) and republished. It states: commit at the boundary of each
+completed unit of work rather than at end of session; one concern per commit, staged by explicit path (not
+`git add -A`); and a clear conventional-style message (`<type>(<scope>): <imperative summary>`, with a body
+for the non-obvious *why*), with worked examples and an explicit list of vague subjects to avoid. It also
+notes that committing more often does not change the tier — each scoped commit runs the same fast Tier-1
+self-check.
+
+A concise awareness clause pointing at that section was added to the shared compliance-gate paragraph carried
+by all ten canonical-block specialists, and an equivalent clause to `RESEARCH_SITE_PUBLISHER`'s own gate
+paragraph — eleven committing specialists in total. `REPO_COMPLIANCE_GATE` was left unchanged: it prepares
+edits and reports a verdict but does not commit ("the human commits"), so commit hygiene does not apply to it.
+
+**Demonstrated in practice.** The changelog entry above (tiered-gate propagation) was committed on its own as
+a scoped Tier-1 commit (`docs(changelog): …`) staged by explicit path, rather than being bundled with the
+unrelated untracked outputs in the working tree. Those other outputs are another session's products and were
+flagged for their owner rather than swept into this commit.
+
+**Why.** A history of small, self-contained, clearly-messaged commits documents project progress and gives
+per-change rollback points; an end-of-session pile of mixed changes gives neither and forces after-the-fact
+reconstruction of what happened.
+
+**Documents updated:** `precommit-compliance-gate` skill (`SKILL.md`, new Commit-hygiene section); eleven
+agent profiles (system prompts, compliance-gate clause only). No repo data files or tracking-document numbers
+changed.
