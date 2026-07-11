@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "scripts/build_resolver_manifest.py",
+  "direction_gloss": {
+    "D1": "genotype-present, phenotype-absent (canonical causal variant present, phenotype absent - reduced penetrance; modifier nodes block the path)",
+    "D2": "phenotype-present, genotype-absent (phenotype without the canonical variant - an alternative gene/route reaches the endpoint)",
+    "both": "both D1 and D2 evidence catalogued for this gene",
+    "mixed": "direction varies across the papers citing this gene"
+  },
+  "provenance": {
+    "locus_nodes": "data/processed/locus_nodes.csv",
+    "locus_annotation_edges": "data/processed/locus_annotation_edges.csv",
+    "backbone_nodes": "data/processed/gene_network_nodes.csv",
+    "backbone_edges": "data/processed/gene_network_edges.csv",
+    "case_direction": "data/processed/discordance_case_classification.csv + case_gene_coverage_master.csv",
+    "case_text": "data/case_records/EXTRACT_*.csv"
+  },
+  "caveats": [
+    "OCA2 has a single backbone edge (MITF->OCA2); HERC2 is not a backbone node. D1/D2 are NOT computed by graph traversal - they are the pre-registered, cited case classification. The network panel DISPLAYS the subgraph as mechanistic context, it does not derive direction.",
+    "rs12913832 and rs1800401 positions are in DIFFERENT genome builds (GRCh38 vs GRCh37); display the shared cytoband 15q13.1 rather than bare bp, or liftover first.",
+    "rs12913832 was NOT genome-wide significant in the Ang2023 Kalinago cohort (P_adj=0.075); the HERC2->OCA2 enhancer mechanism is the cited external finding (PMID:22234890, Visser 2012), not a Kalinago result."
+  ],
+  "examples": [
+    {
+      "id": "herc2_oca2_eye",
+      "title": "rs12913832: HERC2-labelled, OCA2-regulating (eye colour)",
+      "thesis": "The SNP's nearest-gene label (HERC2) is not its functional target (OCA2). A naive nearest-gene tool stops at HERC2; the cited regulatory evidence redirects to OCA2, which is in the mechanistic network.",
+      "locus": {
+        "locus_id": "rs12913832",
+        "chrom": "15",
+        "position": "28120472",
+        "genome_build": "GRCh38",
+        "region": "15q13.1",
+        "nearest_gene_label": "HERC2",
+        "gene_label_basis": "nearest_gene_by_position",
+        "traits": "eye colour; skin pigmentation; hair colour; suntan; cutaneous melanoma; actinic keratosis",
+        "source_citation": "GWAS Catalog (mapped_gene HERC2); dbSNP rs12913832 (GRCh38)"
+      },
+      "annotation_edges": [
+        {
+          "locus_id": "rs12913832",
+          "gene": "HERC2",
+          "edge_type": "nearest_gene_link",
+          "evidence_type": "positional",
+          "evidence_citation": "GWAS Catalog mapped_gene (nearest gene by position); dbSNP rs12913832",
+          "directionality": "locus -> gene",
+          "notes": "Intron variant within HERC2; nearest-gene label, NOT the functional target."
+        },
+        {
+          "locus_id": "rs12913832",
+          "gene": "OCA2",
+          "edge_type": "regulatory_target",
+          "evidence_type": "functional",
+          "evidence_citation": "PMID:22234890 (Visser, Kayser & Palstra 2012, Genome Res 22:446-455, doi:10.1101/gr.128652.111)",
+          "directionality": "locus -> gene",
+          "notes": "rs12913832 sits in a HERC2 intron ~21 kb from OCA2; allele attenuates a long-range enhancer / chromatin loop regulating OCA2 transcription. Established in forensic/European pigmentation literature; in the Ang2023 Kalinago cohort this SNP was NOT genome-wide significant (P_adj=0.075) - the regulatory mechanism is the cited external finding, not a Kalinago result."
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "MITF",
+            "kind": "gene",
+            "node_class": "network_protein_gene",
+            "citation": "UniProt:O75030"
+          },
+          {
+            "id": "OCA2",
+            "kind": "gene",
+            "node_class": "network_protein_gene",
+            "citation": "UniProt:Q04671"
+          }
+        ],
+        "edges": [
+          {
+            "source": "MITF",
+            "target": "OCA2",
+            "sign": "+",
+            "edge_class": "mechanistic_projection",
+            "citation": "PMID:22234890"
+          }
+        ]
+      },
+      "resolved_target_in_network": true,
+      "nearest_gene_in_network": false,
+      "direction": {
+        "gene": "OCA2",
+        "label": "mixed",
+        "gloss": "direction varies across the papers citing this gene",
+        "detail": "D1 illustration in this locus: Pospiech2016 reports the CC (blue-associated) genotype is incompletely penetrant - a fraction of CC individuals are NOT blue-eyed (genotype-present, phenotype-absent).",
+        "source": "discordance_case_classification.csv (OCA2 direction); Pospiech2016 IrisPlex extract",
+        "citation": "Pospiech2016 Int J Legal Med (IrisPlex population); OCA2 direction from case classification"
+      },
+      "case_text": {
+        "association": "Univariate OR 0.031 (0.021\u20130.045), p=1.961\u00d710\u221272, Nagelkerke R2=55.6%; Multivariate OR 0.020 (0.013\u20130.032), p=9.055\u00d710\u221264. Correlation: 0.566/0.766 (Large), Pearson p=5.711\u00d710\u2212138 [4-cat]; 0.698/0.810 (Large), p=1.189\u00d710\u2212108 [blue/non-blue]. C allele increases odds of blue eye colour by factor 32.3; strongest predictor, rank 1",
+        "penetrance_gap": "14.3% of CC (blue-associated) males are NOT blue-eyed. CC blue proportion M 85.7% vs F 77.0%, p=0.007 (gender difference within CC)",
+        "source": "EXTRACT_Pospiech2016_IntJLegalMed_IrisPlex_population"
+      }
+    },
+    {
+      "id": "kalinago_oca2",
+      "title": "Kalinago OCA2: R305W (D1) and NW273KV (D2) in one case (Ang 2023)",
+      "thesis": "Both discordance directions appear at one in-network gene. R305W is correctly OCA2-labelled and predicted-pathogenic yet non-penetrant (D1). The albino individuals carry no catalogued OCA2 variant, only the novel NW273KV a standard panel would miss (D2).",
+      "locus": {
+        "locus_id": "rs1800401",
+        "chrom": "15",
+        "position": "28260053",
+        "genome_build": "GRCh37",
+        "region": "15q13.1",
+        "nearest_gene_label": "OCA2",
+        "gene_label_basis": "nearest_gene_by_position",
+        "traits": "skin pigmentation (predicted-pathogenic missense R305W)",
+        "source_citation": "Ang2023 eLife 10.7554/eLife.77514 (position GRCh37/b37 as reported); dbSNP rs1800401"
+      },
+      "locus_secondary": {
+        "locus_id": "rs797044784",
+        "chrom": "15",
+        "position": "",
+        "genome_build": "NA (MNP; see note)",
+        "region": "15q13.1",
+        "nearest_gene_label": "OCA2",
+        "gene_label_basis": "nearest_gene_by_position",
+        "traits": "albinism / hypopigmentation (causal in Kalinago)",
+        "source_citation": "Ang2023 eLife 10.7554/eLife.77514 (exon 8 MNP c.819_822delCTGGinsGGTC); dbSNP rs797044784"
+      },
+      "annotation_edges": [
+        {
+          "locus_id": "rs1800401",
+          "gene": "OCA2",
+          "edge_type": "nearest_gene_link",
+          "evidence_type": "positional",
+          "evidence_citation": "Ang2023 eLife 10.7554/eLife.77514 (Table 2 / App1-T5); dbSNP rs1800401",
+          "directionality": "locus -> gene",
+          "notes": "OCA2 R305W missense; positional label == functional gene here (coding variant in OCA2). Scores as pathogenic by SIFT/PolyPhen2/PANTHER (CADD 22.7) yet shows no detectable pigmentation effect once NW273KV is controlled (P_adj=0.981). This is the D1 anchor (genotype-present, phenotype-absent): predicted-pathogenic variant, phenotype absent."
+        },
+        {
+          "locus_id": "rs797044784",
+          "gene": "OCA2",
+          "edge_type": "nearest_gene_link",
+          "evidence_type": "positional",
+          "evidence_citation": "Ang2023 eLife 10.7554/eLife.77514 (Table 2, exon 8 MNP); dbSNP rs797044784",
+          "directionality": "locus -> gene",
+          "notes": "OCA2 NW273KV novel multi-nucleotide albinism allele; causal in Kalinago (per-allele -7.7 melanin-index units, p=2.2e-5). This is the D2 counterpart (phenotype-present, genotype-absent for the CATALOGUED variants): albinism traces to a population-specific novel variant a standard OCA2 panel would miss."
+        }
+      ],
+      "subgraph": {
+        "nodes": [
+          {
+            "id": "MITF",
+            "kind": "gene",
+            "node_class": "network_protein_gene",
+            "citation": "UniProt:O75030"
+          },
+          {
+            "id": "OCA2",
+            "kind": "gene",
+            "node_class": "network_protein_gene",
+            "citation": "UniProt:Q04671"
+          }
+        ],
+        "edges": [
+          {
+            "source": "MITF",
+            "target": "OCA2",
+            "sign": "+",
+            "edge_class": "mechanistic_projection",
+            "citation": "PMID:22234890"
+          }
+        ]
+      },
+      "resolved_target_in_network": true,
+      "nearest_gene_in_network": true,
+      "direction": {
+        "gene": "OCA2",
+        "label": "both",
+        "label_scope": "paper-level (Ang2023)",
+        "gloss": "both D1 and D2 evidence catalogued for this gene",
+        "gene_level_label": "mixed",
+        "gene_level_note": "OCA2's direction ACROSS ALL citing papers is 'mixed'; WITHIN Ang2023 specifically it is 'both' (D1 via R305W + D2 via NW273KV). Complementary, not contradictory.",
+        "detail": "D1 = R305W predicted-pathogenic yet no effect once NW273KV controlled. D2 = albinism traces to the novel NW273KV, not any catalogued OCA2 variant.",
+        "source": "Ang2023 paper-level (discordance_case_classification.csv); OCA2 gene-level (case_gene_coverage_master.csv)",
+        "citation": "Ang2023 eLife 10.7554/eLife.77514"
+      },
+      "case_text": {
+        "R305W_D1": "NOT causal for skin color; scores INCORRECTLY as pathogenic by SIFT/Polyphen2.0/PANTHER; no detectable effect when controlling for NW273KV. Freq 0.068 (b37 pos 28260053). CADD 22.7",
+        "NW273KV_D2": "CAUSAL for albinism. Per-allele (1st allele) effect -7.7 MI (p=2.2E-5, Table2); -7.744 MI (p=9.0E-7, App1-T5). Freq 0.03. HW albinism freq ~1/1000 matches observed 3/~3000",
+        "source": "EXTRACT_Ang2023_eLife_Kalinago (Main Table 1, Table 2, Appendix 1-table 5)"
+      }
+    }
+  ]
+}
