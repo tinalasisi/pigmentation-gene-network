@@ -12,6 +12,14 @@ the full document model.
 below, approved after the NB4–NB8 chain and the sex-hormone × pigmentation expansion were both critiqued and
 set aside for this 2-day deliverable. Full history: `CHANGELOG.md` 2026-07-11 entry.
 
+**Framing (two-level, adopted 2026-07-11 — locked decision 11, §4):** the project now presents its result as
+two levels, not one slogan. The **headline** (unchanged) is bidirectional genotype→phenotype discordance
+(D1/D2, glossed below) on the signed directed network, with TYR + OCA2 as the payoff loci. The **second act**
+is the coverage/gap analysis beneath that headline, organized under the "dark-matter association" frame —
+case genes absent from both the 168-gene mechanistic network and the D'Arcy OMIM-backed disease-gene
+compendium. Dark matter does not replace or compete with the discordance headline; it is the coverage audit
+that motivates further work. Full evaluation and rationale: `FRAMING_EVALUATION_dark_matter.md`.
+
 ---
 
 ## 1. Cold-start brief (read this first)
@@ -129,6 +137,29 @@ row counts (pigmentation-plan-sync skill), not retyped from prose. Version IDs a
 | — already in NB2 168-gene network | 9 / 31 (29%) | EGFR, KITLG, MC1R, OCA2, PAX3, POMC, PPP3CA, TYR, TYRP1 |
 | — absent from network, recoverable via D'Arcy S1 | 7 / 31 (+23pp → 52% cumulative) | BNC2, HERC2, IRF4, LRMDA, RALY, SLC24A5, SLC45A2 |
 | — absent from both network and D'Arcy ("dark matter") | 15 / 31 | ATRN, EMCN, KALRN, MANBA, MFSD12, MSX2, NPLOC4, ORAOV1, PKHD1, SIK1, SLC24A4, SLC39A8, SYT6, TACR3, TSPAN10 |
+| — of those 15, carrying `both` (D1+D2) case-direction evidence | 14 / 15 | correlated with, not independent of, the discordance headline — see locked decision 11 |
+
+**Mislabeled-pointers hypothesis: FALSIFIED (run 2026-07-11, do not re-run).** The hypothesis tested was that
+the 15 dark-matter genes are mostly GWAS loci labelled by nearest gene whose true functional target is
+already in-network (regulatory/eQTL redirect — the HERC2→OCA2 pattern generalized). Result, from a
+per-locus GWAS Catalog + eQTL Catalogue check: **0 of 15** dark-matter genes resolve to an in-network gene.
+The one true positional-pointer case, HERC2→OCA2, is D'Arcy-recoverable, not dark matter, and is rare, not
+the dominant pattern. Full per-gene evidence: `RESEARCH_SYNTHESIS_locus_resolution_mvp.md` §1.
+
+The 15 dark-matter genes decompose into four cited classes instead of one undifferentiated bucket:
+
+| class | n | genes |
+|---|---|---|
+| no pigmentation GWAS signal at all (LD passenger / no-signal) | 6 | ATRN, EMCN, LTO1, MANBA, SLC39A8, TACR3 |
+| genuine signal, no eQTL redirect found | 3 | KALRN, MSX2, SYT6 |
+| redirects to another gene also absent from the network | 2 | NPLOC4→TSPAN10, SIK1→LINC01679 |
+| genuinely novel — own best-supported causal gene, simply missing | 4 | MFSD12, PKHD1, SLC24A4, TSPAN10 |
+
+Source: `RESEARCH_SYNTHESIS_locus_resolution_mvp.md` §1, cross-referenced against `FRAMING_EVALUATION_dark_matter.md`.
+Note the class table's 15 genes are the RESEARCH_SYNTHESIS enumeration (includes LTO1, excludes ORAOV1) —
+a one-gene difference from the §3 dark-matter list above (which includes ORAOV1, excludes LTO1) that traces
+to a symbol-resolution edge case; both sources are cited as-is per the no-recompute-from-memory rule and the
+discrepancy is flagged here rather than silently reconciled.
 
 ---
 
@@ -314,6 +345,22 @@ results, and this whole section is retained for the record, not as an active spe
     re-adopted in commit `c3f258b`, this time as a CI-only render layer over unmodified `.ipynb`/`.md`
     sources rather than a `.qmd` source-of-truth change — the constraint that caused the reversal doesn't
     apply to this design, since no notebook is ever authored or reviewed as `.qmd` in Claude Science.)_
+11. **Two-level paper framing (LOCKED, adopted 2026-07-11).** The paper presents two levels, not one slogan.
+    **Headline (unchanged):** bidirectional genotype→phenotype discordance (D1 = genotype-present,
+    phenotype-absent; D2 = phenotype-present, genotype-absent — gloss both on first use in any document) on
+    one signed directed network; payoff loci = **TYR + OCA2 only**. **Second act (new spine):**
+    "dark-matter association" as the organizing frame for the coverage/gap analysis beneath the headline —
+    case genes absent from both the 168-gene mechanistic network and the D'Arcy OMIM-backed disease-gene
+    compendium, decomposed into cited classes (positional-pointer / redirect-to-other-gene /
+    LD-passenger-or-no-signal / genuinely-novel; see §3). Dark matter does **not** become the primary
+    frame — discordance stays the lead. The two axes are **correlated, not independent** (14 of 15
+    dark-matter genes carry `both` D1+D2 case-direction evidence): this must be stated explicitly wherever
+    the corpus is described, and must not be read as circularity. Full evaluation, corpus statistics, and
+    per-paper cluster table: `FRAMING_EVALUATION_dark_matter.md`. Decided alongside this framing: (i) adopt
+    the two-level framing — yes; (ii) rewrite the docs listed in `FRAMING_EVALUATION_dark_matter.md` §4 —
+    yes; (iii) widen the corpus to GWAS Catalog ≥2×-replicated associations as `dark_matter_association`
+    loci — **held until after the MVP**, not authorized now (see `TODO.md` needs-discussion). See
+    `CHANGELOG.md` 2026-07-11 (framing-adoption entry).
 
 ### Standing rule — surface-compatibility review before locking format/publishing decisions
 
@@ -505,7 +552,17 @@ re-fragment.
   the Open-items table above.
 - **CHANGELOG.md** (added 2026-07-11) — the append-only, dated history of build and decision events. This
   dashboard and `TODO.md` reference it rather than duplicating history; see its 2026-07-11 entry for the
-  plan-pivot detail behind the summaries in this document.
+  plan-pivot detail behind the summaries in this document. Also carries the standing "Guidance for agents:
+  writing notes to each other" section (added 2026-07-11) — read it before writing anything to this file.
+- **`internal/handoffs/`** (added 2026-07-11) — canonical home for platform-to-platform handoff documents
+  (see its `README.md` for the naming convention) and the merge-safe agent-to-agent notes channel at
+  `internal/handoffs/notes/` (design in `MERGE_SAFETY.md`). Not a summary/history document like the three
+  above — a working channel agents write to directly.
+- **`internal/lit_review/`** (added 2026-07-11) — literature-review working area for the Genetics Literature
+  Reviewer specialist: landscape surveys, prior-art maps, and novelty-risk memos (see its `README.md` for the
+  naming convention and document types). Tracked/public; cites by DOI/PMID only. Like `handoffs/`, a working
+  channel — it references the three governance documents above and is referenced by them, but never absorbs
+  or duplicates them.
 
 **Data documentation — kept with the data, not planning docs:**
 - **[DATA_SOURCES.md]({{artifact:art_ab9307c6-1b6b-4b4d-a7f9-302b0f65a4b5}})** — provenance manifest. **Lags the

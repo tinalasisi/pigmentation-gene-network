@@ -1,0 +1,9 @@
+metric,value
+darcy_S1_genes,243
+darcy_S5_genes,451
+darcy_union_genes,508
+nb2_network_genes,168
+union_absent_from_backbone,465
+disease_flagged_among_absent,227
+hypopigmentation_class_among_absent,118
+darcy_union_overlap_backbone,43

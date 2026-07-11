@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Human-facing changelog: defensive backstop for the common "both branches only
+# appended a dated entry at the tail" merge case. This does NOT guarantee entry
+# order and does NOT resolve conflicts on edited/duplicated lines — see
+# internal/handoffs/MERGE_SAFETY.md. The agent-to-agent notes channel
+# (internal/handoffs/notes/) deliberately does NOT use a merge driver: it is
+# one-file-per-message, which is conflict-free by construction and needs none.
+internal/CHANGELOG.md merge=union

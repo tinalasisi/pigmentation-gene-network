@@ -27,6 +27,40 @@ connected — so, for example, HERC2 (the nearest gene to the blue-eye marker rs
 the signal routes through OCA2, its true long-range target. The albinism causal genes **TYR (OCA1)** and
 **OCA2** are the payoff loci, and are also the clinical validation cases.
 
+The validation-case set draws on 13 published papers, but they do not each contribute an independent gene:
+Kastelic 2013 is a model/marker paper that extracted 0 gene symbols from its 105 records (no gene column),
+and the three TYRP1 blond-hair papers (Kenny 2012, Norton 2014, Norton 2016) all reduce to the same
+in-network gene, TYRP1 — depth on one D2 example, not additional breadth. The 31 distinct case genes are
+the correct unit of count, not the 13 papers.
+
+### Second act: the coverage/dark-matter audit beneath the discordance headline
+
+The discordance finding above is the headline. Underneath it sits a second, subordinate result: a coverage
+audit of how much of the 31-gene validation-case set the project's own resources — the 168-gene mechanistic
+network and the D'Arcy et al. (2023) OMIM-backed disease-gene compendium — actually label. 9/31 case genes
+(29%) are already in the mechanistic network; adding the D'Arcy annotation layer recovers 7 more (52%
+cumulative); the remaining 15/31 (48%) are absent from **both** resources — the project's "dark-matter
+association" genes. Dark matter is not the lead frame; it is the honest gap analysis that motivates further
+work, organized beneath the discordance headline it is correlated with (14 of the 15 dark-matter genes carry
+`both` D1/D2 case-direction evidence — the two axes track the same underlying discordance, they are not
+independent findings, and the correlation is not circularity: the coverage gap says nothing on its own about
+which direction a gene's discordance runs).
+
+The 15 dark-matter genes decompose into four cited classes rather than one undifferentiated "unexplained
+biology" bucket — a mislabeled-nearest-gene hypothesis was tested directly against GWAS Catalog + eQTL
+Catalogue evidence and was **falsified** (0 of 15 dark-matter genes resolve to an in-network gene; only
+HERC2→OCA2 exists as that pattern, and HERC2 is D'Arcy-recoverable, not dark matter):
+
+| class | n | genes |
+|---|---|---|
+| no pigmentation GWAS signal at all (LD passenger / no-signal) | 6 | ATRN, EMCN, LTO1, MANBA, SLC39A8, TACR3 |
+| genuine signal, no eQTL redirect found | 3 | KALRN, MSX2, SYT6 |
+| redirects to another gene also absent from the network | 2 | NPLOC4→TSPAN10, SIK1→LINC01679 |
+| genuinely novel — own best-supported causal gene, simply missing | 4 | MFSD12, PKHD1, SLC24A4, TSPAN10 |
+
+Full per-class citations and the falsified-hypothesis writeup: `internal/RESEARCH_SYNTHESIS_locus_resolution_mvp.md`.
+The coverage computation itself: `internal/FINDINGS_darcy_coverage.md`.
+
 ## Project background
 
 The scientific framing, the notebook build narrative, and the locked design decisions are

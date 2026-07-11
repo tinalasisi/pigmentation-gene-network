@@ -8,6 +8,52 @@ tracked (committed to the public repo) so their cross-references resolve on GitH
 
 ---
 
+## Guidance for agents: writing notes to each other
+
+_This is standing guidance, not a dated event — it sits here, ahead of the dated entries, because it
+governs how this file itself must and must not be used. Keep it up to date in place if the convention it
+describes ever changes; unlike the entries below, this section may be edited rather than only appended to._
+
+**(a) Where agent-to-agent notes go.** Operational message traffic between agent sessions — handoff pings,
+"about to touch file X", status questions, coordination chatter — does **not** get written into this file,
+as free-text edits or otherwise. It goes to the dedicated channel at `internal/handoffs/notes/`. Full
+rationale for why the two must stay separate is in `internal/handoffs/MERGE_SAFETY.md` §4; the short version
+is that this file is curated prose for a human reconstructing project history, and mixing in
+higher-frequency operational chatter would either bury that history in noise or force every coordination
+ping to be hand-curated into changelog-quality prose, defeating the point of a low-friction channel.
+
+**(b) Message file naming and format (summarized from `internal/handoffs/MERGE_SAFETY.md` §3; that document
+is authoritative — read it before writing tooling against this convention).** Each note is its own file in
+`internal/handoffs/notes/`, written once and never edited:
+
+```
+{UTC_TIMESTAMP}__{platform}__{agent_tag}__{rand6}.md
+```
+
+- `UTC_TIMESTAMP` — `YYYYMMDDTHHMMSSZ` (compact ISO-8601, UTC, second resolution); lexicographic filename
+  sort equals chronological order.
+- `platform` — `claude-science` or `claude-code` (lowercase, hyphenated).
+- `agent_tag` — short filesystem-safe id for the writing agent/session (e.g. the first 8 hex characters of
+  a Claude Science frame id, optionally prefixed with a role name).
+- `rand6` — 6 random lowercase hex characters; the collision backstop.
+
+Each file is YAML front matter (`from`, `to`, `date_utc`, `platform`, `subject`) followed by a blank line
+and a free-text Markdown body. A correction or reply is a new file that references the original by
+filename — never an edit to an existing note.
+
+**(c) This changelog stays curated prose, appended to only in the existing dated-entry format.** Every
+change to this file below this guidance section is a new `## YYYY-MM-DD — <title>` entry, added at the end,
+in full sentences, describing what changed and why. Existing entries are never rewritten. **The rule that
+keeps this changelog merge-safe:** `internal/CHANGELOG.md` carries a `.gitattributes` `merge=union`
+directive as a defensive backstop for the common case of two branches each appending one dated entry at the
+tail — it does not guarantee entry order across a merge (a rare ordering glitch is a five-minute manual fix
+because entries are self-dated) and it does not resolve a conflict if two branches edit the same existing
+line. That backstop is sufficient here specifically because this file is written to rarely and normally by
+one agent at a time; it is not a substitute for the notes channel's stronger, unconditional per-message
+guarantee, and agent-to-agent traffic must not be routed through this file to "make use of" that backstop.
+
+---
+
 ## 2026-07-10 — Notebook/document-format decision (#10) corrected: Quarto → GitHub Pages re-adopted as a CI-only render layer
 
 **What changed.** Locked decision #10 (notebook/document format and publishing) was briefly reversed earlier
@@ -92,3 +138,75 @@ Whether either is ever revisited post-deadline is unsettled; see `TODO.md` "Need
 
 **Documents updated:** `project_dashboard.md` (§2, §4, §5a, locked decision 2), `TODO.md` (AGREED vs
 needs-discussion split).
+
+## 2026-07-11 — Platform-handoff documents consolidated under `internal/handoffs/`; agent-notes guidance added to this file
+
+**What changed.** Created `internal/handoffs/` as the canonical, documented home for platform-to-platform
+handoff documents, building on top of the merge-safe agent-to-agent notes channel the
+`REPRODUCIBILITY_SPECIALIST` had just designed at `internal/handoffs/notes/` (design and rationale in
+`internal/handoffs/MERGE_SAFETY.md`; that mechanism was adopted as-is, not redesigned). Added
+`internal/handoffs/README.md`, explaining what a handoff document is, when to write one, the
+`HANDOFF_<FROM-PLATFORM>_TO_<TO-PLATFORM>_<topic>.md` naming convention for new ones, and pointing to
+`MERGE_SAFETY.md` for the notes channel. Moved the two existing, previously untracked handoff documents —
+`internal/CLAUDE_CODE_HANDOFF.md` and `internal/CLAUDE_SCIENCE_RETAINED.md` — into `internal/handoffs/`
+under their original names (they predate the naming convention; renaming them would break the
+cross-references already embedded in their own prose, so the README documents them as a named exception).
+Fixed the one stale in-repo path reference this move broke (`CLAUDE_SCIENCE_RETAINED.md`'s pointer to the
+build handoff). Added the "Guidance for agents: writing notes to each other" standing section to the top of
+this file (above), and added short pointers to `internal/handoffs/` in `project_dashboard.md` §6 and
+`TODO.md`'s housekeeping table, plus a new AGREED todo item to maintain handoff docs there going forward.
+
+**Why.** The project had two ad hoc, untracked handoff documents at `internal/` root with no folder-level
+documentation of what a handoff document is or how a new one should be named, and no written guidance
+telling agents where operational notes to each other belong versus the human-facing changelog — both gaps
+this session's `REPRODUCIBILITY_SPECIALIST` work on the notes channel made newly relevant to close.
+
+**Plan-sync check.** Ran `check_plan_sync()` against `project_dashboard.md`: 0 drifted (3 numbers ok, 2 not
+mentioned in the plan text, 0 missing source files). No numeric drift from this reorganization — it touched
+no pinned data file.
+
+**Documents updated:** `internal/handoffs/README.md` (new), `internal/handoffs/CLAUDE_CODE_HANDOFF.md`
+(moved), `internal/handoffs/CLAUDE_SCIENCE_RETAINED.md` (moved, one path reference fixed),
+`project_dashboard.md` (§6), `TODO.md` (housekeeping table, item 14).
+
+## 2026-07-11 — Two-level paper framing adopted: discordance headline + dark-matter-association second act
+
+**Context.** `FRAMING_EVALUATION_dark_matter.md` evaluated whether "dark-matter association" should become
+the paper's framing, given the coverage finding that 15 of 31 validation-case genes are absent from both the
+mechanistic network and the D'Arcy disease-gene compendium. The evaluation found the worry justified but the
+corpus broader than the coverage-finding MVP made it look (6 of 13 papers touch at least one dark-matter
+gene, carrying 60% of records), and recommended a two-level framing rather than a single slogan.
+
+**PI decisions this session (three):**
+1. **Adopt the two-level framing — yes.** Headline (unchanged): bidirectional genotype→phenotype discordance
+   (D1 = genotype-present/phenotype-absent; D2 = phenotype-present/genotype-absent) on one signed directed
+   network, payoff loci TYR + OCA2 only. Second act (new spine): "dark-matter association" as the organizing
+   frame for the coverage/gap analysis beneath the headline. Dark matter does not replace or compete with
+   the discordance headline. Recorded as locked decision 11 in `project_dashboard.md`.
+2. **Rewrite the project's documents to the new framing — yes.** Scope per `FRAMING_EVALUATION_dark_matter.md`
+   §4: `README.md`, `project_dashboard.md`, `TODO.md`, `FINDINGS_darcy_coverage.md`,
+   `RESEARCH_SYNTHESIS_locus_resolution_mvp.md`, and notebook 04 (one added markdown cell, no code/output
+   changes).
+3. **Widen the corpus to GWAS Catalog ≥2×-replicated associations as `dark_matter_association` loci —
+   HELD until after the MVP.** Not authorized now; recorded as a held item, not an open question, in
+   `TODO.md`'s needs-discussion table (item D8).
+
+**Two caveats folded into every corpus description as part of this rewrite:** Kastelic 2013 extracted 0 gene
+symbols (105 records, no gene column — a model/marker paper, not 13 independent gene contributions); the
+three TYRP1 blond-hair papers (Kenny 2012, Norton 2014, Norton 2016) all reduce to the single in-network gene
+TYRP1 — D2 depth, not breadth.
+
+**Mislabeled-pointers hypothesis result carried into the framing (already run, not re-run):** 0 of 15
+dark-matter genes resolve to an in-network gene via GWAS Catalog + eQTL Catalogue evidence — the hypothesis
+is falsified; the dark matter decomposes into four cited classes instead (see
+`RESEARCH_SYNTHESIS_locus_resolution_mvp.md` §1, logged in `project_dashboard.md` §3 so it is not re-run).
+
+**Documents updated:** `README.md` (pitch + 4-way decomposition + 13-independent-genes correction),
+`project_dashboard.md` (locked decision 11; §3 decomposition table + falsified-hypothesis log), `TODO.md`
+(AGREED item 15; needs-discussion item D8, held), `FINDINGS_darcy_coverage.md` (per-paper cluster mapping),
+`RESEARCH_SYNTHESIS_locus_resolution_mvp.md` (per-paper cluster table), `notebooks/04_darcy_coverage_finding.ipynb`
+(one added markdown cell, "Where each paper fits" — no code cells or stored outputs touched).
+
+**Plan-sync check.** `check_plan_sync()` run against `project_dashboard.md` after this rewrite — see the
+run's own report for drift status; this rewrite touched no pinned processed-data file, so no numeric drift
+is expected from it.
