@@ -45,7 +45,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 2 | **Bajpai et al. 2023** (*Science*) | 169-gene genome-wide CRISPR screen hits + direction | Author-supplied supplement; Table S1 @ q<0.10 (license note in spec) | ✅ acquired | [bajpai2023.spec.md](docs/specs/bajpai2023.spec.md) |
 | 3 | **Baxter et al. 2018/2019** (*PCMR*) | 635 human curated cross-species pigmentation genes | Author-supplied supplement; Table S7 | ✅ acquired | [baxter2018.spec.md](docs/specs/baxter2018.spec.md) |
 | 4 | **HIrisPlex-S** (Chaitanya 2018) | 36/41 prediction markers → 16 genes; MC1R+HERC2/OCA2 complete | Author-supplied PDF; markers parsed | ✅ markers; ⚠ coefficients follow-up | [hirisplexs2018.spec.md](docs/specs/hirisplexs2018.spec.md) |
-| 5 | **Raghunath et al. 2015** (*BMC Res Notes*) | 265-node / 429-edge directed signed melanogenesis backbone | Prior work (this project) | ✅ pinned | (network base — see Notebooks 1–2 and `project_dashboard.md`) |
+| 5 | **Raghunath et al. 2015** (*BMC Res Notes*) | 265-node / 429-edge directed signed melanogenesis backbone | Prior work (this project) | ✅ pinned | (network base — see Notebooks 1–2 and `internal/project_dashboard.md`) |
 | 6 | **Annotation / identity databases** (UniProt, MyGene, PubChem, ChEBI, GO) | Gene-free node typing (Steps 1–2) + HGNC/Entrez/Ensembl/GRCh38 gene identity (Step 3) for the 183 pending nodes | Live MCP connectors (genes-ontologies, chemistry), queried once; verbatim JSON **frozen** to `data/external/db_responses/` | ✅ frozen (Notebook 2) | (see entry 6 below + meta.json) |
 | 6b | **HGNC gene groups** | Full member genes of the 6 `enzyme_activity_class` nodes (115 member edges), Step 4 | `rest.genenames.org` `fetch/gene_group_id/<id>`, frozen `hgnc_gene_groups.json` | ✅ frozen (Notebook 2) | (see entry 6 below) |
 | 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
@@ -190,7 +190,7 @@ validation authorities (attach gene identity and relationships, then check them)
   Raghunath backbone shows 465 D'Arcy genes absent from the backbone (S1∪S5 union), 230 of them
   disease-flagged (118 hypopigmentation-class) — a candidate expansion pool for a proposed downstream
   annotation/PPI-shell step, not a source for the mechanistic backbone (see locked decision 2,
-  `project_dashboard.md`/`TODO.md`). MyGene + UniProt remain the identity authority for NB2 gene typing;
+  `internal/project_dashboard.md`/`internal/TODO.md`). MyGene + UniProt remain the identity authority for NB2 gene typing;
   this cross-check is optional independent confirmation, not required for NB1/NB2, and NB4/NB5 consumption
   of the staged tables is pending TODO #0.
 - **Citation completeness (release-blocking gate):** every node and every edge in Notebook 2 carries at

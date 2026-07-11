@@ -51,14 +51,20 @@ __pycache__/
 .venv/
 .env
 
-# Internal working notes — not part of the published repo
-internal/
+# Internal governance surface — TRACKED and public by default.
+# internal/ holds the project's governance documents (project_dashboard.md, TODO.md,
+# CHANGELOG.md, START_HERE.md) and the deconvolutor critique reports. These are
+# committed so their cross-references resolve on GitHub. Two escape hatches below stay
+# private: internal/untracked/ (declutter — move a file there to drop it from the public
+# repo without deleting it) and internal/archive/ (retired working docs).
+
+# Declutter escape hatch — anything here is deliberately kept out of the public repo.
+internal/untracked/
 
 # Archived documents — retired working docs, renamed with a z_archived_ prefix.
-# Standing convention (project_dashboard.md §6): a retired document is renamed
-# z_archived_<name> and moved to internal/archive/. These are never committed to
-# the public repo. The prefix rule is belt-and-suspenders with internal/ above,
-# and also catches any z_archived_ file that lands outside internal/ by mistake.
+# Standing convention (internal/project_dashboard.md §6): a retired document is renamed
+# z_archived_<name> and moved to internal/archive/. These are never committed to the
+# public repo. The prefix rule catches any z_archived_ file that lands elsewhere by mistake.
 z_archived_*
 **/z_archived_*
 internal/archive/

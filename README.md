@@ -30,12 +30,12 @@ the signal routes through OCA2, its true long-range target. The albinism causal 
 ## Project background
 
 The scientific framing, the notebook build narrative, and the locked design decisions are
-maintained in the project's internal control document, `project_dashboard.md` (design-rationale
+maintained in the project's internal control document, `internal/project_dashboard.md` (design-rationale
 section). That dashboard is internal background — it changes only when the design changes — and is
 not restated here; this README is the public-facing rebuild guide (pinned inputs, notebook order,
 reproducibility contract).
 Data provenance is recorded in `DATA_SOURCES.md`. Project file inventory and live open items are tracked
-on the internal control surface, `project_dashboard.md`.
+on the internal control surface, `internal/project_dashboard.md`.
 
 ### Reference papers — FILES withheld (copyright), science used freely
 

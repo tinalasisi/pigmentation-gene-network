@@ -1,11 +1,16 @@
 # Pigmentation Project — Dashboard
 
 _Internal control surface. This is the single document to read for project state, design rationale, and open
-work; it is the cold-start brief for a new session. Last reconciled 2026-07-10._
+work; it is the cold-start brief for a new session. Last reconciled 2026-07-11 (plan pivot — see below)._
 
 This dashboard is the one internal governance document the project maintains. It absorbs the design rationale
 formerly held in the build plan, folds in the live task status, and points to `TODO.md` as the machine-readable
-backing ledger. See **Document architecture** below for the full document model.
+backing ledger and `CHANGELOG.md` as the append-only decision history. See **Document architecture** below for
+the full document model.
+
+**Active plan (as of 2026-07-11):** the D'Arcy-annotation + case-gene-coverage finding described in §2/§4
+below, approved after the NB4–NB8 chain and the sex-hormone × pigmentation expansion were both critiqued and
+set aside for this 2-day deliverable. Full history: `CHANGELOG.md` 2026-07-11 entry.
 
 ---
 
@@ -51,10 +56,11 @@ guide), `DATA_SOURCES.md` (provenance manifest), `NB3_case_assembly_provenance.m
 
 ## 2. Build progress
 
-_Two notebooks are complete and agreed (NB1, NB2). The validation-case set is complete as a dataset. The
-structure below the line is a **proposed** design — the notebook layout beyond NB2 is not yet agreed by the
-PI and must not be treated as settled or drafted as notebooks. Task status is
-folded in from `TODO.md`; edit open items there, then re-render this view._
+_Two notebooks are complete and agreed (NB1, NB2). The validation-case set is complete as a dataset. As of
+2026-07-11 the **active plan** is the D'Arcy-annotation + case-gene-coverage finding below (PI-agreed, 2-day
+deliverable; see `CHANGELOG.md`). The former NB4–NB8 causality-gated chain and the sex-hormone × pigmentation
+expansion are **critiqued and set aside for this deliverable** — deferred, not deleted; see the table further
+down. Task status is folded in from `TODO.md`; edit open items there, then re-render this view._
 
 **Agreed and complete:**
 
@@ -63,23 +69,37 @@ folded in from `TODO.md`; edit open items there, then re-render this view._
 | 1 | Reconstruct the published network | ✅ done | Raghunath backbone: 265 nodes / 429 signed edges |
 | 2 | Resolve the network to genes | ✅ done | Gene-level network: 168 gene nodes / 309 edge rows |
 
-**Complete as a dataset (notebook placement tentative):**
+**Complete as a dataset:**
 
-| — | Assemble the validation-case set | ✅ data done | 13 papers, 694 records across committed CSVs, direction-classified (3 D1 / 5 D2 / 5 both). Provenance sign-off items open (§5) |
+| — | Assemble the validation-case set | ✅ data done | 13 papers, 694 records across committed CSVs, direction-classified (3 D1 / 5 D2 / 5 both); 31 distinct case genes. Provenance sign-off items open (§5) |
 | --- | --- | --- | --- |
 
-**Proposed downstream direction — NOT yet agreed (do not build or draft as notebooks):**
+**Active plan — AGREED, in progress (3 phases, 9 steps, specialist-gated; plan artifact
+`e3d52bf4-4876-41f1-89c4-fb544c3677d1` v `c1d3bf0a`):**
 
-| Proposed step | Intent |
-| --- | --- |
-| Case-gene manifest + evidence layer + causal-gene resolution | Resolve each case gene from its association marker to its causal gene (Open Targets L2G + ClinVar/OMIM); tag evidence |
-| Causality-gated connection of the validation-case genes | Connect only resolved causal genes, only through mechanism (OmniPath + curated literature) |
-| Unify layers + recompute the load-bearing metrics | Signed paths (D1) and alternative-reachability (D2) on the connected graph, with a null model |
-| Bidirectional discordance by node (the payoff figure) | Two panels per albinism locus (TYR, OCA2): D1 modifier states, D2 alternative routes |
-| Case validation (machine-checkable, both directions) | Test each case with its mechanism pre-registered from the paper before the network is consulted |
+| Phase | Step | Intent | Gate |
+| --- | --- | --- | --- |
+| 1 (parallel) | Parse D'Arcy S1 → annotation CSV + README | 243-gene disease-direction table as a committed, cited annotation layer | GENETICS_DATA_EXTRACTOR + REPRODUCIBILITY_SPECIALIST + DATA_SOURCE_AUDITOR |
+| 1 (parallel) | Reproduce the 465/227/118 backbone cross-check | Independent second implementation of the D'Arcy-vs-backbone numbers | REPRODUCIBILITY_SPECIALIST |
+| 1 (parallel) | Attach S1 direction to the 43 overlapping genes | Annotation-only join; no S4/S5 STRING edge enters the backbone | REPRODUCIBILITY_SPECIALIST + DATA_SOURCE_AUDITOR (hard gate) |
+| 1 (parallel) | Resolve the 31 case-gene symbols (MyGene/HGNC) | Canonical IDs, not string match, per locked decision 6 | REPRODUCIBILITY_SPECIALIST |
+| 1 (parallel) | Formalize NB3 as a runnable document | §5a Option A — case-assembly dataset → regenerable notebook | SCICOMM_REVIEWER + REPRODUCIBILITY_SPECIALIST |
+| 2 (gated on Phase 1) | Master coverage table (9/7/15 tiers) | in-network / D'Arcy-recoverable / dark-matter per case gene | REPRODUCIBILITY_SPECIALIST |
+| 2 (gated) | Cross discordance-direction vs disease-direction | Concordance/discordance between case D1/D2 and D'Arcy hypo/hyper/mixed | REPRODUCIBILITY_SPECIALIST |
+| 3 (gated, parallel) | Coverage-and-direction figure | Case genes by coverage tier × disease direction × case direction | VISUAL_DATA_REVIEWER |
+| 3 (gated, parallel) | Findings memo | 29%→52% coverage claim, 15-gene dark-matter gap, every number cited | SCICOMM_REVIEWER + REPRODUCIBILITY_SPECIALIST |
 
-**Deferred to grant stage:** four-axis functional annotation (localization / process / molecular-function /
-phenotype per node); ancestry-stratified / allele-frequency verification (1000G / HGDP / gnomAD by population).
+**Deferred, not pursued for this deliverable** (critiqued by the plan deconvolutor under the 2-day deadline;
+kept on record, not deleted — see `CHANGELOG.md` 2026-07-11 and `deconvolutor/2026-07-10_1901_DECONVOLUTOR_SUMMARY_both_tracks.md`):
+
+| Track | Status | Why set aside |
+| --- | --- | --- |
+| NB4–NB8 causality-gated downstream chain (case-gene manifest → causal resolution → mechanistic edge-drawing → recomputed metrics → payoff figure → validation) | Critiqued, not pursued | No causal-gene tie-break rule when nearest-gene/L2G/ClinVar disagree; OmniPath does not cover the case genes (HERC2's 145 edges are all DNA-damage/ubiquitin; MFSD12/TMEM138 have zero melanogenesis edges) — the edge-drawing premise is unworkable within 48h |
+| Sex-hormone × pigmentation expansion (steroidogenesis/AR/ESR coupling to melanogenesis, sexual dichromatism across primates) | Critiqued, not pursued | Blocked by scale, not a decision gap — a live OmniPath query across all 11 aggregated resources for AR/ESR1/ESR2 → the 14-gene melanogenic/melanocortin set returned 0 direct edges; the Stage-D dichromatism score is a multi-week methods contribution, not a lookup |
+
+**Deferred to grant stage (unchanged):** four-axis functional annotation (localization / process /
+molecular-function / phenotype per node); ancestry-stratified / allele-frequency verification (1000G / HGDP /
+gnomAD by population).
 
 ---
 
@@ -102,6 +122,13 @@ row counts (pigmentation-plan-sync skill), not retyped from prose. Version IDs a
 | HIrisPlex-S markers / genes | 36 / 16 | `hirisplexs2018_markers.csv` (`8caf2c0b`) |
 | D2 alternative-reach genes (besides TYR/OCA2/TYRP1/MC1R) | ~114 | plan-stated backbone figure — **to be recomputed on the connected graph**, not a pinned-file value |
 | Validation-case records (committed per-paper CSVs) | 694 | committed `EXTRACT_*_records.csv`; grain differs by paper. `n_records_extracted` in the pinned classification CSV equals the committed row counts and sums to 694 (earlier 511 headline retired — NB3 prov §6) |
+| D'Arcy union (S1 ∪ S5, 508 genes) absent from 168-gene backbone | 465 | run 2026-07-11 against `data/raw/darcy2023/*.xlsx` + `gene_network_nodes.csv` (`eb0110fa`); see `CHANGELOG.md` |
+| — of those, disease-flagged (S1 row present) | 227 | corrected from a prior plan-stated 230; the 3-gene delta is gene-symbol synonym resolution, not a computational discrepancy |
+| — of those, hypopigmentation-class | 118 | run 2026-07-11, matches prior plan-stated figure |
+| Validation-case genes (distinct symbols across 13 papers) | 31 | derived from `EXTRACT_*` per-paper record CSVs, 2026-07-11 |
+| — already in NB2 168-gene network | 9 / 31 (29%) | EGFR, KITLG, MC1R, OCA2, PAX3, POMC, PPP3CA, TYR, TYRP1 |
+| — absent from network, recoverable via D'Arcy S1 | 7 / 31 (+23pp → 52% cumulative) | BNC2, HERC2, IRF4, LRMDA, RALY, SLC24A5, SLC45A2 |
+| — absent from both network and D'Arcy ("dark matter") | 15 / 31 | ATRN, EMCN, KALRN, MANBA, MFSD12, MSX2, NPLOC4, ORAOV1, PKHD1, SIK1, SLC24A4, SLC39A8, SYT6, TACR3, TSPAN10 |
 
 ---
 
@@ -119,15 +146,16 @@ eumelanin and pheomelanin the headline pigment endpoints.
 
 ### Notebook map (what each produces, and why)
 
-> **Scope of this map:** items 1 and 2 are the agreed, completed notebooks. Item 3 (case assembly) is complete
-> as a dataset. **Everything numbered 4 and beyond (NB4–NB8) is a tentative design sketch, not a spec** — the
-> PI has not agreed the notebook layout past NB2 (see §2 above and TODO #0). The evidence-source lists,
-> disease-bridge annotations, and per-gene outcomes named below are illustrative of the kind of design being
-> considered, not fixed commitments: read every "lists X/Y/Z" as "a candidate set might include X, Y, Z" and
-> every named outcome (e.g. a specific gene call) as an example the design would need to re-derive, not a
-> result already computed. A builder should not treat any sentence below as settled spec. These notebooks
-> must not be built or drafted until TODO #0 is resolved with the PI; see § Open decisions below for the
-> options on the table.
+> **Scope of this map (updated 2026-07-11 — see `CHANGELOG.md`):** items 1 and 2 are the agreed, completed
+> notebooks. Item 3 (case assembly) is complete as a dataset. **Items 4–8 below (NB4–NB8) describe the
+> causality-gated edge-drawing chain that was critiqued by the plan deconvolutor and is NOT being pursued for
+> the current 2-day deliverable** — kept below for the record and for any future revisit, not as a spec to
+> build against. The active plan replaces this chain entirely: no new mechanistic edges are drawn; the case
+> genes are instead crossed against the existing NB2 backbone plus the D'Arcy S1 disease-direction annotation
+> layer (§2 above). The root-cause finding that closed this chain: a live OmniPath check found HERC2's 145
+> interactions are all DNA-damage/ubiquitin-ligase edges (none touch MITF/TYR/OCA2/MC1R), and MFSD12/TMEM138
+> return zero OmniPath edges — the edge-drawing premise this chain depends on is unworkable in 48h. Read
+> every "lists X/Y/Z" below as illustrative of the design that was considered, not a result.
 
 1. **Reconstruct the published network** ✅ — A faithful, offline, deterministic reconstruction of the Raghunath
    model: 265 nodes, 429 directed edges, every edge signed from an explicit verb→sign dictionary over the 24
@@ -146,17 +174,17 @@ eumelanin and pheomelanin the headline pigment endpoints.
    evidence. Produces `discordance_case_classification.csv` + per-paper `EXTRACT_*` records — the empirical base
    the finding is validated against. Provenance is recorded in `NB3_case_assembly_provenance.md`; several
    sign-off items remain open (see §5).
-4. **Case-gene manifest + evidence layer + causal-gene resolution** ⬜ _(tentative design sketch, pending TODO #0)_ —
+4. **Case-gene manifest + evidence layer + causal-gene resolution** ⬜ _(deferred — design sketch kept for the record; see §2 and the scope banner above)_ —
    The sketch: derive the resolution targets from the cases themselves — enumerate every (case, gene,
    anchor-genotype), join to the 168-gene network, and tag each gene `core-connected` / `present-isolated` /
    `absent`, which on today's case set would give something like a 9-connected / 10-absent split, to be
    recomputed if built. A candidate evidence-tag set might include a HIrisPlex target flag, a Bajpai CRISPR
    effect, a GWAS replication count, and a Baxter human-relevant flag, plus a standalone causal-gene
    resolution step (illustratively: nearest gene vs Open Targets L2G vs ClinVar/OMIM, with a tie-break rule
-   still to be written — see NEXT_STEPS_PLAN gap #2 absorbed below). If built, the intent would be that the
+   still to be written). If built, the intent would be that the
    causal call gates NB5 and no gene enters the graph on association alone; none of this is implemented or
    agreed.
-5. **Causality-gated connection of the validation-case genes** ⬜ _(tentative design sketch, pending TODO #0)_ —
+5. **Causality-gated connection of the validation-case genes** ⬜ _(deferred — design sketch kept for the record; see §2 and the scope banner above)_ —
    The sketch: connect the absent case-genes, but only the resolved causal gene and only through mechanism
    (OmniPath directed/signed + curated literature, with a minimum evidentiary bar for the literature half
    still to be written). Illustrative outcome categories a gene might fall into: an association marker whose
@@ -167,16 +195,16 @@ eumelanin and pheomelanin the headline pigment endpoints.
    literature not yet in curated pathway databases, so "unconnectable" there means "not yet in a curated
    edge source," not "no mechanism exists"). None of these gene-level outcomes are computed; they are
    examples of what the design would need to determine if built.
-6. **Unify layers + recompute the load-bearing metrics** ⬜ _(tentative design sketch, pending TODO #0)_ —
+6. **Unify layers + recompute the load-bearing metrics** ⬜ _(deferred — design sketch kept for the record; see §2 and the scope banner above)_ —
    The sketch: build the single canonical graph and compute, per pigment endpoint, the two objects a figure
    would consume — signed distance/path enumeration from each causal gene (D1) and the set of genes with a
    directed path to the endpoint (D2 — the alternative-reach pool, recomputed on whatever graph NB5 would
    produce). A candidate design adds a degree-preserving null model for the D2 reachability count (with the
-   sign/edge-type preservation and pre/post-D1-filter ordering questions still open — see NEXT_STEPS_PLAN gap
-   #5 absorbed below) and applies the D1 path-block check to the D2 genes. Whether signed-graph reachability
+   sign/edge-type preservation and pre/post-D1-filter ordering questions still open) and applies the D1
+   path-block check to the D2 genes. Whether signed-graph reachability
    would need a boundary note distinguishing "locates where epistasis would act" from "establishes
    non-additivity" is a drafting question for if this notebook is built, not a settled claim now.
-7. **Bidirectional discordance by node (the payoff figure)** ⬜ _(tentative design sketch, pending TODO #0)_ —
+7. **Bidirectional discordance by node (the payoff figure)** ⬜ _(deferred — design sketch kept for the record; see §2 and the scope banner above)_ —
    The sketch: two panels per albinism causal locus (TYR→eumelanin; OCA2→melanosome) — D1 showing the signed
    modifier states that could block a present causal genotype, D2 showing the alternative genes/paths that
    reach the same endpoint without the usual gene, with null-model context if NB6 is built. It might annotate
@@ -185,7 +213,7 @@ eumelanin and pheomelanin the headline pigment endpoints.
    D'Arcy Table S1 disease-gene table as a candidate evidence tag — this is not yet a checkable rule, and
    whether it stays a discretionary call or resolves to one is one of the open questions carried below.
    Whether this step is regenerable from an NB6 table alone, or should be merged with NB8, is likewise open.
-8. **Case validation (machine-checkable, both directions)** ⬜ _(tentative design sketch, pending TODO #0)_ —
+8. **Case validation (machine-checkable, both directions)** ⬜ _(deferred — design sketch kept for the record; see §2 and the scope banner above)_ —
    The sketch: test each case against the network with a mechanism (D1/D2) pre-registered from the paper
    before the network is consulted, so a case could fail by being explained by the wrong mechanism —
    illustratively, does the signed-suppressor set for a locus contain the case-reported modifier (D1), or does
@@ -195,18 +223,21 @@ eumelanin and pheomelanin the headline pigment endpoints.
    built. Whether genes whose only mechanistic edge derives from the same paper supplying their case should be
    scored, excluded, or flagged as non-independent is an open design question, not yet answered.
 
-### The causality-gated spine _(tentative pipeline sketch, pending TODO #0 — not built)_
+### The causality-gated spine _(critiqued 2026-07-11, NOT pursued for the current deliverable — see `CHANGELOG.md`)_
 
-The candidate sequence being discussed: `NB3 cases → NB4 manifest + causal resolution → NB5 causality-gated
-connection → NB6 metrics → NB7 figure → NB8 validation`. The one piece of this that IS a locked design
-principle regardless of whether NB4-NB8 are ever built — locked decision 5 below — is that edge creation
-uses OmniPath + curated literature only; association-flavoured sources (STRING co-expression, GWAS proximity,
-and, per §3 above, D'Arcy's S4/S5 STRING-association edges) cannot manufacture a mechanistic edge. Everything
-else in this section is illustrative of how that principle would apply if the sketch were built: every
-absent case-gene would pass NB4 causal resolution before any edge is drawn, and only the resolved causal gene
-would be connected. The HERC2/OCA2 example (rs12913832 is a long-range OCA2 enhancer; L2G HERC2 0.428 vs OCA2
-0.203) and the MFSD12/DDB1/TMEM138 "unreachable" example are illustrations of the resolution logic, not
-computed results — see NB5's entry above for the caveat on MFSD12 specifically.
+The candidate sequence that was considered: `NB3 cases → NB4 manifest + causal resolution → NB5 causality-gated
+connection → NB6 metrics → NB7 figure → NB8 validation`. The plan deconvolutor's critique
+(`deconvolutor/2026-07-10_1859_DECONVOLUTOR_REPORT_NB4-NB8_downstream_chain.md`) and a live OmniPath check this session found the
+NB5 step's premise unworkable within the 2-day deadline: HERC2 (the chain's own headline example) has zero
+melanogenesis-relevant OmniPath edges among its 145 interactions, and none of the 9 NB5 candidate genes is
+already in the 168-gene network or connects candidate-to-candidate. The one piece of this design that remains
+a locked principle regardless — locked decision 5 below — is that edge creation uses OmniPath + curated
+literature only; association-flavoured sources (STRING co-expression, GWAS proximity, and D'Arcy's S4/S5
+STRING-association edges) cannot manufacture a mechanistic edge. That principle is why the active plan (§2)
+does not draw new edges at all — it consumes D'Arcy S1 as an annotation layer instead. The HERC2/OCA2 example
+(rs12913832 is a long-range OCA2 enhancer; L2G HERC2 0.428 vs OCA2 0.203) and the MFSD12/DDB1/TMEM138
+"unreachable" example remain illustrations of the resolution logic this chain would have needed, not computed
+results, and this whole section is retained for the record, not as an active spec.
 
 ### Conceptual grounding — penetrance and epistasis
 
@@ -230,16 +261,20 @@ computed results — see NB5's entry above for the caveat on MFSD12 specifically
    which is backbone: (a) Table S1, a 243-gene OMIM-backed disease-gene table (phenotype MIM + hyper/hypo/mixed
    pigmentation class) — an annotation/disease-direction source; (b) Tables S4/S5, a 451-node/4668-edge
    STRING PPI network (STRING `combined_score` — undirected, unsigned association, not directed/signed) +
-   S6 A375/FM55 mass-spec expression. **All 6 supplementary tables are now staged** under
+   S6 A375/FM55 mass-spec expression. **All 6 supplementary tables are staged** under
    `data/raw/darcy2023/*.xlsx` (retrieved from Europe PMC `PMC9854651/supplementaryFiles`, CC BY 4.0; the
    article PDF is cited by DOI, not stored). Staging does not change the backbone rule: the S4/S5
    STRING-association edges remain barred from the OmniPath + curated-literature mechanistic backbone by
-   locked decision 5. D'Arcy is a **tentative, additive** evidence-tag / PPI-shell candidate for the proposed
-   downstream design (§4, NB4/§5a Open decisions below) — it is not an input to NB4's causal-gene resolution
-   (nearest-gene / Open Targets L2G / ClinVar-OMIM), and having it staged is not a build authorization for any
-   proposed (NB4-NB8) step; the cross-check computation itself has not been run. See DATA_SOURCES.md for the
-   465/230/118 backbone cross-check (S1∪S5 union; an earlier 173/76 figure was a narrower S5-only subset and
-   is superseded).
+   locked decision 5 — **unchanged by the 2026-07-11 pivot**. As of 2026-07-11, D'Arcy Table S1 is the
+   **active plan's annotation layer** (§2/§4 above) — consumed for disease-direction labels only, never as an
+   edge source, and never as an input to a causal-gene resolution step (that step, and the rest of the
+   NB4–NB8 chain, is deferred — see §2). The backbone cross-check has now been **run** (2026-07-11,
+   reproduces the dashboard's prior plan-stated figures): D'Arcy union (S1 ∪ S5, 508 genes) absent from the
+   168-gene backbone = **465**; of those, disease-flagged (has an S1 row) = **227** (previously stated as 230
+   — the 3-gene delta is a synonym-resolution difference in gene-symbol matching, not a computational
+   discrepancy; corrected here); hypopigmentation-class among the absent = **118**. See `CHANGELOG.md`
+   2026-07-11 and `DATA_SOURCES.md` for the full cross-check (an earlier 173/76 figure was a narrower
+   S5-only subset and remains superseded).
 3. **NB1 offline/deterministic** (types only what the file fixes); all database-backed typing + gene resolution
    in NB2, each call cited.
 4. **Recompute network metrics on the final graph;** published precomputed values are validation references only.
@@ -250,18 +285,35 @@ computed results — see NB5's entry above for the caveat on MFSD12 specifically
    in hackathon scope (deferred to grant).
 8. **Case validation pre-registers each case's mechanism from the paper** before the network is consulted.
 9. **License:** MIT (Tina Lasisi). MCP acquisition documented.
-10. **Notebook & document format:** notebooks are `.ipynb`; prose documents are plain Markdown (`.md`). Both
-    render natively on GitHub with no build step, and — the deciding constraint — both preview in Claude
-    Science, the surface this project is developed and reviewed in. No Quarto.
-    _(Reversed 2026-07-10. The prior decision #10 mandated `.qmd` as the sole source of truth with a Quarto →
-    GitHub Pages build. It was withdrawn on the empirical finding that `.qmd` registers in the artifact store
-    as `application/octet-stream` and has no in-app viewer in Claude Science — it is download-only — whereas
-    `.ipynb` (`application/x-ipynb+json`) and `.md` (`text/markdown`) both render inline. Committing to a
-    format that is opaque in the working surface was the wrong call; the format decision now optimizes for the
-    surface the work actually lives in. All Quarto scaffolding — `_quarto.yml`, `index.qmd`, `_site/`, and the
-    `.qmd` form of the NB3 provenance record — was removed the same day, and the NB3 record was converted to
-    `docs/NB3_case_assembly_provenance.md`. A static-HTML-linking-to-`.ipynb` publishing approach is under
-    consideration as a lighter replacement — see open items — but is not adopted.)_
+10. **Notebook & document format, and publishing:** notebooks stay `.ipynb`; prose documents are plain
+    Markdown (`.md`) — there is no `.qmd` twin of any notebook, and the NB3 provenance record is
+    `docs/NB3_case_assembly_provenance.md`, not a `.qmd` file. The project has adopted a Quarto → GitHub
+    Pages setup (`_quarto.yml`, `index.qmd` as a prose landing page only, `.github/workflows/publish-site.yml`,
+    added in commit `c3f258b`) that is **configured** to render committed notebook outputs with no kernel;
+    the PI reports the published site works, which has not separately been checked here against the GitHub
+    Actions run status or the live Pages URL. The configuration is compatible with the Claude Science
+    constraint that made the 2026-07-10 reversal below necessary, because rendering never happens in the
+    sandbox — Quarto cannot run there — and does not touch `.qmd`-as-source-of-truth at all:
+    - `_quarto.yml` sets `execute: enabled: false`. Notebooks are executed by the author (in Claude Science
+      or locally) and committed **with their stored cell outputs** (config verified this session: NB1 7/8
+      code cells, NB2 18/18 carry stored outputs; the render list targets the `.ipynb` files directly with
+      no `.qmd` twin).
+    - GitHub Actions is configured to install the Quarto CLI, run `quarto render` against the committed
+      `.ipynb` files with no kernel — wrapping the already-stored outputs into HTML — and deploy to Pages
+      via the native Actions path. By this configuration no data is withheld or regenerated at render time;
+      whether a given Actions run has actually completed green is not separately verified here.
+    - Quarto renders `.ipynb` natively, so the render list targets the notebook files directly; there is no
+      double-notebook problem and no opaque-`.qmd`-source problem, because no notebook was ever converted to
+      `.qmd` in the first place.
+    _(History: decision #10 was briefly reversed 2026-07-10. The prior version of this decision had mandated
+    `.qmd` as the sole source of truth for notebooks with a Quarto → GitHub Pages build. It was withdrawn
+    that day on the finding that `.qmd` registers in the artifact store as `application/octet-stream` and
+    has no in-app viewer in Claude Science — it is download-only — whereas `.ipynb`
+    (`application/x-ipynb+json`) and `.md` (`text/markdown`) both render inline; the Quarto scaffolding
+    (`_quarto.yml`, `index.qmd`, `_site/`) was removed the same day. The Quarto + GitHub Pages site was then
+    re-adopted in commit `c3f258b`, this time as a CI-only render layer over unmodified `.ipynb`/`.md`
+    sources rather than a `.qmd` source-of-truth change — the constraint that caused the reversal doesn't
+    apply to this design, since no notebook is ever authored or reviewed as `.qmd` in Claude Science.)_
 
 ### Standing rule — surface-compatibility review before locking format/publishing decisions
 
@@ -293,47 +345,57 @@ _Live view of the backing ledger, `TODO.md`. Edit open items there, then re-rend
 | # | Item | Notebook | Owner | Blocking? |
 | --- | --- | --- | --- | --- |
 | 1 | Reconcile `DATA_SOURCES.md` to the current design (association-marker→causal-gene resolution via L2G/ClinVar, full-Bajpai-screen choice, bidirectional source roles). | manifest / provenance | PM | No — traceability debt, not build-blocking |
-| 2 | **CLOSED — staging.** D'Arcy/Kiel (2023) 6 supplementary tables (Table S1 disease-gene table; Tables S2/S3; Tables S4/S5 STRING PPI network; Table S6 mass-spec) staged on disk at `data/raw/darcy2023/*.xlsx` (CC BY 4.0; article PDF cited by DOI, not stored). Untracked in git as of this note — not yet committed; any commit goes through REPO_COMPLIANCE_GATE separately. **Residual — open:** the cross-check itself has not been run, and NB4/NB5 consumption of the staged tables is pending TODO #0. | tentative evidence-tag / PPI-shell candidate (design sketch pending TODO #0) | PM / build | No — staging done; residual cross-check/consumption work is additive, not a blocker; D'Arcy is not an input to NB4's causal-resolution calls (nearest-gene / L2G / ClinVar-OMIM) and its STRING-association edges cannot enter the OmniPath+curated-literature mechanistic backbone |
-| 3 | Attach Complex Portal / CORUM connector (not attached). | NB5 | PM (connector) | Yes — blocks NB5 structural layer unless STRING+Reactome fallback is used |
-| 4 | Pin ClinVar / OMIM as a versioned input in the manifest. | NB4 | PM / build | Yes — blocks NB4 causal-gene-resolution provenance |
+| 2 | **CLOSED — staging AND cross-check.** D'Arcy/Kiel (2023) 6 supplementary tables staged on disk at `data/raw/darcy2023/*.xlsx` (CC BY 4.0; article PDF cited by DOI, not stored); untracked in git as of this note — any commit goes through REPO_COMPLIANCE_GATE separately. The backbone cross-check was **run 2026-07-11** (465 absent / 227 disease-flagged, corrected from 230 / 118 hypopigmentation-class — see locked decision 2) and D'Arcy S1 is now being consumed as the active plan's annotation layer (§2). Superseded item 3/4 below (Complex Portal/CORUM, ClinVar/OMIM pinning) were NB4/NB5 inputs and are now moot for the active plan — see needs-discussion items in `TODO.md`. | active-plan annotation layer (§2) | PM / build | No — closed; D'Arcy is consumed for disease-direction labels only, never as an edge source, and never as an NB4-style causal-resolution input (that step is deferred, not built) |
+| 3 | **DEFERRED with the NB4–NB8 chain (2026-07-11).** Attach Complex Portal / CORUM connector (not attached) — was an NB5 structural-layer dependency; NB5 is not being pursued for the active plan. | NB5 (deferred) | PM (connector) | No — the chain it gates is deferred, not active; see `TODO.md` needs-discussion |
+| 4 | **DEFERRED with the NB4–NB8 chain (2026-07-11).** Pin ClinVar / OMIM as a versioned input in the manifest — was an NB4 causal-gene-resolution dependency; NB4 is not being pursued for the active plan. | NB4 (deferred) | PM / build | No — the chain it gates is deferred, not active; see `TODO.md` needs-discussion |
 | 5 | Supply additional validation case studies from the PI's own literature review, if wanted. | validation-case set | PI | Optional extension |
-| 6 | Doc consolidation: `internal/NEXT_STEPS_PLAN.md` archived (2026-07-10) as a competing planning surface — its decision log/options absorbed into §5a above. | governance | PM | Done — recorded for the audit trail |
-| 7 | Store hygiene — governance files saved under 3 parallel naming families (`repo_*` current, `ondisk_*`/bare-name superseded duplicates) per `ARCHIVE_MANIFEST.md`'s "Store hygiene — OUTSTANDING" note. Re-save each canonical governance file as a new version of one artifact under its bare name; retire the duplicates. | governance | PM | No — traceability/search-hygiene debt, not build-blocking |
+| 6 | Store hygiene — governance files saved under 3 parallel naming families (`repo_*` current, `ondisk_*`/bare-name superseded duplicates). Re-save each canonical governance file as a new version of one artifact under its bare name; retire the duplicates. | governance | PM | No — traceability/search-hygiene debt, not build-blocking |
 
 **NB3 case-set provenance sign-off items** (from `NB3_case_assembly_provenance.md` §7 — decisions for the PI,
 not facts the PM can settle):
 
 | # | Item | Status |
 | --- | --- | --- |
-| A | Notebook structure beyond NB2. | **Open — PI decision.** Only NB1/NB2 are agreed; the case set is complete as data but its notebook placement and the entire downstream layout are a proposal pending PI sign-off (§2). |
+| A | Notebook structure beyond NB2. | **RESOLVED 2026-07-11** — see `CHANGELOG.md`. The PI agreed the D'Arcy-annotation + case-gene-coverage plan (§2) in place of the NB4–NB8 chain, for this 2-day deliverable. NB3 is formalized as a runnable document (Phase 1 of the active plan); NB4–NB8 remain deferred, not adopted. Originally tracked as `TODO.md` item #0 — see that ledger's entry for closure detail. |
 | B | Per-paper md→PDF re-extraction change-logs missing for 11 of 13 `EXTRACT_*.md`. | Open — decide whether to backfill. |
 | C | Paper withholding path. | **Resolved** — papers live under `data/raw/papers/`; the on-disk `.gitignore` withholds `data/raw/papers/*` and keeps `REFERENCES.md`; README references point there. |
 | D | Superseded duplicate record CSVs in the artifact store (two-wave extraction history). | Open — housekeeping. The canonical total (694) reproduces from the committed files; remaining task is to archive/remove the superseded duplicates so only the canonical CSV per paper is discoverable. |
 | E | Superseded/duplicate per-paper record CSVs still live in the store. | Open — set a retention/retirement policy (one canonical file per paper). |
 
-**Build status:** NB1 and NB2 complete and agreed; the validation-case dataset complete. The downstream
-analysis is not started and its notebook structure is not yet agreed (open item A is the gate). Items #2–#4
-concern inputs the proposed downstream work would need.
+**Build status:** NB1 and NB2 complete and agreed; the validation-case dataset complete. Open item A
+(notebook structure beyond NB2) is resolved — the active plan is the D'Arcy-annotation + case-gene-coverage
+finding (§2), in progress. Items #3–#4 above are deferred with the NB4–NB8 chain they gated, not active
+blockers.
 
 ---
 
-## 5a. Open decisions for TODO #0
+## 5a. Open decisions for TODO #0 — RESOLVED 2026-07-11
 
-_This section folds in the decision-log content from `internal/NEXT_STEPS_PLAN.md`, archived as a competing
-planning surface (see §6 and `ARCHIVE_MANIFEST.md`). It records the options and open questions the PI needs
-to answer to close TODO #0 — nothing here is settled; it is the input to that decision, not a decision._
+**TODO #0 is closed.** The PI agreed **Option A + a new fourth option** (below), not Option B: NB3 is
+formalized as a runnable document, and the NB4–NB8 chain (what Option B would have committed to) is
+deferred rather than settled — see `CHANGELOG.md` 2026-07-11 and the active plan in §2. This section is
+kept below as the historical record of the options and gaps that were weighed; it is not the active
+decision surface. For current work, see §2 and `TODO.md`.
 
-**The three options weighed for what to build next** (none started; not mutually exclusive across time —
-e.g. C now, then A or B later):
+_This section records the options and open questions that were weighed to close TODO #0 — historical
+record only._
+
+**The three options that were weighed, plus the one actually adopted:**
 - **Option A — build the case-assembly step as a real, runnable document (an NB3 formalization).** Narrow
   scope: turns the already-complete case-assembly dataset into a regenerable document. Does not by itself
-  commit to NB4–NB8.
+  commit to NB4–NB8. **Adopted as part of the resolution** — NB3 formalization is Phase 1 of the active plan.
 - **Option B — settle the full NB4–NB8 structure now**, after closing the load-bearing gaps below. Commits
   to the causality-gated downstream chain in §4's notebook map as a designed plan, once the gaps are
-  resolved. Converts today's "proposed direction" language into a committed plan in one step.
+  resolved. **NOT adopted** — the plan deconvolutor's critique found the gaps (especially #2 and the
+  OmniPath edge-coverage gap it exposed) do not close within the 2-day deadline.
 - **Option C — housekeeping-first: do the buildable-now items and defer the structure decision.** Proceeds
   with items not gated by TODO #0 (DATA_SOURCES.md reconciliation, NB3 provenance change-log backfill,
-  duplicate-CSV retirement, optional additional cases) while #0 is decided separately.
+  duplicate-CSV retirement, optional additional cases) while #0 is decided separately. **Partially folded
+  in** — housekeeping items proceed alongside the active plan, not instead of a structure decision.
+- **Option D (new, adopted as the resolution) — D'Arcy-annotation + case-gene-coverage finding.** Not one of
+  the three original options: instead of resolving NB4–NB8's edge-drawing gaps, abandon edge-drawing and
+  build the finding from annotation layers already on disk (D'Arcy S1 disease-direction + NB2 network
+  coverage). See §2 for the adopted 3-phase plan.
 
 **Load-bearing gaps that would need to close before Option B is approvable** (a plan-critic review; none of
 these block Option A or C):
@@ -381,15 +443,17 @@ melanogenesis mechanism and DDB1 is pleiotropic with only indirect links. At net
 an empirical null from edge-swapping will be noisy, and naive swapping on a signed directed graph can
 introduce sign-degree artifacts unless sign and direction are preserved deliberately.
 
-**Decision-log questions for the PI** (grouped by area; answer directly against these, e.g. in a PI-annotated
-copy of this section or in conversation with the PM):
+**Decision-log questions that were posed to the PI** (historical — Q1 was answered by the pivot; Q3–10 are
+moot for the active plan since no new edges are drawn; carried below for the record. Whether NB4–NB8 is ever
+revisited, and if so under what tie-break/evidentiary rules, is tracked as a needs-discussion item in
+`TODO.md`, not re-litigated here):
 
 *Scope:*
-1. Authorize NB4–NB8 at today's level of written detail, or scope narrowly to "formalize the case-assembly
-   step" with NB4–NB8 held as an unelaborated placeholder pending separate sign-off?
-2. Given the grant horizon, is the full six-notebook apparatus (null model, structural-connector dependency,
-   external-paper dependency) the right scope, or would a lighter NB4+NB8-only causal-check fit the timeline
-   better?
+1. **Answered 2026-07-11:** neither — NB4–NB8 is deferred (not authorized, not adopted as a placeholder);
+   the case-assembly step is formalized (NB3) and the finding is built from annotation layers instead
+   (§2). See `CHANGELOG.md`.
+2. Moot for the active plan (no notebook apparatus beyond NB3 is being built); remains open if NB4–NB8 is
+   ever revisited post-deadline — see `TODO.md` needs-discussion.
 
 *Causal-gene resolution and edge admissibility (blocks NB4/NB5 regardless of Q1–2):*
 3. What is the tie-break rule when nearest-gene, L2G, and ClinVar/OMIM disagree on a locus's causal gene?
@@ -412,15 +476,18 @@ copy of this section or in conversation with the PM):
 10. Should the payoff figure and case validation merge into one document sharing a single D1/D2 computation
     layer?
 
-*Documentation publishing (tentative — replaces the withdrawn Quarto workstream; see reversal in decision #10):*
-11. Adopt static HTML linking to the `.ipynb` notebooks (GitHub renders `.ipynb` natively; a plain `index.md`
-    or small static `index.html` links to each), or rely on GitHub's native in-repo rendering with no site at
-    all? No build step either way. This is a proposed direction, not adopted.
+*Documentation publishing:*
+11. **CLOSED.** Previously framed as "adopt static HTML linking to `.ipynb`, or rely on GitHub's native
+    in-repo rendering, no site at all" (a proposed direction from the 2026-07-10 Quarto reversal). Resolved:
+    a Quarto → GitHub Pages site was adopted instead (commit `c3f258b`), rendering committed notebook
+    outputs via CI with `execute: enabled: false` — see locked decision #10 for the design and why it is
+    compatible with the Claude Science constraint. Neither of the two options above was taken.
 
-**What happens once these are answered:** the PM reconciles this dashboard and `TODO.md` against the
-answers, closes TODO #0, and either formalizes the case-assembly step per the chosen scope or proceeds with
-housekeeping only — in whatever combination the answers specify. No NB4–NB8 build action is taken until that
-reconciliation happens.
+**Resolution (2026-07-11):** this dashboard and `TODO.md` have been reconciled against the pivot described in
+`CHANGELOG.md`. TODO #0 is closed. NB3 is formalized per Option A; the finding is built from the D'Arcy
+annotation layer + case-gene coverage cross, not from Option B's NB4–NB8 chain. No NB4–NB8 build action is
+authorized; see `TODO.md`'s needs-discussion section for what remains genuinely open about that chain's
+eventual fate.
 
 ---
 
@@ -436,19 +503,19 @@ re-fragment.
   work. The one document the Project Manager maintains.
 - **[TODO.md]({{artifact:art_5baeeb96-bf78-44f2-bd19-382b2169ed8c}})** — the machine-readable backing ledger for
   the Open-items table above.
+- **CHANGELOG.md** (added 2026-07-11) — the append-only, dated history of build and decision events. This
+  dashboard and `TODO.md` reference it rather than duplicating history; see its 2026-07-11 entry for the
+  plan-pivot detail behind the summaries in this document.
 
 **Data documentation — kept with the data, not planning docs:**
 - **[DATA_SOURCES.md]({{artifact:art_ab9307c6-1b6b-4b4d-a7f9-302b0f65a4b5}})** — provenance manifest. **Lags the
   current architecture — see Open item #1.**
-- **[`docs/NB3_case_assembly_provenance.md`](docs/NB3_case_assembly_provenance.md)** — case-set
+- **[`docs/NB3_case_assembly_provenance.md`](../docs/NB3_case_assembly_provenance.md)** — case-set
   extraction provenance record (plain Markdown; converted from `.qmd` on 2026-07-10, see decision #10).
 - **[discordance_case_classification_README.md]({{artifact:art_5079f196-a5ce-4f4d-a79b-20217c472f1a}})** — case
   classification data dictionary.
-- **[data/raw/papers/REFERENCES.md](data/raw/papers/REFERENCES.md)** — paper-withholding doc (per-paper
+- **[data/raw/papers/REFERENCES.md](../data/raw/papers/REFERENCES.md)** — paper-withholding doc (per-paper
   citations, DOIs, license/access, how to obtain each file); lives with the (withheld) papers.
-
-**Archived documents** are recorded in `internal/archive/ARCHIVE_MANIFEST.md` (retired build plan, superseded
-dashboard views, handoff briefs, and working drafts) — see that manifest for the per-document row.
 
 ---
 
@@ -461,9 +528,9 @@ identify the artifact each file was written from. The full per-file inventory ac
 regenerable via the `project-file-dashboard` skill.
 
 **Notebooks (`notebooks/`):**
-- [`01_reconstruct_published_network.ipynb`](notebooks/01_reconstruct_published_network.ipynb) — Raghunath → 265/429 typed signed network
-- [`02_resolve_network_to_genes.ipynb`](notebooks/02_resolve_network_to_genes.ipynb) — → 168-gene network + OmniPath validation
-- [`01a_extract_bajpai_crispr.ipynb`](notebooks/01a_extract_bajpai_crispr.ipynb) · [`01b_extract_baxter_genes.ipynb`](notebooks/01b_extract_baxter_genes.ipynb) · [`01c_extract_hirisplex_markers.ipynb`](notebooks/01c_extract_hirisplex_markers.ipynb) · [`01d_reproduce_gwas_catalog.ipynb`](notebooks/01d_reproduce_gwas_catalog.ipynb) — source extractors
+- [`01_reconstruct_published_network.ipynb`](../notebooks/01_reconstruct_published_network.ipynb) — Raghunath → 265/429 typed signed network
+- [`02_resolve_network_to_genes.ipynb`](../notebooks/02_resolve_network_to_genes.ipynb) — → 168-gene network + OmniPath validation
+- [`01a_extract_bajpai_crispr.ipynb`](../notebooks/01a_extract_bajpai_crispr.ipynb) · [`01b_extract_baxter_genes.ipynb`](../notebooks/01b_extract_baxter_genes.ipynb) · [`01c_extract_hirisplex_markers.ipynb`](../notebooks/01c_extract_hirisplex_markers.ipynb) · [`01d_reproduce_gwas_catalog.ipynb`](../notebooks/01d_reproduce_gwas_catalog.ipynb) — source extractors
 
 **Scripts (`scripts/`):** `gwas_catalog.py` · `harmonize.py` · `vizhelpers.py` · `traits_pigmentation.json`
 
@@ -485,10 +552,10 @@ The minimal set to reconstruct the project, by role, with pinned version IDs:
 `nb2_omnipath_validation.csv` `689c847d-29d3-4770-a3fb-d16507645ced`
 
 **Notebook 3 — validation-case set:** the 13 per-paper record CSVs in
-[`data/case_records/`](data/case_records/), the classification in
-[`data/processed/discordance_case_classification.csv`](data/processed/discordance_case_classification.csv)
+[`data/case_records/`](../data/case_records/), the classification in
+[`data/processed/discordance_case_classification.csv`](../data/processed/discordance_case_classification.csv)
 + its README, and the provenance record in
-[`docs/NB3_case_assembly_provenance.md`](docs/NB3_case_assembly_provenance.md). Paper files are withheld
+[`docs/NB3_case_assembly_provenance.md`](../docs/NB3_case_assembly_provenance.md). Paper files are withheld
 by `.gitignore` (re-obtainable by DOI via `data/raw/papers/REFERENCES.md`); the extracted records are kept.
 
 **Governance & provenance:** `README.md` (`4fb96bc9`) · `DATA_SOURCES.md` (`a1872729`) ·
@@ -496,5 +563,7 @@ by `.gitignore` (re-obtainable by DOI via `data/raw/papers/REFERENCES.md`); the 
 `LICENSE` (`a9f5e5bf`) · `REFERENCES.md` (`236a08f6`).
 
 ---
-_Reconciled 2026-07-10 during the governance-consolidation session. Canonical numbers recomputed from the pinned
-files; notebook status folded from `TODO.md`; design rationale absorbed from the retired build plan._
+_Reconciled 2026-07-11 against the D'Arcy-annotation + case-gene-coverage plan pivot (see `CHANGELOG.md`).
+Canonical numbers recomputed from the pinned files; notebook status folded from `TODO.md`; design rationale
+absorbed from the retired build plan; §2/§4/§5a updated and locked decision 2 corrected (230→227) to match
+the cross-check run this session._
