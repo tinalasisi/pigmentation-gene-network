@@ -8,6 +8,7 @@ project:
     - index.qmd
     - notebooks/01_reconstruct_published_network.ipynb
     - notebooks/02_resolve_network_to_genes.ipynb
+    - notebooks/03_assemble_validation_cases.ipynb
     - docs/NB3_case_assembly_provenance.md
 
 website:
@@ -20,8 +21,10 @@ website:
         text: "1 · Reconstruct network"
       - href: notebooks/02_resolve_network_to_genes.ipynb
         text: "2 · Resolve to genes"
+      - href: notebooks/03_assemble_validation_cases.ipynb
+        text: "3 · Assemble validation cases"
       - href: docs/NB3_case_assembly_provenance.md
-        text: "3 · Case provenance"
+        text: "3a · Case provenance"
 
 format:
   html:
