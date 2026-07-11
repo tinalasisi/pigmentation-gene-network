@@ -108,8 +108,14 @@ print("locus tables valid:", len(ns), "loci,", len(es), "annotation edges")
 ```
 
 ### 3c. `docs/data/locus_resolver_manifest.json` (the frozen export the page reads)
-A single JSON the static page loads at runtime (no live calls). Generate it once with
-`scripts/build_resolver_manifest.py` from the CSVs above + the backbone subgraph + the case text.
+**ALREADY BUILT BY CLAUDE SCIENCE** — `docs/data/locus_resolver_manifest.json` exists and is committed,
+regenerated deterministically by `scripts/build_resolver_manifest.py` (also committed). Both worked examples
+are fully populated with grounded, cited values. Your job is to READ this manifest from the page and (if you
+change the underlying CSVs) re-run the builder — NOT to design the manifest. Re-running the builder must
+reproduce the committed file (verified deterministic this session). The page must load every displayed value
+from this JSON; hardcoding any value into the JS violates the acceptance criterion.
+
+A single JSON the static page loads at runtime (no live calls).
 Structure (one object per worked example):
 ```json
 {
