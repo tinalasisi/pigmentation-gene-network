@@ -380,3 +380,29 @@ reconstruction of what happened.
 **Documents updated:** `precommit-compliance-gate` skill (`SKILL.md`, new Commit-hygiene section); eleven
 agent profiles (system prompts, compliance-gate clause only). No repo data files or tracking-document numbers
 changed.
+
+---
+
+## 2026-07-11 — `commit_needs_full_gate` fixed to fail safe when git cannot run
+
+**The issue (a fail-open bug in a gating tool).** `commit_needs_full_gate()` ran `git status --porcelain`
+and iterated its stdout without checking the exit code. In an environment where git cannot run — observed
+here: the analysis python kernel exits 128 with `unable to access '/Users/tlasisi/.gitconfig': Operation
+not permitted`, while the `bash` kernel runs git normally — the helper saw empty stdout and returned
+`{"tier": 1, "reasons": [], "trigger_paths": []}`, i.e. "clean working tree, commit directly." A broken git
+environment was silently read as a clean tree, which would wave a commit through the gate without ever
+inspecting it. This was caught while triaging the uncommitted working tree: the helper reported Tier 1 clean
+in the python kernel although `bash` showed ten changed/new files, including new data-type files that should
+have forced Tier 2.
+
+**What changed.** The helper now raises `RuntimeError` on any non-zero `git status` exit, surfacing the git
+error instead of returning a false verdict. Republished. Operational consequence: the tier decision must be
+made in an environment where git actually works — on this host that is the `bash` kernel, not the analysis
+python kernel — and callers must not swallow the raised error into a default Tier 1.
+
+**Why.** A gate tool that fails open is worse than no gate: it reports "safe" precisely when it could not
+check. Failing loud forces the caller to fix the environment or fall back to the explicit `bash`
+`git status` inspection rather than commit on an unverified all-clear.
+
+**Documents updated:** `precommit-compliance-gate` skill (`kernel.py`). No repo data files or
+tracking-document numbers changed.
