@@ -250,3 +250,96 @@ Baxter/HIrisPlex/Walsh article PDFs) remains `.gitignore`-blocked; the committed
 are open-license (CC BY); READMEs document what is withheld and how to obtain it by DOI. Removing the
 reference only deleted text from untracked markdown (added no withheld material), so the CLEAR verdict was
 unaffected.
+
+---
+
+## 2026-07-11 — `pigmentation-plan-sync` checker rewritten source-agnostic; `PROJECT_MANAGER` gains a standing staleness duty
+
+**The issue.** The `pigmentation-plan-sync` skill's `check_plan_sync()` was over-fitted to a frozen snapshot
+of the project. It hardcoded five specific processed filenames (`raghunath_nodes_typed.csv`,
+`raghunath_edges_typed_signed.csv`, `bajpai2023_crispr_hits.csv`, `baxter2018_650_pigmentation_genes.csv`,
+`hirisplexs2018_markers.csv`), hardcoded the column names it read from them, and matched plan numbers with a
+`CLAIM_PATTERNS` dict of fragile per-source free-text regexes — including a Bajpai-specific pattern that had
+been patched to avoid capturing the "2023" publication year as a hit count. Consequences: the checker was
+structurally blind to every processed CSV added after that snapshot (`gene_network_nodes.csv`,
+`gene_network_edges.csv`, `gene_graph_*`, `locus_*`, `complex_members.csv`, `darcy_*`, and others), a renamed
+file silently degraded to `no_file`, and a new data source was never checked at all. It reported on the
+specifics of a fixed source list rather than reconciling the plan broadly against the repo's actual state.
+
+**What changed in the skill.** `kernel.py` and `SKILL.md` were rewritten to be source-agnostic and
+table-driven, and republished (personal skill, overwrite):
+
+- The checker now discovers what to verify from the project's current state instead of a baked-in list. It
+  parses every row of the dashboard's **Key metrics** table (each row already declares a value and its source
+  CSV) and reconciles each against the cited file. No filename, source name, or number is hardcoded.
+- Judgement is generic: a row whose label carries a whole-file count noun (nodes/edges/rows/records/hits/
+  markers/entries) must match the cited file's row count (hard `DRIFT` on mismatch); any other stated integer
+  must be reproducible from a simple column op on the cited file (soft `review` otherwise). Conditional facts
+  such as the 58 dual-compartment bases reconcile via bounded group-wise distinct counts. The Bajpai count is
+  now checked as a plain row count, so the publication-year special case was removed entirely.
+- Added the coverage sweep the old checker lacked: `orphan_file` (a processed CSV on disk whose stem never
+  appears in the plan — the un-inventoried-output staleness a per-number check cannot see) and `missing_file`
+  (a cited pinned file gone from disk).
+- Validated end-to-end against the live repo: 10 load-bearing counts reconcile `ok`, 0 drift, and the sweep
+  surfaced 4 un-inventoried processed CSVs (`chem_resolution_evidence.csv`, `gene_graph_nodes.csv`,
+  `gene_graph_edges_topology.csv`, `gene_graph_edges_projection.csv`) that the previous version could not see.
+- A follow-up documentation fix: `SKILL.md` had described a glob file reference (`EXTRACT_*_records.csv`) as
+  classified `external_ref`, but the parser's filename regex does not capture wildcard patterns, so such a
+  row is skipped, not surfaced. The doc was corrected to state that glob/wildcard references are skipped and
+  must be verified by hand.
+
+**What changed in the specialists.** The `PROJECT_MANAGER` profile gained a standing **"Staleness is a
+standing duty"** section (added ahead of the pre-commit compliance-gate section; profile otherwise unchanged,
+still full-access). It makes drift-detection an unprompted responsibility on any task that touches the plan,
+dashboard, inventory, or a build step, across three fronts: (a) numbers and file state reconciled against the
+real files, never memory; (b) the project's own skills and checks, which go stale too — over-fitting to a
+frozen snapshot (hardcoded filenames, per-source special cases, baked-in numbers) is to be fixed or flagged,
+preferring source-agnostic checks that discover what to verify from current state; and (c) conflicting or
+duplicate skills that claim authority over the same job, to be reconciled to a single source of truth with
+the superseded one retired.
+
+**Why.** A stale check reads as authoritative and is worse than no check; the over-fitted checker would have
+silently passed a plan that omitted newer outputs. The skill fix removes the snapshot dependence, and the
+profile change makes catching this class of drift — in data, in tooling, and in overlapping skills — a
+standing part of the custodian role rather than something done only on request.
+
+**Documents updated:** `pigmentation-plan-sync` skill (`SKILL.md`, `kernel.py`); `PROJECT_MANAGER` agent
+profile (system prompt). No repo data files or tracking-document numbers changed.
+
+---
+
+## 2026-07-11 — Tiered pre-commit compliance gate propagated across all specialists and gate-referencing skills
+
+**The issue.** The pre-commit compliance gate existed in two divergent versions across the specialist
+profiles, a duplicate-authority drift. The `precommit-compliance-gate` skill and two profiles
+(`PROJECT_MANAGER`, `RESEARCH_SITE_PUBLISHER`) carried the current **tiered** rule — Tier 1 (fast local
+self-check, commit directly) for scoped commits that only modify already-tracked files or add the project's
+own code/prose, Tier 2 (delegate to `REPO_COMPLIANCE_GATE`) only when a new document/data/archive file
+appears or `.gitignore`/README/`DATA_SOURCES` change, and always at push/PR/tag/release. Nine other profiles
+still carried an older non-tiered paragraph ("Before ANY action that publishes… you MUST first hand the
+working tree to REPO_COMPLIANCE_GATE… This holds even for a quick or routine commit") that forced a delegated
+gate round-trip on every commit. That is what caused small changes to be held up and to backlog into rare,
+oversized commits.
+
+**What changed.** The nine profiles still on the old rule were reconciled to the single canonical tiered
+text (taken verbatim from the already-correct profiles so no new wording drift was introduced):
+`DATA_SOURCE_AUDITOR`, `PLAN_DECONVOLUTOR`, `REPRODUCIBILITY_SPECIALIST`, `PI_ORCHESTRATOR`,
+`SCICOMM_REVIEWER`, `VISUAL_DATA_REVIEWER`, `HACKATHON_DOCUMENTARIAN`, `PLATFORM_LIMITS_ADVISOR`,
+`GENETICS_DATA_EXTRACTOR`. Only the compliance-gate paragraph was replaced; each profile's identity, other
+instructions, skill list, and unrestricted access were left unchanged. The `quarto-github-pages` skill's one
+gate sentence, which still implied gating every commit, was rewritten to defer to the tiered check
+(`commit_needs_full_gate`) and republished. Left untouched: the `precommit-compliance-gate` skill (already
+the tiered source of truth), `PROJECT_MANAGER` and `RESEARCH_SITE_PUBLISHER` (already tiered), and
+`REPO_COMPLIANCE_GATE` (the gate itself, exempt).
+
+**Verification.** After the edits, no profile retains the old non-tiered block, and every gate-referencing
+profile except `REPO_COMPLIANCE_GATE` now carries the tiered rule.
+
+**Why.** A specialist should be able to commit small, already-cleared changes (a source edit, a
+tracking-document update, a prose fix) directly, and reserve the delegated gate for commits that actually
+introduce redistribution risk or for the push/PR/release where content leaves the machine. Divergent copies
+of the same rule are the same failure mode as a duplicate document under a variant name — they silently drift
+— so the fix reconciles them all to one source of truth rather than leaving two live.
+
+**Documents updated:** nine agent profiles (system prompts, compliance-gate section only);
+`quarto-github-pages` skill (`SKILL.md`). No repo data files or tracking-document numbers changed.
