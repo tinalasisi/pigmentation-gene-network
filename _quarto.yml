@@ -1,39 +1,35 @@
 project:
   type: website
   output-dir: _site
-  # Explicit render list: only these documents become the site. The extract
-  # notebooks (01a-01d) are pipeline steps that read withheld inputs and carry
-  # no stored outputs, so they are deliberately NOT rendered.
+  # Explicit render list. Notebooks are rendered from their STORED outputs (execute: false below),
+  # so no kernel, no network, and no withheld data are needed at render time.
   render:
     - index.qmd
     - notebooks/01_reconstruct_published_network.ipynb
     - notebooks/02_resolve_network_to_genes.ipynb
     - notebooks/03_assemble_validation_cases.ipynb
-    - docs/NB3_case_assembly_provenance.md
 
 website:
-  title: "Pigmentation Gene Network"
+  title: "Pigmentation gene network"
+  description: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge."
+  reader-mode: true
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: Overview
       - href: notebooks/01_reconstruct_published_network.ipynb
-        text: "1 · Reconstruct network"
+        text: "NB1 · Reconstruct the network"
       - href: notebooks/02_resolve_network_to_genes.ipynb
-        text: "2 · Resolve to genes"
+        text: "NB2 · Resolve to genes"
       - href: notebooks/03_assemble_validation_cases.ipynb
-        text: "3 · Assemble validation cases"
-      - href: docs/NB3_case_assembly_provenance.md
-        text: "3a · Case provenance"
+        text: "NB3 · Validation cases"
 
 format:
   html:
     theme: cosmo
     toc: true
-    code-fold: true
+    code-tools: true
+    code-fold: show
 
-# No kernel, no network, no withheld data at render time: Quarto renders the
-# outputs already stored in the committed notebooks. This is why the CI build
-# cannot fail on execution. Notebooks are re-executed only on your own machine.
 execute:
-  enabled: false
+  enabled: false   # render stored notebook outputs only — no kernel, no network, no withheld data at render time

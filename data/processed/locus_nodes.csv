@@ -1,4 +1,0 @@
-locus_id,chrom,position,genome_build,region,nearest_gene_label,gene_label_basis,traits,source_citation
-rs12913832,15,28120472,GRCh38,15q13.1,HERC2,nearest_gene_by_position,eye colour; skin pigmentation; hair colour; suntan; cutaneous melanoma; actinic keratosis,GWAS Catalog (mapped_gene HERC2); dbSNP rs12913832 (GRCh38)
-rs1800401,15,28260053,GRCh37,15q13.1,OCA2,nearest_gene_by_position,skin pigmentation (predicted-pathogenic missense R305W),Ang2023 eLife 10.7554/eLife.77514 (position GRCh37/b37 as reported); dbSNP rs1800401
-rs797044784,15,,NA (MNP; see note),15q13.1,OCA2,nearest_gene_by_position,albinism / hypopigmentation (causal in Kalinago),Ang2023 eLife 10.7554/eLife.77514 (exon 8 MNP c.819_822delCTGGinsGGTC); dbSNP rs797044784

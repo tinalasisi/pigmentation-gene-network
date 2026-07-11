@@ -37,3 +37,57 @@ Status from the Claude Science session, so a parallel/Claude Code session can pi
 Claude Science stays read-only on git per PI instruction (PI drives local commits). Deterministic build +
 `quarto render` + browser test = Claude Code (the sandbox cannot render quarto or execute notebooks). Return
 contract in `internal/handoffs/CLAUDE_SCIENCE_RETAINED.md`.
+
+
+---
+## Addendum 2026-07-11T17:30:16Z — resolver manifest + dark-matter ledger (both review-passed)
+
+Two more Claude Science pieces are staged on disk (UNTRACKED — PI drives commits):
+
+**Resolver manifest (built, deterministic, review-PASS):**
+- `docs/data/locus_resolver_manifest.json` — the frozen export the Locus Resolver page reads. Both worked
+  examples (herc2_oca2_eye, kalinago_oca2) fully populated with grounded/cited values + 3 caveats.
+- `scripts/build_resolver_manifest.py` — regenerates it deterministically from the committed CSVs (verified
+  byte-identical on all structural fields). Claude Code should READ the manifest and re-run the builder if
+  CSVs change; do NOT hardcode values into the JS. CLAUDE_CODE_HANDOFF.md §3c updated to say so.
+- Kalinago example direction is PAPER-LEVEL 'both' (Ang2023) with gene_level_label='mixed' carried alongside
+  — complementary, not contradictory. Reproducibility gate: PASS. Source audit: annotation-only invariant HELD.
+
+**Dark-matter ledger (built, review-PASS_WITH_NOTES → notes resolved):**
+- `data/processed/dark_matter_ledger.csv` (15 genes) + `docs/dark_matter_ledger_README.md`. Four locked
+  classes: genuinely_novel=4, redirects_to_other_gene=2, signal_no_eQTL_redirect=3,
+  LD_passenger_or_no_signal=6 — matches project_dashboard.md §3 gene-for-gene. target_in_168_network=False
+  for all 15 (the FALSIFIED 0/15 result).
+- CITATION FIX applied (three misattributed PMIDs, verified against NCBI PubMed, corrected in BOTH the ledger
+  AND the upstream Track A table `data/processed/locus_resolution_table.csv`): MFSD12 29489754→29025994
+  (Crawford2017 Science); MSX2 30595370→30531825 (Morgan2018 Nat Commun); KALRN removed a fabricated
+  "Chen et al." label from PMID:37294081 (which is Ang2023). If you regenerate the ledger, re-apply or fix at
+  source — noted in the README.
+
+All four checks this round: repro PASS (ledger+manifest), source-audit annotation-only HELD, PMID:22234890
+verified, three ledger PMIDs corrected.
+
+
+---
+## Addendum 2026-07-11T18:24:58Z — decomposition finding sharpened; front-end PAUSED; residual lit gaps closed
+
+PI decision: PAUSE the interactive Locus Resolver build; sharpen the decomposition FINDING first. Rationale
+from the lit review (internal/lit_review/): nearest!=causal is the LOWEST-novelty claim (standard L2G
+practice); the three-strata dark-matter decomposition is what SURVIVES as novel.
+
+**Finding locked** — internal/DISCORDANCE_DECOMPOSITION_FINDING.md. Three strata over 31 case genes:
+mechanistic (in-network) 9 = 29.0%; association-recoverable (D'Arcy) +7 -> 16/31 = 51.6%; dark 15 = 48.4%.
+Dark decomposed 4/2/3/6 (genuinely_novel / redirects / signal-no-redirect / passenger-or-no-signal); 0/15
+resolve to in-network (falsified mislabeled-pointers hypothesis = the asset).
+
+**Two residual lit gaps CLOSED** (GENETICS_LIT_REVIEWER, internal/lit_review/2026-07-11_GAPCLOSURE_...md;
+5 refs appended to bibliography):
+- Gap A (Claim 4 citation): adopt Mountjoy 2021 Nat Genet (L2G methods, PMID 34711957) + Ghoussaini 2021 NAR
+  (Open Targets Genetics portal, PMID 33045747), alongside FUMA — cite nearest!=causal as APPLIED PRACTICE,
+  not novel insight. Both NCBI-verified.
+- Gap B (framing F): a second, vocabulary-independent sweep (13 loose-term queries) again found NO
+  pigmentation-specific discordance-network competitor. Open ground at the instrument level holds.
+- All three cheap novelty-risk gaps now closed; none overturned the reframe.
+
+**Front-end substrate remains staged and valid** (manifest, locus tables, dark-matter ledger) — repurposable
+as a 'Discordance Decomposition Explorer' if/when the build resumes.

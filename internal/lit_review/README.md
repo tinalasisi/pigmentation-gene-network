@@ -51,4 +51,7 @@ locked in prose. Every entry carries a resolvable DOI or PMID.
   works across framings A–G, each tagged Overlaps / Adjacent / Background against the project's claim.
 - `2026-07-11_1308_NOVELTY_RISK_top_claims.md` — novelty-risk memo on the top-4 exposed claims (does each
   survive its closest prior art, and on what distinction).
-- `bibliography/2026-07-11_priorart_refs.csv` / `.ris` — the 17 verified references, machine-readable.
+- `2026-07-11_1323_REFRAME_contribution_assessment.md` — reframe from "mechanism-only purity" to an
+  explained-vs-association-vs-dark decomposition measured on pigmentation as the model trait; the search that
+  tested whether that niche is already occupied (it is not).
+- `bibliography/2026-07-11_priorart_refs.csv` / `.ris` — the 21 verified references, machine-readable.

@@ -4,6 +4,12 @@ Every external data source used to build the expanded pigmentation gene network,
 rebuilds with **no undocumented assumptions**. Each source has a full spec in `docs/specs/`; this file is the
 one-screen index plus the reproducibility contract.
 
+> **Status note (updated 2026-07-11T22:51Z).** The D'Arcy 2023 tables are **committed** — an earlier version
+> of this file called them "staged / not yet committed," now corrected. References below to a "proposed
+> enrichment step," "NB4/NB5," "TODO #0," "locked decisions," or `project_dashboard.md` describe **earlier
+> plans now retired/archived** (`internal/archive/`); the current framing and the open execution questions
+> live in `internal/START_HERE.md`. Treat this manifest as source provenance, not a plan.
+
 **Payoff loci:** the albinism causal genes **TYR (OCA1)** and **OCA2** — also the clinical validation cases.
 Association markers are not treated as causal: for the blue-eye signal, HERC2 is the nearest gene to
 rs12913832, but causality routes through OCA2 (its long-range enhancer target). Sources below are checked for
@@ -22,10 +28,9 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
   Table S1 (the identical table is a supplementary file of the article's **CC BY 4.0** PMC deposit,
   PMC10901463 — see the license note below); the HIrisPlex-S Erasmus MC Webtool Manual v2 (freely usable);
   all processed tables, scripts, notebooks, and the GWAS Catalog pull (EMBL-EBI terms, attribution).
-- **Staged, not yet committed:** the D'Arcy et al. 2023 supplementary Tables S1–S6
+- **Committed (openly licensed):** the D'Arcy et al. 2023 supplementary Tables S1–S6
   (`data/raw/darcy2023/*.xlsx`; **CC BY 4.0**, PMC9854651 — the article PDF is not stored here, cited by
-  DOI). Openly licensed and eligible for the same commit path as Raghunath/Bajpai above; on disk but not
-  yet git-committed — any commit runs through REPO_COMPLIANCE_GATE separately.
+  DOI), committed via the same path as Raghunath/Bajpai above (cleared through REPO_COMPLIANCE_GATE).
 - **NOT committed — cited by DOI instead:** the subscription/full-text articles for Bajpai (typeset
   *Science* PDF/text), Baxter (*PCMR*, Wiley), Chaitanya HIrisPlex-S (*FSI:G*, Elsevier), and Walsh 2017
   (*Hum Genet*, Springer); **and the Baxter 2018 Table S7 supplementary data file** — a Wiley
@@ -50,7 +55,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 6b | **HGNC gene groups** | Full member genes of the 6 `enzyme_activity_class` nodes (115 member edges), Step 4 | `rest.genenames.org` `fetch/gene_group_id/<id>`, frozen `hgnc_gene_groups.json` | ✅ frozen (Notebook 2) | (see entry 6 below) |
 | 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
 | 6d | **KEGG hsa04916** (Melanogenesis) | Curated-pathway membership scope cross-check (NB2 Step 6) | `rest.kegg.jp`, frozen `kegg_hsa04916.json` | ✅ frozen (Notebook 2) | (see entry 6c below) |
-| 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables staged on disk at `data/raw/darcy2023/*.xlsx` (not yet git-committed — pending REPO_COMPLIANCE_GATE) | ✅ staged; cross-check not yet run; NB4/NB5 consumption pending TODO #0 | (see entry 6 above for the full characterization) |
+| 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables at `data/raw/darcy2023/*.xlsx` | ✅ committed (CC BY 4.0); downstream use open (see `internal/START_HERE.md`) | (see entry 6 above for the full characterization) |
 
 ---
 
@@ -177,10 +182,9 @@ validation authorities (attach gene identity and relationships, then check them)
   `manual_ruling_documented`, each with a written `ruling_rationale`. The per-node method, query string, and
   rationale live in `data/processed/node_resolution.csv` and `data/processed/chem_resolution_evidence.csv`.
 - **Coordinate assembly:** GRCh38 (MyGene `genomic_pos`, default assembly).
-- **D'Arcy/Kiel (2023) cross-check:** **STAGED** — the 6 supplementary tables are staged on disk under
-  `data/raw/darcy2023/*.xlsx` (untracked in git as of this note; not yet committed — any commit goes
-  through REPO_COMPLIANCE_GATE separately) (CC BY 4.0; the article PDF itself is not stored here, cited by
-  DOI). The cross-check computation itself has not been run. D'Arcy et al. 2023 (*Bioengineering* 10(1):13, DOI
+- **D'Arcy/Kiel (2023) cross-check:** the 6 supplementary tables are **committed** under
+  `data/raw/darcy2023/*.xlsx` (CC BY 4.0; the article PDF itself is not stored here, cited by DOI). Whether
+  and how they are used downstream is an open question (see `internal/START_HERE.md`), not a fixed plan. D'Arcy et al. 2023 (*Bioengineering* 10(1):13, DOI
   10.3390/bioengineering10010013, PMC9854651, PMID 36671585, CC BY 4.0), retrieved from Europe PMC
   (`PMC9854651/supplementaryFiles`), contributes two components: (1) Table S1, a 243-gene OMIM-backed
   disease–gene table (phenotype MIM number + hyper-/hypo-/mixed-pigmentation phenotype class); (2) Tables

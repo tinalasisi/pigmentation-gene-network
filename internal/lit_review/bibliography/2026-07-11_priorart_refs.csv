@@ -16,3 +16,16 @@ E_boolean_signed,Sudarshan Chari,2013,The Conditional Nature of Genetic Interact
 F_pigmentation,Stacey Ann N. D’mello,2016,Signaling Pathways in Melanogenesis,International Journal of Molecular Sciences,10.3390/ijms17071144,27428965,1044,4,False
 G_prs_architecture,Alicia R. Martin,2017,Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations,The American Journal of Human Genetics,10.1016/j.ajhg.2017.03.004,28366442,1568,9,False
 G_prs_architecture,Xuanyao Liu,2019,Trans Effects on Gene Expression Can Drive Omnigenic Inheritance,Cell,10.1016/j.cell.2019.04.014,31051098,607,3,False
+F_pigment_model_system,William J. Pavan,2019,The Genetics of Human Skin and Hair Pigmentation,Annual Review of Genomics and Human Genetics,10.1146/annurev-genom-083118-015230,31100995,158,,False
+D_penetrance_modifier,Mohamed A. El-Brolosy,2017,Genetic compensation: A phenomenon in search of mechanisms,PLoS Genetics,10.1371/journal.pgen.1006780,28704371,857,,False
+A_network_medicine,Xuezhong Zhou,2014,Human symptoms–disease network,Nature Communications,10.1038/ncomms5212,24967666,674,,False
+G_prs_architecture,Evan A. Boyle,2017,An Expanded View of Complex Traits: From Polygenic to Omnigenic,Cell,10.1016/j.cell.2017.05.038,28622505,3183,,False
+E_boolean_signed,Emidio Capriotti,2018,Integrating molecular networks with genetic variant interpretation for precision medicine,WIREs Systems Biology and Medicine,10.1002/wsbm.1443,30548534,46,,False
+E_boolean_signed,Lesley T. MacNeil,2011,Gene regulatory networks and the role of robustness and stochasticity in the control of gene expression,Genome Research,10.1101/gr.097378.109,21324878,383,,False
+G_prs_architecture,Kyoko Watanabe,2019,A global overview of pleiotropy and genetic architecture in complex traits,Nature Genetics,10.1038/s41588-019-0481-0,31427789,1470,,False
+D_penetrance_modifier,Jan Ihmels,2007,Backup without redundancy: genetic interactions reveal the cost of duplicate gene loss,Molecular Systems Biology,10.1038/msb4100127,17389874,161,,False
+B_locus_to_gene,Edward Mountjoy,2021,An open approach to systematically prioritize causal variants and genes at all published human GWAS trait-associated loci,Nature Genetics,10.1038/s41588-021-00945-5,34711957,636,19,False
+B_locus_to_gene,Maya Ghoussaini,2020,Open Targets Genetics: systematic identification of trait-associated genes using large-scale genetics and functional genomics,Nucleic Acids Research,10.1093/nar/gkaa840,33045747,705,35,False
+F_pigmentation,E. García‑Gámez,2011,Using Regulatory and Epistatic Networks to Extend the Findings of a Genome Scan: Identifying the Gene Drivers of Pigmentation in Merino Sheep,PLOS ONE,10.1371/journal.pone.0021158,21701676,53,6,False
+F_pigmentation,Bruce A. Hamilton,2012,Modifier Genes and the Plasticity of Genetic Networks in Mice,PLoS Genetics,10.1371/journal.pgen.1002644,22511884,82,2,False
+F_pigmentation,Richard L. Mort,2016,Reconciling diverse mammalian pigmentation patterns with a fundamental mathematical model,Nature Communications,10.1038/ncomms10288,26732977,72,10,False

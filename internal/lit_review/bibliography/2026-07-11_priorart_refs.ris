@@ -167,3 +167,85 @@ DO  - 10.1016/j.cell.2019.04.014
 AN  - PMID:31051098
 N1  - framing:G_prs_architecture; cited_by:607
 ER  - 
+
+
+TY  - JOUR
+TI  - The Genetics of Human Skin and Hair Pigmentation
+AU  - William J. Pavan
+PY  - 2019
+JO  - Annual Review of Genomics and Human Genetics
+DO  - 10.1146/annurev-genom-083118-015230
+AN  - PMID:31100995
+N1  - framing:F_pigment_model_system; cited_by:158
+ER  - 
+
+TY  - JOUR
+TI  - Genetic compensation: A phenomenon in search of mechanisms
+AU  - Mohamed A. El-Brolosy
+PY  - 2017
+JO  - PLoS Genetics
+DO  - 10.1371/journal.pgen.1006780
+AN  - PMID:28704371
+N1  - framing:D_penetrance_modifier; cited_by:857
+ER  - 
+
+TY  - JOUR
+TI  - Human symptoms–disease network
+AU  - Xuezhong Zhou
+PY  - 2014
+JO  - Nature Communications
+DO  - 10.1038/ncomms5212
+AN  - PMID:24967666
+N1  - framing:A_network_medicine; cited_by:674
+ER  - 
+
+TY  - JOUR
+TI  - An Expanded View of Complex Traits: From Polygenic to Omnigenic
+AU  - Evan A. Boyle
+PY  - 2017
+JO  - Cell
+DO  - 10.1016/j.cell.2017.05.038
+AN  - PMID:28622505
+N1  - framing:G_prs_architecture; cited_by:3183
+ER  - 
+
+
+TY  - JOUR
+TI  - Integrating molecular networks with genetic variant interpretation for precision medicine
+AU  - Emidio Capriotti
+PY  - 2018
+JO  - WIREs Systems Biology and Medicine
+DO  - 10.1002/wsbm.1443
+AN  - PMID:30548534
+N1  - framing:E_boolean_signed; cited_by:46
+ER  - 
+
+TY  - JOUR
+TI  - Gene regulatory networks and the role of robustness and stochasticity in the control of gene expression
+AU  - Lesley T. MacNeil
+PY  - 2011
+JO  - Genome Research
+DO  - 10.1101/gr.097378.109
+AN  - PMID:21324878
+N1  - framing:E_boolean_signed; cited_by:383
+ER  - 
+
+TY  - JOUR
+TI  - A global overview of pleiotropy and genetic architecture in complex traits
+AU  - Kyoko Watanabe
+PY  - 2019
+JO  - Nature Genetics
+DO  - 10.1038/s41588-019-0481-0
+AN  - PMID:31427789
+N1  - framing:G_prs_architecture; cited_by:1470
+ER  - 
+
+TY  - JOUR
+TI  - Backup without redundancy: genetic interactions reveal the cost of duplicate gene loss
+AU  - Jan Ihmels
+PY  - 2007
+JO  - Molecular Systems Biology
+DO  - 10.1038/msb4100127
+AN  - PMID:17389874
+N1  - framing:D_penetrance_modifier; cited_by:161
+ER  - 

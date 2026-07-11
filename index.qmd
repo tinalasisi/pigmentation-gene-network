@@ -1,21 +1,47 @@
 ---
-title: "Pigmentation Gene Network"
+title: "Pigmentation gene network"
+subtitle: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge"
 ---
 
-A reconstructed, gene-resolved network of published pigmentation
-genotype→phenotype findings, with a curated validation-case set.
+## What this is
 
-## Contents
+A model-system project on the genotype→phenotype map. **The goal is to know how much to trust a claimed link
+between a genetic variant and a phenotype, by making independent lines of evidence converge** — statistical
+association, mechanistic pathway knowledge, and experimental validation each capture part of the truth, and
+where they agree we can be confident. Applied to human pigmentation, the aim is to grade reported pigmentation
+associations by how well independent evidence converges on each, and to point to the specific next step that
+would confirm it.
 
-- **[1 · Reconstruct network](notebooks/01_reconstruct_published_network.ipynb)** —
-  assemble the published network (nodes and signed, sourced edges).
-- **[2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** —
-  resolve network entities to canonical genes.
-- **[3 · Case provenance](docs/NB3_case_assembly_provenance.md)** —
-  acquisition and extraction record for the validation cases.
+Pigmentation is the model system because it is highly heritable, has near-zero environmental variance, has a
+well-characterized molecular mechanism, and shows the same prediction/portability failures — the same allele
+causal in one population and silent in another — in a visible, checkable form.
 
-::: {.callout-note}
-This site is built from the committed notebooks by GitHub Actions and served on
-GitHub Pages. Pages show results computed on the author's machine; notebooks are
-not re-executed at build time.
-:::
+## The work is in the notebooks
+
+Each notebook is a **self-contained mini-manuscript** — introduction, methods, results, and
+discussion/conclusion, with citations — that you can read, reproduce, and adapt. The processed tables are
+their *outputs*; the notebooks are the contribution.
+
+### [Notebook 1 — Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
+
+Rebuilds the Raghunath et&nbsp;al. 2015 melanogenesis model as a **signed, directed** network — typing and
+signing every interaction directly from the published file, with a resolvable citation for each edge. The
+mechanistic backbone, and the most confident, foundational piece of work here.
+
+### [Notebook 2 — Resolve the network to genes](notebooks/02_resolve_network_to_genes.ipynb)
+
+Resolves the network's entities to genes (UniProt / HGNC / Ensembl / GRCh38), builds the explicit gene layer,
+and validates every edge against OmniPath as a separate, non-destructive check. Every node and edge carries a
+resolvable citation; a closing gate fails the build if anything is uncited.
+
+### [Notebook 3 — Assemble the validation cases](notebooks/03_assemble_validation_cases.ipynb)
+
+Documents how published cases of genotype→phenotype discordance were pulled from curated papers and counted,
+paper by paper, with the numbers reproduced from the committed extracts. A reproducible, adaptable base for
+testing the network.
+
+## Status
+
+This project is being reoriented toward the goal above; the precise contribution and a fuller, designed demo
+are in progress. **Notebooks 1–2 are the stable core.** The current, authoritative account of the goal, the
+materials, and the open decisions is in the repository — see `README.md` and `internal/START_HERE.md`.

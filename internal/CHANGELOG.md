@@ -42,7 +42,8 @@ and a free-text Markdown body. A correction or reply is a new file that referenc
 filename — never an edit to an existing note.
 
 **(c) This changelog stays curated prose, appended to only in the existing dated-entry format.** Every
-change to this file below this guidance section is a new `## YYYY-MM-DD — <title>` entry, added at the end,
+change to this file below this guidance section is a new `## YYYY-MM-DDTHH:MMZ — <title>` entry (a **full UTC
+datetime**, not a bare date — the PI works across many hours and days, so a bare date is ambiguous), added at the end,
 in full sentences, describing what changed and why. Existing entries are never rewritten. **The rule that
 keeps this changelog merge-safe:** `internal/CHANGELOG.md` carries a `.gitattributes` `merge=union`
 directive as a defensive backstop for the common case of two branches each appending one dated entry at the
@@ -448,3 +449,331 @@ satisfied, and that is the reportable event regardless of outcome.
 
 **Documents updated:** none beyond this changelog entry; the two `DATA_SOURCES.md` follow-ups above are open
 items for the next commit that touches that file. No tracking-document numbers changed.
+
+---
+
+## 2026-07-11 — Contribution reframe: explained-vs-dark decomposition adopted as primary frame; "GWAS by node" retired as headline
+
+**Context.** A cross-field literature sweep (GENETICS_LIT_REVIEWER, `internal/lit_review/`) tested the
+project's most reviewer-exposed novelty claims against adjacent fields. "GWAS by node" — a network-derived
+ranked modifier list — was found to overlap an established method (Lee et al. 2011, network-based boosting
+of GWAS; Li & Patra 2010, random-walk prioritization). The earlier defense (network is "more principled"
+because it forbids association edges) was brittle and understated the actual contribution. The PI flagged
+the "forbids association edges" framing as too strong and asked for the angle that most contributes to
+science, centered on pigmentation as a model system.
+
+**PI decisions this session:**
+1. **Reframe the primary contribution — adopted.** Primary frame = the quantified decomposition of
+   genotype→phenotype discordance into explained-by-mechanism / association-recoverable / genuinely-dark
+   strata, measured on pigmentation as the enabling precondition. Recorded as locked decision 12.
+2. **"GWAS by node" retired as a headline novelty claim** — retained only as a component method that refines
+   the network-prioritization lineage.
+3. **Amend locked decision 11** — the "dark matter does not become the primary frame" clause is superseded:
+   the primary frame is now the decomposition, with discordance (D1/D2) as the explained stratum's mechanism
+   and dark matter as the residual stratum. D1/D2 content unchanged.
+4. **Locked decision 5 unchanged** — the mechanistic backbone stays OmniPath + curated-literature only;
+   association edges are the labeled middle stratum, not "forbidden." No schema change.
+
+**Prior-art basis (connector-verified, 25 refs).** 7-framing (A–G) cross-field sweep + 3 targeted follow-ups;
+the decomposition-on-a-model-trait object was not found occupied. Sharpest potential competitor
+(logical/Boolean-network penetrance) returns ~63 works, none a signed-path formalism. New anchors added:
+Boyle 2017 (omnigenic), El-Brolosy 2017 (genetic compensation), Pavan 2019 (pigmentation model system),
+Capriotti 2018 (networks for variant interpretation — closest neighbor to D1). Full record:
+`internal/lit_review/`.
+
+**Documents to update (propagation scope).** `project_dashboard.md` §1 + decisions 5/11/12; `README.md`
+(retire "GWAS by node" as headline; add decomposition pitch); `TODO.md` (mark the three follow-up searches
+done; add any decomposition-analysis items); `FRAMING_EVALUATION_dark_matter.md` +
+`RESEARCH_SYNTHESIS_locus_resolution_mvp.md` (note the elevation of the coverage analysis to the primary
+spine). Prior framing text superseded, not deleted.
+
+**Plan-sync check.** `check_plan_sync()` to be run after the rewrite; this reframe touches no pinned
+processed-data file, so no numeric drift is expected.
+
+---
+
+## 2026-07-11 — Track opened: resolution-engine + population-atlas pivot; GWAS-catalog scope reopened; novelty-first sequencing (PI-approved)
+
+**Context.** With NB1–NB2 and the 31-case-gene three-strata decomposition stable and independently
+re-verified against the pinned CSVs, the PI reviewed the committed state against the newest (uncommitted)
+thinking and approved a forward plan (authored by Claude Code this session). Driver: the committed
+"honest-boundary" framing reads as defensive/thin; the project needs a genuinely novel, generative pivot,
+its first tangible finding-evidence within ~6 h, and the full deliverable by 2026-07-12 midnight (demo
+recording + submission Monday).
+
+**PI decisions this session:**
+1. **Decision A — ratify the contribution reframe WITH tone alignment.** The three-strata decomposition
+   stays the primary frame and "GWAS by node" retired (per the reframe entry above + locked decisions
+   5/11/12), but the `project_dashboard.md` §1 north-star paragraph is reworded away from the defensive
+   "…rather than imputing" tone toward a generative one. Application deferred to a single consolidated
+   propagation pass after the pivot locks (avoids a 6th same-day reframe churn).
+2. **Decision B — reopen the GWAS-catalog scope** (reverses `TODO.md` (c) item D8, "HELD until after MVP"),
+   and make divergent novelty-seeking literature research the FRONT GATE — find the strongest defensible
+   pivot before the heavy data pulls, so we do not build the wrong deliverable.
+
+**Track plan (four workstreams, novelty-first).** WS-A: (A1) divergent novelty sweep → ranked pivot
+recommendation; (A2) zero-new-data resolution-rate pilot from `locus_resolution_table.csv`; (A3) one
+consolidated reframe propagation after the pivot locks. WS-B: reopen GWAS scope (reuse
+`scripts/gwas_catalog.py`) + resolution engine → resolution ledger + rate; PI-gated candidate-additions
+proposal. WS-C: population-stratified locus atlas. WS-D: finding writeup + ship. Hard rules unchanged
+(evidence-gated, no imputation; nearest≠causal; backbone mechanism-only per locked dec. 5; PMIDs
+NCBI-verified; payoff loci TYR+OCA2; no number from memory; commits via `REPO_COMPLIANCE_GATE`).
+
+**Tooling.** OpenAlex Premium key configured in gitignored `.env` (verified live, HTTP 200) for cross-field
+prior art; PubMed connector + GWAS Catalog + eQTL Catalogue REST reachable keyless. The human-genetics MCP
+connector Claude Science used is NOT connected in this Claude Code session — public APIs + the repo's
+`gwas_catalog.py` cover it.
+
+**Documents updated:** this changelog entry (track opened) + a `notes/` operational entry. No
+tracking-document numbers changed yet; `TODO.md` gains the WS-A/B/C/D items and the reopened D8 scope in the
+WS-A3 pass. Milestone events land here; finer progress pings go to `internal/handoffs/notes/`.
+
+**Plan-sync check.** No pinned processed-data file touched yet; run `check_plan_sync()` after WS-A3.
+
+---
+
+## 2026-07-11 — WS-A2 first tangible evidence: resolution-rate pilot on committed data (no new pulls)
+
+**Result (re-derived from `data/processed/locus_resolution_table.csv`, not from memory; pilot script in
+session scratchpad, to be formalized into the WS-B resolution ledger).** Of the **22 previously-unresolved
+case loci** (7 association-recoverable + 15 dark; the 9 mechanistic in-network genes excluded as already
+resolved):
+- **13/22 (59%)** resolve to a **positive cited functional link** (in-network regulatory target, redirect to
+  another gene, or a correctly-labelled novel pigmentation gene).
+- **6/22 (27%)** are **cited-negative** — no independent pigmentation GWAS signal / LD-passenger (a cited
+  explanation, not an open question).
+- **3/22 (14%)** remain **genuinely open** (genuine pigmentation signal, mechanism unresolved): **KALRN,
+  MSX2, SYT6**.
+- Of the **15 "dark" loci** specifically: **80% (12/15) already characterized**, only **3/15 (20%) genuinely
+  open** (the same three).
+
+**Why it matters.** Proof-of-concept for the pivot: the resolution engine's headline metric is real and
+computable, and it reframes the committed "48% dark" as "the dark set is mostly characterized; only three
+loci are truly open." WS-B extends this rate to NEW loci from the reopened GWAS-catalog scope, where the
+measurement becomes a novel result on previously-uncharacterized loci. Method: distinct-gene classification
+of `resolution_class` (positive = resolves_to_in_network_gene / resolves_to_other_gene / genuinely_novel;
+cited-negative = no_pigmentation_GWAS_signal; open = no_regulatory_evidence_found).
+
+**Documents updated:** this entry. No pinned processed-data file changed (read-only computation).
+
+---
+
+## 2026-07-11 — WS-A1 divergent novelty sweep complete: recommend re-aiming the headline to a mechanistic PRS-portability failure-mode taxonomy (awaiting PI sign-off)
+
+**Method.** 13-agent workflow (`novelty-pivot-sweep`): 6 candidate pivots each scouted (PubMed + OpenAlex)
+then adversarially red-teamed to KILL it, then ranked by a judge. Full record:
+`internal/lit_review/2026-07-11_1949_PROPOSAL_pivot_mechanistic_portability_taxonomy.md` + the workflow
+journal.
+
+**Key result — every STANDALONE candidate failed the red-team (`survives=False`), including BOTH the
+Science-plan "resolution rate" headline AND the currently-locked three-strata frame:**
+- resolution_rate: preempted by Gazal 2022 cS2G (PMID 35668300) + Mountjoy 2021 L2G (PMID 34711957);
+  headlining a "rate" imports the "just L2G on 22 pigmentation loci" objection — NET-NEGATIVE.
+- population atlas (standalone): preempted by Kim 2024 (PMID 38849341, A. Martin coauthor) — a 48,433-person
+  population-stratified skin-color locus atlas already exists.
+- three-strata (as headline): preempted by Loftus 2023 (PMID 37327787, Pavan coauthor) — already "resolves
+  missing heritability" in TYR-OCA. Survives only as substrate/object (the falsified 0/15 negative is the
+  asset).
+- Only the WILDCARD survived (marginally): PRS non-portability read as signed-directed reachability on the
+  mechanism-only network → per-locus blocked(D1)/rerouted(D2) + fixable/irreducible triage — the one cell two
+  vocabulary sweeps found unoccupied.
+
+**Recommendation (PI sign-off requested).** Adopt the wildcard as headline, delivered as a composition:
+three-strata = substrate/Methods; resolution engine = apparatus (complementary to L2G/cS2G, never a headline
+rate); population atlas = cited demonstration surface. Five load-bearing kill-shot PMIDs re-verified live
+against PubMed this session.
+
+**Honest ceiling:** framework, not empirical portability result — computes cleanly for the 9 in-network genes
+(29%), payoff n=2 (TYR/OCA2), no cohort / no R²-by-ancestry. Aw 2025 (PMID 41043808) caps mechanistic claims
+to resolved-causal-variant loci.
+
+**Next.** PI decision on the headline re-aim; on approval, WS-A3 propagates the reframe once, then WS-B/C/D
+execute aimed at the new headline. 6 h build = per-locus portability failure-mode table + figure + scoping
+note.
+
+**Documents updated:** this entry + the lit_review PROPOSAL memo above. No pinned processed-data file changed.
+
+---
+
+## 2026-07-11 — Scope calibration (PI): "preempted" ≠ "killshot"; retain all built contributions, explore the portability taxonomy as the integrative "so what"
+
+**PI guidance.** The WS-A1 sweep's adversarial red-team applied a *top-journal headline-novelty* bar (agents
+instructed to attack as hostile reviewers), so `survives=False` means "not an unprecedented headline claim,"
+NOT "irrelevant." For this project's actual scope — a small hackathon demonstration of PIGMENTATION AS A MODEL
+SYSTEM for why DNA-based prediction fails — prior-art overlap is expected and fine. **Correction: do NOT
+discard the three-strata decomposition, the resolution engine / honest audit, or the population illustration
+over novelty; they are legitimate model-system contributions.**
+
+**Adjusted direction.** Build the integrated demonstration on all retained assets, and explore the portability
+failure-mode taxonomy (signed reachability → blocked/rerouted + fixable/irreducible triage) as the fresh
+integrative "so what," positioned honestly relative to prior art (cite/cede cS2G/L2G, Kim 2024, Burga &
+Lehner/Klamt, Loftus 2023). The `2026-07-11_1949_PROPOSAL_…md` memo is updated with this scope calibration
+(new "Interpretation" section + corrected recommendation).
+
+**Documents updated:** this entry + the lit_review PROPOSAL memo. No pinned processed-data file changed.
+
+---
+
+## 2026-07-11 — Integrated headline artifact built: per-locus PRS-portability failure-mode table + figure (pigmentation model system)
+
+**Built (reproducible, dependency-free — stdlib only, no networkx/matplotlib).**
+`scripts/portability_failure_mode.py` → `data/processed/portability_failure_mode_table.csv` (31 case genes)
++ `data/processed/portability_plotdata.csv` + `figures/portability_failure_mode.svg`. Reads discordance off
+the STRUCTURE of the signed directed 168-gene network (BFS to the melanin-synthesis effector module
+{TYR,TYRP1,DCT,OCA2}) and joins per-gene D1/D2 case direction, per-locus resolution_class, and case-paper
+population tags.
+
+**Result.**
+- Triage of all 31 case genes: 9 mechanistic (directed path computable) / 13 rerouted-fixable (cited
+  functional link) / 6 cited-negative (excluded) / 3 open (irreducible) → **28/31 (90%) characterized, 3
+  genuinely open** (KALRN, MSX2, SYT6).
+- Structure↔empirical concordance (in-network 9): the one pure-D1 gene **PAX3 has a single non-redundant
+  path (structurally blockable)**; EGFR/MC1R (empirically "both") have redundant routes (structurally
+  reroutable); effectors OCA2/TYR/TYRP1 show effector-level allelic rerouting across populations (TYRP1 R93C
+  Oceanian, OCA2 rs1800414 East-Asian). Honest noise: KITLG/PPP3CA single-path yet empirically "both"; POMC
+  has NO encoded path to the effectors (α-MSH ligand edge absent — a network-coverage gap, reported not
+  hidden).
+- Population×mode cross-tab spans Kalinago / African / East-Asian / Oceanian / European cohorts — the same
+  phenotype reached via different genes/alleles in different ancestries, i.e. the mechanism of PRS
+  non-portability.
+
+**Framing (per the scope calibration above).** This is the integrative "so what" lens on the RETAINED
+three-strata + resolution assets, NOT a displacement. Honest ceiling: framework-level (payoff n=2 TYR/OCA2,
+no cohort / no R²-by-ancestry); mechanistic classification scoped to resolved-causal-variant loci (Aw 2025,
+PMID 41043808); population tags descriptive.
+
+**Documents updated:** this entry + new `scripts/portability_failure_mode.py`,
+`data/processed/portability_failure_mode_table.csv`, `data/processed/portability_plotdata.csv`,
+`figures/portability_failure_mode.svg`. New data/figure/script files are Tier-2 → to be committed via
+`REPO_COMPLIANCE_GATE` at the WS-A3 / WS-D checkpoint (not yet committed).
+
+---
+
+## 2026-07-11 — CORRECTION (per PI-flagged audits): this session's resolution-rate headlines conflated coverage with resolution and used a gene-first denominator
+
+**Trigger.** PI directed me to `internal/handoffs/HANDOFF_CRITICAL_limitations_and_framing_issues.md` and
+`internal/TRACEABILITY_coverage_and_resolution_logic.md` (both by the prior Claude Code main session, 15:53).
+They are correct, and I had not read them before reporting this session's numbers.
+
+**Destabilized (this session's claims):**
+- WS-A2 pilot headline "13/22 = 59% positive · 19/22 = 86% characterized" MIXES two axes (audit C1/W4): the 13
+  "positive" include the 7 `darcy_recoverable` genes, which were never dark (already in D'Arcy — a COVERAGE
+  fact, not a resolution). Honest number = resolution over the **15 dark genes only: 6/15 (40%) positive,
+  12/15 (80%) characterized, 3 open**.
+- Portability-table headline "28/31 characterized (90%)" inherits that conflation AND the gene-first unit
+  distortion (audit B1): the "31 case genes" denominator includes 4 chr4 IBD-block passengers the source paper
+  EXCLUDED (EMCN/MANBA/SLC39A8/TACR3 — no rsID, "not causal"), 1 null retest (ATRN, P=0.14), and 2 low-MAF
+  SNP-clusters the authors set aside (KALRN/SYT6). These are not 31 gene-level findings.
+- Labels "mechanistic / association-recoverable / dark" are misleading (A1/A2): they name curated SOURCES, not
+  evidence types (D'Arcy S1 is OMIM/Mendelian, not GWAS; several "dark" genes have strong mechanism, e.g.
+  MFSD12/Science 2017).
+- 29/23/48% is an artifact of a single-2015-paper backbone never expanded with KEGG/Reactome/OmniPath-curated
+  mechanism (A3), not a measurement of biology.
+
+**Survives (unaffected):** the falsified 0/15 dark-resolve-to-in-network negative (asset); the signed-directed
+reachability compute itself (as a demonstration on the stated backbone); nearest-gene≠causal; the population
+effector story for the gene/variant-specific findings (OCA2 rs1800414 East-Asian; TYRP1 R93C Oceanian).
+
+**This session's artifacts marked PROVISIONAL** (not committed, not deleted): `portability_failure_mode_table.csv`,
+`portability_plotdata.csv`, `figures/portability_failure_mode.svg`, `2026-07-11_1949_PROPOSAL_…md`.
+
+**Corrected direction (positive; each brick accurate).** (1) Treat reported items as LOCI: the chr4 IBD
+passengers + ATRN null + LTO1 non-record + set-aside low-MAF clusters are extraction artifacts to
+reclassify/remove — shrinking the spurious "dark" set. (2) The genuine remainder (MFSD12/SLC24A4/PKHD1/
+TSPAN10/NPLOC4/SIK1) are correctly-identified pigmentation genes/targets simply absent from the minimal
+backbone → expand with KEGG hsa04916 + Reactome (curated only; STRING still barred), re-derive coverage. (3)
+Reframe the GWAS reopen as the locus-first RESOLUTION engine (GWAS Catalog + OpenTargets L2G + eQTL + LD),
+verifying paper rsID ↔ resolved rsID (fixes the §3e seam). (4) Keep coverage and resolution as separate axes;
+report over genuine loci only, with provenance.
+
+**Documents updated:** this entry. Prior-session audit docs read and adopted; artifacts marked provisional.
+
+---
+
+## 2026-07-11 — Full locus-first RE-EXTRACTION started (PI-authorized root-cause fix)
+
+**Decision.** PI chose the full locus-first re-extraction (over bounded easy-wins) to fix the gene-first unit
+distortion at its root (audit B1). Goal: rebuild the case set keyed on LOCI (variant/region), carrying each
+paper's own verdict (causal / hypomorph_contributor / passenger_in_segment / not_significant /
+set_aside_low_confidence / panel_marker), so passengers, nulls, and set-asides can never again be silently
+counted as "genes carrying discordance signal."
+
+**Method.** 13-agent re-extraction workflow over the TRUSTED committed extracts
+(`data/case_records/EXTRACT_*.csv`, which the audit confirms preserve locus truth) + local full-text
+(`data/raw/papers/*/*_fulltext.md` where present; Ang/Norton×2 are extract-only), each locus carrying a
+verbatim evidence quote, followed by a cross-paper audit. Output merged deterministically by Claude Code into
+`data/processed/discordance_loci.csv`, then coverage rebuilt on loci.
+
+**Downstream (this track).** Backbone expansion with KEGG hsa04916 (~95 curated melanogenesis genes; REST
+verified reachable) + Reactome (curated only; STRING/predicted still barred) → re-derive coverage honestly;
+locus-first resolution (OpenTargets L2G + eQTL + LD) on the genuine residual loci; relabel strata by SOURCE;
+keep coverage and resolution as separate axes; reproducible notebook + handoff docs. Backbone edits staged as
+a PI-gated PROPOSAL (locked decision 5).
+
+**Documents updated:** this entry + a `notes/` entry. Re-extraction workflow launched (background).
+
+---
+
+## 2026-07-11 — Locus-first re-extraction COMPLETE + committed `discordance_loci.csv`; the "dark matter" mostly dissolves (verified)
+
+**Done.** 13-paper re-extraction (12 via the workflow; Salvo2023 re-done by hand after its agent hit the
+schema-retry cap) → cross-paper audit → merged into `data/processed/discordance_loci.csv` (105 locus rows,
+13 papers), each row carrying rsID/coord, gene-assignment basis, the paper's OWN verdict,
+is_asserted_pigmentation flag, verbatim evidence, and an audit `needs_review` flag.
+
+**Verified corrected numbers (locus-first, provenance-preserving):**
+- 105 loci → verdict split: **causal 17 / replicated_association 25 / hypomorph_contributor 4** (the
+  genuine-signal core) vs not_significant 22 / set_aside_low_confidence 17 / passenger_in_segment 7 /
+  panel_marker 10 / covariate+ancestry 3. **≈33 distinct genuine pigmentation loci after cross-paper dedup**
+  (8 collision groups — e.g. TYRP1 R93C across Kenny/Norton×2; HERC2 rs12913832; SLC24A5 rs1426654).
+- **DARK-SET REASSESSMENT (key result; agrees with the old ledger + per-paper evidence):** of the prior
+  "15 dark genes," only **6 are genuine pigmentation loci** (MFSD12, PKHD1, SLC24A4, TSPAN10, MSX2, + SIK1's
+  locus) — real signals simply absent from the minimal single-paper backbone. The other **9 are extraction
+  artifacts**: 5 segment passengers (EMCN/MANBA/SLC39A8/TACR3 chr4 albino IBD block + NPLOC4 co-mapped),
+  2 author-set-aside rare variants (KALRN/SYT6, MAF<2%), 1 null retest (ATRN, P=0.14), 1 no-locus-record
+  (LTO1, only a co-candidate label on the real MSX2 locus). ⇒ the "48% dark" was mostly a
+  gene-first-extraction + minimal-backbone artifact, not biology.
+
+**Audit red-flags carried in the table (flagged, NOT silently fixed), to resolve before ship:** Meyer2020
+sub-Bonferroni candidates over-scored "causal" → downgraded; probable chr9 TYRP1-region cross-paper
+double-count → LD-check; Morgan2018 polygenic SETS mis-emitted as single loci → flagged; SIK1 gene label
+suspect (eQTL target lncRNA LINC01679); Crawford2017 p-value discrepancies extract vs full-text → verify;
+MSX2 rsID mismatch (rs4242182 vs rs6876712).
+
+**Documents updated:** this entry + new `data/processed/discordance_loci.csv` (Tier-2; compliance gate before
+commit). Next: resolve red-flags; rebuild coverage on loci + relabel strata by SOURCE; backbone expansion
+(KEGG hsa04916 done — +72 curated genes incl. ASIP; Reactome next); locus-first resolution (OpenTargets L2G +
+eQTL + LD); reproducible notebook.
+
+---
+
+## 2026-07-11T22:51Z — Clean restart: retired framing archived, START_HERE reoriented (goal-only-fixed), datetime-stamp convention adopted
+
+**Context.** The PI directed a full clean restart so a fresh Claude Science session is not confused by stale
+artifacts. Only the GOAL is fixed; execution (route, unit, approach) must be presented as changeable.
+
+**Done (Claude Code):**
+- **Archived ~46 items** to `internal/archive/` (gitignored) across two passes: the sex-hormone `START_HERE` +
+  `EXPANSION_PLAN` + `deconvolutor/`; `project_dashboard.md`, `TODO.md`; the four old finding/framing docs; the
+  `lit_review/` framing churn (SCOPING/REFRAME/PROPOSAL×2/NOVELTY_RISK/PRIORART_MAP/GAPCLOSURE); superseded
+  handoffs (incl. the two science handoffs written earlier today); retired-framing DATA (dark_matter_ledger,
+  locus_resolution_table, coverage/direction/portability tables); notebooks 03/04;
+  `scripts/portability_failure_mode.py`; both old figures; stale docs (dark-matter/direction READMEs, NB3
+  provenance, resolver-MVP spec + manifest); and the stale Quarto site (`index.qmd`, `_quarto.yml`,
+  `publish-site.yml`).
+- **Rewrote `internal/START_HERE.md`** as the single source of truth: the GOAL is the only fixed thing; the
+  materials are an inventory (not an order); the discordance-papers-vs-GWAS-Catalog route is explicitly OPEN;
+  `discordance_loci.csv` is described as one processed view, not a foundation. Goal stated affirmatively.
+- **New clean `README.md`** (public face → points to START_HERE).
+- **`internal/PROJECT_EVOLUTION.md`** — a guiding narrative of how the framing evolved and the two still-open,
+  linked decisions (contribution framing + flagship demo visual).
+- **Fixed `DATA_SOURCES.md`** stale lines (D'Arcy tables are committed, not "staged"; retired-plan clauses
+  neutralized with a status note).
+- **Adopted the datetime-stamp convention:** governance entries carry a full UTC datetime (`YYYY-MM-DDTHH:MMZ`),
+  never a bare date (this entry is the first; the CHANGELOG guidance and START_HERE now state the rule).
+
+**Kept (clean, framing-neutral):** START_HERE, this CHANGELOG, the two audits (as lessons), conventions
+(`handoffs/README`, `MERGE_SAFETY`, `notes/`, `lit_review/README` + `bibliography/`), PROJECT_EVOLUTION, the raw
+network + source materials + tools + notebooks 01–02, `DATA_SOURCES.md`.
+
+**Note.** `internal/archive/` is gitignored; the PI intends to delete its contents. No commit made yet.
