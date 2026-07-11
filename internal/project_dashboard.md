@@ -584,6 +584,19 @@ The project has been assembled into the git repository at `pigmentation-gene-net
 identify the artifact each file was written from. The full per-file inventory across all conversations is
 regenerable via the `project-file-dashboard` skill.
 
+**Latest commit — `85e8092` (2026-07-11, 32 files, +2800 lines; committed locally, not yet pushed — awaiting a write-scoped GitHub token).** The D'Arcy coverage
+finding and the deterministic Locus Resolver MVP substrate, committed to `main` after the
+REPO_COMPLIANCE_GATE cleared the working tree, so a Claude Code session can branch `feature/locus-resolver`
+and build in parallel. New this commit: `notebooks/04_darcy_coverage_finding.ipynb`;
+`internal/FINDINGS_darcy_coverage.md`, `RESEARCH_SYNTHESIS_locus_resolution_mvp.md`,
+`FRAMING_EVALUATION_dark_matter.md`; `figures/case_coverage_direction_map.png`;
+`data/processed/{locus_nodes,locus_annotation_edges,case_gene_coverage_master,case_gene_id_resolution,direction_concordance,direction_concordance_matrix,darcy_S1_direction_on_backbone,darcy_backbone_crosscheck}.csv`;
+`scripts/validate_locus_tables.py`; `docs/network_integration_and_MVP_spec.md`,
+`docs/specs/darcy2023_S1.spec.md`, `docs/direction_concordance_README.md`; the `internal/handoffs/` and
+`internal/lit_review/` trees. Also in this commit: a motivating-example URL/tool name (initial framing
+prompt, never a data source or citation) was removed from four untracked files — the reference had never
+been committed, so it never reached GitHub. Full detail: `CHANGELOG.md` 2026-07-11 commit entry.
+
 **Notebooks (`notebooks/`):**
 - [`01_reconstruct_published_network.ipynb`](../notebooks/01_reconstruct_published_network.ipynb) — Raghunath → 265/429 typed signed network
 - [`02_resolve_network_to_genes.ipynb`](../notebooks/02_resolve_network_to_genes.ipynb) — → 168-gene network + OmniPath validation

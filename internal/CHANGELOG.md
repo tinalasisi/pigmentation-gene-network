@@ -210,3 +210,43 @@ is falsified; the dark matter decomposes into four cited classes instead (see
 **Plan-sync check.** `check_plan_sync()` run against `project_dashboard.md` after this rewrite — see the
 run's own report for drift status; this rewrite touched no pinned processed-data file, so no numeric drift
 is expected from it.
+
+---
+
+## 2026-07-11 — D'Arcy coverage finding + Locus Resolver MVP substrate committed (`85e8092`); motivating-example reference removed
+
+**What changed.** The coverage/discordance finding and the deterministic input substrate for the Locus
+Resolver MVP were committed to `main` at `85e8092` (32 files: 27 new, 5 modified; 2800 insertions), after the
+REPO_COMPLIANCE_GATE cleared the working tree. Not pushed — the commit stages the shared substrate on `main`
+so a Claude Code session can branch `feature/locus-resolver` from it and build in parallel (handoff in
+`internal/handoffs/CLAUDE_CODE_HANDOFF.md`); the return contract stays on Claude Science
+(`CLAUDE_SCIENCE_RETAINED.md`).
+
+**What was committed.**
+- Finding: `notebooks/04_darcy_coverage_finding.ipynb` (with stored cell outputs, CI renders no-execute),
+  `internal/FINDINGS_darcy_coverage.md`, `internal/RESEARCH_SYNTHESIS_locus_resolution_mvp.md`,
+  `internal/FRAMING_EVALUATION_dark_matter.md`, `figures/case_coverage_direction_map.png`.
+- MVP substrate: `data/processed/locus_nodes.csv`, `locus_annotation_edges.csv` (pass
+  `scripts/validate_locus_tables.py`), `case_gene_coverage_master.csv`, `case_gene_id_resolution.csv`,
+  `direction_concordance{,_matrix}.csv`, `darcy_S1_direction_on_backbone.csv`, `darcy_backbone_crosscheck.csv`;
+  `docs/network_integration_and_MVP_spec.md`, `docs/specs/darcy2023_S1.spec.md`,
+  `docs/direction_concordance_README.md`.
+- Governance/handoff: `internal/handoffs/` tree, `internal/lit_review/` tree, and the modified
+  `README.md` / `CHANGELOG.md` / `TODO.md` / `project_dashboard.md` / `.gitattributes`.
+
+**Motivating-example reference removed.** A motivating-example URL and tool name (the project's initial
+framing prompt, never a project data source or citation) were removed from four untracked working-tree files —
+`internal/RESEARCH_SYNTHESIS_locus_resolution_mvp.md`, `docs/network_integration_and_MVP_spec.md`,
+`internal/FRAMING_EVALUATION_dark_matter.md`, and
+`internal/lit_review/2026-07-11_1222_SCOPING_ideas_and_prior_art_map.md`. All four were untracked (never
+previously committed), so the reference never reached GitHub. The surrounding "competitor / bar to beat"
+prose was rewritten to stand on the project's own design principle (principled refusal to overclaim; the
+nearest-gene-vs-causal discipline) with no invented claims, and the inspected tool was dropped from the
+RESEARCH_SYNTHESIS Sources line (it was an inspected tool, not a citation). A full-tree re-scan confirmed
+zero remaining mentions.
+
+**Compliance.** REPO_COMPLIANCE_GATE verdict CLEAR: withheld publisher content (Baxter Table S7 + the
+Baxter/HIrisPlex/Walsh article PDFs) remains `.gitignore`-blocked; the committed D'Arcy/Bajpai supplements
+are open-license (CC BY); READMEs document what is withheld and how to obtain it by DOI. Removing the
+reference only deleted text from untracked markdown (added no withheld material), so the CLEAR verdict was
+unaffected.
