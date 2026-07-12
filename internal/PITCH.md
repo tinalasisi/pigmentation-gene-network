@@ -23,7 +23,7 @@ advance by its own confidence (the fourth, *ATP7B*, it misses).
 **What is genuinely ours — and it is narrow.** The biology is largely known: "LoF of a positive melanin
 regulator → hypopigmentation" is close to the *definition* of oculocutaneous albinism; the allele-mechanism
 conditioning is documented per-gene (dominant *TPC2* gain-of-function albinism; the *TYR* allelic series); and
-Bajpai et al. (2023) already tied the screen's regulator sign to common-variant skin colour. The contribution is
+Bajpai et al. (2023) already tied the screen's regulator sign to common-variant skin color. The contribution is
 **methodological, not a discovery about pigmentation**: a *single* convergent functional readout orders a
 clinical property across a whole disease category with a quantified null, and its failure boundary is partly
 characterizable in advance. That is the project's "grade trust by evidence convergence" thesis made concrete,
@@ -72,14 +72,17 @@ class are known.
    fixed: 131 loci re-classified by whether the *associated gene is the effector* (not whether a variant was
    annotated). 80 point at canonical effectors (excluded — that was the PI's first-project variant-gap
    question; HERC2 rs12913832 etc. had been wrongly tagged); **34 effector_uncertain + 7 ambiguous_near** are
-   the real non-canonical target set. With those candidates *in the STRING seed* (the seeding lesson applied
-   again), **25 of 49 connect to the melanogenesis core** via high-confidence paths — e.g. SPIRE2→MYO5A,
-   ATRN→ASIP (mahogany biology as a network edge), OPN4→FOS→MITF. **Cross-paper convergence** (independent
-   replication across ancestries): MFSD12 (Ang/Crawford/Kim — 3 populations, coding), SPIRE2 (Kim/Morgan),
-   TSPAN10 (Abbatangelo/Morgan). CAVEAT (the seeding lesson a fourth time): 21 candidates incl. **MFSD12**
-   have NO high-confidence STRING edges at all — coverage limit, not absence of biology (Crawford proved
-   MFSD12 by knockdown). These are association hypotheses; STRING supplies candidate wiring, the association
-   is the anchor.
+   the real non-canonical target set (**51 candidate genes** after rolling up to gene level). With those
+   candidates *in the STRING seed* (the seeding lesson applied again), the connectivity — counted directly
+   from the frozen pull (`data/external/db_responses/string_union_plus_candidates_pull_v12.json`) — is thin
+   and reported as such: **28 of 51 have at least one STRING edge; 6 have a direct edge to a melanogenesis-core
+   gene** (AHCY, ATRN, EGFR, LRMDA, SPIRE2, USP35 — e.g. SPIRE2→MYO5A score 0.96, ATRN→ASIP 0.83, the mahogany
+   axis as a network edge); **23 are fully isolated with no STRING edge at all, MFSD12 among them**. These are
+   STRING *associations from the nearest-gene label*, not independent confirmation that the nearest gene is the
+   effector — STRING supplies candidate wiring, the association is the anchor. The isolation of MFSD12 is the
+   seeding lesson a fourth time: coverage limit, not absence of biology (Crawford proved MFSD12 by knockdown).
+   **Cross-paper convergence** (independent replication across ancestries): MFSD12 (Ang/Crawford/Kim — 3
+   populations, coding), SPIRE2 (Kim/Morgan), TSPAN10 (Abbatangelo/Morgan).
 
 **Third thread — cross-ancestry population-conditional discoverability (NB11).** Some pigmentation genes are
    reported by different-ancestry GWAS through DIFFERENT, population-private variants — each common only where
@@ -124,9 +127,11 @@ comparison in `FINDINGS_MEMO.md`.)
 Within the systems-population-genetics lineage. This rescue/convergence contribution is **distinct** from the
 R21's gene-property prediction — it is not "not novel."
 
-> _Suggested anchor references (from the PI's final-day directive §9, NOT yet verified against the papers in
-> this repo — confirm each citation before it goes in any public deliverable): Fagny & Austerlitz 2021;
-> Daub 2013; signet / Gouy 2017; the network-propagation family._
+Lineage the contribution sits within (systems / population-genetics of selection on gene networks): the
+Fagny & Austerlitz network-approaches line, Daub et al. on polygenic selection across biological pathways,
+the Gouy et al. `signet` gene-network selection framework, and the network-propagation family. These are
+positioning anchors to be resolved to full citations (DOI/PMID) at manuscript stage — they are not cited as
+evidence for any result in this repo.
 
 ## Progress (notebook by notebook)
 

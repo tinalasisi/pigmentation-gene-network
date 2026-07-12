@@ -9,7 +9,7 @@ project's own assembled data can defend._
 > named "the most interesting finding." A claim-by-claim literature check (in
 > `notebooks/12_direction_law_expanded.ipynb`) found the *biology* is largely textbook — "LoF of a positive
 > melanin regulator → hypopigmentation" is close to the definition of albinism; Bajpai et al. already tied the
-> screen's sign to common-variant skin colour. What remains genuinely ours is **methodological**: a single
+> screen's sign to common-variant skin color. What remains genuinely ours is **methodological**: a single
 > convergent functional readout orders a clinical property (disease direction) across a whole category with a
 > quantified null and a *partly-predictable failure boundary*. Re-read candidate 1 as **"the most interesting
 > *demonstration of the convergence thesis*," not a biological discovery.** A pre-registered expansion (NB12)

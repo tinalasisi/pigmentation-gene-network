@@ -69,7 +69,7 @@ spot, so their **convergence** is the strongest signal available from existing d
 phenotype present without the canonical variant (an alternative route). Both are **portability failures** — a
 risk model trained in one population predicts poorly in another — driven by the same variant sitting on a
 different genetic background with **non-additive** interactions that additive GWAS cannot capture. Pigmentation
-makes this concrete: Europe-centred work once thought the trait simple, but GWAS in African, Oceanian, and
+makes this concrete: Europe-centered work once thought the trait simple, but GWAS in African, Oceanian, and
 East-Asian populations found **different causal loci** (Crawford, Martin, Kenny/Norton TYRP1, Yang OCA2). The
 best studies validate functionally (Crawford knocked MFSD12 down in zebrafish/mouse — pull the exact assays);
 most stop at association, leaving loci stranded. **Synthesizing them to grade each and suggest the confirming
@@ -186,7 +186,7 @@ Read the two audits for the detail — **for the lessons, not the retired framin
 - **Convergence over any single headline number.** Earlier framings over-invested in one metric ("% dark",
   "resolution rate"); those are retired. Counts are diagnostics, recomputed from pinned files, never the claim.
 - **Prior work to build on and credit** (do not re-claim): Open Targets L2G (Mountjoy 2021, PMID 34711957) +
-  cS2G (Gazal 2022, PMID 35668300) for locus→gene; Kim 2024 (PMID 38849341) population skin-colour atlas;
+  cS2G (Gazal 2022, PMID 35668300) for locus→gene; Kim 2024 (PMID 38849341) population skin-color atlas;
   Burga & Lehner 2011 (PMID 22158248) network penetrance; Loftus 2023 (PMID 37327787) allele-level pigmentation
   heritability; Aw 2025 (PMID 41043808), which bounds firm mechanistic claims to resolved-causal-variant loci.
 

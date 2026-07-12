@@ -48,7 +48,7 @@ Fallback flagship while the primate-phylogenetics thread is evaluated. Last upda
 ## Three honest limits (say these out loud — don't wait to be asked)
 
 1. **The biology is known.** "LoF of a positive melanin regulator → hypopigmentation" is close to the definition
-   of albinism; Bajpai et al. already tied the screen's sign to common-variant skin colour. The contribution is
+   of albinism; Bajpai et al. already tied the screen's sign to common-variant skin color. The contribution is
    methodological, not a new fact about pigmentation.
 2. **The boundary story rests on n = 4.** Four discordances, and one (*ATP7B*) breaks the "confidence flags
    misses" reading. Treat it as illustrative, not a validated predictor.
