@@ -56,6 +56,15 @@ hero locus.** NB8 is the deliverable.
   author-unexplained loci** (already resolved in `data/processed/locus_causal_resolution.csv`). Full
   author-explanation-status mining of the 36 Catalog PMIDs is a **stretch, not a tomorrow requirement** — the
   1,072 give NB4 scale + replication context without it.
+- **Gene-level GWAS replication (PI-requested — do this in the GWAS/NB4 step):** a granular associations file
+  is now committed at `data/external/gwas_catalog/gwas_pigmentation_associations.csv` (723 associations; cols
+  `efo_id, trait, gene, snp_id, pvalue`; frozen from the PI's `melanogenesis-constraints` project). Reproduce
+  the PI's filter — **group by `gene`, keep genes with ≥2 associations** (= **83** replicated pigmentation
+  genes; mirrors `melanogenesis-constraints/analysis/pool_venn_gene_lists.py:98–102`). Run it **OFFLINE from
+  this frozen file — do NOT live-pull (EBI is HTTP 500), and do NOT compute gene counts from the deduplicated
+  1,072 (it lost them).** Then annotate every network / rescued gene with `gwas_replicated` (True if ≥2
+  studies) + `gwas_n_assoc`, and feed `gwas_replicated` into the convergence grade as an independent evidence
+  line. **Gene-level replication is sufficient (per PI); per-SNP is not required.**
 - **NB9 allele-frequency-across-network-layers** — **do NOT compute the per-tier differentiation summary.**
   Write NB9 as a short "future directions / population-conditionality" NARRATIVE only (the effector-rerouting
   story is already curated: SLC24A5/TYRP1-Oceania/OCA2-E.Asia/MFSD12-Africa). Rationale: this is the parked
@@ -92,31 +101,19 @@ result.** Two allowed kinds:
 - **(a) Data figure** — generated from the actual analysis (funnel, UpSet/Venn, network, bar, Sankey).
 - **(b) Concept SVG / schematic** — hand-built diagram, explicitly labeled "schematic (not data)".
 
-**The flagship visuals to build (targeted — do these first):**
-1. **Hero-locus "rescue card"** (the money shot): one locus as a single graphic — *authors said "unknown"* →
-   rsID → causal gene (L2G / melanocyte eQTL) → connects to melanogenesis via THIS edge → convergence grade →
-   named confirming experiment. This is the centerpiece of the whole pitch.
-2. **Convergence map / rescue overview**: the 52 candidates sorted into rescue categories (mechanistic /
-   GRN-regulon / Reactome / LD-rescue / population-specific / still-unexplained), shaded by convergence grade
-   (Sankey or highlighted network).
-3. **Multi-layer substrate schematic (SVG)**: melanogenesis network as stacked tiers (Raghunath → KEGG/Reactome
-   → GRN regulons → D'Arcy/Bajpai → STRING) — shows what "convergence" means. Concept art, labeled as such.
-4. **Layer-contribution bar**: "GRN rescued K · Bajpai corroborated J · melanocyte eQTL corrected M."
+**Claude Science does ROUGH figures ONLY — one functional visual per notebook to PROVE its result** (correct
+data, correct chart type, a title that matches the data). That is the whole bar. Suggested per notebook: NB4 =
+105→52 funnel; NB5 = network-overlap UpSet + the FALSIFIED hypothesis; NB6 = MITF hub with its 34 signed
+targets; NB7 = the tiered substrate; NB8 = rescue results + convergence grades.
 
-**One key visual per notebook:** NB4 = 105→52 funnel; NB5 = network-overlap UpSet + the FALSIFIED hypothesis;
-NB6 = MITF hub with its 34 signed targets + the "what's missing for a full melanocyte GRN" gap; NB7 = the
-tiered substrate; NB8 = rescue results + convergence grades; NB9 = effector-rerouting (same phenotype, different
-loci by ancestry).
-
-**Visual system (so they compose into the website):** ONE colorblind-safe palette and ONE visual language
-(consistent node/edge/tier shapes) across all notebooks; every figure has a title that matches its data + alt
-text. Enforce via VISUAL_DATA_REVIEWER. **Do not balloon** — one strong visual per result beats five weak ones.
-
-## 8. The website (the eventual deliverable) — use Quarto, don't hand-build
-A Quarto site already exists (`index.qmd`, `_quarto.yml`). Make IT the walkthrough — do not build a bespoke
-site from scratch on the last day. Landing page = the flagship narrative + the hero-locus rescue card; then one
-section per notebook, each anchored by its single key visual. "1 clear visual per notebook" == "1 clear section
-per page." Keep it a thin, guided walkthrough of the achievements + results, not a sprawling site.
+## 8. OUT OF SCOPE for Claude Science — Claude Code owns these (do NOT put them in your plan)
+The PI + Claude Code handle everything cosmetic and infrastructural, from your rough prototypes. **Do NOT** do
+any of the following — they will be done in Claude Code, where the PI has more token budget and design tooling:
+- the **website / Quarto site** (`index.qmd`) — do not build or touch it;
+- **figure polish / final design** and the shared **palette / visual system** — do not invest in aesthetics;
+- the polished flagship visuals (hero rescue card, convergence overview, substrate schematic, layer bar).
+Produce functional figures + the hero shortlist, then **STOP and surface to the PI** — Claude Code takes it
+from there.
 
 ## Docs to update when done
 START_HERE (north-star section), new **PITCH.md**, `internal/project_dashboard.md`, `internal/CHANGELOG.md`,

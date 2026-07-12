@@ -1164,3 +1164,25 @@ responses) is intentionally left unstaged for that session.
 
 **Documents updated:** this entry; `docs/specs/gwas_catalog.spec.md`; `DATA_SOURCES.md`; three internal briefs;
 restored `data/external/gwas_catalog/{pigmentation_gwas_catalog.csv,.meta.json}`.
+
+## 2026-07-12T03:43Z — Gene-level GWAS replication source added (granular associations file) + brief guidance
+
+The PI confirmed she wants **gene-level** replication (a gene reported in ≥2 GWAS associations), not per-SNP.
+That filter already existed in her `melanogenesis-constraints` project
+(`analysis/pool_venn_gene_lists.py:98–102`: group associations by gene, keep `>=2` → 83 replicated pigmentation
+genes) but ran on a **granular** associations file, NOT the deduplicated 1,072-row catalog (which collapses to
+one lead row per rsID and so cannot yield per-gene counts). That granular file
+(`gwas_pigmentation_associations.csv`, 723 associations; `efo_id, trait, gene, snp_id, pvalue`; git-tracked in
+melanogenesis-constraints) is **copied into this repo at `data/external/gwas_catalog/`** and verified in-place:
+723 associations → 318 unique genes → **83 replicated (≥2)**, reproducing the PI's methods doc exactly.
+
+Guidance to Claude Science (`internal/hackathon_final_day_feedback_and_pitch.md`): in the GWAS/NB4 step,
+reproduce the ≥2-association gene filter **offline from this frozen granular file** (not a live pull — EBI is
+still HTTP 500 — and not the deduplicated 1,072), annotate each network/rescued gene with `gwas_replicated` +
+`gwas_n_assoc`, and feed `gwas_replicated` into the convergence grade as an independent evidence line.
+
+License basis: NHGRI-EBI GWAS Catalog (EMBL-EBI terms, reuse with attribution) — same as entry 1; a frozen
+derived associations table from the PI's own prior pull.
+
+**Documents updated:** this entry; `internal/hackathon_final_day_feedback_and_pitch.md`; `DATA_SOURCES.md`;
+added `data/external/gwas_catalog/gwas_pigmentation_associations.csv`.

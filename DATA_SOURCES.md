@@ -67,6 +67,11 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 - **Version key:** access timestamp **2026-07-08T01:15:41Z** (catalog is a live resource; frozen copy
   committed at `data/external/gwas_catalog/pigmentation_gwas_catalog.csv`, restored 2026-07-12 after the
   original gitignored `/output/` copy was lost).
+- **Gene-level replication source (granular):** `data/external/gwas_catalog/gwas_pigmentation_associations.csv`
+  (723 associations; `efo_id, trait, gene, snp_id, pvalue`) — frozen from the PI's `melanogenesis-constraints`
+  project, committed 2026-07-12 to support the gene-level ≥2-association replication filter (→ 83 replicated
+  genes). Same EMBL-EBI license basis (reuse with attribution). Use for per-gene replication counts; the
+  deduplicated 1,072 table cannot provide them.
 - **Access method:** `scripts/gwas_catalog.py v1.0` + `scripts/traits_pigmentation.json`. Independent
   per-variant cross-check via human-genetics MCP connector (`gwas_associations_for_variant`).
 - **License:** EMBL-EBI terms; attribution to the catalog (Sollis 2023) + per-row study PubMed IDs.
