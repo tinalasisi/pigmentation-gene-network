@@ -104,7 +104,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 - **Normalization / hit-call:** **q_value < 0.10** → 169 hits (reproduces paper). All positive casTLE effect
   → uniform direction *perturbation reduces pigmentation*.
 - **Payoff loci:** OCA2 is a hit; MC1R/HERC2 are not screen hits (expected — screen finds melanogenesis
-  effectors, not the eye/hair colour regulators per se).
+  effectors, not the eye/hair color regulators per se).
 - **Network integration (2026-07-12, PI sign-off `internal/bajpai_network_integration_brief.md`):** entered
   Notebook 05's candidate-network comparison as a **node layer** (node-set flag + `Combined_casTLE_Effect`
   weight + uniform reduces-pigmentation sign in `nb5_gene_set_membership.csv`), never as fabricated gene-gene
@@ -276,7 +276,7 @@ validation authorities (attach gene identity and relationships, then check them)
   (`link/hsa/hsa04916`), frozen to `kegg_hsa04916.json`.
 - **Role:** a membership column on the validation table (is each edge endpoint in the curated melanogenesis
   pathway) — a **scope reference, not an edge validator**. Used to see how much of the backbone lies inside
-  the canonical pathway vs. its wider signalling context. SIGNOR (a causal-interaction resource) is already
+  the canonical pathway vs. its wider signaling context. SIGNOR (a causal-interaction resource) is already
   inside OmniPath's sources, so it is not queried separately.
 - **License basis.** KEGG restricts non-academic / commercial reuse of its database content
   (`kegg.jp/kegg/legal.html`); academic use is permitted but redistribution rights beyond that are not

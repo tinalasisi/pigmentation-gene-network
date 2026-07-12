@@ -63,13 +63,13 @@ key), `chr`, `pos_hg38` (**build GRCh38/hg38**), `risk_allele`, `direction_raw`,
    units/SE/ancestry are untrustworthy from the source table alone (`needs_sumstats`) rather than coercing.
 5. **Grouping-node trap avoided:** the REST `/efoTraits/{id}/associations` endpoint does NOT expand children
    and returns empty for OBA grouping nodes; the download endpoint with `shortForm:` + `includeChildTraits`
-   is used instead (verified behaviour).
+   is used instead (verified behavior).
 
 ## Independent cross-check (documented method mixing)
 Both payoff anchors were re-queried through the **human-genetics MCP connector**
 (`gwas_associations_for_variant`, GWAS Catalog REST associations endpoint) — a different access path to the
-same catalog. Result (`mcp_anchor_crosscheck.json`, 2026-07-08T01:16:11Z): rs1805007 → MC1R (hair colour +
-skin-cancer traits, api_total 98); rs12913832 → HERC2 (eye colour + pigmentation, api_total 90). Both agree
+same catalog. Result (`mcp_anchor_crosscheck.json`, 2026-07-08T01:16:11Z): rs1805007 → MC1R (hair color +
+skin-cancer traits, api_total 98); rs12913832 → HERC2 (eye color + pigmentation, api_total 90). Both agree
 on gene identity and trait. The **download-endpoint pull is authoritative** for the atlas (expands child
 traits); the MCP connector is the per-variant cross-check.
 

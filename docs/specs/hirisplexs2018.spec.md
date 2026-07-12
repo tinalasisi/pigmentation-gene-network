@@ -1,4 +1,4 @@
-# Source spec — HIrisPlex-S (Chaitanya et al. 2018), eye/hair/skin colour prediction markers
+# Source spec — HIrisPlex-S (Chaitanya et al. 2018), eye/hair/skin color prediction markers
 
 **Status:** ACQUIRED (marker set); model coefficients PARTIALLY documented — see the gap below.
 
@@ -23,9 +23,9 @@
 ## System structure (from the paper, verified)
 HIrisPlex-S = **41 SNPs total** across two SNaPshot multiplex assays (a novel 17-plex for skin + the prior
 24-plex HIrisPlex for eye/hair; 19 skin SNPs overlap the 24-plex), feeding **three prediction models**:
-- **IrisPlex** — eye colour, **6 SNPs**, multinomial logistic regression (blue / intermediate / brown).
-- **HIrisPlex** — hair colour, **22 SNPs** (brown / red / black / blond + shade).
-- **HIrisPlex-S** — skin colour, **36 SNPs** (very pale / pale / intermediate / dark / dark-black).
+- **IrisPlex** — eye color, **6 SNPs**, multinomial logistic regression (blue / intermediate / brown).
+- **HIrisPlex** — hair color, **22 SNPs** (brown / red / black / blond + shade).
+- **HIrisPlex-S** — skin color, **36 SNPs** (very pale / pale / intermediate / dark / dark-black).
 
 ## What we extracted (the marker set)
 `data/processed/hirisplexs2018_markers.csv` — **36 gene→rsID marker pairs** parsed from the paper text,
@@ -35,7 +35,7 @@ SLC45A2, TYR, TYRP1), with a `in_novel_17plex_skin` flag marking the 17 skin-spe
 **Payoff-locus coverage:**
 - **MC1R red-hair markers:** rs1805007, rs1805008, rs1805006, rs11547464, rs885479, rs2228479, rs1110400,
   rs3212355 — the full red-hair set.
-- **Blue-eye markers:** HERC2 **rs12913832** (the eye-colour master switch) + OCA2 rs1800407.
+- **Blue-eye markers:** HERC2 **rs12913832** (the eye-color master switch) + OCA2 rs1800407.
 
 ## Gaps / assumptions (no undocumented claims)
 1. **36 of 41 markers captured.** The parse pulled gene→rsID pairs from the running text; the remaining ~5
@@ -67,7 +67,7 @@ to be **structured by genomic background (ancestry), not random** — which is p
 the same genotype yields a different phenotype because the surrounding network differs, and that network
 background differs across populations. This is the **interpretive frame**, documented from the manual; it does
 **not** pull population/allele-frequency data into this week's build (still out of scope) — it is the
-bridge to the downstream research programme.
+bridge to the downstream research program.
 
 ## Result / pinned artifacts
 - `data/processed/hirisplexs2018_markers.csv` — 36 markers, gene + 17-plex-skin flag.

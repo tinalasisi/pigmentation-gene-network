@@ -50,7 +50,7 @@ over the hypo/hyper checks:
 | `Hypopigmentation` | "Hypopigmentation disorder" | 144 |
 | `Hyperpigmentation` | "Hyperpigmentation disorder" | 81 |
 | `Mixed` | "Mixed hypo- & hyperpigmentation disorder" | 47 |
-| `Pigmentation phenotype` | "Pigmentation phenotype" (non-disease pigmentation trait, e.g. hair/eye colour variation without a discrete disorder) | 6 |
+| `Pigmentation phenotype` | "Pigmentation phenotype" (non-disease pigmentation trait, e.g. hair/eye color variation without a discrete disorder) | 6 |
 
 This is the **disease-direction axis** referenced by the D1/D2 finding in the pigmentation
 gene-network project: it lets any gene (whether or not it sits in the 168-gene mechanistic

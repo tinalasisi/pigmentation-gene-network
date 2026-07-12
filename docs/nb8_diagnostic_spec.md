@@ -30,7 +30,7 @@ T3_STRING = association only, not mechanism.
 
 ## Buckets
 - NONCANON  = connected via non-canonical route (candidate finding)
-- CANON     = connected only via canonical neighbour (likely regulatory-of-canonical; NOT our finding)
+- CANON     = connected only via canonical neighbor (likely regulatory-of-canonical; NOT our finding)
 - MANUAL    = needs manual paper review
 - NEG       = no connection (negative)
 

@@ -162,7 +162,7 @@ attributed hits, vs. suggestive/unexplained/non-replicating signals?*
   (1 row); the author-flagged-spurious tanning hits are `not_a_locus` (1 row).
   No row reached `regulatory_of_canonical_neighbour` status (that would require a
   *non-canonical*-gene-labeled SNP demonstrated to regulate a *canonical*
-  neighbour — this paper's regulatory evidence does not resolve to that level of
+  neighbor — this paper's regulatory evidence does not resolve to that level of
   specificity for any locus).
 - `is_canonical_effector_gene` flags membership in the fixed exclusion list
   (TYR, TYRP1, DCT, MLANA, PMEL, OCA2, HERC2, MC1R, KIT, KITLG, MITF, SLC45A2,
