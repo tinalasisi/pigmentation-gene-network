@@ -105,10 +105,15 @@ def _session():
 TIDY_COLS = [
     "axis", "source_trait", "source_short_form", "mapped_trait", "reported_trait",
     "rsid", "chr", "pos_hg38", "risk_allele", "direction_raw", "risk_freq",
-    "or_beta", "pvalue", "mapped_gene", "pubmed", "study_accession",
+    "or_beta", "pvalue", "mapped_gene", "reported_gene", "pubmed", "study_accession",
     # widened pull (roadmap #1): effect units, SE recovered from the 95% CI, discovery
     # ancestry + N — so scoring-ready catalog rows can drop the needs_sumstats flag.
     "effect_type", "standard_error", "ci_text", "ancestry", "sample_size",
+    # widened pull (roadmap #2, cross-ancestry): INITIAL vs REPLICATION kept SEPARATE so a
+    # locus discovered in one ancestry and replicated in another is visible (merging them
+    # hides the exact cross-ancestry replication signal). reported_gene = the authors'
+    # REPORTED GENE(S) (kept alongside positional MAPPED_GENE, never instead of it).
+    "initial_ancestry", "initial_n", "replication_ancestry", "replication_n",
 ]
 
 # Broad ancestry descriptors as they appear in the catalog's free-text sample columns.
@@ -301,7 +306,10 @@ def tidy(df, axis, short_form, label):
         ci = r.get("95% CI (TEXT)") or ""
         or_beta = r.get("OR or BETA") or ""
         effect_type, se = parse_effect(or_beta, ci)
+        # combined (back-compat), plus INITIAL and REPLICATION kept separate for cross-ancestry
         ancestry, n = parse_sample(r.get("INITIAL SAMPLE SIZE"), r.get("REPLICATION SAMPLE SIZE"))
+        init_anc, init_n = parse_sample(r.get("INITIAL SAMPLE SIZE"))
+        rep_anc, rep_n = parse_sample(r.get("REPLICATION SAMPLE SIZE"))
         rows.append(dict(
             axis=axis, source_trait=label, source_short_form=short_form,
             mapped_trait=r.get("MAPPED_TRAIT") or "",
@@ -311,10 +319,13 @@ def tidy(df, axis, short_form, label):
             risk_freq=r.get("RISK ALLELE FREQUENCY") or "",
             or_beta=or_beta, pvalue=r.get("P-VALUE") or "",
             mapped_gene=r.get("MAPPED_GENE") or "",
+            reported_gene=r.get("REPORTED GENE(S)") or r.get("REPORTED GENE") or "",
             pubmed=r.get("PUBMEDID") or "",
             study_accession=r.get("STUDY ACCESSION") or "",
             effect_type=effect_type, standard_error=se, ci_text=ci,
             ancestry=ancestry, sample_size=n,
+            initial_ancestry=init_anc, initial_n=init_n,
+            replication_ancestry=rep_anc, replication_n=rep_n,
         ))
     return rows
 
