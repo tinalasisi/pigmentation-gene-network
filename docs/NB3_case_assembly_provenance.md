@@ -13,7 +13,7 @@ _13 published pigmentation genotype→phenotype-discordance cases: acquisition, 
 
 > **Note — On the filename and the "NB3" label**
 >
-> This document is the frozen provenance record for the acquisition/extraction/classification process — the parts that read the withheld publisher PDFs and cannot be executed without them. The regenerable, execute-on-commit half of the same step is **`notebooks/03_assemble_validation_cases.ipynb`**: it loads the 13 committed `EXTRACT_*_records.csv` files plus `discordance_case_classification.csv`, reproduces the 694-record total and the 3 D1 / 5 D2 / 5 both split from those committed files alone (no papers, no network), and is rendered into the site with stored outputs. This document and that notebook together are "NB3"; this document supplies the *why* and the *how it was produced*, the notebook supplies the *machine-checked reproduction*. Downstream notebook numbering beyond this point is still open (§7 item A covered only this step).
+> This document is the frozen provenance record for the acquisition/extraction/classification process — the parts that read the withheld publisher PDFs and cannot be executed without them. The regenerable, execute-on-commit half of the same step is **`notebooks/03_assemble_validation_cases.ipynb`**: it loads the 13 committed `EXTRACT_*_records.csv` files plus `discordance_case_classification.csv`, reproduces the 694-record total and the 3 D1 / 5 D2 / 5 both split from those committed files alone (no papers, no network), and is rendered into the site with stored outputs. This document and that notebook together are "NB3"; this document supplies the *why* and the *how it was produced*, the notebook supplies the *machine-checked reproduction*. Downstream notebook numbering beyond this point is still open.
 
 ## 1. Acquisition — the 13 papers
 
@@ -47,7 +47,7 @@ The table below is sourced from `discordance_case_classification.csv` (DOI, phen
 
 Each paper was extracted by one dedicated `GENETICS_DATA_EXTRACTOR` sub-agent — a **specialist-per-paper fan-out**, so that every paper's records, direction call, and evidence quotes were produced by an agent that had read that paper in full and nothing else. Each specialist emitted two committed work products:
 
-- **`EXTRACT_<paper>.md`** — a structured extract: citation block (with genome build, population, phenotype assay), the discordance-direction call *with verbatim evidence quotes and page/table locations*, a records table, a nearest-gene-vs-causal discipline note, a network-relevant gene list, and an honest-gaps / completeness ledger.
+- **`EXTRACT_<paper>.md`** — a structured extract: citation block (with genome build, population, phenotype assay), the discordance-direction call *with verbatim evidence quotes and page/table locations*, a records table, a nearest-gene-vs-causal discipline note, a network-relevant gene list, and a gaps / completeness ledger.
 - **`EXTRACT_<paper>_records.csv`** — the machine-readable per-record table.
 
 **PDF-authoritative rule.** The authoritative source is the **publisher PDF**, not any text capture. Where genotypes, effect sizes, or table structure render only in typeset layout, the specialist **viewed the relevant PDF pages as rendered images** (e.g. Norton 2014 records its Table 2 / Table 4 read from "typeset pages 4 and 6 rendered at 200 dpi"; Ang 2023 records all 29 pages read incl. Appendix 1–3 tables). Machine-readable supplements (`.xlsx` / `.docx`) were used as the source for supplementary data tables (e.g. Kenny 2012 numeric records recovered from the supplementary DOCX Tables S1–S4).
@@ -95,7 +95,7 @@ def extract_one_paper(folder: Path) -> None:
     Produces, under data/case_records/:
       EXTRACT_<tag>.md          structured extract: citation block, direction call WITH
                                 verbatim evidence quotes + page/table locations, records
-                                table, nearest-gene-vs-causal note, honest-gaps ledger
+                                table, nearest-gene-vs-causal note, gaps ledger
       EXTRACT_<tag>_records.csv machine-readable per-record table (schema in §2)
 
     PDF-authoritative rule: read the typeset PDF (render pages as images where tables only

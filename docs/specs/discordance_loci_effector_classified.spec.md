@@ -2,7 +2,7 @@
 
 **Supersedes:** `discordance_loci_author_explained.csv` (kept in the repo unchanged for provenance;
 not deleted). **Status:** complete for all 14 papers except the Open Targets canonical-status
-cross-check, which is documented as an open honest gap (see below) and needs re-opening once the
+cross-check, which is documented as an open gap (see below) and needs re-opening once the
 connector's rate limit clears.
 
 ## Purpose
@@ -57,7 +57,7 @@ gene lists** (Supplemental Table S6: 519 genes tested for melanocyte cis-eQTL st
 overlapping panels — melanin-GO, pigment-GO, and a 379-gene curated pigmentation list). A third
 check, **Open Targets** disease/trait association (`search_entities`), was attempted but never
 succeeded — every call returned `"Rate limit exceeded for client: global"` across multiple retries
-with backoff; this is recorded as an open honest gap, not silently skipped.
+with backoff; this is recorded as an open gap, not silently skipped.
 
 ### Controlled vocabulary — `attribution_basis`
 
@@ -93,7 +93,7 @@ CRISPR), or does it only note **proximity/implied LD**?
   the authors explicitly reject the tempting canonical MC1R attribution despite genomic proximity,
   because the eQTL evidence itself points to SPIRE2/DEF8/CPNE7, not MC1R).
 - Only proximity/implied LD, no canonical gene nearby → `effector_ambiguous_near` (e.g. Ang2023's
-  EGFR/LANCL2, IPCEF1/CNKSR3, GRM5, SYT6, EFR3B rows) — the honest move here is **not** to claim a
+  EGFR/LANCL2, IPCEF1/CNKSR3, GRM5, SYT6, EFR3B rows) — the correct approach here is **not** to claim a
   rescue but to flag the locus for LD-nomination against the pigmentation gene network's own gene
   set in a downstream step.
 
@@ -132,7 +132,7 @@ CRISPR), or does it only note **proximity/implied LD**?
 - `data/processed/nb_effector_uncertain_loci_detail.csv` — the 45 underlying locus-level rows behind
   the gene-level rollup above (one row per locus, not per gene — a locus with multiple co-candidate
   genes contributes to multiple gene rows in the rollup but only one row here).
-- `data/processed/discordance_loci_effector_classified_HONEST_GAPS.csv` — the honest-gaps ledger
+- `data/processed/discordance_loci_effector_classified_HONEST_GAPS.csv` — the gaps ledger
   (6 items) — see below.
 - `docs/specs/discordance_loci_effector_classified.spec.md` — this document.
 
@@ -153,7 +153,7 @@ under-recognized) pigmentation effectors rather than single-paper artifacts:
   Morgan2018 (same melanosome-transport mechanism, `KITLG, RAB32, and SPIRE2 in melanosome transport
   or dispersion`). Not canonical.
 
-## Honest-gaps ledger
+## Gaps ledger
 
 See `discordance_loci_effector_classified_HONEST_GAPS.csv` for the full 6-item ledger with `scope`,
 `reason`, and `action_needed` per item. Summary:
@@ -167,7 +167,7 @@ See `discordance_loci_effector_classified_HONEST_GAPS.csv` for the full 6-item l
    mygene.info (`not_found`).
 3. **Yang2016 Supplementary Table S4** (6 unresolved rsIDs behind the "OCA2-region SNP cluster")
    remains absent from this repo's paper folder — inherited unchanged from the prior extraction's
-   own honest-gaps ledger.
+   own gaps ledger.
 4. **Morgan2018's SIK1-locus lncRNA target (LINC01679)** was flagged in the paper's own
    fine-mapping discussion but not independently queried this pass.
 5. **Set-level / multi-variant rows** (Ang2023 idx36, Morgan2018 idx83–84) remain un-disaggregated,
@@ -190,7 +190,7 @@ See `discordance_loci_effector_classified_HONEST_GAPS.csv` for the full 6-item l
 | Distinct non-canonical candidate genes surfaced | 51 |
 | Candidate genes with cross-paper convergence (≥2 independent papers) | 3 (MFSD12, TSPAN10, SPIRE2) |
 | Candidate genes resolved via mygene.info | 50 / 51 (ORAOV1 not found) |
-| Candidate genes with completed Open Targets check | 0 / 51 — see honest gap #1 |
+| Candidate genes with completed Open Targets check | 0 / 51 — see gap #1 |
 | Duplicate `(paper, rsid)` pairs in merged output | 1 apparent pair, both `NaN` rsid for two distinct non-genetic covariate rows (Ang2023 Sex, Ang2023 NAM ancestry fraction) — not a true duplicate, both correctly excluded via `not_a_locus` |
 
 No row in the merged 131-row output was left without an `effector_status` assignment. The six items

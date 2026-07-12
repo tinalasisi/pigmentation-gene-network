@@ -122,7 +122,7 @@ evidence did the confirming — they are not bare "trust the label" calls.)
   reassignment (label ≠ resolved gene) but the evidential basis is weaker than the wording above
   first suggested — treat as moderate-confidence L2G only, not as melanoma-pathway corroboration.
 
-## Honest-gaps ledger
+## Gaps ledger
 
 - **7/41 rsIDs unresolvable in Open Targets** even after coordinate-based fallback: rs10594259,
   rs12233134, rs191109490, rs551217952, rs59334502, rs78544415, rs79380392. Several of these are

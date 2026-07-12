@@ -2,7 +2,7 @@
 
 **Purpose.** Diagnostic (not a build): does each of the 18 EFFECTOR-UNCERTAIN pigmentation loci
 (nearest gene NOT a canonical effector) connect into melanogenesis via a NON-CIRCULAR route?
-Ruthlessly honest; negatives count.
+Negatives count.
 
 ## Inputs
 - `data/processed/provisional_effector_uncertain_18.csv` — the 18 loci (Ang2023, Morgan2018).
@@ -32,7 +32,7 @@ T3_STRING = association only, not mechanism.
 - NONCANON  = connected via non-canonical route (candidate finding)
 - CANON     = connected only via canonical neighbour (likely regulatory-of-canonical; NOT our finding)
 - MANUAL    = needs manual paper review
-- NEG       = no connection (honest negative)
+- NEG       = no connection (negative)
 
 ## Outputs
 - `notebooks/08_rescue_screen_diagnostic.ipynb` (self-contained, TL;DR header, evidence-matrix figure)

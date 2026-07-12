@@ -1,6 +1,6 @@
 # Source spec — HIrisPlex-S (Chaitanya et al. 2018), eye/hair/skin colour prediction markers
 
-**Status:** ACQUIRED (marker set); model coefficients PARTIALLY documented — see the honest gap below.
+**Status:** ACQUIRED (marker set); model coefficients PARTIALLY documented — see the gap below.
 
 ## Identity
 - **Citation:** Chaitanya L, Breslin K, Zuñiga S, Wirken L, Pośpiech E, Kukla-Bartoszek M, Sijen T, de
@@ -37,7 +37,7 @@ SLC45A2, TYR, TYRP1), with a `in_novel_17plex_skin` flag marking the 17 skin-spe
   rs3212355 — the full red-hair set.
 - **Blue-eye markers:** HERC2 **rs12913832** (the eye-colour master switch) + OCA2 rs1800407.
 
-## Honest gaps / assumptions (no undocumented claims)
+## Gaps / assumptions (no undocumented claims)
 1. **36 of 41 markers captured.** The parse pulled gene→rsID pairs from the running text; the remaining ~5
    SNPs plus full primer/allele detail are in the paper's formatted **Table 1** (image-like layout not fully
    linearized by text extraction). For the MC1R/OCA2/HERC2 payoff loci the set is complete; if the full 41
@@ -66,7 +66,7 @@ carries its population provenance. Discordance between predicted and observed ph
 to be **structured by genomic background (ancestry), not random** — which is precisely this project's thesis:
 the same genotype yields a different phenotype because the surrounding network differs, and that network
 background differs across populations. This is the **interpretive frame**, documented from the manual; it does
-**not** pull population/allele-frequency data into this week's build (still out of scope) — it is the honest
+**not** pull population/allele-frequency data into this week's build (still out of scope) — it is the
 bridge to the downstream research programme.
 
 ## Result / pinned artifacts

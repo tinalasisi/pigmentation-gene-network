@@ -9,7 +9,7 @@
 The gene-regulatory-network (GRN) layer: directed, signed TF→target transcriptional regulation edges for
 the three melanocyte master regulators present in the frozen data (MITF, SOX10, PAX3). This is the
 **primary and only edge-bearing layer** for NB6 — curated DoRothEA/CollecTRI regulons, not ChIP-seq binding
-peaks (adjudicated category-error exclusion; see `internal/TODO.md`, "Data-fitness sign-off 2026-07-12").
+peaks (excluded as a category error).
 
 ## Row count
 

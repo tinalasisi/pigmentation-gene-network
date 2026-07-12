@@ -4,9 +4,9 @@ Every external data source used to build the expanded pigmentation gene network,
 rebuilds with **no undocumented assumptions**. Each source has a full spec in `docs/specs/`; this file is the
 one-screen index plus the reproducibility contract.
 
-> **Status note (updated 2026-07-11T22:51Z).** The D'Arcy 2023 tables are **committed** — an earlier version
+> **Status note (updated 2026-07-11T22:51Z).** The D'Arcy 2023 tables are **committed**.
 > of this file called them "staged / not yet committed," now corrected. References below to a "proposed
-> enrichment step," "NB4/NB5," "TODO #0," "locked decisions," or `project_dashboard.md` describe **earlier
+> enrichment step," or "NB4/NB5" describe **earlier
 > plans now retired/archived** (`internal/archive/`); the current framing and the open execution questions
 > live in `internal/START_HERE.md`. Treat this manifest as source provenance, not a plan.
 
@@ -53,7 +53,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 5 | **Raghunath et al. 2015** (*BMC Res Notes*) | 265-node / 429-edge directed signed melanogenesis backbone | Prior work (this project) | ✅ pinned | (network base — see Notebooks 1–2 and `internal/project_dashboard.md`) |
 | 6 | **Annotation / identity databases** (UniProt, MyGene, PubChem, ChEBI, GO) | Gene-free node typing (Steps 1–2) + HGNC/Entrez/Ensembl/GRCh38 gene identity (Step 3) for the 183 pending nodes | Live MCP connectors (genes-ontologies, chemistry), queried once; verbatim JSON **frozen** to `data/external/db_responses/` | ✅ frozen and committed (Notebook 2) — `data/external/db_responses/` | (see entry 6 below + meta.json) |
 | 6b | **HGNC gene groups** | Full member genes of the 6 `enzyme_activity_class` nodes (115 member edges), Step 4 | `rest.genenames.org` `fetch/gene_group_id/<id>`, frozen `hgnc_gene_groups.json` | ✅ frozen (Notebook 2) | (see entry 6 below) |
-| 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
+| 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation staged for a future enrichment step (not yet implemented) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
 | 6d | **KEGG hsa04916** (Melanogenesis) | Curated-pathway membership scope cross-check (NB2 Step 6) | `rest.kegg.jp`, frozen `kegg_hsa04916.json` | ✅ frozen (Notebook 2) | (see entry 6c below) |
 | 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables at `data/raw/darcy2023/*.xlsx` | ✅ committed (CC BY 4.0); downstream use open (see `internal/START_HERE.md`) | (see entry 6 above for the full characterization) |
 | 8 | **Kim et al. 2024** (*Nat Commun*) | East-Asian skin-color GWAS: 12 known + 11 novel loci; 26 lead variants; worldwide allele freqs; GWAS×eQTL coloc | PI-supplied publisher download (**CC BY 4.0**); full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | 📄 reference (SI present locally; loci not yet extracted) | (per-source entry 8 below) |
@@ -165,7 +165,7 @@ validation authorities (attach gene identity and relationships, then check them)
   **HGNC gene groups** (`rest.genenames.org`, `fetch/gene_group_id/<id>`) give the **full membership** of
   each of the 6 `enzyme_activity_class` nodes (no single representative), each cited by its HGNC group ID.
   (The post-2015 pigmentation genes — HIrisPlex-S, and possibly wider GWAS hits — are **not** added here;
-  they are held out of NB2 and staged for a proposed enrichment step, notebook placement pending PI
+  they are held out of NB2 and staged for a proposed enrichment step
   agreement. See entry 4.)
 - **Backbone validation (Step 6) — OmniPath, KEGG:** see entries 6b and 6c below. (OmniPath *also* supplies
   the frozen HIrisPlex-edge subset staged for the proposed enrichment step; it is not consumed in NB2.)
@@ -179,7 +179,7 @@ validation authorities (attach gene identity and relationships, then check them)
 - **Commit status (updated 2026-07-12).** `data/external/db_responses/` (7 files:
   `uniprot_annotation_direct.json` + `.meta.json`, `hgnc_gene_groups.json`, `pomc_cleavage_refs.json`,
   `omnipath_internal.json` + `omnipath.meta.json`, `kegg_hsa04916.json`) is now **committed in-repo** —
-  previously specified as "frozen" here but absent from disk and git (see `internal/CHANGELOG.md`
+  absent from disk and git
   2026-07-11T23:57Z). UniProt, HGNC, and the PubMed PMID/metadata extract are factual /
   public-domain-equivalent records. KEGG and OmniPath carry source-specific non-commercial / academic-use
   terms (see 6b/6c below) — committed here under this repo's academic non-commercial research use, not
@@ -224,9 +224,9 @@ validation authorities (attach gene identity and relationships, then check them)
   Raghunath backbone shows 465 D'Arcy genes absent from the backbone (S1∪S5 union), 230 of them
   disease-flagged (118 hypopigmentation-class) — a candidate expansion pool for a proposed downstream
   annotation/PPI-shell step, not a source for the mechanistic backbone (see locked decision 2,
-  `internal/project_dashboard.md`/`internal/TODO.md`). MyGene + UniProt remain the identity authority for NB2 gene typing;
+  MyGene + UniProt remain the identity authority for NB2 gene typing;
   this cross-check is optional independent confirmation, not required for NB1/NB2, and NB4/NB5 consumption
-  of the staged tables is pending TODO #0.
+  of the staged tables is pending.
 - **Citation completeness (release-blocking gate):** every node and every edge in Notebook 2 carries at
   least one **resolvable** citation — a PMID/DOI or a citable accession (UniProt, ChEBI, PubChem CID, GO,
   HGNC gene-group ID, OmniPath `source:PMID`, dbSNP rsID). The 429 backbone edges inherit Raghunath's own
@@ -302,7 +302,7 @@ validation authorities (attach gene identity and relationships, then check them)
   promoted to a committed data source (`data/raw/kim2024/` + `compliance-allowlist.txt`) if the project
   extracts them — a compliance-gate decision, not yet made.
 - **Acquisition:** PI-supplied publisher download (Springer Nature), 2026-07-12; reproducible from the DOI.
-- **Status:** reference. `docs/specs/nb4_unified_association_base.spec.md` previously recorded Kim as "no
+- **Status:** reference. `docs/specs/nb4_unified_association_base.spec.md` records Kim as "no
   extracted loci" — now revisitable, since the 26-lead-variant summary stats are present locally.
 
 ### 9. Zhang et al. 2018 — primary-melanocyte cis-eQTL (*Genome Research*)

@@ -183,7 +183,7 @@ genuinely suggestive/novel non-canonical signals this paper itself reports
 distinguish these two very different categories before treating any row as a
 "candidate" for NB11.
 
-## Honest gaps and completeness
+## Gaps and completeness
 
 See `data/processed/martin2017_HONEST_GAPS.csv` (8 items) and
 `data/processed/martin2017_COMPLETENESS_LEDGER.csv` (per-field-group population
@@ -215,5 +215,5 @@ reconciled.
 Extraction complete; pending a provenance-completeness pass by the
 Reproducibility Specialist per this project's standing workflow. Any field
 flagged untraceable in that pass should be re-opened here and either filled or
-explicitly marked `not_reported` with the reason, per the honest-gaps
+explicitly marked `not_reported` with the reason, per the gaps
 convention above.

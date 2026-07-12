@@ -24,7 +24,7 @@ data file anywhere in this repository** — it is cited only in internal plannin
 (`internal/START_HERE.md`, `internal/PROJECT_EVOLUTION.md`, `internal/CHANGELOG.md`), where
 `internal/CHANGELOG.md` records that a standalone population atlas built from this source was
 deliberately preempted (the source already publishes its own atlas). **Not folded into the
-unified base** — recorded here as an honest gap, not fabricated.
+unified base** — this gap is recorded, not fabricated.
 
 ## Method
 

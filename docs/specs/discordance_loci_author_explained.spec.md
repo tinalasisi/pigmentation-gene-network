@@ -70,7 +70,7 @@ was built to catch).
 | `extraction_method` | How the source text was obtained. All 105 rows are `parsed_text_pdf` (or the DOCX/XLSX equivalent parse, tagged the same for this build) — none were OCR'd or hand-transcribed from a scan. |
 | `extraction_status` | `extracted` for all 105 rows (see Completeness ledger — no row was left unclassified). |
 | `gene_label_correction` | Populated only where the source PDF showed a different gene label than `nearest_gene_label` in the upstream `discordance_loci.csv`; blank (105/105) — see Gene-label corrections below. |
-| `notes` | Free-text flags: nearest-gene vs. functional-target splits, hedged/contradicted mechanisms, cross-paper mechanism borrowing, honest-gap caveats, set-level (non-enumerable) loci. Populated on 52/105 rows. |
+| `notes` | Free-text flags: nearest-gene vs. functional-target splits, hedged/contradicted mechanisms, cross-paper mechanism borrowing, gap caveats, set-level (non-enumerable) loci. Populated on 52/105 rows. |
 
 All 12 original `discordance_loci.csv` columns (`paper`, `locus_id`, `rsid`, `coord_build`,
 `nearest_gene_label`, `gene_assignment_basis`, `paper_verdict`, `is_asserted_pigmentation`,
@@ -145,7 +145,7 @@ pass (e.g. Ang2023's Appendix 2 table, Morgan2018's Supplementary Table 1, Meyer
 and no discrepancy was found requiring correction. `gene_label_correction` is blank on all 105
 rows.
 
-## Honest-gaps ledger
+## Gaps ledger
 
 The task brief characterized three papers as having limited-access source text (Norton2014 and
 Norton2016 as paywalled/PDF-only with no supplement; Morell1997 as abstract-only). On actually
@@ -163,7 +163,7 @@ Given full-text access, all three papers were classified with the standard metho
 
 - **Morell1997** (PAX3, Waardenburg syndrome type 1): classified `mechanism_proposed` — the
   paper cites PAX3's transcription-factor/neural-crest-expression role as established
-  background. Flagged in `notes`: this paper's own novel contribution is about penetrance of
+  background. This paper's own novel contribution is about penetrance of
   the *deafness* phenotype (modifier-gene hypothesis), not about the pigmentary phenotype's
   molecular mechanism — the mechanism_proposed classification reflects that a mechanism IS
   stated in the paper's text, not that it is this paper's novel finding.
@@ -173,7 +173,7 @@ Given full-text access, all three papers were classified with the standard metho
 - **Norton2016** (rs387907171 = the same TYRP1 R93C variant, dbSNP-identified by this later
   paper): classified `mechanism_proposed` on the same basis, citing Norton2014/Kenny2012.
 
-No other honest-gaps were required. One residual data-completeness note not risen to the level
+No other gaps were required. One residual data-completeness note not risen to the level
 of a gap: Yang2016's locus row 2 ("OCA2-region SNP cluster; 6 of 8 tested; rsIDs in suppl.
 table S4") could not have its 6 individual rsIDs resolved, because Yang2016's supplementary
 table S4 is not present in this repo's paper folder (only the main PDF was downloaded for this
@@ -195,7 +195,7 @@ paper) — the row is classified `nearest_gene_only` from the main-text discussi
 | Gene-label corrections required | 0 |
 
 No row was left with an unresolved or `not_reported` `author_explanation_status`. The three
-items noted in the Honest-gaps ledger above (Morell1997/Norton2014/Norton2016's originally
+items noted in the Gaps ledger above (Morell1997/Norton2014/Norton2016's originally
 assumed access limitation, and Yang2016's unretrieved supplementary rsIDs) are the only
 deviations from a fully clean extraction and are surfaced here for re-opening if a downstream
 step needs the Yang2016 S4 table specifically.

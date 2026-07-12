@@ -60,7 +60,7 @@ SOX10, PAX3, MLPH, RAB27A, MYO5A, GPR143.
   sign/direction are NOT coerced onto it.
 - The **CRISPR hit is the causal anchor**; STRING supplies candidate wiring, tested by `confirming_experiment`.
 - Reconciliation is **thin**: 92/93 rest on a single line (STRING); GRN and Reactome corroborate 0; 22/93
-  paths are hub-mediated. Reported honestly, not hidden.
+  paths are hub-mediated.
 
 ## Inputs (frozen, in-repo; sha256 verified in the notebook)
 
