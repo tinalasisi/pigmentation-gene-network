@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pigmentation rescue screen — site (WIP, Claude Code)</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#666; --bg:#fafafa; --card:#fff; --accent:#2a7a5a; --warn:#9a6b00; --line:#e5e5e5; }
+  @media (prefers-color-scheme: dark){ :root{ --fg:#e8e8e8; --muted:#9a9a9a; --bg:#141414; --card:#1e1e1e; --accent:#5bbf93; --warn:#d6a427; --line:#333; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:760px; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  .badge { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--warn); border:1px solid var(--warn); border-radius:999px; padding:.2rem .6rem; }
+  h1 { font-size:1.8rem; line-height:1.2; margin:.9rem 0 .3rem; }
+  .sub { color:var(--muted); margin:0 0 2rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.25rem; margin:1rem 0; }
+  h2 { font-size:1rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); margin:0 0 .6rem; }
+  ol.beats { margin:.4rem 0 0; padding-left:1.2rem; } ol.beats li { margin:.35rem 0; }
+  .status { color:var(--accent); font-weight:600; }
+  code { background:color-mix(in srgb, var(--fg) 8%, transparent); padding:.1rem .35rem; border-radius:5px; font-size:.9em; }
+  footer { color:var(--muted); font-size:.85rem; margin-top:2rem; border-top:1px solid var(--line); padding-top:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <span class="badge">Under construction · Claude Code</span>
+  <h1>Pigmentation gene-network rescue screen</h1>
+  <p class="sub">Project website — a guided walkthrough of the finding and how it was built. This page is a
+  placeholder; the real site is assembled here by Claude&nbsp;Code.</p>
+
+  <div class="card">
+    <h2>What this is</h2>
+    <p>A convergence-graded <strong>rescue screen</strong>: pigmentation loci their own authors reported but
+    <em>could not mechanistically explain</em>, resolved to a causal gene and tested for whether they connect
+    into the melanogenesis network — each graded by converging evidence, with a named confirming experiment.</p>
+  </div>
+
+  <div class="card">
+    <h2>Planned narrative (site beats)</h2>
+    <ol class="beats">
+      <li>The problem — GWAS strands pigmentation loci it can't explain.</li>
+      <li>A trustworthy substrate — the identity-resolved melanogenesis network (and why the network you choose changes the answer).</li>
+      <li>Validation &amp; gaps — a CRISPR screen both confirms the networks and exposes 142 missing genes.</li>
+      <li>The rescue — the author-unexplained loci connected to melanogenesis; <strong>the hero locus</strong>.</li>
+      <li>The graded catalog + confirming experiments + honest limits.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Status</h2>
+    <p class="status">Work in progress.</p>
+    <p>The two centerpiece figures — the convergence overview and the hero rescue card — are blocked on
+    <strong>NB8</strong> (the rescue + hero shortlist, owned by Claude Science). Polished figures land in
+    <code>site/figures/</code>; the figure-polish spec is <code>internal/figure_evaluation_2026-07-12.md</code>.</p>
+  </div>
+
+  <footer>
+    <strong>For agents:</strong> this <code>site/</code> folder is Claude&nbsp;Code's (website + figure polish).
+    Please don't edit it from a Claude&nbsp;Science session — coordinate via
+    <code>internal/handoffs/notes/</code>. See the scope-boundary note posted there
+    (topic <code>website-figure-polish</code>).
+  </footer>
+</main>
+</body>
+</html>
