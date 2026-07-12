@@ -1,9 +1,13 @@
 # discordance_loci_effector_classified.csv — spec / provenance
 
-**Supersedes:** `discordance_loci_author_explained.csv` (kept in the repo unchanged for provenance;
-not deleted). **Status:** complete for all 14 papers except the Open Targets canonical-status
-cross-check, which is documented as an open gap (see below) and needs re-opening once the
-connector's rate limit clears.
+**Supersedes:** `discordance_loci_author_explained.csv`, which has been retired to
+`internal/archive/superseded_2026-07-12/` (with its own spec). This file is now the single curated
+source for the 105 legacy loci: its 105 rows with `paper != "Kim2024"` reproduce that file's 105 rows
+exactly on every shared column, and the two audit columns worth keeping — `is_asserted_pigmentation`
+and `needs_review` — were migrated into this file before the old one was retired (the empty
+`gene_label_correction` column was dropped). NB4 reads this file directly. **Status:** complete for
+all 14 papers except the Open Targets canonical-status cross-check, which is documented as an open gap
+(see below) and needs re-opening once the connector's rate limit clears.
 
 ## Purpose
 
@@ -16,8 +20,8 @@ label with no demonstrated functional relationship to the phenotype?
 Conflating the two questions corrupted the original "author-unexplained" rescue-candidate list: 33 of
 its 52 rows pointed at a canonical, textbook pigmentation effector (TYRP1, OCA2, HERC2, SLC45A2, TYR,
 IRF4, SLC24A4) where only the *specific variant's* molecular consequence was unexplained — the gene
-itself was never in doubt. The single clearest example is **HERC2 rs12913832**, the best-characterised
-eye-colour variant in the human genome, which the prior extraction tagged "author-unexplained" only
+itself was never in doubt. The single clearest example is **HERC2 rs12913832**, the best-characterized
+eye-color variant in the human genome, which the prior extraction tagged "author-unexplained" only
 because the paper under review (Ang2023) does not itself restate the HERC2→OCA2 enhancer mechanism
 established elsewhere in the literature.
 
@@ -33,7 +37,7 @@ effector-uncertain target set.
 Read every one of the 14 source papers' own text (main PDF, plus every supplementary PDF/DOCX/XLSX
 present in `data/raw/papers/<tag>/`) and, for each of the 105 rows already established in
 `discordance_loci_author_explained.csv` (13 legacy papers) plus 26 newly-extracted rows for Kim2024
-(East Asian skin-colour GWAS, added this pass because it was not part of the original discordance
+(East Asian skin-color GWAS, added this pass because it was not part of the original discordance
 extraction), assigned:
 
 1. `author_attributed_gene` — the gene(s) the authors name for this locus, verbatim where a single
@@ -75,9 +79,9 @@ with backoff; this is recorded as an open gap, not silently skipped.
 | Value | Meaning | In scope for effector-uncertain rescue analysis? |
 |---|---|---|
 | `canonical_effector_variant_gap` | `author_attributed_gene` is on the canonical effector list; only the *variant's* mechanism (not the gene) may be unresolved. | **No** — this is the PI's earlier, separate project (canonical-effector variant-mechanism gaps). |
-| `effector_uncertain` | `author_attributed_gene` is NOT on the canonical list, or the paper states the effector is unknown, with no established/on-list gene as a competing near-neighbour explanation. | **Yes** — the flagship target set. |
+| `effector_uncertain` | `author_attributed_gene` is NOT on the canonical list, or the paper states the effector is unknown, with no established/on-list gene as a competing near-neighbor explanation. | **Yes** — the flagship target set. |
 | `effector_ambiguous_near` | The variant is "near" one or more genes, none on the canonical list, with no demonstrated (only implied/LD) effect on any of them. | **Yes**, flagged for LD-nomination rather than a rescue claim — see "Near a gene" below. |
-| `regulatory_of_canonical_neighbour` | The nearest-gene label is non-canonical, but the authors' own claimed regulatory/eQTL target is a canonical gene. | **No** as a new finding — it resolves to the canonical neighbour; the non-canonical nearest-label gene is noted but not claimed as an independent effector. |
+| `regulatory_of_canonical_neighbour` | The nearest-gene label is non-canonical, but the authors' own claimed regulatory/eQTL target is a canonical gene. | **No** as a new finding — it resolves to the canonical neighbor; the non-canonical nearest-label gene is noted but not claimed as an independent effector. |
 | `not_a_locus` | The row is a non-genetic covariate (sex, admixture fraction), a statistical-artifact explanation, or an unenumerable polygenic set. | **No** — excluded from all effector classification. |
 
 ### "Near a gene" — the specific nuance flagged by the task
@@ -85,7 +89,7 @@ with backoff; this is recorded as an open gap, not silently skipped.
 For every locus attributed to a gene the variant is not physically inside, the classification asks
 explicitly: does the paper **demonstrate** an effect on the named gene (eQTL, reporter, chromatin,
 CRISPR), or does it only note **proximity/implied LD**?
-- Demonstrated effect on a **canonical** neighbour → `regulatory_of_canonical_neighbour` (e.g.
+- Demonstrated effect on a **canonical** neighbor → `regulatory_of_canonical_neighbour` (e.g.
   Morgan2018's RALY-intron/ASIP-eQTL variant, idx80; Morgan2018's FANCA/SPIRE2-nearest-label but
   MC1R-regulatory-target variant, idx73).
 - Demonstrated effect on a **non-canonical** gene → `effector_uncertain` (e.g. Kim2024's SPIRE2/DEF8/
@@ -97,7 +101,7 @@ CRISPR), or does it only note **proximity/implied LD**?
   rescue but to flag the locus for LD-nomination against the pigmentation gene network's own gene
   set in a downstream step.
 
-## Column dictionary (columns added to / carried from `discordance_loci_author_explained.csv`)
+## Column dictionary (classification columns, plus columns carried over from the retired input)
 
 | Column | Description |
 |---|---|
@@ -105,7 +109,9 @@ CRISPR), or does it only note **proximity/implied LD**?
 | `attribution_basis` | One of the six controlled values above. |
 | `effector_status` | One of the five controlled values above — the field the downstream rescue analysis filters on. |
 | `classification_notes` | Full per-locus reasoning, cross-paper corroboration, and connector cross-check results (mygene.info, Zhang2018 melanocyte eQTL). |
-| All other columns | Carried through unchanged from `discordance_loci_author_explained.csv` for the 105 legacy rows (see that file's own spec for their definitions); populated fresh for the 26 Kim2024 rows using the same schema. |
+| `is_asserted_pigmentation` | Boolean, migrated from the retired `discordance_loci_author_explained.csv`. Whether the source paper asserts the locus is pigmentation-associated. Populated for the 105 legacy rows only (null for the 26 Kim2024 rows); carried through into `nb4_unified_association_base.csv`. |
+| `needs_review` | Free-text curatorial audit flag, migrated from the retired input (e.g. cross-paper double-count, sub-Bonferroni downgrade). Non-empty on 18 of the 105 legacy rows; null elsewhere. Not propagated downstream. |
+| All other columns | Carried through unchanged from the retired `discordance_loci_author_explained.csv` for the 105 legacy rows (that file and its spec now live in `internal/archive/superseded_2026-07-12/`); populated fresh for the 26 Kim2024 rows using the same schema. The empty `gene_label_correction` column was dropped in the migration. |
 
 ## Status distribution (131 loci: 105 legacy + 26 Kim2024)
 
@@ -121,7 +127,7 @@ CRISPR), or does it only note **proximity/implied LD**?
 
 - `data/processed/discordance_loci_effector_classified.csv` — the 131-row merged, harmonized output
   (supersedes `discordance_loci_author_explained.csv` for the effector-uncertain question; that file
-  is retained unchanged for its own variant-mechanism-gap provenance).
+  is preserved for its own variant-mechanism-gap provenance in `internal/archive/superseded_2026-07-12/`).
 - `data/processed/EXTRACT_<paper>_loci_v2.csv` — one file per paper (14 total: the 13 legacy papers
   plus Kim2024), each carrying the same per-locus schema, for per-paper audit without needing to
   filter the merged file.
@@ -199,8 +205,8 @@ above are the only acknowledged gaps and are ledgered for re-opening, not silent
 ## Source papers
 
 See `data/raw/papers/REFERENCES.md` for the full DOI/journal/access table, and
-`docs/specs/discordance_loci_author_explained.spec.md` for the 13-legacy-paper local-filename table
-(unchanged, carried forward). Kim2024's local files:
+`internal/archive/superseded_2026-07-12/discordance_loci_author_explained.spec.md` for the
+13-legacy-paper local-filename table (carried forward). Kim2024's local files:
 
 | File | Description |
 |---|---|

@@ -2,8 +2,9 @@
 
 ## Purpose
 
-Joins the 105 curated genotype→phenotype-discordance loci (`discordance_loci_author_explained.csv`,
-NB3-upstream) against the frozen NHGRI-EBI GWAS Catalog pigmentation pull by rsID, **keeping both
+Joins the 105 curated genotype→phenotype-discordance loci (the 105 legacy rows of
+`discordance_loci_effector_classified.csv`, `paper != "Kim2024"`, NB3-upstream) against the frozen
+NHGRI-EBI GWAS Catalog pigmentation pull by rsID, **keeping both
 provenance rows** rather than collapsing a locus reported by both sources into one, and attaches a
 gene-level GWAS-replication convergence annotation. This is one layer of the convergence-graded
 rescue screen: it establishes whether an independent GWAS signal exists (by exact rsID, and
@@ -15,7 +16,7 @@ Produced by `notebooks/04_unified_association_base.ipynb`.
 
 | File | Rows | Role |
 |---|---|---|
-| `data/processed/discordance_loci_author_explained.csv` | 105 | Curated discordance loci, 52 author-unexplained (`stated_unknown` + `nearest_gene_only`). Upstream (NB3); not re-derived here. |
+| `data/processed/discordance_loci_effector_classified.csv` (105 legacy rows, `paper != "Kim2024"`) | 105 | Curated discordance loci with per-locus effector-status classification (`effector_uncertain`, `canonical_effector_variant_gap`, `effector_ambiguous_near`, `regulatory_of_canonical_neighbour`, `not_a_locus`). Upstream (NB3); not re-derived here. |
 | `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` | 1,072 | Deduplicated lead GWAS Catalog associations, one row per rsID, GRCh38 (`pos_hg38`). Access-UTC 2026-07-08T01:15:41Z (see `docs/specs/gwas_catalog.spec.md`). |
 | `data/external/gwas_catalog/gwas_pigmentation_associations.csv` | 723 | Granular associations (`efo_id, trait, gene, snp_id, pvalue`); used ONLY for the gene-level replication count. No committed `.meta.json` — a documented reproducibility gap (regeneration via `scripts/pull_gwas_associations.py`, exact original CLI args not recorded in-repo). |
 
@@ -91,6 +92,6 @@ unified base** — this gap is recorded, not fabricated.
 
 ## Upstream / sibling specs
 
-- `docs/specs/discordance_loci_author_explained.spec.md` — the 105-locus curated input and the
-  52-locus rescue-candidate ledger definition.
+- `docs/specs/discordance_loci_effector_classified.spec.md` — the 105-locus curated input and the
+  per-locus effector-status classification that defines the rescue target.
 - `docs/specs/gwas_catalog.spec.md` — the deduplicated 1,072-row GWAS Catalog pull.

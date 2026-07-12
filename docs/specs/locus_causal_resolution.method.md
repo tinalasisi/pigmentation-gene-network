@@ -1,10 +1,14 @@
 # NB7 Locus-Resolution Module: Causal Gene Resolution for Rescue Candidates
 
 **Generated:** 2026-07-12T02:43:45.868074Z
-**Scope:** the 52 "rescue candidate" loci from `data/processed/discordance_loci_author_explained.csv`
-(rows where `author_explanation_status` in {stated_unknown, nearest_gene_only} — i.e. the original
-authors did NOT give a mechanistic explanation for the locus). This module is independent of the
-network-substrate work running in parallel (NB5); it only resolves causal genes.
+**Scope:** the 52 "rescue candidate" loci defined by `author_explanation_status` in {stated_unknown,
+nearest_gene_only} — the loci whose original papers did NOT give a mechanistic explanation. This field
+is carried in `data/processed/discordance_loci_effector_classified.csv` (105 legacy rows,
+`paper != "Kim2024"`); the effector-status re-classification later showed only 9 of these 52 are
+genuinely effector-uncertain (see `docs/specs/discordance_loci_effector_classified.spec.md` and NB4),
+so the 52-set is retained here only as the historical input this module was run against, not as the
+current rescue target. This module is independent of the network-substrate work running in parallel
+(NB5); it only resolves causal genes.
 
 ## Goal and non-negotiable rule
 
@@ -44,7 +48,7 @@ have hidden. See `data/external/db_responses/open_targets_l2g_rescue_loci.json` 
    pigmentation-relevant L2G/coloc signal, we queried the three skin-tissue eQTL Catalogue
    datasets (QTD000311 GTEx skin suprapubic n=517, QTD000316 GTEx skin sun-exposed n=602,
    QTD000544 TwinsUK skin n=370) directly for the candidate rsID. No dedicated "melanocyte" eQTL
-   dataset exists in the Catalogue (758 datasets / 99 tissues surveyed; none contain "melano" in
+   dataset exists in the Catalog (758 datasets / 99 tissues surveyed; none contain "melano" in
    tissue or sample-group label) — skin (whole-tissue) is the closest available proxy and this
    caveat applies to every eQTL_coloc-basis resolution below.
 
