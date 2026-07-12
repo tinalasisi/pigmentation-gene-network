@@ -46,7 +46,7 @@ KISS1,hormone,69,414,1.25,26,ok,19,ok
 KISS1R,hormone,91,1194,7.53,136,ok,19,ok
 KIT,pigmentation,22,2931,5.38,1,ok,6,ok
 KITLG,pigmentation,100,804,11.84,25,ok,21,ok
-LDLR,hormone,82,2517,13.72,333,ok,20,hyphy_failed
+LDLR,hormone,77,2502,13.55,360,ok,19,ok
 LEF1,pigmentation,99,828,10.1,176,ok,21,ok
 LHB,hormone,66,492,5.83,53,ok,11,ok
 LHCGR,hormone,99,1416,5.16,244,ok,21,ok
@@ -59,8 +59,9 @@ NCOA1,hormone,99,2865,22.21,512,ok,21,ok
 NCOA2,hormone,98,4041,22.73,209,ok,21,hyphy_failed
 NCOA3,hormone,94,4233,15.4,78,ok,20,ok
 NCOR1,hormone,96,3702,24.47,1298,ok,21,ok
+NCOR2,hormone,90,6060,24.42,908,ok,18,ok
 OCA2,pigmentation,75,1668,38.96,553,ok,13,ok
-PAX3,pigmentation,99,1440,27.26,101,ok,21,hyphy_failed
+PAX3,pigmentation,98,1440,27.53,101,ok,20,ok
 PMEL,pigmentation,94,1908,6.8,224,ok,21,ok
 POMC,pigmentation,42,795,3.57,152,ok,9,ok
 SCARB1,hormone,83,1377,20.38,205,ok,18,ok
