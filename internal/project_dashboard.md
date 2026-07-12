@@ -84,7 +84,7 @@ Naming every processed-CSV stem here also keeps the plan-sync checker's orphan s
 **In-flight, UNCOMMITTED (`data/processed/`, on disk in a concurrent NB4/NB5 session — do not pin counts, do not commit from here):**
 - `discordance_loci_author_explained.csv` — NB4 author-explanation-status extension of the discordance loci.
 - `darcy2023_S1_disease_genes.csv`, `darcy2023_S2_sysgo_annotation.csv`, `darcy2023_S4_string_edges.csv`, `darcy2023_S5_string_nodes.csv`, `darcy2023_S6_massspec_expression.csv` — NB5 D'Arcy 2023 supplement extracts.
-- `nb5_gene_set_membership.csv`, `nb5_raghunath_string_edge_coverage.csv`, `nb5_string_drift_darcy_vs_ourpull.csv`, `nb5_darcy_only_phenotype_overlay.csv` — NB5 candidate-network comparison outputs.
+- `nb5_gene_set_membership.csv` (now includes the Bajpai 2023 node layer — flag/weight/sign + 142 orphan-hit rows, per PI sign-off `internal/bajpai_network_integration_brief.md`), `nb5_raghunath_string_edge_coverage.csv`, `nb5_string_drift_darcy_vs_ourpull.csv`, `nb5_darcy_only_phenotype_overlay.csv`, `nb5_bajpai_network_enrichment.csv`, `nb5_bajpai_bipartite_melanin_endpoint.csv` (labeled, non-topology layer), `nb5_networks_typology.csv` — NB5 candidate-network comparison outputs.
 
 **Frozen DB responses (`data/external/db_responses/`, tracked)** — NB2 offline inputs (restored in `95f1969`):
 - `uniprot_annotation_direct.json` (+ `.meta.json`), `hgnc_gene_groups.json`, `pomc_cleavage_refs.json`, `omnipath_internal.json` (+ `omnipath.meta.json`), `kegg_hsa04916.json`.

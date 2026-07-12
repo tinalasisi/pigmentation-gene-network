@@ -56,6 +56,8 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
 | 6d | **KEGG hsa04916** (Melanogenesis) | Curated-pathway membership scope cross-check (NB2 Step 6) | `rest.kegg.jp`, frozen `kegg_hsa04916.json` | ✅ frozen (Notebook 2) | (see entry 6c below) |
 | 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables at `data/raw/darcy2023/*.xlsx` | ✅ committed (CC BY 4.0); downstream use open (see `internal/START_HERE.md`) | (see entry 6 above for the full characterization) |
+| 8 | **Kim et al. 2024** (*Nat Commun*) | East-Asian skin-color GWAS: 12 known + 11 novel loci; 26 lead variants; worldwide allele freqs; GWAS×eQTL coloc | PI-supplied publisher download (**CC BY 4.0**); full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | 📄 reference (SI present locally; loci not yet extracted) | (per-source entry 8 below) |
+| 9 | **Zhang et al. 2018** (*Genome Res*) | Primary-melanocyte cis-eQTL (106 cultures): 597k cis-eQTL SNPs, 4,997 eGenes — the tissue-correct eQTL for pigmentation | PI-supplied publisher download (**CC BY-NC 4.0**); full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | 📄 reference (melanocyte-eQTL layer source) | (per-source entry 9 below) |
 
 ---
 
@@ -102,6 +104,13 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
   → uniform direction *perturbation reduces pigmentation*.
 - **Payoff loci:** OCA2 is a hit; MC1R/HERC2 are not screen hits (expected — screen finds melanogenesis
   effectors, not the eye/hair colour regulators per se).
+- **Network integration (2026-07-12, PI sign-off `internal/bajpai_network_integration_brief.md`):** entered
+  Notebook 05's candidate-network comparison as a **node layer** (node-set flag + `Combined_casTLE_Effect`
+  weight + uniform reduces-pigmentation sign in `nb5_gene_set_membership.csv`), never as fabricated gene-gene
+  edges. Reverse coverage: 27/169 hits (16.0%) fall in at least one of the four curated/pathway networks
+  already compared there; **142/169 (84.0%) are orphan hits absent from all four** — flagged as candidate
+  discovery nodes. An optional, explicitly labeled bipartite hit→`melanin_content` layer
+  (`nb5_bajpai_bipartite_melanin_endpoint.csv`) is kept separate from every topology statistic.
 
 ### 3. Baxter et al. 2018/2019 — curated cross-species gene list
 - **Identity:** DOI 10.1111/pcmr.12743 · PMID 30339321 · PMC10413850 · *Pigment Cell Melanoma Res*.
@@ -273,6 +282,46 @@ validation authorities (attach gene identity and relationships, then check them)
   blanket-granted. `kegg_hsa04916.json` here is a bare 101-gene membership list (no KEGG diagram or
   proprietary descriptive text), committed for academic non-commercial research use; a commercial or
   non-academic user should re-query `rest.kegg.jp` directly rather than rely on this frozen file.
+
+### 8. Kim et al. 2024 — East-Asian skin-color GWAS (*Nature Communications*)
+- **Identity:** *Nat Commun* 15:4874 (2024); DOI 10.1038/s41467-024-49031-4; PMID 38849341. Authors incl.
+  A. R. Martin, H.-H. Won. *(Article page 1 read to confirm identity — not inferred from filename.)*
+- **What it is:** GWAS of image-quantified skin color in **48,433 East Asians** — 12 known + 11
+  previously-unreported loci; SNP-based heritability 23–24%; potential causal genes via nonsynonymous variants,
+  skin-tissue eQTL colocalization, and melanocyte expression. East-Asian pigmentation loci substantially
+  diverge from European populations; signatures of polygenic adaptation detected. A complementary population
+  source to the curated set.
+- **Files (local, gitignored under `data/raw/papers/Kim2024_NatCommun_EastAsianSkinColor/`):** article PDF,
+  Supplementary Information, Supplementary Data descriptions, and `..._Supplementary_Data.xlsx` — 13 data files
+  incl. **Data 4 = summary stats for the 26 lead variants**, **Data 11 = GWAS×eQTL colocalization**, **Data 13
+  = worldwide allele frequency of lead variants**. The Peer Review File keeps its publisher name
+  `41467_2024_49031_MOESM2_ESM.pdf` (deliberately not renamed).
+- **License:** article **CC BY 4.0** (open access; redistributable with attribution). Per repo convention the
+  article PDF is not committed (cited by DOI, Raghunath precedent). The CC BY data supplements **could** be
+  promoted to a committed data source (`data/raw/kim2024/` + `compliance-allowlist.txt`) if the project
+  extracts them — a compliance-gate decision, not yet made.
+- **Acquisition:** PI-supplied publisher download (Springer Nature), 2026-07-12; reproducible from the DOI.
+- **Status:** reference. `docs/specs/nb4_unified_association_base.spec.md` previously recorded Kim as "no
+  extracted loci" — now revisitable, since the 26-lead-variant summary stats are present locally.
+
+### 9. Zhang et al. 2018 — primary-melanocyte cis-eQTL (*Genome Research*)
+- **Identity:** *Genome Res* 28(11):1621–1635 (2018); DOI 10.1101/gr.233304.117 (**PMID to confirm — not yet
+  verified**). Brown lab (NCI DCEG); Pavan co-author. *(Article page 1 read to confirm identity.)*
+- **What it is:** cis-eQTL in **106 primary melanocyte cultures (newborn males)** — 597,335 cis-eQTL SNPs,
+  4,997 eGenes; >⅓ of melanocyte eGenes (incl. key melanin-synthesis genes) are unique vs GTEx skin / TCGA; a
+  trans-eQTL links a pigmentation SNP to IRF4. **The tissue-correct eQTL resource for pigmentation** — bulk
+  skin dilutes the melanocyte signal (the rationale behind the melanocyte-eQTL resolution layer).
+- **Files (local, gitignored under `data/raw/papers/Zhang2018_GenomeRes_MelanocyteEQTL/`):** article PDF,
+  Supplementary Material, and `..._Supplementary_Tables.xlsx` (melanocyte eQTL tables). Full genome-wide
+  summary stats are **dbGaP controlled-access**.
+- **License:** article **CC BY-NC 4.0** (Cold Spring Harbor; open after a 6-month embargo, long elapsed) —
+  redistributable **non-commercially** with attribution. Article PDF not committed (cited by DOI). Committing
+  the CC BY-NC supplement tables as a data source needs a compliance-gate ruling (NC is stricter than the
+  CC-BY precedent).
+- **Acquisition:** PI-supplied publisher download, 2026-07-12. Full eQTL stats require dbGaP controlled access.
+- **⚠ dbGaP DUC:** a NIH **Data Use Certification Agreement** (`data/raw/papers/wga.pdf`, gitignored) was
+  dropped alongside — a controlled-access legal document, **not** a paper. Recommend deleting it from the repo
+  entirely (it does not belong under `papers/`).
 
 ---
 

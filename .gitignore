@@ -13,6 +13,14 @@
 data/raw/papers/*
 !data/raw/papers/
 !data/raw/papers/REFERENCES.md
+# 2026-07-12: Kim 2024 (CC BY 4.0) and Zhang 2018 (CC BY-NC 4.0) full-texts + supplements were
+# dropped into data/raw/papers/<folder>/ and are ALREADY withheld by the blanket rule above — this is
+# the article-PDF convention, NOT a license restriction (both are openly licensed). Also withheld:
+# data/raw/papers/wga.pdf = a NIH dbGaP Data Use Certification Agreement (controlled-access legal doc,
+# NOT a paper) — recommend deleting it from the repo entirely. If the project USES Kim's or Zhang's
+# openly-licensed DATA tables, promote them to their own data/raw/<source>/ folder and clear in
+# tools/hooks/compliance-allowlist.txt (Kim CC BY = D'Arcy precedent; Zhang CC BY-NC needs a
+# compliance-gate ruling). See DATA_SOURCES.md entries 8-9.
 
 # HIrisPlex-S — Chaitanya 2018 (Elsevier) full text + mmc supplements.
 # NOTE: the free Erasmus MC Webtool Manual in the SAME folder IS committed.
@@ -80,3 +88,7 @@ internal/archive/
 # ship on the site are the base64 copies embedded IN the notebook (execute: false),
 # so these on-disk PNGs are regenerable scratch and are never committed.
 /output/
+
+# Sub-agent scratch handoff dirs (not part of the reproducible pipeline)
+notebooks/handoff/
+handoff/

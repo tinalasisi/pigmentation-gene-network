@@ -11,6 +11,8 @@ publisher. Only openly-licensed material is committed (see the redistribution po
 | **Baxter et al. 2018/2019**, *Pigment Cell Melanoma Res* | **not redistributed** — obtain from publisher | **none committed** — Table S7 withheld (see stanza below) | 10.1111/pcmr.12743 · PMID 30339321 | Wiley subscription — article text AND SI tables NOT redistributable (no open-license copy) |
 | **Chaitanya et al. 2018** (HIrisPlex-S), *Forensic Sci Int Genet* | **not redistributed** — obtain from publisher | Erasmus MC Webtool Manual v2 (`data/raw/hirisplexs2018/`) | 10.1016/j.fsigen.2018.04.004 | Elsevier subscription — article text NOT redistributable |
 | **Walsh et al. 2017** (HIrisPlex-S skin model), *Hum Genet* | **not redistributed** — obtain from publisher | — | 10.1007/s00439-017-1808-5 | Springer subscription |
+| **Kim et al. 2024**, *Nat Commun* | full-text in `data/raw/papers/Kim2024_NatCommun_EastAsianSkinColor/` — withheld by the `data/raw/papers/*` rule (article-PDF convention, not a license bar) | article + SI + Supplementary Data (26 lead variants, worldwide allele freqs, GWAS×eQTL coloc) | 10.1038/s41467-024-49031-4 · PMID 38849341 | **CC BY 4.0** (open access — redistributable) |
+| **Zhang et al. 2018**, *Genome Res* | full-text in `data/raw/papers/Zhang2018_GenomeRes_MelanocyteEQTL/` — withheld by the blanket rule | article + Supplementary Material + Supplementary Tables (melanocyte cis-eQTL); full stats are dbGaP-controlled | 10.1101/gr.233304.117 · PMID to confirm | **CC BY-NC 4.0** (redistributable non-commercially) |
 
 ## Validation-case papers (13 genotype→phenotype-discordance papers) — FILES withheld, science used freely
 

@@ -1207,3 +1207,62 @@ subset to `efo_id,trait,gene,snp_id,pvalue`).
 
 **Documents updated:** this entry; `internal/hackathon_final_day_feedback_and_pitch.md`; `DATA_SOURCES.md`;
 added `scripts/pull_gwas_associations.py`.
+
+## 2026-07-12T04:34Z — NB5 extended: Bajpai 2023 CRISPR screen added as a NODE layer, networks-typology table, STRING headline foregrounded, figure title fixed to 5-way
+
+Per PI sign-off (`internal/bajpai_network_integration_brief.md`), extended `05_compare_candidate_networks.ipynb`
+without disturbing the four-source node-level comparison it already establishes:
+
+- **Bajpai as a node layer (never edges).** All 169 hit genes joined by `Symbol` into
+  `nb5_gene_set_membership.csv` as a node-set flag (`in_bajpai2023_crispr_169`), a node weight
+  (`bajpai_castle_effect`), and a uniform sign (`bajpai_direction="reduces_pigmentation"`). Sanity check
+  passed exactly as specified: `TYR`/`DCT`/`SLC45A2`/`OCA2` present, `MC1R`/`HERC2` absent. Reverse
+  coverage: only 27/169 hits (16.0%) fall in the four candidate networks' 572-gene union — **142/169
+  (84.0%) are orphan hits**, flagged `bajpai_orphan_hit=True`, absent from Raghunath/D'Arcy-S1/KEGG/Reactome
+  alike. Per-network enrichment against the screen's own 4,950-gene assayed background
+  (`nb5_bajpai_network_enrichment.csv`): D'Arcy-S1 captures the most hits (23/243, OR≈17.0, p≈6e-18),
+  Raghunath the fewest (5/168, OR≈3.5, p≈0.02). An optional, explicitly labeled bipartite
+  hit→`melanin_content` layer (`nb5_bajpai_bipartite_melanin_endpoint.csv`, 169 star edges, 1 endpoint node)
+  is kept in its own file — never pooled with the real edge networks in any topology statistic. No
+  gene-gene edge was fabricated anywhere in this addition.
+- **Networks-typology table** (`nb5_networks_typology.csv`, 9 rows) added: one row per source
+  (Raghunath, KEGG, Reactome, D'Arcy-S1, D'Arcy-S4/S5-STRING, our-STRING-v12.0, Bajpai, Baxter,
+  GWAS/curated-loci-13-papers) x {network type, directed?, signed?, edge evidence, node count} — makes the
+  category differences (mechanism vs. pathway-membership vs. association vs. node-only phenotype list)
+  explicit before any future harmonization step.
+- **STRING headline foregrounded in the Discussion:** our STRING v12.0 pull recovers only **59.6%**
+  (158/265 mappable pairs) of Raghunath's own signed/directed mechanistic edges, and agrees with D'Arcy's
+  own frozen STRING snapshot on only **~66%** of edges (**~34% drift**) at the identical 243-gene node
+  scope — "the network you choose changes the answer," now stated as a headline paragraph immediately
+  after the non-redundant-peers framing, not just buried in Steps 8–9.
+- **Figure title fixed:** the left panel's stale "4-way" label (it already showed 5 bars once Reactome was
+  added) is now "5-way" — Bajpai is the 5th node-set source. The right panel was rebuilt to show the two
+  STRING percentages (59.6% coverage, 66.4% agreement) as the headline visual rather than raw counts.
+  Re-rendered with `fig, ax = plt.subplots(...)`, no `plt.*` state calls.
+- **TL;DR header added** to the top of the notebook per the project's mini-manuscript convention.
+- **Citation-completeness gate re-run and passing:** 0 uncited rows across all 13 tables the notebook now
+  emits, including the three new Bajpai/typology tables.
+- Notebook executed end-to-end offline (frozen-DB pattern; no live network calls in the notebook kernel)
+  and re-saved with fresh outputs.
+
+**Documents updated:** this entry; `DATA_SOURCES.md` (Bajpai network-integration note);
+`internal/project_dashboard.md` (in-flight NB5 output list); `internal/TODO.md` (NB5 finalization-fixes
+item closed). **Files added:** `data/processed/nb5_bajpai_network_enrichment.csv`,
+`data/processed/nb5_bajpai_bipartite_melanin_endpoint.csv`, `data/processed/nb5_networks_typology.csv`.
+**Files updated:** `notebooks/05_compare_candidate_networks.ipynb`,
+`data/processed/nb5_gene_set_membership.csv` (572→714 rows), `notebooks/figures/nb5_candidate_network_comparison.png`.
+
+## 2026-07-12T05:13Z — Figure evaluation for the website polish pass (Claude Code; figures NOT modified)
+
+Claude Code (website/design owner) did a read-only review of the current NB1–NB6 figures and wrote
+`internal/figure_evaluation_2026-07-12.md` — the spec for the polished, site-ready rebuilds (and the later
+Claude Design handoff). **No figure was modified**; Claude Science's rough functional figures are exactly its
+remit, polish is Claude Code's. Cross-cutting fixes flagged: adopt one design system (Claude Code `dataviz`
+palette); fix arbitrary + red-green-inaccessible color semantics; titles must not truncate (nb4 title is cut
+off) or carry the legend (nb6); emphasize the "money" number per figure; strip internal jargon. Per-figure
+verdicts + a priority order are in the doc. Notes the two winning figures that do NOT yet exist (convergence
+overview + hero rescue card — pending NB8).
+
+**Coordination:** appended by Claude Code while `internal/CHANGELOG.md` also holds the concurrent NB4–NB6
+session's uncommitted entries — so Claude Code committed ONLY the eval doc, not CHANGELOG, to avoid entangling
+that work.
