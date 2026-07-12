@@ -1,0 +1,4 @@
+accession	organism	assembly_name	refseq_category	total_seq_len
+GCF_009828535.3	Hylobates moloch	HMol_V3	reference genome	2848323459
+GCF_006542625.1	Nomascus leucogenys	Asia_NLE_v1	reference genome	2843966406
+GCF_028878055.3	Symphalangus syndactylus	NHGRI_mSymSyn1-v2.1_pri	reference genome	3262887708
