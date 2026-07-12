@@ -1,0 +1,1763 @@
+{
+  "query_utc": "2026-07-12T02:50:25.632009Z",
+  "connector": "human-genetics MCP (eQTL Catalogue via Open Targets / EBI eQTL Catalogue)",
+  "method": "eqtl_associations(dataset_id, rsid, nlog10p_min) + eqtl_list_datasets(quant_method) melanocyte-dataset survey",
+  "skin_datasets_queried": [
+    "QTD000311 (GTEx skin suprapubic, bulk)",
+    "QTD000316 (GTEx skin sun-exposed, bulk)",
+    "QTD000544 (TwinsUK skin, bulk)"
+  ],
+  "melanocyte_dataset_availability_check": {
+    "n_total_datasets_surveyed": 757,
+    "n_unique_tissue_labels": 98,
+    "melanocyte_specific_datasets_found": [],
+    "conclusion": "No melanocyte-specific or melanocyte-derived eQTL/QTL dataset exists in the EBI eQTL Catalogue as exposed by this connector (757 datasets across ge/tx/txrev/exon/microarray/leafcutter quant methods, 98 unique tissue labels, zero containing 'melano'). All eQTL-based evidence in this pipeline therefore uses BULK skin tissue (GTEx or TwinsUK), which is a known-imperfect proxy for melanocyte biology (melanocytes are <5% of a skin biopsy per genetics reviewer note)."
+  },
+  "results_ambiguous_20": {
+    "rs642742": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs642742",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs642742",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs642742",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs12233134": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12233134",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12233134",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12233134",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs4959270": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs4959270",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs4959270",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs4959270",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs6917661": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 4.623072828974988,
+            "pvalue": 2.38192e-05,
+            "molecular_trait_id": "ENSG00000074706",
+            "gene_id": "ENSG00000074706",
+            "position": 154400423,
+            "chromosome": "6",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr6_154400423_C_T",
+            "rsid": "rs6917661",
+            "ac": 247,
+            "an": 1034,
+            "beta": 0.283314,
+            "maf": 0.238878,
+            "median_tpm": 0.891,
+            "r2": null,
+            "se": 0.0664165
+          }
+        ],
+        "filters": {
+          "rsid": "rs6917661",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 8.012310948615363,
+            "pvalue": 9.72051e-09,
+            "molecular_trait_id": "ENSG00000074706",
+            "gene_id": "ENSG00000074706",
+            "position": 154400423,
+            "chromosome": "6",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr6_154400423_C_T",
+            "rsid": "rs6917661",
+            "ac": 267,
+            "an": 1204,
+            "beta": 0.331253,
+            "maf": 0.221761,
+            "median_tpm": 1.107,
+            "r2": null,
+            "se": 0.0569225
+          }
+        ],
+        "filters": {
+          "rsid": "rs6917661",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 7.038072287327066,
+            "pvalue": 9.16068e-08,
+            "molecular_trait_id": "ENSG00000153721",
+            "gene_id": "ENSG00000153721",
+            "position": 154400423,
+            "chromosome": "6",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr6_154400423_C_T",
+            "rsid": "rs6917661",
+            "ac": 150,
+            "an": 740,
+            "beta": 0.428382,
+            "maf": 0.202703,
+            "median_tpm": 3.392,
+            "r2": 0.99323,
+            "se": 0.0785183
+          }
+        ],
+        "filters": {
+          "rsid": "rs6917661",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs12668421": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12668421",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12668421",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs12668421",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs34357723": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 6,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 5.594983371079107,
+            "pvalue": 2.54107e-06,
+            "molecular_trait_id": "ENSG00000003249",
+            "gene_id": "ENSG00000003249",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": 0.289738,
+            "maf": 0.217602,
+            "median_tpm": 7.172,
+            "r2": null,
+            "se": 0.060875
+          },
+          {
+            "nlog10p": 5.298183424452676,
+            "pvalue": 5.03288e-06,
+            "molecular_trait_id": "ENSG00000075399",
+            "gene_id": "ENSG00000075399",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": 0.258445,
+            "maf": 0.217602,
+            "median_tpm": 30.086,
+            "r2": null,
+            "se": 0.0560194
+          },
+          {
+            "nlog10p": 3.2687812275638857,
+            "pvalue": 0.000538541,
+            "molecular_trait_id": "ENSG00000141013",
+            "gene_id": "ENSG00000141013",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": 0.223807,
+            "maf": 0.217602,
+            "median_tpm": 9.672,
+            "r2": null,
+            "se": 0.0642513
+          },
+          {
+            "nlog10p": 9.301948195570528,
+            "pvalue": 4.98944e-10,
+            "molecular_trait_id": "ENSG00000185324",
+            "gene_id": "ENSG00000185324",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": -0.271735,
+            "maf": 0.217602,
+            "median_tpm": 63.588,
+            "r2": null,
+            "se": 0.0428304
+          },
+          {
+            "nlog10p": 4.62315853233507,
+            "pvalue": 2.38145e-05,
+            "molecular_trait_id": "ENSG00000204991",
+            "gene_id": "ENSG00000204991",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": -0.263448,
+            "maf": 0.217602,
+            "median_tpm": 3.857,
+            "r2": null,
+            "se": 0.0617586
+          },
+          {
+            "nlog10p": 7.805235975889113,
+            "pvalue": 1.5659e-08,
+            "molecular_trait_id": "ENSG00000275734",
+            "gene_id": "ENSG00000275734",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 225,
+            "an": 1034,
+            "beta": -0.367099,
+            "maf": 0.217602,
+            "median_tpm": 1.091,
+            "r2": null,
+            "se": 0.0638617
+          }
+        ],
+        "filters": {
+          "rsid": "rs34357723",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 7,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 5.069298989713508,
+            "pvalue": 8.52513e-06,
+            "molecular_trait_id": "ENSG00000003249",
+            "gene_id": "ENSG00000003249",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": 0.228638,
+            "maf": 0.219269,
+            "median_tpm": 8.402,
+            "r2": null,
+            "se": 0.0509065
+          },
+          {
+            "nlog10p": 7.028907465928076,
+            "pvalue": 9.35605e-08,
+            "molecular_trait_id": "ENSG00000075399",
+            "gene_id": "ENSG00000075399",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": 0.302308,
+            "maf": 0.219269,
+            "median_tpm": 30.951,
+            "r2": null,
+            "se": 0.0559144
+          },
+          {
+            "nlog10p": 3.9572945730138467,
+            "pvalue": 0.000110333,
+            "molecular_trait_id": "ENSG00000141013",
+            "gene_id": "ENSG00000141013",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": 0.244388,
+            "maf": 0.219269,
+            "median_tpm": 10.52,
+            "r2": null,
+            "se": 0.0627747
+          },
+          {
+            "nlog10p": 8.12740848504745,
+            "pvalue": 7.45747e-09,
+            "molecular_trait_id": "ENSG00000185324",
+            "gene_id": "ENSG00000185324",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": -0.2343,
+            "maf": 0.219269,
+            "median_tpm": 54.406,
+            "r2": null,
+            "se": 0.0399415
+          },
+          {
+            "nlog10p": 3.0894076081689286,
+            "pvalue": 0.00081394,
+            "molecular_trait_id": "ENSG00000187741",
+            "gene_id": "ENSG00000187741",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": -0.156963,
+            "maf": 0.219269,
+            "median_tpm": 2.539,
+            "r2": null,
+            "se": 0.0466389
+          },
+          {
+            "nlog10p": 3.7637651369094374,
+            "pvalue": 0.00017228,
+            "molecular_trait_id": "ENSG00000204991",
+            "gene_id": "ENSG00000204991",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": -0.241381,
+            "maf": 0.219269,
+            "median_tpm": 3.447,
+            "r2": null,
+            "se": 0.063843
+          },
+          {
+            "nlog10p": 3.122347663211422,
+            "pvalue": 0.000754488,
+            "molecular_trait_id": "ENSG00000275734",
+            "gene_id": "ENSG00000275734",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 264,
+            "an": 1204,
+            "beta": -0.20768,
+            "maf": 0.219269,
+            "median_tpm": 1.101,
+            "r2": null,
+            "se": 0.0613207
+          }
+        ],
+        "filters": {
+          "rsid": "rs34357723",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 5,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 9.017123438691538,
+            "pvalue": 9.61339e-10,
+            "molecular_trait_id": "ENSG00000003249",
+            "gene_id": "ENSG00000003249",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 201,
+            "an": 740,
+            "beta": 0.368387,
+            "maf": 0.271622,
+            "median_tpm": 7.07,
+            "r2": 0.92088,
+            "se": 0.0586137
+          },
+          {
+            "nlog10p": 8.397820594108264,
+            "pvalue": 4.0011e-09,
+            "molecular_trait_id": "ENSG00000075399",
+            "gene_id": "ENSG00000075399",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 201,
+            "an": 740,
+            "beta": 0.324184,
+            "maf": 0.271622,
+            "median_tpm": 47.465,
+            "r2": 0.92088,
+            "se": 0.0537173
+          },
+          {
+            "nlog10p": 3.7909141302372515,
+            "pvalue": 0.00016184,
+            "molecular_trait_id": "ENSG00000140995",
+            "gene_id": "ENSG00000140995",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 201,
+            "an": 740,
+            "beta": 0.206578,
+            "maf": 0.271622,
+            "median_tpm": 66.543,
+            "r2": 0.92088,
+            "se": 0.0541773
+          },
+          {
+            "nlog10p": 13.277681219783652,
+            "pvalue": 5.27617e-14,
+            "molecular_trait_id": "ENSG00000185324",
+            "gene_id": "ENSG00000185324",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 201,
+            "an": 740,
+            "beta": -0.260601,
+            "maf": 0.271622,
+            "median_tpm": 78.061,
+            "r2": 0.92088,
+            "se": 0.0332354
+          },
+          {
+            "nlog10p": 5.398496261686799,
+            "pvalue": 3.99488e-06,
+            "molecular_trait_id": "ENSG00000204991",
+            "gene_id": "ENSG00000204991",
+            "position": 89820111,
+            "chromosome": "16",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr16_89820111_C_T",
+            "rsid": "rs34357723",
+            "ac": 201,
+            "an": 740,
+            "beta": -0.27913,
+            "maf": 0.271622,
+            "median_tpm": 5.272,
+            "r2": 0.92088,
+            "se": 0.0595799
+          }
+        ],
+        "filters": {
+          "rsid": "rs34357723",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs6876712": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6876712",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6876712",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6876712",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs9463733": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs9463733",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs9463733",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 13.518431258079591,
+            "pvalue": 3.03088e-14,
+            "molecular_trait_id": "ENSG00000170927",
+            "gene_id": "ENSG00000170927",
+            "position": 51857895,
+            "chromosome": "6",
+            "ref": "A",
+            "alt": "G",
+            "type": "SNP",
+            "variant": "chr6_51857895_A_G",
+            "rsid": "rs9463733",
+            "ac": 243,
+            "an": 740,
+            "beta": -0.463182,
+            "maf": 0.327027,
+            "median_tpm": 0.382,
+            "r2": 0.8705,
+            "se": 0.0584645
+          }
+        ],
+        "filters": {
+          "rsid": "rs9463733",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs672948": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs672948",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs672948",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 2,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 4.613133778427855,
+            "pvalue": 2.43706e-05,
+            "molecular_trait_id": "ENSG00000225637",
+            "gene_id": "ENSG00000225637",
+            "position": 43373568,
+            "chromosome": "21",
+            "ref": "A",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr21_43373568_A_T",
+            "rsid": "rs672948",
+            "ac": 442,
+            "an": 740,
+            "beta": -0.232149,
+            "maf": 0.401351,
+            "median_tpm": 1.186,
+            "r2": 0.82066,
+            "se": 0.0542769
+          },
+          {
+            "nlog10p": 9.931001987922276,
+            "pvalue": 1.17219e-10,
+            "molecular_trait_id": "ENSG00000237989",
+            "gene_id": "ENSG00000237989",
+            "position": 43373568,
+            "chromosome": "21",
+            "ref": "A",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr21_43373568_A_T",
+            "rsid": "rs672948",
+            "ac": 442,
+            "an": 740,
+            "beta": -0.330379,
+            "maf": 0.401351,
+            "median_tpm": 14.904,
+            "r2": 0.82066,
+            "se": 0.0497499
+          }
+        ],
+        "filters": {
+          "rsid": "rs672948",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs562926": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs562926",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 3.4794064337289914,
+            "pvalue": 0.000331584,
+            "molecular_trait_id": "ENSG00000088882",
+            "gene_id": "ENSG00000088882",
+            "position": 3644789,
+            "chromosome": "20",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr20_3644789_C_T",
+            "rsid": "rs562926",
+            "ac": 250,
+            "an": 1204,
+            "beta": -0.205735,
+            "maf": 0.207641,
+            "median_tpm": 19.912,
+            "r2": null,
+            "se": 0.0569805
+          }
+        ],
+        "filters": {
+          "rsid": "rs562926",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 3.0441641434922873,
+            "pvalue": 0.000903308,
+            "molecular_trait_id": "ENSG00000125877",
+            "gene_id": "ENSG00000125877",
+            "position": 3644789,
+            "chromosome": "20",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr20_3644789_C_T",
+            "rsid": "rs562926",
+            "ac": 153,
+            "an": 740,
+            "beta": 0.261096,
+            "maf": 0.206757,
+            "median_tpm": 94.901,
+            "r2": 0.70872,
+            "se": 0.0780011
+          }
+        ],
+        "filters": {
+          "rsid": "rs562926",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs6058017": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 5.696974668988493,
+            "pvalue": 2.00921e-06,
+            "molecular_trait_id": "ENSG00000287853",
+            "gene_id": "ENSG00000287853",
+            "position": 34269192,
+            "chromosome": "20",
+            "ref": "A",
+            "alt": "G",
+            "type": "SNP",
+            "variant": "chr20_34269192_A_G",
+            "rsid": "rs6058017",
+            "ac": 189,
+            "an": 1034,
+            "beta": 0.317014,
+            "maf": 0.182785,
+            "median_tpm": 18.529,
+            "r2": null,
+            "se": 0.0659225
+          }
+        ],
+        "filters": {
+          "rsid": "rs6058017",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 4.7038944888662515,
+            "pvalue": 1.97745e-05,
+            "molecular_trait_id": "ENSG00000287853",
+            "gene_id": "ENSG00000287853",
+            "position": 34269192,
+            "chromosome": "20",
+            "ref": "A",
+            "alt": "G",
+            "type": "SNP",
+            "variant": "chr20_34269192_A_G",
+            "rsid": "rs6058017",
+            "ac": 220,
+            "an": 1204,
+            "beta": 0.276735,
+            "maf": 0.182724,
+            "median_tpm": 33.0,
+            "r2": null,
+            "se": 0.0643182
+          }
+        ],
+        "filters": {
+          "rsid": "rs6058017",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 2,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 4.705741050102662,
+            "pvalue": 1.96906e-05,
+            "molecular_trait_id": "ENSG00000101000",
+            "gene_id": "ENSG00000101000",
+            "position": 34269192,
+            "chromosome": "20",
+            "ref": "A",
+            "alt": "G",
+            "type": "SNP",
+            "variant": "chr20_34269192_A_G",
+            "rsid": "rs6058017",
+            "ac": 86,
+            "an": 740,
+            "beta": 0.346372,
+            "maf": 0.116216,
+            "median_tpm": 45.646,
+            "r2": 0.90702,
+            "se": 0.0800519
+          },
+          {
+            "nlog10p": 10.328827157284916,
+            "pvalue": 4.69e-11,
+            "molecular_trait_id": "ENSG00000287853",
+            "gene_id": "ENSG00000287853",
+            "position": 34269192,
+            "chromosome": "20",
+            "ref": "A",
+            "alt": "G",
+            "type": "SNP",
+            "variant": "chr20_34269192_A_G",
+            "rsid": "rs6058017",
+            "ac": 86,
+            "an": 740,
+            "beta": 0.685996,
+            "maf": 0.116216,
+            "median_tpm": 24.208,
+            "r2": 0.90702,
+            "se": 0.10101
+          }
+        ],
+        "filters": {
+          "rsid": "rs6058017",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs116218201": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs116218201",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs116218201",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs116218201",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs676091": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs676091",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs676091",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs676091",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs6816819": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6816819",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6816819",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs6816819",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs17184781": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs17184781",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs17184781",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs17184781",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs7118677": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7118677",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7118677",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7118677",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs7911113": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7911113",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7911113",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs7911113",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs463373": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs463373",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs463373",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs463373",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs11198112": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs11198112",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs11198112",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs11198112",
+          "nlog10p": 3.0
+        }
+      }
+    },
+    "rs638640": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs638640",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs638640",
+          "nlog10p": 3.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs638640",
+          "nlog10p": 3.0
+        }
+      }
+    }
+  },
+  "results_remaining_unresolved_6": {
+    "rs79380392": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs79380392",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 1.1762337310124238,
+            "pvalue": 0.0666448,
+            "molecular_trait_id": "ENSG00000188626",
+            "gene_id": "ENSG00000188626",
+            "position": 28164073,
+            "chromosome": "15",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr15_28164073_C_T",
+            "rsid": "rs79380392",
+            "ac": 29,
+            "an": 1204,
+            "beta": 0.247785,
+            "maf": 0.0240864,
+            "median_tpm": 0.591,
+            "r2": null,
+            "se": 0.134851
+          }
+        ],
+        "filters": {
+          "rsid": "rs79380392",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs79380392",
+          "nlog10p": 1.0
+        }
+      }
+    },
+    "rs59334502": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 1.0133415552550635,
+            "pvalue": 0.0969747,
+            "molecular_trait_id": "ENSG00000107186",
+            "gene_id": "ENSG00000107186",
+            "position": 12668996,
+            "chromosome": "9",
+            "ref": "G",
+            "alt": "A",
+            "type": "SNP",
+            "variant": "chr9_12668996_G_A",
+            "rsid": "rs59334502",
+            "ac": 121,
+            "an": 1034,
+            "beta": -0.0861641,
+            "maf": 0.117021,
+            "median_tpm": 7.444,
+            "r2": null,
+            "se": 0.0518184
+          }
+        ],
+        "filters": {
+          "rsid": "rs59334502",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 1.0243398448046768,
+            "pvalue": 0.0945497,
+            "molecular_trait_id": "ENSG00000270547",
+            "gene_id": "ENSG00000270547",
+            "position": 12668996,
+            "chromosome": "9",
+            "ref": "G",
+            "alt": "A",
+            "type": "SNP",
+            "variant": "chr9_12668996_G_A",
+            "rsid": "rs59334502",
+            "ac": 152,
+            "an": 1204,
+            "beta": -0.105664,
+            "maf": 0.126246,
+            "median_tpm": 1.973,
+            "r2": null,
+            "se": 0.063099
+          }
+        ],
+        "filters": {
+          "rsid": "rs59334502",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs59334502",
+          "nlog10p": 1.0
+        }
+      }
+    },
+    "rs551217952": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs551217952",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs551217952",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs551217952",
+          "nlog10p": 1.0
+        }
+      }
+    },
+    "rs191109490": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs191109490",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs191109490",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs191109490",
+          "nlog10p": 1.0
+        }
+      }
+    },
+    "rs10594259": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 2.0892150318727465,
+            "pvalue": 0.00814301,
+            "molecular_trait_id": "ENSG00000165929",
+            "gene_id": "ENSG00000165929",
+            "position": 92450385,
+            "chromosome": "14",
+            "ref": "GTC",
+            "alt": "G",
+            "type": "INDEL",
+            "variant": "chr14_92450385_GTC_G",
+            "rsid": "rs10594259",
+            "ac": 391,
+            "an": 1034,
+            "beta": 0.130321,
+            "maf": 0.378143,
+            "median_tpm": 29.876,
+            "r2": null,
+            "se": 0.0490543
+          }
+        ],
+        "filters": {
+          "rsid": "rs10594259",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 2.2464345583481578,
+            "pvalue": 0.00566977,
+            "molecular_trait_id": "ENSG00000165934",
+            "gene_id": "ENSG00000165934",
+            "position": 92450385,
+            "chromosome": "14",
+            "ref": "GTC",
+            "alt": "G",
+            "type": "INDEL",
+            "variant": "chr14_92450385_GTC_G",
+            "rsid": "rs10594259",
+            "ac": 485,
+            "an": 1204,
+            "beta": -0.101164,
+            "maf": 0.402824,
+            "median_tpm": 12.449,
+            "r2": null,
+            "se": 0.0364354
+          }
+        ],
+        "filters": {
+          "rsid": "rs10594259",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs10594259",
+          "nlog10p": 1.0
+        }
+      }
+    },
+    "rs78544415": {
+      "QTD000311": {
+        "dataset_id": "QTD000311",
+        "returned": 1,
+        "truncated": false,
+        "associations": [
+          {
+            "nlog10p": 1.3323770984403984,
+            "pvalue": 0.0465182,
+            "molecular_trait_id": "ENSG00000188626",
+            "gene_id": "ENSG00000188626",
+            "position": 27842634,
+            "chromosome": "15",
+            "ref": "C",
+            "alt": "T",
+            "type": "SNP",
+            "variant": "chr15_27842634_C_T",
+            "rsid": "rs78544415",
+            "ac": 19,
+            "an": 1034,
+            "beta": -0.313695,
+            "maf": 0.0183752,
+            "median_tpm": 0.569,
+            "r2": null,
+            "se": 0.157194
+          }
+        ],
+        "filters": {
+          "rsid": "rs78544415",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000316": {
+        "dataset_id": "QTD000316",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs78544415",
+          "nlog10p": 1.0
+        }
+      },
+      "QTD000544": {
+        "dataset_id": "QTD000544",
+        "returned": 0,
+        "truncated": false,
+        "associations": [],
+        "filters": {
+          "rsid": "rs78544415",
+          "nlog10p": 1.0
+        }
+      }
+    }
+  },
+  "kitlg_specific_check": {
+    "QTD000311": {
+      "dataset_id": "QTD000311",
+      "returned": 3,
+      "truncated": false,
+      "associations": [
+        {
+          "nlog10p": 0.09537045678858258,
+          "pvalue": 0.802841,
+          "molecular_trait_id": "ENSG00000139324",
+          "gene_id": "ENSG00000139324",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 276,
+          "an": 1034,
+          "beta": -0.0118737,
+          "maf": 0.266925,
+          "median_tpm": 25.686,
+          "r2": null,
+          "se": 0.0475323
+        },
+        {
+          "nlog10p": 0.10255766059112342,
+          "pvalue": 0.789664,
+          "molecular_trait_id": "ENSG00000270344",
+          "gene_id": "ENSG00000270344",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 276,
+          "an": 1034,
+          "beta": 0.0188252,
+          "maf": 0.266925,
+          "median_tpm": 1.578,
+          "r2": null,
+          "se": 0.0705356
+        },
+        {
+          "nlog10p": 0.4188926817240729,
+          "pvalue": 0.38116,
+          "molecular_trait_id": "ENSG00000289384",
+          "gene_id": "ENSG00000289384",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 276,
+          "an": 1034,
+          "beta": -0.0614697,
+          "maf": 0.266925,
+          "median_tpm": 5.077,
+          "r2": null,
+          "se": 0.0701282
+        }
+      ],
+      "filters": {
+        "rsid": "rs642742"
+      }
+    },
+    "QTD000316": {
+      "dataset_id": "QTD000316",
+      "returned": 3,
+      "truncated": false,
+      "associations": [
+        {
+          "nlog10p": 2.766115891234114,
+          "pvalue": 0.0017135,
+          "molecular_trait_id": "ENSG00000139324",
+          "gene_id": "ENSG00000139324",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 290,
+          "an": 1204,
+          "beta": -0.138533,
+          "maf": 0.240864,
+          "median_tpm": 24.683,
+          "r2": null,
+          "se": 0.0439732
+        },
+        {
+          "nlog10p": 0.18796279696463009,
+          "pvalue": 0.64869,
+          "molecular_trait_id": "ENSG00000258302",
+          "gene_id": "ENSG00000258302",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 290,
+          "an": 1204,
+          "beta": -0.0315395,
+          "maf": 0.240864,
+          "median_tpm": 4.117,
+          "r2": null,
+          "se": 0.0691933
+        },
+        {
+          "nlog10p": 0.17367441604097464,
+          "pvalue": 0.670387,
+          "molecular_trait_id": "ENSG00000270344",
+          "gene_id": "ENSG00000270344",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 290,
+          "an": 1204,
+          "beta": -0.028319,
+          "maf": 0.240864,
+          "median_tpm": 1.974,
+          "r2": null,
+          "se": 0.0665028
+        }
+      ],
+      "filters": {
+        "rsid": "rs642742"
+      }
+    },
+    "QTD000544": {
+      "dataset_id": "QTD000544",
+      "returned": 1,
+      "truncated": false,
+      "associations": [
+        {
+          "nlog10p": 0.1290836721209936,
+          "pvalue": 0.742876,
+          "molecular_trait_id": "ENSG00000258302",
+          "gene_id": "ENSG00000258302",
+          "position": 88905969,
+          "chromosome": "12",
+          "ref": "C",
+          "alt": "T",
+          "type": "SNP",
+          "variant": "chr12_88905969_C_T",
+          "rsid": "rs642742",
+          "ac": 140,
+          "an": 740,
+          "beta": -0.0275703,
+          "maf": 0.187838,
+          "median_tpm": 2.602,
+          "r2": 0.90705,
+          "se": 0.083978
+        }
+      ],
+      "filters": {
+        "rsid": "rs642742"
+      }
+    }
+  }
+}
