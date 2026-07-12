@@ -5,7 +5,19 @@ description: "A model-system project grading genotype→phenotype links in human
 toc: false
 ---
 
-![The reconstructed pigmentation network in miniature: MITF at the hub of 34 curated, signed TF→target edges (green = activation, red = repression; gold = core pigmentation-gene targets).](notebooks/figures/nb6_mitf_hub_grn.png){fig-align="center" width="58%" fig-alt="Radial network diagram with the transcription factor MITF at the center connected by colored edges to 34 labeled target genes arranged in a ring."}
+```{=html}
+<iframe src="interactive/substrate_multilayer.html"
+        title="Interactive 3D multilayer view of the pigmentation gene substrate"
+        loading="eager"
+        style="width:100%; height:640px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
+</iframe>
+```
+
+::: {style="text-align:center; color:#5c656b; margin-top:0.5rem; font-size:0.96rem;"}
+**Our integration, not any single source.** The harmonized substrate in three dimensions — four
+independent evidence layers, one gene core, with each gene sitting *only* on the layers that carry it.
+Drag to rotate · hover a gene · **[open the full interactive view →](substrate_multilayer.qmd)**.
+:::
 
 ::: {.callout-tip}
 ## Start here

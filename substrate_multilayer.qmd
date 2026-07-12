@@ -1,0 +1,55 @@
+---
+title: "The integrated substrate — interactive"
+subtitle: "Four independent evidence layers, one gene core. Rotate it, and watch which genes each layer actually carries."
+toc: true
+---
+
+The [harmonized substrate](notebooks/07_harmonized_substrate.ipynb) (NB7) merges independent
+lines of evidence into one tagged network. This page lets you *see* that integration in three
+dimensions: each evidence layer is a plane, and **every gene sits only on the layers that actually
+carry it** — so the gaps between planes are as informative as the overlaps.
+
+**The four network layers** (bottom to top):
+
+- **Functional association (STRING v12)** — the broad net of co-functional links. Most genes live here.
+- **Literature validation (OmniPath)** — curated, published interactions.
+- **TF→target regulon (GRN)** — MITF / SOX10 / PAX3 transcriptional targets. Selective.
+- **Mechanistic pathway (Raghunath 2015)** — the signed, directed melanogenesis model.
+
+A gene threaded by a vertical line through all four planes is one where independent evidence
+*converges*; a gene present on only one or two planes is supported more narrowly. Node size grows
+with the number of layers, rings mark clinical (OMIM) genes, and diamonds mark Bajpai CRISPR
+melanin-screen hits.
+
+::: {.callout-tip appearance="simple"}
+**How to explore:** drag to rotate · scroll to zoom · hover a gene for its layers and clinical /
+functional flags · click a layer in the legend to isolate it. Best viewed on a desktop screen.
+:::
+
+```{=html}
+<iframe src="interactive/substrate_multilayer.html"
+        title="Interactive 3D multilayer view of the pigmentation gene substrate"
+        loading="lazy"
+        style="width:100%; height:820px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
+</iframe>
+```
+
+This shows the **162 genes supported by at least two of the four network layers**. A further ~530
+genes appear in a single layer — almost all STRING-only associations — and are omitted here for
+legibility; they are all present in the underlying data.
+
+## The flattened view
+
+The same convergence story as a single two-dimensional network — useful when you want every link at
+once rather than the separated planes:
+
+![**Where independent evidence layers converge.** The 37-gene core supported by ≥4 of six integrated layers; edge shade and width show how many independent layers back each link, and node fill shows layers per gene. Built in [NB7](notebooks/07_harmonized_substrate.ipynb).](notebooks/figures/nb7_convergence_network.png){fig-align="center" fig-alt="A flat network of 37 pigmentation genes with MITF at the hub; darker, thicker edges indicate links supported by more independent evidence layers, and warmer node fill indicates genes supported by more layers."}
+
+## Reproducibility
+
+The layered view and the flattened view are both generated from the committed NB7 substrate tables
+by [`scripts/make_multilayer_interactive.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_multilayer_interactive.py)
+and [`scripts/make_substrate_layer_figure.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_substrate_layer_figure.py).
+The graph behind the interactive is also exported as a portable
+[`interactive/nb7_multilayer_graph.json`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/interactive/nb7_multilayer_graph.json)
+(nodes with per-layer membership, and edges).

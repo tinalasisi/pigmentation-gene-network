@@ -1,10 +1,13 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - interactive/substrate_multilayer.html
   # Explicit render list — ALL notebooks. Rendered from STORED outputs
   # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
     - index.qmd
+    - substrate_multilayer.qmd
     - notebooks/01_reconstruct_published_network.ipynb
     - notebooks/01a_extract_bajpai_crispr.ipynb
     - notebooks/01b_extract_baxter_genes.ipynb
@@ -25,9 +28,19 @@ project:
 website:
   title: "Pigmentation gene network"
   description: "Grading genotype→phenotype links by making independent lines of evidence converge."
+  site-url: https://tinalasisi.github.io/pigmentation-gene-network/
+  favicon: assets/favicon.svg
+  image: notebooks/figures/nb7_layer_stack.png
+  open-graph: true
+  twitter-card: true
   reader-mode: true
   page-navigation: true
   back-to-top-navigation: true
+  page-footer:
+    border: true
+    left: "© 2026 Tina Lasisi · [MIT License](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/LICENSE)"
+    center: "Built with Claude · Life Sciences hackathon"
+    right: "[GitHub](https://github.com/tinalasisi/pigmentation-gene-network)"
   navbar:
     background: primary
     search: true
@@ -35,6 +48,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: substrate_multilayer.qmd
+        text: Interactive
     right:
       - icon: github
         href: https://github.com/tinalasisi/pigmentation-gene-network
@@ -45,6 +60,8 @@ website:
     contents:
       - text: Overview
         href: index.qmd
+      - text: "Interactive · layered substrate"
+        href: substrate_multilayer.qmd
       - section: "Foundation — the network"
         contents:
           - text: "NB1 · Reconstruct the network"
@@ -53,16 +70,6 @@ website:
             href: notebooks/02_resolve_network_to_genes.ipynb
           - text: "NB3 · Validation cases"
             href: notebooks/03_assemble_validation_cases.ipynb
-      - section: "Data extraction"
-        contents:
-          - text: "NB1a · Bajpai CRISPR screen"
-            href: notebooks/01a_extract_bajpai_crispr.ipynb
-          - text: "NB1b · Baxter gene list"
-            href: notebooks/01b_extract_baxter_genes.ipynb
-          - text: "NB1c · HIrisPlex markers"
-            href: notebooks/01c_extract_hirisplex_markers.ipynb
-          - text: "NB1d · GWAS Catalog pull"
-            href: notebooks/01d_reproduce_gwas_catalog.ipynb
       - section: "Networks & substrate"
         contents:
           - text: "NB4 · Unified association base"
@@ -83,10 +90,20 @@ website:
         contents:
           - text: "NB10 · Mechanism→direction law"
             href: notebooks/10_mechanism_direction_law.ipynb
-          - text: "NB12 · Direction law, expanded"
-            href: notebooks/12_direction_law_expanded.ipynb
           - text: "NB11 · Cross-ancestry conditionality"
             href: notebooks/11_cross_ancestry_conditionality.ipynb
+          - text: "NB12 · Direction law, expanded"
+            href: notebooks/12_direction_law_expanded.ipynb
+      - section: "Appendix — data extraction"
+        contents:
+          - text: "NB1a · Bajpai CRISPR screen"
+            href: notebooks/01a_extract_bajpai_crispr.ipynb
+          - text: "NB1b · Baxter gene list"
+            href: notebooks/01b_extract_baxter_genes.ipynb
+          - text: "NB1c · HIrisPlex markers"
+            href: notebooks/01c_extract_hirisplex_markers.ipynb
+          - text: "NB1d · GWAS Catalog pull"
+            href: notebooks/01d_reproduce_gwas_catalog.ipynb
 
 format:
   html:

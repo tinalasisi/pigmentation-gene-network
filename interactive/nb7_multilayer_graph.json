@@ -1,0 +1,12842 @@
+{
+ "description": "NB7 harmonized substrate \u2014 genes in >=2 of four network layers.",
+ "layers": [
+  {
+   "key": "string",
+   "label": "Functional association (STRING v12)",
+   "color": "#5c7d8a",
+   "z": 0.0
+  },
+  {
+   "key": "omni",
+   "label": "Literature validation (OmniPath)",
+   "color": "#6b4e71",
+   "z": 1.0
+  },
+  {
+   "key": "grn",
+   "label": "TF\u2192target regulon (MITF / SOX10 / PAX3)",
+   "color": "#b06a1e",
+   "z": 2.0
+  },
+  {
+   "key": "ragh",
+   "label": "Mechanistic pathway (Raghunath 2015)",
+   "color": "#2f5d62",
+   "z": 3.0
+  }
+ ],
+ "nodes": [
+  {
+   "gene": "ADCY4",
+   "x": 5.3372,
+   "y": 7.907,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 9,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "AHR",
+   "x": 6.0003,
+   "y": 9.8488,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "AKT1",
+   "x": 7.9146,
+   "y": 6.3916,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 73,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "APAF1",
+   "x": 5.6449,
+   "y": 2.4622,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 15,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "ATF2",
+   "x": 7.9391,
+   "y": 5.0611,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 15,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BAD",
+   "x": 6.7669,
+   "y": 6.1602,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BAK1",
+   "x": 6.0958,
+   "y": 3.4899,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 14,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BAX",
+   "x": 6.0426,
+   "y": 4.9873,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 20,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "BBC3",
+   "x": 5.0734,
+   "y": 5.7271,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BCL2",
+   "x": 6.453,
+   "y": 5.5505,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 52,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BCL2L1",
+   "x": 6.4745,
+   "y": 5.2375,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 38,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "BID",
+   "x": 6.2903,
+   "y": 3.228,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CALM1",
+   "x": 7.1497,
+   "y": 8.5222,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 10,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CASP3",
+   "x": 7.0396,
+   "y": 4.0478,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 55,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CASP8",
+   "x": 7.3376,
+   "y": 4.1231,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 37,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CASP9",
+   "x": 6.4662,
+   "y": 3.8349,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 26,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CCND1",
+   "x": 6.9767,
+   "y": 6.3971,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 32,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CDC42",
+   "x": 9.1287,
+   "y": 5.2776,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 28,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CDH2",
+   "x": 9.5378,
+   "y": 8.4995,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 9,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CDK2",
+   "x": 5.9799,
+   "y": 6.7665,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 17,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CDK4",
+   "x": 5.7424,
+   "y": 7.1864,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 17,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CDKN1A",
+   "x": 6.9271,
+   "y": 5.5454,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 27,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CFLAR",
+   "x": 7.1347,
+   "y": 3.147,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CHUK",
+   "x": 7.8861,
+   "y": 3.6644,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 29,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CREB1",
+   "x": 6.5141,
+   "y": 5.7294,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 33,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CSF2",
+   "x": 4.7501,
+   "y": 4.8325,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 17,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CSF2RA",
+   "x": 3.7488,
+   "y": 5.4013,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "CTNNB1",
+   "x": 7.6743,
+   "y": 6.6709,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 51,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CXCL8",
+   "x": 5.7497,
+   "y": 5.5806,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 31,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "CYCS",
+   "x": 6.9293,
+   "y": 4.3009,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 28,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "DCT",
+   "x": 5.4003,
+   "y": 9.2085,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 9,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": true,
+   "massspec_detected": false
+  },
+  {
+   "gene": "DFFA",
+   "x": 6.7106,
+   "y": 1.0771,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "DFFB",
+   "x": 6.211,
+   "y": 1.2249,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "DUSP1",
+   "x": 6.665,
+   "y": 4.7481,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 10,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "ECSIT",
+   "x": 11.3237,
+   "y": 0.0,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "EDN1",
+   "x": 5.6239,
+   "y": 6.5194,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 16,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "EDNRB",
+   "x": 5.0412,
+   "y": 8.4606,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 7,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "ABCD syndrome; Waardenburg syndrome type 4A",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "EGFR",
+   "x": 7.5123,
+   "y": 6.0152,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 61,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "ELK1",
+   "x": 8.2519,
+   "y": 5.3899,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 8,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "EP300",
+   "x": 6.6354,
+   "y": 6.7471,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 30,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": true,
+   "massspec_detected": false
+  },
+  {
+   "gene": "EZR",
+   "x": 9.266,
+   "y": 6.1683,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 16,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "F10",
+   "x": 4.013,
+   "y": 9.1961,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "F2RL1",
+   "x": 4.4272,
+   "y": 8.1554,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "F7",
+   "x": 2.5694,
+   "y": 9.7716,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "FADD",
+   "x": 7.3765,
+   "y": 2.8495,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 28,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "FAS",
+   "x": 7.5919,
+   "y": 3.3862,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 23,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "FASLG",
+   "x": 6.9536,
+   "y": 3.6317,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 27,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Vitiligo",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "FOS",
+   "x": 6.4786,
+   "y": 5.9221,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 39,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "FZD3",
+   "x": 10.4142,
+   "y": 7.5579,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 4,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "GAB1",
+   "x": 7.9559,
+   "y": 8.0154,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "GADD45A",
+   "x": 3.947,
+   "y": 6.1562,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "GRB2",
+   "x": 8.4981,
+   "y": 6.692,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 31,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "GSK3B",
+   "x": 7.4709,
+   "y": 6.7549,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 35,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "GUCY1A2",
+   "x": 3.4029,
+   "y": 2.927,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "HGF",
+   "x": 6.3734,
+   "y": 7.898,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "HIF1A",
+   "x": 6.0085,
+   "y": 5.4356,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 32,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "HRAS",
+   "x": 7.8499,
+   "y": 7.1434,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 35,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "Costello syndrome",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "HSP90AA1",
+   "x": 7.6051,
+   "y": 5.324,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 48,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "ICAM1",
+   "x": 7.6287,
+   "y": 5.0211,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 23,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "IL10",
+   "x": 5.6079,
+   "y": 4.4802,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 29,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "IL12A",
+   "x": 4.089,
+   "y": 3.6652,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "IL1A",
+   "x": 6.0999,
+   "y": 4.2221,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 26,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "IL1R1",
+   "x": 6.3872,
+   "y": 2.7137,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 15,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "IL6",
+   "x": 6.2815,
+   "y": 4.8664,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 51,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "IL6R",
+   "x": 5.2846,
+   "y": 4.6671,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 15,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "IRAK1",
+   "x": 7.9758,
+   "y": 3.0671,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 22,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "IRAK4",
+   "x": 7.2218,
+   "y": 1.4289,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 12,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "IVL",
+   "x": 4.8972,
+   "y": 4.5414,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "JAK1",
+   "x": 5.3996,
+   "y": 5.3502,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 16,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "JUN",
+   "x": 6.7873,
+   "y": 5.2944,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 59,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "KIT",
+   "x": 7.092,
+   "y": 7.2627,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 25,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "Mastocytosis, cutaneous; Mastocytosis, systemic, somatic; Piebaldism",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "KITLG",
+   "x": 6.2941,
+   "y": 6.7389,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 19,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "Familial progressive hyperpigmentation with or without hypopigmentation; Waarden",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "LEF1",
+   "x": 8.9411,
+   "y": 9.8655,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAP2K1",
+   "x": 8.221,
+   "y": 5.7371,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 30,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "Cardiofaciocutaneous syndrome 3",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP2K2",
+   "x": 8.6691,
+   "y": 5.8134,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 16,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP2K3",
+   "x": 8.7839,
+   "y": 4.2318,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 22,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP2K4",
+   "x": 9.0438,
+   "y": 3.2901,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 14,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP2K6",
+   "x": 9.0702,
+   "y": 4.014,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 19,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP2K7",
+   "x": 8.5611,
+   "y": 3.0828,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 14,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAP3K1",
+   "x": 8.9435,
+   "y": 3.752,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 29,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAP3K14",
+   "x": 9.382,
+   "y": 2.311,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 8,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAP3K5",
+   "x": 8.7172,
+   "y": 3.8009,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 22,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAP3K7",
+   "x": 8.2547,
+   "y": 3.3639,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 29,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAP4K2",
+   "x": 10.0808,
+   "y": 2.5861,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MAPK1",
+   "x": 7.1549,
+   "y": 5.8906,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 60,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAPK14",
+   "x": 7.2539,
+   "y": 5.0535,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 42,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAPK3",
+   "x": 7.386,
+   "y": 5.7604,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 53,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MAPK8",
+   "x": 7.5963,
+   "y": 4.4951,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 55,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MC1R",
+   "x": 5.1617,
+   "y": 7.1588,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 13,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Oculocutaneous albinism, type 2",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MCL1",
+   "x": 6.4509,
+   "y": 4.1729,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 28,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MET",
+   "x": 7.0918,
+   "y": 7.8955,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 24,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MITF",
+   "x": 6.349,
+   "y": 7.477,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 45,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Tietz albinism-deafness syndrome; Waardenburg syndrome type 2A",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MLANA",
+   "x": 5.2829,
+   "y": 10.0703,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MMP1",
+   "x": 4.7526,
+   "y": 5.2249,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 12,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "MSN",
+   "x": 9.4512,
+   "y": 7.5351,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "MYD88",
+   "x": 6.6869,
+   "y": 3.3093,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 29,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "NFATC1",
+   "x": 6.7318,
+   "y": 7.9001,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 14,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "NFKB1",
+   "x": 6.2768,
+   "y": 5.1844,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 63,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "NGF",
+   "x": 7.5968,
+   "y": 6.9903,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 17,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "NOS2",
+   "x": 4.5771,
+   "y": 4.2671,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "NOX1",
+   "x": 9.5189,
+   "y": 4.5829,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 9,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "NSMAF",
+   "x": 8.3373,
+   "y": 8.5172,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "NTRK1",
+   "x": 8.5673,
+   "y": 8.0866,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 12,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "OCA2",
+   "x": 4.9612,
+   "y": 9.3937,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 5,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Oculocutaneous albinism, type 2; Piebaldism",
+   "bajpai_crispr_hit": true,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PAK1",
+   "x": 9.6965,
+   "y": 4.2882,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 15,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "PARD6A",
+   "x": 12.0,
+   "y": 7.0201,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PAX3",
+   "x": 6.092,
+   "y": 7.522,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 18,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Waardenburg syndrome type 1; Waardenburg syndrome type 3",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PDE4B",
+   "x": 6.2985,
+   "y": 10.1495,
+   "planes": [
+    "ragh",
+    "grn",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PDPK1",
+   "x": 9.0002,
+   "y": 6.9947,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PIAS3",
+   "x": 4.6179,
+   "y": 7.3667,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 4,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PIK3CA",
+   "x": 8.247,
+   "y": 6.2045,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 35,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PLA2G1B",
+   "x": 1.4004,
+   "y": 5.2767,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PLCB1",
+   "x": 9.8581,
+   "y": 7.4991,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 8,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PMAIP1",
+   "x": 5.1106,
+   "y": 3.4771,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 13,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PMEL",
+   "x": 5.6846,
+   "y": 10.2702,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "POMC",
+   "x": 4.0363,
+   "y": 7.605,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 13,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Obesity, adrenal insufficiency, and red hair due to POMC deficiency",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PPP3CA",
+   "x": 7.8887,
+   "y": 9.8054,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 7,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Vitiligo",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "PRKACA",
+   "x": 6.4498,
+   "y": 7.0913,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 30,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PRKCA",
+   "x": 8.8523,
+   "y": 6.4989,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 28,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "PRKCB",
+   "x": 7.6648,
+   "y": 8.5588,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 19,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PRKCD",
+   "x": 7.0039,
+   "y": 4.7454,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 26,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "PRKCH",
+   "x": 7.3716,
+   "y": 6.3276,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PRKCZ",
+   "x": 9.0998,
+   "y": 5.7682,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 21,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PRKG1",
+   "x": 5.1477,
+   "y": 4.0345,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 7,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PRSS1",
+   "x": 0.0,
+   "y": 12.0,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 1,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PTGER1",
+   "x": 2.5267,
+   "y": 6.3295,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PTGER2",
+   "x": 3.4968,
+   "y": 7.8949,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 4,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PTGER3",
+   "x": 2.7399,
+   "y": 6.8017,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PTGER4",
+   "x": 3.7871,
+   "y": 7.3717,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "PTGS2",
+   "x": 5.077,
+   "y": 6.2759,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 35,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RAC1",
+   "x": 9.3268,
+   "y": 5.4864,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "RACK1",
+   "x": 9.6761,
+   "y": 6.6984,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "RAF1",
+   "x": 8.2231,
+   "y": 6.5255,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 27,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "LEOPARD syndrome 2; Noonan syndrome 5",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RAP1A",
+   "x": 8.0778,
+   "y": 7.2953,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 18,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "RDX",
+   "x": 9.7812,
+   "y": 7.9097,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RHOA",
+   "x": 7.0356,
+   "y": 6.8112,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 31,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RIPK1",
+   "x": 8.467,
+   "y": 2.078,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 21,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RPS6KA1",
+   "x": 6.7911,
+   "y": 7.146,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 7,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "RYR1",
+   "x": 8.1818,
+   "y": 10.9063,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 3,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "SHC1",
+   "x": 7.5584,
+   "y": 8.0167,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 20,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "SMPD1",
+   "x": 11.057,
+   "y": 5.0833,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "SMPD2",
+   "x": 10.0918,
+   "y": 5.0416,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 11,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "SOS1",
+   "x": 9.0055,
+   "y": 7.9096,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 20,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "SOX10",
+   "x": 5.9285,
+   "y": 9.0004,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 9,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Waardenburg syndrome 4C; PCWH syndrome; Waardenburg syndrome type 2E",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "SPTLC1",
+   "x": 10.9849,
+   "y": 4.7223,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "SPTLC2",
+   "x": 11.0441,
+   "y": 5.4488,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 5,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": true,
+   "massspec_detected": true
+  },
+  {
+   "gene": "SRC",
+   "x": 7.6999,
+   "y": 6.0341,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 52,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "STAT1",
+   "x": 6.1634,
+   "y": 5.6069,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 43,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "STAT3",
+   "x": 5.9444,
+   "y": 5.9306,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 58,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "TAB1",
+   "x": 8.2368,
+   "y": 2.4951,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 23,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "TFAP2A",
+   "x": 9.2738,
+   "y": 4.8991,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 13,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TNF",
+   "x": 7.3675,
+   "y": 4.6649,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 57,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TNFRSF1A",
+   "x": 8.4027,
+   "y": 4.1723,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 42,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TP53",
+   "x": 6.2654,
+   "y": 6.0086,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 70,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TPSAB1",
+   "x": 4.4792,
+   "y": 9.3866,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 2,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TRADD",
+   "x": 8.0661,
+   "y": 2.005,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 21,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "TRAF2",
+   "x": 8.5117,
+   "y": 2.6563,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 27,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": true
+  },
+  {
+   "gene": "TRAF6",
+   "x": 8.0034,
+   "y": 4.0054,
+   "planes": [
+    "ragh",
+    "string"
+   ],
+   "n_planes": 2,
+   "degree": 39,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TYR",
+   "x": 6.1039,
+   "y": 8.5458,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 12,
+   "omim": true,
+   "hypopigmentation": false,
+   "omim_diseases": "Oculocutaneous albinism, type 1A; Oculocutaneous albinism, type 1B; Piebaldism; ",
+   "bajpai_crispr_hit": true,
+   "massspec_detected": false
+  },
+  {
+   "gene": "TYRP1",
+   "x": 5.4658,
+   "y": 8.3762,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 11,
+   "omim": true,
+   "hypopigmentation": true,
+   "omim_diseases": "Oculocutaneous albinism, type 3; Piebaldism",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "USF1",
+   "x": 5.2716,
+   "y": 6.6227,
+   "planes": [
+    "ragh",
+    "grn",
+    "omni",
+    "string"
+   ],
+   "n_planes": 4,
+   "degree": 6,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  },
+  {
+   "gene": "WNT5A",
+   "x": 10.8523,
+   "y": 8.1386,
+   "planes": [
+    "ragh",
+    "omni",
+    "string"
+   ],
+   "n_planes": 3,
+   "degree": 9,
+   "omim": false,
+   "hypopigmentation": false,
+   "omim_diseases": "",
+   "bajpai_crispr_hit": false,
+   "massspec_detected": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "MAPK1",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MC1R",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "TYR",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "TYRP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "PAX3",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "SOX10",
+   "layer": "ragh"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYR",
+   "layer": "ragh"
+  },
+  {
+   "a": "CHUK",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "EDN1",
+   "b": "EDNRB",
+   "layer": "ragh"
+  },
+  {
+   "a": "EGFR",
+   "b": "PIK3CA",
+   "layer": "ragh"
+  },
+  {
+   "a": "FAS",
+   "b": "FASLG",
+   "layer": "ragh"
+  },
+  {
+   "a": "HRAS",
+   "b": "RAF1",
+   "layer": "ragh"
+  },
+  {
+   "a": "KIT",
+   "b": "PIK3CA",
+   "layer": "ragh"
+  },
+  {
+   "a": "KIT",
+   "b": "KITLG",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK1",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "DCT",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "MLANA",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "PMEL",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "PIAS3",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "RAF1",
+   "layer": "ragh"
+  },
+  {
+   "a": "DCT",
+   "b": "SOX10",
+   "layer": "ragh"
+  },
+  {
+   "a": "PAX3",
+   "b": "SOX10",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "BAD",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "CREB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "CTNNB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "FOS",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "GSK3B",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAK1",
+   "b": "CYCS",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "CYCS",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "BBC3",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "BCL2",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDKN1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAP3K1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "BID",
+   "b": "CASP8",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP8",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP9",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP3K1",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "CREB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CSF2",
+   "b": "CSF2RA",
+   "layer": "ragh"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "EGFR",
+   "b": "HRAS",
+   "layer": "ragh"
+  },
+  {
+   "a": "EGFR",
+   "b": "STAT1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP8",
+   "b": "FAS",
+   "layer": "ragh"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "GSK3B",
+   "layer": "ragh"
+  },
+  {
+   "a": "GSK3B",
+   "b": "NFATC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "HGF",
+   "b": "MET",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL1A",
+   "b": "IL1R1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL6",
+   "b": "IL6R",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL6R",
+   "b": "JAK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CHUK",
+   "b": "IRAK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "JAK1",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "HRAS",
+   "b": "KIT",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CHUK",
+   "b": "MAP3K14",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP3K5",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K5",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAP3K5",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K5",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP4K2",
+   "layer": "ragh"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK1",
+   "b": "RPS6KA1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK3",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK3",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK3",
+   "b": "RPS6KA1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK3",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "GAB1",
+   "b": "MET",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "EDNRB",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MET",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "OCA2",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKCB",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CSF2",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CXCL8",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ICAM1",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL10",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL1A",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL6",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TNF",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "NGF",
+   "b": "NTRK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "PDPK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "PIAS3",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PIK3CA",
+   "layer": "ragh"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAK1",
+   "b": "PMAIP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PPP3CA",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKACA",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCB",
+   "b": "TYR",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKG1",
+   "layer": "ragh"
+  },
+  {
+   "a": "NOX1",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "PAK1",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "RAF1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "RPS6KA1",
+   "layer": "ragh"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYRP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "EGFR",
+   "b": "SRC",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "CCND1",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "PTGS2",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "TNF",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP8",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "CHUK",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "BBC3",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "GADD45A",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "HIF1A",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "FZD3",
+   "b": "WNT5A",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PRKACA",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "CASP8",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAD",
+   "b": "CYCS",
+   "layer": "ragh"
+  },
+  {
+   "a": "BID",
+   "b": "CYCS",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "DFFA",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "DFFB",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP8",
+   "b": "CASP9",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDC42",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CFLAR",
+   "b": "MAP2K7",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "DUSP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "CREB1",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP9",
+   "b": "CYCS",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "ELK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "FOS",
+   "layer": "ragh"
+  },
+  {
+   "a": "CCND1",
+   "b": "FOS",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "IL1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "IL6",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "TNF",
+   "layer": "ragh"
+  },
+  {
+   "a": "GUCY1A2",
+   "b": "PRKG1",
+   "layer": "ragh"
+  },
+  {
+   "a": "HIF1A",
+   "b": "KITLG",
+   "layer": "ragh"
+  },
+  {
+   "a": "HIF1A",
+   "b": "PMAIP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL1R1",
+   "b": "IRAK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "BCL2",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "CCND1",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "EDN1",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL1A",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL6",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "TNF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP3K14",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK14",
+   "b": "USF1",
+   "layer": "ragh"
+  },
+  {
+   "a": "HRAS",
+   "b": "MET",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "EDN1",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "FASLG",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IL12A",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "KITLG",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "NOS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "PAK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "PAK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDK2",
+   "b": "PRKCH",
+   "layer": "ragh"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKCZ",
+   "layer": "ragh"
+  },
+  {
+   "a": "PTGER1",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "PTGER2",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "PTGER3",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "PTGER4",
+   "b": "PTGS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAD",
+   "b": "RPS6KA1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MITF",
+   "b": "RPS6KA1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ICAM1",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "TFAP2A",
+   "b": "TNF",
+   "layer": "ragh"
+  },
+  {
+   "a": "DUSP1",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "TP53",
+   "b": "TYR",
+   "layer": "ragh"
+  },
+  {
+   "a": "TP53",
+   "b": "TYRP1",
+   "layer": "ragh"
+  },
+  {
+   "a": "F2RL1",
+   "b": "TPSAB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "RAP1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "EZR",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "MSN",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "RDX",
+   "layer": "ragh"
+  },
+  {
+   "a": "CFLAR",
+   "b": "CREB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CSF2RA",
+   "b": "STAT3",
+   "layer": "ragh"
+  },
+  {
+   "a": "CYCS",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "EDNRB",
+   "layer": "ragh"
+  },
+  {
+   "a": "F10",
+   "b": "F2RL1",
+   "layer": "ragh"
+  },
+  {
+   "a": "F2RL1",
+   "b": "RHOA",
+   "layer": "ragh"
+  },
+  {
+   "a": "F2RL1",
+   "b": "F7",
+   "layer": "ragh"
+  },
+  {
+   "a": "EDN1",
+   "b": "FOS",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "IVL",
+   "layer": "ragh"
+  },
+  {
+   "a": "FOS",
+   "b": "NGF",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "FZD3",
+   "layer": "ragh"
+  },
+  {
+   "a": "AKT1",
+   "b": "GAB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MAP2K3",
+   "layer": "ragh"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MAP2K4",
+   "layer": "ragh"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MAP2K6",
+   "layer": "ragh"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MAP3K1",
+   "layer": "ragh"
+  },
+  {
+   "a": "IVL",
+   "b": "JUN",
+   "layer": "ragh"
+  },
+  {
+   "a": "JUN",
+   "b": "NGF",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP3K5",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "HIF1A",
+   "b": "MAPK14",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAK1",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "MAPK8",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK8",
+   "b": "MCL1",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "MC1R",
+   "layer": "ragh"
+  },
+  {
+   "a": "MC1R",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDK4",
+   "b": "MITF",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDH2",
+   "b": "MSN",
+   "layer": "ragh"
+  },
+  {
+   "a": "F2RL1",
+   "b": "NFKB1",
+   "layer": "ragh"
+  },
+  {
+   "a": "GUCY1A2",
+   "b": "NOS2",
+   "layer": "ragh"
+  },
+  {
+   "a": "EGFR",
+   "b": "NOX1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "NOX1",
+   "layer": "ragh"
+  },
+  {
+   "a": "NOX1",
+   "b": "SMPD2",
+   "layer": "ragh"
+  },
+  {
+   "a": "HRAS",
+   "b": "NTRK1",
+   "layer": "ragh"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PRKCH",
+   "layer": "ragh"
+  },
+  {
+   "a": "GAB1",
+   "b": "PRKCB",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAK1",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "BAX",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP8",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP9",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "MCL1",
+   "b": "PRKCD",
+   "layer": "ragh"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCH",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK14",
+   "b": "PRKCH",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PTGER2",
+   "layer": "ragh"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PTGER4",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "RAC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "RAC1",
+   "b": "RAP1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "PPP3CA",
+   "b": "RYR1",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCB",
+   "b": "RYR1",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "SMPD1",
+   "layer": "ragh"
+  },
+  {
+   "a": "SMPD1",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "SMPD2",
+   "layer": "ragh"
+  },
+  {
+   "a": "SMPD2",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "SPTLC1",
+   "layer": "ragh"
+  },
+  {
+   "a": "SPTLC1",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "SPTLC2",
+   "layer": "ragh"
+  },
+  {
+   "a": "SPTLC2",
+   "b": "TFAP2A",
+   "layer": "ragh"
+  },
+  {
+   "a": "MMP1",
+   "b": "STAT1",
+   "layer": "ragh"
+  },
+  {
+   "a": "CDC42",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAP4K2",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "PAK1",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "SMPD2",
+   "b": "TNFRSF1A",
+   "layer": "ragh"
+  },
+  {
+   "a": "MC1R",
+   "b": "TP53",
+   "layer": "ragh"
+  },
+  {
+   "a": "MC1R",
+   "b": "USF1",
+   "layer": "ragh"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MC1R",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "TYR",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "TYRP1",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "SOX10",
+   "layer": "grn"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYR",
+   "layer": "grn"
+  },
+  {
+   "a": "DCT",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "MLANA",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PMEL",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PIAS3",
+   "layer": "grn"
+  },
+  {
+   "a": "DCT",
+   "b": "SOX10",
+   "layer": "grn"
+  },
+  {
+   "a": "PAX3",
+   "b": "SOX10",
+   "layer": "grn"
+  },
+  {
+   "a": "BCL2",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "EDNRB",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MET",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "OCA2",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKCB",
+   "layer": "grn"
+  },
+  {
+   "a": "KIT",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "EDNRB",
+   "b": "SOX10",
+   "layer": "grn"
+  },
+  {
+   "a": "FOS",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "DCT",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "PAX3",
+   "b": "TP53",
+   "layer": "grn"
+  },
+  {
+   "a": "PAX3",
+   "b": "TYR",
+   "layer": "grn"
+  },
+  {
+   "a": "PAX3",
+   "b": "TYRP1",
+   "layer": "grn"
+  },
+  {
+   "a": "AKT1",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "BAD",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "BBC3",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "CDK2",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "CXCL8",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "EGFR",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "HGF",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "HIF1A",
+   "b": "MITF",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "NSMAF",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PDE4B",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKACA",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKCH",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKCZ",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "PTGS2",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "STAT3",
+   "layer": "grn"
+  },
+  {
+   "a": "MITF",
+   "b": "TPSAB1",
+   "layer": "grn"
+  },
+  {
+   "a": "AHR",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "AKT1",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "BAX",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "BCL2",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "CALM1",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "CDK4",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "EGFR",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "F10",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "MET",
+   "b": "PAX3",
+   "layer": "grn"
+  },
+  {
+   "a": "PAX3",
+   "b": "USF1",
+   "layer": "grn"
+  },
+  {
+   "a": "MET",
+   "b": "SOX10",
+   "layer": "grn"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "MC1R",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "PAX3",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "EDNRB",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "MLANA",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "PMEL",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "PIAS3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "PAX3",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "BAD",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CREB1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "BBC3",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CREB1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "CSF2RA",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "IL1R1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "MAP3K14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP4K2",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "RPS6KA1",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "RPS6KA1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "NTRK1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "PDPK1",
+   "layer": "string"
+  },
+  {
+   "a": "PIAS3",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PPP3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCB",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "NOX1",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "PAK1",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "RPS6KA1",
+   "layer": "string"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "PTGS2",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "TNF",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "GADD45A",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FZD3",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "DFFA",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "DFFB",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "MAP2K7",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "GUCY1A2",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER2",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER3",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER4",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "EDNRB",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "PAX3",
+   "layer": "string"
+  },
+  {
+   "a": "PAX3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PAX3",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "PAX3",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CHUK",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "CDK4",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "GAB1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "MC1R",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "MC1R",
+   "b": "OCA2",
+   "layer": "string"
+  },
+  {
+   "a": "MC1R",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "MC1R",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "MC1R",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "MCL1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "OCA2",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "OCA2",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "PRKACA",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKACA",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "RAF1",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "RAF1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "RAP1A",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TNFRSF1A",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TP53",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TYR",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "ADCY4",
+   "b": "AKT1",
+   "layer": "string"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PDE4B",
+   "layer": "string"
+  },
+  {
+   "a": "ADCY4",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "AHR",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "ATF2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "BAX",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CALM1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CDC42",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CDH2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CHUK",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CXCL8",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "HGF",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAP2K3",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAP2K4",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "NOS2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "NOX1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "AKT1",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "BAK1",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "BAX",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "CFLAR",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "APAF1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "CREB1",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "DUSP1",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "ATF2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "BAK1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "BAX",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "PPP3CA",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "BAD",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "BAX",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "BBC3",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "BAK1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "BAX",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "BCL2",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BBC3",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "BCL2L1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CASP8",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CDK2",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CDK4",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CFLAR",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CHUK",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "BID",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CASP9",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CFLAR",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "CASP3",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "BID",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "CDC42",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "CREB1",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "NOS2",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "PPP3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "CALM1",
+   "b": "RYR1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDC42",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDK2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDK4",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CFLAR",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CXCL8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CASP3",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CDK2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CFLAR",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "CCND1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CASP9",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CDH2",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CDK2",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CDK4",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CREB1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "LEF1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CCND1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "CDH2",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "EZR",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP2K3",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP2K6",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "PARD6A",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CDC42",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CDH2",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDH2",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CDH2",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "CDH2",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "CDH2",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "CDKN1A",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "MC1R",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "GADD45A",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "TFAP2A",
+   "layer": "string"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "CYCS",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "CFLAR",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "IRAK4",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "PDPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "CTNNB1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "GSK3B",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CREB1",
+   "b": "USF1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "CXCL8",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "IL1R1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CSF2RA",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "CXCL8",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "EZR",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "FZD3",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "LEF1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAP2K2",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "NTRK1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "TFAP2A",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "USF1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "EDN1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "HGF",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IL1R1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "CXCL8",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "CYCS",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "MC1R",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "MLANA",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "PMEL",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "DCT",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "DFFA",
+   "b": "DFFB",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "ECSIT",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "ECSIT",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "MC1R",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "PTGER3",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "EDNRB",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "EDNRB",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "EDNRB",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "EZR",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "HGF",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PLCB1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "ELK1",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "FOS",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "GADD45A",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "LEF1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "PIAS3",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "TFAP2A",
+   "layer": "string"
+  },
+  {
+   "a": "EP300",
+   "b": "USF1",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "FADD",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "RDX",
+   "layer": "string"
+  },
+  {
+   "a": "EZR",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "F10",
+   "b": "F7",
+   "layer": "string"
+  },
+  {
+   "a": "F2RL1",
+   "b": "PRSS1",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "HIF1A",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "RPS6KA1",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "FOS",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "FZD3",
+   "b": "PARD6A",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "HGF",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "HGF",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "NTRK1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "PDPK1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "LEF1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MAP2K2",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MAP2K7",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PARD6A",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PDPK1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PPP3CA",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "GSK3B",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "NTRK1",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "HGF",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "HSP90AA1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "HIF1A",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "ICAM1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAP2K2",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "RPS6KA1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAP3K14",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "NOS2",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "NOX1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "PDPK1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "IL10",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "IL1R1",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "MSN",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "RDX",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "ICAM1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "IL1A",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "IL1R1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "NOS2",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "IL10",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "IL12A",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "IL12A",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "IRAK4",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "IL1A",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "IL6",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "IL6R",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "IRAK4",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "IL1R1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "IRAK4",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "JAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "KIT",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "NOS2",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "IL6",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IL6R",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "IRAK4",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK4",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "JAK1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP2K3",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP2K4",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP2K7",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP3K5",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MMP1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TFAP2A",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "JUN",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "TFAP2A",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "MET",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "NTRK1",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "LEF1",
+   "b": "MITF",
+   "layer": "string"
+  },
+  {
+   "a": "LEF1",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAP2K2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAP2K4",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP2K4",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP2K6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP2K6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP2K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAP3K1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K14",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K14",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K14",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K14",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K14",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "MAP3K7",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K5",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAP3K7",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAP4K2",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MAPK14",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MCL1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PLA2G1B",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "MAPK3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "MAPK8",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "PAK1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK14",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK3",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "MYD88",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK8",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "MCL1",
+   "b": "PMAIP1",
+   "layer": "string"
+  },
+  {
+   "a": "MCL1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "MCL1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MET",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "NFATC1",
+   "layer": "string"
+  },
+  {
+   "a": "MITF",
+   "b": "POMC",
+   "layer": "string"
+  },
+  {
+   "a": "MLANA",
+   "b": "PMEL",
+   "layer": "string"
+  },
+  {
+   "a": "MLANA",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "MLANA",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "MLANA",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "MMP1",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "MMP1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MMP1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MSN",
+   "b": "RDX",
+   "layer": "string"
+  },
+  {
+   "a": "MSN",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "MSN",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "MYD88",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "NFATC1",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "NFATC1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "NGF",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "SMPD2",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "NGF",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "NOS2",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "NOS2",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "NOS2",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "NOS2",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "NOX1",
+   "b": "RIPK1",
+   "layer": "string"
+  },
+  {
+   "a": "NOX1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "NOX1",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "NSMAF",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "NSMAF",
+   "b": "SMPD2",
+   "layer": "string"
+  },
+  {
+   "a": "NSMAF",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "NSMAF",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "NTRK1",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "OCA2",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "PAK1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PARD6A",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "PARD6A",
+   "b": "RAC1",
+   "layer": "string"
+  },
+  {
+   "a": "PARD6A",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "PDE4B",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "PDPK1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "PIAS3",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "PLCB1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "PLA2G1B",
+   "b": "PTGS2",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "PPP3CA",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "PRKG1",
+   "layer": "string"
+  },
+  {
+   "a": "PLCB1",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "PMAIP1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PMEL",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "PMEL",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "POMC",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "POMC",
+   "b": "PTGER2",
+   "layer": "string"
+  },
+  {
+   "a": "POMC",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "POMC",
+   "b": "TYR",
+   "layer": "string"
+  },
+  {
+   "a": "POMC",
+   "b": "TYRP1",
+   "layer": "string"
+  },
+  {
+   "a": "PPP3CA",
+   "b": "PRKCA",
+   "layer": "string"
+  },
+  {
+   "a": "PRKACA",
+   "b": "PTGER4",
+   "layer": "string"
+  },
+  {
+   "a": "PRKACA",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "PRKCB",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCA",
+   "b": "WNT5A",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCB",
+   "b": "PRKCD",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCB",
+   "b": "RACK1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCB",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCB",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "PRKCZ",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "SHC1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCD",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "PRKCZ",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "PRKG1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER1",
+   "b": "PTGER4",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER2",
+   "b": "PTGER4",
+   "layer": "string"
+  },
+  {
+   "a": "PTGER4",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "PTGS2",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "PTGS2",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "PTGS2",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "RAC1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "RAC1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "RAC1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "RACK1",
+   "b": "SMPD2",
+   "layer": "string"
+  },
+  {
+   "a": "RACK1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "RACK1",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "RACK1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "RAF1",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "RAF1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "RAF1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "RAP1A",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "RAP1A",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "RDX",
+   "b": "RHOA",
+   "layer": "string"
+  },
+  {
+   "a": "RHOA",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "RHOA",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TAB1",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "RIPK1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "SHC1",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "SHC1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "SHC1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD1",
+   "b": "SMPD2",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD1",
+   "b": "SPTLC1",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD1",
+   "b": "SPTLC2",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD2",
+   "b": "SPTLC1",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD2",
+   "b": "SPTLC2",
+   "layer": "string"
+  },
+  {
+   "a": "SMPD2",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "SOS1",
+   "b": "SRC",
+   "layer": "string"
+  },
+  {
+   "a": "SPTLC1",
+   "b": "SPTLC2",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "STAT1",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "SRC",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "STAT1",
+   "b": "STAT3",
+   "layer": "string"
+  },
+  {
+   "a": "STAT1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "STAT1",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "STAT1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "STAT3",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "STAT3",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "STAT3",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "STAT3",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TAB1",
+   "b": "TNF",
+   "layer": "string"
+  },
+  {
+   "a": "TAB1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "TAB1",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "TAB1",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "TAB1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TFAP2A",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "TNF",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "TNF",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "TNF",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "TNF",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TNFRSF1A",
+   "b": "TP53",
+   "layer": "string"
+  },
+  {
+   "a": "TNFRSF1A",
+   "b": "TRADD",
+   "layer": "string"
+  },
+  {
+   "a": "TNFRSF1A",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "TRADD",
+   "b": "TRAF2",
+   "layer": "string"
+  },
+  {
+   "a": "TRADD",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "TRAF2",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "CDK2",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "CASP8",
+   "b": "NFKB1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK2",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "CDK4",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "FASLG",
+   "layer": "string"
+  },
+  {
+   "a": "CHUK",
+   "b": "JUN",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "SOX10",
+   "layer": "string"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "RAF1",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "EP300",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "EGFR",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "EDN1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "EGFR",
+   "b": "FAS",
+   "layer": "string"
+  },
+  {
+   "a": "FADD",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "FAS",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "FASLG",
+   "b": "GRB2",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "MAPK1",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "PRKACA",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "MAP2K1",
+   "layer": "string"
+  },
+  {
+   "a": "GAB1",
+   "b": "HRAS",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "GRB2",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "HRAS",
+   "b": "KITLG",
+   "layer": "string"
+  },
+  {
+   "a": "HSP90AA1",
+   "b": "IRAK1",
+   "layer": "string"
+  },
+  {
+   "a": "IRAK1",
+   "b": "TNFRSF1A",
+   "layer": "string"
+  },
+  {
+   "a": "KIT",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "SOS1",
+   "layer": "string"
+  },
+  {
+   "a": "KITLG",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "RAP1A",
+   "layer": "string"
+  },
+  {
+   "a": "MCL1",
+   "b": "TRAF6",
+   "layer": "string"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PIK3CA",
+   "layer": "string"
+  },
+  {
+   "a": "MAPK1",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MC1R",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "TYR",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "TYRP1",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "PAX3",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "SOX10",
+   "layer": "omni"
+  },
+  {
+   "a": "SOX10",
+   "b": "TYR",
+   "layer": "omni"
+  },
+  {
+   "a": "CHUK",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "EDN1",
+   "b": "EDNRB",
+   "layer": "omni"
+  },
+  {
+   "a": "EGFR",
+   "b": "PIK3CA",
+   "layer": "omni"
+  },
+  {
+   "a": "FAS",
+   "b": "FASLG",
+   "layer": "omni"
+  },
+  {
+   "a": "HRAS",
+   "b": "RAF1",
+   "layer": "omni"
+  },
+  {
+   "a": "KIT",
+   "b": "PIK3CA",
+   "layer": "omni"
+  },
+  {
+   "a": "KIT",
+   "b": "KITLG",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK1",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "DCT",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "MLANA",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "PMEL",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "PIAS3",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "RAF1",
+   "layer": "omni"
+  },
+  {
+   "a": "DCT",
+   "b": "SOX10",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "BAD",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "CREB1",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "CTNNB1",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "FOS",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "GSK3B",
+   "layer": "omni"
+  },
+  {
+   "a": "BAK1",
+   "b": "CYCS",
+   "layer": "omni"
+  },
+  {
+   "a": "BAX",
+   "b": "CYCS",
+   "layer": "omni"
+  },
+  {
+   "a": "BAX",
+   "b": "BBC3",
+   "layer": "omni"
+  },
+  {
+   "a": "BAX",
+   "b": "BCL2",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "CDKN1A",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAP3K1",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "PRKCD",
+   "layer": "omni"
+  },
+  {
+   "a": "BID",
+   "b": "CASP8",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP8",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "CASP9",
+   "layer": "omni"
+  },
+  {
+   "a": "CDC42",
+   "b": "MAP3K1",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2",
+   "b": "CREB1",
+   "layer": "omni"
+  },
+  {
+   "a": "CSF2",
+   "b": "CSF2RA",
+   "layer": "omni"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "DUSP1",
+   "b": "MAPK8",
+   "layer": "omni"
+  },
+  {
+   "a": "EGFR",
+   "b": "STAT1",
+   "layer": "omni"
+  },
+  {
+   "a": "CTNNB1",
+   "b": "GSK3B",
+   "layer": "omni"
+  },
+  {
+   "a": "GSK3B",
+   "b": "NFATC1",
+   "layer": "omni"
+  },
+  {
+   "a": "HGF",
+   "b": "MET",
+   "layer": "omni"
+  },
+  {
+   "a": "IL1A",
+   "b": "IL1R1",
+   "layer": "omni"
+  },
+  {
+   "a": "IL6",
+   "b": "IL6R",
+   "layer": "omni"
+  },
+  {
+   "a": "IL6R",
+   "b": "JAK1",
+   "layer": "omni"
+  },
+  {
+   "a": "JAK1",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K1",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAPK8",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAPK8",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K1",
+   "layer": "omni"
+  },
+  {
+   "a": "CHUK",
+   "b": "MAP3K14",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "MAP3K5",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K4",
+   "b": "MAP3K5",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "MAP3K5",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K7",
+   "b": "MAP3K5",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP4K2",
+   "layer": "omni"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK1",
+   "b": "RPS6KA1",
+   "layer": "omni"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "CASP3",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK14",
+   "layer": "omni"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "ELK1",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "FOS",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK3",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK3",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK3",
+   "b": "RPS6KA1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK3",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "ATF2",
+   "b": "MAPK8",
+   "layer": "omni"
+  },
+  {
+   "a": "JUN",
+   "b": "MAPK8",
+   "layer": "omni"
+  },
+  {
+   "a": "GAB1",
+   "b": "MET",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "EDNRB",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MET",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "OCA2",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "PRKCB",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "CSF2",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "CXCL8",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "ICAM1",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "IL10",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "IL1A",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "IL6",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PTGS2",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TNF",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "NGF",
+   "b": "NTRK1",
+   "layer": "omni"
+  },
+  {
+   "a": "AKT1",
+   "b": "PDPK1",
+   "layer": "omni"
+  },
+  {
+   "a": "PIAS3",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "PDPK1",
+   "b": "PIK3CA",
+   "layer": "omni"
+  },
+  {
+   "a": "PIK3CA",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "BAK1",
+   "b": "PMAIP1",
+   "layer": "omni"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PPP3CA",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKACA",
+   "layer": "omni"
+  },
+  {
+   "a": "PRKCB",
+   "b": "TYR",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "PRKG1",
+   "layer": "omni"
+  },
+  {
+   "a": "NOX1",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "PAK1",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K2",
+   "b": "RAF1",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "RPS6KA1",
+   "layer": "omni"
+  },
+  {
+   "a": "EGFR",
+   "b": "SRC",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "BCL2L1",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "CCND1",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "PTGS2",
+   "b": "STAT3",
+   "layer": "omni"
+  },
+  {
+   "a": "TNF",
+   "b": "TNFRSF1A",
+   "layer": "omni"
+  },
+  {
+   "a": "BBC3",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "GADD45A",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "HIF1A",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "FZD3",
+   "b": "WNT5A",
+   "layer": "omni"
+  },
+  {
+   "a": "BAD",
+   "b": "CYCS",
+   "layer": "omni"
+  },
+  {
+   "a": "BID",
+   "b": "CYCS",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "DUSP1",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "MITF",
+   "layer": "omni"
+  },
+  {
+   "a": "CREB1",
+   "b": "PTGS2",
+   "layer": "omni"
+  },
+  {
+   "a": "CDKN1A",
+   "b": "ELK1",
+   "layer": "omni"
+  },
+  {
+   "a": "HIF1A",
+   "b": "KITLG",
+   "layer": "omni"
+  },
+  {
+   "a": "HIF1A",
+   "b": "PMAIP1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "MAP3K14",
+   "layer": "omni"
+  },
+  {
+   "a": "MAPK14",
+   "b": "USF1",
+   "layer": "omni"
+  },
+  {
+   "a": "NFATC1",
+   "b": "PTGS2",
+   "layer": "omni"
+  },
+  {
+   "a": "EDN1",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "FASLG",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "IL12A",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "KITLG",
+   "b": "NFKB1",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "NOS2",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKCD",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "PAK1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "PAK1",
+   "layer": "omni"
+  },
+  {
+   "a": "CDK2",
+   "b": "PRKCH",
+   "layer": "omni"
+  },
+  {
+   "a": "NFKB1",
+   "b": "PRKCZ",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K3",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP2K6",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "MAP3K1",
+   "b": "RAC1",
+   "layer": "omni"
+  },
+  {
+   "a": "BAD",
+   "b": "RPS6KA1",
+   "layer": "omni"
+  },
+  {
+   "a": "MITF",
+   "b": "RPS6KA1",
+   "layer": "omni"
+  },
+  {
+   "a": "ICAM1",
+   "b": "TFAP2A",
+   "layer": "omni"
+  },
+  {
+   "a": "TFAP2A",
+   "b": "TNF",
+   "layer": "omni"
+  },
+  {
+   "a": "DUSP1",
+   "b": "TP53",
+   "layer": "omni"
+  },
+  {
+   "a": "TP53",
+   "b": "TYR",
+   "layer": "omni"
+  },
+  {
+   "a": "TP53",
+   "b": "TYRP1",
+   "layer": "omni"
+  },
+  {
+   "a": "F2RL1",
+   "b": "TPSAB1",
+   "layer": "omni"
+  },
+  {
+   "a": "MMP1",
+   "b": "NFKB1",
+   "layer": "omni"
+  }
+ ]
+}
