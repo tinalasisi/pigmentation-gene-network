@@ -1,35 +1,108 @@
 project:
   type: website
   output-dir: _site
-  # Explicit render list. Notebooks are rendered from their STORED outputs (execute: false below),
-  # so no kernel, no network, and no withheld data are needed at render time.
+  # Explicit render list — ALL notebooks. Rendered from STORED outputs
+  # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
     - index.qmd
     - notebooks/01_reconstruct_published_network.ipynb
+    - notebooks/01a_extract_bajpai_crispr.ipynb
+    - notebooks/01b_extract_baxter_genes.ipynb
+    - notebooks/01c_extract_hirisplex_markers.ipynb
+    - notebooks/01d_reproduce_gwas_catalog.ipynb
     - notebooks/02_resolve_network_to_genes.ipynb
     - notebooks/03_assemble_validation_cases.ipynb
+    - notebooks/04_unified_association_base.ipynb
+    - notebooks/05_compare_candidate_networks.ipynb
+    - notebooks/06_gene_regulatory_network.ipynb
+    - notebooks/07_harmonized_substrate.ipynb
+    - notebooks/08_rescue_screen_diagnostic.ipynb
+    - notebooks/09_bajpai_reconciliation.ipynb
+    - notebooks/10_mechanism_direction_law.ipynb
+    - notebooks/11_cross_ancestry_conditionality.ipynb
+    - notebooks/12_direction_law_expanded.ipynb
 
 website:
   title: "Pigmentation gene network"
-  description: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge."
+  description: "Grading genotype→phenotype links by making independent lines of evidence converge."
   reader-mode: true
+  page-navigation: true
+  back-to-top-navigation: true
   navbar:
+    background: primary
+    search: true
+    pinned: true
     left:
       - href: index.qmd
         text: Overview
-      - href: notebooks/01_reconstruct_published_network.ipynb
-        text: "NB1 · Reconstruct the network"
-      - href: notebooks/02_resolve_network_to_genes.ipynb
-        text: "NB2 · Resolve to genes"
-      - href: notebooks/03_assemble_validation_cases.ipynb
-        text: "NB3 · Validation cases"
+    right:
+      - icon: github
+        href: https://github.com/tinalasisi/pigmentation-gene-network
+        aria-label: GitHub repository
+  sidebar:
+    style: floating
+    collapse-level: 2
+    contents:
+      - text: Overview
+        href: index.qmd
+      - section: "Foundation — the network"
+        contents:
+          - text: "NB1 · Reconstruct the network"
+            href: notebooks/01_reconstruct_published_network.ipynb
+          - text: "NB2 · Resolve to genes"
+            href: notebooks/02_resolve_network_to_genes.ipynb
+          - text: "NB3 · Validation cases"
+            href: notebooks/03_assemble_validation_cases.ipynb
+      - section: "Data extraction"
+        contents:
+          - text: "NB1a · Bajpai CRISPR screen"
+            href: notebooks/01a_extract_bajpai_crispr.ipynb
+          - text: "NB1b · Baxter gene list"
+            href: notebooks/01b_extract_baxter_genes.ipynb
+          - text: "NB1c · HIrisPlex markers"
+            href: notebooks/01c_extract_hirisplex_markers.ipynb
+          - text: "NB1d · GWAS Catalog pull"
+            href: notebooks/01d_reproduce_gwas_catalog.ipynb
+      - section: "Networks & substrate"
+        contents:
+          - text: "NB4 · Unified association base"
+            href: notebooks/04_unified_association_base.ipynb
+          - text: "NB5 · Compare candidate networks"
+            href: notebooks/05_compare_candidate_networks.ipynb
+          - text: "NB6 · Gene-regulatory network"
+            href: notebooks/06_gene_regulatory_network.ipynb
+          - text: "NB7 · Harmonized substrate"
+            href: notebooks/07_harmonized_substrate.ipynb
+      - section: "Rescue screen"
+        contents:
+          - text: "NB8 · Rescue diagnostic"
+            href: notebooks/08_rescue_screen_diagnostic.ipynb
+          - text: "NB9 · Bajpai orphan reconciliation"
+            href: notebooks/09_bajpai_reconciliation.ipynb
+      - section: "Direction & ancestry"
+        contents:
+          - text: "NB10 · Mechanism→direction law"
+            href: notebooks/10_mechanism_direction_law.ipynb
+          - text: "NB12 · Direction law, expanded"
+            href: notebooks/12_direction_law_expanded.ipynb
+          - text: "NB11 · Cross-ancestry conditionality"
+            href: notebooks/11_cross_ancestry_conditionality.ipynb
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, theme.scss]
     toc: true
+    toc-depth: 3
+    toc-expand: 1
+    code-fold: true
+    code-summary: "Show code"
     code-tools: true
-    code-fold: show
+    code-overflow: wrap
+    fig-align: center
+    df-print: paged
+    grid:
+      body-width: 860px
+      sidebar-width: 300px
 
 execute:
-  enabled: false   # render stored notebook outputs only — no kernel, no network, no withheld data at render time
+  enabled: false   # render stored notebook outputs only — no kernel, no network, no withheld data

@@ -1,6 +1,7 @@
 ---
 title: "Pigmentation gene network"
 subtitle: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge"
+toc: false
 ---
 
 ## What this is
@@ -9,39 +10,70 @@ A model-system project on the genotype→phenotype map. **The goal is to know ho
 between a genetic variant and a phenotype, by making independent lines of evidence converge** — statistical
 association, mechanistic pathway knowledge, and experimental validation each capture part of the truth, and
 where they agree we can be confident. Applied to human pigmentation, the aim is to grade reported pigmentation
-associations by how well independent evidence converges on each, and to point to the specific next step that
-would confirm it.
+associations by how well independent evidence converges on each, and to name the specific next step that would
+confirm it.
 
 Pigmentation is the model system because it is highly heritable, has near-zero environmental variance, has a
 well-characterized molecular mechanism, and shows the same prediction/portability failures — the same allele
 causal in one population and silent in another — in a visible, checkable form.
 
-## The work is in the notebooks
+::: {.callout-note appearance="simple"}
+Everything here — every notebook, table, and figure — was built during the hackathon event window
+(first commit **2026-07-09**). Each notebook is a **self-contained mini-manuscript** (intro → methods →
+results → discussion, with citations) that renders from its own stored outputs, so the site needs no kernel,
+no network, and no withheld data. **Code is folded by default** — click *"Show code"* on any cell to see it.
+:::
 
-Each notebook is a **self-contained mini-manuscript** — introduction, methods, results, and
-discussion/conclusion, with citations — that you can read, reproduce, and adapt. The processed tables are
-their *outputs*; the notebooks are the contribution.
+## The notebooks
 
-### [Notebook 1 — Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
+### Foundation — the network
+- **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the
+  Raghunath et al. 2015 melanogenesis model as a **signed, directed** network, typing and signing every
+  interaction from the published file, with a resolvable citation per edge.
+- **[NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** — resolves entities to genes
+  (UniProt / HGNC / Ensembl / GRCh38) and validates every edge against OmniPath as a separate check; a closing
+  gate fails the build if anything is uncited.
+- **[NB3 · Validation cases](notebooks/03_assemble_validation_cases.ipynb)** — pulls published genotype→phenotype
+  discordance cases from curated papers, counted paper-by-paper, reproduced from committed extracts.
 
-Rebuilds the Raghunath et&nbsp;al. 2015 melanogenesis model as a **signed, directed** network — typing and
-signing every interaction directly from the published file, with a resolvable citation for each edge. The
-mechanistic backbone, and the most confident, foundational piece of work here.
+### Data extraction
+Reproducible pulls of each external dataset, frozen for provenance:
+[Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
+[Baxter gene list](notebooks/01b_extract_baxter_genes.ipynb) ·
+[HIrisPlex markers](notebooks/01c_extract_hirisplex_markers.ipynb) ·
+[GWAS Catalog pull](notebooks/01d_reproduce_gwas_catalog.ipynb).
 
-### [Notebook 2 — Resolve the network to genes](notebooks/02_resolve_network_to_genes.ipynb)
+### Networks & substrate
+- **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — 105 curated loci → the
+  author-unexplained subset → the GWAS-Catalog-replicated overlap: the rescue-target set.
+- **[NB5 · Compare candidate networks](notebooks/05_compare_candidate_networks.ipynb)** — *"the network you
+  choose changes the answer"*: how STRING drift and source choice move which genes are in play.
+- **[NB6 · Gene-regulatory network](notebooks/06_gene_regulatory_network.ipynb)** — 58 curated, signed TF→target
+  regulon edges (MITF / PAX3 / SOX10), every edge cited.
+- **[NB7 · Harmonized substrate](notebooks/07_harmonized_substrate.ipynb)** — merges all layers into one tagged
+  node/edge table with per-edge provenance and tier.
 
-Resolves the network's entities to genes (UniProt / HGNC / Ensembl / GRCh38), builds the explicit gene layer,
-and validates every edge against OmniPath as a separate, non-destructive check. Every node and edge carries a
-resolvable citation; a closing gate fails the build if anything is uncited.
+### Rescue screen
+- **[NB8 · Rescue diagnostic](notebooks/08_rescue_screen_diagnostic.ipynb)** — the honest pivot: the network
+  rescue yielded no novel effector; the real result is that **melanocyte-vs-bulk eQTL correction retracts false
+  causal-gene calls** — the tissue you resolve in changes the answer.
+- **[NB9 · Bajpai orphan reconciliation](notebooks/09_bajpai_reconciliation.ipynb)** — a symmetric STRING seed
+  reconnects **93 of 142** CRISPR "orphans" to the core (vs 0/142 under a curated-only seed) — *seeding changes
+  the answer*; the residue is the honest knowledge gap.
 
-### [Notebook 3 — Assemble the validation cases](notebooks/03_assemble_validation_cases.ipynb)
+### Direction & ancestry
+- **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** — a functional melanin screen
+  orders the *direction* of Mendelian pigmentation disorders: positive regulator + loss-of-function allele →
+  hypopigmentation (**22/22**, base rate 54%, p < 1×10⁻⁵), robust to the study-bias confound.
+- **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
+  (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
+- **[NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)** — some
+  pigmentation genes are discovered through *different, population-private variants* in different ancestries,
+  quantified with Hudson F~ST~ against a genome-wide baseline.
 
-Documents how published cases of genotype→phenotype discordance were pulled from curated papers and counted,
-paper by paper, with the numbers reproduced from the committed extracts. A reproducible, adaptable base for
-testing the network.
+## Reproducibility
 
-## Status
-
-This project is being reoriented toward the goal above; the precise contribution and a fuller, designed demo
-are in progress. **Notebooks 1–2 are the stable core.** The current, authoritative account of the goal, the
-materials, and the open decisions is in the repository — see `README.md` and `internal/START_HERE.md`.
+Every figure and number renders from committed outputs; external pulls are frozen under
+`data/external/db_responses/` with provenance sidecars. The authoritative build log is
+[`internal/CHANGELOG.md`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/internal/CHANGELOG.md);
+the full repository is on [GitHub](https://github.com/tinalasisi/pigmentation-gene-network).

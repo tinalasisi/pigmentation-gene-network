@@ -1,0 +1,72 @@
+/*-- scss:defaults --*/
+// Typography — clean, high-readability system stack (no webfont fetch)
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace !default;
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+// Palette — warm, scientific, considered
+$body-color: #21282d;
+$body-bg: #ffffff;
+$primary: #2f5d62;          // deep teal — navbar, section headers, active nav
+$link-color: #b06a1e;       // warm sienna accent
+$link-hover-color: #834b12;
+
+$headings-font-weight: 650;
+$border-color: #e8e2d6;
+$code-block-bg: #f7f4ee;
+
+/*-- scss:rules --*/
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+h1, h2, h3, h4 { letter-spacing: -0.011em; line-height: 1.22; }
+h1.title { letter-spacing: -0.02em; }
+h2 { margin-top: 2.4rem; padding-top: 1.3rem; border-top: 1px solid $border-color; }
+h3 { margin-top: 1.8rem; }
+p  { margin-bottom: 1rem; }
+a  { text-underline-offset: 2px; }
+
+// Blockquotes = the TL;DR callouts in the notebooks — make them pop, readably
+blockquote {
+  border-left: 3px solid $link-color;
+  background: #faf6ef;
+  padding: 0.85rem 1.15rem;
+  border-radius: 0 8px 8px 0;
+  color: #363d43;
+  font-size: 1.02em;
+}
+
+// Code — folded by default; when opened, keep it calm
+div.sourceCode { border: 1px solid $border-color; border-radius: 8px; }
+pre.sourceCode code { font-size: 0.85em; line-height: 1.55; }
+code:not(.sourceCode) { color: #7c3d10; background: $code-block-bg; padding: 0.1em 0.35em; border-radius: 4px; }
+details > summary.code-summary,
+.cell > details > summary { color: #8b9298; font-size: 0.83em; font-weight: 500; }
+
+// Tables — tighter, legible
+table { font-size: 0.92em; }
+.table > :not(caption) > * > * { padding: 0.4rem 0.6rem; }
+thead th { border-bottom: 2px solid $border-color; }
+
+// Figures — breathing room, subtle framing
+figure, .cell-output-display { margin: 1.7rem auto; text-align: center; }
+figure img, .cell-output-display img, p > img {
+  max-width: 100%; height: auto; border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+figcaption { color: #6a7379; font-size: 0.88em; margin-top: 0.5rem; }
+
+// Navbar & sidebar
+.navbar { box-shadow: 0 1px 0 rgba(0,0,0,0.07); }
+.navbar-brand { font-weight: 700; letter-spacing: -0.01em; }
+.sidebar-item .sidebar-item-text { font-size: 0.92rem; }
+.sidebar-item-section > .sidebar-item-container > .sidebar-item-text {
+  font-weight: 650; color: $primary;
+}
+.sidebar nav[role="doc-toc"] { font-size: 0.86rem; }
+
+// Right-hand contents TOC
+#TOC, .toc-active { font-size: 0.86rem; }
+
+// Title block description
+.quarto-title-block .description { color: #5c656b; font-size: 1.06rem; }
