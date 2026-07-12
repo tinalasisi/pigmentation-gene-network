@@ -14,6 +14,7 @@ publisher. Only openly-licensed material is committed (see the redistribution po
 | **Kim et al. 2024**, *Nat Commun* | full-text in `data/raw/papers/Kim2024_NatCommun_EastAsianSkinColor/` — withheld by the `data/raw/papers/*` rule (article-PDF convention, not a license bar) | article + SI + Supplementary Data (26 lead variants, worldwide allele freqs, GWAS×eQTL coloc) | 10.1038/s41467-024-49031-4 · PMID 38849341 | **CC BY 4.0** (open access — redistributable) |
 | **Zhang et al. 2018**, *Genome Res* | full-text in `data/raw/papers/Zhang2018_GenomeRes_MelanocyteEQTL/` — withheld by the blanket rule | article + Supplementary Material + Supplementary Tables (melanocyte cis-eQTL); full stats are dbGaP-controlled | 10.1101/gr.233304.117 · PMID to confirm | **CC BY-NC 4.0** (redistributable non-commercially) |
 | **Martin et al. 2017**, *Cell* | **not redistributed** — obtain from publisher | article PDF + Supplementary PDF + Table S6 `.xlsx`, in `data/raw/papers/Martin2017_Cell_AfricanSkinPigmentation/`; extracted loci committed at `data/processed/EXTRACT_Martin2017_loci.csv` | 10.1016/j.cell.2017.11.015 | Elsevier/Cell Press subscription — article text NOT redistributable |
+| **Nadeau, Burke & Mundy 2007**, *Proc R Soc B* | **not redistributed** — obtain from publisher; PDF + supplements S04–S08 on disk in `data/raw/papers/Nadeau2007_ProcRSocB_MC1R_dichromatism/`, withheld by the blanket rule above | none committed (PDF-derived methods memo instead, see below) | 10.1098/rspb.2007.0174 · PMC2270924 · PMID 17504743 | Royal Society — article text NOT redistributable |
 
 ## Validation-case papers (13 genotype→phenotype-discordance papers) — FILES withheld, science used freely
 
@@ -79,3 +80,18 @@ hit-threshold calls, symbol filters) is fully specified in `docs/specs/`, so the
 - **HIrisPlex-S Erasmus MC Webtool Manual v2 (2018)** — the prediction model + web tool are free to use;
   the manual documents the model's training-set composition (the population-provenance evidence this build
   cites). The Chaitanya paper text is not committed.
+
+### Nadeau, Burke & Mundy 2007 — the comparative-genomics anchor reference
+- Obtain via DOI: 10.1098/rspb.2007.0174 (PMC2270924, PMID 17504743) — Royal Society, subscription.
+- What it is: the direct precedent for the primate pigmentation-vs-hormone selection analysis in
+  `comparative-genomics/`. Galliform birds; dN/dS (PAML branch models) at 6 loci (MC1R, TYR, TYRP1, DCT,
+  AGRP + CYTB mitochondrial control) regressed on a 0–6 sexual-plumage-dichromatism score via Pagel's GLS
+  (CONTINUOUS). Signal specific to MC1R (genus-level LRS=8.5, p=0.004); none at the other five loci.
+- Full-text article and supplements (S04 taxa/data tables, S05 table, S06/S08 figures, S07 methods text)
+  are on disk in `data/raw/papers/Nadeau2007_ProcRSocB_MC1R_dichromatism/`, withheld by the blanket
+  `data/raw/papers/*` rule (article-PDF convention, not a license bar — same treatment as Kim2024/Martin2017).
+- **Derived methods memo committed:** `comparative-genomics/docs/BIRD_ANCHOR_REFERENCE.md` — verified
+  against the full PDF (not search snippets), states exactly what's confirmed, maps their 6 loci onto our
+  panel (MC1R/TYR/TYRP1/DCT overlap directly), and lays out how the primate analysis reproduces then
+  extends their test (RELAX/aBSREL/RERconverge/SUMSTAT + the hormone-network contrast, none of which
+  existed in 2007).
