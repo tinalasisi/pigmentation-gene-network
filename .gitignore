@@ -50,6 +50,8 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 .env
+# Claude Science / agent local tooling settings — per-machine, not project content.
+.claude/
 
 # Internal governance surface — TRACKED and public by default.
 # internal/ holds the project's governance documents (project_dashboard.md, TODO.md,
