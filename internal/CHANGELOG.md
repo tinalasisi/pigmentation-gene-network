@@ -1006,3 +1006,68 @@ was commit-only).
 **Documents updated:** this entry; `internal/TODO.md` (NB2 resolution + flags; now tracked); `DATA_SOURCES.md`
 (committed as part of `95f1969`). Files restored under `data/external/db_responses/`, `data/processed/`, and
 `notebooks/figures/` are recorded in commit `95f1969`.
+
+---
+
+## 2026-07-12T01:44Z — NB2 figure generators restored; PLC* filter documented; tentative `project_dashboard.md` created; START_HERE + plan-sync skill de-staled
+
+Four related custodial/reproducibility items, closing the two documentation follow-ups the NB2 fix
+surfaced (T01:16Z entry) and standing up the missing third tracking document.
+
+**1 — NB2 figure-generating code restored (closes T01:16Z flag 3).** The 5 `notebooks/figures/step*.png`
+were committed at `95f1969` as opaque binaries recovered from the notebook's embedded outputs, with no cell
+generating them. `REPRODUCIBILITY_SPECIALIST` (delegated) added the generating code: NB2 cells 8, 15, 20,
+22, 27 now build their figures from the notebook's own in-memory data (`annotation.node_type.value_counts()`,
+`gene_layer.edge_type.value_counts()`, the `nx.DiGraph` G, degree/betweenness metrics, and
+`val.verdict.value_counts()` respectively), each via `fig, ax = plt.subplots(...)` →
+`fig.savefig(FIG/"<name>.png", dpi=150, bbox_inches="tight")` → `display(fig); plt.close(fig)` (the same
+single-embedded-PNG pattern NB1 uses, CHANGELOG 2026-07-12T00:34Z item 2); cell 2 gained the matplotlib
+import and `FIG.mkdir`. Only 6 of 33 cells changed (2, 8, 15, 20, 22, 27); the other 27 are byte-identical
+to HEAD. All REQUERY flags remain False. Verified on a fresh git-archive clone (run cell-by-cell in-process,
+since `jupyter nbconvert --execute` cannot bind a kernel socket in the sandbox): all 32 code cells run clean,
+exactly cells [8,15,20,22,27] emit `image/png`, the 5 PNGs are valid, the committed
+`gene_network_nodes/edges.csv` and `nb2_omnipath_validation.csv` reproduce **value-for-value**, and the
+citation gate passes (1,586 elements, 0 uncited). The figures are opaque binaries no longer — they reproduce
+from the notebook.
+
+**2 — PLC* filter documented in `DATA_SOURCES.md` (closes T01:16Z flag 2).** Entry 6's member-filter line
+now records that HGNC group 832 ("C2 domain containing phospholipases") returns 19 protein-coding members, 5
+of which are PLA2G4* (phospholipase A2, not C) contaminants, so a `PLC*` prefix filter is required to reach
+the committed 14 isozymes — matching the parity of the already-documented PLA2G*/PRSS* filters. The filter is
+recorded per-group in `hgnc_gene_groups.json` (`member_filter` field).
+
+**3 — Tentative `internal/project_dashboard.md` created (third tracking document restored).** The dashboard
+had been absent since the 2026-07-11T22:51Z restart. Re-created as a **thin snapshot that references the
+living documents** rather than duplicating them — the explicit design response to why previous plans drifted.
+It pins load-bearing counts ONLY for the committed, stable NB1–NB3 foundation (7 metrics, each reconciled
+against its file by `pigmentation-plan-sync`'s `check_plan_sync()` → 7 ok, 0 issues, no orphans); the
+concurrent session's in-flight NB4–NB5 outputs are inventoried with path + status but **no pinned counts**,
+because pinning a volatile number is exactly what caused prior drift. Carries an anti-drift contract
+(reconcile against files not memory; never duplicate the changelog/TODO; datetime-stamp every "now"). Backing
+artifact `4c06a7f3-6674-440c-a235-91e29e20b27f`.
+
+**4 — Staleness swept in START_HERE and the plan-sync skill.**
+- `internal/START_HERE.md`: its "Current state" section asserted "No execution route is committed," which the
+  T00:29Z changelog had already superseded (route settled, PI-approved). Added a datetime-stamped "where we
+  are now (2026-07-12T01:42Z)" note pointing at the three living documents and recording the concurrent
+  NB4–NB5 work; kept the 2026-07-11T22:51Z paragraph as an explicitly-superseded point-in-time record. Both
+  now carry full UTC datetimes per project convention.
+- `pigmentation-plan-sync` skill (personal, published in place): its prose called
+  `project_dashboard.md` "the build plan" and "the project's single source of truth" (wrong under the
+  three-document convention — the dashboard is a snapshot that references the others) and hardcoded a
+  `version_of` artifact id (`62abff5e-…`) pointing at the **archived** dashboard. Fixed the framing to
+  "snapshot / control surface", pointed the pin at the current artifact `4c06a7f3-…`, and added guidance to
+  resolve the id at runtime via `host.artifacts(filename="project_dashboard.md", exact=True)` rather than
+  trust a hardcoded value. The source-agnostic checker logic in `kernel.py` was already correct and was left
+  unchanged.
+
+**Commit plan.** Item 1 (notebook + 5 figures) and item 2 (`DATA_SOURCES.md`) commit together as the
+reproducibility/data fix; items 3–4 (`START_HERE.md`, `project_dashboard.md`, this changelog entry) commit as
+the governance-docs update. `internal/TODO.md` is intentionally NOT committed in either — it currently
+carries an uncommitted PI design note added mid-build by the concurrent NB4–NB5 session (allele-frequency
+population-conditionality note on NB8), which is that session's content to commit, not this one's.
+
+**Documents updated:** this entry; `notebooks/02_resolve_network_to_genes.ipynb` (6 cells); 5
+`notebooks/figures/step*.png` (regenerated); `DATA_SOURCES.md` (PLC* filter); `internal/START_HERE.md`
+(datetimed current-state note); `internal/project_dashboard.md` (created); `pigmentation-plan-sync` skill
+(published). Untouched: `internal/TODO.md` and all concurrent-session untracked files.

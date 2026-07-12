@@ -190,8 +190,27 @@ History is append-only in `internal/CHANGELOG.md`; agent coordination goes in `i
 (one file per message; see `internal/handoffs/README.md` + `MERGE_SAFETY.md`). Verified references:
 `internal/lit_review/bibliography/`.
 
-## Current state (2026-07-11T22:51Z)
+## Current state
 
+> **This section dates quickly.** It is a pointer to the living record, not a substitute for it. For where
+> the project actually is right now, read — in this order — `internal/project_dashboard.md` (the snapshot /
+> control surface), the tail of `internal/CHANGELOG.md` (dated history), and `internal/TODO.md` (open work).
+> Those three are kept current as work happens; the paragraphs below are a point-in-time note that later
+> entries may have superseded. When this note and the changelog disagree, **the changelog wins.**
+
+**2026-07-12T01:42Z — where we are now (supersedes the 2026-07-11T22:51Z note below).** An execution
+route has been chosen and PI-approved: the convergence-graded rescue screen built as notebooks **NB4–NB8**
+(unified association base → compare candidate networks → harmonized multi-layer substrate → resolution +
+convergence-graded rescue screen → optional population conditionality). See `CHANGELOG.md` 2026-07-12T00:29Z
+for the six decisions behind it and `internal/TODO.md` for the phase tracker; the approved plan is a Claude
+Science artifact (id in `TODO.md`). NB1–NB3 are stable and foundational; NB2's reproducibility was restored
+and committed (`95f1969`, CHANGELOG 2026-07-12T01:16Z). **NB4–NB5 are in progress in a concurrent session** —
+their outputs (`nb5_*.csv`, `discordance_loci_author_explained.csv`, `darcy2023_S*.csv`) are on disk but not
+yet committed. A tentative `internal/project_dashboard.md` (the third tracking document) now exists as the
+one-screen snapshot; read it first for orientation. The route below ("no execution route is committed") was
+accurate at the 2026-07-11T22:51Z restart and is kept for continuity.
+
+**2026-07-11T22:51Z (point-in-time, superseded above for the route question).**
 The repo was cleaned to this minimal, framing-neutral set on 2026-07-11; retired material is in
 `internal/archive/`. No execution route is committed. The Quarto site (`index.qmd`, `_quarto.yml`) still
 carries old framing and references archived notebooks — treat it as stale until the goal's execution is
