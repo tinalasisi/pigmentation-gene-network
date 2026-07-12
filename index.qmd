@@ -1,8 +1,16 @@
 ---
 title: "Pigmentation gene network"
 subtitle: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge"
+description: "A model-system project grading genotype→phenotype links in human pigmentation by making statistical, mechanistic, and experimental evidence converge."
 toc: false
 ---
+
+![The reconstructed pigmentation network in miniature: MITF at the hub of 34 curated, signed TF→target edges (green = activation, red = repression; gold = core pigmentation-gene targets).](notebooks/figures/nb6_mitf_hub_grn.png){fig-align="center" width="58%" fig-alt="Radial network diagram with the transcription factor MITF at the center connected by colored edges to 34 labeled target genes arranged in a ring."}
+
+::: {.callout-tip}
+## Start here
+New here, or short on time? Read this Overview, then follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); **read it together with NB12, which states plainly what is and isn't novel.** The biology here is largely textbook (near the definition of albinism), so the contribution is **methodological** — a bounded demonstration of the convergence thesis — **not a discovery about pigmentation**. Every code cell is folded — click *"Show code"* to expand it.
+:::
 
 ## What this is
 
@@ -36,13 +44,6 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 - **[NB3 · Validation cases](notebooks/03_assemble_validation_cases.ipynb)** — pulls published genotype→phenotype
   discordance cases from curated papers, counted paper-by-paper, reproduced from committed extracts.
 
-### Data extraction
-Reproducible pulls of each external dataset, frozen for provenance:
-[Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
-[Baxter gene list](notebooks/01b_extract_baxter_genes.ipynb) ·
-[HIrisPlex markers](notebooks/01c_extract_hirisplex_markers.ipynb) ·
-[GWAS Catalog pull](notebooks/01d_reproduce_gwas_catalog.ipynb).
-
 ### Networks & substrate
 - **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — 105 curated loci → the
   author-unexplained subset → the GWAS-Catalog-replicated overlap: the rescue-target set.
@@ -65,11 +66,18 @@ Reproducible pulls of each external dataset, frozen for provenance:
 - **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** — a functional melanin screen
   orders the *direction* of Mendelian pigmentation disorders: positive regulator + loss-of-function allele →
   hypopigmentation (**22/22**, base rate 54%, p < 1×10⁻⁵), robust to the study-bias confound.
-- **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
-  (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
 - **[NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)** — some
   pigmentation genes are discovered through *different, population-private variants* in different ancestries,
   quantified with Hudson F~ST~ against a genome-wide baseline.
+- **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
+  (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
+
+### Appendix — data extraction
+Reproducible pulls of each external dataset, frozen for provenance:
+[NB1a · Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
+[NB1b · Baxter gene list](notebooks/01b_extract_baxter_genes.ipynb) ·
+[NB1c · HIrisPlex markers](notebooks/01c_extract_hirisplex_markers.ipynb) ·
+[NB1d · GWAS Catalog pull](notebooks/01d_reproduce_gwas_catalog.ipynb).
 
 ## Reproducibility
 
