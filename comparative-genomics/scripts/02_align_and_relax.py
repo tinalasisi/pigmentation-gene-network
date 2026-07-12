@@ -25,10 +25,12 @@ import dendropy
 def sh(cmd, **kw): return subprocess.run(cmd, check=True, **kw)
 
 def drop_outlier_tips(codon, k=4.0, min_tips=4):
-    """Drop tips whose mean pairwise p-distance is a gross robust-z (MAD) outlier — the
-    long-branch / misaligned / paralogous sequences that inflate RELAX branch lengths.
-    Conservative: only extreme outliers (z>k AND >1.5x median), never below min_tips.
-    numpy-vectorized: O(T^2*ncod) done in C, ~instant even for 100 tips."""
+    """Drop misaligned/paralogous tips that inflate RELAX branch lengths, WITHOUT dropping
+    genuinely-divergent-but-correct lineages (e.g. lemurs). Metric = NEAREST-NEIGHBOUR p-distance:
+    a real divergent lineage is close to its relatives (small NN dist); a misaligned/paralogous
+    sequence is far from everyone incl. its closest relative (large NN dist). Flag tips whose NN
+    distance is a strong robust-z (MAD) outlier AND >1.5x median. Conservative; never below min_tips.
+    numpy-vectorized (~instant for 100 tips)."""
     import numpy as np
     tips=list(codon.keys()); T=len(tips)
     if T<=min_tips: return codon, []
@@ -41,15 +43,16 @@ def drop_outlier_tips(codon, k=4.0, min_tips=4):
             r[j]=0 if c=="---" else ids.setdefault(c, len(ids)+1)   # 0 == gap
         return r
     M=np.stack([row(codon[t]) for t in tips])                       # (T, ncod)
-    md=np.zeros(T)
+    nn=np.zeros(T)
     for i in range(T):
         both=(M[i]!=0) & (M!=0)                                     # (T, ncod) both non-gap
         n=both.sum(1); d=((M!=M[i]) & both).sum(1)
-        pd=np.divide(d, n, out=np.zeros(T), where=n>0)
-        md[i]=pd[np.arange(T)!=i].mean()
-    med=float(np.median(md)); mad=float(np.median(np.abs(md-med))) or 1e-9
-    z=(md-med)/(1.4826*mad)
-    outliers=[tips[i] for i in range(T) if z[i]>k and md[i]>med*1.5]
+        pd=np.divide(d, n, out=np.ones(T), where=n>0)              # 1.0 where no overlap (suspicious)
+        pd[i]=np.inf                                                # exclude self
+        nn[i]=pd.min()                                             # distance to NEAREST neighbour
+    med=float(np.median(nn)); mad=float(np.median(np.abs(nn-med))) or 1e-9
+    z=(nn-med)/(1.4826*mad)
+    outliers=[tips[i] for i in range(T) if z[i]>k and nn[i]>med*1.5]
     keep=[t for t in tips if t not in outliers]
     if len(keep)<min_tips: return codon, []                         # never break the gene
     return {t:codon[t] for t in keep}, outliers
