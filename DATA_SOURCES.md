@@ -176,7 +176,11 @@ validation authorities (attach gene identity and relationships, then check them)
   are typed **`enzyme_activity_class`** (PLA2, PKC, PLC, MMPs, Trypsin, Phosphodiesterase) with **no gene
   at annotation** — their **full** member genes are attached in Step 4 from a citable HGNC gene-group call
   (PLA2 group 467 filtered PLA2G* = 20; MMPs 891 = 23; Trypsin 738 filtered PRSS* = 25; Phosphodiesterase
-  681 = 24; PKC 3523 = 9; PLC 832 = 14; 115 member edges), **not** a single hand-picked representative.
+  681 = 24; PKC 3523 = 9; PLC group 832 "C2 domain containing phospholipases" filtered PLC* = 14; 115 member
+  edges), **not** a single hand-picked representative. The `PLC*` filter matters: HGNC group 832 returns 19
+  protein-coding members, 5 of which are PLA2G4* (phospholipase A2, not C) contaminants of that C2-domain
+  group; keeping only `PLC*`-prefixed symbols yields the 14 phospholipase-C isozymes, matching the committed
+  network. The filter is recorded per-group in `hgnc_gene_groups.json` (`member_filter` field).
   ACTH/α-MSH typed `peptide_ligand` by curated ChEBI peptide-hormone entries; the POMC→ACTH→α-MSH cleavage
   cascade is added as `cleaved_from` edges cited by PubMed PMIDs. All distinct protein symbols confirmed by
   a reviewed Swiss-Prot entry; 0 nodes unresolved.
