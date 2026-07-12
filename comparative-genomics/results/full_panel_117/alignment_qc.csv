@@ -25,7 +25,7 @@ FOXD3,pigmentation,94,1434,1.21,34,ok,20,ok
 FSHB,hormone,99,387,0.0,0,ok,21,ok
 FSHR,hormone,99,1785,8.67,111,ok,21,ok
 GNA11,hormone,86,1077,10.82,77,ok,21,ok
-GNAQ,hormone,76,1077,10.55,9,ok,13,hyphy_failed
+GNAQ,hormone,75,1077,10.59,0,ok,13,ok
 GNRH1,hormone,93,288,0.75,84,ok,21,ok
 GNRH2,hormone,79,342,0.79,83,ok,16,ok
 GNRHR,hormone,99,984,11.48,0,ok,21,ok
@@ -36,7 +36,7 @@ HSD17B11,hormone,100,813,18.17,41,ok,20,ok
 HSD17B12,hormone,47,936,11.93,5,ok,9,ok
 HSD17B2,hormone,100,897,21.57,89,ok,21,ok
 HSD17B3,hormone,96,732,18.18,78,ok,21,ok
-HSD17B6,hormone,95,951,9.24,69,ok,20,hyphy_failed
+HSD17B6,hormone,94,951,8.91,69,ok,19,ok
 HSD17B7,hormone,79,1023,10.2,80,ok,18,ok
 HSD17B8,hormone,99,771,0.06,24,ok,20,ok
 HSD3B1,hormone,76,1119,10.47,0,ok,16,ok
@@ -59,7 +59,7 @@ NCOA1,hormone,99,2865,22.21,512,ok,21,ok
 NCOA2,hormone,98,4041,22.73,209,ok,21,hyphy_failed
 NCOA3,hormone,94,4233,15.4,78,ok,20,ok
 NCOR1,hormone,96,3702,24.47,1298,ok,21,ok
-OCA2,pigmentation,78,1770,39.14,518,ok,13,hyphy_failed
+OCA2,pigmentation,75,1668,38.96,553,ok,13,ok
 PAX3,pigmentation,99,1440,27.26,101,ok,21,hyphy_failed
 PMEL,pigmentation,94,1908,6.8,224,ok,21,ok
 POMC,pigmentation,42,795,3.57,152,ok,9,ok

@@ -10,7 +10,7 @@
   "n_tips": "71",
   "n_foreground": "17",
   "pct_gaps": "6.13",
-  "p_BH": 0.4611
+  "p_BH": 0.473
  },
  {
   "gene": "AKR1C2",
@@ -23,7 +23,7 @@
   "n_tips": "81",
   "n_foreground": "17",
   "pct_gaps": "5.86",
-  "p_BH": 0.9429
+  "p_BH": 0.9685
  },
  {
   "gene": "AKR1C3",
@@ -36,7 +36,7 @@
   "n_tips": "80",
   "n_foreground": "18",
   "pct_gaps": "5.97",
-  "p_BH": 0.2083
+  "p_BH": 0.2107
  },
  {
   "gene": "AKR1C4",
@@ -49,7 +49,7 @@
   "n_tips": "85",
   "n_foreground": "17",
   "pct_gaps": "5.3",
-  "p_BH": 0.0482
+  "p_BH": 0.0468
  },
  {
   "gene": "AKR1C8",
@@ -62,7 +62,20 @@
   "n_tips": "84",
   "n_foreground": "18",
   "pct_gaps": "4.65",
-  "p_BH": 0.0962
+  "p_BH": 0.0963
+ },
+ {
+  "gene": "AR",
+  "K": 1.003354895943308,
+  "p_value": 0.7924860215493882,
+  "LRT": 0.06921306428557727,
+  "n_seqs": 99,
+  "n_sites": 274,
+  "set": "hormone",
+  "n_tips": "99",
+  "n_foreground": "21",
+  "pct_gaps": "4.65",
+  "p_BH": 0.9284
  },
  {
   "gene": "ASIP",
@@ -88,7 +101,7 @@
   "n_tips": "83",
   "n_foreground": "15",
   "pct_gaps": "3.16",
-  "p_BH": 0.6388
+  "p_BH": 0.6587
  },
  {
   "gene": "CGA",
@@ -101,7 +114,7 @@
   "n_tips": "58",
   "n_foreground": "13",
   "pct_gaps": "7.56",
-  "p_BH": 0.0714
+  "p_BH": 0.0702
  },
  {
   "gene": "CYP11A1",
@@ -114,7 +127,7 @@
   "n_tips": "89",
   "n_foreground": "18",
   "pct_gaps": "7.06",
-  "p_BH": 0.9062
+  "p_BH": 0.9284
  },
  {
   "gene": "CYP11B1",
@@ -127,7 +140,7 @@
   "n_tips": "86",
   "n_foreground": "17",
   "pct_gaps": "30.01",
-  "p_BH": 0.0606
+  "p_BH": 0.0593
  },
  {
   "gene": "CYP11B2",
@@ -140,7 +153,7 @@
   "n_tips": "87",
   "n_foreground": "18",
   "pct_gaps": "29.19",
-  "p_BH": 0.861
+  "p_BH": 0.8927
  },
  {
   "gene": "CYP17A1",
@@ -153,7 +166,7 @@
   "n_tips": "64",
   "n_foreground": "14",
   "pct_gaps": "5.9",
-  "p_BH": 0.7348
+  "p_BH": 0.7599
  },
  {
   "gene": "CYP19A1",
@@ -166,7 +179,7 @@
   "n_tips": "89",
   "n_foreground": "18",
   "pct_gaps": "15.19",
-  "p_BH": 0.3278
+  "p_BH": 0.3344
  },
  {
   "gene": "CYP21A2",
@@ -179,7 +192,7 @@
   "n_tips": "72",
   "n_foreground": "14",
   "pct_gaps": "12.44",
-  "p_BH": 0.9429
+  "p_BH": 0.9685
  },
  {
   "gene": "CYP7B1",
@@ -192,7 +205,7 @@
   "n_tips": "89",
   "n_foreground": "18",
   "pct_gaps": "10.3",
-  "p_BH": 0.0122
+  "p_BH": 0.0123
  },
  {
   "gene": "DCT",
@@ -205,7 +218,7 @@
   "n_tips": "96",
   "n_foreground": "20",
   "pct_gaps": "21.52",
-  "p_BH": 0.5526
+  "p_BH": 0.569
  },
  {
   "gene": "EDN3",
@@ -218,7 +231,7 @@
   "n_tips": "83",
   "n_foreground": "18",
   "pct_gaps": "13.38",
-  "p_BH": 0.0007
+  "p_BH": 0.0006
  },
  {
   "gene": "EDNRB",
@@ -231,7 +244,7 @@
   "n_tips": "37",
   "n_foreground": "10",
   "pct_gaps": "13.95",
-  "p_BH": 0.0903
+  "p_BH": 0.09
  },
  {
   "gene": "ESR1",
@@ -244,7 +257,7 @@
   "n_tips": "98",
   "n_foreground": "21",
   "pct_gaps": "31.63",
-  "p_BH": 0.0726
+  "p_BH": 0.0718
  },
  {
   "gene": "ESR2",
@@ -257,7 +270,20 @@
   "n_tips": "97",
   "n_foreground": "21",
   "pct_gaps": "35.21",
-  "p_BH": 0.3112
+  "p_BH": 0.3167
+ },
+ {
+  "gene": "FKBP5",
+  "K": 0.6249640143827425,
+  "p_value": 9.4538047834547e-08,
+  "LRT": 28.48272898246796,
+  "n_seqs": 100,
+  "n_sites": 457,
+  "set": "hormone",
+  "n_tips": "100",
+  "n_foreground": "21",
+  "pct_gaps": "22.57",
+  "p_BH": 0.0
  },
  {
   "gene": "FOXD3",
@@ -283,7 +309,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "0.0",
-  "p_BH": 0.6592
+  "p_BH": 0.6808
  },
  {
   "gene": "FSHR",
@@ -296,7 +322,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "8.67",
-  "p_BH": 0.8159
+  "p_BH": 0.8454
  },
  {
   "gene": "GNA11",
@@ -309,7 +335,20 @@
   "n_tips": "86",
   "n_foreground": "21",
   "pct_gaps": "10.82",
-  "p_BH": 0.0122
+  "p_BH": 0.0123
+ },
+ {
+  "gene": "GNAQ",
+  "K": 1.000500457831885,
+  "p_value": 0.9867632121338604,
+  "LRT": 0.0002752484870143235,
+  "n_seqs": 75,
+  "n_sites": 359,
+  "set": "hormone",
+  "n_tips": "75",
+  "n_foreground": "13",
+  "pct_gaps": "10.59",
+  "p_BH": 1.0
  },
  {
   "gene": "GNRH1",
@@ -322,7 +361,7 @@
   "n_tips": "93",
   "n_foreground": "21",
   "pct_gaps": "0.75",
-  "p_BH": 0.7543
+  "p_BH": 0.7806
  },
  {
   "gene": "GNRH2",
@@ -335,7 +374,7 @@
   "n_tips": "79",
   "n_foreground": "16",
   "pct_gaps": "0.79",
-  "p_BH": 0.3628
+  "p_BH": 0.3706
  },
  {
   "gene": "GNRHR",
@@ -348,7 +387,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "11.48",
-  "p_BH": 0.4586
+  "p_BH": 0.4694
  },
  {
   "gene": "GPER1",
@@ -361,7 +400,7 @@
   "n_tips": "98",
   "n_foreground": "21",
   "pct_gaps": "0.07",
-  "p_BH": 0.9062
+  "p_BH": 0.9284
  },
  {
   "gene": "HERC2",
@@ -374,7 +413,7 @@
   "n_tips": "80",
   "n_foreground": "16",
   "pct_gaps": "44.03",
-  "p_BH": 0.298
+  "p_BH": 0.3028
  },
  {
   "gene": "HSD17B1",
@@ -400,7 +439,7 @@
   "n_tips": "100",
   "n_foreground": "20",
   "pct_gaps": "18.17",
-  "p_BH": 0.4454
+  "p_BH": 0.4555
  },
  {
   "gene": "HSD17B12",
@@ -439,7 +478,20 @@
   "n_tips": "96",
   "n_foreground": "21",
   "pct_gaps": "18.18",
-  "p_BH": 0.4905
+  "p_BH": 0.5042
+ },
+ {
+  "gene": "HSD17B6",
+  "K": 1,
+  "p_value": 1,
+  "LRT": -0.03198610189429019,
+  "n_seqs": 94,
+  "n_sites": 317,
+  "set": "hormone",
+  "n_tips": "94",
+  "n_foreground": "19",
+  "pct_gaps": "8.91",
+  "p_BH": 1.0
  },
  {
   "gene": "HSD17B7",
@@ -465,7 +517,7 @@
   "n_tips": "99",
   "n_foreground": "20",
   "pct_gaps": "0.06",
-  "p_BH": 0.0962
+  "p_BH": 0.0963
  },
  {
   "gene": "HSD3B1",
@@ -478,7 +530,7 @@
   "n_tips": "76",
   "n_foreground": "16",
   "pct_gaps": "10.47",
-  "p_BH": 0.9062
+  "p_BH": 0.9284
  },
  {
   "gene": "HSD3B2",
@@ -491,7 +543,7 @@
   "n_tips": "66",
   "n_foreground": "11",
   "pct_gaps": "14.58",
-  "p_BH": 0.7674
+  "p_BH": 0.7946
  },
  {
   "gene": "IRF4",
@@ -504,7 +556,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "3.43",
-  "p_BH": 0.298
+  "p_BH": 0.3028
  },
  {
   "gene": "KISS1",
@@ -517,7 +569,7 @@
   "n_tips": "69",
   "n_foreground": "19",
   "pct_gaps": "1.25",
-  "p_BH": 0.1379
+  "p_BH": 0.1387
  },
  {
   "gene": "KISS1R",
@@ -569,7 +621,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "10.1",
-  "p_BH": 0.6565
+  "p_BH": 0.6775
  },
  {
   "gene": "LHB",
@@ -582,7 +634,7 @@
   "n_tips": "66",
   "n_foreground": "11",
   "pct_gaps": "5.83",
-  "p_BH": 0.6953
+  "p_BH": 0.7186
  },
  {
   "gene": "LHCGR",
@@ -595,7 +647,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "5.16",
-  "p_BH": 0.8769
+  "p_BH": 0.9101
  },
  {
   "gene": "MC1R",
@@ -608,7 +660,7 @@
   "n_tips": "91",
   "n_foreground": "18",
   "pct_gaps": "0.01",
-  "p_BH": 0.1253
+  "p_BH": 0.1257
  },
  {
   "gene": "MFSD12",
@@ -634,7 +686,7 @@
   "n_tips": "93",
   "n_foreground": "17",
   "pct_gaps": "20.4",
-  "p_BH": 0.9336
+  "p_BH": 0.9571
  },
  {
   "gene": "MLANA",
@@ -647,7 +699,7 @@
   "n_tips": "101",
   "n_foreground": "21",
   "pct_gaps": "14.08",
-  "p_BH": 0.2136
+  "p_BH": 0.2164
  },
  {
   "gene": "MRAP2",
@@ -660,7 +712,7 @@
   "n_tips": "101",
   "n_foreground": "21",
   "pct_gaps": "5.22",
-  "p_BH": 0.4861
+  "p_BH": 0.4991
  },
  {
   "gene": "NCOA1",
@@ -673,7 +725,20 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "22.21",
-  "p_BH": 0.0387
+  "p_BH": 0.0374
+ },
+ {
+  "gene": "OCA2",
+  "K": 1.277889147664438,
+  "p_value": 0.003892073862616585,
+  "LRT": 8.333493547950638,
+  "n_seqs": 75,
+  "n_sites": 556,
+  "set": "pigmentation",
+  "n_tips": "75",
+  "n_foreground": "13",
+  "pct_gaps": "38.96",
+  "p_BH": 0.016
  },
  {
   "gene": "PMEL",
@@ -699,7 +764,7 @@
   "n_tips": "42",
   "n_foreground": "9",
   "pct_gaps": "3.57",
-  "p_BH": 0.2083
+  "p_BH": 0.2107
  },
  {
   "gene": "SCARB1",
@@ -725,7 +790,7 @@
   "n_tips": "54",
   "n_foreground": "13",
   "pct_gaps": "5.6",
-  "p_BH": 0.0898
+  "p_BH": 0.0892
  },
  {
   "gene": "SLC24A4",
@@ -738,7 +803,7 @@
   "n_tips": "97",
   "n_foreground": "21",
   "pct_gaps": "19.65",
-  "p_BH": 0.5625
+  "p_BH": 0.5796
  },
  {
   "gene": "SLC24A5",
@@ -751,7 +816,7 @@
   "n_tips": "101",
   "n_foreground": "21",
   "pct_gaps": "10.35",
-  "p_BH": 0.059
+  "p_BH": 0.0576
  },
  {
   "gene": "SLC45A2",
@@ -764,7 +829,7 @@
   "n_tips": "98",
   "n_foreground": "21",
   "pct_gaps": "27.19",
-  "p_BH": 0.0726
+  "p_BH": 0.0718
  },
  {
   "gene": "SOX10",
@@ -777,7 +842,7 @@
   "n_tips": "96",
   "n_foreground": "18",
   "pct_gaps": "8.65",
-  "p_BH": 0.8769
+  "p_BH": 0.9101
  },
  {
   "gene": "SRD5A1",
@@ -803,7 +868,7 @@
   "n_tips": "99",
   "n_foreground": "20",
   "pct_gaps": "3.25",
-  "p_BH": 0.9062
+  "p_BH": 0.9284
  },
  {
   "gene": "SRD5A3",
@@ -816,7 +881,7 @@
   "n_tips": "64",
   "n_foreground": "10",
   "pct_gaps": "11.67",
-  "p_BH": 0.4611
+  "p_BH": 0.473
  },
  {
   "gene": "STAR",
@@ -829,7 +894,7 @@
   "n_tips": "91",
   "n_foreground": "17",
   "pct_gaps": "4.83",
-  "p_BH": 0.5386
+  "p_BH": 0.554
  },
  {
   "gene": "STS",
@@ -842,7 +907,7 @@
   "n_tips": "99",
   "n_foreground": "20",
   "pct_gaps": "16.98",
-  "p_BH": 0.3278
+  "p_BH": 0.3344
  },
  {
   "gene": "SULT1E1",
@@ -855,7 +920,7 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "9.53",
-  "p_BH": 0.1605
+  "p_BH": 0.1617
  },
  {
   "gene": "TFAP2A",
@@ -868,7 +933,7 @@
   "n_tips": "96",
   "n_foreground": "21",
   "pct_gaps": "1.29",
-  "p_BH": 0.0291
+  "p_BH": 0.0279
  },
  {
   "gene": "TYR",
@@ -894,6 +959,6 @@
   "n_tips": "99",
   "n_foreground": "21",
   "pct_gaps": "10.77",
-  "p_BH": 0.9429
+  "p_BH": 0.9685
  }
 ]
