@@ -1418,3 +1418,60 @@ ancestral" holds at the deep genus-*Homo* timescale, not every locus.
 artifacts (flooring-verification / two-tier[superseded] / direction-law / disorder-architecture[flagship]). **Nothing
 in THIS repo was modified except this append-only note.** Framing stays up-in-the-air per 16:14Z; offered as a
 candidate that unifies the direction result with the evolutionary direction. Append-only; no prior entry rewritten.
+
+## 2026-07-12T12:36Z — GWAS Catalog widened, NB11 cross-ancestry conditionality + two-wave expansion, Martin 2017 KhoeSan extraction (documented retroactively as end-of-build bookkeeping)
+
+Three pieces of this session's build landed and were committed between 10:34Z and 12:36Z on 2026-07-12 but were
+not yet logged here; recorded now so the changelog matches the committed history.
+
+**GWAS Catalog pull widened** (`16bacb3`, `e5030c2`). The live refresh reproduces the same 1,072 lead SNPs and
+recovers two fields the earlier pull dropped: `REPORTED GENE(S)` kept alongside the positional `MAPPED_GENE`
+(320/1,072 rows diverge — a nearest-vs-causal signal for NB7's resolution step), and INITIAL vs REPLICATION
+ancestry/N kept as **separate** columns rather than merged (merging had hidden cross-ancestry replication). The
+widened pull surfaces 21 associations discovered in one ancestry and replicated in another (EUR→EAS, including
+SLC24A4/OCA2/HERC2/TSPAN10) — the catalog-level signal that feeds NB11. `scripts/gwas_catalog.py` updated; the
+superseded pre-widening archive snapshot was dropped from tracking in the same pair of commits.
+
+**NB11 — cross-ancestry population-conditional discoverability, Fst-graded** (`94194d5`, `52d6679`). Formalizes
+the project's population-conditionality thesis: pigmentation genes reported in different ancestries via
+different, population-private variants. 4 convergent genes / 7 variants (MFSD12, BNC2, SPIRE2, TSPAN10) —
+MFSD12's `rs2240751` is EAS 27%/AMR 17% but AFR 0.15%, while `rs10424065` is AFR 30% but EAS 0.1% (mirror-image
+signal via different variants in the same gene per ancestry). Hudson Fst computed per variant against a
+552-variant genome-wide 1000G baseline (mean 0.086, p95 0.241, consistent with Bhatia 2013 continental Fst
+~0.10–0.12); MFSD12's African-discovery variant sits at the 96th percentile. LD-independence of the MFSD12 and
+BNC2 mirror pairs confirmed empirically (Ensembl pairwise LD empty across superpopulations) — ruling out the
+"it's just LD" alternative. Honest framing: MFSD12 is a known effector, so this demonstrates cross-population
+**portability**, not novel discovery. All 1000G pulls frozen under `data/external/db_responses/nb11/`.
+
+**NB11 two-wave expansion** (`acddc8e`, `8319bc6`, `b1a23ba`, `9f7cb63`). Wave 1 systematized the mirror screen
+across the widened catalog: 28 pigmentation genes reported in ≥2 ancestries via distinct variants, with
+per-population 1000G frequencies pulled for 63 lead rsIDs. Mirror/Fst signal concentrates at canonical,
+already-known effectors (OCA2 Fst 0.69, SLC24A5 0.51, BNC2 0.43, MC1R) — these serve as positive controls
+validating the method; non-canonical candidates (JAZF1, GRM5, SIK1, DSTYK, PPARGC1B) are present but weaker.
+Wave 2 added Martin et al. 2017's KhoeSan cohort as a third population axis (San/West-African/North-European
+frequencies; SLC45A2 `rs16891982` EUR 0.98 / San 0.14 / West-African 0.00). Both waves were folded into
+`notebooks/11_cross_ancestry_conditionality.ipynb` (re-executed clean, 13/13 cells) with an honest conclusion:
+this quantifies real, population-conditional discoverability of **known** genes — a third "the analytical choice
+changes the answer" axis alongside NB5's source-choice finding and NB9's seeding-choice finding, not a novel-gene
+discovery claim.
+
+**Martin 2017 KhoeSan extraction** (`8319bc6`). Claim-faithful extraction of 51 loci from Martin et al. 2017
+(*Cell*, DOI 10.1016/j.cell.2017.11.015) via `docs/specs/EXTRACT_Martin2017_loci.spec.md` →
+`data/processed/EXTRACT_Martin2017_loci.csv`. Only 4 loci are genome-wide significant (p<5e-8); 6 are suggestive;
+2 of the 4 GWS hits are author-declared likely spurious (a tanning-phase-2 artifact); 34 loci are canonical and
+excluded from the novelty question. Of the 16 non-canonical candidates, all are `not_significant`/`suggestive`
+and `nearest_gene_only` (none `regulatory_demonstrated`) — only SNX13 is a Martin-reported novel discovery, and
+only at suggestive significance. This confirms the paper's own thesis (African pigmentation is highly polygenic
+and poorly explained by known genes) rather than surfacing a confident new effector; completeness and honest-gaps
+ledgers (`martin2017_COMPLETENESS_LEDGER.csv`, `martin2017_HONEST_GAPS.csv`) are included alongside the
+non-canonical subset (`martin2017_noncanonical_loci.csv`). This discharges the `TODO.md` "Deferred" item logging
+the Martin pull as a later population pass — it landed in this pass instead, as NB11's third axis. Feeds NB11;
+does not upgrade any non-canonical locus to a confident hit.
+
+**Also committed same session, already covered by the 16:14Z framing-softening entry above:** `internal/DEMO_direction_law.md`
+(`41c6601`, one-page presentation script for the direction-law result, fallback flagship pending the
+primate-phylogenetics evaluation).
+
+**Compliance:** all of the above are new processed CSVs/notebook cells routed through the Tier-2 compliance gate
+per commit; no withheld raw paper PDF was committed (Martin2017 source PDFs remain gitignored per
+`docs/specs/EXTRACT_Martin2017_loci.spec.md`'s withholding statement). Append-only; no prior entry rewritten.

@@ -1,6 +1,6 @@
 # Project dashboard — pigmentation gene-network build
 
-**Status: TENTATIVE (first version created 2026-07-12T01:41Z).** Snapshot / control surface for the project. This
+**Status: MAINTAINED (first version created 2026-07-12T01:41Z; last reconciled 2026-07-12T~16:48Z).** Snapshot / control surface for the project. This
 is one of the three tracking documents described in `START_HERE.md`; it is **not** a plan and **not** a
 history. It gives a one-screen orientation and then **points at** the living documents — it does not copy
 them.
@@ -26,24 +26,37 @@ them.
 | Approved plan | Claude Science artifact `083f9097-0134-4490-abe9-33ad4ed7c9da` (version `d135912f-6112-48f4-95c1-545c46cabfba`), `plan_convergence-graded-rescue-screen-as-self_8a368b7b.json` | The exact phase/step text for the NB4–NB8 build. Read the artifact directly. |
 | Provenance manifest | `DATA_SOURCES.md` (repo root) | Per-source licensing, query provenance, and redistribution policy. |
 
-## Where the project is now (as of 2026-07-12T17:00Z)
+## Where the project is now (as of 2026-07-12T~16:48Z, corrected during end-of-build bookkeeping)
 
 - **Execution route settled and PI-approved:** the convergence-graded rescue screen, built as notebooks
-  **NB4–NB8** (unified association base → compare candidate networks → harmonized multi-layer substrate →
-  resolution + convergence-graded rescue screen → optional population conditionality). Six decisions behind
-  it are in `CHANGELOG.md` 2026-07-12T00:29Z; phase tracking is in `TODO.md`.
+  **NB4–NB9** (unified association base → compare candidate networks → harmonized multi-layer substrate →
+  resolution/rescue-screen diagnostic → optional population conditionality → Bajpai orphan reconciliation).
+  Six decisions behind it are in `CHANGELOG.md` 2026-07-12T00:29Z; phase tracking is in `TODO.md`.
 - **Foundation (NB1–NB3) is stable and committed.** The Raghunath network reconstruction (NB1), its
   gene-resolution + OmniPath validation (NB2), and the curated discordance-case assembly (NB3) are the
   confident base the rescue screen builds on. **NB2 reproducibility was restored and committed** (`95f1969`,
   see `CHANGELOG.md` 2026-07-12T01:16Z) — a fresh clone can now re-run NB2 offline.
-- **NB4–NB5 are in progress in a concurrent session.** Their outputs (`nb5_*.csv`,
-  `discordance_loci_author_explained.csv`, the `darcy2023_S*.csv` extracts) are **on disk but not yet
-  committed** — see the inventory. Their counts are deliberately not pinned here until the notebooks and
-  outputs are committed and stable.
-- **⚠️ FLAGSHIP FRAMING IS UP IN THE AIR (2026-07-12T17:00Z).** No flagship is locked. The leading
-  *demonstration* candidate is the direction result (NB10+NB12); a **primate-phylogenetics** evolutionary
-  direction is under parallel exploration by the PI and may become the flagship instead. Do not treat any single
-  thread as the settled headline.
+- **CORRECTED (this bookkeeping pass): NB4–NB9 are BUILT AND COMMITTED, not in-progress.** The prior version
+  of this section said NB4–NB5 were "in progress in a concurrent session, on disk but not yet committed" —
+  that was accurate only through ~2026-07-12T01:09Z. All six notebooks (`04_unified_association_base` through
+  `09_bajpai_reconciliation.ipynb`) and their processed outputs (`nb4_*` through `nb9_*.csv`,
+  `discordance_loci_author_explained.csv`, `darcy2023_S*.csv`) are committed on `main` (commits `04e1b26`
+  through `bbb8899`, 2026-07-12T01:09Z–03:02Z). `TODO.md`'s tracked-work table still shows these phases
+  `⬜ not started` — that table is now stale and is flagged there for the next session to correct; this
+  dashboard's prose is corrected here. Counts remain unpinned in the Key-metrics table below pending a
+  dedicated numbers-reconciliation pass (see "How to keep this current," step 2).
+- **NEW since the last dashboard update: two further tracks landed and committed (2026-07-12T10:34Z–12:36Z).**
+  (1) The GWAS Catalog pull was widened (`REPORTED GENE(S)` + split initial/replication ancestry, `16bacb3`).
+  (2) **NB11 — cross-ancestry population-conditional discoverability (Fst-graded)** —
+  `notebooks/11_cross_ancestry_conditionality.ipynb` — quantifies 4 convergent genes (MFSD12, BNC2, SPIRE2,
+  TSPAN10) discovered via population-private variants, plus a two-wave expansion (28-gene systematic screen;
+  Martin et al. 2017 KhoeSan as a third population axis, 51 loci extracted, `EXTRACT_Martin2017_loci.csv`).
+  This discharges the `TODO.md` "Deferred" item on the Martin pull. Detail in `CHANGELOG.md` 2026-07-12T12:36Z;
+  status tracker in `TODO.md`'s new "Cross-ancestry / population-conditionality track (NB11, DONE)" section.
+- **⚠️ FLAGSHIP FRAMING IS STILL UP IN THE AIR.** No flagship is locked. Three candidate threads are now live:
+  the direction result (NB10+NB12, leading *demonstration* candidate), the cross-ancestry portability result
+  (NB11, new), and a **primate-phylogenetics** evolutionary direction under parallel exploration by the PI. Do
+  not treat any single thread as the settled headline.
 - **NB10 + NB12 (mechanism→direction result) — leading demonstration candidate, framing softened
   (2026-07-12T17:00Z).** A positive melanin regulator mutated by a loss-of-function allele tends toward
   hypopigmentation — 22/22 network-called recessive/X-linked genes; a pre-registered expansion (NB12) adds a
@@ -64,15 +77,22 @@ them.
   candidate. Not yet described on disk here; left untouched by this session to avoid conflicting with in-flight
   work.
 - **Shelved:** the GWAS common-variant axis (5/35 clean genes; see the 2026-07-12 specialist review).
-- **Dashboard status: tentative.** This is the first version; the phase-status detail lives in `TODO.md`,
-  which is the authority. As NB4–NB10 outputs are committed, promote them from the "in-flight" inventory
-  group to the Key-metrics table.
+- **Dashboard status: maintained** (no longer first-version tentative). The phase-status detail lives in
+  `TODO.md`, which is the authority. NB4–NB12 outputs are now committed and moved into the committed
+  inventory groups below; their counts still await a dedicated numbers-reconciliation pass into the
+  Key-metrics table (see that table's note).
 
 ## Key metrics — committed foundation ONLY
 
 Load-bearing counts for the **stable, committed** NB1–NB3 outputs. Each row cites the pinned file and
-reconciles against it mechanically (`pigmentation-plan-sync` → `check_plan_sync()`). In-flight NB4/NB5
-numbers are **intentionally excluded** — pinning a volatile number is what caused previous plans to drift.
+reconciles against it mechanically (`pigmentation-plan-sync` → `check_plan_sync()`). NB4–NB12 outputs are now
+committed (see the file inventory below) but their counts are **still intentionally excluded from this table**
+pending a dedicated numbers-reconciliation pass — pinning a number before it has been read off the actual
+committed file (not retyped from a changelog prose mention) is what caused previous plans to drift. The
+`check_plan_sync()` run behind this bookkeeping pass reports 0 `DRIFT`/`missing_file` against the 7 rows below
+and 18 `orphan_file` soft warnings — down from 40 before this pass's inventory update, now limited to
+pre-existing effector-classification/resolution files and older `EXTRACT_*_v2.csv` case records that predate
+this session and are out of its scope; the NB4–NB12/Martin/NB11 stems are now named in the file inventory.
 
 | Metric | Count | Source file | Notebook |
 |---|---|---|---|
@@ -94,7 +114,9 @@ Naming every processed-CSV stem here also keeps the plan-sync checker's orphan s
 - `02_resolve_network_to_genes.ipynb` — NB2, gene resolution + OmniPath validation (foundational; reproducibility restored).
 - `03_assemble_validation_cases.ipynb` — NB3, curated discordance-case assembly.
 - `01a_extract_bajpai_crispr.ipynb`, `01b_extract_baxter_genes.ipynb`, `01c_extract_hirisplex_markers.ipynb`, `01d_reproduce_gwas_catalog.ipynb` — supporting extractors (older standalone pattern; consolidation is a `TODO.md` backlog item).
-- NB4–NB8 notebook files do **not exist yet**; the concurrent session is producing their outputs first.
+- `04_unified_association_base.ipynb`, `05_compare_candidate_networks.ipynb`, `06_gene_regulatory_network.ipynb`, `07_harmonized_substrate.ipynb`, `08_rescue_screen_diagnostic.ipynb`, `09_bajpai_reconciliation.ipynb` — **NB4–NB9, BUILT AND COMMITTED** (`04e1b26`…`bbb8899`, 2026-07-12T01:09Z–03:02Z; corrected in this bookkeeping pass — see "Where the project is now"). The batched specialist review pass (DATA_SOURCE_AUDITOR/REPRODUCIBILITY_SPECIALIST/SCICOMM_REVIEWER/VISUAL_DATA_REVIEWER, plan step 5b) has not yet run.
+- `10_mechanism_direction_law.ipynb`, `12_direction_law_expanded.ipynb` — NB10/NB12, mechanism→direction law + pre-registered expansion (independent session; committed `20768ac`).
+- `11_cross_ancestry_conditionality.ipynb` (+ `11_cross_ancestry_conditionality_README.md`) — NB11, cross-ancestry population-conditional discoverability + two-wave expansion (independent session; committed `52d6679`…`9f7cb63`; new this bookkeeping pass).
 
 **Committed processed foundation (`data/processed/`, tracked)** — pinned above where load-bearing:
 - `raghunath_nodes_typed.csv`, `raghunath_edges_typed_signed.csv` — NB1 raw typed/signed network.
@@ -105,19 +127,37 @@ Naming every processed-CSV stem here also keeps the plan-sync checker's orphan s
 - `discordance_loci.csv`, `discordance_case_classification.csv` — NB3 curated cases.
 - `bajpai2023_crispr_hits.csv`, `baxter2018_650_pigmentation_genes.csv`, `hirisplexs2018_markers.csv` — extractor outputs (01a–01c).
 
-**In-flight, UNCOMMITTED (`data/processed/`, on disk in a concurrent NB4/NB5 session — do not pin counts, do not commit from here):**
-- `discordance_loci_author_explained.csv` — NB4 author-explanation-status extension of the discordance loci.
-- `darcy2023_S1_disease_genes.csv`, `darcy2023_S2_sysgo_annotation.csv`, `darcy2023_S4_string_edges.csv`, `darcy2023_S5_string_nodes.csv`, `darcy2023_S6_massspec_expression.csv` — NB5 D'Arcy 2023 supplement extracts.
-- `nb5_gene_set_membership.csv` (now includes the Bajpai 2023 node layer — flag/weight/sign + 142 orphan-hit rows, per PI sign-off `internal/bajpai_network_integration_brief.md`), `nb5_raghunath_string_edge_coverage.csv`, `nb5_string_drift_darcy_vs_ourpull.csv`, `nb5_darcy_only_phenotype_overlay.csv`, `nb5_bajpai_network_enrichment.csv`, `nb5_bajpai_bipartite_melanin_endpoint.csv` (labeled, non-topology layer), `nb5_networks_typology.csv` — NB5 candidate-network comparison outputs.
+**NB4–NB9 outputs (`data/processed/`, tracked and committed — corrected from "in-flight" in this bookkeeping pass; counts not yet promoted to the Key-metrics table above, pending a dedicated numbers-reconciliation pass):**
+- `nb4_unified_association_base.csv`, `discordance_loci_author_explained.csv` — NB4 unified base + author-explanation-status extension.
+- `darcy2023_S1_disease_genes.csv`, `darcy2023_S2_sysgo_annotation.csv`, `darcy2023_S4_string_edges.csv`, `darcy2023_S5_string_nodes.csv`, `darcy2023_S6_massspec_expression.csv`, `nb5_gene_set_membership.csv`, `nb5_raghunath_string_edge_coverage.csv`, `nb5_string_drift_darcy_vs_ourpull.csv`, `nb5_darcy_only_phenotype_overlay.csv`, `nb5_bajpai_network_enrichment.csv`, `nb5_bajpai_bipartite_melanin_endpoint.csv`, `nb5_networks_typology.csv`, `nb5_reactome_only_connection_set.csv` — NB5 candidate-network comparison outputs.
+- `nb6_grn_edges.csv` — NB6 curated-regulon GRN.
+- `nb7_substrate_nodes.csv`, `nb7_substrate_edges.csv`, `nb7_string_token_resolution.csv` — NB7 harmonized substrate.
+- `nb8_diagnostic_18.csv` — NB8 diagnostic rescue test.
+- `nb9_orphan_reconciliation.csv` — NB9 Bajpai orphan reconciliation.
 
-**Frozen DB responses (`data/external/db_responses/`, tracked)** — NB2 offline inputs (restored in `95f1969`):
+**NB10–NB12 outputs (`data/processed/`, tracked and committed):**
+- `nb10_direction_law_annotation.csv`, `nb10_direction_law_summary.csv` — NB10 direction-law calls + summary.
+- `nb12_direction_law_expanded.csv`, `nb12_expanded_summary.csv` — NB12 pre-registered expansion.
+
+**NB11 + Martin outputs (`data/processed/`, tracked and committed — NEW this bookkeeping pass):**
+- `cross_ancestry_freq_matrix.csv` — 1000G per-population allele frequencies for the cross-paper convergent genes.
+- `nb11_cross_ancestry_fst.csv` — Hudson Fst per convergent variant vs the genome-wide baseline.
+- `nb11_multiancestry_screen_candidates.csv`, `nb11_screen_candidates.csv`, `nb11_screen_mirror_results.csv` — Wave-1 systematic mirror screen (28 genes).
+- `nb11_martin_khoesan_freqs.csv` — Wave-2 KhoeSan third-axis frequencies.
+- `EXTRACT_Martin2017_loci.csv`, `martin2017_COMPLETENESS_LEDGER.csv`, `martin2017_HONEST_GAPS.csv`, `martin2017_noncanonical_loci.csv` — Martin 2017 KhoeSan extraction (51 loci; spec `docs/specs/EXTRACT_Martin2017_loci.spec.md`).
+
+**Also present in `data/processed/` (13 curated-paper `EXTRACT_*_v2.csv` case records, e.g. `EXTRACT_Crawford2017_loci_v2.csv`, `EXTRACT_Kim2024_loci_v2.csv`)** — tracked; predate this session, see `DATA_SOURCES.md` for per-source provenance.
+
+**Frozen DB responses (`data/external/db_responses/`, tracked)** — NB2 offline inputs (restored in `95f1969`); NB11 adds `data/external/db_responses/nb11/` (1000G pulls) and `data/external/db_responses/nb11_screen/` (screen-wave pulls):
 - `uniprot_annotation_direct.json` (+ `.meta.json`), `hgnc_gene_groups.json`, `pomc_cleavage_refs.json`, `omnipath_internal.json` (+ `omnipath.meta.json`), `kegg_hsa04916.json`.
 
-**Figures (`notebooks/figures/`, tracked):** `step2_annotation_types.png`, `step4_gene_layer_edges.png`, `step5_network_overview.png`, `step5_centrality.png`, `step6_validation_verdict.png` — NB2 figures, now generated by NB2 cells 8/15/20/22/27 (generating code restored 2026-07-12T01:44Z; regenerated PNGs pending commit).
+**GWAS Catalog (`data/external/gwas_catalog/`, tracked):** `pigmentation_gwas_catalog.csv` (+ `.meta.json`) — widened 2026-07-12T10:34Z (`REPORTED GENE(S)` + split initial/replication ancestry, `16bacb3`); `gwas_pigmentation_associations.csv` — gene-level replication source. **Untracked on disk:** `versions/pigmentation_gwas_catalog_refresh_20260712_20260712T144518Z.csv` (a timestamped archive snapshot from the widening refresh) — disposition (commit vs. scratch) is for the owning session.
 
-**Internal governance (`internal/`):** `START_HERE.md`, `CHANGELOG.md`, `TODO.md`, `PROJECT_EVOLUTION.md`, `TRACEABILITY_coverage_and_resolution_logic.md` (tracked); this `project_dashboard.md` (tentative, being committed); `archive/`, `untracked/` (gitignored); `handoffs/` (agent coordination).
+**Figures (`notebooks/figures/`, tracked):** `step2_annotation_types.png`, `step4_gene_layer_edges.png`, `step5_network_overview.png`, `step5_centrality.png`, `step6_validation_verdict.png` — NB2 figures, now generated by NB2 cells 8/15/20/22/27 (generating code restored 2026-07-12T01:44Z; regenerated PNGs pending commit). Also tracked: `nb10_direction_law.png`, `nb10_validity_audit.png`, `nb12_direction_law_expanded.png` (NB10/NB12), `nb11_cross_ancestry.png`, `nb11_expansion_wave1_screen.png` (NB11), `cross_ancestry_conditionality.png` (population-conditionality figure), plus NB4–NB9 figures under the same directory.
 
-**Raw inputs (`data/raw/`, `data/case_records/`):** source papers/supplements and the 13 `EXTRACT_*.csv` case records — see `DATA_SOURCES.md` for provenance and licensing per source.
+**Internal governance (`internal/`):** `START_HERE.md`, `CHANGELOG.md`, `TODO.md`, `PROJECT_EVOLUTION.md`, `TRACEABILITY_coverage_and_resolution_logic.md`, `FINDINGS_MEMO.md`, `DEMO_direction_law.md`, `PITCH.md` (tracked); this `project_dashboard.md` (tracked, maintained); `deconvolutor/` (tracked, plan-critique reports); `archive/`, `untracked/` (gitignored); `handoffs/` (agent coordination).
+
+**Raw inputs (`data/raw/`, `data/case_records/`):** source papers/supplements and the 13 `EXTRACT_*.csv` case records, plus the Martin 2017 KhoeSan source papers (gitignored per the spec's withholding statement) — see `DATA_SOURCES.md` for provenance and licensing per source.
 
 ## How to keep this current (the anti-drift contract)
 
@@ -127,9 +167,9 @@ following in the SAME turn as the change, then re-save this file as a new versio
 1. **A committed foundation CSV changes** → run `check_plan_sync(repo_root=...)` from the
    `pigmentation-plan-sync` skill; fix every `DRIFT`/`missing_file`; copy new numbers from
    `compute_canonical_facts()`, never retype them.
-2. **An NB4–NB8 output is committed and stabilizes** → move it from the "in-flight" inventory group to the
-   Key-metrics table (if load-bearing) or the committed inventory, and add its stem so the orphan scan stays
-   clean.
+2. **An NB4–NB12 output's numbers are ready to pin** → add a Key-metrics row (if load-bearing), copying the
+   count from `compute_canonical_facts()`, never retyping it from changelog prose; the file inventory groups
+   already list every current committed stem, so the orphan scan should shrink toward 0 as rows are added.
 3. **Scope/route changes** → update the "Where the project is now" prose to match the latest `CHANGELOG.md`
    entry; do not restate phase status here (that is `TODO.md`'s job) — point to it.
 4. **Never** duplicate the changelog's history or the TODO's open-work list here. A second copy is a second

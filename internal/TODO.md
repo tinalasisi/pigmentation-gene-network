@@ -58,7 +58,7 @@ Dependency order — each phase consumes the prior phase's frozen output; do not
 | 2 | **NB5** — compare candidate networks before merging (D'Arcy + consistent-STRING extractor modules, then node/edge-level comparison of Raghunath 168 / D'Arcy 243 / KEGG ~101 / confirmed Reactome as peer gene sets) | ⬜ not started | NB4 | Confirm the Reactome melanogenesis accession live via `mcp-genes-ontologies` first (audit flagged R-HSA-5662702 as web-search-sourced, unconfirmed); re-derive the 465/230/118 D'Arcy-vs-Raghunath counts under an explicit harmonization rule |
 | 3 | **NB6** — harmonized multi-layer substrate (T0 Raghunath / T1 KEGG+Reactome / T2 D'Arcy annotation / T2b OmniPath validation / T3 STRING, tiered per Decision 4) | ⬜ not started | NB5 (frozen outputs) | Every node/edge carries `supporting_layers` (+ `layer_evidence_type` on edges); STRING never coerced into sign/direction; citation-completeness gate is release-blocking; backbone edits staged as a PI-gated proposal |
 | 4 | **NB7** — resolution and convergence-graded rescue screen (causal-gene resolution per locus via L2G/eQTL/LD, then rescue test + convergence grade + one confirming experiment per rescued locus) | ⬜ not started | NB6 | Filter to `author_explanation_status` in {stated_unknown, nearest_gene_only}; classify mechanistic / mediating-via-layer / LD-rescue / likely-population-specific / unexplained-and-unrescued; report the honest count, do not force a headline |
-| 5a | **NB8 (optional)** — population-conditionality section (SLC24A5 gene-flow, TYRP1/Oceania, OCA2/E-Asia, MFSD12/Africa; compensating loci + gating modifiers as testable hypotheses) | ⬜ not started | NB7 | Optional per the approved plan; deterministic computation kept separate from any LLM per-item synthesis. **PI design note (2026-07-12, captured mid-build):** for every node/edge carried in the harmonized substrate, attach the lead variant's ALLELE FREQUENCY across populations (gnomAD / 1000G superpopulations AFR/EUR/EAS/SAS/AMR) so the population axis can ask *which layers of the network shift in frequency across ancestries* — a network-layer view of population differentiation, not a one-locus-at-a-time view. Frequencies pulled per the frozen-db-notebook pattern (mcp-variants/mcp-human-genetics), snapshot committed in-repo. Consider a per-layer differentiation summary (e.g. mean |ΔAF| or Fst-like contrast per tier T0–T3). |
+| 5a | **NB8 (optional)** — population-conditionality section (SLC24A5 gene-flow, TYRP1/Oceania, OCA2/E-Asia, MFSD12/Africa; compensating loci + gating modifiers as testable hypotheses) | ⬜ not started | NB7 | Optional per the approved plan; deterministic computation kept separate from any LLM per-item synthesis. **PI design note (2026-07-12, captured mid-build):** for every node/edge carried in the harmonized substrate, attach the lead variant's ALLELE FREQUENCY across populations (gnomAD / 1000G superpopulations AFR/EUR/EAS/SAS/AMR) so the population axis can ask *which layers of the network shift in frequency across ancestries* — a network-layer view of population differentiation, not a one-locus-at-a-time view. Frequencies pulled per the frozen-db-notebook pattern (mcp-variants/mcp-human-genetics), snapshot committed in-repo. Consider a per-layer differentiation summary (e.g. mean |ΔAF| or Fst-like contrast per tier T0–T3). **Note (2026-07-12T12:36Z):** the population-conditionality QUESTION this step targets is now separately answered, DONE, by the standalone NB11 track below — a simpler locus-level route (Fst-graded mirror-variant screen) rather than this row's substrate-wide per-edge allele-frequency design. This row's substrate-integrated version remains ⬜ not started and depends on NB6/NB7 as written; NB11 does not discharge it, but may make it lower-priority — a scope call for the PI, not decided here.** |
 | 5b | **Review + compliance-gated commit** — route NB4–NB8 through DATA_SOURCE_AUDITOR, REPRODUCIBILITY_SPECIALIST (verify every frozen snapshot each notebook reads is committed — the NB2 lesson), SCICOMM_REVIEWER, VISUAL_DATA_REVIEWER; fold in fixes; run the tiered pre-commit compliance gate (Tier 2 — new data + notebooks) via `REPO_COMPLIANCE_GATE` before any commit | ⬜ not started | 1–5a complete | No commit happens outside this gate |
 
 ---
@@ -172,13 +172,39 @@ Reactome-discovery + L2G/eQTL/LD). Verdicts and the CONDITIONS that must be writ
 
 ## Deferred — not in this build pass
 
-- **Martin et al. population GWAS pull (South Africans).** Named explicitly in the approved plan's NB8 step
-  as deferred to a **later population pass** — not built in this pass. Revisit only after NB8 (if built) or
-  in a dedicated follow-up.
+- ✅ **Martin et al. population GWAS pull (South Africans) — DONE, 2026-07-12T12:21Z (`8319bc6`).** Named in
+  the approved plan's NB8 step as deferred to a later population pass; landed in this pass instead, as NB11's
+  third population axis. 51 loci extracted (`data/processed/EXTRACT_Martin2017_loci.csv`); only 4
+  genome-wide-significant, 6 suggestive, 34 canonical excluded; of 16 non-canonical candidates only SNX13 is a
+  Martin-reported novel discovery (suggestive only) — confirms the paper's own polygenic-and-poorly-explained
+  thesis rather than surfacing a confident new effector. Detail in `CHANGELOG.md` 2026-07-12T12:36Z.
 - **Consolidate the standalone extractors `notebooks/01a`–`01d`** (Bajpai CRISPR, Baxter genes, HIrisPlex
   markers, GWAS-Catalog reproduction) into their consuming mini-manuscripts, per the new flat-spine /
   no-dangling-extractor convention (Decision 6). These are the *older* pattern the convention corrects
   going forward — out of scope for the NB4–NB8 build; log as backlog only.
+
+---
+
+## Cross-ancestry / population-conditionality track (NB11, DONE — added 2026-07-12, independent session)
+
+- ✅ **NB11 built, executed, expanded — cross-ancestry population-conditional discoverability (Fst-graded).**
+  `notebooks/11_cross_ancestry_conditionality.ipynb`. Core result: 4 convergent genes / 7 variants (MFSD12, BNC2,
+  SPIRE2, TSPAN10) reported in different ancestries via different, population-private lead variants; Hudson Fst
+  per variant vs a 552-variant genome-wide 1000G baseline; LD-independence of the MFSD12/BNC2 mirror pairs
+  confirmed empirically. Honest framing: these are known effectors, so the result is cross-population
+  **portability**, quantified — not a novel-gene discovery. Detail in `CHANGELOG.md` 2026-07-12T12:36Z.
+- ✅ **Wave 1 — systematic mirror screen on the widened GWAS Catalog pull.** 28 multi-ancestry genes screened;
+  signal concentrates at canonical effectors (OCA2 Fst 0.69, SLC24A5 0.51, BNC2 0.43, MC1R) as positive
+  controls; non-canonical candidates (JAZF1, GRM5, SIK1, DSTYK, PPARGC1B) present but weaker.
+- ✅ **Wave 2 — Martin et al. 2017 KhoeSan cohort as a third population axis.** 51 loci extracted (see the
+  Martin item above); San/West-African/North-European frequencies added; only 4 loci genome-wide-significant,
+  confirming the paper's own polygenic thesis rather than adding a confident new effector.
+- ✅ **Both waves folded into the notebook** (re-executed clean, 13/13 cells) with a single honest conclusion:
+  real, quantified population-conditional discoverability of known genes — a third "the analytical choice
+  changes the answer" axis alongside NB5 (source choice) and NB9 (seeding choice).
+- ⬜ **Not yet done:** promotion into `PITCH.md`/`project_dashboard.md` as a candidate flagship thread (framing
+  is up-in-the-air per the 16:14Z entry — this is a PI/next-session scope call, not decided here); reconciling
+  this track's relationship to plan row 5a (NB8 population-conditionality, substrate-integrated design) above.
 
 ---
 
@@ -204,10 +230,37 @@ Reactome-discovery + L2G/eQTL/LD). Verdicts and the CONDITIONS that must be writ
 
 ## Needs PI discussion — not authorized
 
-- **`internal/project_dashboard.md` is absent from disk.** Archived out in the 2026-07-11T22:51Z restart and
-  not yet re-created. It should exist before NB4 produces its first processed output (so `pigmentation-plan-sync`
-  has a Key-metrics table to reconcile against), but re-creating it is a scope decision, not a bookkeeping
-  one — flagging for the PI/next session rather than doing it here.
+- ✅ **STALE NOTE CORRECTED (2026-07-12T~16:48Z bookkeeping pass):** `internal/project_dashboard.md` is no
+  longer absent from disk — it was (re)created 2026-07-12T01:41Z (tentative status) and has been maintained
+  since (see `CHANGELOG.md` 2026-07-12T01:44Z and the dashboard's own "Where the project is now" section, most
+  recently stamped 2026-07-12T17:00Z). The line below is kept as a dated record of a decision that is now
+  resolved, not as an open item.
+  ~~`internal/project_dashboard.md` is absent from disk. Archived out in the 2026-07-11T22:51Z restart and not
+  yet re-created.~~
+
+---
+
+## What remains (bookkeeping snapshot, 2026-07-12T~16:48Z)
+
+- 🔄 **Batched specialist reviews in progress.** The NB4–NB8 "5b" review pass (DATA_SOURCE_AUDITOR,
+  REPRODUCIBILITY_SPECIALIST, SCICOMM_REVIEWER, VISUAL_DATA_REVIEWER) has not started — NB4–NB8 themselves are
+  still ⬜ not started per the tracked-work table above. Separately, the NB10/NB12 direction-law track has
+  already been through one validity-audit review cycle (`internal/deconvolutor/`); a further review of the
+  now-committed NB11 cross-ancestry track has not yet run.
+- 🔄 **Push pending.** The local `main` branch is 6 commits ahead of `origin/main` as of this bookkeeping pass
+  (Martin extraction `8319bc6`, NB10/NB12 direction law `20768ac`, governance softening `44c74f8`, demo script
+  `41c6601`, NB11 wave-fold `b1a23ba`, Fst-table refresh `9f7cb63`). GWAS-widening, population-conditionality,
+  and the NB11 Fst/screen commits are already on `origin/main`. Push is a Tier-2 compliance-gate action per the
+  `precommit-compliance-gate` skill — not run in this bookkeeping session (docs-only scope).
+- ⬜ **Untracked working files on disk, not yet committed:** `build_nb10.py` (concurrent session's file — out
+  of this session's scope per task instructions) and
+  `data/external/gwas_catalog/versions/pigmentation_gwas_catalog_refresh_20260712_20260712T144518Z.csv` (a
+  timestamped archive snapshot from the GWAS widening; disposition — commit vs. leave as scratch — is for the
+  owning session, not decided here).
+- ⬜ **Framing decisions still open for the PI:** which of the three candidate threads (rescue screen NB4–NB9,
+  direction-law NB10/NB12, cross-ancestry NB11, plus the parallel primate-phylogenetics evolutionary direction)
+  becomes the flagship. See `START_HERE.md`'s "current candidate directions" note and `project_dashboard.md`'s
+  "Where the project is now" section.
 
 ---
 
