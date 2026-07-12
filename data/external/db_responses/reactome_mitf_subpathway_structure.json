@@ -1,0 +1,2013 @@
+{
+  "query_utc": "2026-07-12T02:04:35.896602+00:00",
+  "purpose": "PI direction: use the broadened Reactome layer as a DISCOVERY / RESCUE-CONNECTION substrate for NB7, not as a redundant co-equal of KEGG. This snapshot preserves REACTION and SUB-PATHWAY structure (not just a flat gene list) so a downstream notebook can cite the specific reaction or sub-pathway a rescued locus connects through.",
+  "hierarchy": {
+    "root": {
+      "stId": "R-HSA-9730414",
+      "displayName": "MITF-M-regulated melanocyte development"
+    },
+    "level2_children": [
+      {
+        "stId": "R-HSA-9824585",
+        "displayName": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      },
+      {
+        "stId": "R-HSA-9825892",
+        "displayName": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "stId": "R-HSA-9824594",
+        "displayName": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      },
+      {
+        "stId": "R-HSA-9854907",
+        "displayName": "Regulation of MITF-M dependent genes involved in metabolism"
+      },
+      {
+        "stId": "R-HSA-9854909",
+        "displayName": "Regulation of MITF-M dependent genes involved in invasion"
+      },
+      {
+        "stId": "R-HSA-9825895",
+        "displayName": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      },
+      {
+        "stId": "R-HSA-9857377",
+        "displayName": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      },
+      {
+        "stId": "R-HSA-9926550",
+        "displayName": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      },
+      {
+        "stId": "R-HSA-9856649",
+        "displayName": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "level3_children_of_pigmentation_subpathway": [
+      {
+        "stId": "R-HSA-9855910",
+        "displayName": "USF1 is phosphorylated by p-MAPK14",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9855908",
+        "displayName": "p-T153 USF1 dimer binds the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9907144",
+        "displayName": "MITF-M dimer and TFAP2A bind intronic elements in the IRF4 gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9907147",
+        "displayName": "MITF-M-dependent IRF4 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9907145",
+        "displayName": "IRF4 binds the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825848",
+        "displayName": "MITF-M dimer, SOX10, pS133 CREB1 and CTNNB1:LEF1 bind the DCT promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824586",
+        "displayName": "MITF-M-dependent DCT gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9856056",
+        "displayName": "MITF-M dimer binds GPR143 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9856053",
+        "displayName": "MITF-M-dependent GPR143 expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825842",
+        "displayName": "MITF-M dimer binds an intronic element in the PMEL gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9825846",
+        "displayName": "MITF-M-dependent PMEL gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825844",
+        "displayName": "MITF-M dimer binds MLANA gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9825856",
+        "displayName": "MITF-M-dependent MLANA gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9856466",
+        "displayName": "MITF-M dimer binds RAB27A gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9856460",
+        "displayName": "MITF-M-dependent RAB27A expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9856464",
+        "displayName": "MITF-M dimer binds MYO5A gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9856462",
+        "displayName": "MITF-M-dependent MYO5A expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-1449597",
+        "displayName": "p-AKT2 phosphorylates Myosin 5A",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ]
+  },
+  "subpathway_gene_membership": {
+    "R-HSA-9824585": {
+      "name": "Regulation of MITF-M-dependent genes involved in pigmentation",
+      "n_genes": 40,
+      "genes": [
+        "ACTB",
+        "ACTL6A",
+        "AKT2",
+        "ARID1A",
+        "ARID1B",
+        "BCL7A",
+        "BCL7B",
+        "BCL7C",
+        "CTNNB1",
+        "DCT",
+        "DPF1",
+        "DPF2",
+        "DPF3",
+        "GPR143",
+        "IRF4",
+        "LEF1",
+        "MAPK14",
+        "MLANA",
+        "MLPH",
+        "MYO5A",
+        "MYRIP",
+        "PMEL",
+        "RAB27A",
+        "SMARCA2",
+        "SMARCA4",
+        "SMARCB1",
+        "SMARCC1",
+        "SMARCC2",
+        "SMARCD1",
+        "SMARCD2",
+        "SMARCD3",
+        "SMARCE1",
+        "SOX10",
+        "SS18",
+        "SS18L1",
+        "SYTL2",
+        "TFAP2A",
+        "TYR",
+        "TYRP1",
+        "USF1"
+      ]
+    },
+    "R-HSA-9825892": {
+      "name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation",
+      "n_genes": 17,
+      "genes": [
+        "CCNB1",
+        "CCND1",
+        "CDC25B",
+        "CDK2",
+        "CDKN1A",
+        "CDKN2A",
+        "CTNNB1",
+        "HDAC1",
+        "HINT1",
+        "LEF1",
+        "MET",
+        "PLK1",
+        "SIN3A",
+        "TBX2",
+        "TCF7",
+        "TCF7L1",
+        "TCF7L2"
+      ]
+    },
+    "R-HSA-9824594": {
+      "name": "Regulation of MITF-M-dependent genes involved in apoptosis",
+      "n_genes": 17,
+      "genes": [
+        "AGO1",
+        "AGO2",
+        "AGO3",
+        "AGO4",
+        "BCL2",
+        "BCL2A1",
+        "BIRC7",
+        "DICER1",
+        "HDAC1",
+        "HINT1",
+        "MOV10",
+        "POU3F2",
+        "SIN3A",
+        "TNRC6A",
+        "TNRC6B",
+        "TNRC6C",
+        "TRPM1"
+      ]
+    },
+    "R-HSA-9854907": {
+      "name": "Regulation of MITF-M dependent genes involved in metabolism",
+      "n_genes": 2,
+      "genes": [
+        "PPARGC1A",
+        "SIRT1"
+      ]
+    },
+    "R-HSA-9854909": {
+      "name": "Regulation of MITF-M dependent genes involved in invasion",
+      "n_genes": 3,
+      "genes": [
+        "CEACAM1",
+        "DIAPH1",
+        "GMPR"
+      ]
+    },
+    "R-HSA-9825895": {
+      "name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence",
+      "n_genes": 5,
+      "genes": [
+        "BRCA1",
+        "LIG1",
+        "MCM2",
+        "MCM5",
+        "TERT"
+      ]
+    },
+    "R-HSA-9857377": {
+      "name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy",
+      "n_genes": 11,
+      "genes": [
+        "ASAH1",
+        "ATP6V0B",
+        "ATP6V0C",
+        "ATP6V0D1",
+        "ATP6V0E1",
+        "ATP6V1A",
+        "ATP6V1B2",
+        "ATP6V1C1",
+        "ATP6V1E1",
+        "ATP6V1G1",
+        "ATP6V1H"
+      ]
+    },
+    "R-HSA-9926550": {
+      "name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition",
+      "n_genes": 11,
+      "genes": [
+        "CDH1",
+        "CDH2",
+        "EDIL3",
+        "GXYLT2",
+        "ITGA2",
+        "PXDN",
+        "PXN",
+        "SERPINE1",
+        "SOX2",
+        "STT3B",
+        "ZEB1"
+      ]
+    },
+    "R-HSA-9856649": {
+      "name": "Transcriptional and post-translational regulation of MITF-M expression and activity",
+      "n_genes": 60,
+      "genes": [
+        "AIMP1",
+        "AIMP2",
+        "AKT3",
+        "ALX3",
+        "CDH1",
+        "CREBBP",
+        "CSF1",
+        "CTNNB1",
+        "DARS1",
+        "EDN1",
+        "EDN3",
+        "EDNRB",
+        "EEF1E1",
+        "EP300",
+        "EPRS1",
+        "FOXD3",
+        "GSK3B",
+        "HDAC1",
+        "HINT1",
+        "IARS1",
+        "ID1",
+        "KARS1",
+        "KIT",
+        "LARS1",
+        "LEF1",
+        "MAPK1",
+        "MAPK3",
+        "MARK3",
+        "MARS1",
+        "MC1R",
+        "MC3R",
+        "MC4R",
+        "MC5R",
+        "MITF",
+        "PAX3",
+        "POMC",
+        "POU3F2",
+        "QARS1",
+        "RARS1",
+        "RPS6KA1",
+        "SIRT1",
+        "SNAI2",
+        "SOX10",
+        "SOX2",
+        "SOX9",
+        "SUMO1",
+        "TBX3",
+        "TFE3",
+        "TFEB",
+        "TFEC",
+        "TNFSF11",
+        "UBE2I",
+        "WNT3A",
+        "XPO1",
+        "YWHAB",
+        "YWHAE",
+        "YWHAG",
+        "YWHAH",
+        "YWHAZ",
+        "ZIC1"
+      ]
+    }
+  },
+  "gene_to_subpathways": {
+    "ACTB": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "ACTL6A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "AKT2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "ARID1A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "ARID1B": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "BCL7A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "BCL7B": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "BCL7C": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "CTNNB1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "DCT": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "DPF1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "DPF2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "DPF3": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "GPR143": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "IRF4": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "LEF1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MAPK14": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "MLANA": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "MLPH": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "MYO5A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "MYRIP": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "PMEL": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "RAB27A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCA2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCA4": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCB1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCC1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCC2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCD1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCD2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCD3": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SMARCE1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SOX10": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "SS18": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SS18L1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "SYTL2": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "TFAP2A": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "TYR": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "TYRP1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "USF1": [
+      {
+        "subpathway_stId": "R-HSA-9824585",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in pigmentation"
+      }
+    ],
+    "CCNB1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "CCND1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "CDC25B": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "CDK2": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "CDKN1A": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "CDKN2A": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "HDAC1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "HINT1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MET": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "PLK1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "SIN3A": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      },
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "TBX2": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "TCF7": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "TCF7L1": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "TCF7L2": [
+      {
+        "subpathway_stId": "R-HSA-9825892",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in cell cycle and proliferation"
+      }
+    ],
+    "AGO1": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "AGO2": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "AGO3": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "AGO4": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "BCL2": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "BCL2A1": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "BIRC7": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "DICER1": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "MOV10": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "POU3F2": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TNRC6A": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "TNRC6B": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "TNRC6C": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "TRPM1": [
+      {
+        "subpathway_stId": "R-HSA-9824594",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in apoptosis"
+      }
+    ],
+    "PPARGC1A": [
+      {
+        "subpathway_stId": "R-HSA-9854907",
+        "subpathway_name": "Regulation of MITF-M dependent genes involved in metabolism"
+      }
+    ],
+    "SIRT1": [
+      {
+        "subpathway_stId": "R-HSA-9854907",
+        "subpathway_name": "Regulation of MITF-M dependent genes involved in metabolism"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "CEACAM1": [
+      {
+        "subpathway_stId": "R-HSA-9854909",
+        "subpathway_name": "Regulation of MITF-M dependent genes involved in invasion"
+      }
+    ],
+    "DIAPH1": [
+      {
+        "subpathway_stId": "R-HSA-9854909",
+        "subpathway_name": "Regulation of MITF-M dependent genes involved in invasion"
+      }
+    ],
+    "GMPR": [
+      {
+        "subpathway_stId": "R-HSA-9854909",
+        "subpathway_name": "Regulation of MITF-M dependent genes involved in invasion"
+      }
+    ],
+    "BRCA1": [
+      {
+        "subpathway_stId": "R-HSA-9825895",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      }
+    ],
+    "LIG1": [
+      {
+        "subpathway_stId": "R-HSA-9825895",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      }
+    ],
+    "MCM2": [
+      {
+        "subpathway_stId": "R-HSA-9825895",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      }
+    ],
+    "MCM5": [
+      {
+        "subpathway_stId": "R-HSA-9825895",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      }
+    ],
+    "TERT": [
+      {
+        "subpathway_stId": "R-HSA-9825895",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in DNA replication, damage repair and senescence"
+      }
+    ],
+    "ASAH1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V0B": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V0C": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V0D1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V0E1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1A": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1B2": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1C1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1E1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1G1": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "ATP6V1H": [
+      {
+        "subpathway_stId": "R-HSA-9857377",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in lysosome biogenesis and autophagy"
+      }
+    ],
+    "CDH1": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "CDH2": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "EDIL3": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "GXYLT2": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "ITGA2": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "PXDN": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "PXN": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "SERPINE1": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "SOX2": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      },
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "STT3B": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "ZEB1": [
+      {
+        "subpathway_stId": "R-HSA-9926550",
+        "subpathway_name": "Regulation of MITF-M-dependent genes involved in extracellular matrix, focal adhesion and epithelial-to-mesenchymal transition"
+      }
+    ],
+    "AIMP1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "AIMP2": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "AKT3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "ALX3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "CREBBP": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "CSF1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "DARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EDN1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EDN3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EDNRB": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EEF1E1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EP300": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "EPRS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "FOXD3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "GSK3B": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "IARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "ID1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "KARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "KIT": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "LARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MAPK1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MAPK3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MARK3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MC1R": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MC3R": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MC4R": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MC5R": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "MITF": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "PAX3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "POMC": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "QARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "RARS1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "RPS6KA1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "SNAI2": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "SOX9": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "SUMO1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TBX3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TFE3": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TFEB": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TFEC": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "TNFSF11": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "UBE2I": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "WNT3A": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "XPO1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "YWHAB": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "YWHAE": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "YWHAG": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "YWHAH": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "YWHAZ": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ],
+    "ZIC1": [
+      {
+        "subpathway_stId": "R-HSA-9856649",
+        "subpathway_name": "Transcriptional and post-translational regulation of MITF-M expression and activity"
+      }
+    ]
+  },
+  "gene_to_reactions_within_pigmentation_subpathway": {
+    "MAPK14": [
+      {
+        "stId": "R-HSA-9855910",
+        "displayName": "USF1 is phosphorylated by p-MAPK14",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "USF1": [
+      {
+        "stId": "R-HSA-9855910",
+        "displayName": "USF1 is phosphorylated by p-MAPK14",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9855908",
+        "displayName": "p-T153 USF1 dimer binds the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "BCL7A": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "ACTL6A": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCE1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SS18": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCA4": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCD2": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "ARID1B": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCB1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCC2": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "BCL7C": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "DPF1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SS18L1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "DPF2": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCD1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "ARID1A": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCA2": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "DPF3": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCD3": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "ACTB": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "BCL7B": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SMARCC1": [
+      {
+        "stId": "R-HSA-9824981",
+        "displayName": "MITF-M and the SWI/SNF complex bind the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9825847",
+        "displayName": "MITF-M dimer and the SWI/SNF complex bind the TYRP1 promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "TFAP2A": [
+      {
+        "stId": "R-HSA-9907144",
+        "displayName": "MITF-M dimer and TFAP2A bind intronic elements in the IRF4 gene",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9907147",
+        "displayName": "MITF-M-dependent IRF4 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "IRF4": [
+      {
+        "stId": "R-HSA-9907147",
+        "displayName": "MITF-M-dependent IRF4 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9907145",
+        "displayName": "IRF4 binds the TYR promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "TYR": [
+      {
+        "stId": "R-HSA-9824579",
+        "displayName": "MITF-M-dependent TYR gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "SOX10": [
+      {
+        "stId": "R-HSA-9825848",
+        "displayName": "MITF-M dimer, SOX10, pS133 CREB1 and CTNNB1:LEF1 bind the DCT promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824586",
+        "displayName": "MITF-M-dependent DCT gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "LEF1": [
+      {
+        "stId": "R-HSA-9825848",
+        "displayName": "MITF-M dimer, SOX10, pS133 CREB1 and CTNNB1:LEF1 bind the DCT promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824586",
+        "displayName": "MITF-M-dependent DCT gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "CTNNB1": [
+      {
+        "stId": "R-HSA-9825848",
+        "displayName": "MITF-M dimer, SOX10, pS133 CREB1 and CTNNB1:LEF1 bind the DCT promoter",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9824586",
+        "displayName": "MITF-M-dependent DCT gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "DCT": [
+      {
+        "stId": "R-HSA-9824586",
+        "displayName": "MITF-M-dependent DCT gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "TYRP1": [
+      {
+        "stId": "R-HSA-9824593",
+        "displayName": "MITF-M-dependent TYRP1 gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "GPR143": [
+      {
+        "stId": "R-HSA-9856053",
+        "displayName": "MITF-M-dependent GPR143 expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "PMEL": [
+      {
+        "stId": "R-HSA-9825846",
+        "displayName": "MITF-M-dependent PMEL gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "MLANA": [
+      {
+        "stId": "R-HSA-9825856",
+        "displayName": "MITF-M-dependent MLANA gene expression",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "RAB27A": [
+      {
+        "stId": "R-HSA-9856460",
+        "displayName": "MITF-M-dependent RAB27A expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "MYO5A": [
+      {
+        "stId": "R-HSA-9856462",
+        "displayName": "MITF-M-dependent MYO5A expression",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "stId": "R-HSA-1449597",
+        "displayName": "p-AKT2 phosphorylates Myosin 5A",
+        "schemaClass": "Reaction"
+      },
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "AKT2": [
+      {
+        "stId": "R-HSA-1449597",
+        "displayName": "p-AKT2 phosphorylates Myosin 5A",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "SYTL2": [
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "MLPH": [
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ],
+    "MYRIP": [
+      {
+        "stId": "R-HSA-9856465",
+        "displayName": "MLPH/MYRIP bind GGC-RAB27A and MYO5A",
+        "schemaClass": "Reaction"
+      }
+    ]
+  },
+  "endpoints_used": [
+    "data/query/<stId> (hasEvent field, for sub-pathway/child-event listing)",
+    "data/participants/<stId> (per-sub-pathway and per-reaction gene membership)"
+  ]
+}

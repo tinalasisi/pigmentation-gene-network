@@ -1,0 +1,17 @@
+{
+  "artifact": "darcy2023_S1_disease_genes.csv",
+  "description": "D'Arcy & Kiel 2023 Table S1: row-level OMIM disease-gene table, 278 rows / 243 unique gene symbols. Peer gene set to Raghunath's 168-gene mechanistic backbone (curated-disease-association vs curated-mechanism).",
+  "source_doi": "10.3390/bioengineering10010013",
+  "source_pmcid": "PMC9854651",
+  "license": "CC BY 4.0",
+  "extraction_method": "pandas.read_excel(header=2) on data/raw/darcy2023/'Table S1 Bioengineering FINAL.xlsx', Sheet 1.",
+  "frozen_utc": "2026-07-12T01:21:49.296410+00:00",
+  "n_rows": 278,
+  "n_unique_genes": 243,
+  "phenotype_class_counts": {
+    "Hypopigmentation": 144,
+    "Hyperpigmentation": 81,
+    "Mixed": 47,
+    "Pigmentation phenotype": 6
+  }
+}

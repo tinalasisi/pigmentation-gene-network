@@ -1,0 +1,12 @@
+{
+  "artifact": "darcy2023_S5_string_nodes.csv",
+  "description": "D'Arcy & Kiel 2023 Table S5: node annotation for the expanded 451/452-node STRING network -- SysGO process/location, disease-gene flag + phenotype class, A375/FM55 mass-spec presence. One duplicate STRING-ID row (IKBKB, both identical) preserved verbatim from source.",
+  "source_doi": "10.3390/bioengineering10010013",
+  "source_pmcid": "PMC9854651",
+  "license": "CC BY 4.0",
+  "extraction_method": "pandas.read_excel(header=2) on 'Table S5 Bioengineering FINAL.xlsx', Sheet1.",
+  "frozen_utc": "2026-07-12T01:21:49.296410+00:00",
+  "n_rows": 452,
+  "n_unique_genes": 451,
+  "n_disease_flagged": 189
+}

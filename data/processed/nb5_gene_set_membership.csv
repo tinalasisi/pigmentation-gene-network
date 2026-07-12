@@ -1,0 +1,715 @@
+gene,in_raghunath_168,in_darcy_s1_243,in_kegg_hsa04916,in_reactome_curated_union,in_reactome_r_hsa_5662702_precision,n_sets,darcy_phenotype_class,citation,citation_source,in_bajpai2023_crispr_169,bajpai_castle_effect,bajpai_q_value,bajpai_direction,bajpai_orphan_hit,n_sets_incl_bajpai
+ABCB6,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ABCC9,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ACD,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ACTB,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ACTL6A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ADAM10,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ADAR,False,True,False,False,False,1,Hyperpigmentation|Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ADCY1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY4,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+ADCY5,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY6,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY7,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY8,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADCY9,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ADO,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ADPRH,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+AGO1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AGO2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AGO3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AGO4,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AHR,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+AIMP1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AIMP2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AKT1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+AKT2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AKT3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ALG11,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ALX3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+AP3B1,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,0.9,0.031182161,reduces_pigmentation,False,2
+AP3D1,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,2.4,0.00019277,reduces_pigmentation,False,2
+APAF1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+APC2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ARID1A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ARID1B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ARID5B,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ASAH1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ASIP,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ATF2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+ATM,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ATP6V0B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V0C,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V0D1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V0E1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1B2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1C1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1E1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1G1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP6V1H,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ATP7A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ATP7B,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ATXN2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BACH2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BAD,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BAK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BAX,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BBC3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BCL2,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+BCL2A1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BCL2L1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BCL2L11,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BCL2L12,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BCL7A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BCL7B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BCL7C,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BID,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+BIRC7,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BIVM,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BLM,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BLOC1S3,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.8,0.00019277,reduces_pigmentation,False,2
+BLOC1S5,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.3,0.019583917,reduces_pigmentation,False,2
+BLOC1S6,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.0,0.010445575,reduces_pigmentation,False,2
+BNC2,False,True,False,False,False,1,Hyperpigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.4,0.003791254,reduces_pigmentation,False,2
+BRAF,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BRCA1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+BRCA2,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BRIP1,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+BTNL2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+C11ORF65,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+C1ORF141,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+C1QTNF6,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CALM1,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+CALM2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CALM3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CALML3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CALML4,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CALML5,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CALML6,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CAMK2A,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CAMK2B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CAMK2D,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CAMK2G,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CASP3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CASP7,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CASP8,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CASP9,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CBFA2T3,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CBS,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CCNB1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+CCND1,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+CCR6,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CD80,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CDC25B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+CDC42,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CDH1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+CDH2,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+CDH23,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CDH3,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CDK2,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+CDK4,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CDKN1A,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+CDKN2A,False,True,False,True,False,2,Hyperpigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.7,0.00019277,reduces_pigmentation,False,3
+CEACAM1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+CEP57,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CFLAR,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CHRNA9,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CHUK,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CLNK,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CPVL,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CREB1,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+CREB3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CREB3L1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CREB3L2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CREB3L3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CREB3L4,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+CREBBP,False,False,True,True,False,2,,"KEGG:hsa04916|Reactome:R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.0,0.000666558,reduces_pigmentation,False,3
+CSF1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+CSF2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CSF2RA,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CTC1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CTLA4,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CTNNB1,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+CTNS,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+CXCL8,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CYCS,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+CYP11A1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DCT,True,False,True,True,True,3,,"gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-5662702+R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.7,0.00019277,reduces_pigmentation,False,4
+DDB2,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DDX3X,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DDX6,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DEF8,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DFFA,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+DFFB,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+DIAPH1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DICER1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DKC1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DNAJC12,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DPF1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DPF2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DPF3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+DSTYK,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+DTNBP1,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.7,0.002364299,reduces_pigmentation,False,2
+DUSP1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+DVL1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+DVL2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+DVL3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+ECSIT,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+EDIL3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+EDN1,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+EDN3,False,True,False,True,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+EDNRB,True,True,True,True,False,4,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,4
+EEF1E1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+EGFR,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+EGR2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+EIF2S2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+EIF6,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ELK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+ENPP1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+EP300,True,False,True,True,False,3,,"gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.2,0.000880643,reduces_pigmentation,False,4
+EPG5,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+EPRS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ERCC1,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ERCC2,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ERCC3,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ERCC4,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ERCC5,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ERCC6,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ESCO2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+EZR,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+F10,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+F2RL1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+F7,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+FADD,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+FADS2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCA,False,True,False,False,False,1,Hyperpigmentation|Hypopigmentation|Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCB,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCC,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCD2,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCE,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FANCI,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FAP,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FARP2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FAS,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+FASLG,True,True,False,False,False,2,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,2
+FGFR3,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FIG4,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,0.7,0.034655775,reduces_pigmentation,False,2
+FLI1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FLNA,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FMR1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FOS,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+FOXD3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+FOXP1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FRAS1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FREM2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+FZD1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD10,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD3,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+FZD4,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD5,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD6,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD7,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD8,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+FZD9,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GAB1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+GADD45A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+GAGE2A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+GMPR,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+GNAI1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GNAI2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GNAI3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GNAO1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GNAQ,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+GNAS,False,True,True,False,False,2,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+GNPTG,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+GPHN,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+GPNMB,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+GPR143,False,True,False,True,False,2,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.0,0.008625554,reduces_pigmentation,False,3
+GRB2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+GRIP1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+GSK3B,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+GUCY1A2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+GXYLT2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+GZMB,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HDAC1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+HERC2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HGD,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HGF,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+HIF1A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+HINT1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+HLA-B,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HLA-DQA1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HLA-DQB1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HLA-DRA,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HLA-DRB1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+HPS1,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,2.0,0.00019277,reduces_pigmentation,False,2
+HPS3,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.7,0.00019277,reduces_pigmentation,False,2
+HPS4,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,2.1,0.00019277,reduces_pigmentation,False,2
+HPS5,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,2.1,0.00019277,reduces_pigmentation,False,2
+HPS6,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.9,0.00019277,reduces_pigmentation,False,2
+HRAS,True,True,True,False,False,3,Hyperpigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,3
+HSP90AA1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+HUNK,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ICAM1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+ID1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+IDS,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IDUA,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IFTAP,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IKBKG,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IKZF4,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IL10,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IL12A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IL17A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IL1A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IL1R1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IL1RAPL1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IL23R,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IL2RA,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IL6,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IL6R,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IRAK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IRAK4,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+IRF3,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+IRF4,False,True,False,True,False,2,Hyperpigmentation|Hypopigmentation|Pigmentation phenotype,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+ITGA2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+IVL,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+JAK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+JUN,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+KARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+KCNK12,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+KIT,True,True,True,True,False,4,Hyperpigmentation|Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,4
+KITLG,True,True,True,False,False,3,Mixed|Pigmentation phenotype,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,3
+KRAS,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+KRT14,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+KRT5,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+LARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+LEF1,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+LIG1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+LPP,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+LRMDA,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+LYST,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.3,0.00019277,reduces_pigmentation,False,2
+MAP2K1,True,True,True,False,False,3,Hyperpigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,3
+MAP2K2,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+MAP2K3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP2K4,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP2K6,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP2K7,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP3K1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP3K14,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP3K5,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP3K7,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAP4K2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MAPK1,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+MAPK14,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+MAPK3,True,False,True,True,False,3,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+MAPK8,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MARK3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+MARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+MC1R,True,True,True,True,False,4,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-9730414+R-HSA-388601,accession_or_pmcid,False,,,,False,4
+MC2R,False,True,False,True,False,2,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-388601,accession_or_pmcid,False,,,,False,2
+MC3R,False,False,False,True,False,1,,Reactome:R-HSA-9730414+R-HSA-388601,accession_or_pmcid,False,,,,False,1
+MC4R,False,False,False,True,False,1,,Reactome:R-HSA-9730414+R-HSA-388601,accession_or_pmcid,False,,,,False,1
+MC5R,False,False,False,True,False,1,,Reactome:R-HSA-9730414+R-HSA-388601,accession_or_pmcid,False,,,,False,1
+MCL1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MCM2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+MCM4,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MCM5,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+MEN1,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MET,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+MITF,True,True,True,True,False,4,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,4
+MLANA,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+MLH1,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MLPH,False,True,False,True,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+MMP1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MMPS,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MOV10,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+MRAP,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MSH2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MSH6,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MSN,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MTAP,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MYD88,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+MYH8,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+MYO5A,False,True,False,True,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+MYRIP,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+NARS1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NBN,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NEK6,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NF1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NFATC1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NFIX,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NFKB1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NGF,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NHP2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NID1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NLRP1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NNT,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NOP10,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NOS2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NOX1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NR0B1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NRAS,False,True,True,False,False,2,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+NRROS,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NSD1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+NSMAF,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+NTRK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+OCA2,True,True,False,True,True,3,Hypopigmentation,"gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-5662702|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.4,0.00019277,reduces_pigmentation,False,4
+PAH,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PAK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PALB2,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PARD6A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PARN,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PARP12,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PAX3,True,True,False,True,False,3,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+PCNT,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PDE4B,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PDPK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PHOSPHODIESTERASE,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PIAS3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PIK3CA,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PKC,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PLA2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PLA2G1B,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PLA2G6,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PLC,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PLCB1,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+PLCB2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+PLCB3,False,True,True,False,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+PLCB4,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+PLK1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+PMAIP1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PMEL,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+PMS2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+POFUT1,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+POGLUT1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+POLA1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+POLH,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+POMC,True,True,True,True,False,4,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,4
+POU3F2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+PPARGC1A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+PPARGC1B,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PPP3CA,True,True,False,False,False,2,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,2
+PRKACA,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+PRKACB,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+PRKACG,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+PRKAR1A,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PRKCA,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+PRKCB,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+PRKCD,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PRKCG,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+PRKCH,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PRKCZ,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PRKG1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PRSS1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PSENEN,False,True,False,False,False,1,Hyperpigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.2,0.077824109,reduces_pigmentation,False,2
+PTEN,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PTGER1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PTGER2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PTGER3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PTGER4,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PTGS2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+PTPN1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PTPN11,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PTPN22,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PTPRC,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+PXDN,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+PXN,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+QARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+RAB27A,False,True,False,True,False,2,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,2.0,0.00019277,reduces_pigmentation,False,3
+RAB5C,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RAC1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RACK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RAF1,True,True,True,False,False,3,Hyperpigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,3
+RALY,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RAP1A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RARS1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+RDX,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RECQL4,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RERE,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RFXANK,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RHOA,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RIPK1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+RIT1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RNASET2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RPGRIP1L,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RPS6KA1,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+RTEL1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+RYR1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SAMD9,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SERPINB9,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SERPINE1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SGPL1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SH2B3,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SHC1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SHOC2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SIN3A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SIRT1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SLC17A5,False,True,False,False,False,1,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.2,0.000972474,reduces_pigmentation,False,2
+SLC1A2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SLC24A5,False,True,False,True,False,2,Hypopigmentation|Pigmentation phenotype,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-5619036|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.8,0.00019277,reduces_pigmentation,False,3
+SLC29A3,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SLC44A4,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SLC45A2,False,True,False,True,True,2,Hypopigmentation,"PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-5662702|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,3.8,0.00019277,reduces_pigmentation,False,3
+SMARCA2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCA4,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCAL1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SMARCB1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCC1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCC2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCD1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCD2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCD3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMARCE1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SMO,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SMOC2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SMPD1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SMPD2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SNAI2,False,True,False,True,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+SOS1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SOX10,True,True,False,True,False,3,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,3
+SOX2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SOX9,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SPATA48,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SPRED1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+SPTLC1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SPTLC2,True,False,False,False,False,1,,"gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,1.1,0.027098733,reduces_pigmentation,False,2
+SRC,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+SS18,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SS18L1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ST3GAL5,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+STAR,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+STAT1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+STAT3,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+STAT4,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+STK11,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+STT3B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SUMO1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+SYTL2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TAB1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TBX2,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TBX3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TBX5,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TCF7,False,False,True,True,False,2,,KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TCF7L1,False,False,True,True,False,2,,KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TCF7L2,False,False,True,True,False,2,,KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TEF,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TERC,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TERT,False,True,False,True,False,2,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TFAP2A,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TFE3,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TFEB,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TFEC,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TG,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TICAM1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TINF2,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TNF,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TNFRSF11A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TNFRSF1A,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TNFSF11,False,True,False,True,False,2,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+TNRC6A,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TNRC6B,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TNRC6C,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TP53,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TP63,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TPCN2,False,True,False,False,False,1,Pigmentation phenotype,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TPSAB1,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TRADD,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TRAF2,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TRAF6,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TRPM1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+TRYPSIN,True,False,False,False,False,1,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes),accession_or_pmcid,False,,,,False,1
+TSC1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TSC2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+TYR,True,True,True,True,True,4,Hyperpigmentation|Hypopigmentation|Pigmentation phenotype,"gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-5662702+R-HSA-9730414|PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",accession_or_pmcid,True,4.1,0.00019277,reduces_pigmentation,False,5
+TYRP1,True,True,True,True,True,4,Hypopigmentation,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|PMC9854651 (D'Arcy & Kiel 2023 Table S1)|KEGG:hsa04916|Reactome:R-HSA-5662702+R-HSA-9730414,accession_or_pmcid,False,,,,False,4
+UBASH3A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+UBE2E2,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+UBE2I,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+USF1,True,False,False,True,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+USP9X,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+UVSSA,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+VEGFA,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+WIF1,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+WNT1,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT10A,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT10B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT11,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT16,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT2,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT2B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT3,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT3A,False,False,True,True,False,2,,KEGG:hsa04916|Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,2
+WNT4,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT5A,True,False,True,False,False,2,,gene_network_nodes.csv (per-gene UniProt/Entrez accession; Raghunath et al. 2015 BMC Res Notes)|KEGG:hsa04916,accession_or_pmcid,False,,,,False,2
+WNT5B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT6,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT7A,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT7B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT8A,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT8B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT9A,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WNT9B,False,False,True,False,False,1,,KEGG:hsa04916,accession_or_pmcid,False,,,,False,1
+WRAP53,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+WRN,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+XPA,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+XPC,False,True,False,False,False,1,Mixed,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+XPO1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+YWHAB,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+YWHAE,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+YWHAG,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+YWHAH,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+YWHAZ,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ZC3H7B,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ZEB1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ZIC1,False,False,False,True,False,1,,Reactome:R-HSA-9730414,accession_or_pmcid,False,,,,False,1
+ZMIZ1,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ZMPSTE24,False,True,False,False,False,1,Hyperpigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+ZNF354A,False,True,False,False,False,1,Hypopigmentation,PMC9854651 (D'Arcy & Kiel 2023 Table S1),accession_or_pmcid,False,,,,False,1
+AC002398.9,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.003627208,reduces_pigmentation,True,1
+ACTR2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.00019277,reduces_pigmentation,True,1
+ACTR3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.6,0.001568584,reduces_pigmentation,True,1
+ALKBH8,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.0815365,reduces_pigmentation,True,1
+AMBRA1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.4,0.00019277,reduces_pigmentation,True,1
+ANKRD27,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.00019277,reduces_pigmentation,True,1
+AP1G1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.9,0.00019277,reduces_pigmentation,True,1
+AP1M1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.00019277,reduces_pigmentation,True,1
+ARL8B,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.01410458,reduces_pigmentation,True,1
+ARPC3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.004440765,reduces_pigmentation,True,1
+ARPC4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.068379321,reduces_pigmentation,True,1
+ARPC4-TTLL3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.008474593,reduces_pigmentation,True,1
+ASCC2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.005240291,reduces_pigmentation,True,1
+ASCC3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.1,0.00019277,reduces_pigmentation,True,1
+ATP6V0A2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.00019277,reduces_pigmentation,True,1
+B4GALT1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.009816257,reduces_pigmentation,True,1
+BACE2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.000880643,reduces_pigmentation,True,1
+BAMBI,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.026625188,reduces_pigmentation,True,1
+BLOC1S2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.001187277,reduces_pigmentation,True,1
+BLOC1S5-TXNDC5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.012247858,reduces_pigmentation,True,1
+C10ORF11,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.6,0.000574266,reduces_pigmentation,True,1
+C11ORF30,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.055173294,reduces_pigmentation,True,1
+C16ORF62,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.0,0.000324585,reduces_pigmentation,True,1
+C16ORF80,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.002223752,reduces_pigmentation,True,1
+C9ORF91,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.037940056,reduces_pigmentation,True,1
+CANX,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.023013651,reduces_pigmentation,True,1
+CCDC22,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.4,0.00019277,reduces_pigmentation,True,1
+CCDC53,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.052164944,reduces_pigmentation,True,1
+CCDC93,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.032097665,reduces_pigmentation,True,1
+CCNK,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.022433899,reduces_pigmentation,True,1
+CCZ1B,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.045439733,reduces_pigmentation,True,1
+CD72,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.02738771,reduces_pigmentation,True,1
+CDK12,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.037940056,reduces_pigmentation,True,1
+CHD8,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.00188499,reduces_pigmentation,True,1
+CLN3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.073027238,reduces_pigmentation,True,1
+CMTR2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.6,0.002742412,reduces_pigmentation,True,1
+COMMD10,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.6,0.001063731,reduces_pigmentation,True,1
+COMMD2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.6,0.00019277,reduces_pigmentation,True,1
+COMMD3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.2,0.076379756,reduces_pigmentation,True,1
+COMMD3-BMI1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.6,0.00019277,reduces_pigmentation,True,1
+COMMD4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.022433899,reduces_pigmentation,True,1
+COMMD5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.00019277,reduces_pigmentation,True,1
+COMMD8,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.9,0.00019277,reduces_pigmentation,True,1
+CSK,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.015384889,reduces_pigmentation,True,1
+CTDSPL2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.000324585,reduces_pigmentation,True,1
+CUL5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.001137683,reduces_pigmentation,True,1
+DEGS1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.005031863,reduces_pigmentation,True,1
+DEK,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.8,0.00019277,reduces_pigmentation,True,1
+DGKD,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.074568736,reduces_pigmentation,True,1
+DHX29,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.0,0.00019277,reduces_pigmentation,True,1
+DNAJC13,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.9,0.00019277,reduces_pigmentation,True,1
+DSCR3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.005031863,reduces_pigmentation,True,1
+DYRK1A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.00019277,reduces_pigmentation,True,1
+F8A1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.045439733,reduces_pigmentation,True,1
+F8A3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.033252817,reduces_pigmentation,True,1
+FIP1L1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.018659276,reduces_pigmentation,True,1
+FRYL,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.1,0.00019277,reduces_pigmentation,True,1
+GANAB,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.8,0.00019277,reduces_pigmentation,True,1
+GLTSCR1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.030710861,reduces_pigmentation,True,1
+GOLGA8M,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.0,0.035713022,reduces_pigmentation,True,1
+GPS2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.011128411,reduces_pigmentation,True,1
+HAUS3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.9,0.091774165,reduces_pigmentation,True,1
+HDAC3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.00019277,reduces_pigmentation,True,1
+HDAC4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.016166135,reduces_pigmentation,True,1
+HNRNPA2B1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.000880643,reduces_pigmentation,True,1
+HNRNPR,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.00019277,reduces_pigmentation,True,1
+HSPA13,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.008625554,reduces_pigmentation,True,1
+HSPA5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.011847352,reduces_pigmentation,True,1
+INTS6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.8,0.035713022,reduces_pigmentation,True,1
+INTS8,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.011396467,reduces_pigmentation,True,1
+IRF2BP2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.014568005,reduces_pigmentation,True,1
+KHDRBS1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,3.0,0.00019277,reduces_pigmentation,True,1
+KIAA0196,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.00019277,reduces_pigmentation,True,1
+KIAA1033,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,3.2,0.00019277,reduces_pigmentation,True,1
+KIRREL,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.026835175,reduces_pigmentation,True,1
+KLF6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.00019277,reduces_pigmentation,True,1
+LZIC,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.8,0.00019277,reduces_pigmentation,True,1
+MNT,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.003978131,reduces_pigmentation,True,1
+MSMO1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.000574266,reduces_pigmentation,True,1
+MTMR6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.000666558,reduces_pigmentation,True,1
+MTMR9,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.003096086,reduces_pigmentation,True,1
+NCOR1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.00019277,reduces_pigmentation,True,1
+NF2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.00019277,reduces_pigmentation,True,1
+PDCD10,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.000574266,reduces_pigmentation,True,1
+QKI,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.00019277,reduces_pigmentation,True,1
+RAB14,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.6,0.00019277,reduces_pigmentation,True,1
+RAB21,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.0,0.00019277,reduces_pigmentation,True,1
+RAB32,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.00019277,reduces_pigmentation,True,1
+RAB7A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.1,0.00019277,reduces_pigmentation,True,1
+RAB9A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.005967646,reduces_pigmentation,True,1
+RB1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.013563045,reduces_pigmentation,True,1
+RBBP6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.000880643,reduces_pigmentation,True,1
+RBM5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.032623583,reduces_pigmentation,True,1
+RPL17-C18ORF32,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.068379321,reduces_pigmentation,True,1
+RPRD2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.2,0.00019277,reduces_pigmentation,True,1
+SAFB,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.004913738,reduces_pigmentation,True,1
+SAR1A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.00019277,reduces_pigmentation,True,1
+SCAF4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.000324585,reduces_pigmentation,True,1
+SEC31A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.00019277,reduces_pigmentation,True,1
+SELT,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.004913738,reduces_pigmentation,True,1
+SHISA4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.036793518,reduces_pigmentation,True,1
+SIAH1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.00019277,reduces_pigmentation,True,1
+SIRT6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.052991966,reduces_pigmentation,True,1
+SLAIN1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,4.3,0.077824109,reduces_pigmentation,True,1
+SLC12A9,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.00019277,reduces_pigmentation,True,1
+SLC24A4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.7,0.044255188,reduces_pigmentation,True,1
+SLC26A6,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.010445575,reduces_pigmentation,True,1
+SLC31A1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.5,0.00019277,reduces_pigmentation,True,1
+SLC33A1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.8,0.00019277,reduces_pigmentation,True,1
+SMEK1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.057511305,reduces_pigmentation,True,1
+SMG7,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.076379756,reduces_pigmentation,True,1
+SNX13,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.003096086,reduces_pigmentation,True,1
+SPAG16,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.08753218,reduces_pigmentation,True,1
+SPCS2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.9,0.069776217,reduces_pigmentation,True,1
+SPCS3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,3.0,0.012505856,reduces_pigmentation,True,1
+SPTSSA,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.056569263,reduces_pigmentation,True,1
+SRSF3,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.3,0.022433899,reduces_pigmentation,True,1
+SRSF5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.00019277,reduces_pigmentation,True,1
+TAOK1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.016978602,reduces_pigmentation,True,1
+TBC1D5,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.006262296,reduces_pigmentation,True,1
+TBL1XR1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.00019277,reduces_pigmentation,True,1
+TMED10,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.000666558,reduces_pigmentation,True,1
+TMED2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.00019277,reduces_pigmentation,True,1
+TMEM163,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.000324585,reduces_pigmentation,True,1
+TMEM30A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.034284692,reduces_pigmentation,True,1
+TMEM9B,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.3,0.007318852,reduces_pigmentation,True,1
+TRAPPC13,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.009687682,reduces_pigmentation,True,1
+TRNAU1AP,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.0,0.005649856,reduces_pigmentation,True,1
+USF2,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.010816882,reduces_pigmentation,True,1
+VPS18,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.1,0.026625188,reduces_pigmentation,True,1
+VPS26A,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.057511305,reduces_pigmentation,True,1
+VPS29,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.2,0.00019277,reduces_pigmentation,True,1
+VPS35,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.7,0.00019277,reduces_pigmentation,True,1
+VPS39,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.2,0.036793518,reduces_pigmentation,True,1
+VPS41,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.015046832,reduces_pigmentation,True,1
+VPS54,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.4,0.093923271,reduces_pigmentation,True,1
+WDFY1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.8,0.029298242,reduces_pigmentation,True,1
+WDR81,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,2.0,0.001137683,reduces_pigmentation,True,1
+WDR91,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.000880643,reduces_pigmentation,True,1
+ZBTB1,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,0.9,0.036793518,reduces_pigmentation,True,1
+ZC3H4,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.5,0.026052169,reduces_pigmentation,True,1
+ZNF428,False,False,False,False,False,0,,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid,True,1.8,0.083279198,reduces_pigmentation,True,1

@@ -1,0 +1,244 @@
+gene,gene_id_sysgo,associations_to_disease,cluster_string_no_expansion,process_1,process_2,process_3,main_location,in_a375,expr_a375_lfq,in_fm55,expr_fm55_lfq,citation,citation_source
+ABCB6,ABCB6,Mixed hypo- & hyperpigmentation disorder,,3_1_10_other transporters,Metabolism - Other,Metabolism,01_B_3_Golgi apparatus,,,,,PMC9854651,pmcid
+ABCC9,ABCC9,Hyperpigmentation disorder,,3_3_Neuronal System_synapses_channels,Neuronal System_synapses_channels,Neuronal System_synapses_channels,02_B_Cell membrane,,,,,PMC9854651,pmcid
+ACD,ACD,Hyperpigmentation disorder,3.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ADAM10,ADAM10,Hyperpigmentation disorder,31.0,2_1_1_Degradation of the extracellular matrix,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+ADAR,ADAR,Hyper & mixed,8.0,1_2_Metabolism of nucleotides,Metabolism of nucleotides & phosphates,Metabolism,03_A_Nucleus,ADAR,36889.0,ADAR,47524.333333333336,PMC9854651,pmcid
+ADO,ADO,Hypopigmentation disorder,,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_A_Cytosol,,,,,PMC9854651,pmcid
+ADPRH,ADPRH,Hypopigmentation disorder,,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,03_A_Nucleus,,,,,PMC9854651,pmcid
+ALG11,ALG11,Hyperpigmentation disorder,,1_8_15_Asparagine N-linked glycosylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",01_B_2_Endoplasmic reticulum,,,,,PMC9854651,pmcid
+AP3B1,AP3B1,Hypopigmentation disorder,14.0,1_26_29_adapters/scaffolds,Adapters/scaffolds,Signaling,01_B_3_Golgi apparatus,AP3B1,175235.0,AP3B1,164446.66666666666,PMC9854651,pmcid
+AP3D1,AP3D1,Hypopigmentation disorder,14.0,1_26_29_adapters/scaffolds,Adapters/scaffolds,Signaling,01_B_3_Golgi apparatus,AP3D1,194830.0,AP3D1,209405.0,PMC9854651,pmcid
+APC2,APC2,Hyperpigmentation disorder,,3_2_11_Signaling by Wnt,Signaling - Cell fates,Signaling,01_D_3f_Cytokinetic bridge,,,,,PMC9854651,pmcid
+ARID5B,ARID5B,Hypopigmentation disorder,,1_3_Chromatin organization,Chromatin organization,Chromatin organization & DNA repair,03_D_Chromatin,,,,,PMC9854651,pmcid
+ATM,ATM,Mixed hypo- & hyperpigmentation disorder,14.0,1_26_28_serine/threonine kinase,Protein kinases,Signaling,03_C_Nucleoplasm,ATM,1103831.6666666667,ATM,973830.0,PMC9854651,pmcid
+ATP7A,ATP7A,Hypopigmentation disorder,14.0,1_25_2_Detoxification of Reactive Oxygen Species,"Signaling - ROS/hypoxia, heat stress",Signaling,01_B_3_Golgi apparatus,,,,,PMC9854651,pmcid
+ATP7B,ATP7B,Hyperpigmentation disorder,27.0,1_25_2_Detoxification of Reactive Oxygen Species,"Signaling - ROS/hypoxia, heat stress",Signaling,01_B_3_Golgi apparatus,,,,,PMC9854651,pmcid
+ATXN2,ATXN2,Hypopigmentation disorder,24.0,1_3_Chromatin organization,Chromatin organization,Chromatin organization & DNA repair,03_D_Chromatin,ATXN2,137920.0,ATXN2,152981.66666666666,PMC9854651,pmcid
+BACH2,BACH2,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+BCL2L11,BCL2L11,Hypopigmentation disorder,2.0,4_2_Programmed Cell Death,Cell death,Signaling,01_B_1_Mitochondria,,,,,PMC9854651,pmcid
+BCL2L12,BCL2L12,Hypopigmentation disorder,25.0,4_2_Programmed Cell Death,Cell death,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+BIVM,BIVM,Mixed hypo- & hyperpigmentation disorder,,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+BLM,BLM,Mixed hypo- & hyperpigmentation disorder,1.0,1_8_4_SUMOylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",03_A_Nucleus,,,,,PMC9854651,pmcid
+BLOC1S3,BLOC1S3,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+BLOC1S5,BLOC1S5,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+BLOC1S6,BLOC1S6,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+BNC2,BNC2,Hyperpigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+BRAF,BRAF,Hyperpigmentation disorder,2.0,1_26_16_mitogen-activated protein kinase kinase kinase,Protein kinases,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+BRCA2,BRCA2,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+BRIP1,BRIP1,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+BTNL2,BTNL2,Hypopigmentation disorder,7.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+C11ORF65,C11orf65,Mixed hypo- & hyperpigmentation disorder,,UNKNOWN_Cytosol,Unknown,Unknown,01_A_Cytosol,,,,,PMC9854651,pmcid
+C1ORF141,C1orf141,Hypopigmentation disorder,,UNKNOWN_Nucleus,Unknown,Unknown,03_A_Nucleus,,,,,PMC9854651,pmcid
+C1QTNF6,C1QTNF6,Hypopigmentation disorder,,3_5_2_Innate Immune System,Innate Immune System,Immune system & Inflammation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+CASP7,CASP7,Hypopigmentation disorder,25.0,4_2_Programmed Cell Death,Cell death,Signaling,01_A_Cytosol,CASP7,95720.33333333333,CASP7,70894.66666666667,PMC9854651,pmcid
+CBFA2T3,CBFA2T3,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+CBS,CBS,Hypopigmentation disorder,,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_B_1_Mitochondria,CBS,8937.266666666666,CBS,2553.3166666666666,PMC9854651,pmcid
+CCR6,CCR6,Hypopigmentation disorder,,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+CD80,CD80,Hypopigmentation disorder,6.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+CDH23,CDH23,Hypopigmentation disorder,,3_4_Cell_cell_junctions_adhesion,Cell_cell_junctions_adhesion,Cell junction & adhesion,02_A_Cell-cell-junctions,,,,,PMC9854651,pmcid
+CDH3,CDH3,Mixed hypo- & hyperpigmentation disorder,9.0,3_4_Cell_cell_junctions_adhesion,Cell_cell_junctions_adhesion,Cell junction & adhesion,02_A_Cell-cell-junctions,,,,,PMC9854651,pmcid
+CDKN2A,CDKN2A,Hyperpigmentation disorder,39.0,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+CEP57,CEP57,Hypopigmentation disorder,,1_15_4_Tubulin,Cytoskeleton,Cytoskeleton,01_D_3d_Centrosome,,,,,PMC9854651,pmcid
+CHRNA9,CHRNA9,Hypopigmentation disorder,,3_3_Neuronal System_synapses_channels,Neuronal System_synapses_channels,Neuronal System_synapses_channels,02_B_Cell membrane,,,,,PMC9854651,pmcid
+CLNK,CLNK,Hypopigmentation disorder,,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,01_C_6_Vesicles,,,,,PMC9854651,pmcid
+CPVL,CPVL,Hypopigmentation disorder,,1_8_17_Peptide hormone metabolism,Hormones,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+CTC1,CTC1,Hyperpigmentation disorder,3.0,4_1_1_DNA Replication,DNA Replication,DNA Replication,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+CTLA4,CTLA4,Hypopigmentation disorder,38.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+CTNS,CTNS,Hypopigmentation disorder,,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+CYP11A1,CYP11A1,Hyperpigmentation disorder,21.0,1_25_1_Biological oxidations,Metabolism - Other,Metabolism,01_B_1_Mitochondria,,,,,PMC9854651,pmcid
+DDB2,DDB2,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,DDB2,109309.83333333333,DDB2,71791.83333333333,PMC9854651,pmcid
+DDX3X,DDX3X,Hypopigmentation disorder,12.0,1_6_3_Metabolism of mRNA,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",03_A_Nucleus,,,,,PMC9854651,pmcid
+DDX6,DDX6,Hypopigmentation disorder,24.0,1_6_3_Metabolism of mRNA,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",01_A_Cytosol,DDX6,614560.0,DDX6,672523.3333333334,PMC9854651,pmcid
+DEF8,DEF8,Hypopigmentation disorder,,1_26_5_Rho_GEF,Rho GTPase and regulators,Signaling,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+DKC1,DKC1,Hyperpigmentation disorder,3.0,1_6_2_Metabolism of rRNA,Metabolism of rRNA,Metabolism,03_H_Necleoli,DKC1,1292.2333333333333,DKC1,1411.75,PMC9854651,pmcid
+DNAJC12,DNAJC12,Hypopigmentation disorder,,1_25_4_Cellular response to heat stress,"Signaling - ROS/hypoxia, heat stress",Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+DSTYK,DSTYK,Mixed hypo- & hyperpigmentation disorder,,1_26_34_other_kinases,Protein kinases,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+DTNBP1,DTNBP1,Hypopigmentation disorder,4.0,3_3_Neuronal System_synapses_channels,Neuronal System_synapses_channels,Neuronal System_synapses_channels,01_B_6_Melanosomes,DTNBP1,59731.166666666664,DTNBP1,52065.833333333336,PMC9854651,pmcid
+EDN3,EDN3,Hypopigmentation disorder,16.0,3_12_Hormone activity,Hormones,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+EDNRB,EDNRB,Hypopigmentation disorder,16.0,3_6_23_Endothelin receptors,GPCR signaling,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+EGR2,EGR2,Hypopigmentation disorder,10.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+EIF2S2,EIF2S2,Hyperpigmentation disorder,17.0,1_8_1_Translation,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",01_C_3_Ribosomes,EIF2S2,262185.0,EIF2S2,319286.6666666667,PMC9854651,pmcid
+EIF6,EIF6,Hyperpigmentation disorder,17.0,1_8_1_Translation,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",01_C_3_Ribosomes,EIF6,2103166.6666666665,EIF6,2259350.0,PMC9854651,pmcid
+ENPP1,ENPP1,Hypopigmentation disorder,33.0,1_18_Metabolism of vitamins and cofactors,Metabolism of vitamins and cofactors,Metabolism,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+EPG5,EPG5,Hypopigmentation disorder,,4_4_Macroautophagy,Signaling - Cell fates,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+ERCC1,ERCC1,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,ERCC1,18250.5,ERCC1,11238.833333333334,PMC9854651,pmcid
+ERCC2,ERCC2,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ERCC3,ERCC3,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ERCC4,ERCC4,Hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,ERCC4,65371.166666666664,ERCC4,49739.5,PMC9854651,pmcid
+ERCC5,ERCC5,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,ERCC5,212881.0,ERCC5,147940.0,PMC9854651,pmcid
+ERCC6,ERCC6,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ESCO2,ESCO2,Hypopigmentation disorder,26.0,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+FADS2,FADS2,Hypopigmentation disorder,34.0,1_1_3_Fatty acid metabolism,Lipid & FA metabolism,Metabolism,01_B_2_b_Smooth ER,,,,,PMC9854651,pmcid
+FANCA,FANCA,"Hyper, Hypo & mixed",1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FANCB,FANCB,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FANCC,FANCC,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FANCD2,FANCD2,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,FANCD2,27773.333333333332,FANCD2,15003.166666666666,PMC9854651,pmcid
+FANCE,FANCE,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FANCI,FANCI,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,FANCI,81438.33333333333,FANCI,33593.166666666664,PMC9854651,pmcid
+FAP,FAP,Hypopigmentation disorder,,2_1_1_Degradation of the extracellular matrix,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+FARP2,FARP2,Hypopigmentation disorder,,1_26_5_Rho_GEF,Rho GTPase and regulators,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+FASLG,FASLG,Hypopigmentation disorder,13.0,4_2_Programmed Cell Death,Cell death,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+FGFR3,FGFR3,Mixed hypo- & hyperpigmentation disorder,6.0,3_2_20_Signaling by FGFR,Signaling - Cell fates,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+FIG4,FIG4,Hypopigmentation disorder,,1_26_48_phosphatidylinositol-phosphate phosphatase,Lipid & FA metabolism,Signaling,01_B_7_Endosomes,FIG4,4960200.0,FIG4,3507133.3333333335,PMC9854651,pmcid
+FLI1,FLI1,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FLNA,FLNA,Hyperpigmentation disorder,,1_15_1_Actin,Cytoskeleton,Cytoskeleton,01_D_1_Microfilaments (Actin),FLNA,1757333.3333333333,FLNA,1556316.6666666667,PMC9854651,pmcid
+FMR1,FMR1,Hyperpigmentation disorder,24.0,3_9_Development,Developmental,Developmental,01_A_Cytosol,FMR1,20127.0,FMR1,19413.433333333334,PMC9854651,pmcid
+FOXP1,FOXP1,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+FRAS1,FRAS1,Hypopigmentation disorder,23.0,2_1_Extracellular matrix organisation,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+FREM2,FREM2,Hypopigmentation disorder,23.0,2_1_Extracellular matrix organisation,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+GAGE2A,GAGE2A,Hypopigmentation disorder,,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+GNAS,GNAS,Hyperpigmentation disorder,11.0,1_26_49_G protein,Signaling - G protein,Signaling,02_B_Cell membrane,GNAS,134666.66666666666,GNAS,203661.66666666666,PMC9854651,pmcid
+GNPTG,GNPTG,Mixed hypo- & hyperpigmentation disorder,,1_17_Metabolism of carbohydrates,Carbohydrate metabolism,Metabolism,01_B_3_Golgi apparatus,,,,,PMC9854651,pmcid
+GPHN,GPHN,Mixed hypo- & hyperpigmentation disorder,,1_18_Metabolism of vitamins and cofactors,Metabolism of vitamins and cofactors,Metabolism,01_A_Cytosol,GPHN,43910.666666666664,GPHN,59320.5,PMC9854651,pmcid
+GPNMB,GPNMB,Mixed hypo- & hyperpigmentation disorder,,3_7_other membrane proteins,Signaling - Other,Signaling,02_B_Cell membrane,GPNMB,12755.0,GPNMB,53152.833333333336,PMC9854651,pmcid
+GPR143,GPR143,Hypopigmentation disorder,5.0,3_6_1_Orphan and other 7TM receptors,GPCR signaling,Signaling,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+GRIP1,GRIP1,Hypopigmentation disorder,20.0,3_3_Neuronal System_synapses_channels,Neuronal System_synapses_channels,Neuronal System_synapses_channels,01_A_Cytosol,,,,,PMC9854651,pmcid
+GZMB,GZMB,Hypopigmentation disorder,23.0,1_8_20_Protein processing/proteolysis,Protein folding & repair,"Protein translation, folding, modification & degradation",01_A_Cytosol,,,,,PMC9854651,pmcid
+HERC2,HERC2,Hypopigmentation disorder,13.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,01_A_Cytosol,HERC2,44580.833333333336,HERC2,47506.333333333336,PMC9854651,pmcid
+HGD,HGD,Hyperpigmentation disorder,5.0,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_A_Cytosol,,,,,PMC9854651,pmcid
+HLA-B,HLA-B,Hypopigmentation disorder,32.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,HLA-B,33225.166666666664,HLA-B,60741.5,PMC9854651,pmcid
+HLA-DQA1,HLA-DQA1,Hypopigmentation disorder,8.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+HLA-DQB1,HLA-DQB1,Hypopigmentation disorder,7.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+HLA-DRA,HLA-DRA,Hypopigmentation disorder,7.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,HLA-DRA,71707.16666666667,HLA-DRA,137508.33333333334,PMC9854651,pmcid
+HLA-DRB1,HLA-DRB1,Hypopigmentation disorder,7.0,3_5_1_Adaptive Immune System,Adaptive Immune System,Immune system & Inflammation,02_B_Cell membrane,,,,,PMC9854651,pmcid
+HPS1,HPS1,Hypopigmentation disorder,7.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+HPS3,HPS3,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+HPS4,HPS4,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+HPS5,HPS5,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+HPS6,HPS6,Hypopigmentation disorder,4.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+HRAS,HRAS,Hyperpigmentation disorder,4.0,1_26_1_Ras,Ras GTPases and regulators,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+HUNK,HUNK,Hypopigmentation disorder,2.0,1_26_28_serine/threonine kinase,Protein kinases,Signaling,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+IDS,IDS,Mixed hypo- & hyperpigmentation disorder,28.0,1_17_Metabolism of carbohydrates,Carbohydrate metabolism,Metabolism,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+IDUA,IDUA,Mixed hypo- & hyperpigmentation disorder,28.0,1_17_Metabolism of carbohydrates,Carbohydrate metabolism,Metabolism,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+IFTAP,IFTAP,Hyperpigmentation disorder,,UNKNOWN_Aggresome,Unknown,Unknown,02_E_Aggresome,,,,,PMC9854651,pmcid
+IKBKG,IKBKG,Hyperpigmentation disorder,29.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,IKBKG,21209.733333333334,IKBKG,22796.38333333333,PMC9854651,pmcid
+IKZF4,IKZF4,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+IL17A,IL17A,Hypopigmentation disorder,20.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+IL1RAPL1,IL1RAPL1,Hypopigmentation disorder,,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+IL23R,IL23R,Hypopigmentation disorder,20.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+IL2RA,IL2RA,Hypopigmentation disorder,6.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+IRF3,IRF3,Hypopigmentation disorder,8.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,03_A_Nucleus,IRF3,110958.83333333333,IRF3,104713.0,PMC9854651,pmcid
+IRF4,IRF4,"Hyper, hypo & pigmentation",8.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+KCNK12,KCNK12,Hypopigmentation disorder,,3_3_Neuronal System_synapses_channels,Neuronal System_synapses_channels,Neuronal System_synapses_channels,02_B_Cell membrane,,,,,PMC9854651,pmcid
+KIT,KIT,Hyper & hypo,15.0,3_2_15_Signaling by SCF-KIT,Signaling - Cell fates,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+KITLG,KITLG,Mixed & pigmentation,15.0,3_2_15_Signaling by SCF-KIT,Signaling - Cell fates,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+KRT14,KRT14,Hyperpigmentation disorder,9.0,1_32_Cornification epidermins,Cornification epidermins,Other,"01_D_2_Intermediate filaments (Keratin, filaments)",KRT14,70201.98333333334,KRT14,1958.8999999999999,PMC9854651,pmcid
+KRT5,KRT5,Mixed hypo- & hyperpigmentation disorder,9.0,1_32_Cornification epidermins,Cornification epidermins,Other,"01_D_2_Intermediate filaments (Keratin, filaments)",,,,,PMC9854651,pmcid
+LPP,LPP,Hypopigmentation disorder,,3_4_Cell_cell_junctions_adhesion,Cell_cell_junctions_adhesion,Cell junction & adhesion,02_A_Cell-cell-junctions,LPP,28325.5,LPP,34542.166666666664,PMC9854651,pmcid
+LRMDA,LRMDA,Hypopigmentation disorder,,4_5_Cell fate_differentiation,Signaling - Cell fates,Signaling,05_UNKNOWN,,,,,PMC9854651,pmcid
+LYST,LYST,Hypopigmentation disorder,30.0,1_14_Lysosomes,Lysosomes,Organelles,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+MAP2K1,MAP2K1,Hyperpigmentation disorder,2.0,1_26_14_mitogen-activated protein kinase,Protein kinases,Signaling,01_A_Cytosol,MAP2K1,544098.3333333334,MAP2K1,454883.3333333333,PMC9854651,pmcid
+MC1R,MC1R,Hypopigmentation disorder,5.0,3_6_40_Melanocortin receptors,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+MC2R,MC2R,Hyperpigmentation disorder,22.0,3_6_40_Melanocortin receptors,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+MCM4,MCM4,Hyperpigmentation disorder,26.0,4_1_1_DNA Replication,DNA Replication,DNA Replication,03_C_Nucleoplasm,MCM4,410855.0,MCM4,308043.3333333333,PMC9854651,pmcid
+MEN1,MEN1,Mixed hypo- & hyperpigmentation disorder,11.0,1_3_Chromatin organization,Chromatin organization,Chromatin organization & DNA repair,03_D_Chromatin,,,,,PMC9854651,pmcid
+MITF,MITF,Hypopigmentation disorder,5.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+MLH1,MLH1,Mixed hypo- & hyperpigmentation disorder,1.0,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,03_A_Nucleus,MLH1,75256.16666666667,MLH1,42434.833333333336,PMC9854651,pmcid
+MLPH,MLPH,Hypopigmentation disorder,18.0,1_33_Melanosomes,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+MRAP,MRAP,Hyperpigmentation disorder,22.0,1_33_Melanosomes,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+MSH2,MSH2,Hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_A_Nucleus,MSH2,290876.6666666667,MSH2,215565.0,PMC9854651,pmcid
+MSH6,MSH6,Hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_A_Nucleus,MSH6,263253.3333333333,MSH6,211548.33333333334,PMC9854651,pmcid
+MTAP,MTAP,Hyperpigmentation disorder,36.0,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_A_Cytosol,MTAP,447995.0,MTAP,456720.0,PMC9854651,pmcid
+MYH8,MYH8,Hyperpigmentation disorder,11.0,1_15_1_Actin,Cytoskeleton,Cytoskeleton,01_D_1_Microfilaments (Actin),,,,,PMC9854651,pmcid
+MYO5A,MYO5A,Hypopigmentation disorder,18.0,1_15_1_Actin,Cytoskeleton,Cytoskeleton,01_D_1_Microfilaments (Actin),MYO5A,297911.6666666667,MYO5A,218200.0,PMC9854651,pmcid
+NARS1,NARS1,Hypopigmentation disorder,,1_8_1_Translation,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",01_C_3_Ribosomes,,,,,PMC9854651,pmcid
+NBN,NBN,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_A_Nucleus,NBN,45288.666666666664,NBN,22819.516666666666,PMC9854651,pmcid
+NEK6,NEK6,Hypopigmentation disorder,,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,01_D_3d_Centrosome,,,,,PMC9854651,pmcid
+NF1,NF1,Hyperpigmentation disorder,2.0,1_26_3_Ras_GAP,Ras GTPases and regulators,Signaling,01_A_Cytosol,NF1,40171.5,NF1,36698.166666666664,PMC9854651,pmcid
+NFIX,NFIX,Hyperpigmentation disorder,2.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,NFIX,110218.83333333333,NFIX,363546.6666666667,PMC9854651,pmcid
+NHP2,NHP2,Hyperpigmentation disorder,3.0,1_6_2_Metabolism of rRNA,Metabolism of rRNA,Metabolism,03_H_Necleoli,,,,,PMC9854651,pmcid
+NID1,NID1,Hyperpigmentation disorder,30.0,2_1_1_Degradation of the extracellular matrix,ECM organisation,ECM organisation,04_EXTRACELLULAR,NID1,7901.4833333333345,NID1,10932.783333333333,PMC9854651,pmcid
+NLRP1,NLRP1,Hypopigmentation disorder,12.0,3_5_2_Innate Immune System,Innate Immune System,Immune system & Inflammation,01_A_Cytosol,,,,,PMC9854651,pmcid
+NNT,NNT,Hyperpigmentation disorder,33.0,1_10_The citric acid (TCA) cycle and respiratory electron transport,TCA cycle and relectron transport chain,Metabolism,01_B_1_Mitochondria,,,,,PMC9854651,pmcid
+NOP10,NOP10,Hyperpigmentation disorder,3.0,1_6_2_Metabolism of rRNA,Metabolism of rRNA,Metabolism,03_H_Necleoli,,,,,PMC9854651,pmcid
+NR0B1,NR0B1,Hyperpigmentation disorder,21.0,1_34_Nuclear receptors,Nuclear receptors,Other,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+NRAS,NRAS,Hyperpigmentation disorder,2.0,1_26_1_Ras,Ras GTPases and regulators,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+NRROS,NRROS,Hypopigmentation disorder,,3_2_13_Signaling by TGF-beta Receptor Complex,Signaling - Cell fates,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+NSD1,NSD1,Hyperpigmentation disorder,,1_3_Chromatin organization,Chromatin organization,Chromatin organization & DNA repair,03_D_Chromatin,,,,,PMC9854651,pmcid
+OCA2,OCA2,Hypopigmentation disorder,5.0,1_33_Melanosomes,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+PAH,PAH,Hypopigmentation disorder,32.0,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_A_Cytosol,,,,,PMC9854651,pmcid
+PALB2,PALB2,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+PARN,PARN,Hyperpigmentation disorder,3.0,1_6_3_Metabolism of mRNA,Metabolism of mRNA & Translation,"Protein translation, folding, modification & degradation",03_H_Necleoli,PARN,50890.666666666664,PARN,30324.333333333332,PMC9854651,pmcid
+PARP12,PARP12,Hypopigmentation disorder,,1_8_25_ADP-Ribosylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",03_A_Nucleus,,,,,PMC9854651,pmcid
+PAX3,PAX3,Hypopigmentation disorder,10.0,3_9_Development,Developmental,Developmental,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+PCNT,PCNT,Mixed hypo- & hyperpigmentation disorder,,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,01_D_3d_Centrosome,PCNT,28647.5,PCNT,29371.0,PMC9854651,pmcid
+PLA2G6,PLA2G6,Hyperpigmentation disorder,34.0,1_1_5_Phospholipid metabolism,Lipid & FA metabolism,Metabolism,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+PLCB3,PLCB3,Hypopigmentation disorder,16.0,1_1_5_Phospholipid metabolism,Lipid & FA metabolism,Metabolism,01_A_Cytosol,PLCB3,120884.0,PLCB3,101701.33333333333,PMC9854651,pmcid
+PMS2,PMS2,Hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,PMS2,59963.833333333336,PMS2,62256.0,PMC9854651,pmcid
+POFUT1,POFUT1,Mixed hypo- & hyperpigmentation disorder,35.0,1_8_10_O-linked glycosylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",01_B_2_Endoplasmic reticulum,POFUT1,337475.0,POFUT1,325080.0,PMC9854651,pmcid
+POGLUT1,POGLUT1,Hyperpigmentation disorder,35.0,1_8_10_O-linked glycosylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",01_B_2_Endoplasmic reticulum,POGLUT1,56813.333333333336,POGLUT1,84603.83333333333,PMC9854651,pmcid
+POLA1,POLA1,Hyperpigmentation disorder,1.0,4_1_1_DNA Replication,DNA Replication,DNA Replication,03_C_Nucleoplasm,POLA1,44276.666666666664,POLA1,29286.833333333332,PMC9854651,pmcid
+POLH,POLH,Mixed hypo- & hyperpigmentation disorder,1.0,4_1_1_DNA Replication,DNA Replication,DNA Replication,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+POMC,POMC,Hypopigmentation disorder,22.0,3_12_Hormone activity,Hormones,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+PPARGC1B,PPARGC1B,Hypopigmentation disorder,,1_1_1_Regulation of lipid metabolism by Peroxisome proliferator-activated receptor alpha (PPARalpha),Lipid & FA metabolism,Metabolism,03_A_Nucleus,,,,,PMC9854651,pmcid
+PPP3CA,PPP3CA,Hypopigmentation disorder,2.0,1_26_19_protein phosphatase catalytic subunit,Protein phosphatases,Signaling,03_C_Nucleoplasm,PPP3CA,130960.0,PPP3CA,111967.16666666667,PMC9854651,pmcid
+PRKAR1A,PRKAR1A,Hyperpigmentation disorder,11.0,1_26_22_protein kinase cAMP-dependent ,Protein kinases,Signaling,01_A_Cytosol,PRKAR1A,297455.0,PRKAR1A,409025.0,PMC9854651,pmcid
+PSENEN,PSENEN,Hyperpigmentation disorder,31.0,3_4_Cell_cell_junctions_adhesion,Cell_cell_junctions_adhesion,Cell junction & adhesion,02_A_Cell-cell-junctions,,,,,PMC9854651,pmcid
+PTEN,PTEN,Hyperpigmentation disorder,2.0,1_26_48_phosphatidylinositol-phosphate phosphatase,Lipid & FA metabolism,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+PTPN1,PTPN1,Hypopigmentation disorder,6.0,1_26_24_protein tyrosine phosphatase,Protein phosphatases,Signaling,01_B_2_Endoplasmic reticulum,PTPN1,233243.33333333334,PTPN1,176190.0,PMC9854651,pmcid
+PTPN11,PTPN11,Hyperpigmentation disorder,6.0,1_26_24_protein tyrosine phosphatase,Protein phosphatases,Signaling,01_A_Cytosol,PTPN11,221126.66666666666,PTPN11,237956.66666666666,PMC9854651,pmcid
+PTPN22,PTPN22,Hypopigmentation disorder,7.0,1_26_24_protein tyrosine phosphatase,Protein phosphatases,Signaling,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+PTPRC,PTPRC,Hypopigmentation disorder,6.0,1_26_24_protein tyrosine phosphatase,Protein phosphatases,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+RAB27A,RAB27A,Hypopigmentation disorder,18.0,1_26_7_Rab,Rab GTPase and regulators,Signaling,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+RAB5C,RAB5C,Hypopigmentation disorder,14.0,1_26_7_Rab,Rab GTPase and regulators,Signaling,01_B_7_Endosomes,RAB5C,554583.3333333334,RAB5C,527585.0,PMC9854651,pmcid
+RAF1,RAF1,Hyperpigmentation disorder,2.0,1_26_16_mitogen-activated protein kinase kinase kinase,Protein kinases,Signaling,01_A_Cytosol,RAF1,83409.0,RAF1,64363.333333333336,PMC9854651,pmcid
+RALY,RALY,Hypopigmentation disorder,17.0,1_1_8_Metabolism of steroids/cholesterol,Lipid & FA metabolism,Metabolism,03_A_Nucleus,,,,,PMC9854651,pmcid
+RECQL4,RECQL4,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+RERE,RERE,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+RFXANK,RFXANK,Mixed hypo- & hyperpigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+RIT1,RIT1,Hyperpigmentation disorder,2.0,1_26_1_Ras,Ras GTPases and regulators,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+RNASET2,RNASET2,Hypopigmentation disorder,,1_6_2_Metabolism of rRNA,Metabolism of rRNA,Metabolism,03_H_Necleoli,,,,,PMC9854651,pmcid
+RPGRIP1L,RPGRIP1L,Hypopigmentation disorder,,1_16_Cilium assembly,Cytoskeleton,Cytoskeleton,01_D_3b_Cilia,,,,,PMC9854651,pmcid
+RTEL1,RTEL1,Hyperpigmentation disorder,3.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_A_Nucleus,,,,,PMC9854651,pmcid
+SAMD9,SAMD9,Hyperpigmentation disorder,,1_26_52_sterile alpha motif domain containing,Signaling - Other,Signaling,01_A_Cytosol,SAMD9,66041.16666666667,SAMD9,34152.5,PMC9854651,pmcid
+SERPINB9,SERPINB9,Hypopigmentation disorder,13.0,2_1_10_Serpins,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+SGPL1,SGPL1,Hyperpigmentation disorder,,1_1_7_Sphingolipid metabolism,Lipid & FA metabolism,Metabolism,01_B_2_b_Smooth ER,SGPL1,12026.566666666666,SGPL1,10049.833333333334,PMC9854651,pmcid
+SH2B3,SH2B3,Hypopigmentation disorder,15.0,1_26_29_adapters/scaffolds,Adapters/scaffolds,Signaling,01_A_Cytosol,SH2B3,15805.333333333334,SH2B3,15377.365,PMC9854651,pmcid
+SHOC2,SHOC2,Hyperpigmentation disorder,2.0,1_26_29_adapters/scaffolds,Adapters/scaffolds,Signaling,01_A_Cytosol,SHOC2,49850.666666666664,SHOC2,80469.5,PMC9854651,pmcid
+SLC17A5,SLC17A5,Hypopigmentation disorder,,3_1_10_other transporters,Metabolism - Other,Metabolism,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SLC1A2,SLC1A2,Hypopigmentation disorder,,3_1_1_Amino acid & peptide transporters ,Metabolism of amino acids and derivatives,Metabolism,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SLC24A5,SLC24A5,Hypo & pigmentation,19.0,1_33_Melanosomes,Melanosomes,Organelles,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SLC29A3,SLC29A3,Hyperpigmentation disorder,,3_1_7_Nucleoside/nucleic acid bases transporters,Metabolism of nucleotides & phosphates,Metabolism,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SLC44A4,SLC44A4,Hypopigmentation disorder,,3_1_6_Lipid transporters,Lipid & FA metabolism,Metabolism,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SLC45A2,SLC45A2,Hypopigmentation disorder,5.0,1_33_Melanosomes,Melanosomes,Organelles,01_B_6_Melanosomes,,,,,PMC9854651,pmcid
+SMARCAL1,SMARCAL1,Hyperpigmentation disorder,1.0,1_3_Chromatin organization,Chromatin organization,Chromatin organization & DNA repair,03_D_Chromatin,,,,,PMC9854651,pmcid
+SMO,SMO,Hypopigmentation disorder,,3_9_Development,Developmental,Developmental,02_B_Cell membrane,,,,,PMC9854651,pmcid
+SMOC2,SMOC2,Hypopigmentation disorder,,2_1_Extracellular matrix organisation,ECM organisation,ECM organisation,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+SNAI2,SNAI2,Hypopigmentation disorder,10.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+SOX10,SOX10,Hypopigmentation disorder,10.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,SOX10,229673.33333333334,SOX10,286783.3333333333,PMC9854651,pmcid
+SPATA48,SPATA48,Hypopigmentation disorder,,3_10_Reproduction,Reproduction,Other,03_A_Nucleus,,,,,PMC9854651,pmcid
+SPRED1,SPRED1,Hyperpigmentation disorder,2.0,1_26_29_adaptors/scaffolds,Adapters/scaffolds,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+ST3GAL5,ST3GAL5,Mixed hypo- & hyperpigmentation disorder,,1_8_10_O-linked glycosylation,Post-translational protein modification,"Protein translation, folding, modification & degradation",04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+STAR,STAR,Hyperpigmentation disorder,21.0,1_1_8_Metabolism of steroids/cholesterol,Lipid & FA metabolism,Metabolism,01_B_1_Mitochondria,,,,,PMC9854651,pmcid
+STAT4,STAT4,Hypopigmentation disorder,36.0,3_5_3_Cytokine Signaling in Immune system,GPCR signaling,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+STK11,STK11,Hyperpigmentation disorder,2.0,1_26_28_serine/threonine kinase,Protein kinases,Signaling,01_B_1_Mitochondria,,,,,PMC9854651,pmcid
+TBX5,TBX5,Hyperpigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+TEF,TEF,Hypopigmentation disorder,,3_9_Development,Developmental,Developmental,03_A_Nucleus,,,,,PMC9854651,pmcid
+TERC,,Hyperpigmentation disorder,,,,,,,,,,PMC9854651,pmcid
+TERT,TERT,Hyperpigmentation disorder,3.0,4_1_2_Cell Cycle,Signaling - Cell fates,Signaling,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+TG,TG,Hypopigmentation disorder,,1_8_17_Peptide hormone metabolism,Hormones,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+TICAM1,TICAM1,Hypopigmentation disorder,8.0,3_5_2_Innate Immune System,Innate Immune System,Immune system & Inflammation,01_A_Cytosol,,,,,PMC9854651,pmcid
+TINF2,TINF2,Hyperpigmentation disorder,3.0,4_3_Cellular Senescence,Signaling - Cell fates,Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+TNFRSF11A,TNFRSF11A,Hypopigmentation disorder,37.0,3_2_4_Death Receptor Signalling,Signaling - Cell fates,Signaling,02_B_Cell membrane,,,,,PMC9854651,pmcid
+TNFSF11,TNFSF11,Hypopigmentation disorder,37.0,3_2_4_Death Receptor Signalling,Signaling - Cell fates,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+TP63,TP63,Mixed hypo- & hyperpigmentation disorder,9.0,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+TPCN2,TPCN2,Pigmentation phenotype,19.0,3_1_21_Calcium channel,Ion transporters,Metabolism,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+TSC1,TSC1,Hypopigmentation disorder,2.0,3_2_23_Signaling by TOR,Signaling - Cell fates,Signaling,01_A_Cytosol,,,,,PMC9854651,pmcid
+TSC2,TSC2,Hypopigmentation disorder,2.0,1_26_3_Ras_GAP,Ras GTPases and regulators,Signaling,01_A_Cytosol,TSC2,43500.0,TSC2,32676.666666666668,PMC9854651,pmcid
+TYR,TYR,"Hyper, hypo & pigmentation",5.0,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_B_4_Lysosomes,,,,,PMC9854651,pmcid
+TYRP1,TYRP1,Hypopigmentation disorder,5.0,1_7_Metabolism of amino acids and derivatives,Metabolism of amino acids and derivatives,Metabolism,01_B_7_Endosomes,,,,,PMC9854651,pmcid
+UBASH3A,UBASH3A,Hypopigmentation disorder,,1_26_58_Hydrolase,Metabolism - Other,Signaling,03_A_Nucleus,,,,,PMC9854651,pmcid
+UBE2E2,UBE2E2,Hypopigmentation disorder,,1_8_6_Protein ubiquitination,Post-translational protein modification,"Protein translation, folding, modification & degradation",03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+USP9X,USP9X,Hypopigmentation disorder,12.0,1_8_13_Deubiquitination,Post-translational protein modification,"Protein translation, folding, modification & degradation",01_C_6_Vesicles,USP9X,157530.0,USP9X,135568.33333333334,PMC9854651,pmcid
+UVSSA,UVSSA,Hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+VEGFA,VEGFA,Hyperpigmentation disorder,6.0,3_2_16_Signaling by VEGF,Signaling - Cell fates,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+WIF1,WIF1,Hyperpigmentation disorder,,3_2_11_Signaling by Wnt,Signaling - Cell fates,Signaling,04_EXTRACELLULAR,,,,,PMC9854651,pmcid
+WRAP53,WRAP53,Hyperpigmentation disorder,3.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,WRAP53,43508.333333333336,WRAP53,11604.699999999999,PMC9854651,pmcid
+WRN,WRN,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+XPA,XPA,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+XPC,XPC,Mixed hypo- & hyperpigmentation disorder,1.0,1_4_DNA Repair,DNA Repair,Chromatin organization & DNA repair,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ZC3H7B,ZC3H7B,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid
+ZMIZ1,ZMIZ1,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,ZMIZ1,3812.8333333333335,,,PMC9854651,pmcid
+ZMPSTE24,ZMPSTE24,Hyperpigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,ZMPSTE24,67451.83333333333,ZMPSTE24,38463.333333333336,PMC9854651,pmcid
+ZNF354A,ZNF354A,Hypopigmentation disorder,,1_5_2_Transcription factors,Transcription & transcription factors,Transcription,03_C_Nucleoplasm,,,,,PMC9854651,pmcid

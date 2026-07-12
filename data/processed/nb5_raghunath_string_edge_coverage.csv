@@ -1,0 +1,293 @@
+gene_a,gene_b,raghunath_sign,raghunath_citation,both_string_mappable,string_edge_present_score700,citation,citation_source
+ADCY4,PRKACA,+,relayed via cAMP_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via cAMP_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+ADCY4,RAP1A,+,relayed via cAMP_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via cAMP_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+AKT1,BAD,-,PMID:16888633; PMID:16932738,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16888633; PMID:16932738,string_db+inherited_backbone
+AKT1,CASP8,-,NetProTM (Molecular Connections curated interaction DB); PMID:12952968,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:12952968,string_db+inherited_backbone
+AKT1,CREB1,+,PMID:10761990,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10761990,string_db+inherited_backbone
+AKT1,CTNNB1,+,PMID:21802267,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:21802267,string_db+inherited_backbone
+AKT1,EZR,+,PMID:18983538,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18983538,string_db+inherited_backbone
+AKT1,FOS,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+AKT1,GSK3B,-,PMID:12489109; PMID:14632202,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12489109; PMID:14632202,string_db+inherited_backbone
+AKT1,MSN,+,PMID:18983538,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18983538,string_db+inherited_backbone
+AKT1,RDX,+,PMID:18983538,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18983538,string_db+inherited_backbone
+BAD,CYCS,+,PMID:14678993; PMID:16932738,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:14678993; PMID:16932738,string_db+inherited_backbone
+BAK1,CYCS,+,PMID:16901898,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16901898,string_db+inherited_backbone
+BAX,CYCS,+,NetProTM (Molecular Connections curated interaction DB); PMID:15304079,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:15304079,string_db+inherited_backbone
+BAX,BBC3,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BAX,BCL2,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BID,CYCS,+,PMID:20019748,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:20019748,string_db+inherited_backbone
+CASP3,CDKN1A,-,PMID:9660939,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:9660939,string_db+inherited_backbone
+CASP3,DFFA,+,relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CASP3,DFFB,+,relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CASP3,MAP3K1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CASP3,PRKCD,+,PMID:9660939,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:9660939,string_db+inherited_backbone
+BID,CASP8,+,PMID:20019748,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:20019748,string_db+inherited_backbone
+CASP3,CASP8,+,PMID:11803373,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11803373,string_db+inherited_backbone
+CASP3,CASP9,+,PMID:11919192,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11919192,string_db+inherited_backbone
+CASP8,CASP9,+,PMID:11919192,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11919192,string_db+inherited_backbone
+CDC42,MAP3K1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CDC42,RAC1,+,PMID:11896192,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11896192,string_db+inherited_backbone
+CFLAR,MAP2K7,-,PMID:17110930,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:17110930,string_db+inherited_backbone
+CHUK,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BCL2,CREB1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CFLAR,CREB1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CREB1,DUSP1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CREB1,MITF,+,PMID:19124082,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19124082,string_db+inherited_backbone
+CREB1,PTGS2,+,NetProTM (Molecular Connections curated interaction DB); PMID:17277233,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:17277233,string_db+inherited_backbone
+CSF2,CSF2RA,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CSF2RA,STAT3,+,relayed via CSF2RA:JAK1_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via CSF2RA:JAK1_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+CTNNB1,MITF,+,relayed via CTNNB1:LEF1_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via CTNNB1:LEF1_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+CASP9,CYCS,+,relayed via APAF1:CYCS_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via APAF1:CYCS_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CYCS,TFAP2A,+,PMID:12952965,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12952965,string_db+inherited_backbone
+DUSP1,MAPK1,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+DUSP1,MAPK3,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+DUSP1,MAPK8,-,PMID:17363493,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:17363493,string_db+inherited_backbone
+EDN1,EDNRB,+,PMID:16411896,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16411896,string_db+inherited_backbone
+ADCY4,EDNRB,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+EDNRB,PLC,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+EGFR,HRAS,+,relayed via SOS1:GRB2:SHC1_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via SOS1:GRB2:SHC1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+EGFR,PIK3CA,+,PMID:12952968,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12952968,string_db+inherited_backbone
+EGFR,STAT1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CDKN1A,ELK1,+,PMID:21642427,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:21642427,string_db+inherited_backbone
+F10,F2RL1,+,PMID:19258275,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19258275,string_db+inherited_backbone
+F2RL1,PLC,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+F2RL1,RHOA,+,PMID:12925212,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12925212,string_db+inherited_backbone
+F2RL1,F7,+,PMID:19258275,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19258275,string_db+inherited_backbone
+CASP8,FAS,+,relayed via FAS:FADD_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FAS:FADD_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FAS,FASLG,+,PMID:9425165,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:9425165,string_db+inherited_backbone
+BCL2,FOS,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CCND1,FOS,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+EDN1,FOS,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,IL1A,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,IL6,-,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,IVL,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,MMPS,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,NGF,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,PTGS2,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+FOS,TNF,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+AKT1,FZD3,+,PMID:17804197,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:17804197,string_db+inherited_backbone
+AKT1,GAB1,+,relayed via GAB1:PIK3CA_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via GAB1:PIK3CA_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+CTNNB1,GSK3B,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+GSK3B,NFATC1,-,PMID:18708588,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18708588,string_db+inherited_backbone
+GUCY1A2,PRKG1,+,relayed via cGMP_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via cGMP_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+GUCY1A2,PHOSPHODIESTERASE,+,relayed via cGMP_melan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via cGMP_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+HGF,MET,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+HIF1A,KITLG,+,PMID:24194964,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:24194964,string_db+inherited_backbone
+HIF1A,PMAIP1,+,PMID:20393480,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:20393480,string_db+inherited_backbone
+HRAS,RAF1,+,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11348449,string_db+inherited_backbone
+IL1A,IL1R1,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+IL1R1,IRAK1,+,relayed via IL1R1:MYD88:IRAK1:IRAK4_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IL1R1:MYD88:IRAK1:IRAK4_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IL6,IL6R,+,PMID:15191552,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15191552,string_db+inherited_backbone
+IL6R,JAK1,+,PMID:15191552,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15191552,string_db+inherited_backbone
+CHUK,IRAK1,0,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IRAK1,MAP2K3,0,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IRAK1,MAP2K4,0,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IRAK1,MAP2K6,0,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IRAK1,MAP3K1,+,relayed via IRAK1_Active:TRAF6_kerat>IRAK1_Active:TRAF6:ECSIT_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IRAK1_Active:TRAF6_kerat>IRAK1_Active:TRAF6:ECSIT_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JAK1,STAT3,+,PMID:15191552,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15191552,string_db+inherited_backbone
+BCL2,JUN,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CCND1,JUN,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+EDN1,JUN,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IL1A,JUN,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IL6,JUN,-,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+IVL,JUN,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JUN,MMPS,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JUN,NGF,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JUN,PTGS2,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JUN,TNF,+,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+HRAS,KIT,+,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+KIT,PIK3CA,+,PMID:16410786,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16410786,string_db+inherited_backbone
+KIT,KITLG,+,NetProTM (Molecular Connections curated interaction DB); PMID:22637532,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:22637532,string_db+inherited_backbone
+MAP2K1,MAPK1,+,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11359940,string_db+inherited_backbone
+MAP2K1,MAPK3,+,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11359940,string_db+inherited_backbone
+MAP2K2,MAPK1,+,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11359940,string_db+inherited_backbone
+MAP2K2,MAPK3,+,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11359940,string_db+inherited_backbone
+MAP2K3,MAPK14,+,"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",True,True,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",string_db+inherited_backbone
+MAP2K4,MAPK8,+,"NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",True,True,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",string_db+inherited_backbone
+MAP2K6,MAPK14,+,"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",True,True,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",string_db+inherited_backbone
+MAP2K7,MAPK8,+,"NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",True,True,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",string_db+inherited_backbone
+MAP2K4,MAP3K1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP2K7,MAP3K1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP3K1,MAP3K14,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CHUK,MAP3K14,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP2K3,MAP3K5,+,PMID:11029458,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11029458,string_db+inherited_backbone
+MAP2K4,MAP3K5,+,PMID:11029458,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11029458,string_db+inherited_backbone
+MAP2K6,MAP3K5,+,PMID:11029458,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11029458,string_db+inherited_backbone
+MAP2K7,MAP3K5,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP3K1,MAP3K5,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP3K1,MAP4K2,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+ATF2,MAPK1,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+ELK1,MAPK1,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+FOS,MAPK1,+,PMID:15964692,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15964692,string_db+inherited_backbone
+JUN,MAPK1,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+MAPK1,MITF,-,PMID:18039926,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18039926,string_db+inherited_backbone
+MAPK1,PLA2,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+MAPK1,RPS6KA1,+,NetProTM (Molecular Connections curated interaction DB); PMID:19847192,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:19847192,string_db+inherited_backbone
+MAPK1,TP53,+,PMID:10781582,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10781582,string_db+inherited_backbone
+ATF2,MAPK14,+,PMID:11244091,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11244091,string_db+inherited_backbone
+BAX,MAPK14,+,PMID:15964692,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15964692,string_db+inherited_backbone
+BCL2L1,MAPK14,+,PMID:15292226,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15292226,string_db+inherited_backbone
+CASP3,MAPK14,+,PMID:10233770,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10233770,string_db+inherited_backbone
+CREB1,MAPK14,+,PMID:11841550,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11841550,string_db+inherited_backbone
+ELK1,MAPK14,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+FOS,MAPK14,+,PMID:14511403; PMID:15964692,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:14511403; PMID:15964692,string_db+inherited_backbone
+HIF1A,MAPK14,+,PMID:16278378,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16278378,string_db+inherited_backbone
+MAPK14,USF1,+,PMID:15358786,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15358786,string_db+inherited_backbone
+ATF2,MAPK3,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+ELK1,MAPK3,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+FOS,MAPK3,+,PMID:15964692,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15964692,string_db+inherited_backbone
+JUN,MAPK3,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+MAPK3,MITF,-,PMID:18039926,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18039926,string_db+inherited_backbone
+MAPK3,PLA2,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+MAPK3,RPS6KA1,+,NetProTM (Molecular Connections curated interaction DB); PMID:19847192,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:19847192,string_db+inherited_backbone
+MAPK3,TP53,+,PMID:10781582,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10781582,string_db+inherited_backbone
+ATF2,MAPK8,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+BAK1,MAPK8,+,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+BAX,MAPK8,+,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+JUN,MAPK8,+,NetProTM (Molecular Connections curated interaction DB); PMID:14511403,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:14511403,string_db+inherited_backbone
+MAPK8,MCL1,+,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+ADCY4,MC1R,+,"Raghunath-ref[14]:Dong F, Cui R, Liu F: Additional Roles of A-MSH/MC1R Signali",True,False,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); Raghunath-ref[14]:Dong F, Cui R, Liu F: Additional Roles of A-MSH/MC1R Signali",string_db+inherited_backbone
+MC1R,NFKB1,-,PMID:19656324,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19656324,string_db+inherited_backbone
+GAB1,MET,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+HRAS,MET,+,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+BCL2,MITF,+,PMID:12086670,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12086670,string_db+inherited_backbone
+CDK4,MITF,+,"Raghunath-ref[97]:Wellbrock C, Rana S, Paterson H, Pickersgill H, Brummelkamp",True,False,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); Raghunath-ref[97]:Wellbrock C, Rana S, Paterson H, Pickersgill H, Brummelkamp",string_db+inherited_backbone
+DCT,MITF,+,PMID:19026785,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19026785,string_db+inherited_backbone
+EDNRB,MITF,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MC1R,MITF,+,PMID:12204775,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12204775,string_db+inherited_backbone
+MET,MITF,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MITF,MLANA,+,PMID:15117970,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15117970,string_db+inherited_backbone
+MITF,OCA2,+,PMID:22234890,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:22234890,string_db+inherited_backbone
+MITF,PMEL,+,PMID:18039926,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18039926,string_db+inherited_backbone
+MITF,PRKCB,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MITF,TYR,+,PMID:19026785,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19026785,string_db+inherited_backbone
+MITF,TYRP1,+,PMID:19026785,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19026785,string_db+inherited_backbone
+CDH2,MSN,+,PMID:18983538,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18983538,string_db+inherited_backbone
+NFATC1,PTGS2,+,PMID:18708588,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18708588,string_db+inherited_backbone
+BCL2,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CDKN1A,NFKB1,+,PMID:12612054,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12612054,string_db+inherited_backbone
+CSF2,NFKB1,+,PMID:15102074,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15102074,string_db+inherited_backbone
+CXCL8,NFKB1,+,PMID:19726162,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19726162,string_db+inherited_backbone
+EDN1,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+F2RL1,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+FASLG,NFKB1,+,PMID:16631160,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16631160,string_db+inherited_backbone
+ICAM1,NFKB1,+,PMID:15654951,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15654951,string_db+inherited_backbone
+IL10,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+IL12A,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+IL1A,NFKB1,+,PMID:10862790,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10862790,string_db+inherited_backbone
+IL6,NFKB1,+,PMID:16211268,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16211268,string_db+inherited_backbone
+KITLG,NFKB1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MMPS,NFKB1,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+NFKB1,NOS2,+,"Raghunath-ref[110]:Song XZ, Bi ZG, Xu AE: Green tea polyphenol epigallocatechin",True,False,"STRING v12.0 (2026-07-12T01:17:03.759858+00:00); Raghunath-ref[110]:Song XZ, Bi ZG, Xu AE: Green tea polyphenol epigallocatechin",string_db+inherited_backbone
+NFKB1,PRKCD,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+NFKB1,PTGS2,+,PMID:14633657,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:14633657,string_db+inherited_backbone
+NFKB1,TNF,+,PMID:21282043,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:21282043,string_db+inherited_backbone
+NFKB1,TP53,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+NGF,NTRK1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+GUCY1A2,NOS2,+,relayed via Nitric_oxide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Nitric_oxide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+EGFR,NOX1,+,relayed via ROS_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via ROS_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP3K5,NOX1,+,relayed via ROS_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via ROS_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+NOX1,SMPD2,+,relayed via ROS_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via ROS_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+HRAS,NTRK1,+,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP2K3,PAK1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP2K6,PAK1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MITF,PAX3,+,PMID:10536986; PMID:19124082,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10536986; PMID:19124082,string_db+inherited_backbone
+AKT1,PDPK1,+,NetProTM (Molecular Connections curated interaction DB); PMID:19342374,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:19342374,string_db+inherited_backbone
+PDPK1,PRKCH,+,PMID:12223477,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12223477,string_db+inherited_backbone
+MITF,PIAS3,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PIAS3,STAT3,-,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PDPK1,PIK3CA,+,NetProTM (Molecular Connections curated interaction DB); PMID:19342374,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:19342374,string_db+inherited_backbone
+PIK3CA,RAC1,+,PMID:18983538,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18983538,string_db+inherited_backbone
+NFKB1,PKC,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,PTGER1,+,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,PTGER2,+,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,PTGER3,+,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,PTGER4,+,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLC,PRKCB,+,relayed via DAG_melan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via DAG_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PLC,RYR1,+,relayed via IP3_melan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via IP3_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PLC,SMPD1,+,relayed via DAG_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via DAG_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+BAK1,PMAIP1,+,PMID:15901672,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15901672,string_db+inherited_backbone
+NFATC1,PPP3CA,+,PMID:18708588,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18708588,string_db+inherited_backbone
+CREB1,PRKACA,+,NetProTM (Molecular Connections curated interaction DB); PMID:12950719,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:12950719,string_db+inherited_backbone
+GAB1,PRKCB,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PRKCB,TYR,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BAK1,PRKCD,+,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+BAX,PRKCD,+,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CASP8,PRKCD,+,PMID:15304079,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15304079,string_db+inherited_backbone
+CASP9,PRKCD,+,PMID:15304079,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15304079,string_db+inherited_backbone
+MCL1,PRKCD,+,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CASP3,PRKCH,-,PMID:12646210,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12646210,string_db+inherited_backbone
+CDK2,PRKCH,-,PMID:11175348,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11175348,string_db+inherited_backbone
+MAPK14,PRKCH,+,PMID:12646210,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12646210,string_db+inherited_backbone
+NFKB1,PRKCZ,+,PMID:12881425,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12881425,string_db+inherited_backbone
+CREB1,PRKG1,+,PMID:22441938,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:22441938,string_db+inherited_backbone
+PLC,PTGER1,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+ADCY4,PTGER2,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PLC,PTGER3,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+ADCY4,PTGER4,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PTGER1,PTGS2,+,relayed via PGE2_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via PGE2_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PTGER2,PTGS2,+,relayed via PGE2_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PTGER3,PTGS2,+,relayed via PGE2_melan (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via PGE2_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PTGER4,PTGS2,+,relayed via PGE2_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via PGE2_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PHOSPHODIESTERASE,PRKACA,-,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP2K3,RAC1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP2K6,RAC1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MAP3K1,RAC1,+,NetProTM (Molecular Connections curated interaction DB); PMID:8910292,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:8910292,string_db+inherited_backbone
+NOX1,RAC1,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+PAK1,RAC1,+,PMID:22882909,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:22882909,string_db+inherited_backbone
+PRKCZ,RAC1,+,relayed via RAC1:PARD6A:CDC42_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via RAC1:PARD6A:CDC42_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP2K1,RAF1,+,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11348449,string_db+inherited_backbone
+MAP2K2,RAF1,+,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:11348449,string_db+inherited_backbone
+RAC1,RAP1A,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BAD,RPS6KA1,-,PMID:15107468,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15107468,string_db+inherited_backbone
+CREB1,RPS6KA1,+,PMID:15107468; PMID:7540859,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15107468; PMID:7540859,string_db+inherited_backbone
+MITF,RPS6KA1,-,PMID:10673502,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10673502,string_db+inherited_backbone
+PKC,RYR1,+,relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PPP3CA,RYR1,+,relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PRKCB,RYR1,+,relayed via Calcium_cyt_melan (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Calcium_cyt_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PHOSPHODIESTERASE,RYR1,+,relayed via Calcium_cyt_melan>Calcium_cyt:Calmodulin_melan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Calcium_cyt_melan>Calcium_cyt:Calmodulin_melan (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,SMPD1,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PRKCZ,SMPD1,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+SMPD1,TFAP2A,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,SMPD2,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PRKCZ,SMPD2,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+SMPD2,TFAP2A,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+DCT,SOX10,+,PMID:14706856,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:14706856,string_db+inherited_backbone
+MITF,SOX10,+,PMID:12944398,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12944398,string_db+inherited_backbone
+PAX3,SOX10,+,PMID:10942418,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10942418,string_db+inherited_backbone
+SOX10,TYR,+,PMID:17516925,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:17516925,string_db+inherited_backbone
+SOX10,TYRP1,+,PMID:16934245,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:16934245,string_db+inherited_backbone
+PLA2,SPTLC1,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PRKCZ,SPTLC1,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+SPTLC1,TFAP2A,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLA2,SPTLC2,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PRKCZ,SPTLC2,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+SPTLC2,TFAP2A,+,relayed via Ceramide_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via Ceramide_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+EGFR,SRC,+,PMID:22532027,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:22532027,string_db+inherited_backbone
+MMP1,STAT1,+,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+BCL2,STAT3,+,PMID:23577258,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:23577258,string_db+inherited_backbone
+BCL2L1,STAT3,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+CCND1,STAT3,+,NetProTM (Molecular Connections curated interaction DB); PMID:23577258,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB); PMID:23577258,string_db+inherited_backbone
+PTGS2,STAT3,+,PMID:21440540,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:21440540,string_db+inherited_backbone
+ICAM1,TFAP2A,+,PMID:12952965,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12952965,string_db+inherited_backbone
+TFAP2A,TNF,-,NetProTM (Molecular Connections curated interaction DB),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+TNF,TNFRSF1A,+,PMID:11348449,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:11348449,string_db+inherited_backbone
+CASP8,TNFRSF1A,+,relayed via TNFRSF1A:TRADD:FADD_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRADD:FADD_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CDC42,TNFRSF1A,+,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+CHUK,TNFRSF1A,+,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP3K5,TNFRSF1A,+,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+MAP4K2,TNFRSF1A,+,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PAK1,TNFRSF1A,+,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+PLC,TNFRSF1A,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+SMPD2,TNFRSF1A,+,relayed via TNFRSF1A:NSMAF:GNB2L1_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via TNFRSF1A:NSMAF:GNB2L1_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+BBC3,TP53,+,PMID:18761658,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18761658,string_db+inherited_backbone
+DUSP1,TP53,+,PMID:12890671,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:12890671,string_db+inherited_backbone
+GADD45A,TP53,+,PMID:19098008,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19098008,string_db+inherited_backbone
+HIF1A,TP53,+,NetProTM (Molecular Connections curated interaction DB),True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); NetProTM (Molecular Connections curated interaction DB),string_db+inherited_backbone
+MC1R,TP53,+,relayed via alpha_MSH_kerat (backbone-derived; see topology layer),True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via alpha_MSH_kerat (backbone-derived; see topology layer),string_db+inherited_backbone
+TP53,TYR,-,PMID:19098008,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:19098008,string_db+inherited_backbone
+TP53,TYRP1,+,PMID:18431400,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:18431400,string_db+inherited_backbone
+F2RL1,TPSAB1,+,PMID:10439226,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:10439226,string_db+inherited_backbone
+F2RL1,TRYPSIN,+,relayed via nan (backbone-derived; see topology layer),False,,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); relayed via nan (backbone-derived; see topology layer),string_db+inherited_backbone
+MC1R,USF1,+,PMID:15358786,True,False,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:15358786,string_db+inherited_backbone
+FZD3,WNT5A,+,PMID:17804197; PMID:19910923,True,True,STRING v12.0 (2026-07-12T01:17:03.759858+00:00); PMID:17804197; PMID:19910923,string_db+inherited_backbone

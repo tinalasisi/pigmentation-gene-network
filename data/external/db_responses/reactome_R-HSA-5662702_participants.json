@@ -1,0 +1,999 @@
+{
+  "query_utc": "2026-07-12T01:16:36.004890+00:00",
+  "pathway_stid": "R-HSA-5662702",
+  "endpoints": {
+    "participants": "https://reactome.org/ContentService/data/participants/R-HSA-5662702",
+    "pathway_detail": "https://reactome.org/ContentService/data/query/R-HSA-5662702",
+    "database_version": "https://reactome.org/ContentService/data/database/version"
+  },
+  "database_version": "97",
+  "pathway_detail": {
+    "dbId": 5662702,
+    "displayName": "Melanin biosynthesis",
+    "stId": "R-HSA-5662702",
+    "stIdVersion": "R-HSA-5662702.6",
+    "isInDisease": false,
+    "isInferred": false,
+    "maxDepth": 2,
+    "name": [
+      "Melanin biosynthesis"
+    ],
+    "releaseDate": "2015-03-15",
+    "speciesName": "Homo sapiens",
+    "goBiologicalProcess": {
+      "dbId": 12141,
+      "displayName": "melanin biosynthetic process",
+      "accession": "0042438",
+      "databaseName": "GO",
+      "definition": "The chemical reactions and pathways resulting in the formation of melanins, pigments largely of animal origin. High molecular weight polymers of indole quinone, they are irregular polymeric structures and are divided into three groups: allomelanins in the plant kingdom and eumelanins and phaeomelanins in the animal kingdom.",
+      "name": "melanin biosynthetic process",
+      "url": "https://www.ebi.ac.uk/QuickGO/term/GO:0042438",
+      "className": "GO_BiologicalProcess",
+      "schemaClass": "GO_BiologicalProcess"
+    },
+    "literatureReference": [
+      {
+        "dbId": 5662862,
+        "displayName": "Chemistry of mixed melanogenesis--pivotal roles of dopaquinone",
+        "title": "Chemistry of mixed melanogenesis--pivotal roles of dopaquinone",
+        "journal": "Photochem. Photobiol.",
+        "pages": "582-92",
+        "pubMedIdentifier": 18435614,
+        "volume": 84,
+        "year": 2008,
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/18435614",
+        "className": "LiteratureReference",
+        "schemaClass": "LiteratureReference"
+      },
+      {
+        "dbId": 5672022,
+        "displayName": "Melanins and melanogenesis: methods, standards, protocols",
+        "title": "Melanins and melanogenesis: methods, standards, protocols",
+        "journal": "Pigment Cell Melanoma Res",
+        "pages": "616-33",
+        "pubMedIdentifier": 23710556,
+        "volume": 26,
+        "year": 2013,
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/23710556",
+        "className": "LiteratureReference",
+        "schemaClass": "LiteratureReference"
+      }
+    ],
+    "orthologousEvent": [
+      {
+        "dbId": 10337739,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-CFA-5662702",
+        "stIdVersion": "R-CFA-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Canis familiaris",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 11058532,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-DDI-5662702",
+        "stIdVersion": "R-DDI-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Dictyostelium discoideum",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 11003451,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-CEL-5662702",
+        "stIdVersion": "R-CEL-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Caenorhabditis elegans",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10835494,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-GGA-5662702",
+        "stIdVersion": "R-GGA-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Gallus gallus",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10738228,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-XTR-5662702",
+        "stIdVersion": "R-XTR-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Xenopus tropicalis",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10657228,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-DRE-5662702",
+        "stIdVersion": "R-DRE-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Danio rerio",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10565257,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-SSC-5662702",
+        "stIdVersion": "R-SSC-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Sus scrofa",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10452309,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-BTA-5662702",
+        "stIdVersion": "R-BTA-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Bos taurus",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10231028,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-RNO-5662702",
+        "stIdVersion": "R-RNO-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Rattus norvegicus",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      },
+      {
+        "dbId": 10107254,
+        "displayName": "Melanin biosynthesis",
+        "stId": "R-MMU-5662702",
+        "stIdVersion": "R-MMU-5662702.1",
+        "isInDisease": false,
+        "isInferred": true,
+        "maxDepth": 2,
+        "name": [
+          "Melanin biosynthesis"
+        ],
+        "releaseDate": "2026-06-17",
+        "speciesName": "Mus musculus",
+        "inferredFrom": [
+          5662702
+        ],
+        "hasDiagram": true,
+        "hasEHLD": false,
+        "schemaClass": "Pathway",
+        "className": "Pathway"
+      }
+    ],
+    "species": [
+      {
+        "dbId": 48887,
+        "displayName": "Homo sapiens",
+        "name": [
+          "Homo sapiens",
+          "H. sapiens",
+          "Hs",
+          "human",
+          "man"
+        ],
+        "taxId": "9606",
+        "abbreviation": "HSA",
+        "className": "Species",
+        "schemaClass": "Species"
+      }
+    ],
+    "summation": [
+      {
+        "dbId": 5662673,
+        "displayName": "Melanin biosynthesis takes place in specialized cells called...",
+        "text": "Melanin biosynthesis takes place in specialized cells called melanocytes, within membrane-bound organelles referred to as melanosomes. Melanosomes are transferred via dendrites to surrounding keratinocytes. Keratinocytes and melanocytes are collectively known as 'the epidermal melanin unit'. Each melanocyte is in contact with approximately 40 keratinocytes in the basal and suprabasal layers (Cichorek et al. 2013). Melanocytes are distributed in the epidermis, hair follicles, the inner ear and the eye (Yamaguchi et al. 2007, Tolleson 2005). <br><br>Melanocytes in mammals and birds produce two chemically distinct types of melanin, black to brown eumelanin and yellow to reddish-brown pheomelanin (Ito & Wakamatsu 2008, Simon et al. 2009, d'Ischia et al. 2013). These differ in their responses to UV radiation; eumelanin has the ability to convert absorbed light energy into heat energy (Meredith & Riesz 2004) and to detoxify reactive oxygen species (ROS) (Bustamante et al. 1993), while pheomelanin is a phototoxic pro-oxidant (Samokhvalov 2005). Most natural melanin pigments contain eumelanin and pheomelanin (Ito & Wakamatsu 2003) and are termed 'mixed' melanins. Neuromelanins are mixed melanin-like pigments which are mainly found in neurons of the substantia nigra and locus coeruleus (Fedorow et al. 2005). Synthesis of NM may prevent the accumulation of toxic catechol derivatives (Zecca et al. 2003). NM can sequester a variety of potentially damaging molecules such as beta-carbolines, heavy metal ions and 1-methyl-4-phenylpyridinium (MPP+) (D'Amato et al. 1986), a drug which causes Parkinson's Disease-like symptoms.  Models suggest that mixed melanogenesis occurs in three stages (Ito et al. 2000). The initial stage of melanin biosynthesis is the production of cysteinyldopas, which continues while sufficient cysteine is available. The second stage is the oxidation of cysteinyldopas to produce pheomelanin, which continues while cysteinyldopa concentration is sufficiently high. The last stage is the production of eumelanin, which begins when cysteinyldopas and cysteine are depleted. The ratio of eumelanin to pheomelanin is determined by tyrosinase activity and the availability of tyrosine and cysteine (Land et al. 2003).",
+        "className": "Summation",
+        "schemaClass": "Summation"
+      }
+    ],
+    "reviewStatus": {
+      "dbId": 9821382,
+      "displayName": "five stars",
+      "definition": "externally reviewed",
+      "name": [
+        "five stars"
+      ],
+      "className": "ReviewStatus",
+      "schemaClass": "ReviewStatus"
+    },
+    "doi": "10.3180/R-HSA-5662702.5",
+    "hasDiagram": true,
+    "hasEHLD": false,
+    "lastUpdatedDate": "2016-10-05",
+    "hasEvent": [
+      {
+        "dbId": 5662662,
+        "displayName": "Tyrosinase oxidises tyrosine to dopaquinone",
+        "stId": "R-HSA-5662662",
+        "stIdVersion": "R-HSA-5662662.6",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Tyrosinase oxidises tyrosine to dopaquinone",
+          "L-tyrosine + O2 => L-dopaquinone + H2O"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662669,
+        "displayName": "Dopaquinone transforms to Leucodopachrome (Cyclodopa)",
+        "stId": "R-HSA-5662669",
+        "stIdVersion": "R-HSA-5662669.2",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Dopaquinone transforms to Leucodopachrome (Cyclodopa)"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5672019,
+        "displayName": "Leucodopachrome, L-Dopaquinone transform to Dopachrome, L-Dopa",
+        "stId": "R-HSA-5672019",
+        "stIdVersion": "R-HSA-5672019.2",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Leucodopachrome, L-Dopaquinone transform to Dopachrome, L-Dopa"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662692,
+        "displayName": "Dopa is oxidized to dopaquinone by TYR",
+        "stId": "R-HSA-5662692",
+        "stIdVersion": "R-HSA-5662692.3",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Dopa is oxidized to dopaquinone by TYR",
+          "2 L-dopa + O2 => 2 L-dopaquinone + 2 H2O"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662908,
+        "displayName": "Dopaquinone, cysteine form CD isomers",
+        "stId": "R-HSA-5662908",
+        "stIdVersion": "R-HSA-5662908.2",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Dopaquinone, cysteine form CD isomers"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662904,
+        "displayName": "CD isomers transform to BTCA, BZ, ODHBT",
+        "stId": "R-HSA-5662904",
+        "stIdVersion": "R-HSA-5662904.3",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "CD isomers transform to BTCA, BZ, ODHBT",
+          "5-S-cysteinyldopa + L-dopaquinone => 5-S-cysteinyldopaquinone + L-dopa"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662891,
+        "displayName": "pheomelanin formation",
+        "stId": "R-HSA-5662891",
+        "stIdVersion": "R-HSA-5662891.2",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "pheomelanin formation"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "omitted",
+        "className": "Reaction",
+        "schemaClass": "BlackBoxEvent"
+      },
+      {
+        "dbId": 5662660,
+        "displayName": "Dopachrome is transformed to DHICA by DCT",
+        "stId": "R-HSA-5662660",
+        "stIdVersion": "R-HSA-5662660.3",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Dopachrome is transformed to DHICA by DCT",
+          "L-dopachrome => 5,6-dihydroxyindole-2-carboxylate"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 8878581,
+        "displayName": "TYRP1 oxidises DHICA to IQCA",
+        "stId": "R-HSA-8878581",
+        "stIdVersion": "R-HSA-8878581.3",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "TYRP1 oxidises DHICA to IQCA",
+          "2 5,6-dihydroxyindole-2-carboxylate + O2 => 2 indole-5,6-quinone-2-carboxylate + 2 H2O"
+        ],
+        "releaseDate": "2016-09-19",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5662706,
+        "displayName": "Dopachrome transforms to DHI",
+        "stId": "R-HSA-5662706",
+        "stIdVersion": "R-HSA-5662706.2",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "Dopachrome transforms to DHI"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "transition",
+        "className": "Reaction",
+        "schemaClass": "Reaction"
+      },
+      {
+        "dbId": 5663050,
+        "displayName": "DHI and DHICA polymerize forming eumelanin",
+        "stId": "R-HSA-5663050",
+        "stIdVersion": "R-HSA-5663050.3",
+        "isInDisease": false,
+        "isInferred": false,
+        "maxDepth": 1,
+        "name": [
+          "DHI and DHICA polymerize forming eumelanin"
+        ],
+        "releaseDate": "2015-03-15",
+        "speciesName": "Homo sapiens",
+        "eventOf": [
+          5662702
+        ],
+        "isChimeric": false,
+        "category": "omitted",
+        "className": "Reaction",
+        "schemaClass": "BlackBoxEvent"
+      }
+    ],
+    "schemaClass": "Pathway",
+    "className": "Pathway"
+  },
+  "participants_raw": [
+    {
+      "peDbId": 5662696,
+      "displayName": "TYR:2xCu2+ [melanosome membrane]",
+      "schemaClass": "Complex",
+      "refEntities": [
+        {
+          "dbId": 66645,
+          "stId": "uniprot:P14679",
+          "identifier": "P14679",
+          "schemaClass": "ReferenceGeneProduct",
+          "displayName": "UniProt:P14679 TYR",
+          "icon": "EntityWithAccessionedSequence",
+          "url": "http://purl.uniprot.org/uniprot/P14679"
+        },
+        {
+          "dbId": 1164535,
+          "stId": "chebi:29036",
+          "identifier": "29036",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "copper(2+) [ChEBI:29036]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29036"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668566,
+      "displayName": "O2 [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 114734,
+          "stId": "chebi:15379",
+          "identifier": "15379",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "dioxygen [ChEBI:15379]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15379"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668567,
+      "displayName": "L-Tyr [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 8943639,
+          "stId": "chebi:58315",
+          "identifier": "58315",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "L-tyrosine zwitterion [ChEBI:58315]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58315"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662695,
+      "displayName": "L-Dopaquinone [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9942552,
+          "stId": "chebi:57924",
+          "identifier": "57924",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "L-dopaquinone zwitterion [ChEBI:57924]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57924"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668574,
+      "displayName": "H2O [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 114728,
+          "stId": "chebi:15377",
+          "identifier": "15377",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "water [ChEBI:15377]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377"
+        }
+      ]
+    },
+    {
+      "peDbId": 5216014,
+      "displayName": "OCA2 [melanosome membrane]",
+      "schemaClass": "EntityWithAccessionedSequence",
+      "refEntities": [
+        {
+          "dbId": 62555,
+          "stId": "uniprot:Q04671",
+          "identifier": "Q04671",
+          "schemaClass": "ReferenceGeneProduct",
+          "displayName": "UniProt:Q04671 OCA2",
+          "icon": "EntityWithAccessionedSequence",
+          "url": "http://purl.uniprot.org/uniprot/Q04671"
+        }
+      ]
+    },
+    {
+      "peDbId": 5216112,
+      "displayName": "SLC45A2 [melanosome membrane]",
+      "schemaClass": "EntityWithAccessionedSequence",
+      "refEntities": [
+        {
+          "dbId": 59021,
+          "stId": "uniprot:Q9UMX9",
+          "identifier": "Q9UMX9",
+          "schemaClass": "ReferenceGeneProduct",
+          "displayName": "UniProt:Q9UMX9 SLC45A2",
+          "icon": "EntityWithAccessionedSequence",
+          "url": "http://purl.uniprot.org/uniprot/Q9UMX9"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668568,
+      "displayName": "L-Dopa [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9760743,
+          "stId": "chebi:57504",
+          "identifier": "57504",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "L-dopa zwitterion [ChEBI:57504]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57504"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662858,
+      "displayName": "DCT:2xZn2+ [melanosome membrane]",
+      "schemaClass": "Complex",
+      "refEntities": [
+        {
+          "dbId": 66643,
+          "stId": "uniprot:P40126",
+          "identifier": "P40126",
+          "schemaClass": "ReferenceGeneProduct",
+          "displayName": "UniProt:P40126 DCT",
+          "icon": "EntityWithAccessionedSequence",
+          "url": "http://purl.uniprot.org/uniprot/P40126"
+        },
+        {
+          "dbId": 114751,
+          "stId": "chebi:29105",
+          "identifier": "29105",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "zinc(2+) [ChEBI:29105]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29105"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662665,
+      "displayName": "Dopachrome [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9942548,
+          "stId": "chebi:57509",
+          "identifier": "57509",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "L-dopachromate [ChEBI:57509]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57509"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662670,
+      "displayName": "DHICA [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9762301,
+          "stId": "chebi:16875",
+          "identifier": "16875",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole-2-carboxylate [ChEBI:16875]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16875"
+        }
+      ]
+    },
+    {
+      "peDbId": 8878574,
+      "displayName": "TYRP1 [melanosome membrane]",
+      "schemaClass": "EntityWithAccessionedSequence",
+      "refEntities": [
+        {
+          "dbId": 66641,
+          "stId": "uniprot:P17643",
+          "identifier": "P17643",
+          "schemaClass": "ReferenceGeneProduct",
+          "displayName": "UniProt:P17643 TYRP1",
+          "icon": "EntityWithAccessionedSequence",
+          "url": "http://purl.uniprot.org/uniprot/P17643"
+        }
+      ]
+    },
+    {
+      "peDbId": 8878586,
+      "displayName": "IQCA [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9942549,
+          "stId": "chebi:177869",
+          "identifier": "177869",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "indole-5,6-quinone-2-carboxylate [ChEBI:177869]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:177869"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668565,
+      "displayName": "CO2 [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 114738,
+          "stId": "chebi:16526",
+          "identifier": "16526",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "carbon dioxide [ChEBI:16526]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16526"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662666,
+      "displayName": "DHI [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 37509,
+          "stId": "chebi:27404",
+          "identifier": "27404",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole [ChEBI:27404]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27404"
+        }
+      ]
+    },
+    {
+      "peDbId": 5672007,
+      "displayName": "Leucodopachrome [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 9942546,
+          "stId": "chebi:231766",
+          "identifier": "231766",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "leucodopachrome zwitterion [ChEBI:231766]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:231766"
+        }
+      ]
+    },
+    {
+      "peDbId": 5668576,
+      "displayName": "L-Cys [melanosome lumen]",
+      "schemaClass": "SimpleEntity",
+      "refEntities": [
+        {
+          "dbId": 8943596,
+          "stId": "chebi:35235",
+          "identifier": "35235",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "L-cysteine zwitterion [ChEBI:35235]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35235"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662956,
+      "displayName": "Cysteinyldopa isomers [melanosome lumen]",
+      "schemaClass": "DefinedSet",
+      "refEntities": [
+        {
+          "dbId": 5662945,
+          "stId": "chebi:84298",
+          "identifier": "84298",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "2,5-S,S'-dicysteinyldopa [ChEBI:84298]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84298"
+        },
+        {
+          "dbId": 9942544,
+          "stId": "chebi:195517",
+          "identifier": "195517",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5-S-cysteinyldopa zwitterion [ChEBI:195517]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:195517"
+        },
+        {
+          "dbId": 5662951,
+          "stId": "chebi:84296",
+          "identifier": "84296",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "2-S-cysteinyl-DOPA [ChEBI:84296]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84296"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662708,
+      "displayName": "DHI, DHICA [melanosome lumen]",
+      "schemaClass": "DefinedSet",
+      "refEntities": [
+        {
+          "dbId": 9762301,
+          "stId": "chebi:16875",
+          "identifier": "16875",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole-2-carboxylate [ChEBI:16875]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16875"
+        },
+        {
+          "dbId": 37509,
+          "stId": "chebi:27404",
+          "identifier": "27404",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole [ChEBI:27404]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27404"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662678,
+      "displayName": "Eumelanin [melanosome lumen]",
+      "schemaClass": "Polymer",
+      "refEntities": [
+        {
+          "dbId": 9762301,
+          "stId": "chebi:16875",
+          "identifier": "16875",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole-2-carboxylate [ChEBI:16875]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16875"
+        },
+        {
+          "dbId": 37509,
+          "stId": "chebi:27404",
+          "identifier": "27404",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "5,6-dihydroxyindole [ChEBI:27404]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27404"
+        }
+      ]
+    },
+    {
+      "peDbId": 5662955,
+      "displayName": "BTCA, BZ, ODHBT [melanosome lumen]",
+      "schemaClass": "DefinedSet",
+      "refEntities": [
+        {
+          "dbId": 5665859,
+          "stId": "chebi:84343",
+          "identifier": "84343",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "6-(2-amino-2-carboxyethyl)-4-hydroxybenzothiazole [ChEBI:84343]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84343"
+        },
+        {
+          "dbId": 5662950,
+          "stId": "chebi:84301",
+          "identifier": "84301",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "7-(2-amino-2-carboxyethyl)-5-hydroxy-2H-1,4-benzothiazine-3-carboxylic acid [ChEBI:84301]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84301"
+        },
+        {
+          "dbId": 5665828,
+          "stId": "chebi:84344",
+          "identifier": "84344",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "7-(2-amino-2-carboxyethyl)-5-hydroxy-3,4-dihydro-2H-1,4-benzothiazin-3-one [ChEBI:84344]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84344"
+        }
+      ]
+    },
+    {
+      "peDbId": 5665848,
+      "displayName": "pheomelanin [melanosome lumen]",
+      "schemaClass": "Polymer",
+      "refEntities": [
+        {
+          "dbId": 5665859,
+          "stId": "chebi:84343",
+          "identifier": "84343",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "6-(2-amino-2-carboxyethyl)-4-hydroxybenzothiazole [ChEBI:84343]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84343"
+        },
+        {
+          "dbId": 5662950,
+          "stId": "chebi:84301",
+          "identifier": "84301",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "7-(2-amino-2-carboxyethyl)-5-hydroxy-2H-1,4-benzothiazine-3-carboxylic acid [ChEBI:84301]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84301"
+        },
+        {
+          "dbId": 5665828,
+          "stId": "chebi:84344",
+          "identifier": "84344",
+          "schemaClass": "ReferenceMolecule",
+          "displayName": "7-(2-amino-2-carboxyethyl)-5-hydroxy-3,4-dihydro-2H-1,4-benzothiazin-3-one [ChEBI:84344]",
+          "icon": "SimpleEntity",
+          "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:84344"
+        }
+      ]
+    }
+  ]
+}

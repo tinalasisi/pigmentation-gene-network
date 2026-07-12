@@ -1,0 +1,12 @@
+{
+  "artifact": "darcy2023_S6_massspec_expression.csv",
+  "description": "D'Arcy & Kiel 2023 Table S6: label-free-quantification (LFQ) protein expression in A375 (unpigmented) and FM55 (pigmented) melanoma cell lines, outer-joined on gene symbol.",
+  "source_doi": "10.3390/bioengineering10010013",
+  "source_pmcid": "PMC9854651",
+  "license": "CC BY 4.0",
+  "extraction_method": "pandas.read_excel(header=3) on 'Table S6 Bioengineering FINAL.xlsx' Sheet1 (A375) + Sheet2 (FM55), outer-merged on gene.",
+  "frozen_utc": "2026-07-12T01:21:49.296410+00:00",
+  "n_rows": 4232,
+  "n_a375_only": 33,
+  "n_fm55_only": 30
+}

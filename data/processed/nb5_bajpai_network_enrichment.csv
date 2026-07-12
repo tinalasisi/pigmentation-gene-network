@@ -1,0 +1,5 @@
+network,network_n_genes,network_genes_in_screen_universe,bajpai_hits_in_network,pct_of_network_genes_that_are_hits,odds_ratio,fisher_p,citation,citation_source
+Raghunath_168,168,46,5,10.9,3.52,0.019340934144231454,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid
+DArcy_S1_243,243,67,23,34.3,16.96,6.015103415335867e-18,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid
+KEGG_hsa04916_101,101,22,4,18.2,6.41,0.0059255333628608214,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid
+Reactome_curated_union_156,156,42,10,23.8,9.33,9.428508800655607e-07,"PMC10901463 (Bajpai et al. 2023 Science 381:eade6289, DOI 10.1126/science.ade6289); Table S1, q<0.10 hit threshold",pmcid

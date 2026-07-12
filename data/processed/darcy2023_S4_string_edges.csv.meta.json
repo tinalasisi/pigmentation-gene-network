@@ -1,0 +1,11 @@
+{
+  "artifact": "darcy2023_S4_string_edges.csv",
+  "description": "D'Arcy & Kiel 2023 Table S4: STRING PPI edges of the expanded protein-protein network (452 nodes / 4668 edges), combined_score > 0.7. Undirected/unsigned association layer, not the mechanistic backbone.",
+  "source_doi": "10.3390/bioengineering10010013",
+  "source_pmcid": "PMC9854651",
+  "license": "CC BY 4.0",
+  "extraction_method": "pandas.read_excel(header=2) on 'Table S4 Bioengineering FINAL.xlsx', Sheet1.",
+  "frozen_utc": "2026-07-12T01:21:49.296410+00:00",
+  "n_rows": 4668,
+  "n_unique_nodes": 452
+}
