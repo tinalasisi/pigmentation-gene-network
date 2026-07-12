@@ -58,6 +58,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 7 | **D'Arcy et al. 2023** (*Bioengineering*) | Table S1: 243-gene OMIM disease-gene table; Tables S4/S5: 451-node/4668-edge STRING PPI (association, not mechanistic); Table S6: A375/FM55 mass-spec | Europe PMC `PMC9854651/supplementaryFiles` (CC BY 4.0); 6 tables at `data/raw/darcy2023/*.xlsx` | ✅ committed (CC BY 4.0); downstream use open (see `internal/START_HERE.md`) | (see entry 6 above for the full characterization) |
 | 8 | **Kim et al. 2024** (*Nat Commun*) | East-Asian skin-color GWAS: 12 known + 11 novel loci; 26 lead variants; worldwide allele freqs; GWAS×eQTL coloc | PI-supplied publisher download (**CC BY 4.0**); full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | 📄 reference (SI present locally; loci not yet extracted) | (per-source entry 8 below) |
 | 9 | **Zhang et al. 2018** (*Genome Res*) | Primary-melanocyte cis-eQTL (106 cultures): 597k cis-eQTL SNPs, 4,997 eGenes — the tissue-correct eQTL for pigmentation | PI-supplied publisher download (**CC BY-NC 4.0**); full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | 📄 reference (melanocyte-eQTL layer source) | (per-source entry 9 below) |
+| 10 | **Martin et al. 2017** (*Cell*) | KhoeSan (San/Nama) skin-pigmentation GWAS: 51 loci extracted (4 genome-wide-significant, 6 suggestive, 34 canonical, 16 non-canonical incl. 1 novel-discovery candidate SNX13); San/West-African/North-European allele frequencies — third population axis for NB11 | PI-supplied publisher download; full-text withheld in `data/raw/papers/` (gitignored), cited by DOI | ✅ extracted (`EXTRACT_Martin2017_loci.csv`) | [EXTRACT_Martin2017_loci.spec.md](docs/specs/EXTRACT_Martin2017_loci.spec.md) |
 
 ---
 
@@ -322,6 +323,31 @@ validation authorities (attach gene identity and relationships, then check them)
 - **⚠ dbGaP DUC:** a NIH **Data Use Certification Agreement** (`data/raw/papers/wga.pdf`, gitignored) was
   dropped alongside — a controlled-access legal document, **not** a paper. Recommend deleting it from the repo
   entirely (it does not belong under `papers/`).
+
+### 10. Martin et al. 2017 — KhoeSan skin-pigmentation GWAS (*Cell*)
+- **Identity:** *Cell* 171(6):1340–1353 (2017); DOI 10.1016/j.cell.2017.11.015. "An Unexpectedly Complex
+  Architecture for Skin Pigmentation in Africans." Authors incl. A. R. Martin, H.-H. Won, B. M. Henn.
+- **What it is:** GWAS of skin reflectance (M index) in **465–479 KhoeSan individuals** (zKhomani San, Nama)
+  from southern Africa — a population axis independent of the European/West-African GWAS Catalog sources.
+  51 loci extracted per `docs/specs/EXTRACT_Martin2017_loci.spec.md`: 4 genome-wide-significant (2 of the 4
+  author-flagged as a likely tanning-phase-2 artifact), 6 suggestive, 34 canonical-locus replication rows
+  (mostly non-replicating, per the paper's own aggregate statement), and 16 non-canonical candidates — of
+  which only SNX13 is an author-reported novel discovery (suggestive significance only). Feeds NB11 as a
+  third population-conditionality axis (San/West-African/North-European allele frequencies).
+- **Files (local, gitignored under `data/raw/papers/Martin2017_Cell_AfricanSkinPigmentation/`):** article PDF,
+  Supplementary PDF (Tables S1–S5, S7, S8 as prose/tables), and `..._Supplementary_Tables_S6.xlsx` (Table S6:
+  S6A per-SNP replication association, S6B fine-mapping/HaploReg annotation).
+- **License:** *Cell* / Elsevier — subscription copyright; no open-access copy identified. Article PDF and
+  supplements **not committed** (cited by DOI, Raghunath/Baxter precedent). Only the derived extraction
+  (`data/processed/EXTRACT_Martin2017_loci.csv` + `martin2017_COMPLETENESS_LEDGER.csv` +
+  `martin2017_HONEST_GAPS.csv` + `martin2017_noncanonical_loci.csv`) is committed, as a factual data table
+  produced by this project's own extraction — same basis as the 13 validation-case papers in
+  `data/raw/papers/REFERENCES.md`.
+- **Acquisition:** PI-supplied publisher download, 2026-07-12; reproducible from the DOI.
+- **Raw genotype data:** deposited separately at Mendeley Data, DOI 10.17632/98mh8z78m3.1; access requires
+  South African San Council approval per the San Code of Research Ethics — not re-hosted here and not needed
+  (this build consumes only the paper's own published per-SNP summary tables).
+- **Status:** ✅ extracted and committed (`EXTRACT_Martin2017_loci.csv`, 51 rows).
 
 ---
 

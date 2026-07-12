@@ -13,6 +13,7 @@ publisher. Only openly-licensed material is committed (see the redistribution po
 | **Walsh et al. 2017** (HIrisPlex-S skin model), *Hum Genet* | **not redistributed** — obtain from publisher | — | 10.1007/s00439-017-1808-5 | Springer subscription |
 | **Kim et al. 2024**, *Nat Commun* | full-text in `data/raw/papers/Kim2024_NatCommun_EastAsianSkinColor/` — withheld by the `data/raw/papers/*` rule (article-PDF convention, not a license bar) | article + SI + Supplementary Data (26 lead variants, worldwide allele freqs, GWAS×eQTL coloc) | 10.1038/s41467-024-49031-4 · PMID 38849341 | **CC BY 4.0** (open access — redistributable) |
 | **Zhang et al. 2018**, *Genome Res* | full-text in `data/raw/papers/Zhang2018_GenomeRes_MelanocyteEQTL/` — withheld by the blanket rule | article + Supplementary Material + Supplementary Tables (melanocyte cis-eQTL); full stats are dbGaP-controlled | 10.1101/gr.233304.117 · PMID to confirm | **CC BY-NC 4.0** (redistributable non-commercially) |
+| **Martin et al. 2017**, *Cell* | **not redistributed** — obtain from publisher | article PDF + Supplementary PDF + Table S6 `.xlsx`, in `data/raw/papers/Martin2017_Cell_AfricanSkinPigmentation/`; extracted loci committed at `data/processed/EXTRACT_Martin2017_loci.csv` | 10.1016/j.cell.2017.11.015 | Elsevier/Cell Press subscription — article text NOT redistributable |
 
 ## Validation-case papers (13 genotype→phenotype-discordance papers) — FILES withheld, science used freely
 
