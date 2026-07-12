@@ -1,0 +1,6 @@
+test,n_genes,concordant
+Bajpai CRISPR only,19,19.0
+GRN regulon only,4,
+Signed network only,4,
+Multi-source union (LoF),22,22.0
+Dominant / non-LoF,13,7.0

@@ -1,0 +1,7 @@
+subset,concordant,n,note
+NB10 baseline (network sources),22,22,
+Expanded (+ blind GO mechanism-call),29,33,perm p<1e-5
+  stratum: core_melanogenesis,14,16,
+  stratum: syndromic_trafficking,15,17,
+"  new mech-call, high confidence",7,8,
+"  new mech-call, medium confidence",0,3,

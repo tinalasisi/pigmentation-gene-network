@@ -1,0 +1,73 @@
+gene,disease_name,inheritance,phenotype_class,regulator_call,mech_call,mech_conf,mech_reason,reg_expanded,stratum,predicted,concordant
+AP3B1,Hermansky-Pudlak syndrome type 2,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+AP3D1,Hermansky-Pudlak syndrome type 10,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+BLOC1S3,Hermansky-Pudlak syndrome type 8,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+BLOC1S5,Hermansky-Pudlak syndrome type 11,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+BLOC1S6,Hermansky-Pudlak syndrome type 9,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+DTNBP1,Hermansky-Pudlak syndrome type 7,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+EDNRB,ABCD syndrome,AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+FIG4,Charcot-Marie-Tooth disease type 4J,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+GPR143,"Oculocutaneous albinism, type 1, Nettleship-Falls type",XL,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+HPS1,Hermansky-Pudlak syndrome type 1,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+HPS3,Hermansky-Pudlak syndrome type 3,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+HPS4,Hermansky-Pudlak syndrome type 4,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+HPS5,Hermansky-Pudlak syndrome type 5,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+HPS6,Hermansky-Pudlak syndrome type 6,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+LYST,Chediak–Higashi syndrome,AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+MC1R,"Oculocutaneous albinism, type 2",AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+OCA2,"Oculocutaneous albinism, type 2",AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+RAB27A,Griscelli syndrome type 2,AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+SLC17A5,"Sialic acid storage disorder, infantile",AR,Hypopigmentation,positive,,,,positive,syndromic_trafficking,Hypopigmentation,1
+SLC24A5,"Oculocutaneous albinism, type 6",AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+SLC45A2,"Oculocutaneous albinism, type 4",AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+TYRP1,"Oculocutaneous albinism, type 3",AR,Hypopigmentation,positive,,,,positive,core_melanogenesis,Hypopigmentation,1
+ACD,"Dyskeratosis congenita, autosomal dominant 6, autosomal recessive 7","AD, AR",Hyperpigmentation,,not_melanin_regulator,high,Telomere maintenance and assembly are housekeeping DNA-end-protection processes.,,syndromic_trafficking,,
+ADAR,Aicardi-Goutieres syndrome 6,AR,Hyperpigmentation,,not_melanin_regulator,high,"RNA editing, RISC assembly, viral response—general immunity and RNA processing.",,syndromic_trafficking,,
+APC2,"Intellectual developmental disorder, autosomal recessive 74 (Sotos syndrome 3)",AR,Hyperpigmentation,,positive_regulator,medium,Wnt signaling drives melanocyte development; negative regulators present but pathway activation dominates.,positive,syndromic_trafficking,Hypopigmentation,0
+ATP7A,Menkes disease,XLR,Hypopigmentation,,positive_regulator,high,Direct positive regulation of melanin biosynthetic process.,positive,core_melanogenesis,Hypopigmentation,1
+ATP7B,Wilson disease,AR,Hyperpigmentation,,positive_regulator,high,Copper transport essential for tyrosinase cofactor metallation in melanin synthesis.,positive,syndromic_trafficking,Hypopigmentation,0
+CBS,Homocystinuria,AR,Hypopigmentation,,not_melanin_regulator,high,"Gene functions in amino acid metabolism and stress response, not melanin biogenesis.",,syndromic_trafficking,,
+CTC1,Dyskeratosis congenita,AR,Hyperpigmentation,,not_melanin_regulator,high,All terms describe telomere maintenance and DNA replication; no melanin pathway involvement.,,syndromic_trafficking,,
+CTNS,Cystinosis,AR,Hypopigmentation,,positive_regulator,high,Gene directly regulates melanin biosynthetic process.,positive,syndromic_trafficking,Hypopigmentation,1
+CYP11A1,"Adrenal insufficiency, congenital, with 46XY sex reversal, partial or complete",AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in steroid/hormone metabolism, unrelated to melanin.",,syndromic_trafficking,,
+DDX3X,"Intellectual developmental disorder, X-linked, syndrome, Snijders Blok type","XLD, XLR",Hypopigmentation,,not_melanin_regulator,high,"Gene functions in immune signaling, apoptosis, translation control, general metabolism.",,syndromic_trafficking,,
+DKC1,"Dyskeratosis congenita, X-linked",XLR,Hyperpigmentation,,not_melanin_regulator,high,"Gene function is RNA modification and telomere maintenance, housekeeping processes.",,syndromic_trafficking,,
+DNAJC12,Phenylketonuria,AR,Hypopigmentation,,,,,,syndromic_trafficking,,
+EDN3,Waardenburg syndrome 4B,"AD, AR",Hypopigmentation,,not_melanin_regulator,high,Function is cardiovascular/immune signaling; no melanin pathway involvement.,,core_melanogenesis,,
+EPG5,Vici syndrome,AR,Hypopigmentation,,not_melanin_regulator,high,"Functions are autophagy, DNA sensing, vesicle transport, nucleotide transport, immune signaling.",,syndromic_trafficking,,
+ERCC4,"Xeroderma pigmentosum, group F",AR,Hyperpigmentation,,not_melanin_regulator,high,"All terms are DNA repair, telomere maintenance, UV response.",,syndromic_trafficking,,
+ESCO2,Roberts-SC phocomelia syndrome,AR,Hypopigmentation,,not_melanin_regulator,high,"Gene functions in DNA replication, chromosome cohesion, and protein acetylation.",,syndromic_trafficking,,
+FLNA,Terminal osseous dysplasia,XLD,Hyperpigmentation,,not_melanin_regulator,high,"Functions are cytoskeletal, developmental, and housekeeping; no melanin pathway involvement.",,syndromic_trafficking,,
+FMR1,Fragile X syndrome,XLD,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in translation regulation, RNA processing, neuronal signaling.",,syndromic_trafficking,,
+FRAS1,Fraser syndrome 1,AR,Hypopigmentation,,not_melanin_regulator,high,Terms describe general developmental and structural processes unrelated to melanin.,,syndromic_trafficking,,
+FREM2,Fraser syndrome 2,AR,Hypopigmentation,,not_melanin_regulator,high,GO terms describe structural/developmental processes unrelated to melanin synthesis.,,syndromic_trafficking,,
+GRIP1,Fraser syndrome 3,AR,Hypopigmentation,,not_melanin_regulator,high,"Gene functions in neuronal signaling and neurotransmitter transport, unrelated to melanin.",,syndromic_trafficking,,
+HGD,Alkaptonuria,AR,Hyperpigmentation,,not_melanin_regulator,high,"Phenylalanine/tyrosine catabolism is general amino acid metabolism, not melanin synthesis.",,syndromic_trafficking,,
+IKBKG,Incontinentia pigmenti,XLD,Hyperpigmentation,,not_melanin_regulator,high,Gene function is immune/inflammatory signaling and DNA damage response.,,syndromic_trafficking,,
+LRMDA,"Oculocutaneous albinism, type 7",AR,Hypopigmentation,,positive_regulator,high,Melanocyte differentiation is required for melanin-producing cell development.,positive,core_melanogenesis,Hypopigmentation,1
+MC2R,"Glucocorticoid deficiency, due to ACTH unresponsiveness",AR,Hyperpigmentation,,positive_regulator,medium,"GPCR signaling activates cAMP, which promotes melanogenesis.",positive,core_melanogenesis,Hypopigmentation,0
+MCM4,Immunodeficiency-54,AR,Hyperpigmentation,,not_melanin_regulator,high,"DNA replication and repair processes are general housekeeping, not melanin-pathway-specific.",,syndromic_trafficking,,
+MLPH,Griscelli syndrome type 3,AR,Hypopigmentation,,positive_regulator,high,melanosome transport is direct requirement for pigment deposition,positive,core_melanogenesis,Hypopigmentation,1
+MRAP,Glucocorticoid deficiency 2,AR,Hyperpigmentation,,positive_regulator,medium,G protein-coupled receptor signaling regulates melanocyte development and melanin synthesis.,positive,core_melanogenesis,Hypopigmentation,0
+MSH2,Mismatch repair cancer syndrome 2,AR,Hyperpigmentation,,not_melanin_regulator,high,Gene function is DNA repair and immune system development.,,syndromic_trafficking,,
+MSH6,Mismatch repair cancer syndrome 3,AR,Hyperpigmentation,,not_melanin_regulator,high,"All terms are DNA repair, meiosis, immune processes, lifespan—no melanin pathway involvement.",,syndromic_trafficking,,
+MYO5A,Griscelli syndrome type 1,AR,Hypopigmentation,,positive_regulator,high,melanosome transport directly required for pigment distribution,positive,core_melanogenesis,Hypopigmentation,1
+NHP2,"Dyskeratosis congenita, autosomal recessive 2",AR,Hyperpigmentation,,not_melanin_regulator,high,"All terms are RNA modification, telomere maintenance, housekeeping functions.",,syndromic_trafficking,,
+NNT,"Glucocorticoid deficiency 4, with or without mineralocorticoid deficiency",AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in general cellular energy and metabolism, not melanin synthesis.",,syndromic_trafficking,,
+NOP10,"Dyskeratosis congenita, autosomal recessive 1	",AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in rRNA/snRNA pseudouridylation, ribosome biogenesis, telomere maintenance.",,syndromic_trafficking,,
+NR0B1,"Adrenal hypoplasia, congenita",XLR,Hyperpigmentation,,not_melanin_regulator,high,Functions are developmental and endocrine; no melanin pathway involvement.,,syndromic_trafficking,,
+PAH,Phenylketonuria,AR,Hypopigmentation,,positive_regulator,high,L-tyrosine biosynthesis required for melanin synthesis pathway.,positive,core_melanogenesis,Hypopigmentation,1
+PARN,"Dyskeratosis congenita, autosomal recessive 6",AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene function is RNA processing and telomerase maintenance, not melanin synthesis.",,syndromic_trafficking,,
+PMS2,Mismatch repair cancer syndrome 4,AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in meiosis, mismatch repair, and immunoglobulin processes.",,syndromic_trafficking,,
+POLA1,"Pigmentary disorder, reticulate, with systemic manifestations, X-linked",XLR,Hyperpigmentation,,not_melanin_regulator,high,All terms are DNA repair and replication housekeeping functions.,,syndromic_trafficking,,
+POMC,"Obesity, adrenal insufficiency, and red hair due to POMC deficiency",AR,Hypopigmentation,,positive_regulator,high,Response to MSH and adenylate cyclase signaling drive melanin synthesis.,positive,core_melanogenesis,Hypopigmentation,1
+RTEL1,"Dyskeratosis congenita, autosomal dominant 4, autosomal recessive 5","AD, AR",Hyperpigmentation,,not_melanin_regulator,high,"Gene function is telomere maintenance and DNA repair, housekeeping processes.",,syndromic_trafficking,,
+SGPL1,"Nephrotic syndrome, type 14",AR,Hyperpigmentation,,not_melanin_regulator,high,Ceramide and sphingolipid metabolism are general lipid processes.,,syndromic_trafficking,,
+SLC29A3,Histiocytosis-lymphadenopathy plus syndrome,AR,Hyperpigmentation,,not_melanin_regulator,high,Gene encodes nucleoside/nucleobase transporters and metabolic enzymes.,,syndromic_trafficking,,
+SMARCAL1,Schimke immunoosseous dysplasia ,AR,Hyperpigmentation,,not_melanin_regulator,high,DNA repair and transcription regulation are housekeeping functions unrelated to melanin pathway.,,syndromic_trafficking,,
+STAR,Lipoid adrenal hyperplasia,AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in steroid/cholesterol metabolism, unrelated to melanin.",,syndromic_trafficking,,
+TERT,"Dyskeratosis congenita, autosomal dominant 2, autosomal recessive 4","AD, AR",Hyperpigmentation,,not_melanin_regulator,high,"DNA replication, telomere maintenance, general cell-cycle regulation.",,syndromic_trafficking,,
+USP9X,"Intellectual developmental disorder, X-linked 99, syndromic, female-restricted ",XLD,Hypopigmentation,,not_melanin_regulator,high,"Gene functions in protein deubiquitination, DNA repair, and general cellular processes.",,syndromic_trafficking,,
+UVSSA,UV-sensitive syndrome 3,AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in DNA repair and chromatin organization, not melanin synthesis.",,syndromic_trafficking,,
+WRAP53,"Dyskeratosis congenita, autosomal recessive 3",AR,Hyperpigmentation,,not_melanin_regulator,high,"Gene functions in telomere maintenance and DNA repair, not melanin pathway.",,syndromic_trafficking,,
+ZMPSTE24,Mandibuloacral dysplasia with type B lipodystrophy,AR,Hyperpigmentation,,not_melanin_regulator,high,"CAAX processing, nuclear envelope, proteolysis are general cellular functions unrelated to melanin.",,syndromic_trafficking,,

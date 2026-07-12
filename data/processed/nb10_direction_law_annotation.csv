@@ -1,0 +1,201 @@
+gene,disease_name,phenotype_mim,inheritance,is_LoF,phenotype_class,bajpai_positive_regulator,bajpai_effect,grn_regulator_sign,signednet_regulator_sign,regulator_call,n_direction_sources,predicted_direction,law_applies,law_concordant,dominant_haploinsufficient_note,exception_mechanism,citation
+AP3B1,Hermansky-Pudlak syndrome type 2,608233,AR,True,Hypopigmentation,True,0.9,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+AP3D1,Hermansky-Pudlak syndrome type 10,617050,AR,True,Hypopigmentation,True,2.4,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BLOC1S3,Hermansky-Pudlak syndrome type 8,614077,AR,True,Hypopigmentation,True,1.8,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BLOC1S5,Hermansky-Pudlak syndrome type 11,619172,AR,True,Hypopigmentation,True,1.3,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BLOC1S6,Hermansky-Pudlak syndrome type 9,614171,AR,True,Hypopigmentation,True,1.0,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DTNBP1,Hermansky-Pudlak syndrome type 7,614076,AR,True,Hypopigmentation,True,1.7,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EDNRB,ABCD syndrome,600501,AR,True,Hypopigmentation,False,,positive,positive,positive,2,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FIG4,Charcot-Marie-Tooth disease type 4J,611228,AR,True,Hypopigmentation,True,0.7,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+GPR143,"Oculocutaneous albinism, type 1, Nettleship-Falls type",300500,XL,True,Hypopigmentation,True,1.0,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HPS1,Hermansky-Pudlak syndrome type 1,203300,AR,True,Hypopigmentation,True,2.0,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HPS3,Hermansky-Pudlak syndrome type 3,614072,AR,True,Hypopigmentation,True,1.7,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HPS4,Hermansky-Pudlak syndrome type 4,614073,AR,True,Hypopigmentation,True,2.1,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HPS5,Hermansky-Pudlak syndrome type 5,614074,AR,True,Hypopigmentation,True,2.1,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HPS6,Hermansky-Pudlak syndrome type 6,614075,AR,True,Hypopigmentation,True,1.9,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+LYST,Chediak–Higashi syndrome,214500,AR,True,Hypopigmentation,True,1.3,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MC1R,"Oculocutaneous albinism, type 2",203200,AR,True,Hypopigmentation,False,,positive,positive,positive,2,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+OCA2,"Oculocutaneous albinism, type 2",203200,AR,True,Hypopigmentation,True,1.4,positive,positive,positive,3,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RAB27A,Griscelli syndrome type 2,607624,AR,True,Hypopigmentation,True,2.0,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC17A5,"Sialic acid storage disorder, infantile",269920,AR,True,Hypopigmentation,True,1.2,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC24A5,"Oculocutaneous albinism, type 6",113750,AR,True,Hypopigmentation,True,1.8,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC45A2,"Oculocutaneous albinism, type 4",606574,AR,True,Hypopigmentation,True,3.8,,,positive,1,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TYRP1,"Oculocutaneous albinism, type 3",203290,AR,True,Hypopigmentation,False,,positive,positive,positive,2,Hypopigmentation,True,1.0,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FASLG,Vitiligo,,Acquired,False,Hypopigmentation,False,,,negative,negative,1,Hyperpigmentation,False,,,"Acquired (vitiligo-associated), immune-mediated depigmentation, not a germline melanin-regulator LoF.",OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HRAS,Costello syndrome,218040,AD,False,Hyperpigmentation,False,,,negative,negative,1,Hyperpigmentation,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MAP2K1,Cardiofaciocutaneous syndrome 3,615279,AD,False,Hyperpigmentation,False,,,negative,negative,1,Hyperpigmentation,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RAF1,LEOPARD syndrome 2,611554,AD,False,Hyperpigmentation,False,,,negative,negative,1,Hyperpigmentation,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BNC2,Dermal melanocytosis,,Congenital,False,Hyperpigmentation,True,1.4,,,positive,1,Hypopigmentation,False,,,"Congenital dermal melanocytosis: ectopic/retained dermal melanocytes (developmental), not melanogenic output change.",OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CDKN2A,Melanoma and neural system tumor syndrome,155755,AD,False,Hyperpigmentation,True,1.7,,,positive,1,Hypopigmentation,False,,,"Tumor suppressor; dominant LoF drives melanocyte proliferation/melanoma (more pigment cells), not less melanin per cell.",OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+KIT,"Mastocytosis, cutaneous",154800,AD,False,Hyperpigmentation,False,,positive,positive,positive,2,Hypopigmentation,False,,,Piebaldism (dominant-negative/haploinsufficiency) + KIT-GoF hyperpigmented lesions; dominant allele class is not simple LoF.,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MITF,Tietz albinism-deafness syndrome,103500,AD,False,Hypopigmentation,False,,positive,positive,positive,2,Hypopigmentation,False,,Haploinsufficient master TF (Waardenburg 2A) - dosage-sensitive positive regulator; LoF logic holds under dominance.,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PAX3,Waardenburg syndrome type 1,193500,AD,False,Hypopigmentation,False,,,positive,positive,1,Hypopigmentation,False,,Haploinsufficient master TF (Waardenburg 1/3) - dosage-sensitive positive regulator.,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PPP3CA,Vitiligo,,Acquired,False,Hypopigmentation,False,,,positive,positive,1,Hypopigmentation,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PSENEN,"Acne inversa, familial, 2, with or without Dowling-Degos disease",613736,AD,False,Hyperpigmentation,True,1.2,,,positive,1,Hypopigmentation,False,,,"gamma-secretase subunit; haploinsufficiency acts via keratinocyte/Notch (Dowling-Degos), not melanocyte-autonomous melanin loss.",OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SOX10,Waardenburg syndrome 4C; PCWH syndrome,613266; 609136,AD,False,Hypopigmentation,False,,positive,positive,positive,2,Hypopigmentation,False,,Haploinsufficient master TF (Waardenburg 2E/PCWH) - dosage-sensitive positive regulator.,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TYR,"{Melanoma, cutaneous malignant, susceptibility to, 8}",601800,AD,False,Hyperpigmentation,True,4.1,positive,positive,positive,3,Hypopigmentation,False,,,"Allelic series: recessive TYR LoF = OCA1 albinism (hypo, concordant); dominant entry = melanoma-susceptibility (proliferative), not per-cell melanin loss.",OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ABCC9,Hypertrichotic osteochondrodysplasia / Cantu syndrome,239850,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ACD,"Dyskeratosis congenita, autosomal dominant 6, autosomal recessive 7",616553,"AD, AR",True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ADAM10,Reticulate acropigmentation of Kitamura,615537,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ADAR,Aicardi-Goutieres syndrome 6,615010,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ADO,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ADPRH,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ALG11,Wilson disease,277900,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+APC2,"Intellectual developmental disorder, autosomal recessive 74 (Sotos syndrome 3)",617169,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ARID5B,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ATP7A,Menkes disease,309400,XLR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ATP7B,Wilson disease,277900,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ATXN2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BACH2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BCL2L11,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BCL2L12,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BRAF,LEOPARD syndrome 3,613707,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+BTNL2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+C1ORF141,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+C1QTNF6,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CASP7,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CBFA2T3,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CBS,Homocystinuria,236200,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CCR6,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CD80,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CDH23,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CEP57,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CHRNA9,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CLNK,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CPVL,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CTC1,Dyskeratosis congenita,,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CTLA4,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CTNS,Cystinosis,219800,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+CYP11A1,"Adrenal insufficiency, congenital, with 46XY sex reversal, partial or complete",613743,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DDX3X,"Intellectual developmental disorder, X-linked, syndrome, Snijders Blok type",300958,"XLD, XLR",True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DDX6,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DEF8,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DKC1,"Dyskeratosis congenita, X-linked",305000,XLR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+DNAJC12,Phenylketonuria,261600,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EDN3,Waardenburg syndrome 4B,613265,"AD, AR",True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EGR2,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EIF2S2,Dermal melanocytosis,,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EIF6,Dermal melanocytosis,,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ENPP1,Cole disease,615522,AD,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+EPG5,Vici syndrome,242840,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ERCC4,"Xeroderma pigmentosum, group F",278760,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ESCO2,Roberts-SC phocomelia syndrome,268300,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FADS2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FANCA,Dermal melanocytosis,,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FAP,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FARP2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FLI1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FLNA,Terminal osseous dysplasia,300244,XLD,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FMR1,Fragile X syndrome,300624,XLD,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FOXP1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FRAS1,Fraser syndrome 1,219000,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+FREM2,Fraser syndrome 2,617666,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+GAGE2A,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+GNAS,"McCune-Albright syndrome, somatic, mosaic",174800,Acquired,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+GRIP1,Fraser syndrome 3,617667,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+GZMB,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HERC2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HGD,Alkaptonuria,203500,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HLA-B,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HLA-DQA1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HLA-DQB1,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HLA-DRA,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HLA-DRB1,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+HUNK,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IFTAP,Nevus-cell nevus,,Acquired/Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IKBKG,Incontinentia pigmenti,308300,XLD,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IKZF4,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IL17A,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IL1RAPL1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IL23R,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IL2RA,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IRF3,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+IRF4,Dermal melanocytosis,,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+KCNK12,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+KRT14,Dermatopathia pigmentosa reticularis,125595,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+LPP,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+LRMDA,"Oculocutaneous albinism, type 7",615179,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MC2R,"Glucocorticoid deficiency, due to ACTH unresponsiveness",202200,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MCM4,Immunodeficiency-54,609981,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MLPH,Griscelli syndrome type 3,609227,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MRAP,Glucocorticoid deficiency 2,607398,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MSH2,Mismatch repair cancer syndrome 2,619096,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MSH6,Mismatch repair cancer syndrome 3,619097,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MTAP,Nevus-cell nevus,,Acquired/Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MYH8,Carney complex variant,608837,Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+MYO5A,Griscelli syndrome type 1,214450,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NARS1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NEK6,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NF1,Neurofibromatosis type 1,162200,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NFIX,Malan syndrome (formerly Sotos syndrome 2),614753,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NHP2,"Dyskeratosis congenita, autosomal recessive 2",613987,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NID1,Nevus-cell nevus,,Acquired/Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NLRP1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NNT,"Glucocorticoid deficiency 4, with or without mineralocorticoid deficiency",614736,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NOP10,"Dyskeratosis congenita, autosomal recessive 1	",224230,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NR0B1,"Adrenal hypoplasia, congenita",300200,XLR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NRAS,"Melanocytic nevus syndrome, congenital, somatic; Neurocutaneous melanosis, somatic",137550,Acquired,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NRROS,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+NSD1,Sotos syndrome,117550,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PAH,Phenylketonuria,261600,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PARN,"Dyskeratosis congenita, autosomal recessive 6",616353,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PARP12,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PLA2G6,Nevus-cell nevus,,Acquired/Congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PLCB3,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PMS2,Mismatch repair cancer syndrome 4,619101,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+POGLUT1,Dowling-Degos disease 4,615696,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+POLA1,"Pigmentary disorder, reticulate, with systemic manifestations, X-linked",301220,XLR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+POMC,"Obesity, adrenal insufficiency, and red hair due to POMC deficiency",609734,AR,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PPARGC1B,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PRKAR1A,"Carney complex, type 1",160980,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PTEN,Cowden syndrome 1 (Bannayan-Riley-Ruvalcaba syndrome),158350,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PTPN1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PTPN11,LEOPARD syndrome 1,151100,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PTPN22,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+PTPRC,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RAB5C,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RALY,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RERE,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RIT1,Noonan Syndrome 8,615355,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RNASET2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RPGRIP1L,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+RTEL1,"Dyskeratosis congenita, autosomal dominant 4, autosomal recessive 5",615190,"AD, AR",True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SAMD9,Mirage syndrome,617053,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SERPINB9,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SGPL1,"Nephrotic syndrome, type 14",617575,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SH2B3,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SHOC2,Noonan-like syndrome with loose anagen hair 1,607721,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC1A2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC29A3,Histiocytosis-lymphadenopathy plus syndrome,602782,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SLC44A4,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SMARCAL1,Schimke immunoosseous dysplasia ,242900,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SMO,Curry-Jones syndrome,601707,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SMOC2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SNAI2,Piebaldism,172800,AD,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SPATA48,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+SPRED1,Legius syndrome,611431,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+STAR,Lipoid adrenal hyperplasia,201710,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+STAT4,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+STK11,Peutz – Jeghers syndrome,175200,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TBX5,Blue nevus,,Acquired or congenital,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TEF,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TERC,"Dyskeratosis congenita, autosomal dominant 1",127550,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TERT,"Dyskeratosis congenita, autosomal dominant 2, autosomal recessive 4",613989,"AD, AR",True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TG,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TICAM1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TINF2,"Dyskeratosis congenita, autosomal dominant 3",613990,AD,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TNFRSF11A,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TNFSF11,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TSC1,Tuberous sclerosis 1,191100,AD,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+TSC2,Tuberous sclerosis 2,613254,"AD, ""de novo""",False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+UBASH3A,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+UBE2E2,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+USP9X,"Intellectual developmental disorder, X-linked 99, syndromic, female-restricted ",300968,XLD,True,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+UVSSA,UV-sensitive syndrome 3,614640,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+VEGFA,POEMS syndrome,,Acquired,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+WIF1,Melasma/chloasma,,Acquired,False,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+WRAP53,"Dyskeratosis congenita, autosomal recessive 3",613988,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ZC3H7B,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ZMIZ1,Vitiligo,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ZMPSTE24,Mandibuloacral dysplasia with type B lipodystrophy,608612,AR,True,Hyperpigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
+ZNF354A,Vogt-Koyanagi-Harada disease,,Acquired,False,Hypopigmentation,False,,,,,0,,False,,,,OMIM via D'Arcy 2023 PMC9854651; Bajpai 2023 DOI 10.1126/science.ade6289; NB6 GRN; NB7 signed network
