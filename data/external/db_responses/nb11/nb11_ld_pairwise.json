@@ -1,0 +1,17 @@
+{
+ "MFSD12|1000GENOMES:phase_3:AFR": [],
+ "MFSD12|1000GENOMES:phase_3:EAS": [],
+ "BNC2|1000GENOMES:phase_3:EAS": [],
+ "BNC2|1000GENOMES:phase_3:AMR": [
+  {
+   "r2": "0.185723",
+   "variation1": "rs2153271",
+   "population_name": "1000GENOMES:phase_3:AMR",
+   "d_prime": "0.868935",
+   "variation2": "rs16935073"
+  }
+ ],
+ "MFSD12|1000GENOMES:phase_3:AMR": [],
+ "MFSD12|1000GENOMES:phase_3:SAS": [],
+ "MFSD12|1000GENOMES:phase_3:EUR": []
+}
