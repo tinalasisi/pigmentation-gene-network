@@ -1,0 +1,7 @@
+raghunath_token,string_query_symbol,hgnc_group_id,hgnc_group_name,n_hgnc_members,string_fuzzy_mapped_gene,is_genuine_hgnc_member,resolution_status
+PLA2,PLA2,467,Phospholipases,20,,False,unmapped_by_string
+MMPs,MMPS,891,M10 matrix metallopeptidases,23,BSG,False,resolved_spurious_fuzzy_match
+Trypsin,TRYPSIN,738,Serine proteases,25,PRSS1,True,resolved_genuine_member
+Phosphodiesterase,PHOSPHODIESTERASE,681,Phosphodiesterases,24,SMPDL3A,False,resolved_spurious_fuzzy_match
+PKC,PKC,3523,Protein kinase C family,9,PRRT2,False,resolved_spurious_fuzzy_match
+PLC,PLC,832,C2 domain containing phospholipases,14,HSPG2,False,resolved_spurious_fuzzy_match
