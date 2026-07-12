@@ -93,3 +93,19 @@ internal/archive/
 notebooks/handoff/
 handoff/
 notebooks/handoff2/
+
+# =============================================================================
+# comparative-genomics/ — large genomic data is NOT committed; reproduce it from
+# comparative-genomics/config/accessions.tsv (public NCBI accessions). Committed:
+# config/, scripts/, envs/environment.yml, results/ summaries. See that dir's README.
+# =============================================================================
+comparative-genomics/data/
+comparative-genomics/**/*.fa
+comparative-genomics/**/*.fasta
+comparative-genomics/**/*.fna
+comparative-genomics/**/*.gff
+comparative-genomics/**/*.gff3
+comparative-genomics/**/*.bam
+comparative-genomics/**/*.bai
+comparative-genomics/alignments/
+comparative-genomics/**/*.raw.json

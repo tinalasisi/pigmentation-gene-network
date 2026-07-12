@@ -1,0 +1,8 @@
+# Target gene set for the selection scan — one gene symbol per line.
+# These are the query proteins miniprot extracts from each target assembly.
+# TODO: populate from the pigmentation gene-network gene list (see repo's data/ + notebooks/).
+# Example:
+# OCA2
+# TYR
+# SLC24A5
+# MC1R
