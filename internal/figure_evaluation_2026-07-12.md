@@ -29,8 +29,8 @@ step6_validation_verdict}.png`; `output/figures/{nb1_network_overview, nb1_valid
 
 ## Per-figure
 
-### nb4_funnel — 105 → 52 → 27  ★ keep (fix + promote)
-- **Shows:** curated 105 → 52 author-unexplained → 27 also GWAS-replicated. Clear, on-message — the rescue-target setup.
+### nb4_funnel — effector-status breakdown of the 105  ★ keep (reframed)
+- **Shows (reframed 2026-07-12):** the 105 curated loci by effector status — 14 effector-uncertain (the rescue target) vs 75 canonical-effector variant-gaps, etc. Replaces the old "105 → 52 → 27" funnel, which presented the coarse (superseded) "author-unexplained" tag as the target.
 - **Fix:** (1) **title truncated — critical.** (2) decreasing left-aligned bars, not a true funnel — center into a
   real funnel, or keep bars but add drop-off deltas (−53, −25) and % surviving each step. (3) Highlight **27** as
   the target (accent + "the rescue set"); mute 105/52 to context.

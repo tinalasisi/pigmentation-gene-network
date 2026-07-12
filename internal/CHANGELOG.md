@@ -1144,7 +1144,9 @@ gitignored `/output/`) is fixed by the new `data/external/` home; frozen data mu
 
 **Scope note (one-day discipline):** recovering this unblocks NB4's unified reported-associations base
 (rsID-join the 1,072 to the curated set; overlap yields replication counts that feed the convergence grade),
-but the flagship rescue still runs on the **52 curated author-unexplained loci** (already resolved in
+but the flagship rescue still runs on the **52 curated author-unexplained loci** _(SUPERSEDED 2026-07-12 — the
+coarse "author-unexplained" tag overstated the open set ~6×; the real target is the 14 effector-uncertain loci,
+34 with Kim 2024. See NB4 and `discordance_loci_effector_classified.csv`.)_ (already resolved in
 `data/processed/locus_causal_resolution.csv`); the 36-paper author-explanation mining of the Catalog set
 remains a stretch, not a requirement.
 
@@ -1198,7 +1200,7 @@ the causal one, so gene-level replication still selects the boring canonical set
 (`gwas_n_assoc`, `gwas_replicated`) is now specified as a CONFIDENCE annotation feeding the convergence grade —
 never a gate that drops candidates; a replicated **+ off-canonical + rescued** locus is the strongest story. An
 optional stretch is documented (rescue off-canonical GWAS loci resolved via L2G/eQTL; the 52 curated remain the
-flagship).
+flagship _— SUPERSEDED 2026-07-12: the flagship is the 14 effector-uncertain set, 34 with Kim 2024; see NB4_).
 
 Reproducibility: the granular-associations puller `scripts/pull_gwas_associations.py` (copied from
 melanogenesis-constraints `analysis/pull_gwas_loci.py`; queries the GWAS Catalog associations endpoint) is

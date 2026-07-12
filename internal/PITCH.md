@@ -43,8 +43,8 @@ class are known.
 ## The three pitch answers (keep current)
 
 1. **What did Claude Science help us do?** — curate author-explanation status of 105 loci from full PDFs;
-   assemble a multi-layer substrate with per-edge provenance; resolve unexplained loci to causal genes in the
-   right tissue; grade rescues by convergence — at weekend scale, fully reproducible.
+   assemble a multi-layer substrate with per-edge provenance; resolve effector-uncertain loci to causal genes
+   in the right tissue; grade rescues by convergence — at weekend scale, fully reproducible.
 2. **How are we closer to a finding?** — HONEST STATUS (2026-07-12, overnight): the network-rescue screen, run
    correctly on the effector-uncertain set with tissue-correct (melanocyte) eQTL, did NOT yield a novel
    network-discovered effector. What DID hold up is a **methodological finding**: melanocyte-vs-bulk eQTL
@@ -137,7 +137,7 @@ evidence for any result in this repo.
 
 | NB | Question | Key result | Status |
 |----|----------|------------|--------|
-| NB4 | Unified association base | 105 curated → **52 author-unexplained** → **27 also GWAS-Catalog-replicated** (replicated + off-canonical + author-unexplained = the rescue targets). `gwas_replicated` is an additive convergence annotation, never a gate. | ✅ |
+| NB4 | Unified association base | Claim-faithful effector-status re-read of 105 curated loci → **14 effector-uncertain** (the rescue target; **34** with Kim 2024 folded in) vs **75 canonical-effector variant-gaps**. The old coarse **"52 author-unexplained"** tag overstated the open set ~6× (caught only 9 of the 14 real targets, swept in 43 non-targets) and is **superseded**. 27 tagged loci share a GWAS-Catalog rsID — additive cross-check, never a gate. | ✅ |
 | NB5 | Compare candidate networks | Bajpai CRISPR added as a node layer (142 orphan hits in no curated network); networks-typology table; **"the network you choose changes the answer"** — our STRING pull recovers 60% of Raghunath's edges, agrees only 66% with D'Arcy's frozen STRING (34% drift). | ✅ |
 | NB6 | Gene regulatory network | **58 curated-regulon TF→target edges** (MITF 34, PAX3 19, SOX10 5), directed + signed, DoRothEA A–E tiered, every edge cited. MITF directly activates 8 core pigmentation genes. No ChIP-seq peaks (binding≠regulation). | ✅ |
 | NB7 | Harmonized multi-layer substrate | Merge all layers into one tagged node/edge table, per-edge provenance + tier; resolve the STRING enzyme-class-token artifact. | 🔄 building |

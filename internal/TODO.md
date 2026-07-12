@@ -90,7 +90,7 @@ Dependency order — each phase consumes the prior phase's frozen output; do not
       trafficking, MC1R/cAMP signalling, ion transport) and reports its size. This is the discovery surface.
     - Reactome snapshot MUST preserve reaction/edge structure + per-gene sub-pathway membership (not a flat
       gene list) so NB7 can cite the SPECIFIC reaction a rescued locus connects through.
-    - NB7 gains a resolution class **`mediating-via-Reactome-reaction`**: an author-unexplained locus whose
+    - NB7 gains a resolution class **`mediating-via-Reactome-reaction`**: an effector-uncertain locus whose
       resolved causal gene lands in the Reactome-only connection set is a candidate rescue, connecting a
       "missing" association gene into curated pigmentation biology via a reaction the original authors did not
       name. This is a core project contribution ("query missing pigmentation genes found by association").

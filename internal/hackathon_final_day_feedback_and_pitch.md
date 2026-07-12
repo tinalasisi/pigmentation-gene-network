@@ -6,8 +6,9 @@ finding. Build the flagship path, **STOP at the hero shortlist, and surface it t
 or infrastructural is Claude Code's, not yours (see §5).
 
 ## 1. The flagship (north star — install in START_HERE + a living PITCH.md)
-A reproducible, convergence-graded **rescue screen**: take pigmentation loci their own authors reported but
-**could not mechanistically explain** (52 author-unexplained of 105 curated), resolve each to a causal gene
+A reproducible, convergence-graded **rescue screen**: take the pigmentation loci that are genuinely
+**effector-uncertain** — which gene is causal is truly open (14 of 105 curated; 34 with Kim 2024 folded in;
+this supersedes the coarse "52 author-unexplained" tag, which swept in 43 canonical-gene loci), resolve each to a causal gene
 (Open Targets L2G + melanocyte-appropriate eQTL), and test whether it connects into the **melanogenesis
 network** through a tagged multi-layer substrate — grading each rescue by how many **independent evidence lines
 converge**, and naming **one confirming experiment** per rescued locus.
@@ -22,7 +23,7 @@ rescues/corroborates:
 1. *What did Claude Science help us do?* — curate author-explanation status of 105 loci from full PDFs; assemble
    a multi-layer substrate with per-edge provenance; resolve unexplained loci to causal genes in the right
    tissue; grade rescues by convergence — at weekend scale, fully reproducible.
-2. *How are we closer to a finding?* — N author-unexplained loci now connect to melanogenesis, each graded, each
+2. *How are we closer to a finding?* — N effector-uncertain loci now connect to melanogenesis, each graded, each
    with a confirming experiment; anchored by one named **hero locus**.
 3. *What is the flagship?* — the hero-locus rescue + the honest, reproducible convergence-graded catalog.
 
@@ -67,7 +68,7 @@ need a rescue to hero about, not a bare gene assignment.
 - **OPTIONAL stretch — rescue off-canonical GWAS loci (the scaled thesis):** beyond the 52, you MAY take GWAS
   Catalog loci whose mapped gene is NOT a canonical melanogenesis gene, resolve each to its *causal* gene via
   L2G/eQTL (fixes nearest-gene-mislabeled / effectively-intergenic loci), and rescue-test. Label as a stretch;
-  **the 52 curated remain the flagship.** Do NOT gene-filter these out.
+  **the effector-uncertain curated set remains the flagship** (14 of 105; 34 with Kim 2024 — not the coarse 52-tag). Do NOT gene-filter these out.
 
 ## 5. KEEP OUT of your plan — Claude Code does these (don't spend agents/tokens)
 - the **website / Quarto site** (`index.qmd`) — do not build or touch it;
@@ -94,7 +95,7 @@ know OmniPath had regulons in NB2.") Maintain a single living **PITCH.md**, upda
 ## 8. Visuals — rough functional only (Claude Code polishes)
 Every notebook + key result gets ≥1 clear visual — the picture that *proves its one result* (correct data,
 correct chart type, a title matching the data). If a key result can't be shown as a simple picture, it isn't a
-key result. Suggested: NB4 = 105→52 funnel; NB5 = network-overlap UpSet + the FALSIFIED hypothesis; NB6 = MITF
+key result. Suggested: NB4 = effector-status breakdown of the 105 (14 effector-uncertain vs 75 canonical-variant-gap); NB5 = network-overlap UpSet + the FALSIFIED hypothesis; NB6 = MITF
 hub with its 34 signed targets; NB7 = tiered substrate; NB8 = rescue results + convergence grades. **Rough
 only — no palette/aesthetic/website work.**
 

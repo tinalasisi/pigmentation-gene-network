@@ -1,7 +1,17 @@
 # Careful re-extraction plan — fixing the "author-unexplained" foundation
 
-**Status: DRAFT for PI review (written overnight 2026-07-12 while PI asleep). Do not execute the re-extraction
-until the PI signs off on this plan.**
+**Status: EXECUTED & PI-SIGNED-OFF (2026-07-12).** The effector re-classification is committed as
+`data/processed/discordance_loci_effector_classified.csv` and is now the spine of NB4, `index.qmd`, and PITCH.
+Verified same-grain numbers on the 105 curated loci: of the **52** "author-unexplained" loci, only **9** are
+genuinely effector-uncertain — **32** are canonical-effector variant-gaps, 6 ambiguous-near, 3
+regulatory-of-neighbour, 2 not-a-locus. The full effector-uncertain target set is **14** within the 105 (5 more
+were mis-tagged `mechanism_proposed`) and **34** once Kim 2024 (26 loci) is folded in.
+
+**Caveat on the HERC2 example below (integrity note).** rs12913832 is tagged `mechanism_proposed` where it is a
+locus's *primary* variant (Abbatangelo / Kastelic / Pospiech); it also appears as a *member* SNP of an Ang2023
+`nearest_gene_only` locus. So "HERC2 rs12913832 was tagged author-unexplained" is **messy, not cleanly true** —
+NB4 therefore uses the unambiguous *TYR* (rs1393350) / *SLC45A2* (rs16891982) / *OCA2* (rs1800407)
+`nearest_gene_only` mis-tags as the worked examples instead.
 
 ## The problem we are fixing
 

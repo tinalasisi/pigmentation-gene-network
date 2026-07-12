@@ -57,8 +57,10 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
   discordance cases from curated papers, counted paper-by-paper, reproduced from committed extracts.
 
 ### Networks & substrate
-- **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — 105 curated loci → the
-  author-unexplained subset → the GWAS-Catalog-replicated overlap: the rescue-target set.
+- **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — a claim-faithful
+  effector-status re-read of 105 curated loci: **14 genuinely effector-uncertain** (the rescue target;
+  34 with Kim 2024 folded in) vs 75 canonical-effector variant-gaps — correcting an earlier coarse
+  "author-unexplained" tag that overstated the open set ~6×.
 - **[NB5 · Compare candidate networks](notebooks/05_compare_candidate_networks.ipynb)** — *"the network you
   choose changes the answer"*: how STRING drift and source choice move which genes are in play.
 - **[NB6 · Gene-regulatory network](notebooks/06_gene_regulatory_network.ipynb)** — 58 curated, signed TF→target
