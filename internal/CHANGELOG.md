@@ -1602,3 +1602,35 @@ Pre-existing drift flagged, not silently fixed: the committed `nb4_unified_assoc
 `2026-07-12T14:46:57Z` re-pull — i.e. NB4's committed outputs predate the currently-committed source. This
 predates the present pass and is out of scope for a language/quarantine change; it should be resolved by a
 dedicated re-run-and-recommit of NB4 against the current source (logged in TODO).
+
+---
+
+## 2026-07-12T22:40Z — GWAS-catalog data refresh for NB4, and final deletion of the archived author_explained.csv
+
+Two follow-ups to the 22:10Z entry, both PI-approved.
+
+**NB4 refreshed against the current committed GWAS-catalog source.** The 21:40Z/22:10Z work had left a
+noted drift: `nb4_unified_association_base.csv` carried `queried_utc = 2026-07-08T01:15:41Z`, but the
+committed source (`pigmentation_gwas_catalog.csv`, all 1,072 rows, and its `.meta.json`) is the widened
+re-pull of 2026-07-12T14:46:57Z committed in `16bacb3` (added `reported_gene` + split
+initial/replication ancestry). NB4 was re-run end-to-end against the current source and the refreshed
+output committed. Verified: the 105 curated rows are byte-identical to the prior output, the 14/34
+effector-status breakdown is unchanged, and two consecutive re-runs are byte-identical (deterministic
+against the current source). The only deltas versus the stale output are the `queried_utc` stamp (now
+2026-07-12 on all 1,072 GWAS rows) and a non-deterministic study-accession tiebreak on 10 catalog rows
+where the same rsID appears in multiple GWAS studies (e.g. rs1805007 GCST006988 -> GCST006986; two
+gene-label orderings) — no p-values, effect sizes, gene identities, or locus counts changed. NB4's prose
+pull-date references (cells 0, 4) and the downstream docs (`docs/specs/gwas_catalog.spec.md`,
+`docs/specs/nb4_unified_association_base.spec.md`, `DATA_SOURCES.md` GWAS entry) were corrected from
+2026-07-08 to 2026-07-12 to match the committed source. The MCP anchor-crosscheck timestamp
+(2026-07-08T01:16:11Z, a separate one-off connector query) was left unchanged — it is its own artifact,
+not the frozen-pull version key.
+
+**`discordance_loci_author_explained.csv` deleted.** The 22:10Z entry retired the file and its spec to
+`internal/archive/superseded_2026-07-12/`. Per PI direction, the archived copies have now been deleted
+outright — the file's substantive content is preserved in git history (last tree presence commit
+`7585286`, removed by `787fe4c`),
+its two audit columns are live in `discordance_loci_effector_classified.csv`, and its provenance is
+documented in that file's spec and in these CHANGELOG entries. Nothing in the live repo reads it; the
+lockstep docs and the NB4 cell-3 comment were updated to describe it as removed (recoverable from git
+history) rather than archived.

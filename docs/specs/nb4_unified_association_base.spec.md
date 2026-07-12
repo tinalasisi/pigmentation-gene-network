@@ -17,7 +17,7 @@ Produced by `notebooks/04_unified_association_base.ipynb`.
 | File | Rows | Role |
 |---|---|---|
 | `data/processed/discordance_loci_effector_classified.csv` (105 legacy rows, `paper != "Kim2024"`) | 105 | Curated discordance loci with per-locus effector-status classification (`effector_uncertain`, `canonical_effector_variant_gap`, `effector_ambiguous_near`, `regulatory_of_canonical_neighbour`, `not_a_locus`). Upstream (NB3); not re-derived here. |
-| `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` | 1,072 | Deduplicated lead GWAS Catalog associations, one row per rsID, GRCh38 (`pos_hg38`). Access-UTC 2026-07-08T01:15:41Z (see `docs/specs/gwas_catalog.spec.md`). |
+| `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` | 1,072 | Deduplicated lead GWAS Catalog associations, one row per rsID, GRCh38 (`pos_hg38`). Access-UTC 2026-07-12T14:46:57Z (see `docs/specs/gwas_catalog.spec.md`). |
 | `data/external/gwas_catalog/gwas_pigmentation_associations.csv` | 723 | Granular associations (`efo_id, trait, gene, snp_id, pvalue`); used ONLY for the gene-level replication count. No committed `.meta.json` — a documented reproducibility gap (regeneration via `scripts/pull_gwas_associations.py`, exact original CLI args not recorded in-repo). |
 
 **Kim et al. 2024 (PMID 38849341)** was checked for inclusion and found to have **no extracted

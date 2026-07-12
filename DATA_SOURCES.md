@@ -67,9 +67,10 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 ### 1. NHGRI-EBI GWAS Catalog — pigmentation associations
 - **Identity / endpoint:** `https://www.ebi.ac.uk/gwas/api/search/downloads`, `shortForm:"<root>"` +
   `includeChildTraits=true&efo=true&facet=association`, over 10 frozen EFO/OBA/MONDO roots.
-- **Version key:** access timestamp **2026-07-08T01:15:41Z** (catalog is a live resource; frozen copy
-  committed at `data/external/gwas_catalog/pigmentation_gwas_catalog.csv`, restored 2026-07-12 after the
-  original gitignored `/output/` copy was lost).
+- **Version key:** access timestamp **2026-07-12T14:46:57Z** (catalog is a live resource; the frozen copy
+  committed at `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` is a widened re-pull, commit
+  `16bacb3`, that added `reported_gene` and split initial/replication ancestry — stamped in every row's
+  `queried_utc` and in the `.meta.json`).
 - **Gene-level replication source (granular):** `data/external/gwas_catalog/gwas_pigmentation_associations.csv`
   (723 associations; `efo_id, trait, gene, snp_id, pvalue`) — frozen from the PI's `melanogenesis-constraints`
   project, committed 2026-07-12 to support the gene-level ≥2-association replication filter (→ 83 replicated

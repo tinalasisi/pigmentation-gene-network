@@ -7,11 +7,12 @@
 - **Endpoint:** `https://www.ebi.ac.uk/gwas/api/search/downloads`
 - **Query per root:** `q=shortForm:"<EFO/OBA/MONDO id>"&includeChildTraits=true&efo=true&facet=association`
 - **Access method:** `scripts/gwas_catalog.py v1.0` (config-driven; roots frozen in `scripts/traits_pigmentation.json`).
-- **Access date (UTC):** 2026-07-08T01:15:41Z (stamped in every row's `queried_utc` and in the `.meta.json`).
+- **Access date (UTC):** 2026-07-12T14:46:57Z (stamped in every row's `queried_utc` and in the `.meta.json`).
 - **Catalog version:** the GWAS Catalog is a live resource, not internally versioned by release number on
   this endpoint, so **the access timestamp is the version key**. The frozen pull is committed at
-  `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` (restored 2026-07-12 after the original
-  gitignored `/output/` copy was lost; in-row `queried_utc` 2026-07-08T01:15:41Z is the version key).
+  `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` (widened re-pull committed 2026-07-12,
+  commit `16bacb3`, adding `reported_gene` and split initial/replication ancestry; in-row
+  `queried_utc` 2026-07-12T14:46:57Z is the version key).
 - **License:** NHGRI-EBI GWAS Catalog data are released under EMBL-EBI terms (reuse with attribution); cite
   the catalog (Sollis et al. 2023) plus the per-association study PubMed IDs in the `pubmed` column.
 

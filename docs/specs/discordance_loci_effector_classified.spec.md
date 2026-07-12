@@ -1,7 +1,8 @@
 # discordance_loci_effector_classified.csv — spec / provenance
 
-**Supersedes:** `discordance_loci_author_explained.csv`, which has been retired to
-`internal/archive/superseded_2026-07-12/` (with its own spec). This file is now the single curated
+**Supersedes:** `discordance_loci_author_explained.csv`, which has been removed from the repository
+(recoverable from git history — its last tree presence is commit `7585286`, removed by `787fe4c`; see
+`internal/CHANGELOG.md` 2026-07-12). This file is now the single curated
 source for the 105 legacy loci: its 105 rows with `paper != "Kim2024"` reproduce that file's 105 rows
 exactly on every shared column, and the two audit columns worth keeping — `is_asserted_pigmentation`
 and `needs_review` — were migrated into this file before the old one was retired (the empty
@@ -111,7 +112,7 @@ CRISPR), or does it only note **proximity/implied LD**?
 | `classification_notes` | Full per-locus reasoning, cross-paper corroboration, and connector cross-check results (mygene.info, Zhang2018 melanocyte eQTL). |
 | `is_asserted_pigmentation` | Boolean, migrated from the retired `discordance_loci_author_explained.csv`. Whether the source paper asserts the locus is pigmentation-associated. Populated for the 105 legacy rows only (null for the 26 Kim2024 rows); carried through into `nb4_unified_association_base.csv`. |
 | `needs_review` | Free-text curatorial audit flag, migrated from the retired input (e.g. cross-paper double-count, sub-Bonferroni downgrade). Non-empty on 18 of the 105 legacy rows; null elsewhere. Not propagated downstream. |
-| All other columns | Carried through unchanged from the retired `discordance_loci_author_explained.csv` for the 105 legacy rows (that file and its spec now live in `internal/archive/superseded_2026-07-12/`); populated fresh for the 26 Kim2024 rows using the same schema. The empty `gene_label_correction` column was dropped in the migration. |
+| All other columns | Carried through unchanged from the retired `discordance_loci_author_explained.csv` for the 105 legacy rows (that file and its spec were removed from the repo on 2026-07-12; recover from git history if needed); populated fresh for the 26 Kim2024 rows using the same schema. The empty `gene_label_correction` column was dropped in the migration. |
 
 ## Status distribution (131 loci: 105 legacy + 26 Kim2024)
 
@@ -127,7 +128,8 @@ CRISPR), or does it only note **proximity/implied LD**?
 
 - `data/processed/discordance_loci_effector_classified.csv` — the 131-row merged, harmonized output
   (supersedes `discordance_loci_author_explained.csv` for the effector-uncertain question; that file
-  is preserved for its own variant-mechanism-gap provenance in `internal/archive/superseded_2026-07-12/`).
+  was removed from the repo on 2026-07-12 and is recoverable from git history for its own
+  variant-mechanism-gap provenance).
 - `data/processed/EXTRACT_<paper>_loci_v2.csv` — one file per paper (14 total: the 13 legacy papers
   plus Kim2024), each carrying the same per-locus schema, for per-paper audit without needing to
   filter the merged file.
@@ -204,9 +206,9 @@ above are the only acknowledged gaps and are ledgered for re-opening, not silent
 
 ## Source papers
 
-See `data/raw/papers/REFERENCES.md` for the full DOI/journal/access table, and
-`internal/archive/superseded_2026-07-12/discordance_loci_author_explained.spec.md` for the
-13-legacy-paper local-filename table (carried forward). Kim2024's local files:
+See `data/raw/papers/REFERENCES.md` for the full DOI/journal/access table and the 13-legacy-paper
+local-filename table (the retired `discordance_loci_author_explained.spec.md` that previously held it
+was removed on 2026-07-12; recover from git history if needed). Kim2024's local files:
 
 | File | Description |
 |---|---|
