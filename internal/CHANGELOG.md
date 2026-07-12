@@ -1071,3 +1071,37 @@ population-conditionality note on NB8), which is that session's content to commi
 `notebooks/figures/step*.png` (regenerated); `DATA_SOURCES.md` (PLC* filter); `internal/START_HERE.md`
 (datetimed current-state note); `internal/project_dashboard.md` (created); `pigmentation-plan-sync` skill
 (published). Untouched: `internal/TODO.md` and all concurrent-session untracked files.
+
+---
+
+## 2026-07-12T01:55Z — Commit-authority convention encoded in `precommit-compliance-gate`; NB2 figure-gen + dashboard committed (`2c03ad1`, `0997551`)
+
+**Commits.** The figure-generator restoration + PLC* documentation committed as `2c03ad1`
+(`fix(nb2): generate step figures from notebook data; document PLC* HGNC filter`, 7 files, Tier-2 gate
+verdict PROCEED). The dashboard creation + START_HERE/changelog de-staling committed as `0997551`
+(`docs(dashboard): create tentative project_dashboard.md; de-stale START_HERE + changelog`, 3 files, Tier 1).
+`internal/TODO.md` was deliberately left uncommitted: it now interleaves this session's "NB2 follow-ups
+resolved" edit with the concurrent NB4–NB5 session's uncommitted content (NB8 allele-frequency PI design
+note; a new "Open — surfaced during NB5" section on STRING enzyme-class mapping and a Reactome parent-pathway
+re-pull to R-HSA-5619507), so committing it here would sweep that session's in-flight work into this session's
+history. A handoff note (`internal/handoffs/notes/20260712T0153Z__…__pm001.md`) tells that session my TODO
+edit is safe to commit with theirs; the authoritative record of the resolved follow-ups is this changelog
+regardless.
+
+**Skill fix — `precommit-compliance-gate` commit-authority convention (PI-directed).** A delegation this
+session forbade a specialist from committing its own finished, verified work ("do not commit / out of scope"),
+forcing a handoff for a commit it could have made itself. Investigation found this restriction came from the
+**delegation prompt**, not from any stored rule — the specialist's profile and this skill already say "commit
+small and often," and the skill's own "who can run Tier 2" passage already permits any frame to commit Tier-1
+code/prose directly. The over-restriction was an orchestrator-side prompt error, not a skill defect. Per PI
+direction (a specialist should commit its own completed work and refuse only for genuine
+redistribution-legality decisions), added two clarifying paragraphs to the skill's tiering section: (1) a
+specialist commits its own completed work, handing a commit **up** only when it is a leaf that structurally
+cannot delegate a Tier-2 commit to `REPO_COMPLIANCE_GATE`, or when an unresolved redistribution-legality
+question exists — never as a blanket "specialists don't commit"; (2) orchestrators must scope a delegation's
+commit authority (which paths, which files not to sweep, any legality exception) rather than blanket-forbid
+committing. The root-only Tier-2 delegation constraint is preserved unchanged. Skill republished in place.
+
+**Documents updated:** this entry; `precommit-compliance-gate` skill (published);
+`internal/handoffs/notes/20260712T0153Z__…__pm001.md` (created). Commits `2c03ad1` and `0997551` recorded
+above.
