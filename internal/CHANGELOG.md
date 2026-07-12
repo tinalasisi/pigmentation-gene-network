@@ -1105,3 +1105,26 @@ committing. The root-only Tier-2 delegation constraint is preserved unchanged. S
 **Documents updated:** this entry; `precommit-compliance-gate` skill (published);
 `internal/handoffs/notes/20260712T0153Z__…__pm001.md` (created). Commits `2c03ad1` and `0997551` recorded
 above.
+
+---
+
+## 2026-07-12T02:07Z — `.claude/` local tooling settings gitignored (`92cb266`)
+
+Added `.claude/` to `.gitignore` (Local/environment-cruft section) so the per-machine
+`.claude/settings.local.json` stub — a local tool-permission config, same category as `.venv/`/`.env`,
+not project content — is not committed. The rule untracks nothing (`.claude/` was never tracked); it only
+prevents the file from being staged going forward. Routed through the Tier-2 gate (touches `.gitignore`):
+`REPO_COMPLIANCE_GATE` verified the pattern matches the target, has no collateral matches (the
+`internal/handoffs/notes/*claude*` filenames are unaffected), and needs no README/DATA_SOURCES stanza —
+verdict PROCEED. Committed `.gitignore` alone by explicit path as `92cb266`.
+
+**Remaining uncommitted work belongs to the concurrent NB4–NB5 session** and is intentionally left for it:
+`internal/TODO.md` (holds that session's NB8/NB5 ledger content interleaved with this session's resolved-
+follow-ups edit — see the 01:53Z handoff note), the NB5 processed outputs (`nb5_*.csv`,
+`discordance_loci_author_explained.csv`, `darcy2023_S*.csv` + meta sidecars), the NB5 frozen DB responses
+(`reactome_*`, `string_network_pulls_v12.json`), the NB5 notebook + figure + specs (`notebooks/05_*`,
+`notebooks/figures/nb5_candidate_network_comparison.png`, `docs/specs/*`), and `rescue_candidate_audit.csv`
+(PI-held). Committing those is a Tier-2 decision (new data + new frozen snapshots needing license-basis
+documentation in `DATA_SOURCES.md`) owned by whoever finishes NB5, not this session.
+
+**Documents updated:** this entry; `.gitignore` (committed as `92cb266`).
