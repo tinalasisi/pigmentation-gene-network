@@ -35,6 +35,19 @@ hero locus — not six notebooks.
    93 orphans). The association-locus rescue screen (below) is honest SUPPORT, not the headline — it yielded
    no novel effector.
 
+**Second thread — corrected association-locus rescue (effector-question, non-circular).** The foundation was
+   fixed: 131 loci re-classified by whether the *associated gene is the effector* (not whether a variant was
+   annotated). 80 point at canonical effectors (excluded — that was the PI's first-project variant-gap
+   question; HERC2 rs12913832 etc. had been wrongly tagged); **34 effector_uncertain + 7 ambiguous_near** are
+   the real non-canonical target set. With those candidates *in the STRING seed* (the seeding lesson applied
+   again), **25 of 49 connect to the melanogenesis core** via high-confidence paths — e.g. SPIRE2→MYO5A,
+   ATRN→ASIP (mahogany biology as a network edge), OPN4→FOS→MITF. **Cross-paper convergence** (independent
+   replication across ancestries): MFSD12 (Ang/Crawford/Kim — 3 populations, coding), SPIRE2 (Kim/Morgan),
+   TSPAN10 (Abbatangelo/Morgan). CAVEAT (the seeding lesson a fourth time): 21 candidates incl. **MFSD12**
+   have NO high-confidence STRING edges at all — coverage limit, not absence of biology (Crawford proved
+   MFSD12 by knockdown). These are association hypotheses; STRING supplies candidate wiring, the association
+   is the anchor.
+
 ## Positioning
 
 Within the systems-population-genetics lineage. This rescue/convergence contribution is **distinct** from the
