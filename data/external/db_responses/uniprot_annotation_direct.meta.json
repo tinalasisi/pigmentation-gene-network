@@ -1,0 +1,16 @@
+{
+  "artifact": "uniprot_annotation_direct.json",
+  "description": "Frozen UniProtKB REST responses for the direct case-exact protein authority pass in Notebook 2 Step 1. One entry per pending base lookup-symbol; each value is the parsed {n, hits:[{acc, gene_names}]} the REQUERY branch (cell 4) writes. Consumed offline by is_caseexact_protein (cell 5).",
+  "queried_utc": "2026-07-09T00:49:37.132825+00:00",
+  "endpoint": "https://rest.uniprot.org/uniprotkb/search",
+  "query_template": "(gene_exact:{symbol}) AND (organism_id:9606) AND (reviewed:true)",
+  "params": {
+    "fields": "accession,id,gene_names,protein_name",
+    "format": "json",
+    "size": "5"
+  },
+  "n_symbols": 183,
+  "rule": "node is a protein iff a reviewed human entry has gene_names containing the CASE-EXACT raw symbol",
+  "regenerated_utc": "2026-07-12T00:36:29.098635+00:00",
+  "regeneration_note": "Re-frozen by the reproducibility specialist after the original db_responses/ folder was found absent from disk and git (see internal/CHANGELOG.md 2026-07-11T23:57Z). Regenerated via the cell-4 REQUERY logic against the live UniProt REST API; verified to reproduce cell-5's committed output exactly (174/183 case-exact; synonyms IKBKA/IL8/NFAT2; cAMP/ROS/cGMP rejected)."
+}

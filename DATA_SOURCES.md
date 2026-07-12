@@ -51,7 +51,7 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 | 3 | **Baxter et al. 2018/2019** (*PCMR*) | 635 human curated cross-species pigmentation genes | Author-supplied supplement; Table S7 | ✅ acquired | [baxter2018.spec.md](docs/specs/baxter2018.spec.md) |
 | 4 | **HIrisPlex-S** (Chaitanya 2018) | 36/41 prediction markers → 16 genes; MC1R+HERC2/OCA2 complete | Author-supplied PDF; markers parsed | ✅ markers; ⚠ coefficients follow-up | [hirisplexs2018.spec.md](docs/specs/hirisplexs2018.spec.md) |
 | 5 | **Raghunath et al. 2015** (*BMC Res Notes*) | 265-node / 429-edge directed signed melanogenesis backbone | Prior work (this project) | ✅ pinned | (network base — see Notebooks 1–2 and `internal/project_dashboard.md`) |
-| 6 | **Annotation / identity databases** (UniProt, MyGene, PubChem, ChEBI, GO) | Gene-free node typing (Steps 1–2) + HGNC/Entrez/Ensembl/GRCh38 gene identity (Step 3) for the 183 pending nodes | Live MCP connectors (genes-ontologies, chemistry), queried once; verbatim JSON **frozen** to `data/external/db_responses/` | ✅ frozen (Notebook 2) | (see entry 6 below + meta.json) |
+| 6 | **Annotation / identity databases** (UniProt, MyGene, PubChem, ChEBI, GO) | Gene-free node typing (Steps 1–2) + HGNC/Entrez/Ensembl/GRCh38 gene identity (Step 3) for the 183 pending nodes | Live MCP connectors (genes-ontologies, chemistry), queried once; verbatim JSON **frozen** to `data/external/db_responses/` | ✅ frozen and committed (Notebook 2) — `data/external/db_responses/` | (see entry 6 below + meta.json) |
 | 6b | **HGNC gene groups** | Full member genes of the 6 `enzyme_activity_class` nodes (115 member edges), Step 4 | `rest.genenames.org` `fetch/gene_group_id/<id>`, frozen `hgnc_gene_groups.json` | ✅ frozen (Notebook 2) | (see entry 6 below) |
 | 6c | **OmniPath** (11 datasets) | Four-way backbone validation (NB2 Step 6); HIrisPlex edge attestation **staged for a proposed enrichment step** (not run in NB2; notebook placement pending PI agreement) | `omnipathdb.org/interactions`, frozen internal + HIrisPlex subsets | ✅ frozen (Notebook 2) | (see entry 6b below) |
 | 6d | **KEGG hsa04916** (Melanogenesis) | Curated-pathway membership scope cross-check (NB2 Step 6) | `rest.kegg.jp`, frozen `kegg_hsa04916.json` | ✅ frozen (Notebook 2) | (see entry 6c below) |
@@ -158,6 +158,14 @@ validation authorities (attach gene identity and relationships, then check them)
   symbols) + `complex_members.csv` (58 member rows). Notebook 2 is offline/deterministic over the frozen
   tables and makes no live calls — the meta.json lists every connector, method, and the resolution cascade
   so the freeze can be regenerated.
+- **Commit status (updated 2026-07-12).** `data/external/db_responses/` (7 files:
+  `uniprot_annotation_direct.json` + `.meta.json`, `hgnc_gene_groups.json`, `pomc_cleavage_refs.json`,
+  `omnipath_internal.json` + `omnipath.meta.json`, `kegg_hsa04916.json`) is now **committed in-repo** —
+  previously specified as "frozen" here but absent from disk and git (see `internal/CHANGELOG.md`
+  2026-07-11T23:57Z). UniProt, HGNC, and the PubMed PMID/metadata extract are factual /
+  public-domain-equivalent records. KEGG and OmniPath carry source-specific non-commercial / academic-use
+  terms (see 6b/6c below) — committed here under this repo's academic non-commercial research use, not
+  asserted as openly-licensed in the CC-BY sense used elsewhere in this manifest.
 - **Role:** turns the `pending_db_resolution` nodes into typed, HGNC-identified gene nodes. Each node stores
   its `type_source` (which authority decided it) and `type_evidence_id` (the accession — Entrez / ChEBI /
   GO / PubChem CID). **No hand-typed classification list exists.**
@@ -214,6 +222,21 @@ validation authorities (attach gene identity and relationships, then check them)
   subsets are: `omnipath_internal.json` (2,949 edges, both endpoints in the resolved gene set — for NB2's
   backbone validation) and `omnipath_hirisplex_edges.json` (35 edges linking an HIrisPlex gene to a network
   gene — **staged for a proposed enrichment step**, not used in NB2). Re-runnable behind `REQUERY_OMNIPATH`.
+- **License basis.** OmniPath aggregates 11+ curated resources under mixed per-source licenses (e.g. SPIKE,
+  SignaLink, DoRothEA, CollecTRI, KEGG-MEDICUS); OmniPath redistributes content under the license of its
+  original source, and this pull used the default (academic-tier) query — no `license=commercial` parameter
+  was set (see `omnipath.meta.json` `params`). The committed `omnipath_internal.json` subset is shared here
+  for academic, non-commercial research use consistent with this repo's purpose; a downstream commercial user
+  should re-query `omnipathdb.org` directly and review per-edge `sources` against each resource's own terms
+  rather than rely on this frozen file.
+- **Re-freeze note (2026-07-12).** The committed `omnipath_internal.json` was regenerated after the original
+  `data/external/db_responses/` was found absent from disk and git (`internal/CHANGELOG.md` 2026-07-11T23:57Z).
+  The re-query returned **2,931** both-endpoints-in-set edges (vs the 2,949 the original 2026-07-09 pull froze):
+  ~18 edges of live OmniPath drift in gene-pairs unrelated to the 429 backbone edges, with **zero effect on any
+  verdict** — the four-way verdict and `omnipath_sign` columns of `nb2_omnipath_validation.csv` reproduce
+  exactly. The resolved gene set used for the re-freeze (n=162, derivable from committed
+  `gene_network_nodes.csv` + `complex_members.csv`) is recorded in `omnipath.meta.json`; the original
+  "172 network genes" label above was not committed anywhere and is not exactly recoverable.
 - **Role — validation, NEVER silent addition.** In NB2, OmniPath assigns each backbone edge a **four-way
   verdict** (confirmed / not-in-OmniPath / sign-conflict / out-of-scope) in a separate joined table
   (`nb2_omnipath_validation.csv`);
@@ -233,6 +256,11 @@ validation authorities (attach gene identity and relationships, then check them)
   pathway) — a **scope reference, not an edge validator**. Used to see how much of the backbone lies inside
   the canonical pathway vs. its wider signalling context. SIGNOR (a causal-interaction resource) is already
   inside OmniPath's sources, so it is not queried separately.
+- **License basis.** KEGG restricts non-academic / commercial reuse of its database content
+  (`kegg.jp/kegg/legal.html`); academic use is permitted but redistribution rights beyond that are not
+  blanket-granted. `kegg_hsa04916.json` here is a bare 101-gene membership list (no KEGG diagram or
+  proprietary descriptive text), committed for academic non-commercial research use; a commercial or
+  non-academic user should re-query `rest.kegg.jp` directly rather than rely on this frozen file.
 
 ---
 

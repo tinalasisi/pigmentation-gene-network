@@ -1,0 +1,430 @@
+source,target,verb,interaction_norm,sign,reference,citation,citation_source
+4HNE_kerat,DNA_Damage_kerat,induces,induces,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+ACTH_kerat,MC1R_kerat,activates,activates,+,[1],PMID:15748644,pmid
+ACTH_kerat,MC1R_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+ACTH_kerat,NFKB1_kerat,inhibits,inhibits,-,[2],PMID:12485424,pmid
+ACTH_melan,MC1R_melan,activates,activates,+,[3],PMID:9359624,pmid
+ADCY4_kerat,cAMP_kerat,Increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+ADCY4_melan,cAMP_melan,increases level,increases level,+,[4],PMID:19633898,pmid
+AHR:SRC:HSP90AA1_kerat,SRC_kerat,dissociates to,dissociates to,-,[5],PMID:17502624,pmid
+AKT1_kerat,BAD_kerat,inhibits,inhibits,-,[6],PMID:16932738,pmid
+AKT1_kerat,CASP8_kerat,inhibits,inhibits,-,[7],PMID:12952968,pmid
+AKT1_kerat,GSK3B_kerat,inhibits,inhibits,-,[8],PMID:12489109,pmid
+AKT1_melan,BAD_melan,inhibits,inhibits,-,[9],PMID:16888633,pmid
+AKT1_melan,CASP8_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+AKT1_melan,CREB1_melan,activates,activates,+,[10],PMID:10761990,pmid
+AKT1_melan,CTNNB1_melan,increases stability,increases stability,+,[11],PMID:21802267,pmid
+AKT1_melan,EZR_melan,activates,activates,+,[12],PMID:18983538,pmid
+AKT1_melan,FOS_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+AKT1_melan,GSK3B_melan,inhibits,inhibits,-,[13],PMID:14632202,pmid
+AKT1_melan,MSN_melan,activates,activates,+,[12],PMID:18983538,pmid
+AKT1_melan,RDX,activates,activates,+,[12],PMID:18983538,pmid
+alpha_MSH_kerat,MC1R_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+alpha_MSH_kerat,NFKB1_kerat,inhibits,inhibits,-,[2],PMID:12485424,pmid
+alpha_MSH_melan,MC1R_melan,activates,activates,+,[14],"Raghunath-ref[14]:Dong F, Cui R, Liu F: Additional Roles of A-MSH/MC1R Signali",reference
+APAF1:CYCS_kerat,CASP9_kerat,activates,activates,+,[15],PMID:12912970,pmid
+Arachidonic_Acid_kerat,PGE2_kerat,gets converted to,gets converted to,+,[16],PMID:9764845,pmid
+Arachidonic_Acid_melan,PGE2_melan,gets converted to,gets converted to,+,[17],PMID:20236442,pmid
+BAD_kerat,CYCS_kerat,increases release,increases release,+,[6],PMID:16932738,pmid
+BAD_melan,CYCS_melan,increases release,increases release,+,[18],PMID:14678993,pmid
+BAK1_kerat,CYCS_kerat,increases release,increases release,+,[19],PMID:16901898,pmid
+BAX_kerat,CYCS_kerat,increases release,increases release,+,[20],PMID:15304079,pmid
+BAX_melan,CYCS_melan,increases release,increases release,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+BBC3_melan,BAX_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+BCL2_kerat,Cell_survival_kerat,induces,induces,+,[21],PMID:23577258,pmid
+BCL2_melan,BAX_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+BCL2L1_kerat,Cell_survival_kerat,induces,induces,+,[22],PMID:10442640,pmid
+BCL2L1_melan,Cell_survival_melan,induces,induces,+,[23],PMID:19656324,pmid
+BID_kerat,CYCS_kerat,increases release,increases release,+,[24],PMID:20019748,pmid
+Calcium_cyt:Calmodulin_melan,Phosphodiesterase_melan,activates,activates,+,[25],PMID:6331402,pmid
+Calcium_cyt_kerat,PKC_kerat,activates,activates,+,[26],PMID:7568091,pmid
+Calcium_cyt_kerat,PPP3CA_kerat,activates,activates,+,[27],PMID:18708588,pmid
+Calcium_cyt_melan,Calcium_cyt:Calmodulin_melan,forms complex,forms complex,+,[28],PMID:1666909,pmid
+Calcium_cyt_melan,PRKCB_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+cAMP_kerat,PRKACA_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+cAMP_melan,PRKACA_melan,activates,activates,+,[29],"Raghunath-ref[29]:Brenner M, Hearing VJ: Modifying skin pigmentation - approac",reference
+cAMP_melan,RAP1A_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CASP3_kerat,CDKN1A_kerat,Inhibits,inhibits,-,[30],PMID:9660939,pmid
+CASP3_kerat,DFFB:DFFA_kerat,induces complex dissociation,induces complex dissociation,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CASP3_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CASP3_kerat,PRKCD_kerat,activates,activates,+,[30],PMID:9660939,pmid
+CASP8_kerat,BID_kerat,activates,activates,+,[24],PMID:20019748,pmid
+CASP8_kerat,CASP3_kerat,activates,activates,+,[31],PMID:11803373,pmid
+CASP9_kerat,CASP3_kerat,activates,activates,+,[32],PMID:11919192,pmid
+CASP9_kerat,CASP8_kerat,activates,activates,+,[32],PMID:11919192,pmid
+CCND1_kerat,Cell_proliferation_kerat,induces,induces,+,[21],PMID:23577258,pmid
+CCND1_melan,CDK4:CCND1_melan,forms complex,forms complex,+,[33],PMID:22475760,pmid
+CDC42_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CDC42_kerat,RAC1_kerat,activates,activates,+,[34],PMID:11896192,pmid
+CDH2_melan,Melanocyte_migration,induces,induces,+,[12],PMID:18983538,pmid
+CDK4:CCND1_melan,Cell_proliferation_melan,induces,induces,+,[33],PMID:22475760,pmid
+CDK4_melan,CDK4:CCND1_melan,forms complex,forms complex,+,[33],PMID:22475760,pmid
+CDKN1A_kerat,Cell_cycle_arrest_kerat,induces,induces,+,[35],PMID:12612054,pmid
+CDKN1A_melan,Cell_cycle_arrest_melan,induces,induces,+,[36],PMID:15716956,pmid
+Ceramide_kerat,PLA2_kerat,activates,activates,+,[37],PMID:11099485,pmid
+Ceramide_kerat,PRKCZ_kerat,activates,activates,+,[38],PMID:10962008,pmid
+Ceramide_kerat,TFAP2A_kerat,increases expression,increases expression,+,[39],PMID:17097614,pmid
+CFLAR_kerat,MAP2K7_kerat,inhibits,inhibits,-,[40],PMID:17110930,pmid
+cGMP_melan,Phosphodiesterase_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+cGMP_melan,PRKG1_melan,activates,activates,+,[41],PMID:8910416,pmid
+CREB1_kerat,CFLAR_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CREB1_kerat,DUSP1_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CREB1_kerat,PTGS2_kerat,increases expression,increases expression,+,[42],PMID:17277233,pmid
+CREB1_melan,BCL2_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CREB1_melan,MITF_melan,increases expression,increases expression,+,[43],PMID:19124082,pmid
+CREB1_melan,PTGS2_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CSF2_kerat,CSF2RA_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CSF2RA:JAK1_melan,STAT3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CSF2RA_melan,CSF2RA:JAK1_melan,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+CTNNB1:LEF1_melan,MITF_melan,increase expression,increase expression,+,"[43], [44]",PMID:19124082; PMID:10747853,pmid
+CTNNB1_melan,CTNNB1:LEF1_melan,forms complex,forms complex,+,[45],PMID:15024079,pmid
+CYCS_kerat,APAF1:CYCS_kerat,forms complex,forms complex,+,[15],PMID:12912970,pmid
+CYCS_kerat,Apoptosis_kerat,induces,induces,+,[20],PMID:15304079,pmid
+CYCS_kerat,TFAP2A_kerat,activates,activates,+,[46],PMID:12952965,pmid
+CYCS_melan,Apoptosis_melan,induces,induces,+,[47],PMID:16528366,pmid
+Cysteine_melan,Cysteinyl_DOPA_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+Cysteinyl_DOPA_melan,Pheomelanin_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DAG_kerat,SMPD1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DAG_melan,PRKCB_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DCT_melan,DHICA_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+DFFB:DFFA_kerat,DFFA_kerat,dissociates to,dissociates to,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DFFB:DFFA_kerat,DFFB_kerat,dissociates to,dissociates to,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DFFB_kerat,DNA_Damage_kerat,induces,induces,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DHI_melan,Indole_5_6_quinone_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DHICA_melan,Indole_5_6_quinone_carboxylic_acid_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DNA_Damage_kerat,NFKB1_kerat,activates,activates,+,[49],PMID:9724653,pmid
+DNA_Damage_kerat,TP53_kerat,activates,activates,+,[50],PMID:12082529,pmid
+DOPA_melan,DOPAquinone_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DOPAchrome_melan,DHI_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DOPAchrome_melan,DHICA_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DOPAquinone_melan,Cysteinyl_DOPA_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DOPAquinone_melan,DOPAchrome_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DOPAquinone_melan,Glutathionyl_DOPA_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+DUSP1_kerat,MAPK1_kerat,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DUSP1_kerat,MAPK3_kerat,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+DUSP1_kerat,MAPK8_kerat,inhibits,inhibits,-,[51],PMID:17363493,pmid
+EDN1_kerat,EDNRB_melan,activates,activates,+,[52],PMID:16411896,pmid
+EDNRB_melan,ADCY4_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+EDNRB_melan,PLC_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+EGFR_kerat,PIK3CA_kerat,activates,activates,+,[7],PMID:12952968,pmid
+EGFR_kerat,SOS1:GRB2:SHC1_kerat,activates,activates,+,[53],PMID:11359940,pmid
+EGFR_kerat,STAT1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+ELK1_kerat,CDKN1A_kerat,increases expression,increases expression,+,[54],PMID:21642427,pmid
+ELK1_melan,CDKN1A_melan,increases expression,increases expression,+,[54],PMID:21642427,pmid
+EZR_melan,Melanocyte_migration,induces,induces,+,[12],PMID:18983538,pmid
+F10,F2RL1_kerat,activates,activates,+,[55],PMID:19258275,pmid
+F2RL1_kerat,PLC_kerat,activates,activates,+,[56] ,"Raghunath-ref[56]:Rattenholl A, Steinhoff M: Role of proteinase-activated rece",reference
+F2RL1_kerat,RHOA_kerat,activates,activates,+,[57],PMID:12925212,pmid
+F7,F2RL1_kerat,activates,activates,+,[55],PMID:19258275,pmid
+FAS:FADD_kerat,CASP8_kerat,activates,activates,+,[31],PMID:11803373,pmid
+FAS_kerat,FAS:FADD_kerat,forms complex,forms complex,+,[58],PMID:9425165,pmid
+FASLG_kerat,FAS_kerat,activates,activates,+,[58],PMID:9425165,pmid
+FICZ_kerat,AHR:SRC:HSP90AA1_kerat,induces complex dissociation,induces complex dissociation,-,[5],PMID:17502624,pmid
+FOS_kerat,FOS_kerat:JUN_kerat,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+FOS_kerat:JUN_kerat,BCL2_kerat,increases expression,increases expression,+,[59],Raghunath-ref[59]:Chari NS: Homeostatic transcriptional regulation of bcl-2 in,reference
+FOS_kerat:JUN_kerat,CCND1_kerat,increases expression,increases expression,+,[60],PMID:18567804,pmid
+FOS_kerat:JUN_kerat,EDN1_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+FOS_kerat:JUN_kerat,IL1A_kerat,increases expression,increases expression,+,[61],PMID:12160224,pmid
+FOS_kerat:JUN_kerat,IL6_kerat,inhibits expression,inhibits expression,-,[62],PMID:19918056,pmid
+FOS_kerat:JUN_kerat,IVL_kerat,increases expression,increases expression,+,[63],PMID:20006635,pmid
+FOS_kerat:JUN_kerat,MMPs_kerat,increases expression,increases expression,+,[64],PMID:9732061,pmid
+FOS_kerat:JUN_kerat,NGF_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+FOS_kerat:JUN_kerat,PTGS2_kerat,increases expression,increases expression,+,[65],PMID:21268131,pmid
+FOS_kerat:JUN_kerat,TNF_kerat,increases expression,increases expression,+,[66],PMID:18825399,pmid
+FOS_kerat:JUN_melan,BCL2_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+FOS_kerat:JUN_melan,CCND1_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+FOS_kerat:JUN_melan,MMP1_melan,increases expression,increases expression,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+FZD3_melan,AKT1_melan,activates,activates,+,[68],PMID:17804197,pmid
+GAB1:PIK3CA_melan,AKT1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+GAB1_melan,GAB1:PIK3CA_melan,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+GADD45A_kerat,DNA_Repair_kerat,induces,induces,+,[69],PMID:12164919,pmid
+Glutathionyl_DOPA_melan,Pheomelanin_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+GSH_melan,Glutathionyl_DOPA_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+GSK3B_kerat,NFAT2_kerat,inhibits,inhibits,-,[27],PMID:18708588,pmid
+GSK3B_melan,CTNNB1_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+GUCY1A2_melan,cGMP_melan,increases level,increases level,+,[41],PMID:8910416,pmid
+HGF_kerat,MET_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+HIF1A_kerat,PMAIP1_kerat,increases expression,increases expression,+,[70],PMID:20393480,pmid
+HIF1A_melan,KITLG_melan,increases expression,increases expression,+,[71],PMID:24194964,pmid
+HRAS_kerat,RAF1_kerat,activates,activates,+,[72],PMID:11348449,pmid
+HRAS_melan,RAF1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IKBKA_kerat,NFKB1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IL10_kerat,Skin_inflammation,regulates,regulates,0,[73],PMID:14523043,pmid
+IL12A_kerat,DNA_Repair_kerat,induces,induces,+,[74],PMID:11780128,pmid
+IL1A_kerat,IL1R1_kerat,activates,activates,+,[72],PMID:11348449,pmid
+IL1R1:MYD88:IRAK1:IRAK4_kerat,IRAK1_Active_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IL1R1_kerat,IL1R1:MYD88:IRAK1:IRAK4_kerat,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IL6_kerat,IL6R_kerat,activates,activates,+,[75],PMID:15191552,pmid
+IL6R_kerat,JAK1_kerat,activates,activates,+,[75],PMID:15191552,pmid
+IL8_kerat,Skin_inflammation,regulates,regulates,0,[76],PMID:8038609,pmid
+Indole_5_6_quinone_carboxylic_acid_melan,Eumelanin_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+Indole_5_6_quinone_melan,Eumelanin_melan,gets converted to,gets converted to,+,[48],PMID:19865532,pmid
+IP3_kerat,RYR1_kerat,activates,activates,+,[26],PMID:7568091,pmid
+IP3_melan,RYR1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IRAK1_Active:TRAF6:ECSIT_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IRAK1_Active:TRAF6_kerat,IRAK1_Active:TRAF6:ECSIT_kerat,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+IRAK1_Active:TRAF6_kerat,MAP3K7:TAB1_kerat,associates,associates,0,[72],PMID:11348449,pmid
+IRAK1_Active_kerat,IRAK1_Active:TRAF6_kerat,forms complex,forms complex,+,[72],PMID:11348449,pmid
+IVL_kerat,Cell_differentiation_kerat,involved in,involved in,0,[77],Raghunath-ref[77]:Watt FM: Involucrin and other markers of keratinocyte termin,reference
+JAK1_kerat,STAT3_kerat,activates,activates,+,[75],PMID:15191552,pmid
+JUN_kerat,FOS_kerat:JUN_kerat,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+KIT_melan,PIK3CA_melan,activates,activates,+,[78],PMID:16410786,pmid
+KIT_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+KITLG_kerat,KIT_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+KITLG_melan,KIT_melan,activates,activates,+,[79],PMID:22637532,pmid
+Lipid_Peroxidation_kerat,4HNE_kerat,increases level,increases level,+,[80],PMID:14648823,pmid
+MAP2K1_kerat,MAPK1_kerat,activates,activates,+,[53],PMID:11359940,pmid
+MAP2K1_kerat,MAPK3_kerat,activates,activates,+,[53],PMID:11359940,pmid
+MAP2K1_melan,MAPK1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP2K1_melan,MAPK3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP2K2_kerat,MAPK1_kerat,activates,activates,+,[53],PMID:11359940,pmid
+MAP2K2_kerat,MAPK3_kerat,activates,activates,+,[53],PMID:11359940,pmid
+MAP2K2_melan,MAPK1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP2K2_melan,MAPK3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP2K3_kerat,MAPK14_kerat,activates,activates,+,,OmniPath:SIGNOR (MAP2K3 activates MAPK14; confirmed across 20+ sources),database
+MAP2K3_melan,MAPK14_melan,activates,activates,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+MAP2K4_kerat,MAPK8_kerat,activates,activates,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+MAP2K4_melan,MAPK8_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP2K6_kerat,MAPK14_kerat,activates,activates,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+MAP2K6_melan,MAPK14_melan,activates,activates,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+MAP2K7_kerat,MAPK8_kerat,activates,activates,+,[67],"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced ",reference
+MAP2K7_melan,MAPK8_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K1_kerat,MAP3K14_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K1_melan,MAP2K4_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K1_melan,MAP2K7_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K14_kerat,IKBKA_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K5_kerat,MAP2K3_kerat,activates,activates,+,[81],PMID:11029458,pmid
+MAP3K5_kerat,MAP2K4_kerat,activates,activates,+,[81],PMID:11029458,pmid
+MAP3K5_kerat,MAP2K6_kerat,activates,activates,+,[81],PMID:11029458,pmid
+MAP3K5_kerat,MAP2K7_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K5_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K7:TAB1_kerat,IKBKA_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAP3K7:TAB1_kerat,MAP2K3_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K7:TAB1_kerat,MAP2K4_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP3K7:TAB1_kerat,MAP2K6_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAP4K2_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK1_kerat,ATF2_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK1_kerat,ELK1_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK1_kerat,FOS_kerat,activates,activates,+,[82],PMID:15964692,pmid
+MAPK1_kerat,JUN_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK1_kerat,PLA2_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK1_kerat,RPS6KA1_kerat,activates,activates,+,[83],PMID:19847192,pmid
+MAPK1_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[84],PMID:18039926,pmid
+MAPK1_melan,RPS6KA1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK1_melan,TP53_melan,activates,activates,+,[85],PMID:10781582,pmid
+MAPK14_kerat,ATF2_kerat,activates,activates,+,[86],PMID:11244091,pmid
+MAPK14_kerat,BCL2L1_kerat,increases expression [mRNA stability],increases expression [mrna stability],+,[87],PMID:15292226,pmid
+MAPK14_kerat,CASP3_kerat,activates,activates,+,[88],PMID:10233770,pmid
+MAPK14_kerat,FOS_kerat,activates,activates,+,[82],PMID:15964692,pmid
+MAPK14_kerat,HIF1A_kerat,activates,activates,+,[89],PMID:16278378,pmid
+MAPK14_melan,BAX_melan,activates,activates,+,[82],PMID:15964692,pmid
+MAPK14_melan,CREB1_melan,activates,activates,+,[90],PMID:11841550,pmid
+MAPK14_melan,ELK1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK14_melan,FOS_melan,increases expression,increases expression,+,[91],PMID:14511403,pmid
+MAPK14_melan,USF1_melan,activates,activates,+,[92],PMID:15358786,pmid
+MAPK3_kerat,ATF2_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK3_kerat,ELK1_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK3_kerat,FOS_kerat,activates,activates,+,[82],PMID:15964692,pmid
+MAPK3_kerat,JUN_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK3_kerat,PLA2_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK3_kerat,RPS6KA1_kerat,activates,activates,+,[83],PMID:19847192,pmid
+MAPK3_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[84],PMID:18039926,pmid
+MAPK3_melan,RPS6KA1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MAPK3_melan,TP53_melan,activates,activates,+,[85],PMID:10781582,pmid
+MAPK8_kerat,ATF2_kerat,activates,activates,+,[72],PMID:11348449,pmid
+MAPK8_kerat,JUN_kerat,activates,activates,+,[91],PMID:14511403,pmid
+MAPK8_kerat,MCL1:BAK1_kerat,induces complex dissociation,induces complex dissociation,-,[93],PMID:12223490,pmid
+MAPK8_kerat,MCL1:BAX_kerat,induces complex dissociation,induces complex dissociation,-,[93],PMID:12223490,pmid
+MAPK8_melan,JUN_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MC1R_kerat,NFKB1_kerat,inhibits,inhibits,-,[23],PMID:19656324,pmid
+MC1R_melan,ADCY4_melan,activates,activates,+,[14] ,"Raghunath-ref[14]:Dong F, Cui R, Liu F: Additional Roles of A-MSH/MC1R Signali",reference
+MCL1:BAK1_kerat,BAK1_kerat,dissociates to,dissociates to,-,[94],PMID:15618968,pmid
+MCL1:BAK1_kerat,MCL1_kerat,dissociates to,dissociates to,-,[94],PMID:15618968,pmid
+MCL1:BAX_kerat,BAX_kerat,dissociates to,dissociates to,-,[94],PMID:15618968,pmid
+MCL1:BAX_kerat,MCL1_kerat,dissociates to,dissociates to,-,[94],PMID:15618968,pmid
+MET_melan,GAB1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MET_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MITF:EP300_melan,MITF_melan,activates,activates,+,[95],Raghunath-ref[95]:Fisher DE: Microphthalmia: a signal responsive transcription,reference
+MITF_melan,BCL2_melan,increases expression,increases expression,+,[96],PMID:12086670,pmid
+MITF_melan,CDK4_melan,increases expression,increases expression,+,[97],"Raghunath-ref[97]:Wellbrock C, Rana S, Paterson H, Pickersgill H, Brummelkamp ",reference
+MITF_melan,DCT_melan,increases expression,increases expression,+,[98],PMID:19026785,pmid
+MITF_melan,EDNRB_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MITF_melan,MC1R_melan,increases expression,increases expression,+,[99],PMID:12204775,pmid
+MITF_melan,MET_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MITF_melan,MITF:EP300_melan,forms complex,forms complex,+,[95],Raghunath-ref[95]:Fisher DE: Microphthalmia: a signal responsive transcription,reference
+MITF_melan,MITF_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MITF_melan,MLANA,increases expression,increases expression,+,[100],PMID:15117970,pmid
+MITF_melan,OCA2,increases expression,increases expression,+,[101],PMID:22234890,pmid
+MITF_melan,PMEL_melan,increases expression,increases expression,+,[84],PMID:18039926,pmid
+MITF_melan,PRKCB_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+MITF_melan,TYR_melan,increases expression,increases expression,+,[98],PMID:19026785,pmid
+MITF_melan,TYRP1_melan,increases expression,increases expression,+,[98],PMID:19026785,pmid
+MLANA,Melanosome_biogenesis,induces,induces,+,[102],PMID:21943097,pmid
+MMP1_kerat,Skin_aging,regulates,regulates,0,[103],PMID:19675548,pmid
+MMP1_melan,Skin_aging,regulates,regulates,0,[103],PMID:19675548,pmid
+MMPs_kerat,Skin_aging,regulates,regulates,0,[103],PMID:19675548,pmid
+MSN_melan,CDH2_melan,increases expression,increases expression,+,[12],PMID:18983538,pmid
+MSN_melan,Melanocyte_migration,induces,induces,+,[12],PMID:18983538,pmid
+NFAT2_kerat,PTGS2_kerat,increases expression,increases expression,+,[27],PMID:18708588,pmid
+NFKB1_kerat,BCL2_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,CDKN1A_kerat,increases expression,increases expression,+,[35],PMID:12612054,pmid
+NFKB1_kerat,CSF2_kerat,increases expression,increases expression,+,[104],PMID:15102074,pmid
+NFKB1_kerat,EDN1_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,F2RL1_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,FASLG_kerat,increases expression,increases expression,+,[105],PMID:16631160,pmid
+NFKB1_kerat,ICAM1_kerat,increases expression,increases expression,+,[106],PMID:15654951,pmid
+NFKB1_kerat,IL10_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,IL12A_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,IL1A_kerat,increases expression,increases expression,+,[107],PMID:10862790,pmid
+NFKB1_kerat,IL6_kerat,increases expression,increases expression,+,[108],PMID:16211268,pmid
+NFKB1_kerat,IL8_kerat,increases expression,increases expression,+,[109],PMID:19726162,pmid
+NFKB1_kerat,KITLG_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,MMPs_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,NOS2_kerat,increases expression,increases expression,+,[110],"Raghunath-ref[110]:Song XZ, Bi ZG, Xu AE: Green tea polyphenol epigallocatechin",reference
+NFKB1_kerat,PRKCD_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NFKB1_kerat,PTGS2_kerat,increases expression,increases expression,+,[111],PMID:14633657,pmid
+NFKB1_kerat,TNF_kerat,increases expression,increases expression,+,[112],PMID:21282043,pmid
+NFKB1_kerat,TP53_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NGF_kerat,NTRK1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+Nitric_oxide_kerat,GUCY1A2_melan,activates,activates,+,[41],PMID:8910416,pmid
+NOS2_kerat,Nitric_oxide_kerat,increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+NOX1_kerat,ROS_kerat,increases level,increases level,+,[113],PMID:22532027,pmid
+NTRK1_melan,SOS1:GRB2:SHC1_melan,induces complex formation,induces complex formation,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+OCA2,Melanosome_biogenesis,induces,induces,+,[114],PMID:11260525,pmid
+PAK1_kerat,MAP2K3_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PAK1_kerat,MAP2K6_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PAK1_melan,MAP2K3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PAK1_melan,MAP2K6_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PAX3_melan,MITF_melan,increase expression,increase expression,+,"[115], [43]",PMID:10536986; PMID:19124082,pmid
+PDPK1_kerat,AKT1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PDPK1_kerat,PRKCH_kerat,activates,activates,+,[116],PMID:12223477,pmid
+PDPK1_melan,AKT1_melan,activates,activates,+,[117],PMID:19342374,pmid
+PGE2_kerat,PTGER1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PGE2_kerat,PTGER2_kerat,activates,activates,+,[118],PMID:9531979,pmid
+PGE2_kerat,PTGER3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PGE2_kerat,PTGER4_kerat,activates,activates,+,[118],PMID:9531979,pmid
+PGE2_melan,PTGER1_melan,activates,activates,+,[119],PMID:15140225,pmid
+PGE2_melan,PTGER3_melan,activates,activates,+,[119],PMID:15140225,pmid
+Phosphodiesterase_melan,PRKACA_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PIAS3_melan,MITF_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PIAS3_melan,STAT3_melan,inhibits,inhibits,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PIK3CA_kerat,PDPK1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PIK3CA_melan,PDPK1_melan,activates,activates,+,[117],PMID:19342374,pmid
+PIK3CA_melan,RAC1_melan,activates,activates,+,[12],PMID:18983538,pmid
+PKC_kerat,NFKB1_kerat,activates,activates,+,[120],PMID:18424071,pmid
+PLA2_kerat,Arachidonic_Acid_kerat,increases level,increases level,+,[121],PMID:9548589,pmid
+PLC_kerat,DAG_kerat,Increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PLC_kerat,IP3_kerat,increases level,increases level,+,[26],PMID:7568091,pmid
+PLC_melan,DAG_melan,increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PLC_melan,IP3_melan,increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PMAIP1_kerat,BAK1_kerat,activates,activates,+,[122],PMID:15901672,pmid
+PPP3CA_kerat,NFAT2_kerat,activates,activates,+,[27],PMID:18708588,pmid
+PRKACA_kerat,CREB1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PRKACA_melan,CREB1_melan,activates,activates,+,[123],PMID:12950719,pmid
+PRKCB_melan,GAB1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PRKCB_melan,TYR_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PRKCD_kerat,CASP3_kerat,activates,activates,+,[20],PMID:15304079,pmid
+PRKCD_kerat,CASP8_kerat,activates,activates,+,[20],PMID:15304079,pmid
+PRKCD_kerat,CASP9_kerat,activates,activates,+,[20],PMID:15304079,pmid
+PRKCD_kerat,MCL1:BAK1_kerat,induces complex dissociation,induces complex dissociation,-,[94],PMID:15618968,pmid
+PRKCD_kerat,MCL1:BAX_kerat,induces complex dissociation,induces complex dissociation,-,[94],PMID:15618968,pmid
+PRKCD_kerat,NFKB1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PRKCH_kerat,CASP3_kerat,inhibits,inhibits,-,[124],PMID:12646210,pmid
+PRKCH_kerat,CDK2_kerat,inhibits,inhibits,-,[125],PMID:11175348,pmid
+PRKCH_kerat,MAPK14_kerat,activates,activates,+,[124],PMID:12646210,pmid
+PRKCZ_kerat,NFKB1_kerat,activates,activates,+,[126],PMID:12881425,pmid
+PRKCZ_melan,Dendrite_formation_melan,induces,induces,+,[127],PMID:17024099,pmid
+PRKG1_melan,CREB1_melan,activates,activates,+,[128],PMID:22441938,pmid
+PTGER1_melan,PLC_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PTGER2_kerat,ADCY4_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PTGER3_melan,PLC_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PTGER4_kerat,ADCY4_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+PTGS2_kerat,PGE2_kerat,increases level,increases level,+,[16],PMID:9764845,pmid
+PTGS2_melan,PGE2_melan,Increases level,increases level,+,[17],PMID:20236442,pmid
+RAC1:PARD6A:CDC42_melan,PRKCZ_melan,activates,activates,+,[129],PMID:11260256,pmid
+RAC1_kerat,MAP3K1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAC1_kerat,NOX1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAC1_melan,MAP2K3_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAC1_melan,MAP2K6_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAC1_melan,MAP3K1_melan,activates,activates,+,[130],PMID:8910292,pmid
+RAC1_melan,PAK1_melan,activates,activates,+,[131],PMID:22882909,pmid
+RAC1_melan,RAC1:PARD6A:CDC42_melan,forms complex,forms complex,+,[129],PMID:11260256,pmid
+RAF1_kerat,MAP2K1_kerat,activates,activates,+,[72],PMID:11348449,pmid
+RAF1_kerat,MAP2K2_kerat,activates,activates,+,[72],PMID:11348449,pmid
+RAF1_melan,MAP2K1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAF1_melan,MAP2K2_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RAP1A_melan,RAC1_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RDX,Melanocyte_migration,induces,induces,+,[12],PMID:18983538,pmid
+RHOA_kerat,Melanosome_phagocytosis_kerat,Induces,induces,+,[57],PMID:12925212,pmid
+ROS_kerat,EGFR_kerat,activates,activates,+,[132],PMID:9620307,pmid
+ROS_kerat,MAP3K5_kerat,activates,activates,+,[82],PMID:15964692,pmid
+ROS_kerat,SMPD2_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+RPS6KA1_kerat,BAD_kerat,inhibits,inhibits,-,[133],PMID:15107468,pmid
+RPS6KA1_kerat,CREB1_kerat,activates,activates,+,[133],PMID:15107468,pmid
+RPS6KA1_melan,CREB1_melan,activates,activates,+,[134],PMID:7540859,pmid
+RPS6KA1_melan,MITF_melan,phosphorylates/activates/degrades,phosphorylates/activates/degrades,-,[135],PMID:10673502,pmid
+RYR1_kerat,Calcium_cyt_kerat,increases level,increases level,+,[26],PMID:7568091,pmid
+RYR1_melan,Calcium_cyt_melan,increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+Singlet_oxygen_kerat,Ceramide_kerat,increases level,increases level,+,[136],PMID:11060030,pmid
+SMPD1_kerat,Ceramide_kerat,Increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+SMPD2_kerat,Ceramide_kerat,increases level,increases level,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+SOS1:GRB2:SHC1_kerat,HRAS_kerat,activates,activates,+,[72],PMID:11348449,pmid
+SOS1:GRB2:SHC1_melan,HRAS_melan,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+SOX10_melan,DCT_melan,increases expression,increases expression,+,[137],PMID:14706856,pmid
+SOX10_melan,MITF_melan,increases expression,increases expression,+,[138],PMID:12944398,pmid
+SOX10_melan,PAX3_melan,binds,binds,+,[139],PMID:10942418,pmid
+SOX10_melan,TYR_melan,increases expression,increases expression,+,[140],PMID:17516925,pmid
+SOX10_melan,TYRP1_melan,increases expression,increases expression,+,[141],PMID:16934245,pmid
+SPTLC1_kerat,Ceramide_kerat,increases level,increases level,+,[142],PMID:9788249,pmid
+SPTLC2_kerat,Ceramide_kerat,increases level,increases level,+,[142],PMID:9788249,pmid
+SRC_kerat,EGFR_kerat,activates,activates,+,[113],PMID:22532027,pmid
+STAT1_kerat,MMP1_kerat,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+STAT3_kerat,BCL2_kerat,increases expression,increases expression,+,[21],PMID:23577258,pmid
+STAT3_kerat,CCND1_kerat,increases expression,increases expression,+,[21],PMID:23577258,pmid
+STAT3_kerat,PTGS2_kerat,increases expression,increases expression,+,[143],PMID:21440540,pmid
+STAT3_melan,BCL2L1_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+STAT3_melan,CCND1_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TFAP2A_kerat,ICAM1_kerat,increases expression,increases expression,+,[46],PMID:12952965,pmid
+TFAP2A_kerat,SPTLC1_kerat,increases expression,increases expression,+,[144],PMID:16117797,pmid
+TFAP2A_kerat,SPTLC2_kerat,increases expression,increases expression,+,[144],PMID:16117797,pmid
+TFAP2A_kerat,TNF_kerat,decreases,decreases,-,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNF_kerat,TNFRSF1A_kerat,activates,activates,+,[72],PMID:11348449,pmid
+TNFRSF1A:NSMAF:GNB2L1_kerat,SMPD2_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A:TRADD:FADD_kerat,CASP8_kerat,activates,activates,+,[35],PMID:12612054,pmid
+TNFRSF1A:TRAF2:RIPK1_kerat,CDC42_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A:TRAF2:RIPK1_kerat,IKBKA_kerat,activates,activates,+,[35],PMID:12612054,pmid
+TNFRSF1A:TRAF2:RIPK1_kerat,MAP3K5_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A:TRAF2:RIPK1_kerat,MAP4K2_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A:TRAF2:RIPK1_kerat,PAK1_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A_kerat,PLC_kerat,activates,activates,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A_kerat,TNFRSF1A:NSMAF:GNB2L1_kerat,forms complex,forms complex,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TNFRSF1A_kerat,TNFRSF1A:TRADD:FADD_kerat,forms complex,forms complex,+,[35],PMID:12612054,pmid
+TNFRSF1A_kerat,TNFRSF1A:TRAF2:RIPK1_kerat,forms complex,forms complex,+,[35],PMID:12612054,pmid
+TP53_kerat,ACTH_kerat,increases expression,increases expression,+,[145],PMID:17350573,pmid
+TP53_kerat,alpha_MSH_kerat,increases expression,increases expression,+,[145],PMID:17350573,pmid
+TP53_kerat,Apoptosis_kerat,induces,induces,+,[146],PMID:9406811,pmid
+TP53_kerat,DUSP1_kerat,increases expression,increases expression,+,[147],PMID:12890671,pmid
+TP53_kerat,GADD45A_kerat,increases expression,increases expression,+,[148],PMID:19098008,pmid
+TP53_melan,BBC3_melan,increases expression,increases expression,+,[149],PMID:18761658,pmid
+TP53_melan,HIF1A_melan,increases expression,increases expression,+,NetProTM,NetProTM (Molecular Connections curated interaction DB),database
+TP53_melan,TYR_melan,decreases expression,decreases expression,-,[148],PMID:19098008,pmid
+TP53_melan,TYRP1_melan,increases expression,increases expression,+,[150],PMID:18431400,pmid
+TPSAB1,F2RL1_kerat,activates,activates,+,[151],PMID:10439226,pmid
+Trypsin,F2RL1_kerat,activates,activates,+,[151],PMID:10439226,pmid
+TYR_melan,DOPA_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+TYR_melan,DOPAquinone_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+TYR_melan,Eumelanin_melan,Increases level,increases level,+,[48],PMID:19865532,pmid
+TYR_melan,Indole_5_6_quinone_carboxylic_acid_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+TYR_melan,Indole_5_6_quinone_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+Tyrosine_melan,DOPA_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+TYRP1_melan,Indole_5_6_quinone_carboxylic_acid_melan,catalysis,catalysis,+,[48],PMID:19865532,pmid
+USF1_melan,ACTH_melan,increases,increases,+,[92],PMID:15358786,pmid
+USF1_melan,alpha_MSH_melan,increases,increases,+,[92],PMID:15358786,pmid
+USF1_melan,MC1R_melan,increases,increases,+,[92],PMID:15358786,pmid
+UVA,Lipid_Peroxidation_kerat,induces,induces,+,[152],PMID:24748986,pmid
+UVA,ROS_kerat,induces,induces,+,[153],PMID:12730222,pmid
+UVA,Singlet_oxygen_kerat,increases level,increases level,+,[136],PMID:11060030,pmid
+UVB,FICZ_kerat,increases level,increases level,+,[5],PMID:17502624,pmid
+UVB,Lipid_Peroxidation_kerat,induces,induces,+,[154],PMID:1678228,pmid
+UVB,SMPD2_kerat,inhibits,inhibits,-,[88],PMID:10233770,pmid
+WNT5A,FZD3_melan,activates,activates,+,"[68],[155]",PMID:17804197; PMID:19910923,pmid

@@ -1,0 +1,42 @@
+{
+  "description": "PubMed references for the POMC->ACTH->alpha-MSH prohormone-cleavage cascade (NB2 Step 4 cleaved_from edges). POMC is proteolytically processed by prohormone convertases PC1/3 (to ACTH) and PC2 (ACTH to alpha-MSH). Source: PubMed. Retrieved via the PubMed connector for the reproducibility re-freeze of data/external/db_responses/ (original file absent from disk and git; see internal/CHANGELOG.md 2026-07-11T23:57Z).",
+  "pomc_processing": [
+    "8380577",
+    "8070378"
+  ],
+  "msh_cleavage": [
+    "8389457",
+    "8822269"
+  ],
+  "references": {
+    "8380577": {
+      "doi": null,
+      "year": "1993",
+      "journal": "J Biol Chem",
+      "title": "The prohormone convertases PC1 and PC2 mediate distinct endoproteolytic cleavages in a strict temporal order during proopiomelanocortin biosynthetic processing.",
+      "step": "POMC->ACTH (PC1/3 limited cleavage in corticotropes)"
+    },
+    "8070378": {
+      "doi": "10.1210/endo.135.3.8070378",
+      "year": "1994",
+      "journal": "Endocrinology",
+      "title": "In vitro processing of proopiomelanocortin by recombinant PC1 (SPC3).",
+      "step": "POMC->ACTH (recombinant PC1 cleaves POMC to ACTH-related peptides)"
+    },
+    "8389457": {
+      "doi": "10.1073/pnas.90.11.4922",
+      "year": "1993",
+      "journal": "Proc Natl Acad Sci U S A",
+      "title": "Ontogeny of the prohormone convertases PC1 and PC2 in the mouse hypophysis and their colocalization with corticotropin and alpha-melanotropin.",
+      "step": "ACTH->alpha-MSH (PC2 in melanotropes; alpha-melanotropin as end product)"
+    },
+    "8822269": {
+      "doi": "10.1016/0303-7207(95)03702-0",
+      "year": "1996",
+      "journal": "Mol Cell Endocrinol",
+      "title": "Processing of pro-opiomelanocortin in GH3 cells: inhibition by prohormone convertase 2 (PC2) antisense mRNA.",
+      "step": "ACTH->alpha-MSH (PC2 is the convertase generating alpha-MSH)"
+    }
+  },
+  "source": "PubMed (https://pubmed.ncbi.nlm.nih.gov)"
+}

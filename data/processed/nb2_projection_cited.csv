@@ -1,0 +1,310 @@
+source,target,sign,via,citation,citation_source
+ADCY4,PRKACA,+,cAMP_melan,relayed via cAMP_melan (backbone-derived; see topology layer),relayed_backbone
+ADCY4,PRKACA,+,cAMP_kerat,relayed via cAMP_kerat (backbone-derived; see topology layer),relayed_backbone
+ADCY4,RAP1A,+,cAMP_melan,relayed via cAMP_melan (backbone-derived; see topology layer),relayed_backbone
+AKT1,BAD,-,,PMID:16888633; PMID:16932738,inherited_backbone
+AKT1,CASP8,-,,NetProTM (Molecular Connections curated interaction DB); PMID:12952968,inherited_backbone
+AKT1,CREB1,+,,PMID:10761990,inherited_backbone
+AKT1,CTNNB1,+,,PMID:21802267,inherited_backbone
+AKT1,EZR,+,,PMID:18983538,inherited_backbone
+AKT1,FOS,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+AKT1,GSK3B,-,,PMID:12489109; PMID:14632202,inherited_backbone
+AKT1,MSN,+,,PMID:18983538,inherited_backbone
+AKT1,RDX,+,,PMID:18983538,inherited_backbone
+BAD,CYCS,+,,PMID:14678993; PMID:16932738,inherited_backbone
+BAK1,CYCS,+,,PMID:16901898,inherited_backbone
+BAX,CYCS,+,,NetProTM (Molecular Connections curated interaction DB); PMID:15304079,inherited_backbone
+BBC3,BAX,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+BCL2,BAX,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+BID,CYCS,+,,PMID:20019748,inherited_backbone
+CASP3,CDKN1A,-,,PMID:9660939,inherited_backbone
+CASP3,DFFA,+,DFFB:DFFA_kerat,relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),relayed_backbone
+CASP3,DFFB,+,DFFB:DFFA_kerat,relayed via DFFB:DFFA_kerat (backbone-derived; see topology layer),relayed_backbone
+CASP3,MAP3K1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CASP3,PRKCD,+,,PMID:9660939,inherited_backbone
+CASP8,BID,+,,PMID:20019748,inherited_backbone
+CASP8,CASP3,+,,PMID:11803373,inherited_backbone
+CASP9,CASP3,+,,PMID:11919192,inherited_backbone
+CASP9,CASP8,+,,PMID:11919192,inherited_backbone
+CDC42,MAP3K1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CDC42,RAC1,+,,PMID:11896192,inherited_backbone
+CFLAR,MAP2K7,-,,PMID:17110930,inherited_backbone
+CHUK,NFKB1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CREB1,BCL2,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CREB1,CFLAR,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CREB1,DUSP1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CREB1,MITF,+,,PMID:19124082,inherited_backbone
+CREB1,PTGS2,+,,NetProTM (Molecular Connections curated interaction DB); PMID:17277233,inherited_backbone
+CSF2,CSF2RA,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+CSF2RA,STAT3,+,CSF2RA:JAK1_melan,relayed via CSF2RA:JAK1_melan (backbone-derived; see topology layer),relayed_backbone
+CTNNB1,MITF,+,CTNNB1:LEF1_melan,relayed via CTNNB1:LEF1_melan (backbone-derived; see topology layer),relayed_backbone
+CYCS,CASP9,+,APAF1:CYCS_kerat,relayed via APAF1:CYCS_kerat (backbone-derived; see topology layer),relayed_backbone
+CYCS,TFAP2A,+,,PMID:12952965,inherited_backbone
+DUSP1,MAPK1,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+DUSP1,MAPK3,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+DUSP1,MAPK8,-,,PMID:17363493,inherited_backbone
+EDN1,EDNRB,+,,PMID:16411896,inherited_backbone
+EDNRB,ADCY4,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+EDNRB,PLC,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+EGFR,HRAS,+,SOS1:GRB2:SHC1_kerat,relayed via SOS1:GRB2:SHC1_kerat (backbone-derived; see topology layer),relayed_backbone
+EGFR,PIK3CA,+,,PMID:12952968,inherited_backbone
+EGFR,STAT1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+ELK1,CDKN1A,+,,PMID:21642427,inherited_backbone
+F10,F2RL1,+,,PMID:19258275,inherited_backbone
+F2RL1,PLC,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+F2RL1,RHOA,+,,PMID:12925212,inherited_backbone
+F7,F2RL1,+,,PMID:19258275,inherited_backbone
+FAS,CASP8,+,FAS:FADD_kerat,relayed via FAS:FADD_kerat (backbone-derived; see topology layer),relayed_backbone
+FASLG,FAS,+,,PMID:9425165,inherited_backbone
+FOS,BCL2,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,CCND1,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,EDN1,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,IL1A,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,IL6,-,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,IVL,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,MMPs,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,NGF,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,PTGS2,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FOS,TNF,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+FZD3,AKT1,+,,PMID:17804197,inherited_backbone
+GAB1,AKT1,+,GAB1:PIK3CA_melan,relayed via GAB1:PIK3CA_melan (backbone-derived; see topology layer),relayed_backbone
+GSK3B,CTNNB1,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+GSK3B,NFATC1,-,,PMID:18708588,inherited_backbone
+GUCY1A2,PRKG1,+,cGMP_melan,relayed via cGMP_melan (backbone-derived; see topology layer),relayed_backbone
+GUCY1A2,Phosphodiesterase,+,cGMP_melan,relayed via cGMP_melan (backbone-derived; see topology layer),relayed_backbone
+HGF,MET,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+HIF1A,KITLG,+,,PMID:24194964,inherited_backbone
+HIF1A,PMAIP1,+,,PMID:20393480,inherited_backbone
+HRAS,RAF1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,inherited_backbone
+IL1A,IL1R1,+,,PMID:11348449,inherited_backbone
+IL1R1,IRAK1,+,IL1R1:MYD88:IRAK1:IRAK4_kerat,relayed via IL1R1:MYD88:IRAK1:IRAK4_kerat (backbone-derived; see topology layer),relayed_backbone
+IL6,IL6R,+,,PMID:15191552,inherited_backbone
+IL6R,JAK1,+,,PMID:15191552,inherited_backbone
+IRAK1,CHUK,0,IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),relayed_backbone
+IRAK1,MAP2K3,0,IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),relayed_backbone
+IRAK1,MAP2K4,0,IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),relayed_backbone
+IRAK1,MAP2K6,0,IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat,relayed via IRAK1_Active:TRAF6_kerat>MAP3K7:TAB1_kerat (backbone-derived; see topology layer),relayed_backbone
+IRAK1,MAP3K1,+,IRAK1_Active:TRAF6_kerat>IRAK1_Active:TRAF6:ECSIT_kerat,relayed via IRAK1_Active:TRAF6_kerat>IRAK1_Active:TRAF6:ECSIT_kerat (backbone-derived; see topology layer),relayed_backbone
+JAK1,STAT3,+,,PMID:15191552,inherited_backbone
+JUN,BCL2,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,CCND1,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,EDN1,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,IL1A,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,IL6,-,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,IVL,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,MMPs,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,NGF,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,PTGS2,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+JUN,TNF,+,FOS_kerat:JUN_kerat,relayed via FOS_kerat:JUN_kerat (backbone-derived; see topology layer),relayed_backbone
+KIT,HRAS,+,SOS1:GRB2:SHC1_melan,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),relayed_backbone
+KIT,PIK3CA,+,,PMID:16410786,inherited_backbone
+KITLG,KIT,+,,NetProTM (Molecular Connections curated interaction DB); PMID:22637532,inherited_backbone
+MAP2K1,MAPK1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,inherited_backbone
+MAP2K1,MAPK3,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,inherited_backbone
+MAP2K2,MAPK1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,inherited_backbone
+MAP2K2,MAPK3,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11359940,inherited_backbone
+MAP2K3,MAPK14,+,,"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",inherited_backbone
+MAP2K4,MAPK8,+,,"NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",inherited_backbone
+MAP2K6,MAPK14,+,,"Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",inherited_backbone
+MAP2K7,MAPK8,+,,"NetProTM (Molecular Connections curated interaction DB); Raghunath-ref[67]:Xu Y, Fisher GJ: Ultraviolet (UV) light irradiation induced",inherited_backbone
+MAP3K1,MAP2K4,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP3K1,MAP2K7,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP3K1,MAP3K14,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP3K14,CHUK,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP3K5,MAP2K3,+,,PMID:11029458,inherited_backbone
+MAP3K5,MAP2K4,+,,PMID:11029458,inherited_backbone
+MAP3K5,MAP2K6,+,,PMID:11029458,inherited_backbone
+MAP3K5,MAP2K7,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP3K5,MAP3K1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAP4K2,MAP3K1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAPK1,ATF2,+,,PMID:11348449,inherited_backbone
+MAPK1,ELK1,+,,PMID:11348449,inherited_backbone
+MAPK1,FOS,+,,PMID:15964692,inherited_backbone
+MAPK1,JUN,+,,PMID:11348449,inherited_backbone
+MAPK1,MITF,-,,PMID:18039926,inherited_backbone
+MAPK1,PLA2,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+MAPK1,RPS6KA1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:19847192,inherited_backbone
+MAPK1,TP53,+,,PMID:10781582,inherited_backbone
+MAPK14,ATF2,+,,PMID:11244091,inherited_backbone
+MAPK14,BAX,+,,PMID:15964692,inherited_backbone
+MAPK14,BCL2L1,+,,PMID:15292226,inherited_backbone
+MAPK14,CASP3,+,,PMID:10233770,inherited_backbone
+MAPK14,CREB1,+,,PMID:11841550,inherited_backbone
+MAPK14,ELK1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MAPK14,FOS,+,,PMID:14511403; PMID:15964692,inherited_backbone
+MAPK14,HIF1A,+,,PMID:16278378,inherited_backbone
+MAPK14,USF1,+,,PMID:15358786,inherited_backbone
+MAPK3,ATF2,+,,PMID:11348449,inherited_backbone
+MAPK3,ELK1,+,,PMID:11348449,inherited_backbone
+MAPK3,FOS,+,,PMID:15964692,inherited_backbone
+MAPK3,JUN,+,,PMID:11348449,inherited_backbone
+MAPK3,MITF,-,,PMID:18039926,inherited_backbone
+MAPK3,PLA2,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+MAPK3,RPS6KA1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:19847192,inherited_backbone
+MAPK3,TP53,+,,PMID:10781582,inherited_backbone
+MAPK8,ATF2,+,,PMID:11348449,inherited_backbone
+MAPK8,BAK1,+,MCL1:BAK1_kerat,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),relayed_backbone
+MAPK8,BAX,+,MCL1:BAX_kerat,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),relayed_backbone
+MAPK8,JUN,+,,NetProTM (Molecular Connections curated interaction DB); PMID:14511403,inherited_backbone
+MAPK8,MCL1,+,MCL1:BAX_kerat,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),relayed_backbone
+MAPK8,MCL1,+,MCL1:BAK1_kerat,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),relayed_backbone
+MC1R,ADCY4,+,,"Raghunath-ref[14]:Dong F, Cui R, Liu F: Additional Roles of A-MSH/MC1R Signali",inherited_backbone
+MC1R,NFKB1,-,,PMID:19656324,inherited_backbone
+MET,GAB1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MET,HRAS,+,SOS1:GRB2:SHC1_melan,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),relayed_backbone
+MITF,BCL2,+,,PMID:12086670,inherited_backbone
+MITF,CDK4,+,,"Raghunath-ref[97]:Wellbrock C, Rana S, Paterson H, Pickersgill H, Brummelkamp",inherited_backbone
+MITF,DCT,+,,PMID:19026785,inherited_backbone
+MITF,EDNRB,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MITF,MC1R,+,,PMID:12204775,inherited_backbone
+MITF,MET,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MITF,MITF,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MITF,MITF,+,MITF:EP300_melan,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MITF,MLANA,+,,PMID:15117970,inherited_backbone
+MITF,OCA2,+,,PMID:22234890,inherited_backbone
+MITF,PMEL,+,,PMID:18039926,inherited_backbone
+MITF,PRKCB,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+MITF,TYR,+,,PMID:19026785,inherited_backbone
+MITF,TYRP1,+,,PMID:19026785,inherited_backbone
+MSN,CDH2,+,,PMID:18983538,inherited_backbone
+NFATC1,PTGS2,+,,PMID:18708588,inherited_backbone
+NFKB1,BCL2,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,CDKN1A,+,,PMID:12612054,inherited_backbone
+NFKB1,CSF2,+,,PMID:15102074,inherited_backbone
+NFKB1,CXCL8,+,,PMID:19726162,inherited_backbone
+NFKB1,EDN1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,F2RL1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,FASLG,+,,PMID:16631160,inherited_backbone
+NFKB1,ICAM1,+,,PMID:15654951,inherited_backbone
+NFKB1,IL10,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,IL12A,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,IL1A,+,,PMID:10862790,inherited_backbone
+NFKB1,IL6,+,,PMID:16211268,inherited_backbone
+NFKB1,KITLG,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,MMPs,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+NFKB1,NOS2,+,,"Raghunath-ref[110]:Song XZ, Bi ZG, Xu AE: Green tea polyphenol epigallocatechin",inherited_backbone
+NFKB1,PRKCD,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NFKB1,PTGS2,+,,PMID:14633657,inherited_backbone
+NFKB1,TNF,+,,PMID:21282043,inherited_backbone
+NFKB1,TP53,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NGF,NTRK1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+NOS2,GUCY1A2,+,Nitric_oxide_kerat,relayed via Nitric_oxide_kerat (backbone-derived; see topology layer),relayed_backbone
+NOX1,EGFR,+,ROS_kerat,relayed via ROS_kerat (backbone-derived; see topology layer),relayed_backbone
+NOX1,MAP3K5,+,ROS_kerat,relayed via ROS_kerat (backbone-derived; see topology layer),relayed_backbone
+NOX1,SMPD2,+,ROS_kerat,relayed via ROS_kerat (backbone-derived; see topology layer),relayed_backbone
+NTRK1,HRAS,+,SOS1:GRB2:SHC1_melan,relayed via SOS1:GRB2:SHC1_melan (backbone-derived; see topology layer),relayed_backbone
+PAK1,MAP2K3,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PAK1,MAP2K6,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PAX3,MITF,+,,PMID:10536986; PMID:19124082,inherited_backbone
+PDPK1,AKT1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:19342374,inherited_backbone
+PDPK1,PRKCH,+,,PMID:12223477,inherited_backbone
+PIAS3,MITF,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PIAS3,STAT3,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PIK3CA,PDPK1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:19342374,inherited_backbone
+PIK3CA,RAC1,+,,PMID:18983538,inherited_backbone
+PKC,NFKB1,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+PLA2,PTGER1,+,Arachidonic_Acid_kerat>PGE2_kerat,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PLA2,PTGER2,+,Arachidonic_Acid_kerat>PGE2_kerat,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PLA2,PTGER3,+,Arachidonic_Acid_kerat>PGE2_kerat,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PLA2,PTGER4,+,Arachidonic_Acid_kerat>PGE2_kerat,relayed via Arachidonic_Acid_kerat>PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PLC,PRKCB,+,DAG_melan,relayed via DAG_melan (backbone-derived; see topology layer),relayed_backbone
+PLC,RYR1,+,IP3_melan,relayed via IP3_melan (backbone-derived; see topology layer),relayed_backbone
+PLC,RYR1,+,IP3_kerat,relayed via IP3_kerat (backbone-derived; see topology layer),relayed_backbone
+PLC,SMPD1,+,DAG_kerat,relayed via DAG_kerat (backbone-derived; see topology layer),relayed_backbone
+PMAIP1,BAK1,+,,PMID:15901672,inherited_backbone
+PPP3CA,NFATC1,+,,PMID:18708588,inherited_backbone
+PRKACA,CREB1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:12950719,inherited_backbone
+PRKCB,GAB1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PRKCB,TYR,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PRKCD,BAK1,+,MCL1:BAK1_kerat,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),relayed_backbone
+PRKCD,BAX,+,MCL1:BAX_kerat,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),relayed_backbone
+PRKCD,CASP3,+,,PMID:15304079,inherited_backbone
+PRKCD,CASP8,+,,PMID:15304079,inherited_backbone
+PRKCD,CASP9,+,,PMID:15304079,inherited_backbone
+PRKCD,MCL1,+,MCL1:BAX_kerat,relayed via MCL1:BAX_kerat (backbone-derived; see topology layer),relayed_backbone
+PRKCD,MCL1,+,MCL1:BAK1_kerat,relayed via MCL1:BAK1_kerat (backbone-derived; see topology layer),relayed_backbone
+PRKCD,NFKB1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PRKCH,CASP3,-,,PMID:12646210,inherited_backbone
+PRKCH,CDK2,-,,PMID:11175348,inherited_backbone
+PRKCH,MAPK14,+,,PMID:12646210,inherited_backbone
+PRKCZ,NFKB1,+,,PMID:12881425,inherited_backbone
+PRKG1,CREB1,+,,PMID:22441938,inherited_backbone
+PTGER1,PLC,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+PTGER2,ADCY4,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PTGER3,PLC,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+PTGER4,ADCY4,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+PTGS2,PTGER1,+,PGE2_melan,relayed via PGE2_melan (backbone-derived; see topology layer),relayed_backbone
+PTGS2,PTGER1,+,PGE2_kerat,relayed via PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PTGS2,PTGER2,+,PGE2_kerat,relayed via PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PTGS2,PTGER3,+,PGE2_melan,relayed via PGE2_melan (backbone-derived; see topology layer),relayed_backbone
+PTGS2,PTGER3,+,PGE2_kerat,relayed via PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+PTGS2,PTGER4,+,PGE2_kerat,relayed via PGE2_kerat (backbone-derived; see topology layer),relayed_backbone
+Phosphodiesterase,PRKACA,-,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+RAC1,MAP2K3,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+RAC1,MAP2K6,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+RAC1,MAP3K1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:8910292,inherited_backbone
+RAC1,NOX1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+RAC1,PAK1,+,,PMID:22882909,inherited_backbone
+RAC1,PRKCZ,+,RAC1:PARD6A:CDC42_melan,relayed via RAC1:PARD6A:CDC42_melan (backbone-derived; see topology layer),relayed_backbone
+RAF1,MAP2K1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,inherited_backbone
+RAF1,MAP2K2,+,,NetProTM (Molecular Connections curated interaction DB); PMID:11348449,inherited_backbone
+RAP1A,RAC1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+RPS6KA1,BAD,-,,PMID:15107468,inherited_backbone
+RPS6KA1,CREB1,+,,PMID:15107468; PMID:7540859,inherited_backbone
+RPS6KA1,MITF,-,,PMID:10673502,inherited_backbone
+RYR1,PKC,+,Calcium_cyt_kerat,relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),relayed_backbone
+RYR1,PPP3CA,+,Calcium_cyt_kerat,relayed via Calcium_cyt_kerat (backbone-derived; see topology layer),relayed_backbone
+RYR1,PRKCB,+,Calcium_cyt_melan,relayed via Calcium_cyt_melan (backbone-derived; see topology layer),relayed_backbone
+RYR1,Phosphodiesterase,+,Calcium_cyt_melan>Calcium_cyt:Calmodulin_melan,relayed via Calcium_cyt_melan>Calcium_cyt:Calmodulin_melan (backbone-derived; see topology layer),relayed_backbone
+SMPD1,PLA2,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SMPD1,PRKCZ,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SMPD1,TFAP2A,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SMPD2,PLA2,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SMPD2,PRKCZ,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SMPD2,TFAP2A,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SOX10,DCT,+,,PMID:14706856,inherited_backbone
+SOX10,MITF,+,,PMID:12944398,inherited_backbone
+SOX10,PAX3,+,,PMID:10942418,inherited_backbone
+SOX10,TYR,+,,PMID:17516925,inherited_backbone
+SOX10,TYRP1,+,,PMID:16934245,inherited_backbone
+SPTLC1,PLA2,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SPTLC1,PRKCZ,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SPTLC1,TFAP2A,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SPTLC2,PLA2,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SPTLC2,PRKCZ,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SPTLC2,TFAP2A,+,Ceramide_kerat,relayed via Ceramide_kerat (backbone-derived; see topology layer),relayed_backbone
+SRC,EGFR,+,,PMID:22532027,inherited_backbone
+STAT1,MMP1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+STAT3,BCL2,+,,PMID:23577258,inherited_backbone
+STAT3,BCL2L1,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+STAT3,CCND1,+,,NetProTM (Molecular Connections curated interaction DB); PMID:23577258,inherited_backbone
+STAT3,PTGS2,+,,PMID:21440540,inherited_backbone
+TFAP2A,ICAM1,+,,PMID:12952965,inherited_backbone
+TFAP2A,SPTLC1,+,,PMID:16117797,inherited_backbone
+TFAP2A,SPTLC2,+,,PMID:16117797,inherited_backbone
+TFAP2A,TNF,-,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+TNF,TNFRSF1A,+,,PMID:11348449,inherited_backbone
+TNFRSF1A,CASP8,+,TNFRSF1A:TRADD:FADD_kerat,relayed via TNFRSF1A:TRADD:FADD_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,CDC42,+,TNFRSF1A:TRAF2:RIPK1_kerat,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,CHUK,+,TNFRSF1A:TRAF2:RIPK1_kerat,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,MAP3K5,+,TNFRSF1A:TRAF2:RIPK1_kerat,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,MAP4K2,+,TNFRSF1A:TRAF2:RIPK1_kerat,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,PAK1,+,TNFRSF1A:TRAF2:RIPK1_kerat,relayed via TNFRSF1A:TRAF2:RIPK1_kerat (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,PLC,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+TNFRSF1A,SMPD2,+,TNFRSF1A:NSMAF:GNB2L1_kerat,relayed via TNFRSF1A:NSMAF:GNB2L1_kerat (backbone-derived; see topology layer),relayed_backbone
+TP53,BBC3,+,,PMID:18761658,inherited_backbone
+TP53,DUSP1,+,,PMID:12890671,inherited_backbone
+TP53,GADD45A,+,,PMID:19098008,inherited_backbone
+TP53,HIF1A,+,,NetProTM (Molecular Connections curated interaction DB),inherited_backbone
+TP53,MC1R,+,alpha_MSH_kerat,relayed via alpha_MSH_kerat (backbone-derived; see topology layer),relayed_backbone
+TP53,MC1R,+,ACTH_kerat,relayed via ACTH_kerat (backbone-derived; see topology layer),relayed_backbone
+TP53,NFKB1,-,alpha_MSH_kerat,relayed via alpha_MSH_kerat (backbone-derived; see topology layer),relayed_backbone
+TP53,NFKB1,-,ACTH_kerat,relayed via ACTH_kerat (backbone-derived; see topology layer),relayed_backbone
+TP53,TYR,-,,PMID:19098008,inherited_backbone
+TP53,TYRP1,+,,PMID:18431400,inherited_backbone
+TPSAB1,F2RL1,+,,PMID:10439226,inherited_backbone
+Trypsin,F2RL1,+,,relayed via nan (backbone-derived; see topology layer),relayed_backbone
+USF1,MC1R,+,,PMID:15358786,inherited_backbone
+USF1,MC1R,+,alpha_MSH_melan,PMID:15358786,inherited_backbone
+USF1,MC1R,+,ACTH_melan,PMID:15358786,inherited_backbone
+WNT5A,FZD3,+,,PMID:17804197; PMID:19910923,inherited_backbone
