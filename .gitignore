@@ -92,3 +92,4 @@ internal/archive/
 # Sub-agent scratch handoff dirs (not part of the reproducible pipeline)
 notebooks/handoff/
 handoff/
+notebooks/handoff2/
