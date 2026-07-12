@@ -24,7 +24,7 @@ import dendropy
 
 def sh(cmd, **kw): return subprocess.run(cmd, check=True, **kw)
 
-def codon_align(gene, cds_dir, aln_dir, min_tips=4):
+def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5):
     files=glob.glob(os.path.join(cds_dir,gene,"*.cds.fna"))
     seqs={}
     for f in files:
@@ -52,13 +52,24 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4):
             if a=="-": out.append("---")
             else: out.append(codons[ci] if ci<len(codons) else "---"); ci+=1
         codon[rec.id]="".join(out)
+    # codon-aware gap-column trim: drop codon columns that are majority-gap.
+    # Reduces spurious-indel dN/dS inflation; frames preserved (we trim whole codons).
+    n_cols_trimmed=0
+    if codon and gap_col_thresh is not None:
+        vals=list(codon.values()); n=len(vals); ncod=len(vals[0])//3
+        keep=[c for c in range(ncod)
+              if (sum(1 for x in vals if x[c*3:c*3+3]=="---")/n) <= gap_col_thresh]
+        n_cols_trimmed=ncod-len(keep)
+        codon={sp:"".join(x[c*3:c*3+3] for c in keep) for sp,x in codon.items()}
+    if not codon or len(next(iter(codon.values())))<90:
+        return None,{"n_tips":len(codon),"status":"too_short_after_trim"}
     nuc=os.path.join(aln_dir,f"{gene}.codon.aln.fa")
     with open(nuc,"w") as o:
         for sp,s in codon.items(): o.write(f">{sp}\n{s}\n")
     L=len(next(iter(codon.values())))
     gaps=sum(s.count("-") for s in codon.values())/(L*len(codon))
-    return nuc,{"n_tips":len(codon),"aln_len":L,"pct_gaps":round(100*gaps,2),"status":"ok",
-                "tips":sorted(codon.keys())}
+    return nuc,{"n_tips":len(codon),"aln_len":L,"pct_gaps":round(100*gaps,2),
+                "n_cols_trimmed":n_cols_trimmed,"status":"ok","tips":sorted(codon.keys())}
 
 def prune_tag_tree(tree_path, tips, foreground, out_path):
     t=dendropy.Tree.get(path=tree_path, schema="nexus")
@@ -84,15 +95,24 @@ def main():
     ap.add_argument("--tree",default="leakey_primate_tree.nex")
     ap.add_argument("--states",default="species_states.csv")
     ap.add_argument("--threads",default="8")
+    ap.add_argument("--gene",default=None,help="run only this gene (for SLURM array jobs)")
+    ap.add_argument("--gap-col-thresh",dest="gap_col_thresh",type=float,default=0.5,
+                    help="drop codon columns with gap fraction above this (0-1); None disables")
     a=ap.parse_args()
     os.makedirs(a.relax,exist_ok=True); os.makedirs(a.qc,exist_ok=True)
     import csv
     panel={r["gene"]:r["set"] for r in csv.DictReader(open(a.panel))}
+    if a.gene: panel={g:s for g,s in panel.items() if g==a.gene}
     states={r["species"].replace(" ","_"):r["dichromatism"] for r in csv.DictReader(open(a.states))}
     foreground=[sp for sp,st in states.items() if st.startswith("dichro")]
+    QC_FIELDS=["gene","set","n_tips","aln_len","pct_gaps","n_cols_trimmed","status","n_foreground","relax_status"]
+    def write_qc(path,rows):
+        with open(path,"w",newline="") as f:
+            w=csv.DictWriter(f,fieldnames=QC_FIELDS,extrasaction="ignore")
+            w.writeheader(); w.writerows(rows)
     qc_rows=[]
     for gene in panel:
-        nuc,info=codon_align(gene,a.cds,a.aln)
+        nuc,info=codon_align(gene,a.cds,a.aln,gap_col_thresh=a.gap_col_thresh)
         row={"gene":gene,"set":panel[gene],**{k:v for k,v in info.items() if k!="tips"}}
         if nuc:
             tips=info["tips"]
@@ -112,10 +132,10 @@ def main():
             else:
                 row["relax_status"]="no_foreground_in_tree"
         qc_rows.append(row)
+        write_qc(os.path.join(a.qc,f"{gene}.csv"),[row])        # per-gene (array merge source)
         print(f"{gene:10s} {row.get('status'):14s} tips={row.get('n_tips')} fg={row.get('n_foreground')} {row.get('relax_status','')}")
-    with open(os.path.join(a.qc,"alignment_qc.csv"),"w",newline="") as f:
-        w=csv.DictWriter(f,fieldnames=sorted({k for r in qc_rows for k in r}))
-        w.writeheader(); w.writerows(qc_rows)
+    if not a.gene:
+        write_qc(os.path.join(a.qc,"alignment_qc.csv"),qc_rows)  # combined (full sequential run)
     print("DONE -> run 03_report_summary.py")
 
 if __name__=="__main__": main()
