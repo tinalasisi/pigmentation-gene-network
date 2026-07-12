@@ -34,8 +34,9 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5):
         s=s[:len(s)-(len(s)%3)]
         if len(s)<90: continue                      # <30 codons: skip
         aa=str(Seq(s).translate())
-        # QC: reject if >1 internal stop (allow terminal)
-        if aa[:-1].count("*")>1: continue
+        # QC: reject ANY internal stop (HyPhy RELAX rejects stop codons; >1 was too lenient
+        # and caused ~36 genes to fail on frameshifted miniprot extractions)
+        if aa[:-1].count("*")>0: continue
         seqs[rec.id]=s
     if len(seqs)<min_tips: return None,{"n_tips":len(seqs),"status":"too_few_tips"}
     os.makedirs(aln_dir,exist_ok=True)
@@ -122,7 +123,7 @@ def main():
             if tf and n_fg>=1:
                 out=os.path.join(a.relax,f"{gene}.RELAX.json")
                 try:
-                    sh(["hyphy","relax","--alignment",nuc,"--tree",tf,"--test","Test",
+                    sh(["hyphy","CPU="+str(a.threads),"relax","--alignment",nuc,"--tree",tf,"--test","Test",
                         "--output",out,"--code","Universal"],
                        stdout=open(os.path.join(a.relax,f"{gene}.log"),"w"),
                        stderr=subprocess.STDOUT)
