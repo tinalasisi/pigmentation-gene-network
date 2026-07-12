@@ -24,7 +24,37 @@ import dendropy
 
 def sh(cmd, **kw): return subprocess.run(cmd, check=True, **kw)
 
-def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5):
+def drop_outlier_tips(codon, k=4.0, min_tips=4):
+    """Drop tips whose mean pairwise p-distance is a gross robust-z (MAD) outlier — the
+    long-branch / misaligned / paralogous sequences that inflate RELAX branch lengths.
+    Conservative: only extreme outliers (z>k AND >1.5x median), never below min_tips.
+    numpy-vectorized: O(T^2*ncod) done in C, ~instant even for 100 tips."""
+    import numpy as np
+    tips=list(codon.keys()); T=len(tips)
+    if T<=min_tips: return codon, []
+    L=len(next(iter(codon.values()))); ncod=L//3
+    ids={}
+    def row(s):
+        r=np.empty(ncod, dtype=np.int32)
+        for j in range(ncod):
+            c=s[j*3:j*3+3]
+            r[j]=0 if c=="---" else ids.setdefault(c, len(ids)+1)   # 0 == gap
+        return r
+    M=np.stack([row(codon[t]) for t in tips])                       # (T, ncod)
+    md=np.zeros(T)
+    for i in range(T):
+        both=(M[i]!=0) & (M!=0)                                     # (T, ncod) both non-gap
+        n=both.sum(1); d=((M!=M[i]) & both).sum(1)
+        pd=np.divide(d, n, out=np.zeros(T), where=n>0)
+        md[i]=pd[np.arange(T)!=i].mean()
+    med=float(np.median(md)); mad=float(np.median(np.abs(md-med))) or 1e-9
+    z=(md-med)/(1.4826*mad)
+    outliers=[tips[i] for i in range(T) if z[i]>k and md[i]>med*1.5]
+    keep=[t for t in tips if t not in outliers]
+    if len(keep)<min_tips: return codon, []                         # never break the gene
+    return {t:codon[t] for t in keep}, outliers
+
+def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5, outlier_k=4.0):
     files=glob.glob(os.path.join(cds_dir,gene,"*.cds.fna"))
     seqs={}
     for f in files:
@@ -53,6 +83,12 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5):
             if a=="-": out.append("---")
             else: out.append(codons[ci] if ci<len(codons) else "---"); ci+=1
         codon[rec.id]="".join(out)
+    # v3 per-sequence outlier removal: drop long-branch/misaligned/paralogous tips that
+    # inflate RELAX branch lengths (the fix column-trimming can't do). Runs before column trim.
+    n_outliers=0; outlier_tips=[]
+    if codon and outlier_k:
+        codon, outlier_tips = drop_outlier_tips(codon, k=outlier_k, min_tips=min_tips)
+        n_outliers=len(outlier_tips)
     # codon-aware gap-column trim: drop codon columns that are majority-gap.
     # Reduces spurious-indel dN/dS inflation; frames preserved (we trim whole codons).
     n_cols_trimmed=0
@@ -62,15 +98,18 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5):
               if (sum(1 for x in vals if x[c*3:c*3+3]=="---")/n) <= gap_col_thresh]
         n_cols_trimmed=ncod-len(keep)
         codon={sp:"".join(x[c*3:c*3+3] for c in keep) for sp,x in codon.items()}
-    if not codon or len(next(iter(codon.values())))<90:
-        return None,{"n_tips":len(codon),"status":"too_short_after_trim"}
+    if not codon or len(codon)<min_tips or len(next(iter(codon.values())))<90:
+        return None,{"n_tips":len(codon),"n_outliers":n_outliers,"status":"too_few_or_short_after_qc"}
     nuc=os.path.join(aln_dir,f"{gene}.codon.aln.fa")
     with open(nuc,"w") as o:
         for sp,s in codon.items(): o.write(f">{sp}\n{s}\n")
+    if outlier_tips:
+        with open(os.path.join(aln_dir,f"{gene}.outliers.txt"),"w") as o: o.write("\n".join(outlier_tips)+"\n")
     L=len(next(iter(codon.values())))
     gaps=sum(s.count("-") for s in codon.values())/(L*len(codon))
     return nuc,{"n_tips":len(codon),"aln_len":L,"pct_gaps":round(100*gaps,2),
-                "n_cols_trimmed":n_cols_trimmed,"status":"ok","tips":sorted(codon.keys())}
+                "n_cols_trimmed":n_cols_trimmed,"n_outliers":n_outliers,
+                "outlier_tips":";".join(outlier_tips),"status":"ok","tips":sorted(codon.keys())}
 
 def prune_tag_tree(tree_path, tips, foreground, out_path):
     t=dendropy.Tree.get(path=tree_path, schema="nexus")
@@ -99,6 +138,8 @@ def main():
     ap.add_argument("--gene",default=None,help="run only this gene (for SLURM array jobs)")
     ap.add_argument("--gap-col-thresh",dest="gap_col_thresh",type=float,default=0.5,
                     help="drop codon columns with gap fraction above this (0-1); None disables")
+    ap.add_argument("--outlier-k",dest="outlier_k",type=float,default=4.0,
+                    help="drop tips with robust-z divergence > k (v3 outlier removal); 0 disables")
     a=ap.parse_args()
     os.makedirs(a.relax,exist_ok=True); os.makedirs(a.qc,exist_ok=True)
     import csv
@@ -106,14 +147,14 @@ def main():
     if a.gene: panel={g:s for g,s in panel.items() if g==a.gene}
     states={r["species"].replace(" ","_"):r["dichromatism"] for r in csv.DictReader(open(a.states))}
     foreground=[sp for sp,st in states.items() if st.startswith("dichro")]
-    QC_FIELDS=["gene","set","n_tips","aln_len","pct_gaps","n_cols_trimmed","status","n_foreground","relax_status"]
+    QC_FIELDS=["gene","set","n_tips","aln_len","pct_gaps","n_cols_trimmed","n_outliers","status","n_foreground","relax_status"]
     def write_qc(path,rows):
         with open(path,"w",newline="") as f:
             w=csv.DictWriter(f,fieldnames=QC_FIELDS,extrasaction="ignore")
             w.writeheader(); w.writerows(rows)
     qc_rows=[]
     for gene in panel:
-        nuc,info=codon_align(gene,a.cds,a.aln,gap_col_thresh=a.gap_col_thresh)
+        nuc,info=codon_align(gene,a.cds,a.aln,gap_col_thresh=a.gap_col_thresh,outlier_k=a.outlier_k)
         row={"gene":gene,"set":panel[gene],**{k:v for k,v in info.items() if k!="tips"}}
         if nuc:
             tips=info["tips"]
