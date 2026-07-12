@@ -16,9 +16,16 @@ hero locus — not six notebooks.
 1. **What did Claude Science help us do?** — curate author-explanation status of 105 loci from full PDFs;
    assemble a multi-layer substrate with per-edge provenance; resolve unexplained loci to causal genes in the
    right tissue; grade rescues by convergence — at weekend scale, fully reproducible.
-2. **How are we closer to a finding?** — N author-unexplained loci now connect to melanogenesis, each graded,
-   each with a confirming experiment; anchored by one named hero locus. *(N filled in at NB8.)*
-3. **What is the flagship?** — the hero-locus rescue + the honest, reproducible convergence-graded catalog.
+2. **How are we closer to a finding?** — HONEST STATUS (2026-07-12, overnight): the network-rescue screen, run
+   correctly on the effector-uncertain set with tissue-correct (melanocyte) eQTL, did NOT yield a novel
+   network-discovered effector. What DID hold up is a **methodological finding**: melanocyte-vs-bulk eQTL
+   correction retracts false bulk-skin causal-gene calls (TECRL, RAB11FIP2, CCND1) — *the tissue you resolve in
+   changes the answer*, a sibling of NB5's "the network you choose changes the answer." Plus the foundation
+   correction itself (the effector-question vs variant-gap distinction). The pure "rescue" thesis needs the
+   careful per-paper re-extraction (internal/REEXTRACTION_PLAN.md) before it can be judged fairly.
+3. **What is the flagship?** — provisionally the TWO honest methodological results (network choice + tissue
+   choice each change which gene you call causal), plus the reproducible convergence-graded catalog. A
+   hero-locus rescue is NOT claimed unless the corrected re-extraction surfaces a genuine one.
 
 ## Positioning
 
@@ -37,7 +44,8 @@ R21's gene-property prediction — it is not "not novel."
 | NB5 | Compare candidate networks | Bajpai CRISPR added as a node layer (142 orphan hits in no curated network); networks-typology table; **"the network you choose changes the answer"** — our STRING pull recovers 60% of Raghunath's edges, agrees only 66% with D'Arcy's frozen STRING (34% drift). | ✅ |
 | NB6 | Gene regulatory network | **58 curated-regulon TF→target edges** (MITF 34, PAX3 19, SOX10 5), directed + signed, DoRothEA A–E tiered, every edge cited. MITF directly activates 8 core pigmentation genes. No ChIP-seq peaks (binding≠regulation). | ✅ |
 | NB7 | Harmonized multi-layer substrate | Merge all layers into one tagged node/edge table, per-edge provenance + tier; resolve the STRING enzyme-class-token artifact. | 🔄 building |
-| NB8 | **Rescue + convergence grade + HERO SHORTLIST** | The deliverable. Per-locus rescue test, convergence grade, named confirming experiment; ranked 3–5 hero shortlist → STOP, surface to PI. | ⏳ |
+| NB8-diag | **Rescue diagnostic (the honest pivot)** | Ran the rescue test on the corrected ~18 effector-uncertain loci. **VERDICT: no novel network-discovered effector.** 5 connect non-circularly but none is a discovery (LRMDA=OCA7 mislabeled; SIK1/ATRN=known MC1R-axis biology at weak loci; EGFR=GRN route at null locus; CCND1=bulk-only, retracted). 6 honest negatives. **The real result: melanocyte-vs-bulk eQTL correction retracts 3 false causal-gene calls — using the wrong tissue manufactures false effectors.** | ✅ diagnostic |
+| NB8 | Hero shortlist | ON HOLD — no hero to surface until the foundation is fixed and a genuine connection exists. | ⏸ blocked |
 | NB9 | Population conditionality | Future-directions NARRATIVE only (effector rerouting: SLC24A5 / TYRP1-Oceania / OCA2-E.Asia / MFSD12-Africa). | ⏳ |
 
 ## Honest-count discipline
