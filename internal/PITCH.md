@@ -1,33 +1,44 @@
 # PITCH — pigmentation gene-network rescue screen
 
-**Living document — updated as each notebook lands. Last update: 2026-07-12 (NB10 mechanism→direction law promoted to PRIMARY flagship after a validity audit; rescue-screen threads repositioned as methodological support).**
+**Living document — updated as each notebook lands. Last update: 2026-07-12 (flagship framing SOFTENED — the direction result (NB10+NB12) is a bounded methodological demonstration, not a settled biological flagship; a primate-phylogenetics direction is under parallel exploration; framing is up in the air).**
 
-## The flagship (one finding, layered evidence)
+## The flagship — leading candidate, framing under active evaluation
 
-**A mechanism→direction law (NB10): a functional melanin screen predicts the *direction* of Mendelian
-pigmentation disorders, conditioned on allele mechanism.** A gene that is a **positive regulator of melanin**
-(its loss reduces pigment), mutated by a **loss-of-function** allele, causes **hypo**pigmentation; a negative
-regulator causes hyperpigmentation. The rule is defined *only* under a loss-of-function allele — that condition
-is the finding, not a caveat: it names exactly when a functional screen's sign transfers to a clinical
-phenotype. On the loss-of-function subset the prediction is exact — **22/22** recessive/X-linked genes — against
-a base rate of only 54% hypopigmentation (permutation *p* < 1×10⁻⁵). Every dominant "exception" breaks the
-loss-of-function assumption in a documented way, and *TYR* flips direction *within one gene* across its allelic
-series (recessive OCA1 albinism → hypo; dominant melanoma-susceptibility allele → hyper).
+> **⚠️ FRAMING IS UP IN THE AIR (2026-07-12).** The candidate below is a strong *demonstration*, not a settled
+> flagship. A literature check found that almost every biological *piece* of it is textbook (see "What is
+> genuinely ours" below); the PI is also actively exploring a **primate-phylogenetics** evolutionary direction
+> that could become the flagship instead. Treat this section as the leading candidate under active evaluation,
+> not a locked decision.
 
-This is the project's convergence thesis made **directional and predictive** on its cleanest substrate. It is
-robust against the study-bias confound that the project's own audits retracted a finding over: its strongest
-evidence line is the **literature-independent Bajpai CRISPR screen** (which alone predicts 19/19), and the
-signed network contributes **no** sign from STRING (the retracted-finding resource). A dedicated validity audit
-(`internal/deconvolutor/`) confirmed the loss-of-function condition is assigned blind to direction, no gene was
-silently excluded, and significance survives collapsing shared-complex genes to independent units
-(*p* ≈ 3×10⁻⁶ at 15 units). Two honest framings the audit fixed: lead with the CRISPR line (the three "sources"
-are really ~2.5, since two share MITF/SOX10/PAX3 logic), and state 22/22 as the predictive claim with the
-dominant mechanisms as post-hoc interpretation.
+**A convergence-graded direction demonstration (NB10 + NB12): a functional melanin screen orders the
+*direction* of Mendelian pigmentation disorders, conditioned on allele mechanism — and its failures are
+bounded, not random.** A gene that is a **positive regulator of melanin** (its loss reduces pigment), mutated by
+a **loss-of-function** allele, tends to cause **hypo**pigmentation. On the loss-of-function subset with a
+network-derived direction call the prediction is **22/22** recessive/X-linked genes (base rate 54%, permutation
+*p* < 1×10⁻⁵); a pre-registered expansion adding a blind mechanism-classification source takes it to **29/33**,
+and — more interestingly — locates the **edge**: the four misses are all genes acting through *systemic* routes
+(Wilson-disease copper; ACTH endocrine feedback), and a phenotype-blind classifier flags three of the four in
+advance by its own confidence (the fourth, *ATP7B*, it misses).
 
-**The rescue-screen work (NB4–NB9) is the methodological backbone that makes this credible**, not a competing
-headline — see the two supporting threads below. Together they compose: the rescue screen resolves *which* gene
-a locus acts through; the direction law says *which way* the phenotype moves once the gene and its allele class
-are known.
+**What is genuinely ours — and it is narrow.** The biology is largely known: "LoF of a positive melanin
+regulator → hypopigmentation" is close to the *definition* of oculocutaneous albinism; the allele-mechanism
+conditioning is documented per-gene (dominant *TPC2* gain-of-function albinism; the *TYR* allelic series); and
+Bajpai et al. (2023) already tied the screen's regulator sign to common-variant skin colour. The contribution is
+**methodological, not a discovery about pigmentation**: a *single* convergent functional readout orders a
+clinical property across a whole disease category with a quantified null, and its failure boundary is partly
+characterizable in advance. That is the project's "grade trust by evidence convergence" thesis made concrete,
+quantified, and bounded — reported as such, and deliberately **not** as a new law of pigmentation genetics.
+
+**Honest limits kept front-and-center.** The failure-boundary story rests on **n = 4** discordances and one
+(*ATP7B*) breaks the "confidence flags misses" reading; the prediction is near-circular for core melanogenesis
+genes; the core-vs-syndromic split reduces but does not eliminate ascertainment (the syndromic stratum is mostly
+partial-albinism trafficking genes). A validity audit and the full literature audit are in
+`internal/deconvolutor/` and `notebooks/12_direction_law_expanded.ipynb`.
+
+**The rescue-screen work (NB4–NB9) is the methodological backbone this stands on**, not a competing headline —
+see the two supporting threads below. Together they compose: the rescue screen resolves *which* gene a locus
+acts through; the direction demonstration says *which way* the phenotype moves once the gene and its allele
+class are known.
 
 ## The three pitch answers (keep current)
 
@@ -41,13 +52,16 @@ are known.
    changes the answer*, a sibling of NB5's "the network you choose changes the answer." Plus the foundation
    correction itself (the effector-question vs variant-gap distinction). The pure "rescue" thesis needs the
    careful per-paper re-extraction (internal/REEXTRACTION_PLAN.md) before it can be judged fairly.
-3. **What is the flagship?** — the **mechanism→direction law** (NB10, primary; see "The flagship" above): a
-   functional melanin screen predicts the *direction* of Mendelian pigmentation disorders under a
-   loss-of-function allele — 22/22 recessive/X-linked genes, vs a 54% base rate (permutation *p* < 1×10⁻⁵),
-   audited and robust against the study-bias confound. A prior-art review (`internal/deconvolutor/`) confirmed
-   this compound, CRISPR-anchored, allele-conditioned predictive law is unstated in the literature — the pieces
-   are known, the formalization is not. Supporting this are the rescue-screen results, which are the *how we do
-   honest due diligence* backbone: the **Bajpai orphan reconciliation** (NB9 — 93/142 CRISPR orphans reconnect
+3. **What is the flagship?** — UP IN THE AIR (under active evaluation; a primate-phylogenetics direction is also
+   being explored). The leading demonstration candidate is the **convergence-graded direction result**
+   (NB10 + NB12; see "The flagship" above): a functional melanin screen orders the *direction* of Mendelian
+   pigmentation disorders under a loss-of-function allele — 22/22 network-called genes, 29/33 after a
+   pre-registered expansion (base rate 54%, permutation *p* < 1×10⁻⁵), audited and robust against the study-bias
+   confound. Its value is **methodological**, not a biological discovery: a literature audit
+   (`notebooks/12_direction_law_expanded.ipynb`) confirmed the biological pieces are textbook, but the
+   *systematic, quantified, boundary-characterized* demonstration is not stated elsewhere. Supporting this are
+   the rescue-screen results, which are the *how we do honest due diligence* backbone: the **Bajpai orphan
+   reconciliation** (NB9 — 93/142 CRISPR orphans reconnect
    to the melanogenesis core once the STRING seed is symmetric, vs 0/142 under the curated-only seed; 92/93 are
    grade-C single-association paths, an honest knowledge-gap residue) and THREE "the choice changes the answer"
    results: **network source** (NB5, 66%/34% STRING drift), **tissue** (melanocyte vs bulk eQTL retracts 3

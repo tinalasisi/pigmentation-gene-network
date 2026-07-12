@@ -89,6 +89,16 @@ These are deliberately unresolved. Choose in service of the goal; justify the ch
 - **How to define and compute "convergence"** into a confidence grade.
 - **What the final deliverable looks like** (a graded catalog, a figure, a method paper, a tool).
 
+> **Current candidate directions (2026-07-12 — framing is UP IN THE AIR, nothing locked):** three threads are
+> live and no flagship is settled. (1) The **rescue screen** (NB4–NB9) — an honest negative on novel effectors,
+> with methodological "the choice changes the answer" results. (2) A **convergence-graded direction
+> demonstration** (NB10 + NB12) — a functional melanin screen orders Mendelian pigmentation-disorder direction
+> under a loss-of-function allele (22/22 → 29/33 expanded, *p*<1e-5) with a partly-predictable failure boundary;
+> a literature audit found the *biology* is textbook, so its value is **methodological**, not a new discovery —
+> reported as a bounded demonstration of the convergence thesis, not a "law." (3) A **primate-phylogenetics**
+> evolutionary direction, under active exploration by the PI. See `PITCH.md` and `project_dashboard.md` for the
+> current state; the exact contribution framing remains Claude Science's + the PI's to settle.
+
 ### Where to look for the gap (a question worth answering early)
 
 A real contribution needs a real gap. One worth characterizing first: **what does the field actually do today,

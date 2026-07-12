@@ -26,7 +26,7 @@ them.
 | Approved plan | Claude Science artifact `083f9097-0134-4490-abe9-33ad4ed7c9da` (version `d135912f-6112-48f4-95c1-545c46cabfba`), `plan_convergence-graded-rescue-screen-as-self_8a368b7b.json` | The exact phase/step text for the NB4–NB8 build. Read the artifact directly. |
 | Provenance manifest | `DATA_SOURCES.md` (repo root) | Per-source licensing, query provenance, and redistribution policy. |
 
-## Where the project is now (as of 2026-07-12T01:41Z)
+## Where the project is now (as of 2026-07-12T17:00Z)
 
 - **Execution route settled and PI-approved:** the convergence-graded rescue screen, built as notebooks
   **NB4–NB8** (unified association base → compare candidate networks → harmonized multi-layer substrate →
@@ -40,8 +40,32 @@ them.
   `discordance_loci_author_explained.csv`, the `darcy2023_S*.csv` extracts) are **on disk but not yet
   committed** — see the inventory. Their counts are deliberately not pinned here until the notebooks and
   outputs are committed and stable.
+- **⚠️ FLAGSHIP FRAMING IS UP IN THE AIR (2026-07-12T17:00Z).** No flagship is locked. The leading
+  *demonstration* candidate is the direction result (NB10+NB12); a **primate-phylogenetics** evolutionary
+  direction is under parallel exploration by the PI and may become the flagship instead. Do not treat any single
+  thread as the settled headline.
+- **NB10 + NB12 (mechanism→direction result) — leading demonstration candidate, framing softened
+  (2026-07-12T17:00Z).** A positive melanin regulator mutated by a loss-of-function allele tends toward
+  hypopigmentation — 22/22 network-called recessive/X-linked genes; a pre-registered expansion (NB12) adds a
+  blind mechanism-classification source and reaches 29/33, base rate 54%, permutation *p*<1e-5. Validity-audited
+  (blind LoF conditioning; no STRING sign; significance survives collapsing shared-complex genes to 15 units,
+  *p*≈3e-6). **Reframed as a bounded METHODOLOGICAL demonstration, not a biological discovery:** a literature
+  audit found the biological pieces are textbook (albinism is defined this way; Bajpai already tied screen sign
+  to common-variant skin colour), so the contribution is "a single convergent functional readout orders a
+  clinical property across a disease category, with a partly-predictable failure boundary." Honest limits kept
+  central: failure boundary rests on n=4 (ATP7B is an unflagged high-confidence miss); near-circular for core
+  genes; ascertainment reduced not eliminated. Reports in `internal/deconvolutor/`; full audit in
+  `notebooks/12_direction_law_expanded.ipynb`. Files: `notebooks/{10_mechanism_direction_law,
+  12_direction_law_expanded}.ipynb`, `nb10_direction_law_{annotation,summary}.csv`,
+  `nb12_direction_law_expanded.csv`, `nb12_expanded_summary.csv`, figures `nb10_direction_law.png`,
+  `nb10_validity_audit.png`, `nb12_direction_law_expanded.png`. Counts not pinned here until committed
+  (anti-drift rule).
+- **In parallel (PI, live): a primate-phylogenetics evolutionary direction** is being explored as another
+  candidate. Not yet described on disk here; left untouched by this session to avoid conflicting with in-flight
+  work.
+- **Shelved:** the GWAS common-variant axis (5/35 clean genes; see the 2026-07-12 specialist review).
 - **Dashboard status: tentative.** This is the first version; the phase-status detail lives in `TODO.md`,
-  which is the authority. As NB4–NB8 outputs are committed, promote them from the "in-flight" inventory
+  which is the authority. As NB4–NB10 outputs are committed, promote them from the "in-flight" inventory
   group to the Key-metrics table.
 
 ## Key metrics — committed foundation ONLY

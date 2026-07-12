@@ -182,6 +182,26 @@ Reactome-discovery + L2G/eQTL/LD). Verdicts and the CONDITIONS that must be writ
 
 ---
 
+## Flagship track — mechanism→direction law (NB10, primary; added 2026-07-12, independent session)
+
+- ✅ **NB10 built, executed, audited.** Direction law formalized (22/22 LoF concordant, permutation *p*<1e-5),
+  prior-art gated (verdict B: novel formalization), and validity-audited (survives weak-leg checks). Reports in
+  `internal/deconvolutor/`. Notebook + backing CSVs + figures on disk.
+- ✅ **NB12 — narrow pre-registered expansion (this session).** Expanded the LoF direction test to additional
+  OMIM/Orphanet pigmentation-disorder genes, built with explicit per-gene inheritance + LoF-mechanism
+  annotation (NOT the Baxter/D'Arcy lists wholesale), and report concordance SEPARATELY for
+  core-melanogenesis-pathway vs syndromic/trafficking genes — the ascertainment-confound sensitivity test the
+  prior-art gate mandated. Pre-register the source-priority rule for sign conflicts before looking at any new
+  gene's direction call.
+- ⬜ **Framing fixes surfaced by the audit (fold into NB10 write-up):** (a) lead with the CRISPR line, not "3
+  independent sources" (they are ~2.5 — GRN and signed-net share MITF/SOX10/PAX3 logic); (b) state 22/22 as the
+  predictive claim and the 6 dominant non-LoF mechanisms as post-hoc interpretation.
+- ⛔ **GWAS common-variant axis — SHELVED for this hackathon.** Scoping returned 5/35 clean SNP→gene genes,
+  1/35 closing the eQTL loop, TYR discordant even among the clean set (see the 2026-07-12 specialist review).
+  Re-open only with a colocalization step and a stated null model.
+
+---
+
 ## Needs PI discussion — not authorized
 
 - **`internal/project_dashboard.md` is absent from disk.** Archived out in the 2026-07-11T22:51Z restart and

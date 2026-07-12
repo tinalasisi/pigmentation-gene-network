@@ -1266,3 +1266,155 @@ overview + hero rescue card — pending NB8).
 **Coordination:** appended by Claude Code while `internal/CHANGELOG.md` also holds the concurrent NB4–NB6
 session's uncommitted entries — so Claude Code committed ONLY the eval doc, not CHANGELOG, to avoid entangling
 that work.
+
+## 2026-07-12T06:59Z — NB10: mechanism→direction law (independent session; new files only, no NB4–NB9 edits)
+
+An independent Claude Science session (frame `d81cc0f8`) explored the assembled data for an overlooked
+finding, kept strictly separate from the concurrent NB4–NB9 rescue-screen work. **Only new files were added;
+no existing notebook, processed CSV, PITCH.md, TODO.md, or dashboard was modified.** Coordination note:
+`internal/handoffs/notes/20260712T065915Z__claude-science__direction-law-d81cc0f8__39e8ad.md`.
+
+**The finding (NB10, `notebooks/10_mechanism_direction_law.ipynb`).** A functional melanin screen predicts the
+*direction* of Mendelian pigmentation disorders, conditioned on allele mechanism. Genes that are positive
+melanin regulators — read independently from the Bajpai 2023 CRISPR screen, the NB6 GRN sign, and the NB7
+signed network — cause **hypopigmentation** when mutated by a **loss-of-function** allele. Result: **22/22**
+recessive/X-linked genes with a direction call are concordant, against a loss-of-function base rate of 54%
+hypopigmentation (permutation *p* < 1e-5; Fisher LoF-vs-dominant *p* ≈ 1e-3). All **6** dominant discordances
+have a documented non-loss-of-function mechanism (TYR melanoma-susceptibility allele vs recessive OCA1;
+CDKN2A/KIT proliferative; PSENEN Notch/keratinocyte; BNC2 developmental; FASLG acquired). *TYR* demonstrates
+the rule within one gene via its allelic series. Robust against the STRING study-bias confound — the strongest
+evidence line is the literature-independent CRISPR screen.
+
+**Two probes run alongside, both honest negatives** (see `internal/FINDINGS_MEMO.md`): (1) cancer-gene pleiotropy is
+mostly a STRING study-bias artifact (n.s. in the CRISPR layer; no oncogene/TS directional pattern); (2) the
+layer-convergence prior is largely **circular** — the two STRING-derived layers cover ~99%/78% of OMIM genes
+because they were built around the project's own gene list, and the predictive signal reverses/collapses once
+they are removed. Implication: convergence should be scored over genuinely source-independent layers (function
+vs clinic, as NB10 does), not STRING supersets of the input gene list.
+
+**A deliberate non-finding** (recorded so it is not re-chased): hyperpigmentation genes have ~2× the STRING
+degree of hypopigmentation genes (*p* ≈ 0.001), but this reverses in the mechanistic-only layers — a
+literature/study-bias artifact of the same class the project's audits already retracted.
+
+**Files added:** `notebooks/10_mechanism_direction_law.ipynb`, `notebooks/figures/nb10_direction_law.png`,
+`data/processed/nb10_direction_law_annotation.csv`, `data/processed/nb10_direction_law_summary.csv`,
+`internal/FINDINGS_MEMO.md`. **Files updated:** this changelog (append-only). NB10 is offered as a
+*possible direction*; promoting it into PITCH/dashboard/TODO is left to the owning session to keep those
+single-writer.
+
+## 2026-07-12T15:37Z — NB10 validity audit (independent session; new files only)
+
+Before considering any expansion of the NB10 direction law, ran a validity audit against the committed data
+(no new data pulled, no repo file modified beyond this append-only changelog). Prompted by a PLAN_DECONVOLUTOR
+red-team that argued the open question for NB10 is validity, not statistical power. Results:
+
+- **LoF conditioning is blind to direction.** `is_LoF` is a pure function of the OMIM inheritance field
+  (AR/XL → True) and uses zero phenotype information — confirmed the load-bearing pre-specified condition is clean.
+- **No silent exclusions.** Of 72 LoF genes, 50 have no regulator call — all from *coverage* (no source
+  annotates them), 0 dropped for conflicting/`mixed` sign. Exclusion is coverage, not survivorship.
+- **STRING contributes no sign.** In NB7, STRING enters only as `association_unsigned_undirected`; all 318
+  signed edges trace to Raghunath/GRN/OmniPath. The direction calls do **not** touch the resource behind the
+  retracted degree finding.
+- **Significance survives complex-collapse.** The 22 LoF genes collapse to 15 independent units (BLOC-1/2/3,
+  AP-3 subunits merged). Unit-level: 15/15 target units hypo, exact hypergeometric **p = 2.7e-6** (vs naive
+  gene-level 2.8e-8). Still far below 0.05.
+- **No single source drives it.** Leave-one-source-out: without GRN 22/22; without SignedNet 22/22; **Bajpai
+  CRISPR screen alone 19/19**; without Bajpai 4/4.
+
+**Two honest caveats that change the framing, not the result:** (A) the "3 independent sources" are really
+~2.5 — for 19/22 genes the literature-independent CRISPR screen carries the call; only 3 (EDNRB, MC1R, TYRP1)
+rest on the GRN+SignedNet pair, which share MITF/SOX10/PAX3 logic. Lead with the CRISPR line. (B) The 6
+dominant discordances' non-LoF mechanisms were assigned post-hoc; the 22/22 is the predictive claim, the 6
+mechanisms are interpretation.
+
+**Verdict:** the n=22 result is more defensible after the audit than before it and is reportable as a flagship
+as-is. Expansion is optional, not required (the GWAS common-variant axis was scoped and shelved — 5/35 clean
+genes, 1 closing the eQTL loop; see SPECIALIST_REVIEW_expand_NB10.md). **Files added:** `NB10_VALIDITY_AUDIT.md`,
+`notebooks/figures/nb10_validity_audit.png`, `SPECIALIST_REVIEW_expand_NB10.md`, `nb11_gwas_beta_scoping_poc.csv`.
+
+## 2026-07-12T15:52Z — NB11: pre-registered expansion of the direction law (independent session; new files only)
+
+Executed the narrow, pre-registered expansion the specialists endorsed (pre-registration:
+`notebooks/NB12_PREREGISTRATION.md`, written before any new direction call). Added a FOURTH, independent
+direction source for the 50 LoF OMIM pigmentation genes that had no network call: a **blind GO-based mechanism
+classification** — a classifier given only each gene's GO biological-process terms (pulled live from QuickGO via
+UniProt accession) and the pre-registered sign rule, and explicitly NOT told the patient phenotype direction.
+
+**Result — the expansion maps the law's boundary rather than just adding n:**
+- 11 of 50 uncovered genes received a directional (positive/negative-regulator) call; 38 were classified
+  `not_melanin_regulator` (DNA-repair/telomere/mismatch-repair/general-metabolism genes — the systemic
+  ascertainment noise the prior-art gate warned about, now explicitly separated, not force-called).
+- Expanded LoF test: **29/33 concordant** (was 22/22), permutation p<1e-5 vs the 54% base rate.
+- **Gate-mandated ascertainment split shows NO confound:** core-melanogenesis 14/16 vs syndromic/trafficking
+  15/17 — syndromic genes are concordant as often as core, so well-studied core genes are NOT driving the signal.
+- **The 4 discordances are all systemic/indirect** (ATP7B Wilson-disease hepatic copper; MC2R + MRAP ACTH
+  endocrine feedback; APC2 indirect Wnt), and the blind classifier had already flagged every one as
+  MEDIUM confidence: high-confidence new calls 7/8, medium-confidence 0/3.
+
+**Interpretation:** the law is a *direct-melanocyte-function* law. When a gene acts on melanin synthesis/
+melanosome biology directly, the functional sign predicts clinical direction under LoF (high-confidence 7/8 among
+new genes, on top of the 22/22 network-anchored set). When the gene acts on pigment only through a systemic route
+(copper metabolism, ACTH feedback), the sign does not transfer — and a mechanism-only classifier can tell the two
+apart in advance by its own confidence. This is a *stronger*, more falsifiable statement than "22/22": it says
+where the law holds and where it fails, and predicts the failures.
+
+**Files added:** `notebooks/NB12_PREREGISTRATION.md`, `nb12_direction_law_expanded.csv`,
+`nb12_expanded_summary.csv`, `notebooks/figures/nb12_direction_law_expanded.png`. GWAS common-variant axis remains
+shelved (see 2026-07-12 specialist review). No existing file rewritten; append-only.
+
+## 2026-07-12T16:14Z — Flagship framing SOFTENED after literature audit; framing declared up-in-the-air
+
+A claim-by-claim literature check of the direction result (NB10 + NB12) found that almost every biological
+*piece* is textbook: "LoF of a positive melanin regulator → hypopigmentation" is close to the definition of
+oculocutaneous albinism; same-gene GoF/LoF opposite-direction is documented (dominant TPC2 R210C albinism; TYR
+allelic series); and Bajpai et al. 2023 already tied the screen's regulator sign to common-variant skin colour.
+The genuine contribution is therefore **methodological, not biological**: a single convergent functional readout
+orders a clinical property (disease direction) across a whole Mendelian category with a quantified null and a
+partly-predictable failure boundary — a bounded demonstration of the project's convergence thesis, NOT a new law
+of pigmentation genetics.
+
+Governance docs updated to reflect this and to declare the flagship framing **up in the air** (no headline
+locked): PITCH.md (flagship section + answer 3 reframed as a demonstration candidate under active evaluation),
+project_dashboard.md ("Where the project is now" softened; NB10+NB12 recast as leading demonstration candidate),
+START_HERE.md (OPEN-decisions "current candidate directions" note added), internal/FINDINGS_MEMO.md (dated softening
+note). A **primate-phylogenetics** evolutionary direction is now under parallel exploration by the PI and is
+recorded as a third candidate; this session left any of its in-flight files untouched. Honest limits kept
+central everywhere: failure boundary rests on n=4 (ATP7B is an unflagged high-confidence miss), near-circular for
+core genes, ascertainment reduced not eliminated. Dashboard plan-sync re-checked: 7/7 foundation metrics
+reconcile, 0 hard issues (36 orphan_file soft warnings = expected in-flight/uncommitted outputs). Append-only; no
+prior entry rewritten.
+
+## 2026-07-12T~17:10Z — Direction-law critique (Claude Code + PI) + disorder-architecture reframe (in SEPARATE explore repo)
+
+Working with the PI to lock the strongest pitch, we stress-tested the NB10/NB12 mechanism→direction law and
+reached the same verdict independently recorded in the 16:14Z entry — plus one PI-supplied objection that sharpens
+it: **the hypo/hyper contrast is not a symmetric axis.** There is no single-gene human "melanism" (uniform
+hypermelanosis), so the "22/22 vs 54% base rate" framing lumps unlike categories and oversells. "Positive regulator
++ LoF → hypopigmentation" is close to the *definition* of oculocutaneous albinism — the CRISPR "positive-regulator"
+call and the recessive-albinism phenotype are two assays of the same fact (this gene is needed to make melanin).
+Scope limit: NB10 is entirely rare Mendelian disease, not normal variation/evolution.
+
+**Superseded:** (a) the Claude-Code "two-tier (constrained regulator / tolerant effector)" pitch — the weaker
+constraint-shadow of the direction law; (b) the direction law as a hackathon *headline* → demoted to a supporting
+consistency-check (consistent with the 16:14Z softening).
+
+**New, stronger, verified — the ASYMMETRY of pigmentation disorders.** Re-annotating the 200 NB10 disorder genes by
+direction × spatial pattern (generalized/patchy) × disrupted level × cell type: melanocyte-autonomous + generalized
+disorders are **100% hypopigmentation** (6 entities / 23 genes, 0 hyper); the only generalized hyperpigmentation is
+**systemic-endocrine** (ACTH/MSH); every melanocyte-gene gain is **patchy**; MC1R is the hinge (LoF→generalized
+hypo; ACTH excess→generalized hyper; GoF darkens mice, absent in humans). Interpretation: **two-level control** — a
+cell-autonomous synthesis FLOOR lowerable uniformly but with no single-gene ceiling, over a signal-gated coverage
+ceiling. Evolutionary payoff (aligns with the PI's parallel evolutionary direction): population skin colour is
+uniform → evolution had one dial (the synthesis floor); derived light-skin alleles are **hypomorphs of the albinism
+genes** (SLC24A5/SLC45A2/TYR/OCA2), MFSD12 the loss-that-*darkens*. **Adversarially verified** by 3 independent
+checks (counterexample hunt = CONFIRMED_no_counterexample; mechanism audit; evolution/endocrine literature anchors).
+Rewording forced by review: generalized change needs a diffusible drive (endocrine **or** paracrine, e.g. KITLG),
+not "endocrine only"; the melanocortin axis is the *principal* bidirectional switch, not the sole cause; "dark =
+ancestral" holds at the deep genus-*Homo* timescale, not every locus.
+
+**Location:** all of this + the pitch webpages live in the SEPARATE exploration repo
+`pigmentation-network-evo-explore/` (NOT this repo): `src/05_disorder_architecture.py`,
+`output/pigment_disorder_classification.csv`, `notes/disorder_architecture_finding.md`, and four comparison pitch
+artifacts (flooring-verification / two-tier[superseded] / direction-law / disorder-architecture[flagship]). **Nothing
+in THIS repo was modified except this append-only note.** Framing stays up-in-the-air per 16:14Z; offered as a
+candidate that unifies the direction result with the evolutionary direction. Append-only; no prior entry rewritten.
