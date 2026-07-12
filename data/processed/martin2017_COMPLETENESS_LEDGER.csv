@@ -1,0 +1,11 @@
+field_group,n_total,n_populated,pct,note
+lead_rsid,51,49,96.1,"2 rows (EPM2A/FREM1 combined row, tanning-spurious combined row) lack a resolvable rsID; SMARCA2/VLDLR rows (rs7866411, rs2093835) and SNX13 (rs2110015) DO carry rsIDs but lack chr:pos coordinates (see chr_pos_hg19 row below)"
+chr_pos_hg19,51,44,86.3,"S6A rows (42) + rs76413115 + rs2555364 have full coords; SMARCA2/VLDLR leads, rs34803545, rs2110015, EPM2A/FREM1, tanning-spurious lack coords per HG1-HG5"
+p_joint,51,44,86.3,"5 S6A rows have dataset='none' (no test performed, not a gap — paper itself did not test); EPM2A/FREM1 combined row and tanning-spurious row lack a specific number by design (paper gives no locus-level number)"
+beta,51,40,78.4,"Effect sizes populated for all S6A rows (joint model) and the 4 novel/expanded rows where main text reports beta; not reported for SMARCA2/VLDLR leads (main text gives only p-value, not beta, for the resequencing QQ-outlier signals), EPM2A/FREM1, tanning-spurious"
+freq_San_specific / freq_WAFR / freq_NEUR (3-population),51,42,82.4,Fully populated for the 42 S6A known-locus rows (this is S6A's core designed output); NOT available for any of the 9 main-text-only novel/expanded rows because they are not part of the S6A per-SNP table
+attribution_basis / effector_status,51,51,100.0,Fully classified for all 51 rows per the discordance_loci_effector_classified.csv controlled vocabulary
+genome_wide_significant flag,51,51,100.0,"Fully computed for all rows using p<5e-8 threshold where a p-value exists; explicit significance_tier value substitutes where no p-value exists (not_tested_no_data, suggestive_qq_outlier)"
+evidence_quote (verbatim),51,51,100.0,All rows carry a verbatim or near-verbatim supporting quote from main text or S6A/S6B table structure
+source_location (table/figure/page),51,51,100.0,"Every row traces to a named table (S6A/Table2, S6B, Table S7) and/or main-text section/page"
+"cohort/genotyping/QC/covariate metadata (paper-level, not per-row)",1,1,100.0,"Captured once in the spec/README (genotyping platforms, imputation panel, QC thresholds, statistical model, phenotype definition, covariates) rather than duplicated per-row; see docs/specs/EXTRACT_Martin2017_loci.spec.md"
