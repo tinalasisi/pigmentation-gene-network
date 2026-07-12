@@ -1186,3 +1186,24 @@ derived associations table from the PI's own prior pull.
 
 **Documents updated:** this entry; `internal/hackathon_final_day_feedback_and_pitch.md`; `DATA_SOURCES.md`;
 added `data/external/gwas_catalog/gwas_pigmentation_associations.csv`.
+
+## 2026-07-12T03:52Z — GWAS replication reframed as a convergence SIGNAL (not a candidate filter) + regeneration script
+
+Course-correction after a PI catch: a gene-level ≥2-association filter, used as a candidate *filter*, is
+backwards for the rescue thesis — it keeps the well-replicated **canonical nearest-genes** and discards the
+singleton / off-canonical / novel loci, which are exactly the rescue targets (the thesis is *GWAS is missing
+important loci and the network can rescue them*). Data check: the granular file has 0 gene-less rows and the
+1,072 catalog only 7, so almost nothing is literally intergenic — but `mapped_gene` is the NEAREST gene, not
+the causal one, so gene-level replication still selects the boring canonical set. **Resolution:** replication
+(`gwas_n_assoc`, `gwas_replicated`) is now specified as a CONFIDENCE annotation feeding the convergence grade —
+never a gate that drops candidates; a replicated **+ off-canonical + rescued** locus is the strongest story. An
+optional stretch is documented (rescue off-canonical GWAS loci resolved via L2G/eQTL; the 52 curated remain the
+flagship).
+
+Reproducibility: the granular-associations puller `scripts/pull_gwas_associations.py` (copied from
+melanogenesis-constraints `analysis/pull_gwas_loci.py`; queries the GWAS Catalog associations endpoint) is
+committed so the frozen `gwas_pigmentation_associations.csv` regenerates when EBI recovers (+ a trivial column
+subset to `efo_id,trait,gene,snp_id,pvalue`).
+
+**Documents updated:** this entry; `internal/hackathon_final_day_feedback_and_pitch.md`; `DATA_SOURCES.md`;
+added `scripts/pull_gwas_associations.py`.

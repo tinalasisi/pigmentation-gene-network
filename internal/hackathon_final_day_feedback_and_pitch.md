@@ -56,15 +56,25 @@ hero locus.** NB8 is the deliverable.
   author-unexplained loci** (already resolved in `data/processed/locus_causal_resolution.csv`). Full
   author-explanation-status mining of the 36 Catalog PMIDs is a **stretch, not a tomorrow requirement** — the
   1,072 give NB4 scale + replication context without it.
-- **Gene-level GWAS replication (PI-requested — do this in the GWAS/NB4 step):** a granular associations file
-  is now committed at `data/external/gwas_catalog/gwas_pigmentation_associations.csv` (723 associations; cols
-  `efo_id, trait, gene, snp_id, pvalue`; frozen from the PI's `melanogenesis-constraints` project). Reproduce
-  the PI's filter — **group by `gene`, keep genes with ≥2 associations** (= **83** replicated pigmentation
-  genes; mirrors `melanogenesis-constraints/analysis/pool_venn_gene_lists.py:98–102`). Run it **OFFLINE from
-  this frozen file — do NOT live-pull (EBI is HTTP 500), and do NOT compute gene counts from the deduplicated
-  1,072 (it lost them).** Then annotate every network / rescued gene with `gwas_replicated` (True if ≥2
-  studies) + `gwas_n_assoc`, and feed `gwas_replicated` into the convergence grade as an independent evidence
-  line. **Gene-level replication is sufficient (per PI); per-SNP is not required.**
+- **GWAS replication = a CONFIDENCE SIGNAL, never a candidate filter (PI-corrected — this changes the plan):**
+  compute per-gene replication from the frozen granular file
+  `data/external/gwas_catalog/gwas_pigmentation_associations.csv` (723 assoc): group by `gene` → `gwas_n_assoc`;
+  `gwas_replicated = gwas_n_assoc >= 2` (→ 83 replicated genes, mirrors
+  `melanogenesis-constraints/analysis/pool_venn_gene_lists.py:98–102`). Compute **OFFLINE** (EBI is HTTP 500);
+  do NOT use the deduplicated 1,072 for counts. **CRITICAL: this annotation must NOT drop any rescue candidate.**
+  A gene-level ≥2 filter used as a *gate* is backwards for our thesis — it keeps the well-replicated *canonical
+  nearest-genes* and discards the singleton / off-canonical / novel loci, which are exactly the rescue targets.
+  Our sell is *"GWAS is missing important loci and the network can rescue them,"* so the strongest story is a
+  locus that is **replicated (real signal) + off-canonical (GWAS/authors couldn't explain it) + rescued (we
+  found the route).** So: feed `gwas_replicated` into the **convergence grade as one additive evidence line —
+  never as a gate.** Gene-level is sufficient (per PI); per-SNP not required.
+- **OPTIONAL stretch — rescue OFF-CANONICAL GWAS loci (the scaled thesis):** beyond the 52 curated, you MAY take
+  GWAS Catalog loci whose mapped gene is NOT a canonical melanogenesis gene, resolve each to its *causal* gene
+  via L2G/eQTL (which fixes nearest-gene-mislabeled / effectively-intergenic loci), and rescue-test them. Label
+  as a stretch; **the 52 curated remain the flagship.** Do NOT gene-filter these out.
+- **Reproducibility:** the granular file regenerates via `scripts/pull_gwas_associations.py` (GWAS Catalog
+  associations endpoint; re-run when EBI recovers) + a trivial column subset to `efo_id,trait,gene,snp_id,pvalue`.
+  Until then the committed frozen file is the offline input.
 - **NB9 allele-frequency-across-network-layers** — **do NOT compute the per-tier differentiation summary.**
   Write NB9 as a short "future directions / population-conditionality" NARRATIVE only (the effector-rerouting
   story is already curated: SLC24A5/TYRP1-Oceania/OCA2-E.Asia/MFSD12-Africa). Rationale: this is the parked

@@ -71,7 +71,9 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
   (723 associations; `efo_id, trait, gene, snp_id, pvalue`) — frozen from the PI's `melanogenesis-constraints`
   project, committed 2026-07-12 to support the gene-level ≥2-association replication filter (→ 83 replicated
   genes). Same EMBL-EBI license basis (reuse with attribution). Use for per-gene replication counts; the
-  deduplicated 1,072 table cannot provide them.
+  deduplicated 1,072 table cannot provide them. **Regeneration:** `scripts/pull_gwas_associations.py` (GWAS
+  Catalog associations endpoint; re-run when EBI recovers) + a trivial column subset to
+  `efo_id,trait,gene,snp_id,pvalue`.
 - **Access method:** `scripts/gwas_catalog.py v1.0` + `scripts/traits_pigmentation.json`. Independent
   per-variant cross-check via human-genetics MCP connector (`gwas_associations_for_variant`).
 - **License:** EMBL-EBI terms; attribution to the catalog (Sollis 2023) + per-row study PubMed IDs.
