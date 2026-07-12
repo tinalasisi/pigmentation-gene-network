@@ -1618,8 +1618,14 @@ output committed. Verified: the 105 curated rows are byte-identical to the prior
 effector-status breakdown is unchanged, and two consecutive re-runs are byte-identical (deterministic
 against the current source). The only deltas versus the stale output are the `queried_utc` stamp (now
 2026-07-12 on all 1,072 GWAS rows) and a non-deterministic study-accession tiebreak on 10 catalog rows
-where the same rsID appears in multiple GWAS studies (e.g. rs1805007 GCST006988 -> GCST006986; two
-gene-label orderings) — no p-values, effect sizes, gene identities, or locus counts changed. NB4's prose
+where the same rsID appears in multiple GWAS studies (e.g. rs1805007 GCST006988 -> GCST006986). On those
+10 tiebreak rows the fields that identify the chosen study record change together as a consequence of the
+swap — `study_accession`/`source_location`, and where the alternate study differs, `population`,
+`ancestry`, `pubmed`, the `gene_label` string (two rows: a reordering/duplication, same genes), and one
+row (rs1129038) a `pvalue` string — because a different underlying study record is now cited for the same
+rsID, not because any value was independently re-estimated. The scientific spine is unchanged: the 105
+curated rows are byte-identical, the 14/34 effector-status breakdown is identical, no locus was added or
+dropped, and `gwas_replicated`/`gwas_n_assoc` are identical on all 10 rows. NB4's prose
 pull-date references (cells 0, 4) and the downstream docs (`docs/specs/gwas_catalog.spec.md`,
 `docs/specs/nb4_unified_association_base.spec.md`, `DATA_SOURCES.md` GWAS entry) were corrected from
 2026-07-08 to 2026-07-12 to match the committed source. The MCP anchor-crosscheck timestamp
