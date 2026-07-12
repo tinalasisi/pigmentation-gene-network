@@ -1477,3 +1477,128 @@ primate-phylogenetics evaluation).
 **Compliance:** all of the above are new processed CSVs/notebook cells routed through the Tier-2 compliance gate
 per commit; no withheld raw paper PDF was committed (Martin2017 source PDFs remain gitignored per
 `docs/specs/EXTRACT_Martin2017_loci.spec.md`'s withholding statement). Append-only; no prior entry rewritten.
+
+
+---
+
+## 2026-07-12T21:40Z — Science-communication scrub, figure-text fixes, NB4 stale-reasoning verdict, and two reproducibility fixes
+
+Language-and-presentation pass across the public website and repo docs (SCICOMM_REVIEWER), with two
+specialist investigations folded in (PI_ORCHESTRATOR on the NB4 stale-reasoning tension, and
+REPRODUCIBILITY_SPECIALIST on a figure with no committed generator). No analysis logic, gene name, p-value,
+locus count, or citation was changed by the scrub; the two notebook re-executions below reproduce their
+committed data exactly.
+
+**Defensive/meta-prose scrub (website + public docs).** Removed process-history narration ("earlier
+version", "dead code", "first pass", "the NB2 lesson"), the *honest/honestly/honesty* conversational tic, and
+invisible-scaffolding pointers a public reader cannot resolve (`internal/…` paths, "the task brief", "PI
+sign-off", "TODO #N", "this session", `project_dashboard`, `TODO.md`). Bare NB1–NB12 cross-references were
+KEPT — they are the public sidebar names, i.e. legitimate navigation. The one sanctioned `internal/CHANGELOG.md`
+build-log link in the index Reproducibility section was kept. Prior scrub commits `e5341f1` (website prose),
+`6278dac` (public docs), `272c1ef` (figure captions + two disk-only figures embedded).
+
+**British→US spelling.** Converted 48 genuine British spellings to US English across 18 files (colour→color
+×24, neighbour→neighbor ×13, and others). Citation/DOI table rows, the EFO "eye colour measurement" ontology
+label, the "eQTL Catalogue" proper noun, and published titles were left as-is (19 keeps). US English is the
+site's target dialect.
+
+**NB4 supersession prose removed (the confusing "author-unexplained" narrative).** NB4 cell 0/1/12/19/25 had
+re-litigated the superseded coarse "52 author-unexplained" tag at length to justify the current 14/34
+effector-uncertain target — exactly the meta-discussion the scrub rule forbids, and it read as if the notebook
+was using a file it had itself called wrong. Scrubbed: the supersession paragraphs deleted; the glossary
+(cell 1) rewritten around the CURRENT spine (effector-status classification, five categories) instead of
+defining the retired tag; the "caught only 9 of 14 / swept in 43" comparison prose removed from cell 19/25;
+the display-only 52-set code cell (cell 13) reduced to the additive rsID cross-check it feeds; the comparison
+block and supersession comments removed from cell 18. The 52-tag machinery that remains is the
+`also_in_curated_52_unexplained` cross-reference column of the unified base (Step 5) — an additive flag, never
+a filter. NB4 re-executed offline (all inputs committed `data/processed/*.csv`), outputs regenerated for the
+three edited code cells only; the committed `nb4_unified_association_base.csv` is unchanged.
+
+**NB4 stale-reasoning verdict: CORRECT-BUT-UNDOCUMENTED (PI_ORCHESTRATOR).** The reclassification the
+science-communication reviewer flagged as possibly wrong was audited against the raw CSVs and is CORRECT. Every
+number checks out by direct count of `discordance_loci_effector_classified.csv`:
+- 105 curated loci → **14 effector-uncertain** / 75 canonical-effector variant-gap / 6 ambiguous-near /
+  4 regulatory-of-canonical-neighbour / 6 not-a-locus.
+- 131 loci (with Kim 2024's 26 folded in) → **34 effector-uncertain**.
+- Of the old 52 "author-unexplained" tag (`stated_unknown` 15 + `nearest_gene_only` 37): only **9** are
+  genuinely effector-uncertain; 43 are not the target (32 canonical, 6 ambiguous-near, 3 regulatory, 2
+  not-a-locus) — reproducing NB4's "caught 9 of 14, swept in 43" exactly.
+- NB8's 18-locus set (Ang2023 13 + Morgan2018 5) is OVERLAPPING with, not a subset of, NB4's 14: by rsID join,
+  9 of the 18 stay effector-uncertain (matching NB8's own scope-note), 6 reclassify to ambiguous-near, 3 to
+  canonical/regulatory (sums to 18); and 5 of NB4's 14 fall outside NB8's 2-paper scope (Abbatangelo2026,
+  Crawford2017, plus two Ang2023/Morgan2018 rsIDs NB8 did not include).
+
+The decision was PI-signed-off in `internal/REEXTRACTION_PLAN.md` (status "EXECUTED & PI-SIGNED-OFF
+2026-07-12"), executed in commits d45c682 (plan) → cefc283 (reclassification) → c03d08f (site-wide reframe).
+Two process gaps are recorded here so the CHANGELOG itself carries the who/when/why (previously it did not):
+(1) the reclassification never got its own dated CHANGELOG entry — the record lived only in REEXTRACTION_PLAN.md
+and commit messages; this entry closes that gap. (2) Commit c03d08f edited the bodies of two already-published
+dated entries (2026-07-12T03:11Z, T03:52Z) to insert "SUPERSEDED" parentheticals — a mild violation of this
+file's append-only convention; those edits are left in place (not re-reverted) and noted here instead.
+
+**Three in-figure text defects fixed (baked into stored PNGs; would not self-correct under `execute: false`).**
+- NB1 panel-b title was garbled ("Types only what the file fixes") → corrected to "Node types: most (239)
+  await gene resolution". NB1 re-executed fully offline (Raghunath 2015 MOESM supplements are CC BY 4.0,
+  committed, and cleared in `tools/hooks/compliance-allowlist.txt`); the figure regenerates natively.
+- NB4 effector-status figure title narrated the retired 52-tag → reduced to "What the 105 curated loci actually
+  are, by effector status"; regenerated with NB4's re-execution.
+- NB12's figure was titled "NB11 — …" (wrong notebook number) → "NB12 — …". See the reproducibility fix next.
+
+**NB12 figure now has a committed generator (REPRODUCIBILITY_SPECIALIST).** `notebooks/figures/nb12_direction_
+law_expanded.png` was a committed figure with NO committed generator (produced by a session that never committed
+its plotting code; entered in `20768ac`). Added `build_nb12.py` at the repo root, mirroring `build_nb10.py`'s
+offline-reproducible pattern: it asserts the committed `nb12_direction_law_expanded.csv` /
+`nb12_expanded_summary.csv` are present, recomputes all three panels from the row-level CSV (never hardcoding
+from the image), asserts the recomputed counts match the pre-aggregated summary CSV, and writes the PNG with the
+corrected "NB12" title. All panel numbers verified against the committed data with zero discrepancies (22/22
+NB10 baseline; 29/33 expanded; core-vs-syndromic split; 7/8 high- vs 0/3 medium-confidence; ATP7B the unflagged
+high-confidence miss). The figure is now fully reproducible from committed inputs.
+
+**Compliance:** all changes modify already-tracked files plus one new own-code script (`build_nb12.py`); routed
+through the pre-commit compliance gate. Untracked non-project files on disk (`app/`, `scripts/build_engine_*`,
+`internal/expert-brief/`, `internal/immersive-app-comparison.md`) were NOT staged. Append-only; no prior entry
+rewritten by this entry.
+
+
+---
+
+## 2026-07-12T22:10Z — NB8 retitle and author_explained.csv quarantine EXECUTED (PI verdict B)
+
+Follow-through on the two science-facing items the 21:40Z entry left open. Both were executed under the
+PI_ORCHESTRATOR verdict (author_explained disposition = option **B**, migrate-then-repoint-then-archive), not
+left as TODOs.
+
+**NB8 retitled.** The title and two body/caption references were changed from "the 18 effector-uncertain loci"
+to "18 provisionally effector-uncertain loci (Ang2023 + Morgan2018)", so NB8's narrower, earlier 2-paper pilot
+set no longer silently borrows NB4's now-canonical "effector-uncertain" term for a different set. NB8's
+in-notebook reconciliation scope-note (9 stay uncertain / 6 ambiguous / 3 reclassified, verified) is unchanged;
+only the title-level terminology was stale. No analysis touched.
+
+**`discordance_loci_author_explained.csv` quarantined (PI verdict B).** The file encoded the superseded coarse
+"author-unexplained" tagging scheme and was still wired into NB4 as `CURATED_CSV`. Executed the PI's migration
+spec:
+- Verified the `(paper, locus_id, rsid)` join key is set-identical across the two 105-row files (0 collisions),
+  and all 17 shared columns are byte-identical on those rows.
+- Migrated the two audit columns worth keeping — `is_asserted_pigmentation` (shipped in the 31-column
+  `nb4_unified_association_base.csv`) and `needs_review` (18 non-empty curatorial flags) — into
+  `discordance_loci_effector_classified.csv`'s 105 legacy rows (Kim2024's 26 rows get null). Dropped the empty
+  `gene_label_correction`.
+- Repointed NB4 cell 3 `CURATED_CSV` to `discordance_loci_effector_classified.csv`, filtered
+  `paper != "Kim2024"` (reproduces the identical 105-row curated base). Updated NB4's prose references (cells
+  6/8/10) and stored cell-3 input-check output accordingly.
+- Re-ran NB4 top-to-bottom: all frozen-input assertions pass (105 / 1,072 / 723), the 14/34 breakdown is
+  unchanged, and the closing reload-equality check passes. The committed
+  `nb4_unified_association_base.csv` is unchanged — all 105 curated output rows are byte-identical to the prior
+  commit (the only re-run deltas are a pre-existing non-deterministic GWAS-dedup study-accession tiebreak on ~10
+  catalog rows and the `queried_utc` stamp, neither shipped).
+- Retired `discordance_loci_author_explained.csv` and its spec to `internal/archive/superseded_2026-07-12/`
+  (with a README explaining the migration); `git rm`-ed both from the tracked tree. Nothing in the live repo
+  reads the old file now. Updated the lockstep docs the PI flagged: `docs/specs/nb4_unified_association_base.
+  spec.md`, `docs/specs/discordance_loci_effector_classified.spec.md`, `docs/specs/locus_causal_resolution.
+  method.md`, and `internal/project_dashboard.md`.
+
+Pre-existing drift flagged, not silently fixed: the committed `nb4_unified_association_base.csv` carries
+`queried_utc = 2026-07-08T01:15:41Z`, but the committed GWAS-catalog source snapshot's meta.json records a later
+`2026-07-12T14:46:57Z` re-pull — i.e. NB4's committed outputs predate the currently-committed source. This
+predates the present pass and is out of scope for a language/quarantine change; it should be resolved by a
+dedicated re-run-and-recommit of NB4 against the current source (logged in TODO).

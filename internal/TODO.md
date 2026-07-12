@@ -18,30 +18,6 @@ table below.
 
 ---
 
-## Recently resolved (not part of the NB4–NB8 plan)
-
-- ✅ **NB2 reproducibility — RESOLVED and committed (`95f1969`), 2026-07-12T01:16Z.** All 14 inputs NB2 read
-  but the repo never committed (7 frozen `db_responses/` JSONs + 2 orphan intermediate CSVs + 5 figures) were
-  regenerated, verified to reproduce the committed outputs value-for-value on a fresh-clone run, and committed
-  through the Tier-2 compliance gate. NB2 can now be re-run on a fresh clone (all REQUERY flags `False`). Full
-  detail in `CHANGELOG.md` 2026-07-12T01:16Z. This closes the T23:57Z Catch 1 and T00:34Z item-5 blockers and
-  discharges Decision 5 (T00:29Z) for NB2. Two documentation follow-ups it surfaced are logged below.
-
----
-
-## Follow-ups from the NB2 reproducibility fix (both RESOLVED 2026-07-12T01:44Z)
-
-- ✅ **`PLC*` filter documented in `DATA_SOURCES.md` entry 6.** The member-filter line now records that HGNC
-  group 832 returns 19 protein-coding members (5 are PLA2G4* contaminants) and requires a `PLC*` prefix filter
-  to reach the committed 14, at parity with the documented PLA2G*/PRSS* filters; also recorded per-group in
-  `hgnc_gene_groups.json` (`member_filter`). See `CHANGELOG.md` 2026-07-12T01:44Z item 2.
-- ✅ **Figure-generating code added to NB2.** Cells 8/15/20/22/27 now build the 5 `notebooks/figures/step*.png`
-  from the notebook's own in-memory data (`fig.savefig` + `display`), verified value-for-value on a fresh
-  clone. The figures reproduce rather than being opaque committed binaries. See `CHANGELOG.md`
-  2026-07-12T01:44Z item 1. (Regenerated notebook + PNGs pending commit through the compliance gate.)
-
----
-
 ## Tracked work — approved plan (convergence-graded rescue screen, NB4–NB8)
 
 **Plan of record:** artifact_id `083f9097-0134-4490-abe9-33ad4ed7c9da`, version_id
@@ -96,20 +72,6 @@ Dependency order — each phase consumes the prior phase's frozen output; do not
       name. This is a core project contribution ("query missing pigmentation genes found by association").
     Parent snapshot committed in-repo (frozen-db pattern); R-HSA-5662702 terminal snapshot kept as the precise
     terminal-enzyme reference.
-
-## Closed — NB5 finalization fixes (2026-07-12, folded into the Bajpai re-render)
-
-- ✅ **NB5 figure left-panel title said "4-way" but showed 5 bars** (Reactome added a 5th source, then
-  Bajpai a 6th bar). Fixed: `nb5_candidate_network_comparison.png` left-panel title now reads "5-way"
-  (4 curated/pathway networks + Bajpai's node-set), re-rendered alongside the Bajpai node-layer addition.
-- ✅ **Bajpai 2023 CRISPR screen added as a NODE layer** to NB5, per PI sign-off
-  (`internal/bajpai_network_integration_brief.md`): node-set flag + `Combined_casTLE_Effect` weight +
-  uniform reduces-pigmentation sign in `nb5_gene_set_membership.csv` (169/169 hits joined; sanity check
-  TYR/DCT/SLC45A2/OCA2 present, MC1R/HERC2 absent — passed); reverse coverage + enrichment vs. the screen's
-  own assayed background (`nb5_bajpai_network_enrichment.csv`); 142/169 orphan hits flagged; optional
-  labeled bipartite hit→melanin_content layer (`nb5_bajpai_bipartite_melanin_endpoint.csv`), never pooled
-  with the edge networks; NO gene-gene edges fabricated. Networks-typology table added
-  (`nb5_networks_typology.csv`, 9 sources).
 
 ## Data-fitness sign-off (2026-07-12) — binding conditions for the expanded plan
 
@@ -261,6 +223,37 @@ Reactome-discovery + L2G/eQTL/LD). Verdicts and the CONDITIONS that must be writ
   direction-law NB10/NB12, cross-ancestry NB11, plus the parallel primate-phylogenetics evolutionary direction)
   becomes the flagship. See `START_HERE.md`'s "current candidate directions" note and `project_dashboard.md`'s
   "Where the project is now" section.
+
+---
+
+## Surfaced by the science-communication / reproducibility pass (2026-07-12T21:40Z)
+
+Detail and evidence for every item below are in `CHANGELOG.md` 2026-07-12T21:40Z and 22:10Z. The prose scrub,
+spelling conversion, figure captions, three in-figure text fixes, and the NB4 stale-reasoning verdict are DONE
+and committed. The two science-facing follow-ups (NB8 retitle, author_explained.csv quarantine) were executed
+under the PI_ORCHESTRATOR verdict and are now DONE. One newly-surfaced reproducibility item remains open.
+
+- ✅ **Retitled NB8 so its "18 loci" no longer reads as NB4's flagship "14/34".** (Done 2026-07-12T22:10Z.)
+  Title and two body/caption references changed to "18 provisionally effector-uncertain loci (Ang2023 +
+  Morgan2018)". The analysis and the in-notebook reconciliation scope-note (9 uncertain / 6 ambiguous / 3
+  reclassified) were already correct and were not touched; only the stale title-level terminology changed. NB8's
+  in-notebook note already records that its 2-paper pilot does not cover all of NB4's 14.
+- ✅ **Quarantined `data/processed/discordance_loci_author_explained.csv`** (PI verdict B: migrate → repoint →
+  archive). (Done 2026-07-12T22:10Z.) Migrated `is_asserted_pigmentation` + `needs_review` into
+  `discordance_loci_effector_classified.csv` (verified exact-key join, 0 collisions), dropped the empty
+  `gene_label_correction`, repointed NB4's `CURATED_CSV` to the effector-classified file filtered
+  `paper != "Kim2024"`, re-ran NB4 (105 curated output rows byte-identical, 14/34 unchanged, closing check
+  passes, shipped CSV unchanged), and retired the old file + its spec to `internal/archive/superseded_2026-07-12/`
+  via `git rm`. Lockstep docs updated: `docs/specs/nb4_unified_association_base.spec.md`,
+  `docs/specs/discordance_loci_effector_classified.spec.md`, `docs/specs/locus_causal_resolution.method.md`,
+  `internal/project_dashboard.md`. The optional final raw-delete of the archived copy is left to the PI.
+- ⬜ **Re-run and re-commit NB4 against the current GWAS-catalog source snapshot.** Surfaced during the
+  quarantine: the committed `nb4_unified_association_base.csv` carries `queried_utc = 2026-07-08T01:15:41Z`, but
+  the committed GWAS-catalog source (`pigmentation_gwas_catalog.csv.meta.json`) records a later
+  `2026-07-12T14:46:57Z` re-pull — the committed NB4 output predates its own committed input. Re-running NB4
+  against the current source updates only the `queried_utc` stamp and a non-deterministic study-accession
+  tiebreak on ~10 dedup rows (no scientific content change), so this is low-risk bookkeeping, but it should be
+  done deliberately and committed as a data refresh, not folded into a language pass. Not started.
 
 ---
 
