@@ -1,8 +1,0 @@
-# RELAX branch partition: which tips/clades are TEST vs REFERENCE branches.
-# HyPhy RELAX asks whether selection is relaxed/intensified on the TEST set relative to REFERENCE.
-# label = test | reference
-# Map to the trichromacy phenotype (dichromatic = test, monochromatic/trichromatic = reference)
-# per the project's hypothesis. TODO: fill in to match the species in config/accessions.tsv.
-species	label
-# Nomascus_leucogenys	test
-# Homo_sapiens	reference

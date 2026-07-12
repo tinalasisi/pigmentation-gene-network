@@ -1,0 +1,10 @@
+species,chosen_accession,assembly_level,annotated,dichromatism,family,pipeline_path
+Hylobates muelleri,GCA_963573745.1,Scaffold,False,dichromatic,hylobatidae,miniprot_extract_cds
+Hylobates pileatus,GCA_021498465.1,Chromosome,False,dichromatic,hylobatidae,miniprot_extract_cds
+Nomascus concolor,GCA_963574845.1,Scaffold,False,dichromatic,hylobatidae,miniprot_extract_cds
+Nomascus gabriellae,GCA_963574555.1,Scaffold,False,dichromatic,hylobatidae,miniprot_extract_cds
+Nomascus leucogenys,GCF_006542625.1,Chromosome,True,dichromatic,hylobatidae,direct_download_cds
+Hylobates agilis,GCA_963574095.1,Scaffold,False,monochromatic,hylobatidae,miniprot_extract_cds
+Hylobates klossii,GCA_963574335.1,Scaffold,False,monochromatic,hylobatidae,miniprot_extract_cds
+Hylobates moloch,GCF_009828535.3,Scaffold,True,monochromatic,hylobatidae,direct_download_cds
+Symphalangus syndactylus,GCF_028878055.3,Chromosome,True,monochromatic,hylobatidae,direct_download_cds
