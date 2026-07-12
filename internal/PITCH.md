@@ -23,9 +23,17 @@ hero locus — not six notebooks.
    changes the answer*, a sibling of NB5's "the network you choose changes the answer." Plus the foundation
    correction itself (the effector-question vs variant-gap distinction). The pure "rescue" thesis needs the
    careful per-paper re-extraction (internal/REEXTRACTION_PLAN.md) before it can be judged fairly.
-3. **What is the flagship?** — provisionally the TWO honest methodological results (network choice + tissue
-   choice each change which gene you call causal), plus the reproducible convergence-graded catalog. A
-   hero-locus rescue is NOT claimed unless the corrected re-extraction surfaces a genuine one.
+3. **What is the flagship?** — the **Bajpai orphan reconciliation** (NB9, primary): 142 CRISPR-validated
+   melanin genes were "orphans" in no curated network — but almost entirely because our STRING pull was seeded
+   only on curated gene sets (a STRING edge needs BOTH endpoints in the query). A symmetric pull (714-gene
+   union) reconciles **93 of 142 to the melanogenesis core** (≤4 hops, score≥700) vs **0/142** under the
+   curated-only seed (the orphans were never in that query set). The 49 that stay orphan even then are the
+   honest knowledge-gap residue. Caveat kept front and center: 92 of 93 reconciliations are grade C (a single
+   STRING association path) — association hypotheses to test, not confirmed edges; the CRISPR knockout is the
+   causal anchor. This sits atop THREE "the choice changes the answer" results: **network source** (NB5,
+   66%/34% STRING drift), **tissue** (melanocyte vs bulk eQTL retracts 3 causal calls), and **seeding** (0 vs
+   93 orphans). The association-locus rescue screen (below) is honest SUPPORT, not the headline — it yielded
+   no novel effector.
 
 ## Positioning
 
