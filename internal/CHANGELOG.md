@@ -777,3 +777,164 @@ artifacts. Only the GOAL is fixed; execution (route, unit, approach) must be pre
 network + source materials + tools + notebooks 01–02, `DATA_SOURCES.md`.
 
 **Note.** `internal/archive/` is gitignored; the PI intends to delete its contents. No commit made yet.
+(Committed shortly after as `72e064a`.)
+
+---
+
+## 2026-07-11T23:57Z — Reproducibility catches: NB2 missing frozen inputs; NB1 pandas-3.0 fragility; keratinocyte/melanocyte design confirmed correct
+
+**Context.** While wiring reproducibility (a venv + `requirements.txt`, prompted by a PEP-668 install block), three
+things surfaced. NB1 and NB3 reproduce against a pinned stack; two catches + one confirmation recorded here.
+
+**Catch 1 — NB2 cannot be re-run (missing frozen inputs).** `notebooks/02_resolve_network_to_genes.ipynb` reads
+frozen connector responses from `data/external/db_responses/` — `uniprot_annotation_direct.json`,
+`hgnc_gene_groups.json`, `omnipath_internal.json`, `kegg_hsa04916.json`, `pomc_cleavage_refs.json` — but that
+directory was never committed and is not on disk, so a clean clone fails with FileNotFoundError. NB2's committed
+OUTPUTS (`gene_network_*.csv`, embedded figures) are intact — the site and downstream data work; only *re-running*
+NB2 is blocked. Fix: regenerate those frozen JSONs (per `DATA_SOURCES.md` entry 6, which specifies they are frozen
+to `data/external/db_responses/`) and commit them. Handed to Claude Science.
+
+**Catch 2 — NB1 is pandas-version-fragile (do not re-run on pandas 3.0).** Re-running NB1 under pandas 3.0.3
+corrupted a node name via a substring replacement — `Phosphodiesterase` → `PhosphodiesteHRASe` (`ras` matched
+inside the word) — and altered a state field. The committed data is correct; re-runs must use the maintainer's
+working pandas version (to be pinned in `requirements.txt`), or NB1's normalization should be made
+word-boundary-robust. All corrupted re-run outputs were reverted; the repo remains at `72e064a`.
+
+**Catch 3 (a confirmation, not a bug) — cell type is an EDGE attribute at the gene level, as intended.** PI asked
+whether keratinocyte/melanocyte should be a node property. Verified: `gene_network_nodes.csv` has **168 unique gene
+nodes**, none carrying `_kerat`/`_melan`, no duplicates — a gene appears once. Cell-type/compartment is carried as
+an **edge** attribute (`gene_network_edges.csv` `via` column, e.g. `via cAMP_melan` vs `via cAMP_kerat`). The
+`_kerat`/`_melan` suffixes exist only at the NB1 layer (`raghunath_nodes_typed.csv`), where NB1 faithfully
+reproduces the published species-level model (`ACTH_kerat` / `ACTH_melan` as distinct species on the
+keratinocyte→melanocyte axis, with a `dual_compartment` flag). NB2 collapses these to unique genes. Design
+confirmed correct; no change needed.
+
+**Documents updated:** this entry. No data/notebook changed (reproducibility fixes pending the pinned versions).
+
+---
+
+## 2026-07-12T00:29Z — Execution route SETTLED: convergence-graded rescue screen (NB4–NB8); PI-approved plan recorded
+
+**Context.** `internal/START_HERE.md` left the contribution route explicitly OPEN. A PI-orchestrator session
+worked the route to a concrete plan across three iterations, the PI approved the final iteration, and this
+entry is the project-management bookkeeping for that approval (no science performed in this entry).
+
+**Approved plan (artifact of record, not a repo file):** artifact_id `083f9097-0134-4490-abe9-33ad4ed7c9da`,
+version_id `d135912f-6112-48f4-95c1-545c46cabfba`, filename
+`plan_convergence-graded-rescue-screen-as-self_8a368b7b.json`, approved 2026-07-12T00:21Z. Read it directly
+for exact phase/step text; this entry summarizes the decisions it encodes, not the plan's prose.
+
+**Decision 1 — contribution route chosen.** A **convergence-graded evaluation + rescue** of reported
+pigmentation associations. The discrete finding sought: loci the **original authors did not explain**
+(stopped at a nearest-gene/positional label) that the melanogenesis network can connect to mechanism via a
+curated layer. `author_explanation_status` becomes the pivotal per-locus field. Population-conditionality is
+kept as a secondary axis (NB8, optional). The earlier "substrate-capability catalog" framing stays retired.
+
+**Decision 2 — both association routes, harmonized, not one instead of the other.** The route is **both**
+the 13 curated papers **and** a GWAS Catalog pull (1,072 associations / 36 unique PMIDs), harmonized by rsID
+while **keeping both provenance rows** — independent-replication count across the two sources feeds the
+convergence grade. Kim 2024 (PMID 38849341) is folded in as a complementary East-Asian source.
+
+**Decision 3 — D'Arcy 2023 keeps three roles (not dropped to a single use).** (i) comparison target — its
+243-gene OMIM set stands as a peer of Raghunath's 168-gene backbone, not merged into it; (ii) node-annotation
+layer — S1 OMIM disease-gene table + S6 A375/FM55 mass-spec; (iii) an association-tier edge source. Direct
+inspection confirmed D'Arcy is not just a STRING pull (it separately carries S1 OMIM, S2/S5 SysGO annotation,
+S6 mass-spec, and S4/S5 STRING). Decision: the project runs **its own STRING pull, applied consistently to
+every gene set**; D'Arcy's frozen S4/S5 STRING snapshot is used temporarily and as a cross-check only.
+
+**Decision 4 — STRING un-banned; KEGG/Reactome promoted to Tier 1.** A retired-framing error (treating STRING
+as banned) was corrected: STRING enters as a tagged **Tier-3** association layer, weighted below mechanism,
+and is never coerced into sign/direction (`directed=False`, `sign=NA`). KEGG hsa04916 and Reactome graduate
+from scope-check to full mechanistic layers (**Tier 1**). The full tier scheme: **T0** Raghunath (signed/
+directed mechanistic) / **T1** KEGG + Reactome (mechanistic curated) / **T2** D'Arcy OMIM + mass-spec
+(annotation only, never creates/deletes edges) / **T2b** OmniPath (validation-only) / **T3** STRING (lowest
+weight, tagged, unsigned).
+
+**Decision 5 — reproducibility rule, generalized from the NB2 lesson.** NB2's frozen input snapshots
+(`kegg_hsa04916.json`, `omnipath_internal.json`, `hgnc_gene_groups.json`, `uniprot_annotation_direct.json`,
+`pomc_cleavage_refs.json`) are absent from both disk and git, so NB2 cannot currently be re-run (see the
+2026-07-11T23:57Z entry above). Going forward, **every frozen DB snapshot a notebook reads is committed
+in-repo alongside the notebook** — inputs, not just outputs — enforced per-notebook by the reproducibility
+specialist before the next phase depends on it.
+
+**Decision 6 — flat notebook spine, no dangling extractors.** Sequential numbering; every notebook is a
+self-contained mini-manuscript answering one question; extraction work is folded in as modules of the
+manuscript whose question it serves rather than left as standalone extractors. New spine: **NB4** unified
+association base (with author-explanation status) / **NB5** compare candidate networks (before merging) /
+**NB6** harmonized multi-layer substrate / **NB7** rescue screen (causal-gene resolution + convergence grade)
+/ **NB8** (optional) population conditionality. NB1–NB3 are unchanged; NB3 (the 13-paper case-set assembly)
+is a dependency NB4 builds on, not replaced by it.
+
+**Bookkeeping performed in this entry (no science):**
+- `internal/TODO.md` **re-created** as the live forward ledger (it was archived in the 2026-07-11 restart and
+  had gone missing from disk since; see Decision/note below). Populated with the five plan phases as tracked
+  work items in dependency order, the Martin et al. (South Africans) population-GWAS deferral, and the 01a–01d
+  extractor-consolidation backlog item.
+- Three superseded plan-draft artifacts from this same planning session
+  (`plan_systematic-author-unexplained-locus-resc_8a368b7b.json`,
+  `plan_convergence-graded-rescue-screen-of-repo_8a368b7b.json`,
+  `plan_convergence-graded-rescue-screen-reprodu_8a368b7b.json`) archived to
+  `internal/archive/plan_drafts_2026-07-12/` (gitignored) with a README recording their artifact ids and how
+  each was superseded. Only the approved plan (cited above) is live.
+- Plan-sync check **not run to completion**: `internal/project_dashboard.md` does not currently exist on disk
+  (archived out in the 2026-07-11T22:51Z restart, per that entry's note, and not yet re-created). No
+  processed CSVs exist yet for NB4–NB8, so there is nothing to reconcile against a Key-metrics table right
+  now. Recorded here as a known gap, not silently skipped: the dashboard should be re-created (or explicitly
+  deferred) before NB4 produces its first processed output, so the plan-sync check has a table to reconcile
+  against.
+
+**Documents updated:** this entry; `internal/TODO.md` (re-created); `internal/archive/plan_drafts_2026-07-12/`
+(new, gitignored). `internal/project_dashboard.md` intentionally not touched — see gap noted above. No git
+commit made (pre-commit compliance gate + commit are a later step, outside this entry's scope).
+
+---
+
+## 2026-07-12T00:34Z — NB1 figures now render on the site; the "pandas-3.0 corruption" was a SOURCE-FILE typo (T23:57Z Catch 2 corrected)
+
+**Trigger.** PI reported the two NB1 figures still absent from the published site and suspected GitHub Actions
+had not republished. Investigation (incl. an 8-agent adversarial site+repro audit) settled four things.
+
+**1 — Deploy was healthy all along.** The "Publish site" Action ran and succeeded for `72e064a` at
+2026-07-11T23:24Z; HEAD = origin/main = deployed sha. The site looked unchanged only because the figure fix
+had never been committed. No CI change needed.
+
+**2 — Why the figures were missing (fixed).** NB1's two plotting cells did `fig.savefig(output/figures/…png)`
+then `print("wrote …")` but never *displayed* the figure, so the notebook's **stored** output was stdout only —
+no `image/png`. With `_quarto.yml` `execute: enabled: false`, Quarto renders stored outputs, so it showed the
+"wrote …" text and no image; the PNGs were never committed either (404 on the site). Fix: append
+`display(fig); plt.close(fig)` to both cells → exactly one embedded `image/png` per figure, regardless of
+backend (same mechanism as NB2's working figures). Verified: a local `quarto render` of NB1 now emits **2
+`<img>` tags**. `/output/` added to `.gitignore` (runtime scratch; the shipped figures live inside the .ipynb).
+
+**3 — CORRECTION to T23:57Z Catch 2 ("NB1 pandas-3.0 fragility").** That diagnosis was WRONG. There is **no
+substring replace in NB1's code**. The real cause: the node *Phosphodiesterase* is mis-encoded as
+*PhosphodiesteHRASe* (an errant `ras`→`HRAS` substitution) **in the published source workbooks themselves** —
+present in the shared-strings tables of BOTH MOESM1 (3 edges) and MOESM2 (node list + node_properties).
+pandas/openpyxl read the typo faithfully; every pandas version does. The committed CSVs had said
+*Phosphodiesterase*, i.e. they had been **silently hand-corrected and were NOT reproducible from the raw
+files**. Fix: a single documented correction (`fix_labels`, `{"PhosphodiesteHRASe":"Phosphodiesterase"}`)
+applied wherever a node label is read from the workbooks (raw files left untouched), with a visible note in the
+notebook. The paper's own cited title ("Calmodulin activation of cyclic AMP *phosphodiesterase*…") confirms the
+entity. The real *HRAS* gene nodes (`HRAS_kerat`/`HRAS_melan`) contain no such substring and are unaffected.
+`raghunath_edges_typed_signed.csv` is now byte-identical to the committed version again (typo resolved to the
+same value); `raghunath_nodes_typed.csv` differs by ONE additional correction (below).
+
+**4 — `IRAK1_Active_kerat` state corrected (empty → `active`).** The committed nodes CSV was stale vs. the
+notebook's own `state()` regex, which correctly tags `_Active` before a `_`/`:` boundary (the cell comment
+already asserts all 3 IRAK1_Active nodes are tagged). The re-run produces the correct value; committed here so
+the CSV matches what the notebook reproduces. Counts unchanged (265 nodes / 429 edges; degree cross-check
+265/265). Gene identity/edges unaffected — `state` is metadata, not an identifier.
+
+**Reproducibility.** NB1 now re-executes clean on a pinned stack (pandas 2.2.3 / numpy 1.26.4 / matplotlib
+3.9.2 / networkx 3.3 / openpyxl 3.1.5) via `nbclient` with the kernel CWD pinned to repo root. A committed
+`requirements.txt` is still pending the maintainer's exact working versions.
+
+**5 — NEW NB2 blocker found by the audit (handed to Claude Science).** Beyond the 7 missing frozen JSONs
+(T23:57Z Catch 1), NB2 cell 18 also reads two intermediate CSVs — `nb2_projection_cited.csv` and
+`nb2_backbone_cited.csv` — that **no cell/script in the repo writes** and that are absent on disk. So even after
+the frozen JSONs are restored, NB2 halts at cell 18. Both must be regenerated/committed too.
+
+**Documents updated:** this entry; `notebooks/01_reconstruct_published_network.ipynb` (figure embedding + typo
+correction + Step-1 note); `data/processed/raghunath_nodes_typed.csv` (IRAK1_Active state); `.gitignore`
+(`/output/`). Handoff note written to `internal/handoffs/notes/`. Untouched: `data/external/`, `internal/TODO.md`,
+`rescue_candidate_audit.csv` (concurrent Claude Science work / PI-held).

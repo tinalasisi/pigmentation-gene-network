@@ -121,7 +121,7 @@ IP3_kerat,IP3,pending_db_resolution,,keratinocyte,,True
 IP3_melan,IP3,pending_db_resolution,,melanocyte,,True
 IRAK1_Active:TRAF6:ECSIT_kerat,IRAK1_Active:TRAF6:ECSIT,complex,raghunath_file_syntax,keratinocyte,active,False
 IRAK1_Active:TRAF6_kerat,IRAK1_Active:TRAF6,complex,raghunath_file_syntax,keratinocyte,active,False
-IRAK1_Active_kerat,IRAK1_Active,pending_db_resolution,,keratinocyte,,False
+IRAK1_Active_kerat,IRAK1_Active,pending_db_resolution,,keratinocyte,active,False
 IVL_kerat,IVL,pending_db_resolution,,keratinocyte,,False
 Indole_5_6_quinone_carboxylic_acid_melan,Indole_5_6_quinone_carboxylic_acid,pending_db_resolution,,melanocyte,,False
 Indole_5_6_quinone_melan,Indole_5_6_quinone,pending_db_resolution,,melanocyte,,False

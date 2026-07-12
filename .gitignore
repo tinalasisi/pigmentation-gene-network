@@ -73,3 +73,8 @@ internal/archive/
 /_site/
 /.quarto/
 /_freeze/
+
+# Notebook figure scratch — NB1 savefig()s PNGs here at runtime; the figures that
+# ship on the site are the base64 copies embedded IN the notebook (execute: false),
+# so these on-disk PNGs are regenerable scratch and are never committed.
+/output/
