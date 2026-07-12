@@ -1128,3 +1128,39 @@ follow-ups edit — see the 01:53Z handoff note), the NB5 processed outputs (`nb
 documentation in `DATA_SOURCES.md`) owned by whoever finishes NB5, not this session.
 
 **Documents updated:** this entry; `.gitignore` (committed as `92cb266`).
+
+## 2026-07-12T03:11Z — GWAS Catalog frozen pull RECOVERED + restored to a committed path; session feedback briefs added
+
+The lost frozen GWAS Catalog pull (`pigmentation_gwas_catalog.csv` — 1,072 pigmentation associations, 22 cols,
+in-row `queried_utc` 2026-07-08T01:15:41Z over 10 EFO/OBA/MONDO roots), which had been written under gitignored
+`/output/`, never committed, and cleaned from disk in the 2026-07-11 repo cleanup, was located in the PI's
+`~/Downloads` and **restored to a committed, non-gitignored path: `data/external/gwas_catalog/`** (CSV +
+`.meta.json`). Verified against the spec on restore: 1,072 rows, 22 columns, in-row `queried_utc` matches; all
+rows `axis=pigmentation`. The EBI download endpoint was re-confirmed **still HTTP 500 (2026-07-12)** — REST base
+returns 200 but cannot expand child traits, so it is not a substitute — hence this frozen copy is the
+reproducible input; no live pull is possible right now. **Root cause of the loss** (frozen data written under
+gitignored `/output/`) is fixed by the new `data/external/` home; frozen data must never be written under
+`/output/` again. Path references corrected in `docs/specs/gwas_catalog.spec.md` and `DATA_SOURCES.md` (entry 1).
+
+**Scope note (one-day discipline):** recovering this unblocks NB4's unified reported-associations base
+(rsID-join the 1,072 to the curated set; overlap yields replication counts that feed the convergence grade),
+but the flagship rescue still runs on the **52 curated author-unexplained loci** (already resolved in
+`data/processed/locus_causal_resolution.csv`); the 36-paper author-explanation mining of the Catalog set
+remains a stretch, not a requirement.
+
+**License basis:** NHGRI-EBI GWAS Catalog data under EMBL-EBI terms (reuse with attribution) — already
+documented in `DATA_SOURCES.md` entry 1; this restores the file to a committed location, it is not a new
+source.
+
+**Also committed:** three session feedback briefs for Claude Science —
+`internal/hackathon_final_day_feedback_and_pitch.md` (final-day recalibration + pitch north star + visual
+mandate + GWAS-recovery + the resolution→rescue→hero-shortlist priority),
+`internal/bajpai_network_integration_brief.md`, `internal/melanocyte_eqtl_resolution_brief.md`.
+
+**Ownership boundary respected:** the concurrent NB4–NB5 session's uncommitted work (`nb5_*.csv`,
+`discordance_loci_author_explained.csv`, `darcy2023_S*.csv`, `rescue_candidate_audit.csv`,
+`locus_causal_resolution.csv`, `notebooks/05_*`, `docs/specs/darcy*`, `internal/TODO.md`, frozen NB5 DB
+responses) is intentionally left unstaged for that session.
+
+**Documents updated:** this entry; `docs/specs/gwas_catalog.spec.md`; `DATA_SOURCES.md`; three internal briefs;
+restored `data/external/gwas_catalog/{pigmentation_gwas_catalog.csv,.meta.json}`.

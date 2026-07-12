@@ -9,8 +9,9 @@
 - **Access method:** `scripts/gwas_catalog.py v1.0` (config-driven; roots frozen in `scripts/traits_pigmentation.json`).
 - **Access date (UTC):** 2026-07-08T01:15:41Z (stamped in every row's `queried_utc` and in the `.meta.json`).
 - **Catalog version:** the GWAS Catalog is a live resource, not internally versioned by release number on
-  this endpoint, so **the access timestamp is the version key**. The frozen pull is archived at
-  `output/catalog/versions/pigmentation_gwas_catalog_20260708T011541Z.csv`.
+  this endpoint, so **the access timestamp is the version key**. The frozen pull is committed at
+  `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` (restored 2026-07-12 after the original
+  gitignored `/output/` copy was lost; in-row `queried_utc` 2026-07-08T01:15:41Z is the version key).
 - **License:** NHGRI-EBI GWAS Catalog data are released under EMBL-EBI terms (reuse with attribution); cite
   the catalog (Sollis et al. 2023) plus the per-association study PubMed IDs in the `pubmed` column.
 
@@ -73,8 +74,8 @@ on gene identity and trait. The **download-endpoint pull is authoritative** for 
 traits); the MCP connector is the per-variant cross-check.
 
 ## Pinned artifacts
-- `output/catalog/pigmentation_gwas_catalog.csv` — the 1,072-row table.
-- `output/catalog/pigmentation_gwas_catalog.csv.meta.json` — machine-readable provenance.
+- `data/external/gwas_catalog/pigmentation_gwas_catalog.csv` — the 1,072-row table (committed; restored 2026-07-12).
+- `data/external/gwas_catalog/pigmentation_gwas_catalog.csv.meta.json` — machine-readable provenance.
 - `mcp_anchor_crosscheck.json` — the independent MCP cross-check.
 - `scripts/gwas_catalog.py`, `scripts/traits_pigmentation.json`, `scripts/harmonize.py`,
   `scripts/vizhelpers.py` — pull engine, config, schema, plot helpers.

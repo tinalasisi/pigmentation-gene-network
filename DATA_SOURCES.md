@@ -64,8 +64,9 @@ publicly shareable, so it commits **only openly-licensed material** and referenc
 ### 1. NHGRI-EBI GWAS Catalog — pigmentation associations
 - **Identity / endpoint:** `https://www.ebi.ac.uk/gwas/api/search/downloads`, `shortForm:"<root>"` +
   `includeChildTraits=true&efo=true&facet=association`, over 10 frozen EFO/OBA/MONDO roots.
-- **Version key:** access timestamp **2026-07-08T01:15:41Z** (catalog is a live resource; archived copy
-  frozen under `output/catalog/versions/`).
+- **Version key:** access timestamp **2026-07-08T01:15:41Z** (catalog is a live resource; frozen copy
+  committed at `data/external/gwas_catalog/pigmentation_gwas_catalog.csv`, restored 2026-07-12 after the
+  original gitignored `/output/` copy was lost).
 - **Access method:** `scripts/gwas_catalog.py v1.0` + `scripts/traits_pigmentation.json`. Independent
   per-variant cross-check via human-genetics MCP connector (`gwas_associations_for_variant`).
 - **License:** EMBL-EBI terms; attribution to the catalog (Sollis 2023) + per-row study PubMed IDs.
