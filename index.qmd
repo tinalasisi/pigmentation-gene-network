@@ -69,12 +69,12 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
   node/edge table with per-edge provenance and tier.
 
 ### Rescue screen
-- **[NB8 · Rescue diagnostic](notebooks/08_rescue_screen_diagnostic.ipynb)** — the honest pivot: the network
+- **[NB8 · Rescue diagnostic](notebooks/08_rescue_screen_diagnostic.ipynb)** — the pivot: the network
   rescue yielded no novel effector; the real result is that **melanocyte-vs-bulk eQTL correction retracts false
   causal-gene calls** — the tissue you resolve in changes the answer.
 - **[NB9 · Bajpai orphan reconciliation](notebooks/09_bajpai_reconciliation.ipynb)** — a symmetric STRING seed
   reconnects **93 of 142** CRISPR "orphans" to the core (vs 0/142 under a curated-only seed) — *seeding changes
-  the answer*; the residue is the honest knowledge gap.
+  the answer*; the residue is the knowledge gap.
 
 ### Direction & ancestry
 - **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** — a functional melanin screen

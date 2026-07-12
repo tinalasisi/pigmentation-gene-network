@@ -37,7 +37,7 @@ Empirical: Hudson Fst over 552 common (global mean freq in [0.05,0.95]) 1000G ph
 (mean=0.0864, median=0.0625, p95=0.2410); consistent with the
 published continental mean ~0.10–0.12 (Bhatia et al. 2013, doi:10.1101/gr.154831.113).
 
-## Honest framing
+## Framing
 - MFSD12 is a KNOWN effector (Crawford 2017 knockdown) → this is cross-population *portability*, not novel discovery.
 - SPIRE2 rs34357723's "SPIRE2" label is positional (nearest-gene); Morgan 2018's functional target is MC1R via long-range regulation — kept as a cited annotation, not reassigned.
 - LD-independence CONFIRMED for MFSD12 (empty LD in all 5 superpops despite 3.2 kb spacing) and BNC2 (r2=0.19 in AMR); INFERRED for SPIRE2.

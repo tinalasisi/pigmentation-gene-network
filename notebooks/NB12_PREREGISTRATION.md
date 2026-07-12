@@ -41,7 +41,7 @@ from memory.
 
 ## Falsification / honesty conditions (fixed in advance)
 
-- If the syndromic stratum concordance is materially lower than the core stratum, the honest conclusion is that
+- If the syndromic stratum concordance is materially lower than the core stratum, the conclusion is that
   the law is a **core-pathway** law and the CRISPR/mechanism call is unreliable outside it — reported as such,
   not explained away.
 - If adding mechanism-call genes drops overall concordance below the LoF base rate + 2·SE, the expansion
