@@ -42,9 +42,13 @@ Two things fall out of the network framing that a single-gene scan would miss:
   coupled.** The clearest bridge is **POMC**: the same pro-hormone is cleaved into α-MSH, which
   drives pigmentation through the melanocortin receptor, **and** ACTH, which drives the adrenal
   steroid axis. A gene sitting on both networks is exactly where a sexually dimorphic,
-  hormone-linked color trait would be expected to act. (POMC's *own* selection signal doesn't
-  survive our alignment QC in this run — a truncated extraction, flagged not interpreted — which
-  is precisely the kind of gene a denser genome set would let us re-test.)
+  hormone-linked color trait would be expected to act. And POMC *is* under selection: it is
+  significantly intensified (HyPhy RELAX, *K* ≈ 3.4, *p*~BH~ < 0.001) at the *Nomascus* gibbon
+  origin, with episodic diversifying selection (aBSREL) on five branches. But that signal is **not
+  confined to dichromatic lineages** — only two of the five selected branches are dichromatic (the
+  *Nomascus* gibbons); the other three are monochromatic macaque lineages. So the bridge gene
+  overlaps one dichromatism origin without tracking the trait one-to-one — the same lesson as the
+  whole-panel scan below. See §5 of [NB15](notebooks/15_dichromatism_synthesis.ipynb).
 - **Selection localizes to modules, and modules to branches.** The signal that passes the
   significance and alignment-QC gate is not
   scattered noise: on the pigmentation side it concentrates in the melanoblast-development module
@@ -146,16 +150,21 @@ the standard aBSREL failure mode: infinite ω on a branch with dS ≈ 0 is undef
 
 ## The three-layer test, matched to the origin structure
 
-Because only 3 origins have ≥2 tips, no single method covers all of them. The design uses three
-selection layers, each matched to what the data can support. The unifying question each layer
-asks is the coupled-network one: **for a given origin, is it the pigmentation module or the
-hormone module that carries the selection signal** — and does that differ from origin to origin?
+Because only 3 origins have ≥2 tips, no single method covers all of them. The design uses two
+executed selection layers — matched to what the data can support — plus a third, relative-rate
+layer that is set up but not yet run. The unifying question each layer asks is the coupled-network
+one: **for a given origin, is it the pigmentation module or the hormone module that carries the
+selection signal** — and does that differ from origin to origin?
 
-| Layer | Method | Covers | Question |
-|---|---|---|---|
-| Per-origin | HyPhy **RELAX** | the 3 multi-tip origins | for *Trachypithecus*, *Nomascus*, *Eulemur* — is the intensified module the pigmentation axis, the hormone axis, or both, and is it the **same** module across origins (convergence) or **different** (heterogeneous, branch-specific)? |
-| Per-branch | HyPhy **aBSREL** | all 14 origins (each single-tip origin = one branch) | which individual lineages carry episodic selection, at which genes? |
-| Relative-rate | **RERconverge** | all origins at once | across the tree, do the origins accelerate the same genes — no per-origin foreground needed? |
+| Layer | Method | Covers | Status | Question |
+|---|---|---|---|---|
+| Per-origin | HyPhy **RELAX** | the 3 multi-tip origins | **run** | for *Trachypithecus*, *Nomascus*, *Eulemur* — is the intensified module the pigmentation axis, the hormone axis, or both, and is it the **same** module across origins (convergence) or **different** (heterogeneous, branch-specific)? |
+| Per-branch | HyPhy **aBSREL** | all 14 origins (each single-tip origin = one branch) | **run** | which individual lineages carry episodic selection, at which genes? |
+| Relative-rate | **RERconverge** | all origins at once | *planned, not yet run* | across the tree, do the origins accelerate the same genes — no per-origin foreground needed? |
+
+The two executed layers (RELAX, aBSREL) are what the results on this page rest on. The codon
+alignments for RERconverge are staged (`comparative-genomics/results/full_panel_117/`), but the
+relative-rate scan has not been run and is not reported as a result here.
 
 ## The cross-taxon contrast
 
@@ -170,10 +179,14 @@ hormone module that carries the selection signal** — and does that differ from
 ## Limitations
 
 - Per-origin RELAX is statistically powered only for the 3 multi-tip origins; the 11 single-tip
-  origins are testable via aBSREL (per branch) and RERconverge (relative rates). All three are
-  reported; single-tip origins are not treated as missing data.
-- One phenotypic origin (*Presbytis hosei*) has no genome; a targeted genome-expansion round adds
-  a *Presbytis* proxy and recovers the *Hoolock* origin at genus level.
+  origins are covered by aBSREL (per branch). A relative-rate layer (RERconverge) is designed and
+  its alignments are staged but it has not yet been run, so single-tip origins currently rest on
+  aBSREL alone rather than being treated as missing data.
+- Two phenotypic origins (*Presbytis hosei*, *Hoolock hoolock*) have no genome in the 117-species
+  set, so they contribute to the origin count from the phenotype tree but not to the selection
+  scans. A targeted genome-expansion round (a *Presbytis* proxy plus a *Hoolock* genome) was scoped
+  for exactly this gap but has not been run; the selection results here are on the 117-genome set as
+  it stands.
 - The pigmentation-vs-hormone **set-level** contrast is not significant (permutation *p* ≈ 0.87)
   and is **not** claimed. The apparent hormone-tilt in the pooled selected set (≈59% hormone) is
   consistent with the panel's own 2:1 hormone:pigmentation gene ratio (binomial *p* ≈ 0.17), not
@@ -185,11 +198,11 @@ hormone module that carries the selection signal** — and does that differ from
   elevated dN/dS on dichromatic lineages. It is consistent in **direction** across three tests
   (PGLS, canonical binary phyloglm, and a tree-structured permutation, perm *p* ≈ 5e-4), but its
   survival of multiple-testing correction is **model-dependent**: it clears BH under PGLS
-  (*p* ≈ 0.04) but not under the more appropriate binary model, phyloglm (*p*_BH = 1.0). Since PGLS
-  is an anticonservative linear-probability model, this is a **single suggestive candidate**, not an
-  established locus: one hit among ~90 genes with only ~24 cases, and the binding constraint is the
-  number of independent dichromatic lineages, which no method can inflate. See
-  `notebooks/16_cross_species_gwas.ipynb`.
+  (*p*~BH~ ≈ 0.046) but not under the more appropriate binary model, phyloglm (*p*~BH~ = 1.0). Since
+  PGLS is an anticonservative linear-probability model, this is a **single suggestive candidate**,
+  not an established locus: one hit among ~100 genes with only ~24 cases, and the binding constraint
+  is the number of independent dichromatic lineages, which no method can inflate. See
+  [NB16](notebooks/16_cross_species_gwas.ipynb).
 - **Shared vs. heterogeneous architecture is currently underpowered to resolve.** A χ² homogeneity
   test across the 11 origins with any detectable selection does not reject a single shared
   architecture (*p* ≈ 0.42; Monte-Carlo *p* ≈ 0.45), and the two "pure-module" poles (*Eulemur*,
@@ -202,8 +215,18 @@ hormone module that carries the selection signal** — and does that differ from
 
 ## Reproducibility
 
-The full pipeline (miniprot → MAFFT → RELAX / aBSREL / RERconverge), the 14-origin foreground map,
-the two-round genome-expansion roster, and the exact cluster run protocol are in
+The two results notebooks are the executable version of this page, each self-contained and rendered
+from stored outputs:
+
+- **[NB15 — Sexual dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** recomputes
+  the lability and origin-count analyses from the tree, and reports the per-origin module-balance,
+  circular-tree, and sister-pair contrasts.
+- **[NB16 — Cross-species GWAS](notebooks/16_cross_species_gwas.ipynb)** runs the phylogeny-controlled
+  association scan (PGLS + phyloglm) and produces the *AKR1C4* result.
+
+The full pipeline (miniprot → MAFFT → RELAX / aBSREL; RERconverge staged but not yet run), the
+14-origin foreground map, the scoped genome-expansion roster, and the exact cluster run protocol are
+in
 [`comparative-genomics/`](https://github.com/tinalasisi/pigmentation-gene-network/tree/main/comparative-genomics)
 and the handoff notes under `internal/handoffs/notes/`. The selection run executes on the
 University of Michigan Great Lakes cluster; only small summary tables are committed and pasted
