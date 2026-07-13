@@ -24,7 +24,8 @@ there — the **correlated-evolution** test (Pagel's *Discrete*, ML analog via
 
 The Opie, Atkinson & Shultz analysis of primate **mating systems**
 ("The evolutionary history of primate mating systems," *Commun Integr Biol*
-2012, doi:10.4161/cib.20821 — full text verified) used three tools:
+2012, doi:10.4161/cib.20821; gold OA full text retrieved via Unpaywall) used
+three tools:
 phylogenetic signal / model choice, ancestral-state reconstruction, and a test
 of whether two discrete traits evolve **dependently** (correlated) rather than
 independently. We hold no mating-system data, so we replicate their *method* on
