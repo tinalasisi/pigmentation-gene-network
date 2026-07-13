@@ -8,7 +8,7 @@
 #SBATCH --job-name=pgn-absrel-arr
 #SBATCH --account=tlasisi0
 #SBATCH --partition=standard
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=16
 #SBATCH --mem=8G
 #SBATCH --time=03:00:00
 #SBATCH --output=%x-%A_%a.log

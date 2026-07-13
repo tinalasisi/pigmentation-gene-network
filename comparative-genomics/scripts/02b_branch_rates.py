@@ -28,7 +28,8 @@ import argparse, os, glob, json, csv, subprocess
 
 def run_absrel(aln, tree, out, logf):
     # aBSREL over ALL branches; no --branches restriction -> every branch gets a rate+test
-    subprocess.run(["hyphy","absrel","--alignment",aln,"--tree",tree,
+    cpu = os.environ.get("SLURM_CPUS_PER_TASK", "16")  # honor the SLURM allocation (else hyphy auto-detects)
+    subprocess.run(["hyphy","CPU="+cpu,"absrel","--alignment",aln,"--tree",tree,
                     "--output",out,"--code","Universal"],
                    check=True, stdout=open(logf,"w"), stderr=subprocess.STDOUT)
 

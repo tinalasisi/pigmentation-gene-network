@@ -9,7 +9,7 @@
 #SBATCH --job-name=pgn-perorigin-relax
 #SBATCH --account=tlasisi0
 #SBATCH --partition=standard
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=16
 #SBATCH --mem=8G
 #SBATCH --time=02:00:00
 #SBATCH --output=%x-%A_%a.log
@@ -32,5 +32,5 @@ echo "[$(date +%T)] task $TID -> gene=$GENE origin=$ORIGIN"
 python "$REPO/scripts/02c_per_origin_relax.py" --gene "$GENE" --origin "$ORIGIN" \
   --aln aln --out relax_per_origin --qc qc/per_origin \
   --panel "$PANEL" --tree "$REPO/config/primate_species_tree.nex" \
-  --origins "$ORIGINS_CSV" --threads ${SLURM_CPUS_PER_TASK:-4}
+  --origins "$ORIGINS_CSV" --threads ${SLURM_CPUS_PER_TASK:-16}
 echo "[$(date +%T)] task $TID done (gene=$GENE origin=$ORIGIN)"
