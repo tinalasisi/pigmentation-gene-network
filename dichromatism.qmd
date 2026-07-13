@@ -1,11 +1,40 @@
 ---
 title: "Sexual dichromatism across primates"
-subtitle: "A trait that is one gene in birds is a repeatedly, independently assembled multi-gene phenotype in primates"
-description: "Comparative molecular-evolution test of selection on pigmentation vs. sex-hormone genes across the independent origins of primate hair sexual dichromatism."
+subtitle: "What a pigmentation-network approach reveals when pointed at evolution: a trait that is one gene in birds is a coupled, multi-module system in primates"
+description: "Using the coupled pigmentation–sex-hormone gene network to test selection across the independent origins of primate hair sexual dichromatism — an evolutionary-genomics insight from the same network approach used for human association grading."
 toc: true
 execute:
   enabled: false
 ---
+
+## Point the network at evolution
+
+The rest of this project builds a curated pigmentation gene network and uses it to grade *human*
+genotype→phenotype claims. This page asks a different question with the **same object**: *what
+does a pigmentation-network approach reveal when you point it at evolutionary genomics instead of
+human association?* The answer is the finding below — and it only becomes visible **because** we
+treat the genes as a coupled network rather than a flat candidate list.
+
+Two things fall out of the network framing that a single-gene scan would miss:
+
+- **The pigmentation and sex-hormone networks are not independent lists — they are physically
+  coupled.** The clearest bridge is **POMC**: the same pro-hormone is cleaved into α-MSH, which
+  drives pigmentation through the melanocortin receptor, **and** ACTH, which drives the adrenal
+  steroid axis. A gene sitting on both networks is exactly where a sexually dimorphic,
+  hormone-linked colour trait would be expected to act. (POMC's *own* selection signal doesn't
+  survive our alignment QC in this run — a truncated extraction, flagged not interpreted — which
+  is precisely the kind of gene a denser genome set would let us re-test.)
+- **Selection localizes to modules, and modules to branches.** The certified signal is not
+  scattered noise: on the pigmentation side it concentrates in the melanoblast-development module
+  (KITLG–EDN3–TFAP2A); on the hormone side in steroid-metabolism enzymes (HSD17B1/12/7, SRD5A1,
+  CYP7B1) — not the receptors. The open question the per-origin design tests directly is whether
+  **the pigmentation module is remodeled in some origins while the hormone module is remodeled in
+  others** — i.e. different lineages reach the same phenotype through different parts of the
+  coupled network.
+
+That second point is the evolutionary-genomics insight the network approach yields: dichromatism
+looks less like "a gene" and more like *a coupled pigmentation–hormone system with several
+accessible failure/remodeling points*, which is why it can be gained and lost so readily.
 
 ## The one-sentence result
 
@@ -70,11 +99,13 @@ the standard aBSREL failure mode: infinite ω on a branch with dS ≈ 0 is undef
 ## The three-layer test, matched to the origin structure
 
 Because only 3 origins have ≥2 tips, no single method covers all of them. The design uses three
-selection layers, each matched to what the data can support:
+selection layers, each matched to what the data can support. The unifying question each layer
+asks is the coupled-network one: **for a given origin, is it the pigmentation module or the
+hormone module that carries the selection signal** — and does that differ from origin to origin?
 
 | Layer | Method | Covers | Question |
 |---|---|---|---|
-| Per-origin | HyPhy **RELAX** | the 3 multi-tip origins | do *Trachypithecus*, *Nomascus*, *Eulemur* recruit the **same** genes (convergence) or **different** genes (heterogeneous architecture)? |
+| Per-origin | HyPhy **RELAX** | the 3 multi-tip origins | for *Trachypithecus*, *Nomascus*, *Eulemur* — is the intensified module the pigmentation axis, the hormone axis, or both, and is it the **same** module across origins (convergence) or **different** (heterogeneous, branch-specific)? |
 | Per-branch | HyPhy **aBSREL** | all 14 origins (each single-tip origin = one branch) | which individual lineages carry episodic selection, at which genes? |
 | Relative-rate | **RERconverge** | all origins at once | across the tree, do the origins accelerate the same genes — no per-origin foreground needed? |
 
