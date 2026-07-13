@@ -31,6 +31,7 @@ project:
     - notebooks/13_sex_hormone_layer.ipynb
     - notebooks/14_hormone_pigment_interface.ipynb
     - notebooks/15_dichromatism_synthesis.ipynb
+    - notebooks/16_cross_species_gwas.ipynb
 
 website:
   title: "Pigmentation gene network"
@@ -101,6 +102,8 @@ website:
             href: dichromatism.qmd
           - text: "Dichromatism synthesis (results)"
             href: notebooks/15_dichromatism_synthesis.ipynb
+          - text: "Cross-species GWAS"
+            href: notebooks/16_cross_species_gwas.ipynb
       - section: "Sidequests"
         contents:
           - text: "Rescue-screen diagnostic"
