@@ -77,9 +77,11 @@ labile, lost roughly **9× more readily than it is gained**, consistent with dic
 reachable through several alternative genetic routes rather than one canonical switch. (We tested
 the coupling directly: the **pigmentation and sex-hormone modules co-evolve with each other** —
 concordant per-lineage selection, PGLS β ≈ 0.42, *p* ≈ 1e-4 — but that coupled selection **does not
-track the trait**: a phylogenetic correlated-evolution test prefers the model in which module
-selection and dichromatism evolve independently. The network is coupled to itself, not to the
-phenotype.) Whether the *same* or *different* parts of that network are recruited across origins — a
+track the trait**: a phylogenetic correlated-evolution test ([Pagel's *Discrete*, via
+`phytools::fitPagel`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/comparative-genomics/analysis/coevolution_test/coevolution_test.qmd))
+prefers the independent model for both modules — pigmentation ΔAIC = −3.69, *p* = 0.37; hormone
+ΔAIC = −5.71, *p* = 0.68 — over one in which module selection and dichromatism co-vary. The network
+is coupled to itself, not to the phenotype.) Whether the *same* or *different* parts of that network are recruited across origins — a
 shared versus heterogeneous architecture — is **not yet resolvable with the current data**: only 3
 origins are powered for the selection test, and a homogeneity test across the 11 origins with any
 detectable selection does not reject a single shared architecture (χ² p = 0.42). We therefore
@@ -191,8 +193,9 @@ per-origin and cross-species-GWAS layers after the pigmentation module was widen
 primate genome assemblies. Trait history comes from ancestral-state reconstruction
 (`ape`/`phytools`, ARD/ER Mk models, stochastic mapping); coding sequences from homology-based
 extraction (miniprot), codon alignment from MAFFT, and selection inference from the HyPhy suite
-(RELAX per origin, aBSREL per branch) plus RERconverge — run on an HPC cluster from a committed,
-parameterized protocol.
+(RELAX per origin, aBSREL per branch) — run on an HPC cluster from a committed, parameterized
+protocol. A relative-rate layer (RERconverge) is designed and its alignments are staged, but it has
+not yet been run and is not among the results reported here.
 
 **The finding.** Primate sexual dichromatism is polyphyletic (~15 origins), labile (loss ≈ 9× gain),
 and polygenic with no single shared signature — unlike the avian genes-of-major-effect model. A
@@ -251,6 +254,12 @@ from stored outputs:
   circular-tree, and sister-pair contrasts.
 - **[Cross-species GWAS](notebooks/16_cross_species_gwas.ipynb)** runs the phylogeny-controlled
   association scan (PGLS + phyloglm) and produces the *AKR1C4* result.
+- **[Correlated-evolution test](https://github.com/tinalasisi/pigmentation-gene-network/tree/main/comparative-genomics/analysis/coevolution_test)**
+  computes the Pagel's-λ, transition-rate, and `fitPagel` results above from frozen inputs in its
+  own `data/` directory (no network, no cluster). `quarto render coevolution_test.qmd` reproduces
+  every number and the figure; the notebook ends with an assertion block that fails if any value
+  drifts from the committed ones (verified: λ = 0.6547, loss ≈ 9.1× gain, fitPagel independent model
+  preferred for both modules).
 
 The full pipeline (miniprot → MAFFT → RELAX / aBSREL; RERconverge staged but not yet run), the
 14-origin foreground map, the scoped genome-expansion roster, and the exact cluster run protocol are
