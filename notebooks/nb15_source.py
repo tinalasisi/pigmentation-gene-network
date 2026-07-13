@@ -154,12 +154,24 @@ GENOME    = load_input("coding_genome")
 # is the starting observation: whatever builds dichromatism has been assembled *repeatedly and
 # independently*, and lost repeatedly too.
 #
-# The rest of this notebook quantifies that (§3: a labile trait, losses ≫ gains, many origins),
-# then asks what the genetics look like at the few origins we can actually test (§4–§5: at the
-# two origins with a detectable signal, different gene sets and a different module balance), and
-# whether independent origins converged on the same genes (§6: no detectable shared signature —
-# divergence where the comparison is powered, with only two origins signalled). Whether origins
-# differ *systematically* in architecture is left as an open, underpowered question, not asserted.
+# **Two questions, two kinds of data.** The *phylogeny* answers **where, when, and how often** the
+# trait arose — that it is labile, lost far faster than gained, and assembled ~15 times (§3). None
+# of that needs sequence data. The reason we sequenced is a question the tree cannot answer: **what
+# molecular change happened when dichromatism arose** — and here the answer is genuinely
+# surprising. In birds, sexual dichromatism repeatedly evolves through **MC1R**, a single
+# large-effect coat-colour gene. In primates, MC1R is **not** the recurrent route: across the panel
+# it shows no pooled selection signal (K = 0.45, n.s.), surfacing in just one lineage (§4). There is
+# no single "dichromatism gene." Instead, the origins we can test recruited **different gene sets
+# from a coupled pigmentation–hormone system**, with no shared molecular signature where the
+# comparison is powered (§4–§6). That is the payoff of the genetics: not the pattern of origins
+# (the tree gives that), but the finding that a trait built one way in birds is built many
+# different ways in primates.
+#
+# Roadmap: §3 quantifies the lability and origin count from the tree; §4–§5 test *which* genes and
+# *which module* shifted at the origins with enough sequenced species (only two carry a signal);
+# §6 asks whether independent origins converged on the same genes (they do not, where powered).
+# Whether origins differ *systematically* in architecture is left as an open, underpowered
+# question — only two of ~15–19 origins carry a per-origin signal — not asserted.
 
 # %% [markdown]
 # ## 2 — Phenotype: coding and provenance
@@ -612,10 +624,20 @@ else:
 # current sampling cannot resolve (only two of ~15–19 origins carry a per-origin signal), so it is
 # framed as underpowered rather than claimed.
 #
-# That pattern is what the *network* framing predicts and what a single-gene framing would miss:
-# if dichromatism is the output of a coupled pigmentation–hormone system, there are many points at
-# which the system can be pushed to produce (or lose) the phenotype, and different lineages have
-# used different ones. The panel that makes this testable — which genes, and why — is built in
-# **NB14**, with the hormone layer developed in **NB13**. The selection evidence here is strongest
-# for the three powered origins; the single-tip origins and the convergence test are power-limited
-# and framed as such.
+# **What the sequence data add, beyond the tree.** The lability and origin count (§3) come from
+# phenotype and phylogeny alone. The genetics answers what those cannot: *which* molecular change
+# accompanied each origin. Three results here require sequence data and would be invisible to a
+# tree-only analysis — (1) **MC1R, the gene birds use again and again for dichromatism, is not the
+# primate route** (no pooled signal, K = 0.45; it surfaces in one lineage only); (2) the two
+# testable origins recruited **non-overlapping gene sets** from both the pigmentation and the
+# hormone module (§4, §6); and (3) **POMC**, a gene that sits at the pigment–hormone interface, is
+# itself under selection at one origin (§5b). Together these say a trait built one way in birds is
+# built *many different ways* in primates, drawing on a coupled pigmentation–hormone system rather
+# than a single master gene.
+#
+# This is exactly what a network framing predicts and a single-gene framing would miss: if
+# dichromatism is the output of a coupled system, there are many points at which it can be pushed
+# to produce (or lose) the phenotype, and different lineages have used different ones. The panel
+# that makes this testable — which genes, and why — is built in **NB14**, with the hormone layer
+# developed in **NB13**. The selection evidence is strongest for the three powered origins; the
+# single-tip origins and the convergence test are power-limited and framed as such.
