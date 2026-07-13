@@ -1,0 +1,12 @@
+origin_id,nP,nH,balance,n_sel,family,sp,n_tips,powered
+origin_10,2,4,-0.3333333333333333,6,hylobatidae,Hylobates_pileatus,1,aBSREL only
+origin_8,7,5,0.16666666666666666,12,hylobatidae,Nomascus_concolor,3,RELAX-powered
+origin_5,1,3,-0.5,4,cercopithecidae,Colobus_guereza,1,aBSREL only
+origin_7,8,18,-0.38461538461538464,26,cercopithecidae,Trachypithecus_auratus,8,RELAX-powered
+origin_1,1,2,-0.3333333333333333,3,cercopithecidae,Erythrocebus_patas,1,aBSREL only
+origin_2,4,2,0.3333333333333333,6,cercopithecidae,Cercopithecus_hamlyni,1,aBSREL only
+origin_6,2,1,0.3333333333333333,3,cercopithecidae,Colobus_angolensis,1,aBSREL only
+origin_11,2,6,-0.5,8,cebidae,Alouatta_caraya,1,aBSREL only
+origin_12,2,0,1,2,cebidae,Pithecia_pithecia,1,aBSREL only
+origin_14,0,1,-1,1,lemuridae,Eulemur_flavifrons,2,RELAX-powered
+origin_13,1,1,0,2,lemuridae,Eulemur_mongoz,1,aBSREL only

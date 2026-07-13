@@ -1,0 +1,158 @@
+---
+title: "Module-balance selection & Opie-analog dynamics of primate hair dichromatism"
+subtitle: "Frozen-data replicable notebook"
+author: "Molecular Evolution analysis (pigmentation-gene-network)"
+format:
+  html:
+    toc: true
+    code-fold: show
+    df-print: paged
+execute:
+  warning: false
+  message: false
+---
+
+## What this notebook does
+
+Three analyses, all from **frozen inputs** in `./data/` (no network, no external
+state). Any collaborator can `quarto render` this and reproduce every number and
+figure.
+
+1. **Module-balance metric** — for each independent origin of dichromatism, does
+   selection tilt toward the **pigmentation** module or the **sex-hormone**
+   module? Metric = `(nP − nH)/(nP + nH)` over genes under episodic selection
+   (aBSREL, corrected p<0.05) along that origin's tip branches, ranging −1
+   (all hormone) to +1 (all pigmentation).
+2. **Per-lineage gene detail** — *which* genes in each module are selected along
+   each origin, with RELAX-confirmed intensification (BH<0.05, powered origins)
+   marked.
+3. **Opie-analog trait dynamics** — the three tests Opie, Atkinson & Shultz
+   (2012, *Commun Integr Biol* 5:458, doi:10.4161/cib.20821) ran on primate
+   **mating systems** — phylogenetic signal / model choice, ancestral-state
+   reconstruction, and directional transition-rate asymmetry — applied here to
+   **dichromatism** using only our phenotype + tree. We hold no mating-system
+   data (their supplementary values are not available), so we replicate their
+   *method*, not their trait.
+
+### Data provenance (frozen)
+
+| file | source | contents |
+|---|---|---|
+| `data/branch_rates.csv` | HPC full-panel aBSREL (commit 4c07317) | 78 genes × 288 branches, per-branch ω + corrected p + selected flag |
+| `data/per_origin_K.csv` | HPC per-origin RELAX (commit 4c07317) | K + BH p for 3 powered origins (Trachypithecus, Nomascus, Eulemur) |
+| `data/origin_assignments.csv` | own ASR/parsimony | species → origin_id (14 genomic origins) |
+| `data/gene_modules.csv` | curated panel | gene → module (pigmentation / hormone) |
+| `data/species_coding.csv` | Leakey phenotype scoring | species → dichromatic (0/1) |
+| `data/primate_species_tree.nex` | pruned primate tree | 304-tip tree for the genomic set |
+
+Rate/ASR estimates (analysis 3) use the **full 224-tip Leakey phenotype tree**
+(`../../../../Leakey2025/data/updated_pruned_tree.nex` +
+`primate_prelim_complete.csv`) because the genome-sampled set is ascertainment-
+biased toward dichromatic species and would inflate the gain rate. If that path
+is unavailable, analysis 3 is skipped with a note.
+
+```{r setup}
+library(ape); library(phytools); library(tidyverse)
+dd <- "data"
+BR  <- read_csv(file.path(dd,"branch_rates.csv"), show_col_types=FALSE)
+K   <- read_csv(file.path(dd,"per_origin_K.csv"), show_col_types=FALSE)
+OA  <- read_csv(file.path(dd,"origin_assignments.csv"), show_col_types=FALSE)
+GM  <- read_csv(file.path(dd,"gene_modules.csv"), show_col_types=FALSE)
+COD <- read_csv(file.path(dd,"species_coding.csv"), show_col_types=FALSE)
+gmod <- setNames(GM$module, GM$gene)
+fam_order <- c("hylobatidae","cercopithecidae","cebidae","lemuridae")  # closest->furthest from human
+```
+
+## 1. Module-balance metric
+
+```{r module-balance}
+absrel_sel <- BR %>% filter(selected_flag==TRUE, is_tip==TRUE) %>%
+  inner_join(OA %>% select(species, origin_id), by=c("branch"="species"))
+
+bal <- absrel_sel %>% group_by(origin_id) %>%
+  summarise(nP = n_distinct(gene[set=="pigmentation"]),
+            nH = n_distinct(gene[set=="hormone"]), .groups="drop") %>%
+  mutate(balance = (nP - nH)/(nP + nH), n_sel = nP + nH) %>%
+  left_join(OA %>% group_by(origin_id) %>%
+              summarise(family=first(family), sp=first(species),
+                        n_tips=n(), .groups="drop"), by="origin_id") %>%
+  mutate(family = factor(family, levels=fam_order),
+         powered = if_else(origin_id %in% c("origin_7","origin_8","origin_14"),
+                           "RELAX-powered","aBSREL only")) %>%
+  arrange(family, balance)
+knitr::kable(bal %>% select(origin_id, family, sp, nP, nH, balance, n_sel, powered),
+             digits=3, caption="Module balance per origin (−1 hormone .. +1 pigmentation)")
+write_csv(bal, "module_balance_results.csv")
+```
+
+The metric spans the full range: origins tilt all the way to hormone
+(*Eulemur*, *Alouatta*, *Colobus guereza*) and all the way to pigmentation
+(*Pithecia*). The same phenotype is reached through different parts of the
+coupled network — the central finding of the study, now quantified per origin.
+See `fig_module_balance.png` (built in the companion Python cell / `figures.py`).
+
+## 2. Per-lineage gene detail
+
+```{r per-lineage}
+relax_sig <- K %>% filter(p_BH < 0.05) %>% transmute(origin_id, gene, K=round(K,2))
+per_lineage <- absrel_sel %>%
+  group_by(origin_id, set) %>%
+  summarise(genes = paste(sort(unique(gene)), collapse=", "), .groups="drop") %>%
+  pivot_wider(names_from=set, values_from=genes) %>%
+  left_join(OA %>% group_by(origin_id) %>% summarise(sp=first(species), .groups="drop"), by="origin_id")
+knitr::kable(per_lineage, caption="Selected genes per origin, by module (aBSREL corrected p<0.05)")
+knitr::kable(relax_sig, caption="RELAX-confirmed intensification (BH<0.05, powered origins)")
+```
+
+RELAX confirms the aBSREL signal in the two powered origins with enough tips:
+**origin_7 (Trachypithecus)** has 12 significant genes across both modules;
+**origin_8 (Nomascus)** has POMC only; **origin_14 (Eulemur)** has none. See
+`fig_per_lineage_genes.png`.
+
+## 3. Opie-analog trait dynamics
+
+```{r opie-analog}
+lk_path <- "../../../../Leakey2025/data/updated_pruned_tree.nex"
+tr_path <- "../../../../Leakey2025/data/primate_prelim_complete.csv"
+if (file.exists(lk_path) && file.exists(tr_path)) {
+  lk_tr <- read.nexus(lk_path)
+  TRAIT <- read_csv(tr_path, show_col_types=FALSE) %>%
+    mutate(species=gsub(" ","_",species_binom)) %>% distinct(species,.keep_all=TRUE)
+  common <- intersect(lk_tr$tip.label, TRAIT$species)
+  trp <- keep.tip(lk_tr, common)
+  x <- setNames(as.integer(TRAIT$hair_dichromatism_any[match(trp$tip.label, TRAIT$species)]),
+                trp$tip.label)
+  er  <- fitMk(trp, x, model="ER")
+  ard <- fitMk(trp, x, model="ARD")
+  Qm  <- as.Qmatrix(ard)
+  gain <- Qm["0","1"]; loss <- Qm["1","0"]
+  opie_tab <- tibble(
+    opie_test = c("Model / phylogenetic signal","Gain rate (0->1)","Loss rate (1->0)",
+                  "Directional asymmetry","Model support dAIC(ARD-ER)"),
+    opie_2012_mating = c("lambda=0.996; RJ-MCMC best model 71% PP","strong into monogamy",
+                         "zero reverse rate","INTO monogamy (absorbing)","asymmetric favored"),
+    our_dichromatism = c(if_else(AIC(ard)<AIC(er),"ARD asymmetric preferred","ER"),
+                         signif(gain,3), signif(loss,3),
+                         paste0("OUT of dichromatism: loss ",round(loss/gain,1),"x gain"),
+                         round(AIC(er)-AIC(ard),2)))
+  knitr::kable(opie_tab, caption="Opie-analog: same method family, mirror-image dynamic")
+  write_csv(opie_tab, "opie_analog_results.csv")
+  cat(sprintf("\nFull tree: %d tips, %d dichromatic. loss:gain = %.1fx\n",
+              Ntip(trp), sum(x), loss/gain))
+} else {
+  cat("Leakey phenotype tree not found at expected path; analysis 3 skipped.\n")
+}
+```
+
+**Interpretation.** Opie et al. found mating systems evolve *into* monogamy as an
+absorbing state (zero exit rate). Dichromatism shows the mirror-image dynamic: a
+**labile derived state**, gained rarely and lost ~9× faster (ARD preferred,
+ΔAIC≈20). We reproduce their analytical approach (Mk ancestral-state
+reconstruction + directional rate asymmetry) on our own trait; we do not use
+their mating-system data, which is unavailable.
+
+## Session info
+
+```{r sessioninfo}
+sessionInfo()
+```

@@ -1,0 +1,6 @@
+opie_test,opie_2012_mating,our_dichromatism
+Model / phylogenetic signal,lambda=0.996; RJ-MCMC best model 71% PP,ARD asymmetric preferred
+Gain rate (0->1),strong into monogamy,0.0273
+Loss rate (1->0),zero reverse rate,0.248
+Directional asymmetry,INTO monogamy (absorbing),OUT of dichromatism: loss 9.1x gain
+Model support dAIC(ARD-ER),asymmetric favored,19.79
