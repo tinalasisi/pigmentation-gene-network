@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Empty Cell, The Internet Drug, and the Floor Evolution Never Left</title>
+<style>
+  :root{
+    --bg:#12151b; --panel:#1a1f29; --panel2:#20263166;
+    --ink:#eef1f5; --sub:#a9b3c4; --muted:#6c7688;
+    --blue:#0072B2;   /* hypopigmentation / constrained */
+    --orange:#E69F00; /* highlight / receptor layer */
+    --green:#009E73;  /* dial core / mechanism */
+    --vermillion:#D55E00; /* hyperpigmentation / drug */
+    --yellow:#F0E442;
+    --pink:#CC79A7;
+    --grid: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:'Helvetica Neue',Arial,-apple-system,BlinkMacSystemFont,sans-serif;
+    scroll-behavior:smooth;}
+  .wrap{max-width:var(--grid);margin:0 auto;padding:0 28px;}
+  section{padding:74px 0 40px;border-bottom:1px solid #262c38;position:relative;}
+  section:last-of-type{border-bottom:none;}
+  .kicker{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);
+    font-weight:700;margin:0 0 10px;}
+  h1{font-size:40px;line-height:1.12;margin:0 0 14px;font-weight:800;letter-spacing:-.01em;}
+  h2{font-size:29px;margin:0 0 8px;font-weight:800;letter-spacing:-.01em;}
+  .headline{font-size:21px;color:var(--sub);max-width:920px;line-height:1.5;margin:0 0 6px;}
+  .lede{font-size:17px;color:var(--sub);max-width:880px;line-height:1.6;}
+  .arc{display:flex;gap:10px;align-items:center;margin:26px 0 6px;flex-wrap:wrap;}
+  .arcstep{background:var(--panel);border:1px solid #2b3242;border-radius:999px;
+    padding:7px 16px;font-size:13.5px;color:var(--sub);font-weight:600;}
+  .arcstep b{color:var(--ink);}
+  .arrow{color:var(--muted);font-size:16px;}
+  .hero-figure{display:flex;justify-content:center;margin:36px 0 8px;}
+  .stat-row{display:flex;gap:18px;flex-wrap:wrap;margin:28px 0 10px;}
+  .stat{background:var(--panel);border:1px solid #2b3242;border-radius:14px;padding:16px 20px;min-width:150px;flex:1;}
+  .stat .n{font-size:30px;font-weight:800;line-height:1;}
+  .stat .l{font-size:12.5px;color:var(--sub);margin-top:6px;line-height:1.4;}
+  .cap{font-size:13px;color:var(--muted);max-width:900px;margin:10px auto 0;text-align:center;line-height:1.5;}
+  .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;}
+  @media (max-width:900px){.two-col{grid-template-columns:1fr;}}
+  .pillbox{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+  .pill{border-radius:10px;padding:9px 13px;font-size:12.5px;font-weight:600;border:1px solid #2b3242;background:#171b24;color:var(--sub);}
+  .pill.dot::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle;}
+  .approved{border-color:#2f6b4f;background:#12241c;color:#8fe0bf;}
+  .unapproved{border-color:#6b2f2f;background:#241414;color:#f0a9a9;}
+  .disclaimer{margin-top:22px;padding:14px 18px;border:1px dashed #4a3a1f;background:#221c11;border-radius:10px;
+    font-size:13px;color:#e8c98a;line-height:1.55;}
+  .limits{margin-top:30px;padding:16px 20px;border-left:3px solid var(--orange);background:#1a1c22;border-radius:6px;
+    font-size:13.5px;color:var(--sub);line-height:1.6;}
+  .limits b{color:var(--ink);}
+  .quote{font-size:22px;font-weight:700;color:var(--ink);margin:24px 0;line-height:1.4;
+    border-left:4px solid var(--vermillion);padding-left:18px;}
+  .rubric{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;margin-top:22px;}
+  @media (max-width:900px){.rubric{grid-template-columns:1fr;}}
+  .rcard{background:var(--panel);border:1px solid #2b3242;border-radius:14px;padding:20px;}
+  .rcard h3{margin:0 0 8px;font-size:14px;color:var(--yellow);text-transform:uppercase;letter-spacing:.06em;}
+  .rcard p{margin:0;font-size:14px;color:var(--sub);line-height:1.55;}
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(18,21,27,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid #262c38;}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:12px 28px;}
+  .topbar .tt{font-size:13px;font-weight:800;letter-spacing:.04em;color:var(--sub);}
+  .topbar .nav{display:flex;gap:16px;font-size:12.5px;}
+  .topbar .nav a{color:var(--muted);text-decoration:none;font-weight:700;}
+  .topbar .nav a:hover{color:var(--orange);}
+  footer{padding:30px 0 60px;text-align:center;color:var(--muted);font-size:12px;}
+  svg text{font-family:'Helvetica Neue',Arial,sans-serif;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:14px;font-size:12.5px;color:var(--sub);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .legend i{width:11px;height:11px;border-radius:3px;display:inline-block;}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="tt">PIGMENTATION NETWORK &middot; RESEARCHER TRACK</div>
+  <div class="nav"><a href="#act1">I. Clinic</a><a href="#act2">II. Pharmacy</a><a href="#act3">III. Deep Time</a><a href="#rubric">Rubric</a></div>
+</div></div>
+
+<div class="wrap">
+
+<section id="top" style="padding-top:56px;">
+  <div class="kicker">One thread &middot; three scales &middot; one switch</div>
+  <h1>The Empty Cell, The Internet Drug,<br>and the Floor Evolution Never Left</h1>
+  <div class="headline">Two hundred disorders point to exactly one whole-body pigment switch.
+  A drug sold on the internet proves the switch is real by firing it from outside the skin.
+  Evolution, faced with the same architecture, could only ever dim the floor beneath it.</div>
+  <div class="arc">
+    <div class="arcstep">I. CLINIC &mdash; <b>the empty cell</b></div>
+    <div class="arrow">&#8594;</div>
+    <div class="arcstep">II. PHARMACY &mdash; <b>the prediction, sold</b></div>
+    <div class="arrow">&#8594;</div>
+    <div class="arcstep">III. DEEP TIME &mdash; <b>the floor, not the switch</b></div>
+  </div>
+</section>
+
+<!-- ================= ACT I : CLINIC ================= -->
+<section id="act1">
+  <div class="kicker">Act I &mdash; Clinic</div>
+  <h2>Sort 200 pigmentation-disorder genes three ways. One cell comes back empty.</h2>
+  <p class="lede">Every OMIM/GWAS pigmentation-disorder gene we could find, collapsed from raw gene counts to
+  real clinical entities (vitiligo/VKH GWAS swarms alone inflate gene counts roughly 3&times; &mdash; that collapse
+  was a human call, not a script), then sorted by <b>direction</b> (more or less pigment), <b>spread</b>
+  (whole-body vs. patchy), and <b>cell-of-origin</b> (melanocyte-autonomous vs. systemic/hormonal).</p>
+
+  <div class="hero-figure">
+    <svg width="900" height="430" viewBox="0 0 900 430" role="img" aria-label="2 by 2 grid of pigmentation disorder genes by cell-of-origin and spread">
+      <!-- column headers -->
+      <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#a9b3c4" letter-spacing="1">GENERALIZED (WHOLE-BODY)</text>
+      <text x="660" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#a9b3c4" letter-spacing="1">PATCHY / FOCAL</text>
+      <!-- row headers -->
+      <text x="20" y="140" font-size="13.5" font-weight="700" fill="#a9b3c4">MELANOCYTE-</text>
+      <text x="20" y="156" font-size="13.5" font-weight="700" fill="#a9b3c4">AUTONOMOUS</text>
+      <text x="20" y="330" font-size="13.5" font-weight="700" fill="#a9b3c4">SYSTEMIC /</text>
+      <text x="20" y="346" font-size="13.5" font-weight="700" fill="#a9b3c4">HORMONAL</text>
+
+      <!-- Cell 1,1: MA + Generalized : THE EMPTY CELL -->
+      <g transform="translate(130,50)">
+        <rect x="0" y="0" width="340" height="170" rx="14" fill="#171b24" stroke="#D55E00" stroke-width="2" stroke-dasharray="6 5"/>
+        <text x="170" y="26" text-anchor="middle" font-size="12.5" fill="#e8c98a" font-weight="700">albinism &middot; Hermansky-Pudlak &middot; Chediak-Higashi &middot; Griscelli &middot; Tietz/MITF</text>
+        <!-- hypo bar -->
+        <rect x="40" y="55" width="60" height="90" fill="#0072B2" rx="4"/>
+        <text x="70" y="150" text-anchor="middle" font-size="12" fill="#a9b3c4">hypo</text>
+        <text x="70" y="48" text-anchor="middle" font-size="20" font-weight="800" fill="#eef1f5">23</text>
+        <!-- hyper bar: ZERO, shown as void ring -->
+        <circle cx="230" cy="120" r="26" fill="none" stroke="#D55E00" stroke-width="3"/>
+        <line x1="212" y1="102" x2="248" y2="138" stroke="#D55E00" stroke-width="3"/>
+        <text x="230" y="150" text-anchor="middle" font-size="12" fill="#a9b3c4">hyper</text>
+        <text x="230" y="90" text-anchor="middle" font-size="20" font-weight="800" fill="#D55E00">0</text>
+        <text x="170" y="-8" text-anchor="middle" font-size="15" font-weight="800" fill="#f0a9a9">23 genes / 6 entities &rarr; 100% hypo, 0 hyper</text>
+      </g>
+
+      <!-- Cell 1,2: MA + Patchy -->
+      <g transform="translate(500,50)">
+        <rect x="0" y="0" width="300" height="170" rx="14" fill="#171b24" stroke="#2b3242" stroke-width="1.5"/>
+        <text x="150" y="26" text-anchor="middle" font-size="12.5" fill="#8a93a5" font-weight="700">vitiligo &middot; piebaldism &middot; nevi &middot; melasma-like foci</text>
+        <rect x="40" y="55" width="60" height="30" fill="#0072B2" rx="4" transform="translate(0,60)"/>
+        <text x="70" y="150" text-anchor="middle" font-size="12" fill="#a9b3c4">hypo: 7</text>
+        <rect x="170" y="35" width="60" height="110" fill="#D55E00" rx="4"/>
+        <text x="200" y="150" text-anchor="middle" font-size="12" fill="#a9b3c4">hyper: 28</text>
+        <text x="150" y="-8" text-anchor="middle" font-size="14" font-weight="700" fill="#a9b3c4">flips as soon as spread &rarr; patchy</text>
+      </g>
+
+      <!-- Cell 2,1: Systemic + Generalized -->
+      <g transform="translate(130,250)">
+        <rect x="0" y="0" width="340" height="150" rx="14" fill="#171b24" stroke="#E69F00" stroke-width="1.5"/>
+        <text x="170" y="26" text-anchor="middle" font-size="12.5" fill="#e0be7a" font-weight="700">ACTH/adrenal excess (6 genes) &middot; Wilson disease/ATP7B (2 genes)</text>
+        <rect x="200" y="45" width="60" height="90" fill="#D55E00" rx="4"/>
+        <text x="230" y="150" text-anchor="middle" font-size="12" fill="#a9b3c4">hyper: 8</text>
+        <text x="80" y="90" text-anchor="middle" font-size="12" fill="#6c7688">hypo: 0</text>
+        <text x="170" y="-8" text-anchor="middle" font-size="14" font-weight="700" fill="#e0be7a">the ONLY whole-body 'up' &mdash; and it's not a melanocyte gene</text>
+      </g>
+
+      <!-- Cell 2,2: Systemic + Patchy : not observed -->
+      <g transform="translate(500,250)">
+        <rect x="0" y="0" width="300" height="150" rx="14" fill="#14161c" stroke="#2b3242" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <text x="150" y="80" text-anchor="middle" font-size="13" fill="#565e6e">not the observed pattern in this dataset</text>
+      </g>
+    </svg>
+  </div>
+  <div class="legend">
+    <span><i style="background:#0072B2"></i>hypopigmentation</span>
+    <span><i style="background:#D55E00"></i>hyperpigmentation</span>
+    <span><i style="background:#171b24;border:2px dashed #D55E00"></i>the empty cell</span>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">23 : 0</div><div class="l">melanocyte-autonomous + generalized genes, hypo:hyper &mdash; 6 real clinical entities, 3 adversarial checks passed</div></div>
+    <div class="stat"><div class="n">28 : 7</div><div class="l">same cell-of-origin, patchy spread &mdash; the asymmetry is spread-specific, not gene-family-specific</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">generalized-hyperpigmentation genes total &mdash; all systemic/endocrine (adrenal &times;6, Wilson/ATP7B &times;2), none melanocyte-autonomous</div></div>
+  </div>
+
+  <div class="quote">You can switch human pigment off everywhere with a melanocyte gene.<br>No melanocyte gene switches it up everywhere.</div>
+
+  <p class="lede">The only whole-body "up" dial left standing is a diffusible hormone signal:
+  <b style="color:#F0E442">&alpha;-MSH &rarr; MC1R &rarr; cAMP &rarr; CREB &rarr; MITF</b>. A second, independent hormone axis
+  converges on that same final valve: estrogen reaches melanocytes through the membrane receptor
+  <b>GPER1</b> (verified melanocyte cis-eGene, q&asymp;0.005) &mdash; not ER&alpha;, which melanocytes don't express &mdash;
+  raising cAMP into the identical node. Two hands, one switch. That's the biology behind melasma and
+  pregnancy hyperpigmentation, and it's the target the next act hijacks directly.</p>
+</section>
+
+<!-- ================= ACT II : PHARMACY ================= -->
+<section id="act2">
+  <div class="kicker">Act II &mdash; Pharmacy</div>
+  <h2>The prediction, sold on the internet.</h2>
+  <p class="lede">If the clinic-wide architecture is real, there should be no cream, pill, or topical gene
+  therapy that tans skin uniformly by acting on skin &mdash; because that lever does not exist in the disorder
+  map. The only way to darken everywhere is to inject the hormone signal itself. That is exactly the product
+  being sold, unregulated, online.</p>
+
+  <div class="hero-figure">
+    <svg width="980" height="290" viewBox="0 0 980 290" role="img" aria-label="Signaling cascade diagram with Melanotan bypassing skin">
+      <!-- pathway nodes -->
+      <g font-size="14" font-weight="700">
+        <!-- alpha-MSH -->
+        <rect x="10" y="90" width="120" height="56" rx="10" fill="#20263a" stroke="#F0E442" stroke-width="1.5"/>
+        <text x="70" y="113" text-anchor="middle" fill="#F0E442">&alpha;-MSH</text>
+        <text x="70" y="130" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">pituitary hormone</text>
+
+        <!-- estrogen -->
+        <rect x="10" y="10" width="120" height="56" rx="10" fill="#2a1f2c" stroke="#CC79A7" stroke-width="1.5"/>
+        <text x="70" y="33" text-anchor="middle" fill="#CC79A7">estrogen</text>
+        <text x="70" y="50" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">2nd axis</text>
+
+        <!-- MC1R -->
+        <rect x="200" y="90" width="120" height="56" rx="10" fill="#20263a" stroke="#E69F00" stroke-width="2.5"/>
+        <text x="260" y="113" text-anchor="middle" fill="#E69F00">MC1R</text>
+        <text x="260" y="130" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">the hinge receptor</text>
+
+        <!-- GPER1 -->
+        <rect x="200" y="10" width="120" height="56" rx="10" fill="#2a1f2c" stroke="#CC79A7" stroke-width="1.5"/>
+        <text x="260" y="33" text-anchor="middle" fill="#CC79A7">GPER1</text>
+        <text x="260" y="50" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">q&asymp;0.005</text>
+
+        <!-- cAMP -->
+        <rect x="390" y="50" width="110" height="56" rx="10" fill="#122420" stroke="#009E73" stroke-width="2.5"/>
+        <text x="445" y="73" text-anchor="middle" fill="#009E73">cAMP</text>
+        <text x="445" y="90" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">the funnel</text>
+
+        <!-- CREB -->
+        <rect x="560" y="50" width="110" height="56" rx="10" fill="#122420" stroke="#009E73" stroke-width="2.5"/>
+        <text x="615" y="73" text-anchor="middle" fill="#009E73">CREB</text>
+
+        <!-- MITF -->
+        <rect x="730" y="50" width="110" height="56" rx="10" fill="#122420" stroke="#009E73" stroke-width="2.5"/>
+        <text x="785" y="73" text-anchor="middle" fill="#009E73">MITF</text>
+        <text x="785" y="90" text-anchor="middle" fill="#8a93a5" font-size="10.5" font-weight="400">pigment on</text>
+
+        <!-- output -->
+        <rect x="900" y="50" width="70" height="56" rx="10" fill="#171b24" stroke="#2b3242" stroke-width="1.5"/>
+        <text x="935" y="73" text-anchor="middle" fill="#eef1f5" font-size="12">whole-</text>
+        <text x="935" y="88" text-anchor="middle" fill="#eef1f5" font-size="12">body tan</text>
+      </g>
+      <!-- arrows -->
+      <g stroke="#5b6478" stroke-width="2" fill="none" marker-end="url(#arrow)">
+        <path d="M130,118 L200,118"/>
+        <path d="M130,38 L200,38"/>
+        <path d="M320,110 Q360,90 390,80"/>
+        <path d="M320,38 Q360,55 390,64"/>
+        <path d="M500,78 L560,78"/>
+        <path d="M670,78 L730,78"/>
+        <path d="M840,78 L900,78"/>
+      </g>
+      <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="#5b6478"/></marker></defs>
+
+      <!-- Melanotan II injection -->
+      <g transform="translate(160,190)">
+        <rect x="0" y="0" width="330" height="86" rx="12" fill="#241414" stroke="#D55E00" stroke-width="2"/>
+        <text x="14" y="26" font-size="14" font-weight="800" fill="#f0a9a9">MELANOTAN II &mdash; sold online</text>
+        <text x="14" y="46" font-size="11.5" fill="#dba9a9">synthetic, non-selective &alpha;-MSH analog</text>
+        <text x="14" y="63" font-size="11.5" fill="#dba9a9">injects the signal directly &mdash; bypasses skin</text>
+        <text x="14" y="80" font-size="11.5" fill="#dba9a9">unapproved &middot; nausea &middot; can darken moles, masking melanoma</text>
+        <line x1="330" y1="43" x2="360" y2="43" stroke="#D55E00" stroke-width="2.5" marker-end="url(#arrow2)"/>
+      </g>
+      <defs><marker id="arrow2" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+        <path d="M0,0 L7,3.5 L0,7 Z" fill="#D55E00"/></marker></defs>
+      <line x1="490" y1="233" x2="260" y2="146" stroke="#D55E00" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="500" y="230" font-size="11.5" fill="#f0a9a9" font-weight="700">acts here &darr;</text>
+
+      <!-- afamelanotide contrast badge -->
+      <g transform="translate(650,190)">
+        <rect x="0" y="0" width="320" height="86" rx="12" fill="#12241c" stroke="#2f6b4f" stroke-width="2" stroke-dasharray="4 4"/>
+        <text x="14" y="26" font-size="14" font-weight="800" fill="#8fe0bf">afamelanotide &mdash; "Melanotan I"</text>
+        <text x="14" y="46" font-size="11.5" fill="#a9d9c4">FDA-approved &middot; MC1R-selective</text>
+        <text x="14" y="63" font-size="11.5" fill="#a9d9c4">treats erythropoietic protoporphyria</text>
+        <text x="14" y="80" font-size="11.5" fill="#a9d9c4">the legitimate, monitored version of the same idea</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="quote">The drug is the architecture's prediction, sold on the internet &mdash; minus the safety rails.</div>
+
+  <div class="disclaimer"><b>Pharmacology-as-illustration, not medical advice.</b> Melanotan II is an
+  unapproved, non-selective compound sold outside regulated channels, with documented adverse effects including
+  nausea and darkening of moles that can mask melanoma surveillance. Afamelanotide is a separate,
+  FDA-approved, MC1R-selective drug for a specific rare disorder (EPP). It is discussed here only to
+  illustrate the mechanism predicted by Act I, not as a recommendation of either compound.</div>
+</section>
+
+<!-- ================= ACT III : DEEP TIME ================= -->
+<section id="act3">
+  <div class="kicker">Act III &mdash; Deep Time</div>
+  <h2>Evolution had the same problem &mdash; and only the same lever.</h2>
+  <p class="lede">Population-level skin-colour variation is itself whole-body, so natural selection faced
+  exactly the constraint the clinic map exposes: there was no gene that turns pigment up uniformly.
+  Evolution could only tune the melanocyte-autonomous synthesis <b>floor</b>. The classic loci under
+  selection for lighter skin &mdash; <b>SLC24A5, SLC45A2, OCA2, TYR</b> &mdash; are the same genes that cause
+  albinism when fully broken. Derived light-skin alleles are <b>hypomorphs</b>: partial-loss versions of the
+  albinism genes, not a new "darken" switch running in reverse. (MFSD12 sits in the same floor pathway, but
+  its own loss-of-function <i>reduces</i> pheomelanin and tracks with darker, not lighter, skin &mdash; the floor
+  has locus-specific direction, not a uniform dimmer knob.)</p>
+
+  <div class="hero-figure">
+    <svg width="980" height="330" viewBox="0 0 980 330" role="img" aria-label="Constraint landscape strip plot of LOEUF values">
+      <!-- axis -->
+      <line x1="80" y1="230" x2="900" y2="230" stroke="#3a4254" stroke-width="1.5"/>
+      <text x="80" y="256" font-size="12" fill="#8a93a5">0.0 (most constrained)</text>
+      <text x="900" y="256" font-size="12" fill="#8a93a5" text-anchor="end">2.2 (most LoF-tolerant) &rarr;</text>
+      <text x="490" y="278" font-size="12.5" fill="#a9b3c4" text-anchor="middle" font-weight="700">LOEUF (loss-of-function observed/expected upper bound)</text>
+
+      <!-- scale ticks helper: x = 80 + val/2.2*820 -->
+      <!-- group range bands -->
+      <rect x="80" y="120" width="160" height="90" rx="10" fill="#009E7322"/>
+      <text x="160" y="112" text-anchor="middle" font-size="12.5" fill="#5fd6b4" font-weight="700">DIAL CORE (n=8)</text>
+      <text x="160" y="130" text-anchor="middle" font-size="10.5" fill="#8fd9c4">MITF &middot; CREB1 &middot; PRKACA &middot; PRKAR1A</text>
+      <text x="160" y="144" text-anchor="middle" font-size="10.5" fill="#8fd9c4">CREBBP &middot; GNAS &middot; ADCY3 &middot; ADCY6</text>
+
+      <rect x="440" y="120" width="160" height="90" rx="10" fill="#0072B222"/>
+      <text x="520" y="112" text-anchor="middle" font-size="12.5" fill="#6fb8e6" font-weight="700">SYNTHESIS FLOOR (n=8)</text>
+      <text x="520" y="130" text-anchor="middle" font-size="10.5" fill="#a9cfe6">TYR &middot; TYRP1 &middot; DCT &middot; OCA2 &middot; SLC45A2</text>
+      <text x="520" y="144" text-anchor="middle" font-size="10.5" fill="#a9cfe6">MLANA &middot; PMEL &middot; SLC24A5</text>
+
+      <rect x="690" y="120" width="200" height="90" rx="10" fill="#E69F0022"/>
+      <text x="790" y="112" text-anchor="middle" font-size="12.5" fill="#f0c060" font-weight="700">RECEPTOR / HORMONE LAYER</text>
+      <text x="790" y="130" text-anchor="middle" font-size="10.5" fill="#f0d19a">incl. MC1R &amp; POMC</text>
+
+      <!-- median markers -->
+      <!-- dial core median 0.32 -> x=80+0.32/2.2*820=199 -->
+      <polygon points="199,225 208,238 190,238" fill="#009E73"/>
+      <text x="199" y="200" text-anchor="middle" font-size="13" font-weight="800" fill="#5fd6b4">median 0.32</text>
+
+      <!-- MITF individual 0.48 -> x=259 -->
+      <circle cx="259" cy="230" r="7" fill="#009E73" stroke="#eef1f5" stroke-width="1.5"/>
+      <text x="259" y="175" text-anchor="middle" font-size="12.5" font-weight="800" fill="#5fd6b4">MITF 0.48</text>
+      <text x="259" y="190" text-anchor="middle" font-size="10.5" fill="#8fd9c4">pLI 0.992</text>
+
+      <!-- synthesis floor median 1.13 -> x=80+1.13/2.2*820=501 -->
+      <polygon points="501,225 510,238 492,238" fill="#0072B2"/>
+      <text x="501" y="200" text-anchor="middle" font-size="13" font-weight="800" fill="#6fb8e6">median 1.13</text>
+
+      <!-- receptor/hormone median 1.86 -> x=80+1.86/2.2*820=773 -->
+      <polygon points="773,225 782,238 764,238" fill="#E69F00"/>
+      <text x="773" y="200" text-anchor="middle" font-size="13" font-weight="800" fill="#f0c060">median 1.86</text>
+
+      <!-- MC1R individual 1.93 -> x=800 -->
+      <circle cx="800" cy="230" r="9" fill="#D55E00" stroke="#eef1f5" stroke-width="2"/>
+      <text x="800" y="175" text-anchor="middle" font-size="14" font-weight="900" fill="#f0a060">MC1R 1.93</text>
+      <text x="800" y="190" text-anchor="middle" font-size="10.5" fill="#f0c8a0">rank 4 / 753 &middot; top 0.5%</text>
+
+      <!-- baseline dots on axis -->
+      <line x1="80" y1="230" x2="900" y2="230" stroke="#3a4254" stroke-width="1.5"/>
+
+      <!-- stats footer -->
+      <text x="490" y="310" text-anchor="middle" font-size="11.5" fill="#6c7688">
+      Dial core vs. synthesis floor &mdash; LOEUF: Mann-Whitney U=64, p=1.55e-4, r=-1.00, FDR q=8e-4 &middot;
+      tissue breadth: U=0, p=6.75e-4, r=1.00, FDR q=1.7e-3 &middot; complete rank separation, both directions.</text>
+    </svg>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><div class="n">1.13 vs 0.32</div><div class="l">median LOEUF, synthesis floor vs. dial core &mdash; the floor tolerates loss; the dial does not</div></div>
+    <div class="stat"><div class="n">5 / 54 vs 54 / 54</div><div class="l">median tissues expressed &mdash; the floor is skin-restricted machinery; the dial core is expressed everywhere in the body</div></div>
+    <div class="stat"><div class="n">MC1R: rank 4 / 753</div><div class="l">the Melanotan target is the 4th-most LoF-tolerant scored gene in the whole 803-gene network</div></div>
+  </div>
+
+  <div class="quote">The receptor a drug can hijack &mdash; and the enzymes evolution actually dimmed &mdash;<br>
+  are both evolutionarily disposable. The switch they feed, MITF's cAMP&rarr;CREB core, is locked down.</div>
+
+  <p class="lede">That is the same architecture from Act I, seen from evolutionary time: MC1R and the synthesis
+  floor are the parts biology (and pharmacology) is free to vary &mdash; disposable at the edges. MITF and the
+  intracellular dial it anchors are the part nothing gets to touch. Disease can only turn it fully off
+  (Act I). A drug can only reach it from outside, through the receptor (Act II). Selection could only ever
+  dim the floor beneath it (Act III). Same node, three vantage points.</p>
+
+  <div class="limits">
+  <b>Honest limits.</b> The clinical direction-law ("loss of a positive melanin regulator &rarr; less pigment") is close
+  to the definition of albinism &mdash; it demonstrates the classification method, not a new biological law. One gene
+  (ATP7B/Wilson disease) is the sole miss in an n=4 failure-boundary check, which is too small to claim
+  "confidence flags misses" as a general rule. Primate coat-colour dichromatism (15&times; independent origins,
+  always polygenic) is a separate evidence track from a different dataset and is not merged into the verified
+  disorder-architecture claim above.
+  </div>
+</section>
+
+<!-- ================= RUBRIC ================= -->
+<section id="rubric">
+  <div class="kicker">For the judges</div>
+  <h2>Three questions, answered.</h2>
+  <div class="rubric">
+    <div class="rcard">
+      <h3>What did Claude Science help us do</h3>
+      <p>Re-annotated ~200 OMIM/GWAS disorder-gene rows into real clinical entities (correcting a ~3&times;
+      inflation from vitiligo/VKH GWAS gene swarms), ran three adversarial verification passes on the
+      resulting classification, computed LOEUF / pLI / tissue-breadth rank statistics across an 803-gene
+      network, and cross-checked every sex-hormone convergence edge against a live PubMed lookup.</p>
+    </div>
+    <div class="rcard">
+      <h3>How are we closer to a finding</h3>
+      <p>Scattered case reports, a GWAS catalogue, a constraint table, and a pharmacology footnote don't
+      normally talk to each other. Structuring them by direction &times; spread &times; cell-of-origin turned them
+      into one falsifiable structural claim &mdash; a genuinely empty cell &mdash; and then a statistically clean,
+      complete rank separation (both p&lt;10&#8315;&sup3;, FDR-corrected) that explains, mechanistically, why an
+      unregulated internet drug works exactly the way the clinic map predicts.</p>
+    </div>
+    <div class="rcard">
+      <h3>What is the flagship</h3>
+      <p>The empty melanocyte-autonomous / generalized / hyperpigmentation cell (23 genes, 6 entities,
+      0 hyper) and the single cAMP&rarr;CREB&rarr;MITF dial it exposes &mdash; now shown to be pharmacologically
+      fireable from outside the skin (Melanotan) and evolutionarily untouchable at its core, with only the
+      disposable receptor (MC1R) and disposable floor enzymes free to vary.</p>
+    </div>
+  </div>
+</section>
+
+</div>
+<footer>Pigmentation &times; Sex-Hormone &times; Melanotan &middot; every figure above recomputed this session from the project's verified artifacts &middot; researcher-track hackathon pitch</footer>
+</body>
+</html>

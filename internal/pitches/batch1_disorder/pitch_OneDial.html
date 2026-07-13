@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The One Dial — Pigmentation Network Pitch</title>
+<style>
+  :root{
+    --bg:#0b1220;
+    --panel:#121b2e;
+    --panel2:#182541;
+    --ink:#eef2f8;
+    --sub:#9fb0c9;
+    --accent:#e69f00;   /* Okabe-Ito orange */
+    --accent2:#56b4e9;  /* Okabe-Ito sky blue */
+    --accent3:#009e73;  /* Okabe-Ito green */
+    --danger:#d55e00;   /* Okabe-Ito vermillion */
+    --empty:#cc79a7;    /* Okabe-Ito pink, for the empty-cell highlight */
+    --grid:#2a3958;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font-family:"Helvetica Neue",Arial,"Segoe UI",sans-serif;
+    scroll-behavior:smooth;}
+  .section{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:5vh 8vw;
+    border-bottom:1px solid var(--grid);
+    position:relative;
+  }
+  .kicker{
+    color:var(--accent2);
+    font-size:0.95rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:0.6rem;
+  }
+  h1{
+    font-size:3.1rem;
+    line-height:1.08;
+    margin:0 0 0.5rem 0;
+    font-weight:800;
+    letter-spacing:-0.01em;
+  }
+  h2{
+    font-size:2.1rem;
+    line-height:1.15;
+    margin:0 0 0.8rem 0;
+    font-weight:800;
+  }
+  .lead{
+    font-size:1.35rem;
+    color:var(--sub);
+    max-width:52em;
+    line-height:1.5;
+    margin-bottom:1.2rem;
+  }
+  .accent{color:var(--accent);font-weight:700;}
+  .accent2{color:var(--accent2);font-weight:700;}
+  .accent3{color:var(--accent3);font-weight:700;}
+  .danger{color:var(--danger);font-weight:700;}
+  .empty-tag{color:var(--empty);font-weight:700;}
+  .row{display:flex;gap:3rem;align-items:center;flex-wrap:wrap;}
+  .col{flex:1 1 380px;min-width:320px;}
+  .cardbox{
+    background:var(--panel);
+    border:1px solid var(--grid);
+    border-radius:14px;
+    padding:1.6rem 1.8rem;
+    box-shadow:0 6px 24px rgba(0,0,0,0.35);
+  }
+  .stat{
+    font-size:2.6rem;
+    font-weight:800;
+    color:var(--accent);
+    line-height:1;
+  }
+  .stat-label{color:var(--sub);font-size:0.95rem;margin-top:0.3rem;}
+  .foot-nav{
+    position:fixed;bottom:14px;right:18px;
+    font-size:0.75rem;color:var(--sub);opacity:0.6;
+    z-index:50;
+  }
+  .badge{
+    display:inline-block;background:var(--panel2);border:1px solid var(--grid);
+    border-radius:999px;padding:0.25rem 0.9rem;font-size:0.85rem;color:var(--sub);
+    margin-right:0.5rem;margin-bottom:0.4rem;
+  }
+  .limits{
+    font-size:0.92rem;color:var(--sub);border-left:3px solid var(--accent2);
+    padding:0.6rem 1rem;background:var(--panel);border-radius:6px;
+    max-width:56em;
+  }
+  .rubric{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:1rem;
+  }
+  .rubric .cardbox{padding:1.2rem 1.4rem;}
+  .rubric h3{margin:0 0 0.5rem 0;color:var(--accent2);font-size:1.05rem;}
+  .rubric p{margin:0;font-size:0.95rem;color:var(--ink);line-height:1.45;}
+  svg text{font-family:"Helvetica Neue",Arial,sans-serif;}
+  .disclaimer{
+    font-size:0.82rem;color:var(--sub);margin-top:1rem;font-style:italic;
+    border-top:1px dashed var(--grid);padding-top:0.6rem;
+  }
+  .scrolldown{
+    position:absolute;bottom:24px;left:8vw;color:var(--sub);font-size:0.85rem;
+    animation:bob 1.8s infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+  @media (max-width:900px){
+    .rubric{grid-template-columns:1fr;}
+    h1{font-size:2.1rem;}
+    .row{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+
+<div class="foot-nav">scroll ↓ · The One Dial</div>
+
+<!-- ============ SECTION 1 : COLD OPEN ============ -->
+<section class="section" id="s1">
+  <div class="kicker">A peptide sold on the internet</div>
+  <h1>People inject a hormone analog to get a tan.<br>Why does <span class="accent">that</span> work when no cream ever has?</h1>
+  <div class="lead">
+    "Melanotan" — an unapproved synthetic copy of the hormone α‑MSH — is sold online to darken skin evenly,
+    everywhere, on demand. Dermatology has never shipped a cream, pill, or gene therapy that does the same thing
+    by acting on the skin itself. We mapped the entire human pigmentation‑disorder genome to find out why —
+    and found the one cell in the map that is provably, structurally <span class="empty-tag">empty</span>.
+  </div>
+  <div class="scrolldown">↓ the map</div>
+</section>
+
+<!-- ============ SECTION 2 : HERO — THE EMPTY QUADRANT ============ -->
+<section class="section" id="s2">
+  <div class="kicker">The flagship finding · 3 adversarial checks passed</div>
+  <h2>Sort ~200 pigmentation‑disorder genes by direction × spread.<br>One cell of the grid is <span class="empty-tag">structurally empty.</span></h2>
+  <div class="row">
+    <div class="col" style="flex:1.3 1 480px;">
+      <div id="quadrant-svg"></div>
+    </div>
+    <div class="col">
+      <div class="cardbox" style="margin-bottom:1rem;">
+        <div class="stat">23 <span style="font-size:1.3rem;color:var(--sub);">genes / 6 entities</span></div>
+        <div class="stat-label">melanocyte‑autonomous + generalized (whole‑body) disorders</div>
+        <div style="margin-top:0.6rem;font-size:1.05rem;">→ <b>100% hypopigmentation, 0% hyperpigmentation.</b></div>
+      </div>
+      <div class="cardbox">
+        <div style="font-size:1.05rem;line-height:1.5;">
+        The same genes, same cell type, but <b>patchy</b> instead of generalized: 28 hyper / 7 hypo — the
+        asymmetry flips. Emptiness is specific to <i>whole‑body</i> gain.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="limits" style="margin-top:1.2rem;">
+    Honest phrasing: <b>no melanocyte‑autonomous gene</b> causes generalized hyperpigmentation — not "no gene at all."
+    Eight genes reach generalized hyperpigmentation through non‑melanocyte, systemic routes (endocrine ACTH excess,
+    6 genes / 1 entity; hepatic copper toxicity via ATP7B, 2 genes / 1 entity) — see next.
+  </div>
+</section>
+
+<!-- ============ SECTION 3 : THE ONE DIAL ============ -->
+<section class="section" id="s3">
+  <div class="kicker">What fills the empty cell</div>
+  <h2>You can switch human pigment <span class="danger">OFF</span> everywhere with a skin gene.<br>
+  Only a <span class="accent2">hormone</span> switches it <span class="accent">ON</span> everywhere.</h2>
+  <div class="row">
+    <div class="col" style="flex:1.4 1 520px;">
+      <div id="dial-svg"></div>
+    </div>
+    <div class="col">
+      <div class="cardbox">
+        <p style="font-size:1.05rem;line-height:1.55;margin:0;">
+        Two independent, diffusible endocrine signals — <span class="accent">melanocortin</span> (α‑MSH → MC1R)
+        and <span class="accent2">estrogen</span> (→ GPER1, a verified melanocyte cis‑eGene, q≈0.005; melanocytes
+        are ERα‑negative so this is not the classical estrogen receptor) — funnel into the exact same intracellular
+        node: <b>cAMP → CREB → MITF.</b>
+        </p>
+        <p style="margin-top:0.8rem;font-size:1.0rem;color:var(--sub);">
+        More than one hand on the switch — but only one switch. (The estrogen arm is the mechanistic basis of
+        melasma / pregnancy hyperpigmentation.) Every convergence edge was checked against a live PubMed lookup.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 4 : MELANOTAN PAYOFF ============ -->
+<section class="section" id="s4">
+  <div class="kicker">Back to the cold open</div>
+  <h2>Melanotan is the architecture's prediction, sold on the internet.</h2>
+  <div class="row">
+    <div class="col">
+      <div class="cardbox">
+        <p style="font-size:1.1rem;line-height:1.6;margin:0;">
+        Melanotan&nbsp;II is a synthetic, <b>non‑selective</b> analog of α‑MSH. It doesn't touch skin —
+        it injects the one whole‑body signal that was always going to work, because the grid shows there is no
+        second route: the melanocortin input into <span class="accent">cAMP → CREB → MITF</span>. The
+        FDA‑approved, MC1R‑selective cousin (afamelanotide, marketed once as "Melanotan I") treats a rare
+        light‑sensitivity disorder — <i>same dial, medically controlled.</i>
+        </p>
+        <div class="disclaimer">
+        Pharmacology shown for mechanism illustration only, not medical advice. Melanotan II sold online is
+        unapproved and non‑selective, with documented adverse effects including nausea and darkening of moles
+        that can mask melanoma monitoring. This is not a safety endorsement.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="badge">α‑MSH → MC1R</div>
+      <div class="badge">cAMP</div>
+      <div class="badge">CREB</div>
+      <div class="badge">MITF</div>
+      <div class="badge">melanin ↑ — whole body</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 5 : THE EVOLUTIONARY TWIST ============ -->
+<section class="section" id="s5">
+  <div class="kicker">The twist — molecular evolution, same network, no new data</div>
+  <h2>The drug target is evolutionarily <span class="accent">disposable</span>.<br>
+  The machine it triggers is <span class="accent3">locked down</span>.</h2>
+  <div class="row">
+    <div class="col" style="flex:1.5 1 560px;">
+      <div id="constraint-svg"></div>
+    </div>
+    <div class="col">
+      <div class="cardbox">
+        <p style="margin:0;font-size:1.0rem;line-height:1.5;">
+        Across 753 scored network genes, synthesis‑floor enzymes (TYR, OCA2, SLC45A2…) and the intracellular
+        MITF–cAMP–CREB dial core (MITF, CREB1, PRKACA, GNAS…) separate completely on LoF tolerance
+        (Mann‑Whitney U=64, p=1.55e‑4, r=−1.00) and tissue breadth (U=0, p=6.75e‑4, r=1.00).
+        </p>
+        <p style="margin-top:0.7rem;font-size:1.05rem;">
+        <b>MC1R — the Melanotan target — has LOEUF 1.93, rank 4 of 753</b> (top 0.5% most LoF‑tolerant),
+        grouped with the disposable floor and POMC, not with the core it activates.
+        MITF itself sits deep in the constrained tail (LOEUF 0.48, pLI 0.992).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 6 : LIMITS + RUBRIC ============ -->
+<section class="section" id="s6">
+  <div class="kicker">Where this stands</div>
+  <h2>One dial, two hands, one disposable trigger.</h2>
+  <div class="limits" style="margin-bottom:1.6rem;">
+    Honest limits: the mechanism→direction rule ("losing a positive melanin regulator lightens skin") is a
+    methodological check, not a discovery — it is close to the definition of albinism. MFSD12 loss reduces
+    pheomelanin and is associated with <b>darker</b> skin, not lighter. Primate coat‑dichromatism evolution
+    (15 independent origins, always polygenic) is a separate evidence track, not merged into this
+    disorder‑architecture claim.
+  </div>
+  <div class="rubric">
+    <div class="cardbox">
+      <h3>What did Claude Science help us do</h3>
+      <p>Re‑annotated ~200 disorder genes by direction/spread/cell‑of‑origin, collapsed raw gene counts to real
+      clinical entities (correcting a ~3× GWAS‑swarm inflation), ran 3 adversarial verification passes, and
+      PubMed‑checked every hormone‑convergence edge.</p>
+    </div>
+    <div class="cardbox">
+      <h3>How are we closer to a finding</h3>
+      <p>We didn't just find "genes for pigment" — we found the network has exactly one whole‑body up‑channel,
+      it's endocrine not epidermal, two hormones share it, and its human‑drug target is the most evolutionarily
+      expendable node in the whole pathway.</p>
+    </div>
+    <div class="cardbox">
+      <h3>What is the flagship</h3>
+      <p>The empty quadrant cell (23/0) plus the convergent single dial (cAMP→CREB→MITF) plus its disposable
+      trigger (MC1R, LOEUF 1.93, rank 4/753) — three independently‑verified results that lock together into
+      one causal story, illustrated by a drug already sold on the internet.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+// ---------- SVG 1 : the empty quadrant grid ----------
+(function(){
+  const w=520,h=420;
+  const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");
+  svg.setAttribute("viewBox",`0 0 ${w} ${h}`);
+  svg.setAttribute("width","100%");
+  svg.setAttribute("height","auto");
+  svg.style.maxWidth="560px";
+  svg.style.display="block";
+
+  const NS="http://www.w3.org/2000/svg";
+  function el(tag,attrs){
+    const e=document.createElementNS(NS,tag);
+    for(const k in attrs) e.setAttribute(k,attrs[k]);
+    return e;
+  }
+
+  // layout
+  const gx=140, gy=70, cw=170, ch=140, gap=10;
+  // cells: [row][col] row0=Generalized row1=Patchy ; col0=Hypo col1=Hyper
+  const cells=[
+    {r:0,c:0,label:"Generalized\n+ Hypo",n:"23",sub:"genes / 6 entities",empty:false,fill:"#3a4a6b"},
+    {r:0,c:1,label:"Generalized\n+ Hyper",n:"0",sub:"structurally empty",empty:true,fill:"none"},
+    {r:1,c:0,label:"Patchy\n+ Hypo",n:"7",sub:"genes",empty:false,fill:"#3a4a6b"},
+    {r:1,c:1,label:"Patchy\n+ Hyper",n:"28",sub:"genes",empty:false,fill:"#3a4a6b"},
+  ];
+
+  // axis labels
+  svg.appendChild(el("text",{x:gx+cw+gap/2+cw/2,y:30,"text-anchor":"middle",fill:"#9fb0c9",
+    "font-size":"14","font-weight":"700"}));
+  const colHead=["HYPOpigment","HYPERpigment"];
+  colHead.forEach((t,i)=>{
+    const txt=el("text",{x:gx+i*(cw+gap)+cw/2,y:50,"text-anchor":"middle",fill:"#eef2f8","font-size":"16","font-weight":"800"});
+    txt.textContent=t; svg.appendChild(txt);
+  });
+  const rowHead=["GENERALIZED\n(whole body)","PATCHY"];
+  rowHead.forEach((t,i)=>{
+    const lines=t.split("\n");
+    lines.forEach((line,li)=>{
+      const txt=el("text",{x:gx-14,y:gy+i*(ch+gap)+ch/2+ (li-lines.length/2+0.7)*14,
+        "text-anchor":"end",fill:"#9fb0c9","font-size":"12","font-weight":"700"});
+      txt.textContent=line; svg.appendChild(txt);
+    });
+  });
+
+  cells.forEach(cell=>{
+    const x=gx+cell.c*(cw+gap), y=gy+cell.r*(ch+gap);
+    const rect=el("rect",{x:x,y:y,width:cw,height:ch,rx:12,
+      fill: cell.empty? "#0b1220" : cell.fill,
+      stroke: cell.empty? "#cc79a7" : "#56b4e9",
+      "stroke-width": cell.empty? 3 : 1.4,
+      "stroke-dasharray": cell.empty? "6,5":"none"});
+    svg.appendChild(rect);
+
+    const num=el("text",{x:x+cw/2,y:y+ch/2-4,"text-anchor":"middle",
+      fill: cell.empty? "#cc79a7":"#e69f00","font-size": cell.empty? "46":"38","font-weight":"800"});
+    num.textContent=cell.n;
+    svg.appendChild(num);
+
+    const sub=el("text",{x:x+cw/2,y:y+ch/2+30,"text-anchor":"middle",
+      fill:"#9fb0c9","font-size":"12","font-weight": cell.empty? "700":"400"});
+    sub.textContent=cell.sub;
+    svg.appendChild(sub);
+
+    if(cell.empty){
+      const tag=el("text",{x:x+cw/2,y:y+ch-14,"text-anchor":"middle",
+        fill:"#cc79a7","font-size":"13","font-weight":"800","letter-spacing":"0.05em"});
+      tag.textContent="EMPTY CELL";
+      svg.appendChild(tag);
+    }
+  });
+
+  const cap=el("text",{x:gx+cw+gap/2+cw/2, y:gy+2*(ch+gap)+34, "text-anchor":"middle",
+    fill:"#9fb0c9","font-size":"12"});
+  cap.textContent="melanocyte-autonomous disorder genes only (~200 OMIM/GWAS entries, sorted this session)";
+  svg.appendChild(cap);
+
+  document.getElementById("quadrant-svg").appendChild(svg);
+})();
+
+// ---------- SVG 2 : convergence dial ----------
+(function(){
+  const w=560,h=380;
+  const NS="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(NS,"svg");
+  svg.setAttribute("viewBox",`0 0 ${w} ${h}`);
+  svg.setAttribute("width","100%"); svg.style.maxWidth="600px"; svg.style.display="block";
+  function el(tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);return e;}
+  function text(x,y,str,attrs){
+    const t=el("text",Object.assign({x:x,y:y,"text-anchor":"middle"},attrs));
+    t.textContent=str; return t;
+  }
+  function arrow(x1,y1,x2,y2,color){
+    const line=el("line",{x1:x1,y1:y1,x2:x2,y2:y2,stroke:color,"stroke-width":3,
+      "marker-end":"url(#arrow-"+color.replace('#','')+")"});
+    return line;
+  }
+  // defs: arrowheads per color
+  const defs=el("defs",{});
+  ["#e69f00","#56b4e9","#009e73"].forEach(c=>{
+    const m=el("marker",{id:"arrow-"+c.replace('#',''),markerWidth:10,markerHeight:10,
+      refX:8,refY:5,orient:"auto-start-reverse"});
+    const p=el("path",{d:"M0,0 L10,5 L0,10 Z",fill:c});
+    m.appendChild(p); defs.appendChild(m);
+  });
+  svg.appendChild(defs);
+
+  // top boxes: melanocortin (left), estrogen (right)
+  function box(x,y,w_,h_,fill,stroke){
+    return el("rect",{x:x,y:y,width:w_,height:h_,rx:10,fill:fill,stroke:stroke,"stroke-width":2});
+  }
+
+  const b1={x:30,y:20,w:210,h:56}, b2={x:320,y:20,w:210,h:56};
+  svg.appendChild(box(b1.x,b1.y,b1.w,b1.h,"#1c2b45","#e69f00"));
+  svg.appendChild(text(b1.x+b1.w/2,b1.y+24,"\u03b1-MSH \u2192 MC1R",{fill:"#e69f00","font-size":16,"font-weight":700}));
+  svg.appendChild(text(b1.x+b1.w/2,b1.y+44,"melanocortin axis",{fill:"#9fb0c9","font-size":11}));
+
+  svg.appendChild(box(b2.x,b2.y,b2.w,b2.h,"#1c2b45","#56b4e9"));
+  svg.appendChild(text(b2.x+b2.w/2,b2.y+24,"Estrogen \u2192 GPER1",{fill:"#56b4e9","font-size":16,"font-weight":700}));
+  svg.appendChild(text(b2.x+b2.w/2,b2.y+44,"sex-hormone axis (q\u22480.005)",{fill:"#9fb0c9","font-size":11}));
+
+  // arrows down to center node
+  svg.appendChild(arrow(b1.x+b1.w/2, b1.y+b1.h, w/2-6, 150, "#e69f00"));
+  svg.appendChild(arrow(b2.x+b2.w/2, b2.y+b2.h, w/2+6, 150, "#56b4e9"));
+
+  // center node : cAMP -> CREB -> MITF, drawn as 3 chained boxes
+  const nodeY=160, nodeH=60, nodeW=140, gap=26;
+  const labels=["cAMP","CREB","MITF"];
+  const startX = w/2 - (3*nodeW+2*gap)/2;
+  labels.forEach((lab,i)=>{
+    const x=startX+i*(nodeW+gap);
+    svg.appendChild(box(x,nodeY,nodeW,nodeH,"#243b22","#009e73"));
+    svg.appendChild(text(x+nodeW/2,nodeY+nodeH/2+6,lab,{fill:"#009e73","font-size":20,"font-weight":800}));
+    if(i<2){
+      svg.appendChild(arrow(x+nodeW,nodeY+nodeH/2,x+nodeW+gap,nodeY+nodeH/2,"#009e73"));
+    }
+  });
+
+  // single dial caption under the node
+  svg.appendChild(text(w/2,nodeY+nodeH+34,"ONE VALVE",{fill:"#cc79a7","font-size":15,"font-weight":800,"letter-spacing":"0.08em"}));
+
+  // arrow down to melanin output
+  svg.appendChild(arrow(w/2, nodeY+nodeH+44, w/2, nodeY+nodeH+90, "#009e73"));
+  svg.appendChild(box(w/2-140, nodeY+nodeH+94, 280, 50, "#1c2b45", "#e69f00"));
+  svg.appendChild(text(w/2, nodeY+nodeH+124, "melanin \u2191 \u2014 whole body",{fill:"#e69f00","font-size":17,"font-weight":800}));
+
+  document.getElementById("dial-svg").appendChild(svg);
+})();
+
+// ---------- SVG 3 : constraint landscape (LOEUF strip plot) ----------
+(function(){
+  const w=560,h=340;
+  const NS="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(NS,"svg");
+  svg.setAttribute("viewBox",`0 0 ${w} ${h}`);
+  svg.setAttribute("width","100%"); svg.style.maxWidth="600px"; svg.style.display="block";
+  function el(tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);return e;}
+  function text(x,y,str,attrs){const t=el("text",Object.assign({x:x,y:y},attrs));t.textContent=str;return t;}
+
+  const marginL=60, marginR=40, axisY=260;
+  const xmin=0, xmax=2.1;
+  function X(v){ return marginL + (v-xmin)/(xmax-xmin) * (w-marginL-marginR); }
+
+  // axis
+  svg.appendChild(el("line",{x1:marginL,y1:axisY,x2:w-marginR,y2:axisY,stroke:"#2a3958","stroke-width":2}));
+  [0,0.5,1.0,1.5,2.0].forEach(v=>{
+    svg.appendChild(el("line",{x1:X(v),y1:axisY,x2:X(v),y2:axisY+6,stroke:"#2a3958"}));
+    svg.appendChild(text(X(v),axisY+22,v.toFixed(1),{fill:"#9fb0c9","font-size":11,"text-anchor":"middle"}));
+  });
+  svg.appendChild(text((marginL+w-marginR)/2, axisY+42, "LOEUF (higher = more LoF-tolerant / less constrained)",
+    {fill:"#9fb0c9","font-size":12,"text-anchor":"middle"}));
+
+  // constrained core band (low LOEUF) vs disposable floor band (higher LOEUF)
+  svg.appendChild(el("rect",{x:X(0.15),y:60,width:X(0.55)-X(0.15),height:170,fill:"#009e7322",stroke:"none"}));
+  svg.appendChild(text(X(0.35),50,"constrained dial core",{fill:"#009e73","font-size":12,"font-weight":700,"text-anchor":"middle"}));
+
+  svg.appendChild(el("rect",{x:X(0.95),y:60,width:X(1.35)-X(0.95),height:170,fill:"#56b4e922",stroke:"none"}));
+  svg.appendChild(text(X(1.15),50,"synthesis-floor enzymes",{fill:"#56b4e9","font-size":12,"font-weight":700,"text-anchor":"middle"}));
+
+  // points: [label, value, y-row, color]
+  const rows=[
+    ["MITF",0.48,90,"#009e73"],
+    ["CREB1 / PRKACA / GNAS (core, median)",0.32,120,"#009e73"],
+    ["TYR / OCA2 / SLC45A2 (floor, median)",1.13,150,"#56b4e9"],
+    ["POMC",1.86,180,"#e69f00"],
+    ["MC1R  (rank 4 / 753 most tolerant)",1.93,210,"#cc79a7"],
+  ];
+  rows.forEach(([lab,val,y,color])=>{
+    svg.appendChild(el("line",{x1:X(val),y1:y-10,x2:X(val),y2:axisY,stroke:color,"stroke-width":1,"stroke-dasharray":"3,3",opacity:0.5}));
+    svg.appendChild(el("circle",{cx:X(val),cy:y,r: lab.startsWith("MC1R")?9:7,fill:color,stroke:"#0b1220","stroke-width":1.5}));
+    svg.appendChild(text(X(val), y-14, lab, {fill:"#eef2f8","font-size":11.5,"text-anchor": val>1.5? "end":"start", "font-weight": lab.startsWith("MC1R")?800:500}));
+  });
+
+  document.getElementById("constraint-svg").appendChild(svg);
+})();
+</script>
+</body>
+</html>
