@@ -299,34 +299,71 @@ if ORIGINS is not None:
 # clean next step and is noted in the limitations.
 
 # %%
-# Load the leave-one-out surprise table (computed reproducibly in nb15_phylo.R) and show the
-# species whose observed state most disagrees with the prediction from the rest of the tree.
+# Load the leave-one-out surprise table (computed reproducibly in nb15_phylo.R), join the
+# developmental coding from the same CSV that defines the trait, and show the species whose
+# observed state most disagrees with the prediction from the rest of the tree.
 _surf = os.path.join(SYN, "data", "nb15_loo_surprise.csv")
-if os.path.exists(_surf):
+if _surf and os.path.exists(_surf):
     SUR = pd.read_csv(_surf)
+    # bring in natal-coat / ontogeny coding from the trait CSV (keyed on the same binomial->tip)
+    _cod = CODING.copy()
+    _dev = _cod.set_index("tip")[["natal_coat", "ontogenetic_trajectory_color"]]
+    SUR = SUR.merge(_dev, left_on="tip", right_index=True, how="left")
     _lab = {1: "dichromatic", 0: "monochromatic"}
     top = SUR.head(12).copy()
     top["observed"] = top["observed"].map(_lab)
-    print("Most phylogenetically surprising species (|observed - predicted-from-neighbours|):\n")
-    print(top.to_string(index=False))
+    print("Most phylogenetically surprising species, with developmental coding:\n")
+    print(top[["tip", "observed", "predicted", "surprise",
+               "natal_coat", "ontogenetic_trajectory_color"]].to_string(index=False))
     ng = int(((SUR.observed == 1) & (SUR.predicted < 0.5)).sum())
     nd = int((SUR.observed == 1).sum())
     nl = int(((SUR.observed == 0) & (SUR.predicted > 0.5)).sum())
     print(f"\nUnexpected dichromatic origins (dichromatic, predicted < 0.5): {ng} of {nd}")
     print(f"Reversal candidates (monochromatic, predicted > 0.5): {nl}")
+
+    # near-total coupling of natal coat with adult dichromatism (largely definitional; see prose)
+    dich = SUR[SUR.observed == 1]; mono = SUR[SUR.observed == 0]
+    print(f"\nNatal coat present: {int((dich.natal_coat == 1).sum())}/{len(dich)} dichromatic vs "
+          f"{int((mono.natal_coat == 1).sum())}/{len(mono)} monochromatic species.")
+    print("Ontogenetic trajectory among the surprising dichromatic origins:")
+    print(dich[dich.predicted < 0.5]["ontogenetic_trajectory_color"]
+          .value_counts().to_string())
 else:
     print("nb15_loo_surprise.csv not built yet - run nb15_phylo.R")
 
 # %% [markdown]
-# **Table 2. The phylogenetically surprising species (leave-one-out).** From
-# `nb15_loo_surprise.csv`. `observed` = the coded state; `predicted` = P(dichromatic) estimated
-# from the rest of the tree (parent-node reconstruction propagated down the species' own branch);
-# `surprise` = |observed − predicted|, so 1.0 = maximally unexpected. The top of the list is
-# dominated by **dichromatic species sitting in otherwise-monochromatic genera** (Macaca
-# arctoides, Alouatta caraya, Erythrocebus patas, Pithecia pithecia, …) — the single-species
-# independent origins that make dichromatism look scattered. Only one clear **reversal** appears
-# (a monochromatic species predicted dichromatic): Trachypithecus delacouri, embedded in the
-# dichromatic langur radiation.
+# **Table 2. The phylogenetically surprising species (leave-one-out), with developmental coding.**
+# From `nb15_loo_surprise.csv` joined to the trait CSV. `observed` = the coded state; `predicted` =
+# P(dichromatic) estimated from the rest of the tree (parent-node reconstruction propagated down
+# the species' own branch); `surprise` = |observed − predicted|, so 1.0 = maximally unexpected.
+# `natal_coat` = whether infants wear a distinct natal coat; `ontogenetic_trajectory_color` = how
+# the coat matures (`bidirectional_maturation` = infant differs from both adult sexes and matures
+# toward each; `male_maturation` = infant resembles the adult female, males diverge at maturity;
+# `early_dimorphism` = sexes differ from early on). The top of the list is dominated by
+# **dichromatic species sitting in otherwise-monochromatic genera** (Macaca arctoides, Alouatta
+# caraya, Erythrocebus patas, Pithecia pithecia, …) — the single-species independent origins that
+# make dichromatism look scattered. Only one clear **reversal** appears (a monochromatic species
+# predicted dichromatic): Trachypithecus delacouri, embedded in the dichromatic langur radiation.
+
+# %% [markdown]
+# ### The surprising origins are whole developmental programs, not just adult colour
+#
+# The surprising dichromatic origins do not merely have differently-coloured adult males and
+# females — they carry a full ontogenetic program: a distinct infant **natal coat** that then
+# matures into the sex-specific adult pattern. Almost every dichromatic species in the tree carries
+# a natal coat (24 of 25) versus ~6% of monochromatic species (11 of 199), and the surprising and
+# expected dichromatic species carry it at the same near-universal rate.
+#
+# *A definitional caveat, stated plainly.* This coupling is partly built into the coding: if the
+# adults are dichromatic and the species is **not** dichromatic from birth, an infant coat distinct
+# from at least one adult sex must exist — so "has a natal coat" is close to a logical consequence
+# of "adults are dichromatic," not an independent correlate. What is **not** definitional, and is
+# the point here, is the *trajectory*: the surprising origins are mostly `bidirectional_maturation`
+# and `male_maturation`, i.e. dichromatism is reached by **sex-specific maturation away from a
+# shared juvenile coat**, not by males and females differing from birth. That means each of these
+# scattered origins switched on the same *kind* of developmental module — a coordinated
+# natal-coat-to-adult trajectory — rather than an ad-hoc adult-colour change. It reframes the
+# lability finding: what is gained and lost ~15 times is a developmental program, not a paint job.
 
 # %% [markdown]
 # ### Figure 3 — Where gains and losses fall (stochastic density map)
