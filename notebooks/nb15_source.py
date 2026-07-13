@@ -155,9 +155,11 @@ GENOME    = load_input("coding_genome")
 # independently*, and lost repeatedly too.
 #
 # The rest of this notebook quantifies that (§3: a labile trait, losses ≫ gains, many origins),
-# then asks what the genetics look like at the origins we can test (§4–§5: different gene sets,
-# different module balance each time), and whether independent origins converged on the same
-# genes (§6: no detectable shared signature, within the limits of the power we have).
+# then asks what the genetics look like at the few origins we can actually test (§4–§5: at the
+# two origins with a detectable signal, different gene sets and a different module balance), and
+# whether independent origins converged on the same genes (§6: no detectable shared signature —
+# divergence where the comparison is powered, with only two origins signalled). Whether origins
+# differ *systematically* in architecture is left as an open, underpowered question, not asserted.
 
 # %% [markdown]
 # ## 2 — Phenotype: coding and provenance
@@ -243,7 +245,7 @@ if ORIGINS is not None:
 # scattered clades, is the signature of a labile, repeatedly-assembled phenotype rather than one
 # ancient origin retained.
 #
-# **Origin count — an estimator- and sampling-dependent number, reported honestly.** How many
+# **Origin count — an estimator- and sampling-dependent number.** How many
 # times dichromatism arose depends on both the coding scope and the method:
 #
 # - On the **117-species genome subset** — the coding the selection scan actually runs on — a
@@ -427,7 +429,7 @@ else:
 # assembled as a whole endocrine pathway while the pigmentation module began as the canonical
 # melanogenesis core, so a *neutral* lineage does not sit at 0. The clean-30 pigmentation
 # expansion (NB14) brings the panel to 57 pigmentation + 53 hormone genes — a **count** balance of
-# +0.036 — but for per-origin balance the honest denominator is a **per-gene selection rate**, not
+# +0.036 — but for per-origin balance the correct denominator is a **per-gene selection rate**, not
 # a raw count, so that an origin is not scored pigmentation-leaning simply because more
 # pigmentation genes were tested. This section computes balance as a rate ratio; NB14's +0.036 is
 # the panel's *count* balance and is not the same quantity (the two must not be conflated).
@@ -536,12 +538,13 @@ if BRANCH is not None and "absrel_corrected_p" in BRANCH.columns:
 # divergence would say the coupled system can be perturbed at many points to the same phenotypic
 # end.
 #
-# **Method and honest framing.** For each powered origin the gene set is those panel genes with
+# **Method and framing.** For each powered origin the gene set is those panel genes with
 # a significant per-origin selection-intensity shift (RELAX K, p_BH < 0.05); overlap between
 # origins is the shared-gene count. On the current panel (size printed by the cell below; the
 # clean-30 expansion is still landing), only **two** of the three powered origins carry a
 # detectable signal — *Trachypithecus* (a multi-gene, both-module set) and *Nomascus* (a small
-# hormone-leaning set around POMC) — and they share **zero** genes; *Eulemur* has none passing
+# all-pigmentation set: HGF, HRAS and POMC, the last classified as pigmentation in the panel) —
+# and they share **zero** genes; *Eulemur* has none passing
 # threshold.
 # So where the comparison is well-powered it shows **divergence, not convergence**: independent
 # origins are built through different genes.
@@ -583,9 +586,12 @@ else:
 # ## 7 — Synthesis
 #
 # Sexual dichromatism in primates is a **labile, polygenic trait built from two coupled modules**.
-# It has arisen on the order of 15–19 times and is lost far faster than it is gained (§3). Where
-# its genetic basis can be tested, independent origins do not reuse the same genes (§4, §6), and
-# they differ in whether pigmentation or hormone-signalling genes carry the selection signal (§5).
+# It has arisen on the order of 15–19 times and is lost far faster than it is gained (§3). At the
+# two origins where its genetic basis can actually be tested, the signalled gene sets do not
+# overlap (§4, §6) and differ in module balance (§5) — divergence where the comparison is powered.
+# Whether origins differ *systematically* in architecture across the clade is an open question the
+# current sampling cannot resolve (only two of ~15–19 origins carry a per-origin signal), so it is
+# framed as underpowered rather than claimed.
 #
 # That pattern is what the *network* framing predicts and what a single-gene framing would miss:
 # if dichromatism is the output of a coupled pigmentation–hormone system, there are many points at
