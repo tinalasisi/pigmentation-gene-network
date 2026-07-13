@@ -80,8 +80,6 @@ website:
         href: dichromatism.qmd
       - text: "Coupled pigmentation–hormone network"
         href: coupled-network.qmd
-      - text: "NB15 · Dichromatism synthesis (results)"
-        href: notebooks/15_dichromatism_synthesis.ipynb
       - text: "Interactive · layered substrate"
         href: substrate_multilayer.qmd
       - section: "Foundation — the network"
@@ -122,6 +120,8 @@ website:
             href: notebooks/13_sex_hormone_layer.ipynb
           - text: "NB14 · Gene panel (two coupled networks)"
             href: notebooks/14_hormone_pigment_interface.ipynb
+          - text: "NB15 · Dichromatism synthesis (results)"
+            href: notebooks/15_dichromatism_synthesis.ipynb
       - section: "Appendix — data extraction"
         contents:
           - text: "NB1a · Bajpai CRISPR screen"
