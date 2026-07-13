@@ -88,6 +88,17 @@ tips and 8 of 67 monochromatic tips**. It is scattered across the tree, not conc
 dichromatic lineages. *TFAP2A* is a widely re-used gene under episodic selection in many
 primates; being dichromatic does not predict selection on it.
 
+![TFAP2A dN/dS across the primate tree — the bird figure's grammar, inverted. Branches painted by dN/dS (ω = 1 neutral at the colour centre), dichromatic tips marked red, episodic selection starred. In galliforms (Nadeau 2007) one gene, MC1R, showed elevated dN/dS specifically in the dichromatic clades; here TFAP2A is conserved almost everywhere and the selected branches (★) are scattered across dichromatic and monochromatic lineages alike.](comparative-genomics/results/figures/fig_tfap2a_tree.png)
+
+::: {.column-margin}
+Compare Nadeau et al. (2007), Fig. 1 — the same tree-with-dN/dS-and-dichromatism layout for
+galliform birds, where the signal *does* track the dichromatic clades because it is essentially
+one gene.
+:::
+
+The companion strip plot below separates the same result by dichromatic vs. monochromatic status,
+on a −log₁₀(corrected p) axis:
+
 ![TFAP2A: episodic selection is not concentrated on dichromatic branches](comparative-genomics/results/figures/fig_tfap2a_branches.png)
 
 ::: {.callout-tip appearance="simple"}
