@@ -80,7 +80,11 @@ def main():
             try: run_absrel(aln,tree,outj,os.path.join(a.out,f"{g}.log"))
             except subprocess.CalledProcessError:
                 print(f"{g:10s} aBSREL FAILED"); continue
-        rows=parse_absrel(outj)
+        try:
+            rows=parse_absrel(outj)
+            if not rows: raise ValueError("no branches")
+        except Exception as e:
+            print(f"{g:10s} SKIP (unreadable/empty aBSREL json: {type(e).__name__})"); continue
         n_sel=sum(1 for r in rows if r["absrel_corrected_p"] is not None and r["absrel_corrected_p"]<0.05)
         for r in rows:
             r["gene"]=g; r["set"]=panel.get(g,"?")
