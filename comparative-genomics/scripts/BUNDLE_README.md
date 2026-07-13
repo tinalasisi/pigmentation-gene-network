@@ -45,7 +45,7 @@ For SLURM, wrap 01/02 in an sbatch script (they are the heavy steps); 03 is triv
 | `accessions_gibbon_flagship.csv` | 9 gibbon target genomes (5 dichromatic / 4 monochromatic) |
 | `accessions_all_recoverable.csv` | 117 target genomes across 4 families |
 | `species_states.csv` | species → dichromatic/monochromatic (RELAX foreground = dichromatic) |
-| `leakey_primate_tree.nex` | primate species tree (Leakey2025); pruned per gene to available tips |
+| `primate_species_tree.nex` | primate species tree (primate phylogeny source); pruned per gene to available tips |
 
 ## Key parameters you may want to change
 - **Foreground definition** (`species_states.csv`): RELAX tags every `dichromatic`

@@ -28,6 +28,6 @@ CYP7B1 (hormone); FOXD3 clean but K extreme. ~10 BH-sig are branch_len_blowup-fl
 ## Reproduce
 `scripts/slurm/fetch_array.sbatch` (`--array=1-117%20`) -> `relax_array.sbatch` (`--array=1-80`) ->
 `report_diag.sbatch`. Env: scratch conda `align` (see `../envs/environment.yml`); PATH-only in batch scripts.
-Config: `config/{accessions_all_recoverable.csv, gene_panel.csv, species_states.csv, leakey_primate_tree.nex}`.
+Config: `config/{accessions_all_recoverable.csv, gene_panel.csv, species_states.csv, primate_species_tree.nex}`.
 Pipeline: `01_fetch_and_extract.sh` (miniprot/direct CDS) -> `02_align_and_relax.py` (MAFFT codon +
 gap-trim + internal-stop QC + RELAX) -> `03_report_summary.py` -> `03b_diagnostics.py`.

@@ -11,7 +11,7 @@
 #
 # INPUT (all produced upstream, no data transfer needed):
 #   aln/<gene>.codon.aln.fa      per-gene codon alignments (from 02)
-#   leakey_primate_tree.nex      master primate tree (topology source)
+#   primate_species_tree.nex      master primate tree (topology source)
 #   species_states.csv           species,dichromatism  (foreground = dichromatic)
 # What RERconverge actually needs: a set of per-gene trees WITH BRANCH LENGTHS
 # in substitutions/site on a COMMON topology. We build those here with phangorn
@@ -34,7 +34,7 @@ library(RERconverge)
 
 args <- commandArgs(trailingOnly=TRUE)
 aln_dir  <- if (length(args)>=1) args[1] else "aln"
-tree_nex <- if (length(args)>=2) args[2] else "leakey_primate_tree.nex"
+tree_nex <- if (length(args)>=2) args[2] else "primate_species_tree.nex"
 states_f <- if (length(args)>=3) args[3] else "species_states.csv"
 dir.create("report", showWarnings=FALSE)
 dir.create("report/rer_plots", showWarnings=FALSE)
