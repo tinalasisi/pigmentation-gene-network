@@ -95,9 +95,15 @@ def run_one(gene, oid, origins, all_dich, args):
     row["n_foreground_tagged"] = n_fg
     if not tf or n_fg < args.min_fg:
         row["status"] = "tag_failed"; return row
+    # prune the alignment to the kept tips so it matches the pruned tree (HyPhy needs identical taxa)
+    keepset = set(keep); pruned = os.path.join(odir, f"{gene}.pruned.aln.fa"); _w = False
+    with open(nuc) as _fh, open(pruned, "w") as _o:
+        for _ln in _fh:
+            if _ln.startswith(">"): _w = _ln[1:].strip() in keepset
+            if _w: _o.write(_ln)
     outj = os.path.join(odir, f"{gene}.RELAX.json")
     try:
-        sh(["hyphy", "CPU=" + str(args.threads), "relax", "--alignment", nuc, "--tree", tf,
+        sh(["hyphy", "CPU=" + str(args.threads), "relax", "--alignment", pruned, "--tree", tf,
             "--test", "Test", "--output", outj, "--code", "Universal"],
            stdout=open(os.path.join(odir, f"{gene}.log"), "w"), stderr=subprocess.STDOUT)
         row["status"] = "ok"; row["relax_json"] = outj
