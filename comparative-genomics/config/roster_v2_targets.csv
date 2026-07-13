@@ -1,0 +1,7 @@
+species,chosen_accession,assembly_level,annotated,dichromatism,family,note
+Hoolock leuconedys,GCA_047372625.1,Chromosome,False,dichromatic,hylobatidae,genus-level recovery of origin_8 (H. hoolock has no assembly); UCONN_HLeu1 chromosome-level
+Alouatta palliata,GCA_004027835.1,Scaffold,False,monochromatic,cebidae,reinforce origin_11 background near Alouatta_caraya
+Alouatta seniculus,GCA_963574235.1,Scaffold,False,monochromatic,cebidae,reinforce origin_11 background near Alouatta_caraya
+Pithecia pithecia,GCA_028551515.1,Chromosome,False,dichromatic,cebidae,BETTER assembly (chromosome) than v1 copy for origin_12
+Cacajao calvus,GCA_963573955.1,Scaffold,False,monochromatic,cebidae,pitheciid outgroup near origin_12 (Pithecia)
+Presbytis comata,GCA_963575215.1,Scaffold,False,monochromatic,cercopithecidae,genus-level proxy near origin_15 (Presbytis hosei has no assembly; P. hosei itself is the unsampled dichromatic origin)
