@@ -60,7 +60,11 @@ galliforms, *BCO2* for carotenoid in finches) is, in primates, polygenic, not dr
 evolutionarily labile — arising ~15
 times and readily lost. That alone reframes sexual dichromatism as a network-level rather than
 single-locus trait; whether the network is remodeled at the *same* points across origins or
-different ones is the open question this design sets up but is not yet powered to answer. The full
+different ones is the open question this design sets up but is not yet powered to answer. Testing
+the pigment–hormone coupling directly, we find the two modules **co-evolve with each other**
+(concordant per-lineage selection) but that coupled selection **does not track dichromatism** — and
+a phylogeny-controlled cross-species association scan yields a single suggestive candidate,
+*AKR1C4* (a sex-hormone-module steroid reductase), not an established locus. The full
 pipeline, data, and figures are in
 [`comparative-genomics/`](comparative-genomics/); the specific analysis behind this finding is in
 [`comparative-genomics/analysis/module_selection/`](comparative-genomics/analysis/module_selection/).

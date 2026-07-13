@@ -70,8 +70,12 @@ hormonally regulated (there is an active estrogen/testosterone-control literatur
 not.** Hair dichromatism has arisen **~15 times independently** across the primate radiation and
 is **polygenic in every origin** (and *MC1R* is not the hit). The trait is also evolutionarily
 labile, lost roughly **9× more readily than it is gained**, consistent with dichromatism being
-reachable through the coupled **pigmentation × sex-hormone** network rather than one canonical
-switch. Whether the *same* or *different* parts of that network are recruited across origins — a
+reachable through several alternative genetic routes rather than one canonical switch. (We tested
+the coupling directly: the **pigmentation and sex-hormone modules co-evolve with each other** —
+concordant per-lineage selection, PGLS β ≈ 0.42, *p* ≈ 1e-4 — but that coupled selection **does not
+track the trait**: a phylogenetic correlated-evolution test prefers the model in which module
+selection and dichromatism evolve independently. The network is coupled to itself, not to the
+phenotype.) Whether the *same* or *different* parts of that network are recruited across origins — a
 shared versus heterogeneous architecture — is **not yet resolvable with the current data**: only 3
 origins are powered for the selection test, and a homogeneity test across the 11 origins with any
 detectable selection does not reject a single shared architecture (χ² p = 0.42). We therefore
@@ -160,7 +164,7 @@ hormone module that carries the selection signal** — and does that differ from
 | genetic basis | genes of major effect, clade- and pigment-specific — *MC1R*/melanin in galliforms (Nadeau 2007), *BCO2*/carotenoid in finches (Gazda 2020) | polygenic; no single gene of major effect (*MC1R* is **not** the hit) |
 | pigmentation signal sits at | a named large-effect locus per clade | melanoblast development / signaling (KITLG–EDN3–TFAP2A) — no single dominant node |
 | architecture across origins | not systematically tested clade-wide | polygenic; shared-vs-heterogeneous **underpowered to resolve** (χ² p = 0.42) |
-| hormone coupling | present — dichromatism genes hormonally regulated (Griffith et al. 2026) | present — coupled pigmentation × sex-hormone network by design |
+| hormone coupling | present — dichromatism genes hormonally regulated (Griffith et al. 2026) | the two modules co-evolve with each other (concordant selection, tested) but that coupling does not track the trait (correlated-evolution test: independent model preferred) |
 | trait stability | — | labile; loss ≈ 9× faster than gain |
 
 ## Limitations
@@ -174,6 +178,15 @@ hormone module that carries the selection signal** — and does that differ from
   and is **not** claimed. The apparent hormone-tilt in the pooled selected set (≈59% hormone) is
   consistent with the panel's own 2:1 hormone:pigmentation gene ratio (binomial *p* ≈ 0.17), not
   with preferential selection on either module.
+- **A phylogeny-controlled cross-species association scan finds one suggestive gene.** Treating the
+  origins as a cross-species GWAS — dichromatic/monochromatic as case/control, per-lineage dN/dS as
+  the per-gene marker, and phylogenetic covariance (per-gene Pagel's λ) as the stratification
+  control — one gene survives multiple-testing correction: *AKR1C4*, a sex-hormone-module steroid
+  reductase, with elevated dN/dS on dichromatic lineages (BH *p* ≈ 0.04, confirmed by a
+  tree-structured permutation test, *p* ≈ 5e-4). This is a **single suggestive candidate**, not an
+  established locus: one hit among ~80 genes with only ~24 cases, and the binding constraint is the
+  number of independent dichromatic lineages, which no method can inflate. See
+  `notebooks/16_cross_species_gwas.ipynb`.
 - **Shared vs. heterogeneous architecture is currently underpowered to resolve.** A χ² homogeneity
   test across the 11 origins with any detectable selection does not reject a single shared
   architecture (*p* ≈ 0.42; Monte-Carlo *p* ≈ 0.45), and the two "pure-module" poles (*Eulemur*,
