@@ -1,0 +1,108 @@
+---
+title: "Sexual dichromatism across primates"
+subtitle: "A trait that is one gene in birds is a repeatedly, independently assembled multi-gene phenotype in primates"
+description: "Comparative molecular-evolution test of selection on pigmentation vs. sex-hormone genes across the independent origins of primate hair sexual dichromatism."
+toc: true
+execute:
+  enabled: false
+---
+
+## The one-sentence result
+
+In birds, sexual dichromatism is nearly a single-gene switch — the melanocortin receptor
+*MC1R* ([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)). **In primates it is
+not.** Hair dichromatism has arisen **~15 times independently** across the primate radiation,
+is **polygenic in every origin** (and *MC1R* is not the hit), and shows **no single shared
+genetic signature** across those origins — the architecture is origin-specific. The trait is
+also evolutionarily labile, lost roughly **9× more readily than it is gained**, consistent with
+dichromatism being reachable by several different **pigmentation × sex-hormone** genetic routes
+rather than one canonical switch.
+
+::: {.callout-note}
+## Why this is the pitch
+This is the first clade-wide, multi-gene, selection-inference test of the genomic basis of
+sexual dichromatism in primates. Prior primate work is single-gene (MC1R) and framed as coat
+colour, not sexual dichromatism; no published study or 2023–2026 preprint tests it as a
+network-level, per-origin question. The contribution is a **shift in the unit of analysis** —
+from "dichromatic species" to "independent origin of dichromatism" — and the finding that the
+architecture is heterogeneous across those origins.
+:::
+
+## Dichromatism is not one event — it is ~15
+
+The earlier version of this analysis pooled every dichromatic species into a single foreground
+and asked "does selection intensify in dichromatic lineages." That presupposes a shared,
+convergent architecture — the very thing in question. Reconstructing the trait's history from
+the raw 238-species trait table and tree (our own ancestral-state reconstruction, not inherited
+from any prior result) shows why pooling is the wrong frame:
+
+![Hair dichromatism arose ~15 times independently across the primate tree](comparative-genomics/results/figures/fig_origins.png)
+
+The 24 genomically-sampled dichromatic species collapse to only **14 independent origins**
+(≈15 across the full tree; one, *Presbytis hosei*, has no genome). Of the 14:
+
+- **11 are single genomic tips** — each a genuinely separate evolutionary gain.
+- **3 are multi-tip radiations** descended from one ancestral gain each: *Trachypithecus* (8
+  tips), *Nomascus* (3), *Eulemur macaco/flavifrons* (2).
+
+So **10 of the 24 pooled tips (42%) are within-clade replicates of just 3 events**, and
+*Trachypithecus* alone carried a third of the foreground weight. A pooled test reporting *n* = 24
+was effectively an *n* = 14 analysis dominated by one clade.
+
+![The pooling problem, quantified](comparative-genomics/results/figures/fig_pooling.png)
+
+## Selection is scattered, not concentrated
+
+With aBSREL fitting a dN/dS to every branch, the pattern on *TFAP2A* — one of the pooled
+"certified" pigmentation hits — is telling: episodic selection appears on **4 of 21 dichromatic
+tips and 8 of 67 monochromatic tips**. It is scattered across the tree, not concentrated on
+dichromatic lineages. *TFAP2A* is a widely re-used gene under episodic selection in many
+primates; being dichromatic does not predict selection on it.
+
+![TFAP2A: episodic selection is not concentrated on dichromatic branches](comparative-genomics/results/figures/fig_tfap2a_branches.png)
+
+::: {.callout-tip appearance="simple"}
+Two branches showed an *undefined* ω from near-zero synonymous change (*Macaca tonkeana*,
+*Mandrillus sphinx*) — flagged as artifacts, **not** read as extreme positive selection. This is
+the standard aBSREL failure mode: infinite ω on a branch with dS ≈ 0 is undefined, not signal.
+:::
+
+## The three-layer test, matched to the origin structure
+
+Because only 3 origins have ≥2 tips, no single method covers all of them. The design uses three
+selection layers, each matched to what the data can support:
+
+| Layer | Method | Covers | Question |
+|---|---|---|---|
+| Per-origin | HyPhy **RELAX** | the 3 multi-tip origins | do *Trachypithecus*, *Nomascus*, *Eulemur* recruit the **same** genes (convergence) or **different** genes (heterogeneous architecture)? |
+| Per-branch | HyPhy **aBSREL** | all 14 origins (each single-tip origin = one branch) | which individual lineages carry episodic selection, at which genes? |
+| Relative-rate | **RERconverge** | all origins at once | across the tree, do the origins accelerate the same genes — no per-origin foreground needed? |
+
+## The cross-taxon contrast
+
+| | birds (galliforms) | primates |
+|---|---|---|
+| genetic basis | ~monogenic — *MC1R* (Nadeau 2007) | polygenic; *MC1R* is **not** the hit |
+| pigmentation signal sits at | the melanocortin receptor switch | melanoblast development / signalling (KITLG–EDN3–TFAP2A) — a different node |
+| architecture across origins | a shared switch | **heterogeneous — origin-specific** |
+| trait stability | — | labile; loss ≈ 9× faster than gain |
+
+## Honest limits
+
+- Per-origin RELAX is statistically powered only for the 3 multi-tip origins; the 11 single-tip
+  origins are testable via aBSREL (per branch) and RERconverge (relative rates). All three are
+  reported; single-tip origins are not treated as missing data.
+- One phenotypic origin (*Presbytis hosei*) has no genome; a targeted genome-expansion round adds
+  a *Presbytis* proxy and recovers the *Hoolock* origin at genus level.
+- The pigmentation-vs-hormone **set-level** contrast is not significant (permutation *p* ≈ 0.87)
+  and is **not** claimed. The finding is about *architecture* — which genes, in which origins —
+  not about one gene set dominating.
+
+## Reproducibility
+
+The full pipeline (miniprot → MAFFT → RELAX / aBSREL / RERconverge), the 14-origin foreground map,
+the two-round genome-expansion roster, and the exact cluster run protocol are in
+[`comparative-genomics/`](https://github.com/tinalasisi/pigmentation-gene-network/tree/main/comparative-genomics)
+and the handoff notes under `internal/handoffs/notes/`. The selection run executes on the
+University of Michigan Great Lakes cluster; only small summary tables are committed and pasted
+back — genomes and alignments stay on scratch.

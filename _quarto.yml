@@ -7,6 +7,7 @@ project:
   # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
     - index.qmd
+    - dichromatism.qmd
     - substrate_multilayer.qmd
     - notebooks/01_reconstruct_published_network.ipynb
     - notebooks/01a_extract_bajpai_crispr.ipynb
@@ -48,6 +49,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: dichromatism.qmd
+        text: Dichromatism
       - href: substrate_multilayer.qmd
         text: Interactive
     right:
@@ -60,6 +63,8 @@ website:
     contents:
       - text: Overview
         href: index.qmd
+      - text: "Sexual dichromatism across primates"
+        href: dichromatism.qmd
       - text: "Interactive · layered substrate"
         href: substrate_multilayer.qmd
       - section: "Foundation — the network"
