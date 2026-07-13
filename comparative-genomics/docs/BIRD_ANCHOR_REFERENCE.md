@@ -11,6 +11,18 @@ earlier draft of this memo labeled the test/result "confirmed" from search snipp
 the body was retrieved — that overstatement is corrected here; everything below is now checked
 against the PDF itself.)
 
+**Broader bird context (added 2026-07-13).** Nadeau 2007 is our methods anchor, but it is *not*
+the whole avian picture, and the project docs must not present birds as a universal "single-gene
+MC1R switch." The accurate statement is that the best-studied avian dichromatism maps to **genes
+of major effect for a specific pigment system in a specific clade**: MC1R for melanin in galliforms
+(this paper), and **BCO2 for carotenoid-based dichromatism in finches**
+([Gazda et al. 2020, *Science*](https://doi.org/10.1126/science.aba0803), PMID 32527835). These
+genes are hormonally regulated, and there is an active avian estrogen/testosterone-control
+literature ([Griffith, Falk & Kimball 2026, *Integr Comp Biol*](https://doi.org/10.1093/icb/icag079),
+PMID 42262725; review: [*J Hered* 2021](https://doi.org/10.1093/jhered/esab015), PMID 34002228). See
+`BIRD_LITERATURE_MINIREVIEW.md` in this folder for the grounded synthesis. The primate contrast is
+therefore "polygenic, no gene of major effect," not "complex vs. one-gene-simple."
+
 ---
 
 ## What they did (the design we are replicating)
@@ -75,7 +87,7 @@ at 0 vs. free).
 | Trait | graded plumage dichromatism | scored **hair dichromatism** (compiled from the literature: binary + 5-state trajectory) |
 | Selection test | GLS of dN/dS on dichromatism | HyPhy **RELAX/aBSREL** + **RERconverge** + **SUMSTAT** set test + PGLS |
 | Convergence | cross-tree correlation | **independent origins** (gibbons, cercopithecids, lemurs, cebids) explicit |
-| Level | single-gene | **systems / network / module** level |
+| Level | single candidate gene (of 6) is the hit | **systems / network / module** level |
 
 The bird study is the **positive control and entry point**: if MC1R shows the same
 dichromatism-associated dN/dS signal in primates, that anchors the pipeline against known

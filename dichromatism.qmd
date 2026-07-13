@@ -1,6 +1,6 @@
 ---
 title: "Sexual dichromatism across primates"
-subtitle: "What a pigmentation-network approach reveals when pointed at evolution: a trait that is one gene in birds is a coupled, multi-module system in primates"
+subtitle: "What a pigmentation-network approach reveals when pointed at evolution: a trait that maps to genes of major effect in birds is a coupled, polygenic, multi-module system in primates"
 description: "Using the coupled pigmentation–sex-hormone gene network to test selection across the independent origins of primate hair sexual dichromatism — an evolutionary-genomics insight from the same network approach used for human association grading."
 toc: true
 execute:
@@ -60,8 +60,13 @@ accessible failure/remodeling points*, which is why it can be gained and lost so
 
 ## The one-sentence result
 
-In birds, sexual dichromatism is nearly a single-gene switch — the melanocortin receptor
-*MC1R* ([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)). **In primates it is
+In birds, the best-studied cases of sexual dichromatism map to **genes of major effect** for a
+specific pigment system in a specific clade: *MC1R* for melanin-based dichromatism in galliforms
+([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174) report a dN/dS–dichromatism
+correlation at that one locus), and *BCO2* for carotenoid-based dichromatism in finches
+([Gazda et al. 2020, *Science*](https://doi.org/10.1126/science.aba0803)) — and these are
+hormonally regulated (there is an active estrogen/testosterone-control literature in birds,
+[Griffith et al. 2026, *Integr Comp Biol*](https://doi.org/10.1093/icb/icag079)). **In primates it is
 not.** Hair dichromatism has arisen **~15 times independently** across the primate radiation and
 is **polygenic in every origin** (and *MC1R* is not the hit). The trait is also evolutionarily
 labile, lost roughly **9× more readily than it is gained**, consistent with dichromatism being
@@ -150,11 +155,12 @@ hormone module that carries the selection signal** — and does that differ from
 
 ## The cross-taxon contrast
 
-| | birds (galliforms) | primates |
+| | birds | primates |
 |---|---|---|
-| genetic basis | ~monogenic — *MC1R* (Nadeau 2007) | polygenic; *MC1R* is **not** the hit |
-| pigmentation signal sits at | the melanocortin receptor switch | melanoblast development / signaling (KITLG–EDN3–TFAP2A) — a different node |
-| architecture across origins | a shared switch | polygenic; shared-vs-heterogeneous **underpowered to resolve** (χ² p = 0.42) |
+| genetic basis | genes of major effect, clade- and pigment-specific — *MC1R*/melanin in galliforms (Nadeau 2007), *BCO2*/carotenoid in finches (Gazda 2020) | polygenic; no single gene of major effect (*MC1R* is **not** the hit) |
+| pigmentation signal sits at | a named large-effect locus per clade | melanoblast development / signaling (KITLG–EDN3–TFAP2A) — no single dominant node |
+| architecture across origins | not systematically tested clade-wide | polygenic; shared-vs-heterogeneous **underpowered to resolve** (χ² p = 0.42) |
+| hormone coupling | present — dichromatism genes hormonally regulated (Griffith et al. 2026) | present — coupled pigmentation × sex-hormone network by design |
 | trait stability | — | labile; loss ≈ 9× faster than gain |
 
 ## Limitations

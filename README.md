@@ -8,8 +8,9 @@ finds the same answer both times: context decides.
 ## The flagship finding: dichromatism arose ~15 times, polygenically, and is readily lost
 
 **Dichromatism** means males and females of the same species look different in color (in this
-case, hair color). In birds, this trait is close to a single genetic on/off switch: one gene,
-*MC1R*, controls it almost everywhere it appears. Primates are different. Hair color dichromatism
+case, hair color). In birds, the best-studied cases trace to a **gene of major effect** for a
+particular pigment system in a particular group: *MC1R* (melanin) in galliforms, and *BCO2*
+(carotenoid) in finches — often hormonally regulated. Primates are different. Hair color dichromatism
 has evolved **independently roughly 15 separate times** across the primate family tree — meaning
 15 different ancestral species, each on its own branch, separately evolved the trait rather than
 inheriting it from one shared ancestor. We identified these separate origins using **ancestral-state
@@ -28,8 +29,8 @@ given branch of the family tree to the rate expected if the gene were evolving w
 consequence; a significantly faster or altered rate is evidence that natural selection acted on
 that gene on that branch.
 
-**The result: dichromatism is polygenic in every origin we could test, and *MC1R* — the bird
-switch — is not the gene.** Of the origins with genomes to test, the 11 that carry at least one
+**The result: dichromatism is polygenic in every origin we could test, and *MC1R* — the galliform
+melanin gene — is not the gene.** Of the origins with genomes to test, the 11 that carry at least one
 gene under detectable selection each fall somewhere on a descriptive spectrum from "only
 pigmentation-module genes selected" to "only sex-hormone-module genes selected." The lemur genus
 *Eulemur* shows selection only in the sex-hormone module; the monkey genus *Pithecia* only in the
@@ -54,8 +55,9 @@ dichromatism is lost roughly **9 times more readily than it is gained** — cons
 that can be built through several alternative genetic routes (so it is easy to lose any one of
 them) rather than through one fixed, hard-to-remove mechanism.
 
-**Why this matters.** A trait that is nearly a single-gene switch in one vertebrate class (birds,
-*MC1R*) is, in primates, polygenic, not driven by *MC1R*, and evolutionarily labile — arising ~15
+**Why this matters.** A trait that maps to genes of major effect in birds (*MC1R* for melanin in
+galliforms, *BCO2* for carotenoid in finches) is, in primates, polygenic, not driven by *MC1R*, and
+evolutionarily labile — arising ~15
 times and readily lost. That alone reframes sexual dichromatism as a network-level rather than
 single-locus trait; whether the network is remodeled at the *same* points across origins or
 different ones is the open question this design sets up but is not yet powered to answer. The full
