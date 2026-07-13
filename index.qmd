@@ -7,7 +7,8 @@ toc: false
 
 ::: {.callout-important}
 ## The headline finding
-**Sexual dichromatism in primates has no single genetic basis.** Where the same trait is nearly
+**Sexual dichromatism** — males and females of a species differing in color — **has no single
+genetic basis in primates.** Where the same trait is nearly
 a one-gene switch in birds (*MC1R*; [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)),
 in primates it **arose ~15 times independently** and is built
 by **different genes in different lineages** — a heterogeneous, origin-specific architecture. This

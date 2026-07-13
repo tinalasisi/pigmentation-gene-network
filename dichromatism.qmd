@@ -7,6 +7,27 @@ execute:
   enabled: false
 ---
 
+::: {.callout-note}
+## Terms used on this page, in plain language
+So this page stands on its own — you should not need a genetics background to follow it.
+
+- **Sexual dichromatism** — the males and females of a species differ in color (here, in hair color).
+- **Independent origin** — a separate evolutionary appearance of the trait. If two species are both
+  dichromatic but their shared ancestor was not, dichromatism arose *twice*, not once. Counting
+  origins (rather than counting dichromatic species) is the central move on this page.
+- **Polygenic** — built by many genes acting together, rather than switched on or off by one gene.
+- **Labile** — evolutionarily unstable: readily gained *and* readily lost over time.
+- **Ancestral-state reconstruction** — working backward from the living species to infer whether
+  each ancestor on the family tree had the trait, which is how we locate where it was gained or lost.
+- **dN/dS (ω)** — a number that measures the kind of natural selection acting on a gene's protein.
+  ω ≈ 1 means no net selection, ω < 1 means the protein is being conserved, ω > 1 means it is being
+  actively changed (positive selection). "Episodic" selection means ω spikes above 1 on particular
+  branches of the tree rather than everywhere.
+- **RELAX, aBSREL, RERconverge** — three standard statistical tests (from the HyPhy and RERconverge
+  toolkits) that each ask, in a different way, whether specific genes evolved faster on the branches
+  where dichromatism arose. Using three lets us cover origins with different amounts of data.
+:::
+
 ## Point the network at evolution
 
 The rest of this project builds a curated pigmentation gene network and uses it to grade *human*
