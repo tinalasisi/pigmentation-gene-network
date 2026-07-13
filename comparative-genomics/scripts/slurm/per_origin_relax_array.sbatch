@@ -25,7 +25,7 @@ TID=${SLURM_ARRAY_TASK_ID}
 GENE_IDX=$(( TID / N_ORIGINS ))
 ORIG_IDX=$(( TID % N_ORIGINS ))
 GENE=$(sed -n "$((GENE_IDX+2))p" "$PANEL" | cut -d, -f1)         # +2: skip header, 0-based idx
-ORIGIN=$(tail -n +2 "$ORIGINS_CSV" | cut -d, -f3 | sort -u | sed -n "$((ORIG_IDX+1))p")   # f3 = origin_id (cols: species,family,origin_id,...)
+ORIGIN=$(tail -n +2 "$ORIGINS_CSV" | cut -d, -f3 | tr -d '"' | sort -u | sed -n "$((ORIG_IDX+1))p")   # f3 = origin_id (cols: species,family,origin_id,...)
 [ -z "$GENE" ] && { echo "no gene at idx $GENE_IDX"; exit 0; }
 [ -z "$ORIGIN" ] && { echo "no origin at idx $ORIG_IDX"; exit 0; }
 echo "[$(date +%T)] task $TID -> gene=$GENE origin=$ORIGIN"
