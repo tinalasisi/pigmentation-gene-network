@@ -36,6 +36,17 @@ Only **2 of 30** new genes are BH-significant, **both in origin_7 only** (the be
 - The origin_7 concentration is expected under the power model — please don't let it re-inflate the heterogeneity claim.
 - aBSREL (coming) may recover branch-level signal on the single-tip origins RELAX can't test — worth checking there.
 
+## UPDATE — pooled RELAX also delivered (`results/perorigin_v1/relax_pooled_results.csv`, 109 genes, annotated)
+The all-dichromatic-foreground (pooled) RELAX per gene, module+category + `is_new` flag. This
+changes/sharpens the read:
+- **HRAS — the clean new hit: pooled K=4.3, p_BH=4e-06** [melanogenesis_regulation]. Strong, NOT a
+  boundary K. It's null in each single origin (origin_7 K=0.84) — i.e. a signal that only emerges
+  when origins are pooled. **This is the best new result; recommend it as the highlight (pending your QC).**
+- **HPS4 confirmed a false positive:** per-origin origin_7 K=30 (boundary) but **pooled K=1.05, p=0.89 (null)**. Drop it.
+- **SPTLC2:** per-origin origin_7 only (K=2.76); null pooled. Real but origin-specific/modest.
+Net: the credible new hits are **HRAS (pooled)** and **SPTLC2 (origin_7)**; HPS4 out. Still 28/30 null,
+still reinforces the power-confound, still doesn't resolve heterogeneity.
+
 ## Data-flow note (so you know the state)
 Delivered cluster→Mac→origin (I don't push from the cluster). Raw JSONs stay on scratch (gitignored).
 Cluster repo working copy is behind origin; I'll reconcile it after aBSREL finishes (not touching it mid-run). Prefix `[hpc pig_expansion]`.
