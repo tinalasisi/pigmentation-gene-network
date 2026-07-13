@@ -1,9 +1,27 @@
 ---
-title: "Pigmentation gene network"
-subtitle: "Knowing when a genetic variant causes a phenotype — by making independent lines of evidence converge"
-description: "A model-system project grading genotype→phenotype links in human pigmentation by making statistical, mechanistic, and experimental evidence converge."
+title: "The architecture of pigmentation genetics"
+subtitle: "One trait built by many genes; one gene read in many contexts — how pigmentation breaks the one-gene-one-trait picture at two scales"
+description: "A model-system project on the genotype→phenotype map for pigmentation: a clade-wide test showing sexual dichromatism has a heterogeneous, per-origin genetic architecture across primates, and a convergence method grading how context-dependent human pigmentation associations are."
 toc: false
 ---
+
+::: {.callout-important}
+## The headline finding
+**Sexual dichromatism in primates has no single genetic basis.** Where the same trait is nearly
+a one-gene switch in birds (*MC1R*), in primates it **arose ~15 times independently** and is built
+by **different genes in different lineages** — a heterogeneous, origin-specific architecture. This
+is the first clade-wide, multi-gene selection test of the genomic basis of primate sexual
+dichromatism. **→ [Read the finding](dichromatism.qmd)**
+:::
+
+Both halves of this project ask one question — **is the link from genotype to pigmentation
+phenotype the simple one-gene-one-trait picture, or is its architecture conditional on context?**
+The answer is the same from two directions. *Across primates*, the same trait recruits different
+genes in different independent origins (context = evolutionary lineage). *Within humans*, the same
+variant's causal relevance is conditional on ancestry, and its direction is predictable only from
+mechanism (context = population). The macroevolutionary result below is the discovery; the
+human-pigmentation work is the method that grades how much to trust any single genotype→phenotype
+claim.
 
 ```{=html}
 <iframe src="interactive/substrate_multilayer.html"
@@ -21,21 +39,34 @@ Drag to rotate · hover a gene · **[open the full interactive view →](substra
 
 ::: {.callout-tip}
 ## Start here
-New here, or short on time? Read this Overview, then follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); **read it together with NB12, which states plainly what is and isn't novel.** The biology here is largely textbook (near the definition of albinism), so the contribution is **methodological** — a bounded demonstration of the convergence thesis — **not a discovery about pigmentation**. Every code cell is folded — click *"Show code"* to expand it.
+Short on time? Read the **[dichromatism finding](dichromatism.qmd)** first — it is the discovery:
+sexual dichromatism arose ~15 times independently across primates and is built by different genes
+in different origins, tested with per-origin RELAX, per-branch aBSREL, and RERconverge.
+
+Then, for the human-pigmentation method, follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with NB12, which states plainly what is and isn't novel. That human arm is deliberately **methodological** — a bounded demonstration of the convergence thesis, not a claim of new pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
 :::
 
 ## What this is
 
-A model-system project on the genotype→phenotype map. **The goal is to know how much to trust a claimed link
-between a genetic variant and a phenotype, by making independent lines of evidence converge** — statistical
-association, mechanistic pathway knowledge, and experimental validation each capture part of the truth, and
-where they agree we can be confident. Applied to human pigmentation, the aim is to grade reported pigmentation
-associations by how well independent evidence converges on each, and to name the specific next step that would
-confirm it.
+One project on the genotype→phenotype map for pigmentation, at two scales that make the same
+point: **the map is not one-gene-one-trait — its architecture is conditional on context.**
 
-Pigmentation is the model system because it is highly heritable, has near-zero environmental variance, has a
-well-characterized molecular mechanism, and shows the same prediction/portability failures — the same allele
-causal in one population and silent in another — in a visible, checkable form.
+**Across primates (the discovery).** Sexual dichromatism — a trait that is nearly a single-gene
+switch in birds — turns out to have **arisen ~15 times independently** in primates and to be built
+by **different pigmentation × sex-hormone gene combinations in different origins**. The context
+that changes the genetic basis is the evolutionary lineage. **[See the finding →](dichromatism.qmd)**
+
+**Within humans (the method).** To know how much to trust a claimed variant→phenotype link, make
+independent lines of evidence converge — statistical association, mechanistic pathway knowledge,
+and experimental validation. Applied to human pigmentation, this grades reported associations and
+names the next step that would confirm each; it shows the same variant can be causal in one
+population and silent in another (context = ancestry), and that the *direction* of an effect is
+predictable from mechanism.
+
+Pigmentation is the model system because it is highly heritable, has near-zero environmental
+variance, has a well-characterized molecular mechanism, and shows these context effects in a
+visible, checkable form — from a single human variant read across ancestries to a whole trait
+reassembled across a primate radiation.
 
 ::: {.callout-note appearance="simple"}
 Everything here — every notebook, table, and figure — was built during the hackathon event window
@@ -44,7 +75,16 @@ results → discussion, with citations) that renders from its own stored outputs
 no network, and no withheld data. **Code is folded by default** — click *"Show code"* on any cell to see it.
 :::
 
-## The notebooks
+## The two arms
+
+- **Macroevolutionary arm — [sexual dichromatism across primates](dichromatism.qmd)** (the
+  discovery): a clade-wide selection test showing the trait's genetic architecture is
+  heterogeneous across ~15 independent origins. Pipeline and cluster protocol in
+  [`comparative-genomics/`](https://github.com/tinalasisi/pigmentation-gene-network/tree/main/comparative-genomics).
+- **Human arm — the convergence method** (the notebooks below): grading how much to trust human
+  pigmentation genotype→phenotype claims by making independent evidence layers converge.
+
+## The human-pigmentation notebooks
 
 ### Foundation — the network
 - **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the

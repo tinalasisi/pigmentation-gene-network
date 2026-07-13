@@ -1,14 +1,25 @@
-# Pigmentation gene network
+# The architecture of pigmentation genetics
 
-**Goal.** Build a way to know how much to trust a claimed link between a genetic variant and a phenotype, by
-making independent lines of evidence converge — statistical association, mechanistic pathway knowledge, and
-experimental validation each capture part of the truth, and where they agree we can be confident the link is
-real. Applied to human pigmentation as a model system, the aim is a resource that grades reported pigmentation
-associations by how well independent evidence converges on each, and names the next step that would confirm it.
+**One question, two scales.** Is the link from genotype to pigmentation phenotype the simple
+one-gene-one-trait picture, or is its architecture conditional on context? This project answers it
+from two directions and finds the same thing: the map is not simple, and context decides.
 
-Pigmentation is the model system because it is highly heritable, has near-zero environmental variance, has a
-well-characterized molecular mechanism, and shows the same prediction/portability failures — the same allele
-causal in one population and silent in another — in a visible, checkable form.
+- **Macroevolutionary arm — the discovery.** Sexual dichromatism is nearly a single-gene switch
+  in birds (*MC1R*). Across primates it is not: it **arose ~15 times independently** and is built
+  by **different pigmentation × sex-hormone gene combinations in different lineages** — a
+  heterogeneous, origin-specific architecture. This is the first clade-wide, multi-gene selection
+  test of the genomic basis of primate sexual dichromatism. Pipeline, figures, and cluster
+  protocol are in [`comparative-genomics/`](comparative-genomics/).
+- **Human arm — the method.** To know how much to trust a claimed variant→phenotype link, make
+  independent lines of evidence converge — statistical association, mechanistic pathway knowledge,
+  and experimental validation. Applied to human pigmentation, this grades reported associations,
+  shows the same allele can be causal in one population and silent in another (context = ancestry),
+  and shows an effect's *direction* is predictable from mechanism.
+
+Pigmentation is the model system because it is highly heritable, has near-zero environmental
+variance, has a well-characterized molecular mechanism, and shows these context effects in a
+visible, checkable form — from a single human variant read across ancestries to a whole trait
+reassembled across a primate radiation.
 
 ## Where to start
 
