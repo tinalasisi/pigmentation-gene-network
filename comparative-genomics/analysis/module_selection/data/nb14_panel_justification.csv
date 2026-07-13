@@ -1,124 +1,124 @@
-gene,module,category,status,justification
-TYR,pigmentation,enzyme,already_run,OMIM:Hyperpigmentation|Hypopigmentation|Pigmentation phenotype;Baxter2018;melanogenesis-mechanism;CRISPR-screen
-TYRP1,pigmentation,enzyme,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-DCT,pigmentation,enzyme,already_run,Baxter2018;melanogenesis-mechanism;CRISPR-screen
-PMEL,pigmentation,melanosome,already_run,Baxter2018;melanogenesis-mechanism
-MLANA,pigmentation,melanosome,already_run,Baxter2018;melanogenesis-mechanism
-OCA2,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism;CRISPR-screen
-SLC45A2,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-SLC24A5,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation|Pigmentation phenotype;Baxter2018;CRISPR-screen
-MFSD12,pigmentation,melanosome_transport,already_run,core melanogenesis (canonical)
-SLC24A4,pigmentation,melanosome_transport,already_run,core melanogenesis (canonical)
-MC1R,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-ASIP,pigmentation,receptor_signaling,already_run,Baxter2018
-POMC,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-MRAP2,pigmentation,receptor_signaling,already_run,core melanogenesis (canonical)
-EDN3,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018
-EDNRB,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-KIT,pigmentation,receptor_signaling,already_run,OMIM:Hyperpigmentation|Hypopigmentation;Baxter2018;melanogenesis-mechanism
-KITLG,pigmentation,receptor_signaling,already_run,OMIM:Mixed|Pigmentation phenotype;Baxter2018;melanogenesis-mechanism
-MITF,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-SOX10,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome
-PAX3,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism
-TFAP2A,pigmentation,transcription,already_run,Baxter2018;melanogenesis-mechanism
-LEF1,pigmentation,transcription,already_run,Baxter2018;melanogenesis-mechanism
-FOXD3,pigmentation,transcription,already_run,Baxter2018
-IRF4,pigmentation,transcription,already_run,OMIM:Hyperpigmentation|Hypopigmentation|Pigmentation phenotype;Baxter2018
-BNC2,pigmentation,transcription,already_run,OMIM:Hyperpigmentation;Baxter2018;CRISPR-screen
-HERC2,pigmentation,regulatory,already_run,OMIM:Hypopigmentation;melanosome-proteome
-AKR1C3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-AR,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-CYP17A1,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-HSD17B3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-SRD5A1,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-SRD5A2,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-SRD5A3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis
-CYP19A1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-ESR1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-ESR2,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-GPER1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-HSD17B1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-STS,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-SULT1E1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis
-CGA,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-FSHB,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-FSHR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-GNRH1,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-GNRH2,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-GNRHR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-KISS1,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-KISS1R,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-LHB,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-LHCGR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis
-AKR1C1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-AKR1C2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-AKR1C4,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-AKR1C8,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-CYP11A1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-CYP11B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-CYP11B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-CYP21A2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-CYP7B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B11,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B12,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B6,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B7,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD17B8,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD3B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-HSD3B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-LDLR,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-SCARB1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-STAR,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis
-GNA11,hormone,gnrh_signaling,already_run,endocrine pathway: gnrh_signaling
-GNAQ,hormone,gnrh_signaling,already_run,endocrine pathway: gnrh_signaling
-FKBP5,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-NCOA1,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-NCOA2,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-NCOA3,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-NCOR1,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-NCOR2,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-SHBG,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier
-AP3B1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome;CRISPR-screen
-AP3D1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome;CRISPR-screen
-BCL2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-BLOC1S3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-BLOC1S5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-BLOC1S6,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-CDC42,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-CDH2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-CTNNB1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-CTNS,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018
-EDN1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-EGFR,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-EP300,pigmentation,melanogenesis_regulation,to_run,melanogenesis-mechanism;CRISPR-screen
-FASLG,pigmentation,melanogenesis_regulation,to_run,OMIM:Hypopigmentation;melanogenesis-mechanism
-GPR143,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HGF,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-HPS1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HPS3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HPS4,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HPS5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HPS6,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-HRAS,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism
-LYST,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-MAP2K1,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome
-MAP2K2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-MAPK3,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-MLPH,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018
-MYO5A,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome
-PAK1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-PPP3CA,pigmentation,melanogenesis_regulation,to_run,OMIM:Hypopigmentation;melanogenesis-mechanism;melanosome-proteome
-RAB27A,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-RAB5C,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;melanosome-proteome
-RAC1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-RACK1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-RAF1,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome
-SLC17A5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen
-SLC1A2,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation
-SLC29A3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hyperpigmentation;Baxter2018
-SLC44A4,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation
-SPTLC2,pigmentation,melanogenesis_regulation,to_run,melanogenesis-mechanism;melanosome-proteome;CRISPR-screen
-SRC,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome
-TP53,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
-TRAF6,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism
+gene,module,category,status,justification,n_primate_orth,n_within_paralog,ortholog_risk
+TYR,pigmentation,enzyme,already_run,OMIM:Hyperpigmentation|Hypopigmentation|Pigmentation phenotype;Baxter2018;melanogenesis-mechanism;CRISPR-screen,,,already_analyzed
+TYRP1,pigmentation,enzyme,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+DCT,pigmentation,enzyme,already_run,Baxter2018;melanogenesis-mechanism;CRISPR-screen,,,already_analyzed
+PMEL,pigmentation,melanosome,already_run,Baxter2018;melanogenesis-mechanism,,,already_analyzed
+MLANA,pigmentation,melanosome,already_run,Baxter2018;melanogenesis-mechanism,,,already_analyzed
+OCA2,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism;CRISPR-screen,,,already_analyzed
+SLC45A2,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,,,already_analyzed
+SLC24A5,pigmentation,melanosome_transport,already_run,OMIM:Hypopigmentation|Pigmentation phenotype;Baxter2018;CRISPR-screen,,,already_analyzed
+MFSD12,pigmentation,melanosome_transport,already_run,core melanogenesis (canonical),,,already_analyzed
+SLC24A4,pigmentation,melanosome_transport,already_run,core melanogenesis (canonical),,,already_analyzed
+MC1R,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+ASIP,pigmentation,receptor_signaling,already_run,Baxter2018,,,already_analyzed
+POMC,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+MRAP2,pigmentation,receptor_signaling,already_run,core melanogenesis (canonical),,,already_analyzed
+EDN3,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018,,,already_analyzed
+EDNRB,pigmentation,receptor_signaling,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+KIT,pigmentation,receptor_signaling,already_run,OMIM:Hyperpigmentation|Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+KITLG,pigmentation,receptor_signaling,already_run,OMIM:Mixed|Pigmentation phenotype;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+MITF,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+SOX10,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome,,,already_analyzed
+PAX3,pigmentation,transcription,already_run,OMIM:Hypopigmentation;Baxter2018;melanogenesis-mechanism,,,already_analyzed
+TFAP2A,pigmentation,transcription,already_run,Baxter2018;melanogenesis-mechanism,,,already_analyzed
+LEF1,pigmentation,transcription,already_run,Baxter2018;melanogenesis-mechanism,,,already_analyzed
+FOXD3,pigmentation,transcription,already_run,Baxter2018,,,already_analyzed
+IRF4,pigmentation,transcription,already_run,OMIM:Hyperpigmentation|Hypopigmentation|Pigmentation phenotype;Baxter2018,,,already_analyzed
+BNC2,pigmentation,transcription,already_run,OMIM:Hyperpigmentation;Baxter2018;CRISPR-screen,,,already_analyzed
+HERC2,pigmentation,regulatory,already_run,OMIM:Hypopigmentation;melanosome-proteome,,,already_analyzed
+AKR1C3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+AR,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+CYP17A1,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+HSD17B3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+SRD5A1,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+SRD5A2,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+SRD5A3,hormone,androgen_axis,already_run,endocrine pathway: androgen_axis,,,already_analyzed
+CYP19A1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+ESR1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+ESR2,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+GPER1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+HSD17B1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+STS,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+SULT1E1,hormone,estrogen_axis,already_run,endocrine pathway: estrogen_axis,,,already_analyzed
+CGA,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+FSHB,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+FSHR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+GNRH1,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+GNRH2,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+GNRHR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+KISS1,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+KISS1R,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+LHB,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+LHCGR,hormone,hpg_axis,already_run,endocrine pathway: hpg_axis,,,already_analyzed
+AKR1C1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+AKR1C2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+AKR1C4,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+AKR1C8,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+CYP11A1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+CYP11B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+CYP11B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+CYP21A2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+CYP7B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B11,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B12,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B6,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B7,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD17B8,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD3B1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+HSD3B2,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+LDLR,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+SCARB1,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+STAR,hormone,steroid_biosynthesis,already_run,endocrine pathway: steroid_biosynthesis,,,already_analyzed
+GNA11,hormone,gnrh_signaling,already_run,endocrine pathway: gnrh_signaling,,,already_analyzed
+GNAQ,hormone,gnrh_signaling,already_run,endocrine pathway: gnrh_signaling,,,already_analyzed
+FKBP5,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+NCOA1,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+NCOA2,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+NCOA3,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+NCOR1,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+NCOR2,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+SHBG,hormone,coactivator_corepressor_carrier,already_run,endocrine pathway: coactivator_corepressor_carrier,,,already_analyzed
+AP3B1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome;CRISPR-screen,12.0,0.0,clean
+AP3D1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome;CRISPR-screen,12.0,0.0,clean
+BCL2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,11.0,2.0,paralog_check
+BLOC1S3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,7.0,0.0,low_ortholog_cov
+BLOC1S5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,9.0,0.0,low_ortholog_cov
+BLOC1S6,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+CDC42,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+CDH2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+CTNNB1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+CTNS,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018,12.0,0.0,clean
+EDN1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,2.0,paralog_check
+EGFR,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,0.0,clean
+EP300,pigmentation,melanogenesis_regulation,to_run,melanogenesis-mechanism;CRISPR-screen,12.0,0.0,clean
+FASLG,pigmentation,melanogenesis_regulation,to_run,OMIM:Hypopigmentation;melanogenesis-mechanism,12.0,7.0,HIGH_paralog
+GPR143,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,11.0,0.0,clean
+HGF,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,0.0,clean
+HPS1,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+HPS3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+HPS4,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+HPS5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+HPS6,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,9.0,0.0,low_ortholog_cov
+HRAS,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism,12.0,0.0,clean
+LYST,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+MAP2K1,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,1.0,paralog_check
+MAP2K2,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,1.0,paralog_check
+MAPK3,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+MLPH,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018,12.0,2.0,paralog_check
+MYO5A,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;melanosome-proteome,12.0,0.0,clean
+PAK1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,11.0,2.0,paralog_check
+PPP3CA,pigmentation,melanogenesis_regulation,to_run,OMIM:Hypopigmentation;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+RAB27A,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+RAB5C,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;melanosome-proteome,11.0,0.0,clean
+RAC1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,8.0,1.0,paralog_check;low_ortholog_cov
+RACK1,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,0.0,clean
+RAF1,pigmentation,melanogenesis_regulation,to_run,OMIM:Hyperpigmentation;Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+SLC17A5,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation;Baxter2018;CRISPR-screen,12.0,0.0,clean
+SLC1A2,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation,12.0,0.0,clean
+SLC29A3,pigmentation,melanosome_biogenesis,to_run,OMIM:Hyperpigmentation;Baxter2018,12.0,3.0,HIGH_paralog
+SLC44A4,pigmentation,melanosome_biogenesis,to_run,OMIM:Hypopigmentation,11.0,0.0,clean
+SPTLC2,pigmentation,melanogenesis_regulation,to_run,melanogenesis-mechanism;melanosome-proteome;CRISPR-screen,12.0,0.0,clean
+SRC,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism;melanosome-proteome,12.0,0.0,clean
+TP53,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,2.0,paralog_check
+TRAF6,pigmentation,melanogenesis_regulation,to_run,Baxter2018;melanogenesis-mechanism,12.0,0.0,clean
