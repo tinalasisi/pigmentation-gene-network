@@ -64,6 +64,7 @@ LDLR,hormone
 LEF1,pigmentation
 LHB,hormone
 LHCGR,hormone
+LYST,pigmentation
 MAPK3,pigmentation
 MC1R,pigmentation
 MFSD12,pigmentation
@@ -91,6 +92,7 @@ SLC17A5,pigmentation
 SLC1A2,pigmentation
 SLC24A4,pigmentation
 SLC24A5,pigmentation
+SLC44A4,pigmentation
 SLC45A2,pigmentation
 SOX10,pigmentation
 SPTLC2,pigmentation

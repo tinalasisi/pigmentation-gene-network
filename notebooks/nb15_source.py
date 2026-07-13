@@ -124,7 +124,7 @@ INPUTS = {
     },
     "gene_modules": {
         "path": "comparative-genomics/analysis/module_selection/data/gene_modules.csv",
-        "what": "Module label (pigmentation / hormone) for every gene in the 105-gene panel",
+        "what": "Module label (pigmentation / hormone) for every gene in the 107-gene panel",
         "source": "Panel definition (NB13/NB14)",
         "produced_by": "analysis/module_selection (panel module map)",
     },
@@ -135,13 +135,13 @@ INPUTS = {
     "fig_module_balance": {
         "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_module_balance.png",
         "what": "Per-origin module balance (aBSREL tip-level, all 14 origins) as a diverging bar chart",
-        "source": "aBSREL episodic selection on the 105-gene panel (HPC)",
+        "source": "aBSREL episodic selection on the 107-gene panel (HPC)",
         "produced_by": "comparative-genomics/analysis/module_selection/figures.py",
     },
     "fig_circular_tree": {
         "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_circular_tree_balance.png",
         "what": "The same module-balance metric painted on the circular primate tree (per-tip)",
-        "source": "aBSREL episodic selection on the 105-gene panel (HPC)",
+        "source": "aBSREL episodic selection on the 107-gene panel (HPC)",
         "produced_by": "comparative-genomics/analysis/module_selection/tree_figures.R",
     },
     "fig_sister_contrast": {
@@ -691,7 +691,7 @@ else:
 # **Figure 5. Each dichromatism origin tilts toward a different module.**
 #
 # *What the data are.* aBSREL episodic-selection calls (corrected p < 0.05) on the tip branches of
-# each dichromatic origin, from `results/perorigin_v1/branch_rates.csv` (105-gene pigmentation +
+# each dichromatic origin, from `results/perorigin_v1/branch_rates.csv` (107-gene pigmentation +
 # sex-hormone panel; module assigned from the panel's own `module` column, not `set`). Built by
 # `analysis/module_selection/figures.py`. Origins are grouped by family (bold headers) and, within
 # a family, ordered by their balance.
@@ -909,7 +909,7 @@ else:
 # **Figure 6. Selection in each dichromatic taxon vs its closest monochromatic sister, by gene.**
 #
 # *What the data are.* aBSREL episodic-selection calls (corrected p < 0.05) from
-# `results/perorigin_v1/branch_rates.csv` (105-gene panel), for 21 dichromatic species and their
+# `results/perorigin_v1/branch_rates.csv` (107-gene panel), for 21 dichromatic species and their
 # nearest monochromatic sister taxon (sister pairs in
 # `analysis/module_selection/sister_pairs.csv`, taken from the phenotype tree). Built by
 # `analysis/module_selection/sister_figures.py`.
@@ -982,7 +982,7 @@ print(_summary.to_string(index=False))
 # counts once per taxon it is selected in.
 #
 # *What it shows.* Selection is **not concentrated on the dichromatic lineages**: dichromats carry
-# 111 selection events (60 pigmentation + 51 hormone) against 121 in their monochromatic sisters
+# 112 selection events (61 pigmentation + 51 hormone) against 121 in their monochromatic sisters
 # (72 pigmentation + 49 hormone). The dichromats have marginally *fewer* pigmentation events and a
 # near-identical hormone count. This is the pairwise, module-resolved counterpart to the
 # phylogenetically-controlled test (whole-tree contrast: null after correcting for tree structure) —
