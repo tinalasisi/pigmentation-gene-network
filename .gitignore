@@ -114,3 +114,15 @@ comparative-genomics/**/*.bam
 comparative-genomics/**/*.bai
 comparative-genomics/alignments/
 comparative-genomics/**/*.raw.json
+
+# =============================================================================
+# Pitch / submission-framing iterations — internal working materials, NOT for
+# public view. Local copies are retained; these are untracked from the repo.
+# =============================================================================
+internal/pitches/
+internal/SYNTHESIZED_PITCH.md
+internal/PITCH.md
+internal/SUBMISSION_FRAMING.md
+internal/WRITTEN_SUMMARY_DRAFT.md
+internal/hackathon_final_day_feedback_and_pitch.md
+internal/handoffs/HANDOFF_pitch_bakeoff_and_dichromatism_decks.md
