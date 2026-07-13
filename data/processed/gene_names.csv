@@ -1,0 +1,801 @@
+gene,full_name
+ABCB6,ATP binding cassette subfamily B member 6 (LAN blood group)
+ABCC9,ATP binding cassette subfamily C member 9
+ABL1,"ABL proto-oncogene 1, non-receptor tyrosine kinase"
+ACD,ACD shelterin complex subunit and telomerase recruitment factor
+ACTB,Actin beta
+ACTL6A,Actin like 6A
+ADAM10,ADAM metallopeptidase domain 10
+ADAR,Adenosine deaminase RNA specific
+ADCY1,Adenylate cyclase 1
+ADCY2,Adenylate cyclase 2
+ADCY3,Adenylate cyclase 8
+ADCY4,Adenylate cyclase 4
+ADCY5,Adenylate cyclase 5
+ADCY6,Adenylate cyclase 6
+ADCY7,Adenylate cyclase 7
+ADCY8,Adenylate cyclase 8
+ADCY9,Adenylate cyclase 9
+ADO,2-aminoethanethiol dioxygenase
+ADPRH,ADP-ribosylarginine hydrolase
+AGO1,Argonaute RISC component 1
+AGO2,Argonaute RISC catalytic component 2
+AGO3,Argonaute RISC catalytic component 3
+AGO4,Argonaute RISC component 4
+AHR,Aryl hydrocarbon receptor
+AIMP1,Aminoacyl tRNA synthetase complex interacting multifunctional protein 1
+AIMP2,Aminoacyl tRNA synthetase complex interacting multifunctional protein 2
+AKT1,AKT serine/threonine kinase 1
+AKT2,AKT serine/threonine kinase 2
+AKT3,AKT serine/threonine kinase 3
+ALG11,"ALG11 alpha-1,2-mannosyltransferase"
+ALX3,ALX homeobox 3
+AP3B1,Adaptor related protein complex 3 subunit beta 1
+AP3D1,Adaptor related protein complex 3 subunit delta 1
+AP3M1,Adaptor related protein complex 3 subunit mu 1
+AP3S1,Adaptor related protein complex 3 subunit sigma 1
+APAF1,Apoptotic peptidase activating factor 1
+APC2,Anaphase promoting complex subunit 2
+APH1A,Aph-1A gamma-secretase subunit
+APITD1,Centromere protein S
+ARID1A,AT-rich interaction domain 1A
+ARID1B,AT-rich interaction domain 1B
+ARID5B,AT-rich interaction domain 5B
+ARRB2,Arrestin beta 2
+ASAH1,N-acylsphingosine amidohydrolase 1
+ASIP,Par-3 family cell polarity regulator
+ATF2,Glial cell derived neurotrophic factor
+ATM,ATM serine/threonine kinase
+ATOX1,Antioxidant 1 copper chaperone
+ATP6V0B,ATPase H+ transporting V0 subunit b
+ATP6V0C,ATPase H+ transporting V0 subunit c
+ATP6V0D1,ATPase H+ transporting V0 subunit d1
+ATP6V0E1,ATPase H+ transporting V0 subunit e1
+ATP6V1A,ATPase H+ transporting V1 subunit A
+ATP6V1B2,ATPase H+ transporting V1 subunit B2
+ATP6V1C1,ATPase H+ transporting V1 subunit C1
+ATP6V1E1,ATPase H+ transporting V1 subunit E1
+ATP6V1G1,ATPase H+ transporting V1 subunit G1
+ATP6V1H,ATPase H+ transporting V1 subunit H
+ATP7A,ATPase copper transporting alpha
+ATP7B,ATPase copper transporting beta
+ATXN2,Ataxin 2
+B2M,Beta-2-microglobulin
+BACH2,BACH transcriptional regulator 2
+BAD,BCL2 associated agonist of cell death
+BAK1,BCL2 antagonist/killer 1
+BAX,"BCL2 associated X, apoptosis regulator"
+BBC3,BCL2 binding component 3
+BCL10,BCL10 immune signaling adaptor
+BCL2,BCL2 apoptosis regulator
+BCL2A1,BCL2 related protein A1
+BCL2L1,BCL2 like 1
+BCL2L11,BCL2 like 11
+BCL2L12,BCL2 like 12
+BCL7A,BAF chromatin remodeling complex subunit BCL7A
+BCL7B,BAF chromatin remodeling complex subunit BCL7B
+BCL7C,BAF chromatin remodeling complex subunit BCL7C
+BID,BH3 interacting domain death agonist
+BIRC7,Baculoviral IAP repeat containing 7
+BIVM,"Basic, immunoglobulin-like variable motif containing"
+BLM,BLM RecQ like helicase
+BLOC1S3,Biogenesis of lysosomal organelles complex 1 subunit 3
+BLOC1S5,Biogenesis of lysosomal organelles complex 1 subunit 5
+BLOC1S6,Biogenesis of lysosomal organelles complex 1 subunit 6
+BNC2,Basonuclin zinc finger protein 2
+BOP1,BOP1 ribosomal biogenesis factor
+BRAF,"B-Raf proto-oncogene, serine/threonine kinase"
+BRCA1,BRCA1 DNA repair associated
+BRCA2,BRCA2 DNA repair associated
+BRIP1,BRCA1 interacting DNA helicase 1
+BTNL2,Butyrophilin like 2
+BTRC,Beta-transducin repeat containing E3 ubiquitin protein ligase
+C10ORF11,Leucine rich melanocyte differentiation associated
+C11orf65,Chromosome 11 open reading frame 65
+C11orf74,Intraflagellar transport associated protein
+C17ORF70,FA core complex associated protein 100
+C19ORF40,FA core complex associated protein 24
+C1ORF86,FA core complex associated protein 20
+C1QTNF6,C1q and TNF related 6
+C1orf141,Chromosome 1 open reading frame 141
+CAB39,Calcium binding protein 39
+CALM1,Calmodulin 1
+CALM2,Calmodulin 2
+CALM3,Calmodulin 3
+CALML3,Calmodulin like 3
+CALML4,Calmodulin like 4
+CALML5,Calmodulin like 5
+CALML6,Calmodulin like 6
+CAMK2A,Calcium/calmodulin dependent protein kinase II alpha
+CAMK2B,Calcium/calmodulin dependent protein kinase II beta
+CAMK2D,Calcium/calmodulin dependent protein kinase II delta
+CAMK2G,Calcium/calmodulin dependent protein kinase II gamma
+CAND1,Cullin associated and neddylation dissociated 1
+CASP1,Caspase 1
+CASP3,Caspase 3
+CASP7,Caspase 7
+CASP8,Caspase 8
+CASP9,Caspase 9
+CBFA2T3,CBFA2/RUNX1 partner transcriptional co-repressor 3
+CBS,Cystathionine beta-synthase
+CBSL,Cystathionine beta-synthase like
+CCL20,C-C motif chemokine ligand 20
+CCNA2,Cyclin A2
+CCNB1,Cyclin B1
+CCND1,Cyclin D1
+CCNH,Cyclin H
+CCR6,C-C motif chemokine receptor 6
+CD22,CD22 molecule
+CD28,CD28 molecule
+CD74,CD74 molecule
+CD80,CD80 molecule
+CD86,CD86 molecule
+CDC25B,Cell division cycle 25B
+CDC34,"Cell division cycle 34, ubiquitin conjugating enzyme"
+CDC42,Cell division cycle 42
+CDC45,Cell division cycle 45
+CDC6,Cell division cycle 6
+CDC7,Cell division cycle 7
+CDH1,Fizzy and cell division cycle 20 related 1
+CDH2,Cadherin 2
+CDH23,Cadherin related 23
+CDH3,Cadherin 15
+CDK2,Cyclin dependent kinase 2
+CDK4,Cyclin dependent kinase 4
+CDK5RAP2,CDK5 regulatory subunit associated protein 2
+CDK6,Cyclin dependent kinase 6
+CDK7,Cyclin dependent kinase 7
+CDKN1A,Cysteine rich DPF motif domain containing 1
+CDKN2A,Cyclin dependent kinase inhibitor 2A
+CDT1,Chromatin licensing and DNA replication factor 1
+CEACAM1,CEA cell adhesion molecule 1
+CEP57,Centrosomal protein 57
+CETN2,Centrin 2
+CFLAR,CASP8 and FADD like apoptosis regulator
+CHEK2,Checkpoint kinase 2
+CHRNA9,Cholinergic receptor nicotinic alpha 9 subunit
+CHUK,Component of inhibitor of nuclear factor kappa B kinase complex
+CLNK,Cytokine dependent hematopoietic cell linker
+CNOT1,CCR4-NOT transcription complex subunit 1
+COL18A1,Collagen type XVIII alpha 1 chain
+CPVL,Carboxypeptidase vitellogenic like
+CREB1,CAMP responsive element binding protein 1
+CREB3,CAMP responsive element binding protein 3 like 4
+CREB3L1,CAMP responsive element binding protein 3 like 1
+CREB3L2,CAMP responsive element binding protein 3 like 2
+CREB3L3,CAMP responsive element binding protein 3 like 3
+CREB3L4,CAMP responsive element binding protein 3 like 4
+CREBBP,CREB binding lysine acetyltransferase
+CSF1,Colony stimulating factor 1
+CSF2,Colony stimulating factor 2
+CSF2RA,Colony stimulating factor 2 receptor subunit alpha
+CTC1,CST telomere replication complex component 1
+CTH,V-set and immunoglobulin domain containing 2
+CTLA4,Cytotoxic T-lymphocyte associated protein 4
+CTNNB1,Catenin beta 1
+CTNS,"Cystinosin, lysosomal cystine transporter"
+CUL1,Cullin 1
+CUL2,Cullin 2
+CUL3,Cullin 3
+CUL4A,Cullin 4A
+CUL4B,Cullin 4B
+CUL5,Cullin 5
+CUL7,Cullin 7
+CXCL8,C-X-C motif chemokine ligand 8
+CYCS,"Cytochrome c, somatic"
+CYFIP1,Cytoplasmic FMR1 interacting protein 1
+CYLD,CYLD lysine 63 deubiquitinase
+CYP11A1,Cytochrome P450 family 11 subfamily A member 1
+DARS1,Aspartyl-tRNA synthetase 1
+DCAF13,DDB1 and CUL4 associated factor 13
+DCP1A,Decapping mRNA 1A
+DCP2,Decapping mRNA 2
+DCT,Dopachrome tautomerase
+DDB1,Damage specific DNA binding protein 1
+DDB2,Damage specific DNA binding protein 2
+DDX3X,DEAD-box helicase 3 X-linked
+DDX6,DEAD-box helicase 6
+DEF8,Differentially expressed in FDCP 8 homolog
+DFFA,DNA fragmentation factor subunit alpha
+DFFB,DNA fragmentation factor subunit beta
+DHX36,DEAH-box helicase 36
+DIAPH1,Diaphanous related formin 1
+DICER1,"Dicer 1, ribonuclease III"
+DKC1,Dyskerin pseudouridine synthase 1
+DNAJC12,DnaJ heat shock protein family (Hsp40) member C12
+DPF1,Double PHD fingers 1
+DPF2,Double PHD fingers 2
+DPF3,Double PHD fingers 3
+DSTYK,Dual serine/threonine and tyrosine protein kinase
+DTNBP1,Dystrobrevin binding protein 1
+DUSP1,Dual specificity phosphatase 12
+DVL1,Dishevelled segment polarity protein 1
+DVL2,Dishevelled segment polarity protein 2
+DVL3,Dishevelled segment polarity protein 3
+DYNLL1,Dynein light chain LC8-type 1
+ECSIT,ECSIT signaling integrator
+EDC3,Enhancer of mRNA decapping 3
+EDIL3,EGF like and discoidin domains 3
+EDN1,Endothelin 1
+EDN3,Endothelin 3
+EDNRA,Endothelin receptor type A
+EDNRB,Endothelin receptor type B
+EEF1E1,Eukaryotic translation elongation factor 1 epsilon 1
+EGFR,Epidermal growth factor receptor
+EGR2,Early growth response 2
+EIF1,Eukaryotic translation initiation factor 1
+EIF2B1,Eukaryotic translation initiation factor 2B subunit alpha
+EIF2B3,Eukaryotic translation initiation factor 2B subunit gamma
+EIF2B5,Eukaryotic translation initiation factor 2B subunit epsilon
+EIF2S1,Eukaryotic translation initiation factor 2 subunit alpha
+EIF2S2,Eukaryotic translation initiation factor 2 subunit beta
+EIF2S3,Eukaryotic translation initiation factor 2 subunit gamma
+EIF3A,Eukaryotic translation initiation factor 6
+EIF3G,Eukaryotic translation initiation factor 3 subunit G
+EIF4E,Eukaryotic translation initiation factor 4E
+EIF5,Eukaryotic translation initiation factor 5
+EIF6,Eukaryotic translation initiation factor 6
+ELK1,Potassium voltage-gated channel subfamily H member 8
+ENPP1,Ectonucleotide pyrophosphatase/phosphodiesterase 1
+EP300,EP300 lysine acetyltransferase
+EPG5,Ectopic P-granules 5 autophagy tethering factor
+EPRS1,Glutamyl-prolyl-tRNA synthetase 1
+ERCC1,"ERCC excision repair 1, endonuclease non-catalytic subunit"
+ERCC2,"ERCC excision repair 2, TFIIH core complex helicase subunit"
+ERCC3,"ERCC excision repair 3, TFIIH core complex helicase subunit"
+ERCC4,"ERCC excision repair 4, endonuclease catalytic subunit"
+ERCC5,"ERCC excision repair 5, endonuclease"
+ERCC6,"ERCC excision repair 6, chromatin remodeling factor"
+ESCO2,Establishment of sister chromatid cohesion N-acetyltransferase 2
+EXO1,Exonuclease 1
+EZR,Ezrin
+F10,Coagulation factor X
+F2RL1,F2R like trypsin receptor 1
+F7,Coagulation factor VII
+FADD,Fas associated via death domain
+FADS2,Fatty acid desaturase 2
+FAN1,FANCD2 and FANCI associated nuclease 1
+FANCA,FA complementation group A
+FANCB,FA complementation group B
+FANCC,FA complementation group C
+FANCD2,FA complementation group D2
+FANCE,FA complementation group E
+FANCF,FA complementation group F
+FANCG,FA complementation group G
+FANCI,FA complementation group I
+FANCL,FA complementation group L
+FANCM,FA complementation group M
+FAP,"Glomulin, FKBP associated protein"
+FARP2,"FERM, ARH/RhoGEF and pleckstrin domain protein 2"
+FAS,Fatty acid synthase
+FASLG,Fas ligand
+FBL,Fibrillarin rRNA 2'-O-methyltransferase
+FBXW7,F-box and WD repeat domain containing 7
+FDX1,Ferredoxin 1
+FGF2,Fibroblast growth factor 13
+FGF9,Fibroblast growth factor 9
+FGFR3,Fibroblast growth factor receptor 3
+FIG4,FIG4 phosphoinositide 5-phosphatase
+FLI1,FLII actin remodeling protein
+FLNA,Filamin A
+FLT1,Fms related receptor tyrosine kinase 1
+FLT4,Fms related receptor tyrosine kinase 4
+FMR1,FMR1 intronic transcript 1
+FOS,"Fos proto-oncogene, AP-1 transcription factor subunit"
+FOXD3,Forkhead box D3
+FOXP1,Forkhead box P1
+FRAS1,Fraser extracellular matrix complex subunit 1
+FREM2,FRAS1 related extracellular matrix 2
+FRS2,Fibroblast growth factor receptor substrate 2
+FZD1,Frizzled class receptor 1
+FZD10,Frizzled class receptor 10
+FZD2,Frizzled class receptor 2
+FZD3,Frizzled class receptor 9
+FZD4,Frizzled class receptor 4
+FZD5,Frizzled class receptor 5
+FZD6,Frizzled class receptor 6
+FZD7,Frizzled class receptor 7
+FZD8,Frizzled class receptor 8
+FZD9,Frizzled class receptor 9
+GAB1,Phosphatidylinositol glycan anchor biosynthesis class U
+GAB2,GRB2 associated binding protein 2
+GADD45A,Growth arrest and DNA damage inducible alpha
+GAGE2A,G antigen 2A
+GAR1,Cyclic nucleotide gated channel subunit beta 1
+GINS1,GINS complex subunit 1
+GINS2,GINS complex subunit 2
+GINS4,GINS complex subunit 4
+GMPR,Guanosine monophosphate reductase
+GNAI1,G protein subunit alpha i1
+GNAI2,G protein subunit alpha i2
+GNAI3,G protein subunit alpha i3
+GNAO1,G protein subunit alpha o1
+GNAQ,G protein subunit alpha q
+GNAS,GNAS complex locus
+GNB1,G protein subunit beta 1
+GNPTG,N-acetylglucosamine-1-phosphate transferase subunit gamma
+GP1BA,Glycoprotein Ib platelet subunit alpha
+GPHN,Gephyrin
+GPNMB,Glycoprotein nmb
+GPR143,G protein-coupled receptor 143
+GPR29,C-C motif chemokine receptor 6
+GRB2,Growth factor receptor bound protein 2
+GRIA2,Glutamate ionotropic receptor AMPA type subunit 2
+GRIP1,Galectin 12
+GSK3B,Glycogen synthase kinase 3 beta
+GTF2B,General transcription factor IIB
+GTF2E1,General transcription factor IIE subunit 1
+GTF2E2,General transcription factor IIE subunit 2
+GTF2H1,General transcription factor IIH subunit 1
+GTF2H2,General transcription factor IIH subunit 2
+GTF2H3,General transcription factor IIH subunit 3
+GTF2H4,General transcription factor IIH subunit 4
+GTF2H5,General transcription factor IIH subunit 5
+GUCY1A2,Guanylate cyclase 1 soluble subunit alpha 2
+GXYLT2,Glucoside xylosyltransferase 2
+GZMB,Granzyme B
+H2AFX,H2A.X variant histone
+HDAC1,Histone deacetylase 1
+HERC2,HECT and RLD domain containing E3 ubiquitin protein ligase 2
+HGD,"Homogentisate 1,2-dioxygenase"
+HGF,Interleukin 6
+HIF1A,Hypoxia inducible factor 1 subunit alpha
+HINT1,Histidine triad nucleotide binding protein 1
+HLA-B,"Major histocompatibility complex, class I, B"
+HLA-DMB,"Major histocompatibility complex, class II, DM beta"
+HLA-DQA1,"Major histocompatibility complex, class II, DQ alpha 1"
+HLA-DQB1,"Major histocompatibility complex, class II, DQ beta 1"
+HLA-DRA,"Major histocompatibility complex, class II, DR alpha"
+HLA-DRB1,"Major histocompatibility complex, class II, DR beta 1"
+HPS1,HPS1 biogenesis of lysosomal organelles complex 3 subunit 1
+HPS3,HPS3 biogenesis of lysosomal organelles complex 2 subunit 1
+HPS4,HPS4 biogenesis of lysosomal organelles complex 3 subunit 2
+HPS5,HPS5 biogenesis of lysosomal organelles complex 2 subunit 2
+HPS6,HPS6 biogenesis of lysosomal organelles complex 2 subunit 3
+HRAS,"HRas proto-oncogene, GTPase"
+HSP90AA1,Heat shock protein 90 alpha family class A member 1
+HSPG2,Heparan sulfate proteoglycan 2
+HUNK,Hormonally up-regulated Neu-associated kinase
+IARS1,Isoleucyl-tRNA synthetase 1
+ICAM1,Intercellular adhesion molecule 1
+ID1,Inhibitor of DNA binding 1
+IDS,Iduronate 2-sulfatase
+IDUA,Alpha-L-iduronidase
+IGF1R,Insulin like growth factor 1 receptor
+IKBKB,Inhibitor of nuclear factor kappa B kinase subunit beta
+IKBKG,Inhibitor of nuclear factor kappa B kinase regulatory subunit gamma
+IKZF4,IKAROS family zinc finger 4
+IL10,Interleukin 10
+IL12A,Interleukin 12A
+IL12RB1,Interleukin 12 receptor subunit beta 1
+IL15,Interleukin 15
+IL17A,Interleukin 17A
+IL17RA,Interleukin 17 receptor A
+IL1A,Interleukin 1 alpha
+IL1R1,Interleukin 1 receptor type 1
+IL1RAPL1,Interleukin 1 receptor accessory protein like 1
+IL2,Interleukin 2
+IL23R,Interleukin 23 receptor
+IL2RA,Interleukin 2 receptor subunit alpha
+IL2RB,Interleukin 2 receptor subunit beta
+IL2RG,Interleukin 2 receptor subunit gamma
+IL6,Interleukin 6
+IL6R,Interleukin 6 receptor
+INSR,Insulin receptor
+IRAK1,Interleukin 1 receptor associated kinase 1
+IRAK4,Interleukin 1 receptor associated kinase 4
+IRF3,Interferon regulatory factor 3
+IRF4,Interferon regulatory factor 4
+IRS1,Insulin receptor substrate 1
+ITGA2,Integrin subunit alpha 2
+IVL,Involucrin
+JAK1,Janus kinase 1
+JAK2,Janus kinase 2
+JUN,"Jun proto-oncogene, AP-1 transcription factor subunit"
+KARS1,Lysyl-tRNA synthetase 1
+KAT5,Lysine acetyltransferase 5
+KCNK12,Potassium two pore domain channel subfamily K member 12
+KDR,Kinase insert domain receptor
+KEAP1,Kelch like ECH associated protein 1
+KIR3DL1,"Killer cell immunoglobulin like receptor, three Ig domains and long cytoplasmic tail 1"
+KIT,"KIT proto-oncogene, receptor tyrosine kinase"
+KITLG,KIT ligand
+KMT2A,Lysine methyltransferase 2A
+KRAS,"KRas proto-oncogene, GTPase"
+KRT14,Keratin 14
+KRT5,Keratin 5
+KSR1,Kinase suppressor of ras 1
+LARS1,Leucyl-tRNA synthetase 1
+LCK,"LCK proto-oncogene, Src family tyrosine kinase"
+LEF1,Lymphoid enhancer binding factor 1
+LIG1,Leucine rich repeats and immunoglobulin like domains 1
+LPP,LIM domain containing preferred translocation partner in lipoma
+LRMDA,Leucine rich melanocyte differentiation associated
+LSM14A,LSM14A mRNA processing body assembly factor
+LYST,Lysosomal trafficking regulator
+MAP2K1,Mitogen-activated protein kinase kinase 1
+MAP2K2,Mitogen-activated protein kinase kinase 2
+MAP2K3,Mitogen-activated protein kinase kinase 3
+MAP2K4,Mitogen-activated protein kinase kinase 4
+MAP2K6,Mitogen-activated protein kinase kinase 6
+MAP2K7,Mitogen-activated protein kinase kinase 7
+MAP3K1,Mitogen-activated protein kinase kinase kinase 1
+MAP3K14,Mitogen-activated protein kinase kinase kinase 14
+MAP3K5,Mitogen-activated protein kinase kinase kinase 5
+MAP3K7,Mitogen-activated protein kinase kinase kinase 7
+MAP4K2,Mitogen-activated protein kinase kinase kinase kinase 2
+MAPK1,Mitogen-activated protein kinase 1
+MAPK14,Mitogen-activated protein kinase 14
+MAPK3,Mitogen-activated protein kinase 3
+MAPK8,Mitogen-activated protein kinase 8
+MARK3,Microtubule affinity regulating kinase 3
+MARS1,Methionyl-tRNA synthetase 1
+MC1R,Melanocortin 1 receptor
+MC2R,Melanocortin 2 receptor
+MC3R,Melanocortin 3 receptor
+MC4R,Melanocortin 4 receptor
+MC5R,Melanocortin 5 receptor
+MCL1,"MCL1 apoptosis regulator, BCL2 family member"
+MCM10,Minichromosome maintenance 10 replication initiation factor
+MCM2,Minichromosome maintenance complex component 7
+MCM3,Minichromosome maintenance complex component 3
+MCM4,Minichromosome maintenance complex component 4
+MCM5,Minichromosome maintenance complex component 5
+MCM6,Minichromosome maintenance complex component 6
+MCM7,Minichromosome maintenance complex component 7
+MCMBP,Minichromosome maintenance complex binding protein
+MDC1,Mediator of DNA damage checkpoint 1
+MDM2,MDM2 proto-oncogene
+MEN1,Menin 1
+MET,SAFB like transcription modulator
+MITF,Melanocyte inducing transcription factor
+MLANA,Melan-A
+MLH1,MutL homolog 1
+MLPH,Melanophilin
+MMP1,Matrix metallopeptidase 1
+MNAT1,MNAT1 component of CDK activating kinase
+MOV10,Mov10 RNA helicase
+MPZL1,Myelin protein zero like 1
+MRAP,Melanocortin 2 receptor accessory protein
+MRE11A,MRE11 double strand break repair nuclease
+MSH2,MutS homolog 2
+MSH3,MutS homolog 3
+MSH6,MutS homolog 6
+MSN,Moesin
+MTAP,Methylthioadenosine phosphorylase
+MTOR,Mechanistic target of rapamycin kinase
+MYC,"MYC proto-oncogene, bHLH transcription factor"
+MYD88,MYD88 innate immune signal transduction adaptor
+MYH8,Myosin heavy chain 8
+MYO5A,Myosin VA
+MYO7A,Myosin VIIA
+MYRIP,Myosin VIIA and Rab interacting protein
+NARS,Asparaginyl-tRNA synthetase 1
+NARS1,Asparaginyl-tRNA synthetase 1
+NBN,Artemin
+NCSTN,Nicastrin
+NEDD4,NEDD4 E3 ubiquitin protein ligase
+NEDD8,NEDD8 ubiquitin like modifier
+NEK6,NIMA related kinase 6
+NF1,Neurofibromin 1
+NFATC1,Nuclear factor of activated T cells 1
+NFIX,Nuclear factor I X
+NFKB1,Nuclear factor kappa B subunit 1
+NFKBIA,NFKB inhibitor alpha
+NGF,Nerve growth factor
+NHP2,NHP2 ribonucleoprotein
+NHP2L1,Small nuclear ribonucleoprotein 13
+NID1,Nidogen 1
+NKX2-5,NK2 homeobox 5
+NLRP1,NLR family pyrin domain containing 1
+NNT,Nicotinamide nucleotide transhydrogenase
+NOP10,NOP10 ribonucleoprotein
+NOP56,NOP56 ribonucleoprotein
+NOP58,NOP58 ribonucleoprotein
+NOS2,Nanos C2HC-type zinc finger 2
+NOX1,NADPH oxidase 1
+NPHP4,Nephrocystin 4
+NR0B1,Nuclear receptor subfamily 0 group B member 1
+NR5A1,Nuclear receptor subfamily 5 group A member 1
+NRAS,"NRAS proto-oncogene, GTPase"
+NRP1,Neuropilin 1
+NRP2,Neural EGFL like 2
+NRROS,Negative regulator of reactive oxygen species
+NSD1,Nuclear receptor binding SET domain protein 1
+NSMAF,Neutral sphingomyelinase activation associated factor
+NTRK1,Neurotrophic receptor tyrosine kinase 1
+NTRK2,Neurotrophic receptor tyrosine kinase 2
+OBFC1,STN1 subunit of CST complex
+OCA2,OCA2 melanosomal transmembrane protein
+ORC1,Solute carrier family 25 member 15
+ORC2,Origin recognition complex subunit 2
+ORC3,Origin recognition complex subunit 3
+ORC4,Origin recognition complex subunit 4
+ORC5,Origin recognition complex subunit 5
+ORC6,Origin recognition complex subunit 6
+PABPC1,Poly(A) binding protein cytoplasmic 1
+PAH,Phenylalanine hydroxylase
+PAK1,Protein kinase N1
+PALB2,Partner and localizer of BRCA2
+PARD6A,Par-6 family cell polarity regulator alpha
+PARN,Poly(A)-specific ribonuclease
+PARP12,Poly(ADP-ribose) polymerase family member 12
+PATL1,"PAT1 homolog 1, processing body mRNA decay factor"
+PAX3,Paired box 3
+PCNA,Proliferating cell nuclear antigen
+PCNT,Pericentrin
+PDCD1,Programmed cell death 1
+PDE4B,Phosphodiesterase 4B
+PDPK1,3-phosphoinositide dependent protein kinase 1
+PEBP1,Phosphatidylethanolamine binding protein 1
+PECAM1,Platelet and endothelial cell adhesion molecule 1
+PHB,Prohibitin 1
+PIAS3,Protein inhibitor of activated STAT 3
+PIAS4,Protein inhibitor of activated STAT 4
+PIK3CA,"Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+PIK3R1,Phosphoinositide-3-kinase regulatory subunit 1
+PIKFYVE,"Phosphoinositide kinase, FYVE-type zinc finger containing"
+PINX1,PIN2 (TERF1) interacting telomerase inhibitor 1
+PKC,Proline rich transmembrane protein 2
+PLA2,Phospholipase A2 group IB
+PLA2G1B,Phospholipase A2 group IB
+PLA2G6,Phospholipase A2 group VI
+PLC,Heparan sulfate proteoglycan 2
+PLCB1,Phospholipase C beta 1
+PLCB2,Phospholipase C beta 2
+PLCB3,Phospholipase C beta 3
+PLCB4,Phospholipase C beta 4
+PLK1,Polo like kinase 1
+PMAIP1,Phorbol-12-myristate-13-acetate-induced protein 1
+PMEL,Premelanosome protein
+PMS2,"PMS1 homolog 2, mismatch repair system component"
+POFUT1,Protein O-fucosyltransferase 1
+POGLUT1,Protein O-glucosyltransferase 1
+POLA1,"DNA polymerase alpha 1, catalytic subunit"
+POLA2,"DNA polymerase alpha 2, accessory subunit"
+POLE,"DNA polymerase epsilon, catalytic subunit"
+POLE2,"DNA polymerase epsilon 2, accessory subunit"
+POLE3,"DNA polymerase epsilon 3, accessory subunit"
+POLE4,"DNA polymerase epsilon 4, accessory subunit"
+POLH,DNA polymerase eta
+POMC,Proopiomelanocortin
+POT1,Protection of telomeres 1
+POU3F2,POU class 3 homeobox 2
+PPARGC1A,PPARG coactivator 1 alpha
+PPARGC1B,PPARG coactivator 1 beta
+PPP1CC,Protein phosphatase 1 catalytic subunit gamma
+PPP3CA,Protein phosphatase 3 catalytic subunit alpha
+PPP3R1,"Protein phosphatase 3 regulatory subunit B, alpha"
+PRF1,Zinc finger protein 395
+PRIM1,DNA primase subunit 1
+PRIM2,DNA primase subunit 2
+PRKACA,Protein kinase cAMP-activated catalytic subunit alpha
+PRKACB,Protein kinase cAMP-activated catalytic subunit beta
+PRKACG,Protein kinase cAMP-activated catalytic subunit gamma
+PRKAR1A,Protein kinase cAMP-dependent type I regulatory subunit alpha
+PRKCA,Protein kinase C alpha
+PRKCB,Protein kinase C beta
+PRKCD,Protein kinase C delta
+PRKCG,Protein kinase C gamma
+PRKCH,Protein kinase C eta
+PRKCZ,Protein kinase C zeta
+PRKG1,Protein kinase cGMP-dependent 1
+PRSS1,Serine protease 1
+PSEN1,Presenilin 1
+PSEN2,Presenilin 2
+PSENEN,"Presenilin enhancer, gamma-secretase subunit"
+PTEN,Phosphatase and tensin homolog
+PTGER1,Prostaglandin E receptor 1
+PTGER2,Prostaglandin E receptor 2
+PTGER3,Prostaglandin E receptor 3
+PTGER4,Prostaglandin E receptor 4
+PTGS2,Prostaglandin-endoperoxide synthase 2
+PTPN1,Protein tyrosine phosphatase non-receptor type 1
+PTPN11,Protein tyrosine phosphatase non-receptor type 11
+PTPN22,Protein tyrosine phosphatase non-receptor type 22
+PTPRC,Protein tyrosine phosphatase receptor type C
+PXDN,Peroxidasin
+PXN,Peroxidasin
+QARS1,Glutaminyl-tRNA synthetase 1
+RAB27A,"RAB27A, member RAS oncogene family"
+RAB5C,"RAB5C, member RAS oncogene family"
+RAC1,"Ribonuclease A family member 1, pancreatic"
+RACK1,Receptor for activated C kinase 1
+RAD23B,RAD23 nucleotide excision repair protein B
+RAD50,RAD50 double strand break repair protein
+RAD51,RAD51 recombinase
+RAD52,RAD52 DNA repair protein
+RAF1,Ribonuclease A family member 3
+RALGDS,Ral guanine nucleotide dissociation stimulator
+RALY,RALY heterogeneous nuclear ribonucleoprotein
+RAP1A,"RAP1A, member of RAS oncogene family"
+RARS1,Arginyl-tRNA synthetase 1
+RASA1,RAS p21 protein activator 1
+RBX1,Ring-box 1
+RDX,Radixin
+RECQL4,RecQ like helicase 4
+REL,"REL proto-oncogene, NF-kB subunit"
+RELA,"RELA proto-oncogene, NF-kB subunit"
+RERE,Arginine-glutamic acid dipeptide repeats
+RET,Ret proto-oncogene
+REV1,REV1 DNA directed polymerase
+RFX5,Regulatory factor X5
+RFXANK,Regulatory factor X associated ankyrin containing protein
+RFXAP,Regulatory factor X associated protein
+RHEB,"Ras homolog, mTORC1 binding"
+RHOA,Ras homolog family member A
+RIPK1,Receptor interacting serine/threonine kinase 1
+RIT1,BCL11 transcription factor B
+RMI1,RecQ mediated genome instability 1
+RNASET2,Ribonuclease T2
+RPA2,RNA polymerase I subunit B
+RPGRIP1L,RPGRIP1 like
+RPS5,Ribosomal protein S5
+RPS6KA1,Ribosomal protein S6 kinase A1
+RRP9,"Ribosomal RNA processing 9, U3 small nucleolar RNA binding protein"
+RTEL1,Regulator of telomere elongation helicase 1
+RUVBL1,RuvB like AAA ATPase 1
+RYR1,Ryanodine receptor 1
+SAMD9,Sterile alpha motif domain containing 9
+SERPINB9,Serpin family B member 9
+SERPINE1,Serpin family E member 1
+SGPL1,Sphingosine-1-phosphate lyase 1
+SH2B3,SH2B adaptor protein 3
+SHC1,SHC adaptor protein 1
+SHOC2,SHOC2 leucine rich repeat scaffold protein
+SHQ1,"SHQ1, H/ACA ribonucleoprotein assembly factor"
+SIN3A,SIN3 transcription regulator family member A
+SIRPA,Signal regulatory protein alpha
+SIRT1,Sirtuin 1
+SKP1,S-phase kinase associated protein 1
+SKP2,Ubiquitously expressed prefoldin like chaperone
+SLC17A5,Solute carrier family 17 member 5
+SLC1A2,Solute carrier family 1 member 2
+SLC24A5,Solute carrier family 24 member 5
+SLC29A3,Solute carrier family 29 member 3
+SLC44A4,Solute carrier family 44 member 4
+SLC45A2,Solute carrier family 45 member 2
+SLC9A3R1,NHERF family PDZ scaffold protein 1
+SLX4,SLX4 structure-specific endonuclease subunit
+SMARCA2,SWI/SNF related BAF chromatin remodeling complex subunit ATPase 2
+SMARCA4,SWI/SNF related BAF chromatin remodeling complex subunit ATPase 4
+SMARCAL1,SNF2 related chromatin remodeling annealing helicase 1
+SMARCB1,SWI/SNF related BAF chromatin remodeling complex subunit B1
+SMARCC1,SWI/SNF related BAF chromatin remodeling complex subunit C1
+SMARCC2,SWI/SNF related BAF chromatin remodeling complex subunit C2
+SMARCD1,SWI/SNF related BAF chromatin remodeling complex subunit D1
+SMARCD2,SWI/SNF related BAF chromatin remodeling complex subunit D2
+SMARCD3,SWI/SNF related BAF chromatin remodeling complex subunit D3
+SMARCE1,SWI/SNF related BAF chromatin remodeling complex subunit E1
+SMO,Spermine oxidase
+SMOC2,SPARC related modular calcium binding 2
+SMPD1,Sphingomyelin phosphodiesterase 1
+SMPD2,Sphingomyelin phosphodiesterase 2
+SNAI2,Snail family transcriptional repressor 2
+SNAPIN,SNAP associated protein
+SOS1,SOS Ras/Rac guanine nucleotide exchange factor 1
+SOX10,SRY-box transcription factor 10
+SOX2,SRY-box transcription factor 2
+SOX9,SRY-box transcription factor 9
+SPATA48,Sperm microtubule inner protein 7
+SPRED1,Sprouty related EVH1 domain containing 1
+SPTLC1,Serine palmitoyltransferase long chain base subunit 1
+SPTLC2,Serine palmitoyltransferase long chain base subunit 2
+SRC,"SRC proto-oncogene, non-receptor tyrosine kinase"
+SS18,SS18 subunit of BAF chromatin remodeling complex
+SS18L1,SS18L1 subunit of BAF chromatin remodeling complex
+ST3GAL5,"ST3 beta-galactoside alpha-2,3-sialyltransferase 5"
+STAR,Guanylate cyclase 2C
+STAT1,Signal transducer and activator of transcription 1
+STAT3,Signal transducer and activator of transcription 3
+STAT4,Signal transducer and activator of transcription 4
+STK11,Serine/threonine kinase 11
+STRA13,Basic helix-loop-helix family member e40
+STRADA,STE20 related adaptor alpha
+STT3B,STT3 oligosaccharyltransferase complex catalytic subunit B
+SUMO1,Small ubiquitin like modifier 1
+SYTL2,Synaptotagmin like 2
+TAB1,TGF-beta activated kinase 1 (MAP3K7) binding protein 1
+TANK,TRAF family member associated NFKB activator
+TBC1D7,TBC1 domain family member 7
+TBK1,TANK binding kinase 1
+TBX2,T-box transcription factor 2
+TBX3,T-box transcription factor 3
+TBX5,T-box transcription factor 5
+TCEB1,Elongin C
+TCEB2,Elongin B
+TCF7,Transcription factor 7
+TCF7L1,Transcription factor 7 like 1
+TCF7L2,Transcription factor 7 like 2
+TEF,"TEF transcription factor, PAR bZIP family member"
+TEN1,Teneurin transmembrane protein 1
+TERF1,Telomeric repeat binding factor 1
+TERF2,Telomeric repeat binding factor 2
+TERF2IP,TERF2 interacting protein
+TERT,Telomerase reverse transcriptase
+TFAP2A,Transcription factor AP-2 alpha
+TFE3,Transcription factor binding to IGHM enhancer 3
+TFEB,Transcription factor EB
+TFEC,Transcription factor EC
+TG,Thyroglobulin
+TICAM1,TIR domain containing adaptor molecule 1
+TINF2,TERF1 interacting nuclear factor 2
+TLR3,Toll like receptor 3
+TLR4,Toll like receptor 4
+TNF,Tumor necrosis factor
+TNFRSF11A,TNF receptor superfamily member 11a
+TNFRSF11B,TNF receptor superfamily member 11b
+TNFRSF1A,TNF receptor superfamily member 1A
+TNFSF11,TNF superfamily member 11
+TNRC6A,Trinucleotide repeat containing adaptor 6A
+TNRC6B,Trinucleotide repeat containing adaptor 6B
+TNRC6C,Trinucleotide repeat containing adaptor 6C
+TOP3A,DNA topoisomerase III alpha
+TP53,Tumor protein p53
+TP53BP1,Tumor protein p53 binding protein 1
+TP63,Tumor protein p63
+TPCN2,Two pore segment channel 2
+TPSAB1,Tryptase alpha/beta 1
+TRADD,TNFRSF1A associated via death domain
+TRAF2,TRAF family member associated NFKB activator
+TRAF6,TNF receptor associated factor 6
+TRPM1,Transient receptor potential cation channel subfamily M member 1
+TSC1,TSC complex subunit 1
+TSC2,TSC complex subunit 2
+TYR,Tyrosinase
+TYRP1,Tyrosinase related protein 1
+UBASH3A,Ubiquitin associated and SH3 domain containing A
+UBE2D1,Ubiquitin conjugating enzyme E2 D1
+UBE2D3,Ubiquitin conjugating enzyme E2 D3
+UBE2E2,Ubiquitin conjugating enzyme E2 E2
+UBE2I,Ubiquitin conjugating enzyme E2 I
+UBE2M,Ubiquitin conjugating enzyme E2 M
+USF1,Upstream transcription factor 1
+USH1C,USH1 protein network component harmonin
+USH1G,USH1 protein network component sans
+USP7,Ubiquitin specific peptidase 7
+USP9X,Ubiquitin specific peptidase 9 X-linked
+UVSSA,UV stimulated scaffold protein A
+VAC14,VAC14 component of PIKFYVE complex
+VEGFA,Vascular endothelial growth factor A
+VHL,Von Hippel-Lindau tumor suppressor
+WDHD1,WD repeat and HMG-box DNA binding protein 1
+WDR36,WD repeat domain 36
+WIF1,Wnt inhibitory factor 1
+WNT1,Wnt family member 1
+WNT10A,Wnt family member 10A
+WNT10B,Wnt family member 10B
+WNT11,Wnt family member 11
+WNT16,Wnt family member 16
+WNT2,Wnt family member 2
+WNT2B,Wnt family member 2B
+WNT3,Wnt family member 3
+WNT3A,Wnt family member 3A
+WNT4,Wnt family member 4
+WNT5A,Wnt family member 5A
+WNT5B,Wnt family member 5B
+WNT6,Wnt family member 6
+WNT7A,Wnt family member 7A
+WNT7B,Wnt family member 7B
+WNT8A,Wnt family member 8A
+WNT8B,Wnt family member 8B
+WNT9A,Wnt family member 9A
+WNT9B,Wnt family member 9B
+WRAP53,WD repeat containing antisense to TP53
+WRN,WRN RecQ like helicase
+XIAP,X-linked inhibitor of apoptosis
+XPA,"XPA, DNA damage recognition and repair factor"
+XPC,"XPC complex subunit, DNA damage recognition and repair factor"
+XPO1,Exportin 1
+XRCC6,X-ray repair cross complementing 6
+YWHAB,Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein beta
+YWHAE,Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon
+YWHAG,Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein gamma
+YWHAH,Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein eta
+YWHAZ,Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta
+ZC3H7B,Zinc finger CCCH-type containing 7B
+ZEB1,Zinc finger E-box binding homeobox 1
+ZIC1,Zic family zinc finger 1
+ZMIZ1,Zinc finger MIZ-type containing 1
+ZMPSTE24,Zinc metallopeptidase STE24
+ZNF354A,Zinc finger protein 354A

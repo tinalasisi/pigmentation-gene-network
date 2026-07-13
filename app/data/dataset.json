@@ -81,7 +81,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ATP binding cassette subfamily B member 6 (LAN blood group)"
   },
   {
    "id": "ABCC9",
@@ -110,7 +111,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ATP binding cassette subfamily C member 9"
   },
   {
    "id": "ABL1",
@@ -139,7 +141,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ABL proto-oncogene 1, non-receptor tyrosine kinase"
   },
   {
    "id": "ACD",
@@ -169,7 +172,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ACD shelterin complex subunit and telomerase recruitment factor"
   },
   {
    "id": "ACTB",
@@ -200,7 +204,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Actin beta"
   },
   {
    "id": "ACTL6A",
@@ -231,7 +236,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Actin like 6A"
   },
   {
    "id": "ADAM10",
@@ -261,7 +267,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ADAM metallopeptidase domain 10"
   },
   {
    "id": "ADAR",
@@ -291,7 +298,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Adenosine deaminase RNA specific"
   },
   {
    "id": "ADCY1",
@@ -328,7 +336,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 1"
   },
   {
    "id": "ADCY2",
@@ -365,7 +374,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 2"
   },
   {
    "id": "ADCY3",
@@ -402,7 +412,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 8"
   },
   {
    "id": "ADCY4",
@@ -447,7 +458,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 4"
   },
   {
    "id": "ADCY5",
@@ -484,7 +496,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 5"
   },
   {
    "id": "ADCY6",
@@ -521,7 +534,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 6"
   },
   {
    "id": "ADCY7",
@@ -558,7 +572,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 7"
   },
   {
    "id": "ADCY8",
@@ -595,7 +610,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 8"
   },
   {
    "id": "ADCY9",
@@ -632,7 +648,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Adenylate cyclase 9"
   },
   {
    "id": "ADO",
@@ -661,7 +678,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "2-aminoethanethiol dioxygenase"
   },
   {
    "id": "ADPRH",
@@ -690,7 +708,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ADP-ribosylarginine hydrolase"
   },
   {
    "id": "AGO1",
@@ -721,7 +740,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Argonaute RISC component 1"
   },
   {
    "id": "AGO2",
@@ -752,7 +772,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Argonaute RISC catalytic component 2"
   },
   {
    "id": "AGO3",
@@ -783,7 +804,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Argonaute RISC catalytic component 3"
   },
   {
    "id": "AGO4",
@@ -814,7 +836,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Argonaute RISC component 4"
   },
   {
    "id": "AHR",
@@ -858,7 +881,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Aryl hydrocarbon receptor"
   },
   {
    "id": "AIMP1",
@@ -889,7 +913,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Aminoacyl tRNA synthetase complex interacting multifunctional protein 1"
   },
   {
    "id": "AIMP2",
@@ -920,7 +945,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Aminoacyl tRNA synthetase complex interacting multifunctional protein 2"
   },
   {
    "id": "AKT1",
@@ -972,7 +998,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "AKT serine/threonine kinase 1"
   },
   {
    "id": "AKT2",
@@ -1003,7 +1030,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "AKT serine/threonine kinase 2"
   },
   {
    "id": "AKT3",
@@ -1034,7 +1062,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "AKT serine/threonine kinase 3"
   },
   {
    "id": "ALG11",
@@ -1063,7 +1092,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ALG11 alpha-1,2-mannosyltransferase"
   },
   {
    "id": "ALX3",
@@ -1094,7 +1124,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ALX homeobox 3"
   },
   {
    "id": "AP3B1",
@@ -1124,7 +1155,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Adaptor related protein complex 3 subunit beta 1"
   },
   {
    "id": "AP3D1",
@@ -1154,7 +1186,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Adaptor related protein complex 3 subunit delta 1"
   },
   {
    "id": "AP3M1",
@@ -1183,7 +1216,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Adaptor related protein complex 3 subunit mu 1"
   },
   {
    "id": "AP3S1",
@@ -1212,7 +1246,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Adaptor related protein complex 3 subunit sigma 1"
   },
   {
    "id": "APAF1",
@@ -1248,7 +1283,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Apoptotic peptidase activating factor 1"
   },
   {
    "id": "APC2",
@@ -1278,7 +1314,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Anaphase promoting complex subunit 2"
   },
   {
    "id": "APH1A",
@@ -1307,7 +1344,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Aph-1A gamma-secretase subunit"
   },
   {
    "id": "APITD1",
@@ -1336,7 +1374,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Centromere protein S"
   },
   {
    "id": "ARID1A",
@@ -1367,7 +1406,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "AT-rich interaction domain 1A"
   },
   {
    "id": "ARID1B",
@@ -1398,7 +1438,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "AT-rich interaction domain 1B"
   },
   {
    "id": "ARID5B",
@@ -1427,7 +1468,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "AT-rich interaction domain 5B"
   },
   {
    "id": "ARRB2",
@@ -1456,7 +1498,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Arrestin beta 2"
   },
   {
    "id": "ASAH1",
@@ -1487,7 +1530,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "N-acylsphingosine amidohydrolase 1"
   },
   {
    "id": "ASIP",
@@ -1524,7 +1568,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Par-3 family cell polarity regulator"
   },
   {
    "id": "ATF2",
@@ -1568,7 +1613,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Glial cell derived neurotrophic factor"
   },
   {
    "id": "ATM",
@@ -1598,7 +1644,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ATM serine/threonine kinase"
   },
   {
    "id": "ATOX1",
@@ -1627,7 +1674,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Antioxidant 1 copper chaperone"
   },
   {
    "id": "ATP6V0B",
@@ -1658,7 +1706,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V0 subunit b"
   },
   {
    "id": "ATP6V0C",
@@ -1689,7 +1738,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V0 subunit c"
   },
   {
    "id": "ATP6V0D1",
@@ -1720,7 +1770,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V0 subunit d1"
   },
   {
    "id": "ATP6V0E1",
@@ -1751,7 +1802,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V0 subunit e1"
   },
   {
    "id": "ATP6V1A",
@@ -1782,7 +1834,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit A"
   },
   {
    "id": "ATP6V1B2",
@@ -1813,7 +1866,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit B2"
   },
   {
    "id": "ATP6V1C1",
@@ -1844,7 +1898,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit C1"
   },
   {
    "id": "ATP6V1E1",
@@ -1875,7 +1930,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit E1"
   },
   {
    "id": "ATP6V1G1",
@@ -1906,7 +1962,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit G1"
   },
   {
    "id": "ATP6V1H",
@@ -1937,7 +1994,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "ATPase H+ transporting V1 subunit H"
   },
   {
    "id": "ATP7A",
@@ -1967,7 +2025,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ATPase copper transporting alpha"
   },
   {
    "id": "ATP7B",
@@ -1997,7 +2056,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ATPase copper transporting beta"
   },
   {
    "id": "ATXN2",
@@ -2027,7 +2087,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ataxin 2"
   },
   {
    "id": "B2M",
@@ -2056,7 +2117,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Beta-2-microglobulin"
   },
   {
    "id": "BACH2",
@@ -2085,7 +2147,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BACH transcriptional regulator 2"
   },
   {
    "id": "BAD",
@@ -2137,7 +2200,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 associated agonist of cell death"
   },
   {
    "id": "BAK1",
@@ -2181,7 +2245,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 antagonist/killer 1"
   },
   {
    "id": "BAX",
@@ -2233,7 +2298,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 associated X, apoptosis regulator"
   },
   {
    "id": "BBC3",
@@ -2284,7 +2350,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 binding component 3"
   },
   {
    "id": "BCL10",
@@ -2313,7 +2380,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL10 immune signaling adaptor"
   },
   {
    "id": "BCL2",
@@ -2372,7 +2440,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 apoptosis regulator"
   },
   {
    "id": "BCL2A1",
@@ -2403,7 +2472,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 related protein A1"
   },
   {
    "id": "BCL2L1",
@@ -2455,7 +2525,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 like 1"
   },
   {
    "id": "BCL2L11",
@@ -2485,7 +2556,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 like 11"
   },
   {
    "id": "BCL2L12",
@@ -2515,7 +2587,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL2 like 12"
   },
   {
    "id": "BCL7A",
@@ -2546,7 +2619,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BAF chromatin remodeling complex subunit BCL7A"
   },
   {
    "id": "BCL7B",
@@ -2577,7 +2651,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BAF chromatin remodeling complex subunit BCL7B"
   },
   {
    "id": "BCL7C",
@@ -2608,7 +2683,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BAF chromatin remodeling complex subunit BCL7C"
   },
   {
    "id": "BID",
@@ -2652,7 +2728,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BH3 interacting domain death agonist"
   },
   {
    "id": "BIRC7",
@@ -2683,7 +2760,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Baculoviral IAP repeat containing 7"
   },
   {
    "id": "BIVM",
@@ -2712,7 +2790,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Basic, immunoglobulin-like variable motif containing"
   },
   {
    "id": "BLM",
@@ -2742,7 +2821,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BLM RecQ like helicase"
   },
   {
    "id": "BLOC1S3",
@@ -2772,7 +2852,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Biogenesis of lysosomal organelles complex 1 subunit 3"
   },
   {
    "id": "BLOC1S5",
@@ -2802,7 +2883,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Biogenesis of lysosomal organelles complex 1 subunit 5"
   },
   {
    "id": "BLOC1S6",
@@ -2832,7 +2914,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Biogenesis of lysosomal organelles complex 1 subunit 6"
   },
   {
    "id": "BNC2",
@@ -2861,7 +2944,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Basonuclin zinc finger protein 2"
   },
   {
    "id": "BOP1",
@@ -2890,7 +2974,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BOP1 ribosomal biogenesis factor"
   },
   {
    "id": "BRAF",
@@ -2920,7 +3005,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "B-Raf proto-oncogene, serine/threonine kinase"
   },
   {
    "id": "BRCA1",
@@ -2958,7 +3044,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "BRCA1 DNA repair associated"
   },
   {
    "id": "BRCA2",
@@ -2988,7 +3075,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BRCA2 DNA repair associated"
   },
   {
    "id": "BRIP1",
@@ -3018,7 +3106,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BRCA1 interacting DNA helicase 1"
   },
   {
    "id": "BTNL2",
@@ -3048,7 +3137,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Butyrophilin like 2"
   },
   {
    "id": "BTRC",
@@ -3077,7 +3167,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Beta-transducin repeat containing E3 ubiquitin protein ligase"
   },
   {
    "id": "C10ORF11",
@@ -3106,7 +3197,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Leucine rich melanocyte differentiation associated"
   },
   {
    "id": "C11orf65",
@@ -3135,7 +3227,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Chromosome 11 open reading frame 65"
   },
   {
    "id": "C11orf74",
@@ -3164,7 +3257,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Intraflagellar transport associated protein"
   },
   {
    "id": "C17ORF70",
@@ -3193,7 +3287,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA core complex associated protein 100"
   },
   {
    "id": "C19ORF40",
@@ -3222,7 +3317,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA core complex associated protein 24"
   },
   {
    "id": "C1ORF86",
@@ -3251,7 +3347,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA core complex associated protein 20"
   },
   {
    "id": "C1QTNF6",
@@ -3280,7 +3377,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "C1q and TNF related 6"
   },
   {
    "id": "C1orf141",
@@ -3309,7 +3407,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Chromosome 1 open reading frame 141"
   },
   {
    "id": "CAB39",
@@ -3338,7 +3437,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Calcium binding protein 39"
   },
   {
    "id": "CALM1",
@@ -3390,7 +3490,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin 1"
   },
   {
    "id": "CALM2",
@@ -3427,7 +3528,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin 2"
   },
   {
    "id": "CALM3",
@@ -3464,7 +3566,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin 3"
   },
   {
    "id": "CALML3",
@@ -3501,7 +3604,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin like 3"
   },
   {
    "id": "CALML4",
@@ -3538,7 +3642,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin like 4"
   },
   {
    "id": "CALML5",
@@ -3575,7 +3680,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin like 5"
   },
   {
    "id": "CALML6",
@@ -3612,7 +3718,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calmodulin like 6"
   },
   {
    "id": "CAMK2A",
@@ -3649,7 +3756,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calcium/calmodulin dependent protein kinase II alpha"
   },
   {
    "id": "CAMK2B",
@@ -3686,7 +3794,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calcium/calmodulin dependent protein kinase II beta"
   },
   {
    "id": "CAMK2D",
@@ -3723,7 +3832,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calcium/calmodulin dependent protein kinase II delta"
   },
   {
    "id": "CAMK2G",
@@ -3760,7 +3870,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Calcium/calmodulin dependent protein kinase II gamma"
   },
   {
    "id": "CAND1",
@@ -3789,7 +3900,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin associated and neddylation dissociated 1"
   },
   {
    "id": "CASP1",
@@ -3818,7 +3930,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Caspase 1"
   },
   {
    "id": "CASP3",
@@ -3862,7 +3975,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Caspase 3"
   },
   {
    "id": "CASP7",
@@ -3892,7 +4006,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Caspase 7"
   },
   {
    "id": "CASP8",
@@ -3937,7 +4052,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Caspase 8"
   },
   {
    "id": "CASP9",
@@ -3981,7 +4097,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Caspase 9"
   },
   {
    "id": "CBFA2T3",
@@ -4010,7 +4127,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CBFA2/RUNX1 partner transcriptional co-repressor 3"
   },
   {
    "id": "CBS",
@@ -4039,7 +4157,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cystathionine beta-synthase"
   },
   {
    "id": "CBSL",
@@ -4068,7 +4187,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cystathionine beta-synthase like"
   },
   {
    "id": "CCL20",
@@ -4097,7 +4217,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "C-C motif chemokine ligand 20"
   },
   {
    "id": "CCNA2",
@@ -4126,7 +4247,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin A2"
   },
   {
    "id": "CCNB1",
@@ -4157,7 +4279,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin B1"
   },
   {
    "id": "CCND1",
@@ -4209,7 +4332,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin D1"
   },
   {
    "id": "CCNH",
@@ -4238,7 +4362,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin H"
   },
   {
    "id": "CCR6",
@@ -4267,7 +4392,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "C-C motif chemokine receptor 6"
   },
   {
    "id": "CD22",
@@ -4296,7 +4422,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CD22 molecule"
   },
   {
    "id": "CD28",
@@ -4325,7 +4452,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CD28 molecule"
   },
   {
    "id": "CD74",
@@ -4354,7 +4482,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CD74 molecule"
   },
   {
    "id": "CD80",
@@ -4384,7 +4513,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CD80 molecule"
   },
   {
    "id": "CD86",
@@ -4413,7 +4543,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CD86 molecule"
   },
   {
    "id": "CDC25B",
@@ -4444,7 +4575,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 25B"
   },
   {
    "id": "CDC34",
@@ -4473,7 +4605,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 34, ubiquitin conjugating enzyme"
   },
   {
    "id": "CDC42",
@@ -4517,7 +4650,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 42"
   },
   {
    "id": "CDC45",
@@ -4546,7 +4680,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 45"
   },
   {
    "id": "CDC6",
@@ -4575,7 +4710,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 6"
   },
   {
    "id": "CDC7",
@@ -4604,7 +4740,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cell division cycle 7"
   },
   {
    "id": "CDH1",
@@ -4635,7 +4772,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Fizzy and cell division cycle 20 related 1"
   },
   {
    "id": "CDH2",
@@ -4680,7 +4818,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cadherin 2"
   },
   {
    "id": "CDH23",
@@ -4710,7 +4849,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cadherin related 23"
   },
   {
    "id": "CDH3",
@@ -4740,7 +4880,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cadherin 15"
   },
   {
    "id": "CDK2",
@@ -4799,7 +4940,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin dependent kinase 2"
   },
   {
    "id": "CDK4",
@@ -4844,7 +4986,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin dependent kinase 4"
   },
   {
    "id": "CDK5RAP2",
@@ -4873,7 +5016,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CDK5 regulatory subunit associated protein 2"
   },
   {
    "id": "CDK6",
@@ -4902,7 +5046,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin dependent kinase 6"
   },
   {
    "id": "CDK7",
@@ -4931,7 +5076,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin dependent kinase 7"
   },
   {
    "id": "CDKN1A",
@@ -4990,7 +5136,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cysteine rich DPF motif domain containing 1"
   },
   {
    "id": "CDKN2A",
@@ -5028,7 +5175,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Cyclin dependent kinase inhibitor 2A"
   },
   {
    "id": "CDT1",
@@ -5057,7 +5205,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Chromatin licensing and DNA replication factor 1"
   },
   {
    "id": "CEACAM1",
@@ -5088,7 +5237,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "CEA cell adhesion molecule 1"
   },
   {
    "id": "CEP57",
@@ -5117,7 +5267,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Centrosomal protein 57"
   },
   {
    "id": "CETN2",
@@ -5146,7 +5297,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Centrin 2"
   },
   {
    "id": "CFLAR",
@@ -5183,7 +5335,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CASP8 and FADD like apoptosis regulator"
   },
   {
    "id": "CHEK2",
@@ -5212,7 +5365,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Checkpoint kinase 2"
   },
   {
    "id": "CHRNA9",
@@ -5241,7 +5395,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cholinergic receptor nicotinic alpha 9 subunit"
   },
   {
    "id": "CHUK",
@@ -5286,7 +5441,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Component of inhibitor of nuclear factor kappa B kinase complex"
   },
   {
    "id": "CLNK",
@@ -5315,7 +5471,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cytokine dependent hematopoietic cell linker"
   },
   {
    "id": "CNOT1",
@@ -5344,7 +5501,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CCR4-NOT transcription complex subunit 1"
   },
   {
    "id": "COL18A1",
@@ -5373,7 +5531,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Collagen type XVIII alpha 1 chain"
   },
   {
    "id": "CPVL",
@@ -5402,7 +5561,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Carboxypeptidase vitellogenic like"
   },
   {
    "id": "CREB1",
@@ -5454,7 +5614,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 1"
   },
   {
    "id": "CREB3",
@@ -5491,7 +5652,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 3 like 4"
   },
   {
    "id": "CREB3L1",
@@ -5528,7 +5690,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 3 like 1"
   },
   {
    "id": "CREB3L2",
@@ -5565,7 +5728,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 3 like 2"
   },
   {
    "id": "CREB3L3",
@@ -5602,7 +5766,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 3 like 3"
   },
   {
    "id": "CREB3L4",
@@ -5639,7 +5804,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "CAMP responsive element binding protein 3 like 4"
   },
   {
    "id": "CREBBP",
@@ -5684,7 +5850,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "CREB binding lysine acetyltransferase"
   },
   {
    "id": "CSF1",
@@ -5715,7 +5882,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Colony stimulating factor 1"
   },
   {
    "id": "CSF2",
@@ -5759,7 +5927,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Colony stimulating factor 2"
   },
   {
    "id": "CSF2RA",
@@ -5803,7 +5972,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Colony stimulating factor 2 receptor subunit alpha"
   },
   {
    "id": "CTC1",
@@ -5833,7 +6003,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CST telomere replication complex component 1"
   },
   {
    "id": "CTH",
@@ -5862,7 +6033,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "V-set and immunoglobulin domain containing 2"
   },
   {
    "id": "CTLA4",
@@ -5892,7 +6064,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cytotoxic T-lymphocyte associated protein 4"
   },
   {
    "id": "CTNNB1",
@@ -5951,7 +6124,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Catenin beta 1"
   },
   {
    "id": "CTNS",
@@ -5980,7 +6154,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cystinosin, lysosomal cystine transporter"
   },
   {
    "id": "CUL1",
@@ -6009,7 +6184,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 1"
   },
   {
    "id": "CUL2",
@@ -6038,7 +6214,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 2"
   },
   {
    "id": "CUL3",
@@ -6067,7 +6244,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 3"
   },
   {
    "id": "CUL4A",
@@ -6096,7 +6274,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 4A"
   },
   {
    "id": "CUL4B",
@@ -6125,7 +6304,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 4B"
   },
   {
    "id": "CUL5",
@@ -6154,7 +6334,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 5"
   },
   {
    "id": "CUL7",
@@ -6183,7 +6364,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cullin 7"
   },
   {
    "id": "CXCL8",
@@ -6235,7 +6417,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "C-X-C motif chemokine ligand 8"
   },
   {
    "id": "CYCS",
@@ -6279,7 +6462,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cytochrome c, somatic"
   },
   {
    "id": "CYFIP1",
@@ -6308,7 +6492,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cytoplasmic FMR1 interacting protein 1"
   },
   {
    "id": "CYLD",
@@ -6337,7 +6522,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "CYLD lysine 63 deubiquitinase"
   },
   {
    "id": "CYP11A1",
@@ -6367,7 +6553,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cytochrome P450 family 11 subfamily A member 1"
   },
   {
    "id": "DARS1",
@@ -6398,7 +6585,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Aspartyl-tRNA synthetase 1"
   },
   {
    "id": "DCAF13",
@@ -6427,7 +6615,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DDB1 and CUL4 associated factor 13"
   },
   {
    "id": "DCP1A",
@@ -6456,7 +6645,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Decapping mRNA 1A"
   },
   {
    "id": "DCP2",
@@ -6485,7 +6675,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Decapping mRNA 2"
   },
   {
    "id": "DCT",
@@ -6551,7 +6742,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Dopachrome tautomerase"
   },
   {
    "id": "DDB1",
@@ -6580,7 +6772,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Damage specific DNA binding protein 1"
   },
   {
    "id": "DDB2",
@@ -6610,7 +6803,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Damage specific DNA binding protein 2"
   },
   {
    "id": "DDX3X",
@@ -6640,7 +6834,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DEAD-box helicase 3 X-linked"
   },
   {
    "id": "DDX6",
@@ -6670,7 +6865,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DEAD-box helicase 6"
   },
   {
    "id": "DEF8",
@@ -6699,7 +6895,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Differentially expressed in FDCP 8 homolog"
   },
   {
    "id": "DFFA",
@@ -6736,7 +6933,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA fragmentation factor subunit alpha"
   },
   {
    "id": "DFFB",
@@ -6773,7 +6971,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA fragmentation factor subunit beta"
   },
   {
    "id": "DHX36",
@@ -6802,7 +7001,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DEAH-box helicase 36"
   },
   {
    "id": "DIAPH1",
@@ -6833,7 +7033,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Diaphanous related formin 1"
   },
   {
    "id": "DICER1",
@@ -6864,7 +7065,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Dicer 1, ribonuclease III"
   },
   {
    "id": "DKC1",
@@ -6894,7 +7096,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Dyskerin pseudouridine synthase 1"
   },
   {
    "id": "DNAJC12",
@@ -6923,7 +7126,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DnaJ heat shock protein family (Hsp40) member C12"
   },
   {
    "id": "DPF1",
@@ -6954,7 +7158,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Double PHD fingers 1"
   },
   {
    "id": "DPF2",
@@ -6985,7 +7190,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Double PHD fingers 2"
   },
   {
    "id": "DPF3",
@@ -7016,7 +7222,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Double PHD fingers 3"
   },
   {
    "id": "DSTYK",
@@ -7045,7 +7252,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Dual serine/threonine and tyrosine protein kinase"
   },
   {
    "id": "DTNBP1",
@@ -7075,7 +7283,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Dystrobrevin binding protein 1"
   },
   {
    "id": "DUSP1",
@@ -7119,7 +7328,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Dual specificity phosphatase 12"
   },
   {
    "id": "DVL1",
@@ -7156,7 +7366,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Dishevelled segment polarity protein 1"
   },
   {
    "id": "DVL2",
@@ -7193,7 +7404,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Dishevelled segment polarity protein 2"
   },
   {
    "id": "DVL3",
@@ -7230,7 +7442,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Dishevelled segment polarity protein 3"
   },
   {
    "id": "DYNLL1",
@@ -7259,7 +7472,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Dynein light chain LC8-type 1"
   },
   {
    "id": "ECSIT",
@@ -7295,7 +7509,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ECSIT signaling integrator"
   },
   {
    "id": "EDC3",
@@ -7324,7 +7539,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Enhancer of mRNA decapping 3"
   },
   {
    "id": "EDIL3",
@@ -7355,7 +7571,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "EGF like and discoidin domains 3"
   },
   {
    "id": "EDN1",
@@ -7414,7 +7631,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Endothelin 1"
   },
   {
    "id": "EDN3",
@@ -7452,7 +7670,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Endothelin 3"
   },
   {
    "id": "EDNRA",
@@ -7481,7 +7700,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Endothelin receptor type A"
   },
   {
    "id": "EDNRB",
@@ -7547,7 +7767,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Endothelin receptor type B"
   },
   {
    "id": "EEF1E1",
@@ -7578,7 +7799,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation elongation factor 1 epsilon 1"
   },
   {
    "id": "EGFR",
@@ -7630,7 +7852,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Epidermal growth factor receptor"
   },
   {
    "id": "EGR2",
@@ -7660,7 +7883,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Early growth response 2"
   },
   {
    "id": "EIF1",
@@ -7689,7 +7913,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 1"
   },
   {
    "id": "EIF2B1",
@@ -7718,7 +7943,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2B subunit alpha"
   },
   {
    "id": "EIF2B3",
@@ -7747,7 +7973,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2B subunit gamma"
   },
   {
    "id": "EIF2B5",
@@ -7776,7 +8003,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2B subunit epsilon"
   },
   {
    "id": "EIF2S1",
@@ -7805,7 +8033,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2 subunit alpha"
   },
   {
    "id": "EIF2S2",
@@ -7835,7 +8064,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2 subunit beta"
   },
   {
    "id": "EIF2S3",
@@ -7864,7 +8094,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 2 subunit gamma"
   },
   {
    "id": "EIF3A",
@@ -7893,7 +8124,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 6"
   },
   {
    "id": "EIF3G",
@@ -7922,7 +8154,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 3 subunit G"
   },
   {
    "id": "EIF4E",
@@ -7951,7 +8184,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 4E"
   },
   {
    "id": "EIF5",
@@ -7980,7 +8214,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 5"
   },
   {
    "id": "EIF6",
@@ -8010,7 +8245,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Eukaryotic translation initiation factor 6"
   },
   {
    "id": "ELK1",
@@ -8054,7 +8290,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Potassium voltage-gated channel subfamily H member 8"
   },
   {
    "id": "ENPP1",
@@ -8084,7 +8321,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ectonucleotide pyrophosphatase/phosphodiesterase 1"
   },
   {
    "id": "EP300",
@@ -8136,7 +8374,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "EP300 lysine acetyltransferase"
   },
   {
    "id": "EPG5",
@@ -8165,7 +8404,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ectopic P-granules 5 autophagy tethering factor"
   },
   {
    "id": "EPRS1",
@@ -8196,7 +8436,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Glutamyl-prolyl-tRNA synthetase 1"
   },
   {
    "id": "ERCC1",
@@ -8226,7 +8467,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 1, endonuclease non-catalytic subunit"
   },
   {
    "id": "ERCC2",
@@ -8256,7 +8498,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 2, TFIIH core complex helicase subunit"
   },
   {
    "id": "ERCC3",
@@ -8286,7 +8529,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 3, TFIIH core complex helicase subunit"
   },
   {
    "id": "ERCC4",
@@ -8316,7 +8560,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 4, endonuclease catalytic subunit"
   },
   {
    "id": "ERCC5",
@@ -8346,7 +8591,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 5, endonuclease"
   },
   {
    "id": "ERCC6",
@@ -8376,7 +8622,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ERCC excision repair 6, chromatin remodeling factor"
   },
   {
    "id": "ESCO2",
@@ -8406,7 +8653,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Establishment of sister chromatid cohesion N-acetyltransferase 2"
   },
   {
    "id": "EXO1",
@@ -8435,7 +8683,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Exonuclease 1"
   },
   {
    "id": "EZR",
@@ -8472,7 +8721,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ezrin"
   },
   {
    "id": "F10",
@@ -8517,7 +8767,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Coagulation factor X"
   },
   {
    "id": "F2RL1",
@@ -8561,7 +8812,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "F2R like trypsin receptor 1"
   },
   {
    "id": "F7",
@@ -8598,7 +8850,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Coagulation factor VII"
   },
   {
    "id": "FADD",
@@ -8635,7 +8888,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fas associated via death domain"
   },
   {
    "id": "FADS2",
@@ -8665,7 +8919,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fatty acid desaturase 2"
   },
   {
    "id": "FAN1",
@@ -8694,7 +8949,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FANCD2 and FANCI associated nuclease 1"
   },
   {
    "id": "FANCA",
@@ -8724,7 +8980,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group A"
   },
   {
    "id": "FANCB",
@@ -8754,7 +9011,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group B"
   },
   {
    "id": "FANCC",
@@ -8784,7 +9042,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group C"
   },
   {
    "id": "FANCD2",
@@ -8814,7 +9073,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group D2"
   },
   {
    "id": "FANCE",
@@ -8844,7 +9104,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group E"
   },
   {
    "id": "FANCF",
@@ -8873,7 +9134,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group F"
   },
   {
    "id": "FANCG",
@@ -8902,7 +9164,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group G"
   },
   {
    "id": "FANCI",
@@ -8932,7 +9195,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group I"
   },
   {
    "id": "FANCL",
@@ -8961,7 +9225,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group L"
   },
   {
    "id": "FANCM",
@@ -8990,7 +9255,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FA complementation group M"
   },
   {
    "id": "FAP",
@@ -9019,7 +9285,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Glomulin, FKBP associated protein"
   },
   {
    "id": "FARP2",
@@ -9049,7 +9316,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FERM, ARH/RhoGEF and pleckstrin domain protein 2"
   },
   {
    "id": "FAS",
@@ -9094,7 +9362,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fatty acid synthase"
   },
   {
    "id": "FASLG",
@@ -9139,7 +9408,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fas ligand"
   },
   {
    "id": "FBL",
@@ -9168,7 +9438,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fibrillarin rRNA 2'-O-methyltransferase"
   },
   {
    "id": "FBXW7",
@@ -9197,7 +9468,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "F-box and WD repeat domain containing 7"
   },
   {
    "id": "FDX1",
@@ -9226,7 +9498,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ferredoxin 1"
   },
   {
    "id": "FGF2",
@@ -9255,7 +9528,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fibroblast growth factor 13"
   },
   {
    "id": "FGF9",
@@ -9284,7 +9558,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fibroblast growth factor 9"
   },
   {
    "id": "FGFR3",
@@ -9314,7 +9589,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fibroblast growth factor receptor 3"
   },
   {
    "id": "FIG4",
@@ -9344,7 +9620,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FIG4 phosphoinositide 5-phosphatase"
   },
   {
    "id": "FLI1",
@@ -9374,7 +9651,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FLII actin remodeling protein"
   },
   {
    "id": "FLNA",
@@ -9404,7 +9682,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Filamin A"
   },
   {
    "id": "FLT1",
@@ -9433,7 +9712,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fms related receptor tyrosine kinase 1"
   },
   {
    "id": "FLT4",
@@ -9462,7 +9742,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fms related receptor tyrosine kinase 4"
   },
   {
    "id": "FMR1",
@@ -9492,7 +9773,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FMR1 intronic transcript 1"
   },
   {
    "id": "FOS",
@@ -9544,7 +9826,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fos proto-oncogene, AP-1 transcription factor subunit"
   },
   {
    "id": "FOXD3",
@@ -9575,7 +9858,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Forkhead box D3"
   },
   {
    "id": "FOXP1",
@@ -9604,7 +9888,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Forkhead box P1"
   },
   {
    "id": "FRAS1",
@@ -9634,7 +9919,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fraser extracellular matrix complex subunit 1"
   },
   {
    "id": "FREM2",
@@ -9664,7 +9950,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "FRAS1 related extracellular matrix 2"
   },
   {
    "id": "FRS2",
@@ -9693,7 +9980,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Fibroblast growth factor receptor substrate 2"
   },
   {
    "id": "FZD1",
@@ -9730,7 +10018,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 1"
   },
   {
    "id": "FZD10",
@@ -9767,7 +10056,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 10"
   },
   {
    "id": "FZD2",
@@ -9804,7 +10094,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 2"
   },
   {
    "id": "FZD3",
@@ -9856,7 +10147,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 9"
   },
   {
    "id": "FZD4",
@@ -9893,7 +10185,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 4"
   },
   {
    "id": "FZD5",
@@ -9930,7 +10223,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 5"
   },
   {
    "id": "FZD6",
@@ -9967,7 +10261,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 6"
   },
   {
    "id": "FZD7",
@@ -10004,7 +10299,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 7"
   },
   {
    "id": "FZD8",
@@ -10041,7 +10337,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 8"
   },
   {
    "id": "FZD9",
@@ -10078,7 +10375,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Frizzled class receptor 9"
   },
   {
    "id": "GAB1",
@@ -10123,7 +10421,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphatidylinositol glycan anchor biosynthesis class U"
   },
   {
    "id": "GAB2",
@@ -10152,7 +10451,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "GRB2 associated binding protein 2"
   },
   {
    "id": "GADD45A",
@@ -10196,7 +10496,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Growth arrest and DNA damage inducible alpha"
   },
   {
    "id": "GAGE2A",
@@ -10225,7 +10526,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "G antigen 2A"
   },
   {
    "id": "GAR1",
@@ -10255,7 +10557,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Cyclic nucleotide gated channel subunit beta 1"
   },
   {
    "id": "GINS1",
@@ -10284,7 +10587,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "GINS complex subunit 1"
   },
   {
    "id": "GINS2",
@@ -10313,7 +10617,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "GINS complex subunit 2"
   },
   {
    "id": "GINS4",
@@ -10342,7 +10647,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "GINS complex subunit 4"
   },
   {
    "id": "GMPR",
@@ -10373,7 +10679,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Guanosine monophosphate reductase"
   },
   {
    "id": "GNAI1",
@@ -10410,7 +10717,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit alpha i1"
   },
   {
    "id": "GNAI2",
@@ -10447,7 +10755,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit alpha i2"
   },
   {
    "id": "GNAI3",
@@ -10484,7 +10793,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit alpha i3"
   },
   {
    "id": "GNAO1",
@@ -10521,7 +10831,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit alpha o1"
   },
   {
    "id": "GNAQ",
@@ -10558,7 +10869,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit alpha q"
   },
   {
    "id": "GNAS",
@@ -10596,7 +10908,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "GNAS complex locus"
   },
   {
    "id": "GNB1",
@@ -10625,7 +10938,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "G protein subunit beta 1"
   },
   {
    "id": "GNPTG",
@@ -10654,7 +10968,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "N-acetylglucosamine-1-phosphate transferase subunit gamma"
   },
   {
    "id": "GP1BA",
@@ -10683,7 +10998,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Glycoprotein Ib platelet subunit alpha"
   },
   {
    "id": "GPHN",
@@ -10713,7 +11029,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Gephyrin"
   },
   {
    "id": "GPNMB",
@@ -10743,7 +11060,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Glycoprotein nmb"
   },
   {
    "id": "GPR143",
@@ -10781,7 +11099,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "G protein-coupled receptor 143"
   },
   {
    "id": "GPR29",
@@ -10810,7 +11129,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "C-C motif chemokine receptor 6"
   },
   {
    "id": "GRB2",
@@ -10847,7 +11167,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Growth factor receptor bound protein 2"
   },
   {
    "id": "GRIA2",
@@ -10876,7 +11197,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Glutamate ionotropic receptor AMPA type subunit 2"
   },
   {
    "id": "GRIP1",
@@ -10906,7 +11228,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Galectin 12"
   },
   {
    "id": "GSK3B",
@@ -10972,7 +11295,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Glycogen synthase kinase 3 beta"
   },
   {
    "id": "GTF2B",
@@ -11001,7 +11325,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIB"
   },
   {
    "id": "GTF2E1",
@@ -11030,7 +11355,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIE subunit 1"
   },
   {
    "id": "GTF2E2",
@@ -11059,7 +11385,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIE subunit 2"
   },
   {
    "id": "GTF2H1",
@@ -11088,7 +11415,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIH subunit 1"
   },
   {
    "id": "GTF2H2",
@@ -11117,7 +11445,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIH subunit 2"
   },
   {
    "id": "GTF2H3",
@@ -11146,7 +11475,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIH subunit 3"
   },
   {
    "id": "GTF2H4",
@@ -11175,7 +11505,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIH subunit 4"
   },
   {
    "id": "GTF2H5",
@@ -11204,7 +11535,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "General transcription factor IIH subunit 5"
   },
   {
    "id": "GUCY1A2",
@@ -11241,7 +11573,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Guanylate cyclase 1 soluble subunit alpha 2"
   },
   {
    "id": "GXYLT2",
@@ -11272,7 +11605,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Glucoside xylosyltransferase 2"
   },
   {
    "id": "GZMB",
@@ -11302,7 +11636,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Granzyme B"
   },
   {
    "id": "H2AFX",
@@ -11331,7 +11666,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "H2A.X variant histone"
   },
   {
    "id": "HDAC1",
@@ -11362,7 +11698,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Histone deacetylase 1"
   },
   {
    "id": "HERC2",
@@ -11392,7 +11729,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HECT and RLD domain containing E3 ubiquitin protein ligase 2"
   },
   {
    "id": "HGD",
@@ -11422,7 +11760,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Homogentisate 1,2-dioxygenase"
   },
   {
    "id": "HGF",
@@ -11474,7 +11813,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 6"
   },
   {
    "id": "HIF1A",
@@ -11526,7 +11866,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Hypoxia inducible factor 1 subunit alpha"
   },
   {
    "id": "HINT1",
@@ -11557,7 +11898,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Histidine triad nucleotide binding protein 1"
   },
   {
    "id": "HLA-B",
@@ -11587,7 +11929,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class I, B"
   },
   {
    "id": "HLA-DMB",
@@ -11616,7 +11959,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class II, DM beta"
   },
   {
    "id": "HLA-DQA1",
@@ -11646,7 +11990,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class II, DQ alpha 1"
   },
   {
    "id": "HLA-DQB1",
@@ -11676,7 +12021,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class II, DQ beta 1"
   },
   {
    "id": "HLA-DRA",
@@ -11706,7 +12052,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class II, DR alpha"
   },
   {
    "id": "HLA-DRB1",
@@ -11736,7 +12083,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Major histocompatibility complex, class II, DR beta 1"
   },
   {
    "id": "HPS1",
@@ -11766,7 +12114,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HPS1 biogenesis of lysosomal organelles complex 3 subunit 1"
   },
   {
    "id": "HPS3",
@@ -11796,7 +12145,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HPS3 biogenesis of lysosomal organelles complex 2 subunit 1"
   },
   {
    "id": "HPS4",
@@ -11826,7 +12176,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HPS4 biogenesis of lysosomal organelles complex 3 subunit 2"
   },
   {
    "id": "HPS5",
@@ -11856,7 +12207,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HPS5 biogenesis of lysosomal organelles complex 2 subunit 2"
   },
   {
    "id": "HPS6",
@@ -11886,7 +12238,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "HPS6 biogenesis of lysosomal organelles complex 2 subunit 3"
   },
   {
    "id": "HRAS",
@@ -11938,7 +12291,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "HRas proto-oncogene, GTPase"
   },
   {
    "id": "HSP90AA1",
@@ -11975,7 +12329,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Heat shock protein 90 alpha family class A member 1"
   },
   {
    "id": "HSPG2",
@@ -12004,7 +12359,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Heparan sulfate proteoglycan 2"
   },
   {
    "id": "HUNK",
@@ -12033,7 +12389,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Hormonally up-regulated Neu-associated kinase"
   },
   {
    "id": "IARS1",
@@ -12064,7 +12421,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Isoleucyl-tRNA synthetase 1"
   },
   {
    "id": "ICAM1",
@@ -12108,7 +12466,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Intercellular adhesion molecule 1"
   },
   {
    "id": "ID1",
@@ -12139,7 +12498,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Inhibitor of DNA binding 1"
   },
   {
    "id": "IDS",
@@ -12169,7 +12529,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Iduronate 2-sulfatase"
   },
   {
    "id": "IDUA",
@@ -12199,7 +12560,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Alpha-L-iduronidase"
   },
   {
    "id": "IGF1R",
@@ -12228,7 +12590,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Insulin like growth factor 1 receptor"
   },
   {
    "id": "IKBKB",
@@ -12257,7 +12620,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Inhibitor of nuclear factor kappa B kinase subunit beta"
   },
   {
    "id": "IKBKG",
@@ -12287,7 +12651,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Inhibitor of nuclear factor kappa B kinase regulatory subunit gamma"
   },
   {
    "id": "IKZF4",
@@ -12316,7 +12681,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "IKAROS family zinc finger 4"
   },
   {
    "id": "IL10",
@@ -12360,7 +12726,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 10"
   },
   {
    "id": "IL12A",
@@ -12404,7 +12771,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 12A"
   },
   {
    "id": "IL12RB1",
@@ -12433,7 +12801,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 12 receptor subunit beta 1"
   },
   {
    "id": "IL15",
@@ -12462,7 +12831,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 15"
   },
   {
    "id": "IL17A",
@@ -12492,7 +12862,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 17A"
   },
   {
    "id": "IL17RA",
@@ -12521,7 +12892,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 17 receptor A"
   },
   {
    "id": "IL1A",
@@ -12565,7 +12937,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 1 alpha"
   },
   {
    "id": "IL1R1",
@@ -12609,7 +12982,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 1 receptor type 1"
   },
   {
    "id": "IL1RAPL1",
@@ -12638,7 +13012,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 1 receptor accessory protein like 1"
   },
   {
    "id": "IL2",
@@ -12667,7 +13042,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 2"
   },
   {
    "id": "IL23R",
@@ -12697,7 +13073,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 23 receptor"
   },
   {
    "id": "IL2RA",
@@ -12727,7 +13104,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 2 receptor subunit alpha"
   },
   {
    "id": "IL2RB",
@@ -12756,7 +13134,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 2 receptor subunit beta"
   },
   {
    "id": "IL2RG",
@@ -12785,7 +13164,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 2 receptor subunit gamma"
   },
   {
    "id": "IL6",
@@ -12829,7 +13209,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 6"
   },
   {
    "id": "IL6R",
@@ -12873,7 +13254,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 6 receptor"
   },
   {
    "id": "INSR",
@@ -12902,7 +13284,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Insulin receptor"
   },
   {
    "id": "IRAK1",
@@ -12940,7 +13323,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 1 receptor associated kinase 1"
   },
   {
    "id": "IRAK4",
@@ -12976,7 +13360,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interleukin 1 receptor associated kinase 4"
   },
   {
    "id": "IRF3",
@@ -13006,7 +13391,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Interferon regulatory factor 3"
   },
   {
    "id": "IRF4",
@@ -13044,7 +13430,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Interferon regulatory factor 4"
   },
   {
    "id": "IRS1",
@@ -13073,7 +13460,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Insulin receptor substrate 1"
   },
   {
    "id": "ITGA2",
@@ -13104,7 +13492,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Integrin subunit alpha 2"
   },
   {
    "id": "IVL",
@@ -13141,7 +13530,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Involucrin"
   },
   {
    "id": "JAK1",
@@ -13185,7 +13575,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Janus kinase 1"
   },
   {
    "id": "JAK2",
@@ -13214,7 +13605,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Janus kinase 2"
   },
   {
    "id": "JUN",
@@ -13259,7 +13651,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Jun proto-oncogene, AP-1 transcription factor subunit"
   },
   {
    "id": "KARS1",
@@ -13290,7 +13683,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Lysyl-tRNA synthetase 1"
   },
   {
    "id": "KAT5",
@@ -13319,7 +13713,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Lysine acetyltransferase 5"
   },
   {
    "id": "KCNK12",
@@ -13348,7 +13743,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Potassium two pore domain channel subfamily K member 12"
   },
   {
    "id": "KDR",
@@ -13377,7 +13773,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Kinase insert domain receptor"
   },
   {
    "id": "KEAP1",
@@ -13406,7 +13803,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Kelch like ECH associated protein 1"
   },
   {
    "id": "KIR3DL1",
@@ -13435,7 +13833,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Killer cell immunoglobulin like receptor, three Ig domains and long cytoplasmic tail 1"
   },
   {
    "id": "KIT",
@@ -13501,7 +13900,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "KIT proto-oncogene, receptor tyrosine kinase"
   },
   {
    "id": "KITLG",
@@ -13553,7 +13953,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "KIT ligand"
   },
   {
    "id": "KMT2A",
@@ -13582,7 +13983,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Lysine methyltransferase 2A"
   },
   {
    "id": "KRAS",
@@ -13620,7 +14022,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "KRas proto-oncogene, GTPase"
   },
   {
    "id": "KRT14",
@@ -13650,7 +14053,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Keratin 14"
   },
   {
    "id": "KRT5",
@@ -13680,7 +14084,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Keratin 5"
   },
   {
    "id": "KSR1",
@@ -13709,7 +14114,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Kinase suppressor of ras 1"
   },
   {
    "id": "LARS1",
@@ -13740,7 +14146,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Leucyl-tRNA synthetase 1"
   },
   {
    "id": "LCK",
@@ -13769,7 +14176,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "LCK proto-oncogene, Src family tyrosine kinase"
   },
   {
    "id": "LEF1",
@@ -13821,7 +14229,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Lymphoid enhancer binding factor 1"
   },
   {
    "id": "LIG1",
@@ -13852,7 +14261,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Leucine rich repeats and immunoglobulin like domains 1"
   },
   {
    "id": "LPP",
@@ -13881,7 +14291,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "LIM domain containing preferred translocation partner in lipoma"
   },
   {
    "id": "LRMDA",
@@ -13910,7 +14321,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Leucine rich melanocyte differentiation associated"
   },
   {
    "id": "LSM14A",
@@ -13939,7 +14351,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "LSM14A mRNA processing body assembly factor"
   },
   {
    "id": "LYST",
@@ -13969,7 +14382,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Lysosomal trafficking regulator"
   },
   {
    "id": "MAP2K1",
@@ -14021,7 +14435,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 1"
   },
   {
    "id": "MAP2K2",
@@ -14073,7 +14488,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 2"
   },
   {
    "id": "MAP2K3",
@@ -14117,7 +14533,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 3"
   },
   {
    "id": "MAP2K4",
@@ -14161,7 +14578,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 4"
   },
   {
    "id": "MAP2K6",
@@ -14205,7 +14623,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 6"
   },
   {
    "id": "MAP2K7",
@@ -14249,7 +14668,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase 7"
   },
   {
    "id": "MAP3K1",
@@ -14293,7 +14713,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase kinase 1"
   },
   {
    "id": "MAP3K14",
@@ -14337,7 +14758,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase kinase 14"
   },
   {
    "id": "MAP3K5",
@@ -14381,7 +14803,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase kinase 5"
   },
   {
    "id": "MAP3K7",
@@ -14417,7 +14840,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase kinase 7"
   },
   {
    "id": "MAP4K2",
@@ -14461,7 +14885,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase kinase kinase kinase 2"
   },
   {
    "id": "MAPK1",
@@ -14527,7 +14952,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase 1"
   },
   {
    "id": "MAPK14",
@@ -14579,7 +15005,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase 14"
   },
   {
    "id": "MAPK3",
@@ -14638,7 +15065,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase 3"
   },
   {
    "id": "MAPK8",
@@ -14682,7 +15110,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mitogen-activated protein kinase 8"
   },
   {
    "id": "MARK3",
@@ -14713,7 +15142,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Microtubule affinity regulating kinase 3"
   },
   {
    "id": "MARS1",
@@ -14744,7 +15174,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Methionyl-tRNA synthetase 1"
   },
   {
    "id": "MC1R",
@@ -14810,7 +15241,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 1 receptor"
   },
   {
    "id": "MC2R",
@@ -14848,7 +15280,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 2 receptor"
   },
   {
    "id": "MC3R",
@@ -14879,7 +15312,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 3 receptor"
   },
   {
    "id": "MC4R",
@@ -14917,7 +15351,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 4 receptor"
   },
   {
    "id": "MC5R",
@@ -14948,7 +15383,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 5 receptor"
   },
   {
    "id": "MCL1",
@@ -14986,7 +15422,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MCL1 apoptosis regulator, BCL2 family member"
   },
   {
    "id": "MCM10",
@@ -15015,7 +15452,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance 10 replication initiation factor"
   },
   {
    "id": "MCM2",
@@ -15053,7 +15491,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 7"
   },
   {
    "id": "MCM3",
@@ -15082,7 +15521,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 3"
   },
   {
    "id": "MCM4",
@@ -15112,7 +15552,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 4"
   },
   {
    "id": "MCM5",
@@ -15150,7 +15591,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 5"
   },
   {
    "id": "MCM6",
@@ -15179,7 +15621,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 6"
   },
   {
    "id": "MCM7",
@@ -15208,7 +15651,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex component 7"
   },
   {
    "id": "MCMBP",
@@ -15237,7 +15681,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Minichromosome maintenance complex binding protein"
   },
   {
    "id": "MDC1",
@@ -15266,7 +15711,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mediator of DNA damage checkpoint 1"
   },
   {
    "id": "MDM2",
@@ -15295,7 +15741,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MDM2 proto-oncogene"
   },
   {
    "id": "MEN1",
@@ -15325,7 +15772,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Menin 1"
   },
   {
    "id": "MET",
@@ -15384,7 +15832,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SAFB like transcription modulator"
   },
   {
    "id": "MITF",
@@ -15450,7 +15899,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanocyte inducing transcription factor"
   },
   {
    "id": "MLANA",
@@ -15509,7 +15959,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melan-A"
   },
   {
    "id": "MLH1",
@@ -15539,7 +15990,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MutL homolog 1"
   },
   {
    "id": "MLPH",
@@ -15577,7 +16029,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Melanophilin"
   },
   {
    "id": "MMP1",
@@ -15621,7 +16074,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Matrix metallopeptidase 1"
   },
   {
    "id": "MMPs",
@@ -15677,7 +16131,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MNAT1 component of CDK activating kinase"
   },
   {
    "id": "MOV10",
@@ -15708,7 +16163,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Mov10 RNA helicase"
   },
   {
    "id": "MPZL1",
@@ -15737,7 +16193,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Myelin protein zero like 1"
   },
   {
    "id": "MRAP",
@@ -15767,7 +16224,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Melanocortin 2 receptor accessory protein"
   },
   {
    "id": "MRE11A",
@@ -15796,7 +16254,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MRE11 double strand break repair nuclease"
   },
   {
    "id": "MSH2",
@@ -15826,7 +16285,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MutS homolog 2"
   },
   {
    "id": "MSH3",
@@ -15855,7 +16315,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MutS homolog 3"
   },
   {
    "id": "MSH6",
@@ -15885,7 +16346,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MutS homolog 6"
   },
   {
    "id": "MSN",
@@ -15922,7 +16384,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Moesin"
   },
   {
    "id": "MTAP",
@@ -15952,7 +16415,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Methylthioadenosine phosphorylase"
   },
   {
    "id": "MTOR",
@@ -15981,7 +16445,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Mechanistic target of rapamycin kinase"
   },
   {
    "id": "MYC",
@@ -16010,7 +16475,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MYC proto-oncogene, bHLH transcription factor"
   },
   {
    "id": "MYD88",
@@ -16046,7 +16512,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "MYD88 innate immune signal transduction adaptor"
   },
   {
    "id": "MYH8",
@@ -16076,7 +16543,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Myosin heavy chain 8"
   },
   {
    "id": "MYO5A",
@@ -16114,7 +16582,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Myosin VA"
   },
   {
    "id": "MYO7A",
@@ -16143,7 +16612,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Myosin VIIA"
   },
   {
    "id": "MYRIP",
@@ -16174,7 +16644,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Myosin VIIA and Rab interacting protein"
   },
   {
    "id": "NARS",
@@ -16203,7 +16674,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Asparaginyl-tRNA synthetase 1"
   },
   {
    "id": "NARS1",
@@ -16232,7 +16704,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Asparaginyl-tRNA synthetase 1"
   },
   {
    "id": "NBN",
@@ -16262,7 +16735,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Artemin"
   },
   {
    "id": "NCSTN",
@@ -16291,7 +16765,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nicastrin"
   },
   {
    "id": "NEDD4",
@@ -16320,7 +16795,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NEDD4 E3 ubiquitin protein ligase"
   },
   {
    "id": "NEDD8",
@@ -16349,7 +16825,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NEDD8 ubiquitin like modifier"
   },
   {
    "id": "NEK6",
@@ -16378,7 +16855,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NIMA related kinase 6"
   },
   {
    "id": "NF1",
@@ -16408,7 +16886,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neurofibromin 1"
   },
   {
    "id": "NFATC1",
@@ -16452,7 +16931,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear factor of activated T cells 1"
   },
   {
    "id": "NFIX",
@@ -16482,7 +16962,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear factor I X"
   },
   {
    "id": "NFKB1",
@@ -16527,7 +17008,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear factor kappa B subunit 1"
   },
   {
    "id": "NFKBIA",
@@ -16556,7 +17038,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NFKB inhibitor alpha"
   },
   {
    "id": "NGF",
@@ -16600,7 +17083,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nerve growth factor"
   },
   {
    "id": "NHP2",
@@ -16630,7 +17114,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NHP2 ribonucleoprotein"
   },
   {
    "id": "NHP2L1",
@@ -16659,7 +17144,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Small nuclear ribonucleoprotein 13"
   },
   {
    "id": "NID1",
@@ -16689,7 +17175,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nidogen 1"
   },
   {
    "id": "NKX2-5",
@@ -16718,7 +17205,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NK2 homeobox 5"
   },
   {
    "id": "NLRP1",
@@ -16748,7 +17236,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NLR family pyrin domain containing 1"
   },
   {
    "id": "NNT",
@@ -16778,7 +17267,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nicotinamide nucleotide transhydrogenase"
   },
   {
    "id": "NOP10",
@@ -16808,7 +17298,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NOP10 ribonucleoprotein"
   },
   {
    "id": "NOP56",
@@ -16837,7 +17328,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NOP56 ribonucleoprotein"
   },
   {
    "id": "NOP58",
@@ -16866,7 +17358,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NOP58 ribonucleoprotein"
   },
   {
    "id": "NOS2",
@@ -16910,7 +17403,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nanos C2HC-type zinc finger 2"
   },
   {
    "id": "NOX1",
@@ -16954,7 +17448,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NADPH oxidase 1"
   },
   {
    "id": "NPHP4",
@@ -16983,7 +17478,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nephrocystin 4"
   },
   {
    "id": "NR0B1",
@@ -17013,7 +17509,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear receptor subfamily 0 group B member 1"
   },
   {
    "id": "NR5A1",
@@ -17042,7 +17539,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear receptor subfamily 5 group A member 1"
   },
   {
    "id": "NRAS",
@@ -17080,7 +17578,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "NRAS proto-oncogene, GTPase"
   },
   {
    "id": "NRP1",
@@ -17109,7 +17608,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neuropilin 1"
   },
   {
    "id": "NRP2",
@@ -17138,7 +17638,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neural EGFL like 2"
   },
   {
    "id": "NRROS",
@@ -17167,7 +17668,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Negative regulator of reactive oxygen species"
   },
   {
    "id": "NSD1",
@@ -17197,7 +17699,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Nuclear receptor binding SET domain protein 1"
   },
   {
    "id": "NSMAF",
@@ -17240,7 +17743,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neutral sphingomyelinase activation associated factor"
   },
   {
    "id": "NTRK1",
@@ -17284,7 +17788,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neurotrophic receptor tyrosine kinase 1"
   },
   {
    "id": "NTRK2",
@@ -17313,7 +17818,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Neurotrophic receptor tyrosine kinase 2"
   },
   {
    "id": "OBFC1",
@@ -17342,7 +17848,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "STN1 subunit of CST complex"
   },
   {
    "id": "OCA2",
@@ -17401,7 +17908,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "OCA2 melanosomal transmembrane protein"
   },
   {
    "id": "ORC1",
@@ -17430,7 +17938,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 25 member 15"
   },
   {
    "id": "ORC2",
@@ -17459,7 +17968,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Origin recognition complex subunit 2"
   },
   {
    "id": "ORC3",
@@ -17488,7 +17998,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Origin recognition complex subunit 3"
   },
   {
    "id": "ORC4",
@@ -17517,7 +18028,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Origin recognition complex subunit 4"
   },
   {
    "id": "ORC5",
@@ -17546,7 +18058,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Origin recognition complex subunit 5"
   },
   {
    "id": "ORC6",
@@ -17575,7 +18088,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Origin recognition complex subunit 6"
   },
   {
    "id": "PABPC1",
@@ -17604,7 +18118,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Poly(A) binding protein cytoplasmic 1"
   },
   {
    "id": "PAH",
@@ -17634,7 +18149,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phenylalanine hydroxylase"
   },
   {
    "id": "PAK1",
@@ -17678,7 +18194,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase N1"
   },
   {
    "id": "PALB2",
@@ -17708,7 +18225,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Partner and localizer of BRCA2"
   },
   {
    "id": "PARD6A",
@@ -17744,7 +18262,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Par-6 family cell polarity regulator alpha"
   },
   {
    "id": "PARN",
@@ -17774,7 +18293,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Poly(A)-specific ribonuclease"
   },
   {
    "id": "PARP12",
@@ -17803,7 +18323,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Poly(ADP-ribose) polymerase family member 12"
   },
   {
    "id": "PATL1",
@@ -17832,7 +18353,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "PAT1 homolog 1, processing body mRNA decay factor"
   },
   {
    "id": "PAX3",
@@ -17891,7 +18413,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Paired box 3"
   },
   {
    "id": "PCNA",
@@ -17920,7 +18443,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Proliferating cell nuclear antigen"
   },
   {
    "id": "PCNT",
@@ -17950,7 +18474,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Pericentrin"
   },
   {
    "id": "PDCD1",
@@ -17979,7 +18504,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Programmed cell death 1"
   },
   {
    "id": "PDE4B",
@@ -18022,7 +18548,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphodiesterase 4B"
   },
   {
    "id": "PDPK1",
@@ -18066,7 +18593,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "3-phosphoinositide dependent protein kinase 1"
   },
   {
    "id": "PEBP1",
@@ -18095,7 +18623,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphatidylethanolamine binding protein 1"
   },
   {
    "id": "PECAM1",
@@ -18124,7 +18653,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Platelet and endothelial cell adhesion molecule 1"
   },
   {
    "id": "PHB",
@@ -18153,7 +18683,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prohibitin 1"
   },
   {
    "id": "PIAS3",
@@ -18205,7 +18736,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein inhibitor of activated STAT 3"
   },
   {
    "id": "PIAS4",
@@ -18234,7 +18766,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein inhibitor of activated STAT 4"
   },
   {
    "id": "PIK3CA",
@@ -18279,7 +18812,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
   },
   {
    "id": "PIK3R1",
@@ -18308,7 +18842,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphoinositide-3-kinase regulatory subunit 1"
   },
   {
    "id": "PIKFYVE",
@@ -18337,7 +18872,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphoinositide kinase, FYVE-type zinc finger containing"
   },
   {
    "id": "PINX1",
@@ -18366,7 +18902,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "PIN2 (TERF1) interacting telomerase inhibitor 1"
   },
   {
    "id": "PKC",
@@ -18393,7 +18930,8 @@
       "source": "PMID-26176700"
      }
     ]
-   }
+   },
+   "full_name": "Proline rich transmembrane protein 2"
   },
   {
    "id": "PLA2",
@@ -18420,7 +18958,8 @@
       "source": "PMID-26176700"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase A2 group IB"
   },
   {
    "id": "PLA2G1B",
@@ -18456,7 +18995,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase A2 group IB"
   },
   {
    "id": "PLA2G6",
@@ -18486,7 +19026,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase A2 group VI"
   },
   {
    "id": "PLC",
@@ -18513,7 +19054,8 @@
       "source": "PMID-26176700"
      }
     ]
-   }
+   },
+   "full_name": "Heparan sulfate proteoglycan 2"
   },
   {
    "id": "PLCB1",
@@ -18557,7 +19099,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase C beta 1"
   },
   {
    "id": "PLCB2",
@@ -18594,7 +19137,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase C beta 2"
   },
   {
    "id": "PLCB3",
@@ -18632,7 +19176,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase C beta 3"
   },
   {
    "id": "PLCB4",
@@ -18669,7 +19214,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Phospholipase C beta 4"
   },
   {
    "id": "PLK1",
@@ -18700,7 +19246,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Polo like kinase 1"
   },
   {
    "id": "PMAIP1",
@@ -18744,7 +19291,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phorbol-12-myristate-13-acetate-induced protein 1"
   },
   {
    "id": "PMEL",
@@ -18803,7 +19351,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Premelanosome protein"
   },
   {
    "id": "PMS2",
@@ -18833,7 +19382,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "PMS1 homolog 2, mismatch repair system component"
   },
   {
    "id": "POFUT1",
@@ -18863,7 +19413,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein O-fucosyltransferase 1"
   },
   {
    "id": "POGLUT1",
@@ -18893,7 +19444,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein O-glucosyltransferase 1"
   },
   {
    "id": "POLA1",
@@ -18923,7 +19475,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase alpha 1, catalytic subunit"
   },
   {
    "id": "POLA2",
@@ -18952,7 +19505,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase alpha 2, accessory subunit"
   },
   {
    "id": "POLE",
@@ -18981,7 +19535,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase epsilon, catalytic subunit"
   },
   {
    "id": "POLE2",
@@ -19010,7 +19565,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase epsilon 2, accessory subunit"
   },
   {
    "id": "POLE3",
@@ -19039,7 +19595,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase epsilon 3, accessory subunit"
   },
   {
    "id": "POLE4",
@@ -19068,7 +19625,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase epsilon 4, accessory subunit"
   },
   {
    "id": "POLH",
@@ -19098,7 +19656,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA polymerase eta"
   },
   {
    "id": "POMC",
@@ -19150,7 +19709,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Proopiomelanocortin"
   },
   {
    "id": "POT1",
@@ -19179,7 +19739,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protection of telomeres 1"
   },
   {
    "id": "POU3F2",
@@ -19210,7 +19771,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "POU class 3 homeobox 2"
   },
   {
    "id": "PPARGC1A",
@@ -19241,7 +19803,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "PPARG coactivator 1 alpha"
   },
   {
    "id": "PPARGC1B",
@@ -19270,7 +19833,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "PPARG coactivator 1 beta"
   },
   {
    "id": "PPP1CC",
@@ -19299,7 +19863,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein phosphatase 1 catalytic subunit gamma"
   },
   {
    "id": "PPP3CA",
@@ -19344,7 +19909,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein phosphatase 3 catalytic subunit alpha"
   },
   {
    "id": "PPP3R1",
@@ -19373,7 +19939,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein phosphatase 3 regulatory subunit B, alpha"
   },
   {
    "id": "PRF1",
@@ -19402,7 +19969,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Zinc finger protein 395"
   },
   {
    "id": "PRIM1",
@@ -19431,7 +19999,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA primase subunit 1"
   },
   {
    "id": "PRIM2",
@@ -19460,7 +20029,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA primase subunit 2"
   },
   {
    "id": "PRKACA",
@@ -19519,7 +20089,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase cAMP-activated catalytic subunit alpha"
   },
   {
    "id": "PRKACB",
@@ -19556,7 +20127,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase cAMP-activated catalytic subunit beta"
   },
   {
    "id": "PRKACG",
@@ -19593,7 +20165,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase cAMP-activated catalytic subunit gamma"
   },
   {
    "id": "PRKAR1A",
@@ -19623,7 +20196,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase cAMP-dependent type I regulatory subunit alpha"
   },
   {
    "id": "PRKCA",
@@ -19667,7 +20241,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C alpha"
   },
   {
    "id": "PRKCB",
@@ -19726,7 +20301,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C beta"
   },
   {
    "id": "PRKCD",
@@ -19770,7 +20346,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C delta"
   },
   {
    "id": "PRKCG",
@@ -19807,7 +20384,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C gamma"
   },
   {
    "id": "PRKCH",
@@ -19858,7 +20436,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C eta"
   },
   {
    "id": "PRKCZ",
@@ -19910,7 +20489,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase C zeta"
   },
   {
    "id": "PRKG1",
@@ -19954,7 +20534,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein kinase cGMP-dependent 1"
   },
   {
    "id": "PRSS1",
@@ -19990,7 +20571,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Serine protease 1"
   },
   {
    "id": "PSEN1",
@@ -20019,7 +20601,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Presenilin 1"
   },
   {
    "id": "PSEN2",
@@ -20048,7 +20631,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Presenilin 2"
   },
   {
    "id": "PSENEN",
@@ -20078,7 +20662,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Presenilin enhancer, gamma-secretase subunit"
   },
   {
    "id": "PTEN",
@@ -20108,7 +20693,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Phosphatase and tensin homolog"
   },
   {
    "id": "PTGER1",
@@ -20145,7 +20731,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prostaglandin E receptor 1"
   },
   {
    "id": "PTGER2",
@@ -20182,7 +20769,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prostaglandin E receptor 2"
   },
   {
    "id": "PTGER3",
@@ -20219,7 +20807,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prostaglandin E receptor 3"
   },
   {
    "id": "PTGER4",
@@ -20256,7 +20845,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prostaglandin E receptor 4"
   },
   {
    "id": "PTGS2",
@@ -20308,7 +20898,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Prostaglandin-endoperoxide synthase 2"
   },
   {
    "id": "PTPN1",
@@ -20338,7 +20929,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein tyrosine phosphatase non-receptor type 1"
   },
   {
    "id": "PTPN11",
@@ -20368,7 +20960,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein tyrosine phosphatase non-receptor type 11"
   },
   {
    "id": "PTPN22",
@@ -20398,7 +20991,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein tyrosine phosphatase non-receptor type 22"
   },
   {
    "id": "PTPRC",
@@ -20428,7 +21022,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Protein tyrosine phosphatase receptor type C"
   },
   {
    "id": "PXDN",
@@ -20459,7 +21054,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Peroxidasin"
   },
   {
    "id": "PXN",
@@ -20490,7 +21086,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Peroxidasin"
   },
   {
    "id": "Phosphodiesterase",
@@ -20548,7 +21145,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Glutaminyl-tRNA synthetase 1"
   },
   {
    "id": "RAB27A",
@@ -20586,7 +21184,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "RAB27A, member RAS oncogene family"
   },
   {
    "id": "RAB5C",
@@ -20616,7 +21215,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAB5C, member RAS oncogene family"
   },
   {
    "id": "RAC1",
@@ -20660,7 +21260,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ribonuclease A family member 1, pancreatic"
   },
   {
    "id": "RACK1",
@@ -20696,7 +21297,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Receptor for activated C kinase 1"
   },
   {
    "id": "RAD23B",
@@ -20725,7 +21327,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAD23 nucleotide excision repair protein B"
   },
   {
    "id": "RAD50",
@@ -20754,7 +21357,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAD50 double strand break repair protein"
   },
   {
    "id": "RAD51",
@@ -20783,7 +21387,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAD51 recombinase"
   },
   {
    "id": "RAD52",
@@ -20812,7 +21417,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAD52 DNA repair protein"
   },
   {
    "id": "RAF1",
@@ -20864,7 +21470,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Ribonuclease A family member 3"
   },
   {
    "id": "RALGDS",
@@ -20893,7 +21500,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ral guanine nucleotide dissociation stimulator"
   },
   {
    "id": "RALY",
@@ -20923,7 +21531,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RALY heterogeneous nuclear ribonucleoprotein"
   },
   {
    "id": "RAP1A",
@@ -20961,7 +21570,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAP1A, member of RAS oncogene family"
   },
   {
    "id": "RARS1",
@@ -20992,7 +21602,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Arginyl-tRNA synthetase 1"
   },
   {
    "id": "RASA1",
@@ -21021,7 +21632,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RAS p21 protein activator 1"
   },
   {
    "id": "RBX1",
@@ -21050,7 +21662,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ring-box 1"
   },
   {
    "id": "RDX",
@@ -21087,7 +21700,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Radixin"
   },
   {
    "id": "RECQL4",
@@ -21117,7 +21731,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RecQ like helicase 4"
   },
   {
    "id": "REL",
@@ -21146,7 +21761,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "REL proto-oncogene, NF-kB subunit"
   },
   {
    "id": "RELA",
@@ -21175,7 +21791,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RELA proto-oncogene, NF-kB subunit"
   },
   {
    "id": "RERE",
@@ -21204,7 +21821,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Arginine-glutamic acid dipeptide repeats"
   },
   {
    "id": "RET",
@@ -21234,7 +21852,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ret proto-oncogene"
   },
   {
    "id": "REV1",
@@ -21263,7 +21882,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "REV1 DNA directed polymerase"
   },
   {
    "id": "RFX5",
@@ -21292,7 +21912,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Regulatory factor X5"
   },
   {
    "id": "RFXANK",
@@ -21322,7 +21943,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Regulatory factor X associated ankyrin containing protein"
   },
   {
    "id": "RFXAP",
@@ -21351,7 +21973,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Regulatory factor X associated protein"
   },
   {
    "id": "RHEB",
@@ -21380,7 +22003,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ras homolog, mTORC1 binding"
   },
   {
    "id": "RHOA",
@@ -21417,7 +22041,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ras homolog family member A"
   },
   {
    "id": "RIPK1",
@@ -21454,7 +22079,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Receptor interacting serine/threonine kinase 1"
   },
   {
    "id": "RIT1",
@@ -21484,7 +22110,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "BCL11 transcription factor B"
   },
   {
    "id": "RMI1",
@@ -21513,7 +22140,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RecQ mediated genome instability 1"
   },
   {
    "id": "RNASET2",
@@ -21542,7 +22170,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ribonuclease T2"
   },
   {
    "id": "RPA2",
@@ -21571,7 +22200,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RNA polymerase I subunit B"
   },
   {
    "id": "RPGRIP1L",
@@ -21601,7 +22231,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RPGRIP1 like"
   },
   {
    "id": "RPS5",
@@ -21630,7 +22261,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ribosomal protein S5"
   },
   {
    "id": "RPS6KA1",
@@ -21682,7 +22314,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Ribosomal protein S6 kinase A1"
   },
   {
    "id": "RRP9",
@@ -21711,7 +22344,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ribosomal RNA processing 9, U3 small nucleolar RNA binding protein"
   },
   {
    "id": "RTEL1",
@@ -21741,7 +22375,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Regulator of telomere elongation helicase 1"
   },
   {
    "id": "RUVBL1",
@@ -21770,7 +22405,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "RuvB like AAA ATPase 1"
   },
   {
    "id": "RYR1",
@@ -21807,7 +22443,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ryanodine receptor 1"
   },
   {
    "id": "SAMD9",
@@ -21836,7 +22473,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sterile alpha motif domain containing 9"
   },
   {
    "id": "SERPINB9",
@@ -21866,7 +22504,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Serpin family B member 9"
   },
   {
    "id": "SERPINE1",
@@ -21897,7 +22536,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Serpin family E member 1"
   },
   {
    "id": "SGPL1",
@@ -21926,7 +22566,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sphingosine-1-phosphate lyase 1"
   },
   {
    "id": "SH2B3",
@@ -21956,7 +22597,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SH2B adaptor protein 3"
   },
   {
    "id": "SHC1",
@@ -21992,7 +22634,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SHC adaptor protein 1"
   },
   {
    "id": "SHOC2",
@@ -22022,7 +22665,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SHOC2 leucine rich repeat scaffold protein"
   },
   {
    "id": "SHQ1",
@@ -22051,7 +22695,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SHQ1, H/ACA ribonucleoprotein assembly factor"
   },
   {
    "id": "SIN3A",
@@ -22082,7 +22727,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SIN3 transcription regulator family member A"
   },
   {
    "id": "SIRPA",
@@ -22111,7 +22757,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Signal regulatory protein alpha"
   },
   {
    "id": "SIRT1",
@@ -22142,7 +22789,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Sirtuin 1"
   },
   {
    "id": "SKP1",
@@ -22171,7 +22819,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "S-phase kinase associated protein 1"
   },
   {
    "id": "SKP2",
@@ -22200,7 +22849,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitously expressed prefoldin like chaperone"
   },
   {
    "id": "SLC17A5",
@@ -22229,7 +22879,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 17 member 5"
   },
   {
    "id": "SLC1A2",
@@ -22259,7 +22910,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 1 member 2"
   },
   {
    "id": "SLC24A5",
@@ -22297,7 +22949,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 24 member 5"
   },
   {
    "id": "SLC29A3",
@@ -22326,7 +22979,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 29 member 3"
   },
   {
    "id": "SLC44A4",
@@ -22355,7 +23009,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 44 member 4"
   },
   {
    "id": "SLC45A2",
@@ -22393,7 +23048,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Solute carrier family 45 member 2"
   },
   {
    "id": "SLC9A3R1",
@@ -22422,7 +23078,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "NHERF family PDZ scaffold protein 1"
   },
   {
    "id": "SLX4",
@@ -22451,7 +23108,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SLX4 structure-specific endonuclease subunit"
   },
   {
    "id": "SMARCA2",
@@ -22482,7 +23140,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit ATPase 2"
   },
   {
    "id": "SMARCA4",
@@ -22520,7 +23179,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit ATPase 4"
   },
   {
    "id": "SMARCAL1",
@@ -22550,7 +23210,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SNF2 related chromatin remodeling annealing helicase 1"
   },
   {
    "id": "SMARCB1",
@@ -22581,7 +23242,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit B1"
   },
   {
    "id": "SMARCC1",
@@ -22612,7 +23274,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit C1"
   },
   {
    "id": "SMARCC2",
@@ -22643,7 +23306,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit C2"
   },
   {
    "id": "SMARCD1",
@@ -22674,7 +23338,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit D1"
   },
   {
    "id": "SMARCD2",
@@ -22705,7 +23370,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit D2"
   },
   {
    "id": "SMARCD3",
@@ -22736,7 +23402,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit D3"
   },
   {
    "id": "SMARCE1",
@@ -22767,7 +23434,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SWI/SNF related BAF chromatin remodeling complex subunit E1"
   },
   {
    "id": "SMO",
@@ -22797,7 +23465,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Spermine oxidase"
   },
   {
    "id": "SMOC2",
@@ -22826,7 +23495,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SPARC related modular calcium binding 2"
   },
   {
    "id": "SMPD1",
@@ -22863,7 +23533,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sphingomyelin phosphodiesterase 1"
   },
   {
    "id": "SMPD2",
@@ -22900,7 +23571,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sphingomyelin phosphodiesterase 2"
   },
   {
    "id": "SNAI2",
@@ -22938,7 +23610,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Snail family transcriptional repressor 2"
   },
   {
    "id": "SNAPIN",
@@ -22967,7 +23640,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SNAP associated protein"
   },
   {
    "id": "SOS1",
@@ -23004,7 +23678,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SOS Ras/Rac guanine nucleotide exchange factor 1"
   },
   {
    "id": "SOX10",
@@ -23063,7 +23738,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SRY-box transcription factor 10"
   },
   {
    "id": "SOX2",
@@ -23094,7 +23770,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SRY-box transcription factor 2"
   },
   {
    "id": "SOX9",
@@ -23125,7 +23802,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SRY-box transcription factor 9"
   },
   {
    "id": "SPATA48",
@@ -23154,7 +23832,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sperm microtubule inner protein 7"
   },
   {
    "id": "SPRED1",
@@ -23184,7 +23863,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Sprouty related EVH1 domain containing 1"
   },
   {
    "id": "SPTLC1",
@@ -23221,7 +23901,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Serine palmitoyltransferase long chain base subunit 1"
   },
   {
    "id": "SPTLC2",
@@ -23258,7 +23939,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Serine palmitoyltransferase long chain base subunit 2"
   },
   {
    "id": "SRC",
@@ -23302,7 +23984,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "SRC proto-oncogene, non-receptor tyrosine kinase"
   },
   {
    "id": "SS18",
@@ -23333,7 +24016,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SS18 subunit of BAF chromatin remodeling complex"
   },
   {
    "id": "SS18L1",
@@ -23364,7 +24048,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "SS18L1 subunit of BAF chromatin remodeling complex"
   },
   {
    "id": "ST3GAL5",
@@ -23393,7 +24078,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "ST3 beta-galactoside alpha-2,3-sialyltransferase 5"
   },
   {
    "id": "STAR",
@@ -23423,7 +24109,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Guanylate cyclase 2C"
   },
   {
    "id": "STAT1",
@@ -23467,7 +24154,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Signal transducer and activator of transcription 1"
   },
   {
    "id": "STAT3",
@@ -23518,7 +24206,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Signal transducer and activator of transcription 3"
   },
   {
    "id": "STAT4",
@@ -23548,7 +24237,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Signal transducer and activator of transcription 4"
   },
   {
    "id": "STK11",
@@ -23578,7 +24268,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Serine/threonine kinase 11"
   },
   {
    "id": "STRA13",
@@ -23607,7 +24298,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Basic helix-loop-helix family member e40"
   },
   {
    "id": "STRADA",
@@ -23636,7 +24328,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "STE20 related adaptor alpha"
   },
   {
    "id": "STT3B",
@@ -23667,7 +24360,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "STT3 oligosaccharyltransferase complex catalytic subunit B"
   },
   {
    "id": "SUMO1",
@@ -23698,7 +24392,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Small ubiquitin like modifier 1"
   },
   {
    "id": "SYTL2",
@@ -23729,7 +24424,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Synaptotagmin like 2"
   },
   {
    "id": "TAB1",
@@ -23765,7 +24461,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TGF-beta activated kinase 1 (MAP3K7) binding protein 1"
   },
   {
    "id": "TANK",
@@ -23794,7 +24491,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TRAF family member associated NFKB activator"
   },
   {
    "id": "TBC1D7",
@@ -23823,7 +24521,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TBC1 domain family member 7"
   },
   {
    "id": "TBK1",
@@ -23852,7 +24551,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TANK binding kinase 1"
   },
   {
    "id": "TBX2",
@@ -23883,7 +24583,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "T-box transcription factor 2"
   },
   {
    "id": "TBX3",
@@ -23914,7 +24615,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "T-box transcription factor 3"
   },
   {
    "id": "TBX5",
@@ -23944,7 +24646,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "T-box transcription factor 5"
   },
   {
    "id": "TCEB1",
@@ -23973,7 +24676,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Elongin C"
   },
   {
    "id": "TCEB2",
@@ -24002,7 +24706,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Elongin B"
   },
   {
    "id": "TCF7",
@@ -24047,7 +24752,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor 7"
   },
   {
    "id": "TCF7L1",
@@ -24092,7 +24798,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor 7 like 1"
   },
   {
    "id": "TCF7L2",
@@ -24137,7 +24844,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor 7 like 2"
   },
   {
    "id": "TEF",
@@ -24166,7 +24874,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TEF transcription factor, PAR bZIP family member"
   },
   {
    "id": "TEN1",
@@ -24195,7 +24904,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Teneurin transmembrane protein 1"
   },
   {
    "id": "TERF1",
@@ -24224,7 +24934,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Telomeric repeat binding factor 1"
   },
   {
    "id": "TERF2",
@@ -24253,7 +24964,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Telomeric repeat binding factor 2"
   },
   {
    "id": "TERF2IP",
@@ -24282,7 +24994,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TERF2 interacting protein"
   },
   {
    "id": "TERT",
@@ -24320,7 +25033,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Telomerase reverse transcriptase"
   },
   {
    "id": "TFAP2A",
@@ -24372,7 +25086,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor AP-2 alpha"
   },
   {
    "id": "TFE3",
@@ -24403,7 +25118,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor binding to IGHM enhancer 3"
   },
   {
    "id": "TFEB",
@@ -24434,7 +25150,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor EB"
   },
   {
    "id": "TFEC",
@@ -24465,7 +25182,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transcription factor EC"
   },
   {
    "id": "TG",
@@ -24494,7 +25212,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Thyroglobulin"
   },
   {
    "id": "TICAM1",
@@ -24524,7 +25243,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TIR domain containing adaptor molecule 1"
   },
   {
    "id": "TINF2",
@@ -24554,7 +25274,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TERF1 interacting nuclear factor 2"
   },
   {
    "id": "TLR3",
@@ -24583,7 +25304,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Toll like receptor 3"
   },
   {
    "id": "TLR4",
@@ -24612,7 +25334,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Toll like receptor 4"
   },
   {
    "id": "TNF",
@@ -24656,7 +25379,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Tumor necrosis factor"
   },
   {
    "id": "TNFRSF11A",
@@ -24686,7 +25410,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TNF receptor superfamily member 11a"
   },
   {
    "id": "TNFRSF11B",
@@ -24715,7 +25440,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TNF receptor superfamily member 11b"
   },
   {
    "id": "TNFRSF1A",
@@ -24760,7 +25486,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TNF receptor superfamily member 1A"
   },
   {
    "id": "TNFSF11",
@@ -24798,7 +25525,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "TNF superfamily member 11"
   },
   {
    "id": "TNRC6A",
@@ -24829,7 +25557,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Trinucleotide repeat containing adaptor 6A"
   },
   {
    "id": "TNRC6B",
@@ -24860,7 +25589,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Trinucleotide repeat containing adaptor 6B"
   },
   {
    "id": "TNRC6C",
@@ -24891,7 +25621,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Trinucleotide repeat containing adaptor 6C"
   },
   {
    "id": "TOP3A",
@@ -24920,7 +25651,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "DNA topoisomerase III alpha"
   },
   {
    "id": "TP53",
@@ -24972,7 +25704,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Tumor protein p53"
   },
   {
    "id": "TP53BP1",
@@ -25001,7 +25734,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Tumor protein p53 binding protein 1"
   },
   {
    "id": "TP63",
@@ -25031,7 +25765,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Tumor protein p63"
   },
   {
    "id": "TPCN2",
@@ -25061,7 +25796,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Two pore segment channel 2"
   },
   {
    "id": "TPSAB1",
@@ -25113,7 +25849,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Tryptase alpha/beta 1"
   },
   {
    "id": "TRADD",
@@ -25149,7 +25886,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TNFRSF1A associated via death domain"
   },
   {
    "id": "TRAF2",
@@ -25185,7 +25923,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TRAF family member associated NFKB activator"
   },
   {
    "id": "TRAF6",
@@ -25222,7 +25961,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TNF receptor associated factor 6"
   },
   {
    "id": "TRPM1",
@@ -25253,7 +25993,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Transient receptor potential cation channel subfamily M member 1"
   },
   {
    "id": "TSC1",
@@ -25283,7 +26024,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TSC complex subunit 1"
   },
   {
    "id": "TSC2",
@@ -25313,7 +26055,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "TSC complex subunit 2"
   },
   {
    "id": "TYR",
@@ -25379,7 +26122,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosinase"
   },
   {
    "id": "TYRP1",
@@ -25445,7 +26189,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosinase related protein 1"
   },
   {
    "id": "Trypsin",
@@ -25502,7 +26247,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin associated and SH3 domain containing A"
   },
   {
    "id": "UBE2D1",
@@ -25531,7 +26277,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin conjugating enzyme E2 D1"
   },
   {
    "id": "UBE2D3",
@@ -25560,7 +26307,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin conjugating enzyme E2 D3"
   },
   {
    "id": "UBE2E2",
@@ -25590,7 +26338,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin conjugating enzyme E2 E2"
   },
   {
    "id": "UBE2I",
@@ -25621,7 +26370,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin conjugating enzyme E2 I"
   },
   {
    "id": "UBE2M",
@@ -25650,7 +26400,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin conjugating enzyme E2 M"
   },
   {
    "id": "USF1",
@@ -25709,7 +26460,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Upstream transcription factor 1"
   },
   {
    "id": "USH1C",
@@ -25738,7 +26490,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "USH1 protein network component harmonin"
   },
   {
    "id": "USH1G",
@@ -25767,7 +26520,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "USH1 protein network component sans"
   },
   {
    "id": "USP7",
@@ -25796,7 +26550,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin specific peptidase 7"
   },
   {
    "id": "USP9X",
@@ -25826,7 +26581,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Ubiquitin specific peptidase 9 X-linked"
   },
   {
    "id": "UVSSA",
@@ -25856,7 +26612,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "UV stimulated scaffold protein A"
   },
   {
    "id": "VAC14",
@@ -25885,7 +26642,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "VAC14 component of PIKFYVE complex"
   },
   {
    "id": "VEGFA",
@@ -25914,7 +26672,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Vascular endothelial growth factor A"
   },
   {
    "id": "VHL",
@@ -25943,7 +26702,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Von Hippel-Lindau tumor suppressor"
   },
   {
    "id": "WDHD1",
@@ -25972,7 +26732,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "WD repeat and HMG-box DNA binding protein 1"
   },
   {
    "id": "WDR36",
@@ -26001,7 +26762,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "WD repeat domain 36"
   },
   {
    "id": "WIF1",
@@ -26031,7 +26793,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Wnt inhibitory factor 1"
   },
   {
    "id": "WNT1",
@@ -26068,7 +26831,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 1"
   },
   {
    "id": "WNT10A",
@@ -26105,7 +26869,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 10A"
   },
   {
    "id": "WNT10B",
@@ -26142,7 +26907,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 10B"
   },
   {
    "id": "WNT11",
@@ -26179,7 +26945,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 11"
   },
   {
    "id": "WNT16",
@@ -26216,7 +26983,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 16"
   },
   {
    "id": "WNT2",
@@ -26253,7 +27021,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 2"
   },
   {
    "id": "WNT2B",
@@ -26290,7 +27059,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 2B"
   },
   {
    "id": "WNT3",
@@ -26327,7 +27097,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 3"
   },
   {
    "id": "WNT3A",
@@ -26372,7 +27143,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 3A"
   },
   {
    "id": "WNT4",
@@ -26409,7 +27181,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 4"
   },
   {
    "id": "WNT5A",
@@ -26461,7 +27234,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 5A"
   },
   {
    "id": "WNT5B",
@@ -26498,7 +27272,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 5B"
   },
   {
    "id": "WNT6",
@@ -26535,7 +27310,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 6"
   },
   {
    "id": "WNT7A",
@@ -26572,7 +27348,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 7A"
   },
   {
    "id": "WNT7B",
@@ -26609,7 +27386,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 7B"
   },
   {
    "id": "WNT8A",
@@ -26646,7 +27424,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 8A"
   },
   {
    "id": "WNT8B",
@@ -26683,7 +27462,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 8B"
   },
   {
    "id": "WNT9A",
@@ -26720,7 +27500,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 9A"
   },
   {
    "id": "WNT9B",
@@ -26757,7 +27538,8 @@
       "source": "KEGG-hsa04916"
      }
     ]
-   }
+   },
+   "full_name": "Wnt family member 9B"
   },
   {
    "id": "WRAP53",
@@ -26787,7 +27569,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "WD repeat containing antisense to TP53"
   },
   {
    "id": "WRN",
@@ -26817,7 +27600,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "WRN RecQ like helicase"
   },
   {
    "id": "XIAP",
@@ -26846,7 +27630,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "X-linked inhibitor of apoptosis"
   },
   {
    "id": "XPA",
@@ -26876,7 +27661,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "XPA, DNA damage recognition and repair factor"
   },
   {
    "id": "XPC",
@@ -26906,7 +27692,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "XPC complex subunit, DNA damage recognition and repair factor"
   },
   {
    "id": "XPO1",
@@ -26937,7 +27724,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Exportin 1"
   },
   {
    "id": "XRCC6",
@@ -26966,7 +27754,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "X-ray repair cross complementing 6"
   },
   {
    "id": "YWHAB",
@@ -26997,7 +27786,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein beta"
   },
   {
    "id": "YWHAE",
@@ -27028,7 +27818,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon"
   },
   {
    "id": "YWHAG",
@@ -27059,7 +27850,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein gamma"
   },
   {
    "id": "YWHAH",
@@ -27090,7 +27882,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein eta"
   },
   {
    "id": "YWHAZ",
@@ -27128,7 +27921,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta"
   },
   {
    "id": "ZC3H7B",
@@ -27157,7 +27951,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Zinc finger CCCH-type containing 7B"
   },
   {
    "id": "ZEB1",
@@ -27188,7 +27983,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Zinc finger E-box binding homeobox 1"
   },
   {
    "id": "ZIC1",
@@ -27219,7 +28015,8 @@
       "source": "RHSA-5662702"
      }
     ]
-   }
+   },
+   "full_name": "Zic family zinc finger 1"
   },
   {
    "id": "ZMIZ1",
@@ -27249,7 +28046,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Zinc finger MIZ-type containing 1"
   },
   {
    "id": "ZMPSTE24",
@@ -27278,7 +28076,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Zinc metallopeptidase STE24"
   },
   {
    "id": "ZNF354A",
@@ -27307,7 +28106,8 @@
       "source": "STRING-v12"
      }
     ]
-   }
+   },
+   "full_name": "Zinc finger protein 354A"
   }
  ],
  "edges": [

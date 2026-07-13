@@ -227,6 +227,19 @@ for gene, d in sorted(nodes.items()):
         "verdict": {"tier": tier, "summary": TIER_SUMMARY[tier], "strands": strands},
     })
 ent_ids = {e["id"] for e in entities}
+
+# ---- human-readable gene names (fetched once from mygene.info -> committed CSV) ----
+GENE_NAMES = {}
+if os.path.exists("data/processed/gene_names.csv"):
+    with open("data/processed/gene_names.csv") as f:
+        for r in csv.DictReader(f):
+            if r["gene"] and r["full_name"]:
+                GENE_NAMES[r["gene"]] = r["full_name"]
+for _e in entities:
+    _nm = GENE_NAMES.get(_e["id"])
+    if _nm:
+        _e["full_name"] = _nm
+
 edges = [e for e in edges if e["a"] in ent_ids and e["b"] in ent_ids]
 
 # ---- recover per-direction detail for the flagged reciprocal edge(s) ---------

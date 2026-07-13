@@ -29,7 +29,7 @@ sub1(r"<script>window\.__DATASET__=.*?</script>", '<script src="data/dataset.js"
 # 2) brand
 sub1("Convergence Stack — prototype v3", "Pigmentation substrate — layer stack", literal=True)
 sub1("Convergence Stack <small>prototype · toy data</small>",
-     "Pigmentation substrate <small>preview · real data · provisional verdicts</small>", literal=True)
+     "Pigmentation substrate <small>preview · real data</small>", literal=True)
 
 # 3) clickable, access-aware citation popover
 old = ("  pop.innerHTML=r?`<div class=\"pk\">${esc(r.kind||'source')}</div>"
@@ -175,6 +175,39 @@ sub1(".neigh .lch i{width:6px;height:6px;border-radius:2px;display:block}",
      ".edgedir{font-size:11px;color:var(--ink-2);display:flex;align-items:baseline;gap:6px}\n"
      ".edgedir .sign{font-family:var(--mono);width:12px;text-align:center;flex:none}\n"
      ".edgedir .esrc{color:var(--ink-3);font-size:10px}", literal=True)
+
+# 8) polish pass from user feedback: make the left panel collapsible and declutter the top bar.
+#    (On-network rest-labels are left as the dev shipped them — 6-layer core only; the readable
+#    gene name goes in the dossier instead, see section 9.)
+
+# 8b) collapsible left "Reading the stack" panel: swap the static heading for a toggle.
+sub1('<div class="legend">\n  <b>Reading the stack</b>',
+     '<div class="legend" id="legend">\n'
+     '  <button class="legend-toggle" id="legendtoggle" aria-expanded="true" '
+     "onclick=\"var l=document.getElementById('legend'),c=l.classList.toggle('collapsed');"
+     "this.setAttribute('aria-expanded',c?'false':'true')\">Reading the stack "
+     '<span class="chev" aria-hidden="true">&#9662;</span></button>', literal=True)
+sub1(".legend b{color:var(--ink);font-weight:650}",
+     ".legend b{color:var(--ink);font-weight:650}\n"
+     ".legend-toggle{display:flex;align-items:center;gap:6px;width:100%;text-align:left;color:var(--ink);"
+     "font-weight:650;font-size:12px;padding:2px 0}\n"
+     ".legend-toggle .chev{margin-left:auto;color:var(--ink-3);transition:transform .15s}\n"
+     ".legend.collapsed .chev{transform:rotate(-90deg)}\n"
+     ".legend.collapsed .lrow{display:none}", literal=True)
+
+# 8c) declutter the header: trim the two long example-chip labels + narrow the search box.
+sub1(" mixed evidence (mechanism + context)", " mixed evidence", literal=True)
+sub1("spans all ${NMAX} layers", "all ${NMAX} layers", literal=True)
+sub1(".searchwrap input{width:240px", ".searchwrap input{width:190px", literal=True)
+
+# 9) show the readable gene name in the dossier (e.g. MC1R -> "Melanocortin 1 receptor") and
+#    drop the redundant duplicate id when it just repeats the symbol.
+sub1('<h2>${esc(e.codename)} <span class="id">${e.id}</span></h2>${tierChip(t)}',
+     '<h2>${esc(e.codename)}${e.id&&e.id!==e.codename?` <span class="id">${e.id}</span>`:\'\'}</h2>'
+     '${e.full_name?`<div class="d-fullname">${esc(e.full_name)}</div>`:\'\'}${tierChip(t)}', literal=True)
+sub1(".d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}",
+     ".d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}\n"
+     ".d-fullname{font-size:13px;color:var(--ink-2);margin:1px 0 8px;font-weight:500}", literal=True)
 
 open(OUT, "w").write(h)
 print(f"wrote {OUT} ({len(h)//1024} KB)")

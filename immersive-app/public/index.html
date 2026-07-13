@@ -68,7 +68,7 @@ a:hover{text-decoration:underline}
   padding:7px 12px;border-radius:10px;border:1px solid var(--line-soft)}
 .brand small{font-family:var(--mono);font-weight:400;font-size:10px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase}
 .searchwrap{position:relative}
-.searchwrap input{width:240px;padding:8px 12px;font:inherit;font-size:13px;color:var(--ink);
+.searchwrap input{width:190px;padding:8px 12px;font:inherit;font-size:13px;color:var(--ink);
   background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(10px);
   border:1px solid var(--line);border-radius:9px;outline:none}
 .searchwrap input:focus{border-color:var(--accent)}
@@ -154,6 +154,10 @@ a:hover{text-decoration:underline}
   background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(9px);
   border:1px solid var(--line-soft);border-radius:11px;padding:11px 13px}
 .legend b{color:var(--ink);font-weight:650}
+.legend-toggle{display:flex;align-items:center;gap:6px;width:100%;text-align:left;color:var(--ink);font-weight:650;font-size:12px;padding:2px 0}
+.legend-toggle .chev{margin-left:auto;color:var(--ink-3);transition:transform .15s}
+.legend.collapsed .chev{transform:rotate(-90deg)}
+.legend.collapsed .lrow{display:none}
 .legend .lrow{display:flex;gap:7px;align-items:baseline;margin-top:4px}
 .legend .muted{opacity:.75}
 
@@ -174,6 +178,7 @@ a:hover{text-decoration:underline}
 .tier.dashed{border-style:dashed}
 .d-sum{font-size:13px;color:var(--ink-2);margin:0 0 10px}
 .d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.d-fullname{font-size:13px;color:var(--ink-2);margin:1px 0 8px;font-weight:500}
 .flagchip{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
   padding:3px 8px;border-radius:5px;background:var(--panel);color:var(--ink-2);border:1px solid var(--line-soft)}
 .d-sec{border-top:1px solid var(--line-soft);padding-top:12px;margin-top:12px}
@@ -265,7 +270,7 @@ a:hover{text-decoration:underline}
         <path d="M11 3.2v15.6" opacity=".85"/>
       </g>
     </svg>
-    Pigmentation substrate <small>preview · real data · provisional verdicts</small>
+    Pigmentation substrate <small>preview · real data</small>
   </span>
   <div class="searchwrap">
     <input id="search" type="text" placeholder="Search entities…" aria-label="Search entities" autocomplete="off"/>
@@ -317,8 +322,8 @@ a:hover{text-decoration:underline}
   <button class="cbtn" id="homebtn">Reset view</button>
 </div>
 
-<div class="legend">
-  <b>Reading the stack</b>
+<div class="legend" id="legend">
+  <button class="legend-toggle" id="legendtoggle" aria-expanded="true" onclick="var l=document.getElementById('legend'),c=l.classList.toggle('collapsed');this.setAttribute('aria-expanded',c?'false':'true')">Reading the stack <span class="chev" aria-hidden="true">&#9662;</span></button>
   <div class="lrow"><span>Each plane is one evidence layer — broad coverage at the base, selective above. A thread is one entity passing through the layers that carry it.</span></div>
   <div class="lrow"><span>● filled = <b>mechanism</b> (a signed, directed interaction) · ○ hollow = <b>context</b> (co-occurrence or pathway membership — no direction). Every entity keeps the same position on every slice — flip slices and the persistent dots are the convergent ones; hover or select to draw a thread on demand.</span></div>
   <div class="lrow"><span>Each layer’s own web is woven faintly into its plane — solo layers to bring it forward; exact links light on selection. Dashed = a feedback loop: the two genes regulate each other with opposite signs.</span></div>
@@ -944,7 +949,7 @@ function renderPanel(){
   el.innerHTML=`
     <button class="close" aria-label="Close dossier">×</button>
     <div class="d-head">${glyphSVG(e,62)}
-      <div><h2>${esc(e.codename)} <span class="id">${e.id}</span></h2>${tierChip(t)}</div></div>
+      <div><h2>${esc(e.codename)}${e.id&&e.id!==e.codename?` <span class="id">${e.id}</span>`:''}</h2>${e.full_name?`<div class="d-fullname">${esc(e.full_name)}</div>`:''}${tierChip(t)}</div></div>
     <p class="d-sum">${esc(e.verdict.summary||'')}</p>
     <div class="d-meta">
       <span class="flagchip">${e.n_channels}/${CHANNELS.length} layers</span>
@@ -1098,9 +1103,9 @@ document.addEventListener('click',ev=>{ if(!ev.target.closest('.searchwrap')) dr
   const mixed=ENTS.filter(e=>e.n_channels>=4&&new Set(e.verdict.strands.map(s=>s.stance)).size>1)
     .sort((a,b)=>b.n_channels-a.n_channels)[0];
   const EX=[
-    hero&&{id:hero.id,label:`${hero.codename} — spans all ${NMAX} layers`},
+    hero&&{id:hero.id,label:`${hero.codename} — all ${NMAX} layers`},
     confEnt&&{id:confEnt.id,label:`${confEnt.codename} — a feedback loop`},
-    mixed&&{id:mixed.id,label:`${mixed.codename} — mixed evidence (mechanism + context)`},
+    mixed&&{id:mixed.id,label:`${mixed.codename} — mixed evidence`},
   ].filter(Boolean);
   document.getElementById('exrow').innerHTML=EX.map(x=>
     `<button class="exchip" data-id="${x.id}">${esc(x.label)}</button>`).join('');
