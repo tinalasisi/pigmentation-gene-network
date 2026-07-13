@@ -22,5 +22,6 @@ TID=${SLURM_ARRAY_TASK_ID}
 GENE=$(sed -n "$((TID+1))p" "$PANEL" | cut -d, -f1)
 [ -z "$GENE" ] && { echo "no gene at row $TID"; exit 0; }
 echo "[$(date +%T)] task $TID -> aBSREL $GENE"
-python "$REPO/scripts/02b_branch_rates.py" --one "$GENE" --aln aln --out absrel --panel "$PANEL"
+python "$REPO/scripts/02b_branch_rates.py" --one "$GENE" --aln aln --out absrel --panel "$PANEL" \
+  || { echo "[$(date +%T)] TASK FAILED (gene=$GENE rc=$?)"; exit 1; }   # surface crashes
 echo "[$(date +%T)] task $TID done ($GENE)"

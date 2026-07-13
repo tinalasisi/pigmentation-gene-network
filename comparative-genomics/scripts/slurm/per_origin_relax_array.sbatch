@@ -32,5 +32,6 @@ echo "[$(date +%T)] task $TID -> gene=$GENE origin=$ORIGIN"
 python "$REPO/scripts/02c_per_origin_relax.py" --gene "$GENE" --origin "$ORIGIN" \
   --aln aln --out relax_per_origin --qc qc/per_origin \
   --panel "$PANEL" --tree "$REPO/config/primate_species_tree.nex" \
-  --origins "$ORIGINS_CSV" --threads ${SLURM_CPUS_PER_TASK:-16}
+  --origins "$ORIGINS_CSV" --threads ${SLURM_CPUS_PER_TASK:-16} \
+  || { echo "[$(date +%T)] TASK FAILED (gene=$GENE origin=$ORIGIN rc=$?)"; exit 1; }   # surface crashes
 echo "[$(date +%T)] task $TID done (gene=$GENE origin=$ORIGIN)"

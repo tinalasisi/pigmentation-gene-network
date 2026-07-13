@@ -29,11 +29,11 @@ if [ -s "$STAGE/cds_from_genomic.fna" ]; then
   # annotated -> pull CDS directly (longest transcript per gene), same as 01
   for g in $GENES; do
     seqkit grep -nrp "\[gene=${g}\]" "$STAGE/cds_from_genomic.fna" 2>/dev/null \
-      | seqkit sort -l -r 2>/dev/null | seqkit head -n 1 2>/dev/null > "cds/${g}.__tmp.fna" || true
-    if [ -s "cds/${g}.__tmp.fna" ]; then
-      mkdir -p "cds/${g}"; awk -v s=">$SP" 'NR==1{print s} NR>1{print}' "cds/${g}.__tmp.fna" > "cds/${g}/${SP}.cds.fna"
+      | seqkit sort -l -r 2>/dev/null | seqkit head -n 1 2>/dev/null > "cds/${g}.${SP}.__tmp.fna" || true
+    if [ -s "cds/${g}.${SP}.__tmp.fna" ]; then
+      mkdir -p "cds/${g}"; awk -v s=">$SP" 'NR==1{print s} NR>1{print}' "cds/${g}.${SP}.__tmp.fna" > "cds/${g}/${SP}.cds.fna"
     fi
-    rm -f "cds/${g}.__tmp.fna"
+    rm -f "cds/${g}.${SP}.__tmp.fna"
   done
   echo "[$SP] annotated: extracted new genes from staged CDS"
 elif [ -s "$STAGE/genome.mpi" ] && [ -s "$STAGE/genome.fna" ]; then

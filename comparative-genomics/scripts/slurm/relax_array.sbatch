@@ -22,5 +22,6 @@ python "$REPO/scripts/02_align_and_relax.py" --gene "$GENE" \
   --cds cds --aln aln --relax relax --qc qc \
   --panel "$PANEL" --tree "$REPO/config/primate_species_tree.nex" \
   --states "$REPO/config/species_states.csv" --threads ${SLURM_CPUS_PER_TASK:-16} \
-  --gap-col-thresh "${GAP_COL_THRESH:-0.3}" --outlier-k "${OUTLIER_K:-4.0}"
+  --gap-col-thresh "${GAP_COL_THRESH:-0.3}" --outlier-k "${OUTLIER_K:-4.0}" \
+  || { echo "[$(date +%T)] TASK FAILED (gene=$GENE rc=$?)"; exit 1; }   # surface crashes; break afterok
 echo "[$(date +%T)] task $TID done ($GENE)"

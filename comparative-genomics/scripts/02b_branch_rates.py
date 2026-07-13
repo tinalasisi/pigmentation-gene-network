@@ -64,7 +64,7 @@ def main():
     ap.add_argument("--one",default=None, help="single gene (array-job mode)")
     a=ap.parse_args()
     os.makedirs(a.out,exist_ok=True); os.makedirs("report",exist_ok=True)
-    panel={r["gene"]:r["set"] for r in csv.DictReader(open(a.panel))}
+    panel={r["gene"]:(r.get("set") or r.get("group") or r.get("category") or "?") for r in csv.DictReader(open(a.panel))}
     if a.one: genes=[a.one]
     elif a.genes: genes=a.genes.split(",")
     else: genes=[os.path.basename(f).split(".")[0]

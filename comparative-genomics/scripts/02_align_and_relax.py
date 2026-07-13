@@ -149,7 +149,7 @@ def main():
     a=ap.parse_args()
     os.makedirs(a.relax,exist_ok=True); os.makedirs(a.qc,exist_ok=True)
     import csv
-    panel={r["gene"]:r["set"] for r in csv.DictReader(open(a.panel))}
+    panel={r["gene"]:(r.get("set") or r.get("group") or r.get("category") or "?") for r in csv.DictReader(open(a.panel))}
     if a.gene: panel={g:s for g,s in panel.items() if g==a.gene}
     states={r["species"].replace(" ","_"):r["dichromatism"] for r in csv.DictReader(open(a.states))}
     foreground=[sp for sp,st in states.items() if st.startswith("dichro")]
