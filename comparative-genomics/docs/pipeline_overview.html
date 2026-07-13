@@ -30,7 +30,6 @@
   h1{font-size:25px;line-height:1.22;margin:0 0 10px;font-weight:750;letter-spacing:-.01em}
   .q{font-size:15px;color:var(--muted);margin:0 0 22px;max-width:66ch}
   .q b{color:var(--ink);font-weight:650}
-  /* pipeline */
   .flow{position:relative;margin:0;padding:0;list-style:none}
   .step{position:relative;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:0 0 16px}
   .rail{display:flex;flex-direction:column;align-items:center}
@@ -45,7 +44,6 @@
   .card p{margin:2px 0 0;font-size:13.5px;color:var(--ink)}
   .card .an{margin:6px 0 0;font-size:12.5px;color:var(--muted);font-style:italic}
   .ico{font-size:16px}
-  /* callouts */
   .callout{display:grid;grid-template-columns:34px 1fr;gap:12px;border-radius:var(--radius);
     padding:13px 15px;margin:8px 0 0;border:1px solid var(--line)}
   .callout .ci{font-size:20px;line-height:1}
@@ -60,13 +58,13 @@
   @media (max-width:520px){h1{font-size:22px}.step{grid-template-columns:38px 1fr;gap:11px}.num{width:30px;height:30px;font-size:14px}}
 </style>
 <div class="wrap">
-  <h2 class="sr-only">A seven-step pipeline that downloads 117 primate genomes, extracts and aligns pigmentation and hormone genes, and tests each for natural selection on a supercomputer.</h2>
+  <h2 class="sr-only">A seven-step pipeline that downloads 117 primate genomes, extracts and aligns 110 pigmentation and hormone genes, and tests each for natural selection on a supercomputer.</h2>
 
   <p class="eyebrow">Comparative genomics · how it works</p>
   <h1>Testing 110 primate genes for natural selection</h1>
   <p class="q">Some primates are <b>dichromatic</b> — the sexes or ages differ in color. Have the genes behind color been shaped by selection differently in these species? And across the ~14 <b>independent origins</b> of dichromatism, did evolution reuse the <b>same</b> genes or <b>different</b> ones? We compare pigmentation genes against hormone genes across <b>117 species</b>.</p>
 
-  <p class="sec">The pipeline · one gene, 117 species, repeated ×110</p>
+  <p class="sec">The pipeline · these 7 steps run for all 110 genes (117 species each)</p>
   <ol class="flow">
     <li class="step"><div class="rail"><div class="num">1</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">🧬</span>Download the genomes <span class="tool">NCBI</span></h3>
@@ -75,13 +73,13 @@
 
     <li class="step"><div class="rail"><div class="num">2</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">✂️</span>Find &amp; cut out each gene <span class="tool">miniprot</span></h3>
-        <p>Locate each target gene inside every genome and extract its DNA. Where there's no gene map, match the human protein to find it.</p>
-        <p class="an">Finding one short passage inside a 3-billion-letter book.</p></div></li>
+        <p>For every one of the 110 genes, locate it inside all 117 genomes and extract its DNA. Where there's no gene map, match the human protein to find it.</p>
+        <p class="an">Finding one short passage inside a 3-billion-letter book — 110 passages, 117 books.</p></div></li>
 
     <li class="step"><div class="rail"><div class="num">3</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">📊</span>Line the copies up <span class="tool">MAFFT</span></h3>
-        <p>Stack all 117 versions of a gene so matching positions line up, adding gaps where evolution inserted or deleted pieces.</p>
-        <p class="an">117 translations of one paragraph, aligned word-by-word.</p></div></li>
+        <p>For each gene, stack all 117 species' versions so matching positions line up, adding gaps where evolution inserted or deleted pieces.</p>
+        <p class="an">117 translations of one paragraph, aligned word-by-word — done for every gene.</p></div></li>
 
     <li class="step"><div class="rail"><div class="num">4</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">🌳</span>Bring in the family tree <span class="tool">phylogeny</span></h3>
@@ -90,7 +88,7 @@
 
     <li class="step"><div class="rail"><div class="num">5</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">🔬</span>Test for selection <span class="tool">RELAX</span><span class="tool">aBSREL</span></h3>
-        <p>Compare protein-changing DNA changes vs. silent ones. <b>RELAX</b> asks if selection is intensified or relaxed in dichromatic species (a number <b>K</b>); <b>aBSREL</b> asks which branches had bursts of change.</p>
+        <p>For each gene, compare protein-changing DNA changes vs. silent ones. <b>RELAX</b> asks if selection is intensified or relaxed in dichromatic species (a number <b>K</b>); <b>aBSREL</b> asks which branches had bursts of change.</p>
         <p class="an">Is something actively pushing this gene to change — and where?</p></div></li>
 
     <li class="step"><div class="rail"><div class="num">6</div><div class="bar"></div></div>
@@ -100,19 +98,19 @@
 
     <li class="step"><div class="rail"><div class="num">7</div><div class="bar"></div></div>
       <div class="card"><h3><span class="ico">📋</span>Collect &amp; label results</h3>
-        <p>Gather every K-value, p-value and branch result into tables, each gene tagged by its functional group.</p>
-        <p class="an">The raw output, made readable for the biology.</p></div></li>
+        <p>Gather every gene's K-values, p-values and branch results into tables, each gene tagged by its functional group.</p>
+        <p class="an">The raw output for all 110 genes, made readable for the biology.</p></div></li>
   </ol>
 
   <p class="sec">Two things that make it work</p>
   <div class="callout hpc"><div class="ci">🖥️</div>
     <div><h4>It runs on a supercomputer, in parallel</h4>
-      <p>On the <b>Great Lakes</b> cluster, all genes run <b>at the same time</b> as a job array — so the total time equals the <b>single slowest gene</b>, not the sum. That's why the two giant genes get their own track: one slow gene shouldn't hold up the other 108.</p></div></div>
+      <p>On the <b>Great Lakes</b> cluster, all 110 genes run <b>at the same time</b> as a job array — so the total time equals the <b>single slowest gene</b>, not the sum. That's why the two giant genes get their own track: one slow gene shouldn't hold up the other 108.</p></div></div>
   <div class="callout ver"><div class="ci">✓</div>
     <div><h4>"Completed" is not "correct"</h4>
       <p>A supercomputer reports a job as <b>done</b> even when it produced nothing. Every stage's actual output is checked before it's trusted — and failures are made loud (a red FAILED task), not silently hidden.</p></div></div>
 
-  <p class="foot">Pigmentation gene-network project · comparative-genomics pipeline · 117-primate panel, ~110 genes (pigmentation + hormone modules). Tools: NCBI datasets · miniprot · MAFFT · HyPhy (RELAX, aBSREL) · SLURM job arrays.</p>
+  <p class="foot">Pigmentation gene-network project · comparative-genomics pipeline · 117-primate panel, 110 genes (57 pigmentation + 53 hormone). Tools: NCBI datasets · miniprot · MAFFT · HyPhy (RELAX, aBSREL) · SLURM job arrays.</p>
 </div>
 </body>
 </html>
