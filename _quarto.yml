@@ -9,7 +9,6 @@ project:
   # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
     - index.qmd
-    - walkthrough.qmd
     - networks.qmd
     - dichromatism.qmd
     - notebooks/01_reconstruct_published_network.ipynb
@@ -56,8 +55,6 @@ website:
     left:
       - href: index.qmd
         text: Overview
-      - href: walkthrough.qmd
-        text: About
       - href: networks.qmd
         text: Networks
     right:
@@ -70,8 +67,6 @@ website:
     contents:
       - text: Overview
         href: index.qmd
-      - text: "About (start here)"
-        href: walkthrough.qmd
       - text: "Networks"
         href: networks.qmd
       - section: "1 · Building the pigmentation network"

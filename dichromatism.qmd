@@ -176,6 +176,34 @@ relative-rate scan has not been run and is not reported as a result here.
 | hormone coupling | present — dichromatism genes hormonally regulated (Griffith et al. 2026) | the two modules co-evolve with each other (concordant selection, tested) but that coupling does not track the trait (correlated-evolution test: independent model preferred) |
 | trait stability | — | labile; loss ≈ 9× faster than gain |
 
+## How the study was built
+
+This is the shape of the analysis in one place; the detailed pipeline and its limits follow below.
+
+**The question.** Does the genetic basis of primate sexual dichromatism rest on a gene of major
+effect, as the best-studied bird cases do — *MC1R*/melanin in galliforms
+([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)) and *BCO2*/carotenoid in finches
+([Gazda et al. 2020](https://doi.org/10.1126/science.aba0803))?
+
+**The data and tools.** A 238-species primate hair-trait table and a dated primate tree; a curated
+selection panel of **80 genes — 27 pigmentation and 53 sex-hormone** (expanded to ~105 for the
+per-origin and cross-species-GWAS layers after the pigmentation module was widened); and ~117
+primate genome assemblies. Trait history comes from ancestral-state reconstruction
+(`ape`/`phytools`, ARD/ER Mk models, stochastic mapping); coding sequences from homology-based
+extraction (miniprot), codon alignment from MAFFT, and selection inference from the HyPhy suite
+(RELAX per origin, aBSREL per branch) plus RERconverge — run on an HPC cluster from a committed,
+parameterized protocol.
+
+**The finding.** Primate sexual dichromatism is polyphyletic (~15 origins), labile (loss ≈ 9× gain),
+and polygenic with no single shared signature — unlike the avian genes-of-major-effect model. A
+phylogenetic correlated-evolution test finds selection on the pigment and hormone modules concordant
+with *each other* but not with the trait, and a phylogeny-controlled association scan flags one
+suggestive candidate (*AKR1C4*, hormone module — see Limitations) rather than an established locus.
+
+**The design choice that makes it work.** Taking the independent *origin* of dichromatism, not the
+dichromatic *species*, as the unit of selection testing — the only unit at which a test can ask
+whether the architecture is shared across origins or heterogeneous.
+
 ## Limitations
 
 - Per-origin RELAX is statistically powered only for the 3 multi-tip origins; the 11 single-tip
