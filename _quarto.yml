@@ -27,6 +27,7 @@ project:
     - notebooks/11_cross_ancestry_conditionality.ipynb
     - notebooks/12_direction_law_expanded.ipynb
     - notebooks/13_sex_hormone_layer.ipynb
+    - notebooks/14_hormone_pigment_interface.ipynb
 
 website:
   title: "Pigmentation gene network"
@@ -109,6 +110,8 @@ website:
         contents:
           - text: "NB13 · Sex-hormone layer"
             href: notebooks/13_sex_hormone_layer.ipynb
+          - text: "NB14 · Gene panel (two coupled networks)"
+            href: notebooks/14_hormone_pigment_interface.ipynb
       - section: "Appendix — data extraction"
         contents:
           - text: "NB1a · Bajpai CRISPR screen"
