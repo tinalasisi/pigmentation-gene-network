@@ -1476,7 +1476,7 @@
    "chart_type": "diverging_gene_bar",
    "photo_anchor": "both_taxa",
    "headline": "Genes under selection in a dichromatic taxon but NOT its closest monochromatic relative \u2014 candidate loci for the trait difference.",
-   "recurrent_gene": "KITLG (pigmentation-side; recurs across Hylobates, Trachypithecus x4, Colobus, Erythrocebus, Alouatta)",
+   "recurrent_gene": "KITLG (pigmentation-side; recurs across Hylobates, Trachypithecus x3, Colobus, Erythrocebus, Alouatta)",
    "pairs": [
     {
      "dichromatic": "Colobus_guereza",

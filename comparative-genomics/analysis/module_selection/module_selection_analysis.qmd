@@ -179,7 +179,7 @@ write_csv(contrast, "sister_pair_contrast.csv"); write_csv(pairs, "sister_pairs.
 ```
 
 **KITLG** recurs on the pigmentation side across independent lineages (*Hylobates*,
-*Trachypithecus* ×4, *Colobus*, *Erythrocebus*, *Alouatta*) — a candidate repeated
+*Trachypithecus* ×3, *Colobus*, *Erythrocebus*, *Alouatta*) — a candidate repeated
 axis. *Trachypithecus francoisi* shows the richest differential (14 genes across
 both modules). Two pairs (*Macaca arctoides*, *Eulemur flavifrons*) show no
 differential genes — dichromatism there is not explained by selection at these
