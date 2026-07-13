@@ -1,0 +1,230 @@
+---
+title: "Correlated evolution of module selection and hair dichromatism"
+subtitle: "Opie-analog phylogenetic tests — frozen, replicable"
+author: "Molecular evolution analysis (pigmentation-gene-network)"
+format:
+  html:
+    toc: true
+    code-fold: show
+    df-print: paged
+execute:
+  warning: false
+  message: false
+---
+
+## What this notebook does
+
+Three phylogenetic tests on **frozen inputs** in `./data/` — no network, no
+external state. `quarto render` (or run each chunk) reproduces every number and
+the figure. This is the companion to `../module_selection/`: that notebook builds
+the per-lineage module-balance metric and the Opie ancestral-state /
+transition-rate analysis; **this** notebook adds the one Opie test not covered
+there — the **correlated-evolution** test (Pagel's *Discrete*, ML analog via
+`phytools::fitPagel`) — plus Pagel's lambda for the trait.
+
+The Opie, Atkinson & Shultz (2012, *Commun Integr Biol* 5:458,
+doi:10.4161/cib.20821) analysis of primate **mating systems** used three tools:
+phylogenetic signal / model choice, ancestral-state reconstruction, and a test
+of whether two discrete traits evolve **dependently** (correlated) rather than
+independently. We hold no mating-system data, so we replicate their *method* on
+our own phenotype + selection results.
+
+**Question here:** does a lineage being under selection in the pigmentation
+module (or the sex-hormone module) co-evolve with that lineage being
+dichromatic? This is the lineage-level version of the project's set-level
+pigment-vs-hormone contrast (which was not significant, permutation p=0.87).
+
+### Data provenance (frozen)
+
+| file | source | contents |
+|---|---|---|
+| `data/branch_rates.csv` | HPC full-panel aBSREL, commit 4c07317 (`results/perorigin_v1/`) | 78 genes x 288 branches; per-branch omega, corrected p, `selected_flag` |
+| `data/gene_modules.csv` | curated panel | gene -> module (pigmentation / hormone) |
+| `data/species_coding.csv` | genomic-panel phenotype | 117 species -> dichromatic 0/1 |
+| `data/primate_species_tree.nex` | pruned genomic tree | 304-tip tree for the genome-sampled set |
+| `data/leakey_pruned_tree.nex` | Leakey2025 phenotype tree | 235-tip primate tree |
+| `data/leakey_dichromatism_coding.csv` | Leakey2025 `primate_prelim_complete.csv` (2 cols) | species_binom, hair_dichromatism_any |
+
+The **lambda and transition-rate** tests use the 235-tip Leakey phenotype tree
+(not the genome-sampled set, which is ascertainment-biased toward dichromatic
+species). The **fitPagel** test needs both traits per tip, so it uses the
+genomic panel (species with an aBSREL result).
+
+```{r setup}
+library(ape); library(phytools); library(tidyverse)
+dd <- "data"
+BR  <- read_csv(file.path(dd, "branch_rates.csv"), show_col_types = FALSE)
+GM  <- read_csv(file.path(dd, "gene_modules.csv"), show_col_types = FALSE)
+SC  <- read_csv(file.path(dd, "species_coding.csv"), show_col_types = FALSE)
+gtr <- read.nexus(file.path(dd, "primate_species_tree.nex"))
+ltr <- read.nexus(file.path(dd, "leakey_pruned_tree.nex"))
+LC  <- read_csv(file.path(dd, "leakey_dichromatism_coding.csv"), show_col_types = FALSE)
+```
+
+## 1. Pagel's lambda — phylogenetic signal in dichromatism
+
+Opie reported lambda = 0.996 for mating systems (near-maximal signal). We
+estimate lambda for hair dichromatism on the Leakey phenotype tree, treating the
+0/1 trait as continuous (a standard proxy for a binary trait), with a
+likelihood-ratio test against lambda = 0.
+
+```{r lambda}
+ph <- LC %>% mutate(sp = gsub(" ", "_", species_binom)) %>%
+  select(sp, dich = hair_dichromatism_any) %>% filter(!is.na(dich))
+common <- intersect(ltr$tip.label, ph$sp)
+trm <- keep.tip(ltr, common)
+x   <- ph %>% filter(sp %in% common) %>% distinct(sp, .keep_all = TRUE)
+xv  <- setNames(as.integer(x$dich), x$sp)[trm$tip.label]
+
+ps <- phylosig(trm, xv, method = "lambda", test = TRUE)
+lambda_res <- tibble(n_tips = length(common), n_dichromatic = sum(xv),
+                     lambda = ps$lambda, logL = ps$logL, logL0 = ps$logL0, p = ps$P)
+lambda_res
+```
+
+## 2. Transition-rate asymmetry (loss vs gain) — cross-check
+
+The ancestral-state / transition-rate analysis is the primary output of the
+sibling `module_selection/` notebook; we recompute the ARD-vs-ER model choice
+here as an independent cross-check. **Note:** `ace(model="ARD")$rates` does not
+return rates in gain-then-loss order — confirm direction with `fitMk` ->
+`as.Qmatrix()` (rows = from-state, cols = to-state).
+
+```{r rates}
+fm  <- fitMk(trm, setNames(as.character(xv), names(xv)), model = "ARD")
+Qm  <- unclass(as.Qmatrix(fm))
+fit_er  <- ace(xv, trm, type = "discrete", model = "ER")
+fit_ard <- ace(xv, trm, type = "discrete", model = "ARD")
+rate_res <- tibble(
+  gain_0to1 = Qm[1, 2], loss_1to0 = Qm[2, 1], loss_over_gain = Qm[2, 1] / Qm[1, 2],
+  AIC_ER  = 2 * 1 - 2 * fit_er$loglik,
+  AIC_ARD = 2 * 2 - 2 * fit_ard$loglik) %>%
+  mutate(dAIC_ARD_minus_ER = AIC_ARD - AIC_ER)
+rate_res
+```
+
+## 3. fitPagel — does module selection co-evolve with dichromatism?
+
+Two binary traits per tip: (i) dichromatic vs monochromatic; (ii) at least one
+gene of the module under aBSREL episodic selection (corrected p < 0.05) on that
+tip's terminal branch. `fitPagel` compares an **independent** model (the two
+traits evolve separately) against a **dependent** model (each trait's transition
+rates depend on the other's state) — the ML analog of Opie's BayesTraits
+*Discrete* dependent-vs-independent Bayes-factor test.
+
+```{r fitpagel}
+sel_tip <- BR %>% filter(is_tip == TRUE, selected_flag == TRUE) %>%
+  distinct(branch, set)
+pig_tips <- sel_tip %>% filter(set == "pigmentation") %>% pull(branch)
+hor_tips <- sel_tip %>% filter(set == "hormone") %>% pull(branch)
+
+tested_tips <- unique(BR$branch[BR$is_tip == TRUE])
+keep <- Reduce(intersect, list(gtr$tip.label, SC$species, tested_tips))
+gtrm <- keep.tip(gtr, keep)
+
+dich <- setNames(ifelse(SC$dichromatic[match(keep, SC$species)] == 1, "dich", "mono"), keep)
+pigs <- setNames(ifelse(keep %in% pig_tips, "pig_sel", "none"), keep)
+hors <- setNames(ifelse(keep %in% hor_tips, "hor_sel", "none"), keep)
+
+set.seed(1)
+fp_pig <- fitPagel(gtrm, dich, pigs)
+fp_hor <- fitPagel(gtrm, dich, hors)
+
+pagel_res <- tibble(
+  module = c("pigmentation", "hormone"),
+  n_tips = length(keep), n_dichromatic = sum(dich == "dich"),
+  indep_AIC = c(fp_pig$independent.AIC, fp_hor$independent.AIC),
+  dep_AIC   = c(fp_pig$dependent.AIC,   fp_hor$dependent.AIC),
+  LR = c(fp_pig$lik.ratio, fp_hor$lik.ratio),
+  p  = c(fp_pig$P, fp_hor$P)) %>%
+  mutate(dAIC_indep_minus_dep = indep_AIC - dep_AIC,
+         preferred = ifelse(dep_AIC < indep_AIC, "dependent", "independent"))
+pagel_res
+```
+
+### Figure
+
+```{r figure, fig.width=7.2, fig.height=4.6}
+df <- pagel_res %>%
+  select(module, indep_AIC, dep_AIC, p) %>%
+  pivot_longer(c(indep_AIC, dep_AIC), names_to = "model", values_to = "AIC") %>%
+  mutate(model = factor(ifelse(model == "indep_AIC", "Independent", "Dependent"),
+                        levels = c("Independent", "Dependent")),
+         module = factor(ifelse(module == "pigmentation", "Pigmentation module",
+                                "Sex-hormone module"),
+                         levels = c("Pigmentation module", "Sex-hormone module")))
+lab <- pagel_res %>%
+  transmute(module = factor(ifelse(module == "pigmentation", "Pigmentation module",
+                                   "Sex-hormone module"),
+                            levels = c("Pigmentation module", "Sex-hormone module")),
+            y = pmax(indep_AIC, dep_AIC) + 2.5,
+            txt = sprintf("independent preferred\ndAIC=%.1f, LR p=%.2f",
+                          dAIC_indep_minus_dep, p))
+p <- ggplot(df, aes(module, AIC, fill = model)) +
+  geom_col(position = position_dodge(width = 0.7), width = 0.62) +
+  geom_text(aes(label = sprintf("%.1f", AIC)), position = position_dodge(width = 0.7),
+            vjust = -0.4, size = 3.1, colour = "grey20") +
+  geom_text(data = lab, aes(module, y, label = txt), inherit.aes = FALSE,
+            size = 3.0, colour = "grey25", lineheight = 0.95, vjust = 0) +
+  scale_fill_manual(values = c(Independent = "#8C8C8C", Dependent = "#3B3B3B"),
+                    name = "Model of evolution") +
+  coord_cartesian(ylim = c(min(df$AIC) - 8, max(df$AIC) + 9)) +
+  labs(title = "Module selection does not co-evolve with dichromatism",
+       subtitle = sprintf("fitPagel, %d-tip genomic panel (%d dichromatic); Pagel's lambda=%.2f, p=%.1g for the trait itself",
+                          nrow(SC[SC$species %in% keep, ]), sum(dich == "dich"),
+                          lambda_res$lambda, lambda_res$p),
+       x = NULL, y = "AIC (lower = better fit)") +
+  theme_classic(base_size = 11) +
+  theme(legend.position = "top", plot.title = element_text(face = "plain", size = 12),
+        plot.subtitle = element_text(size = 8.3, colour = "grey35"),
+        axis.text.x = element_text(size = 10))
+ggsave("fig_fitpagel_correlated_evolution.png", plot = p, width = 7.2, height = 4.6, dpi = 300)
+p
+```
+
+## 4. Findings
+
+- **Dichromatism carries strong phylogenetic signal** (Pagel's lambda ~ 0.65,
+  LR p < 1e-6) — closely related species resemble each other in the trait, as
+  expected and consistent with Opie's near-maximal lambda for mating systems.
+- **Loss exceeds gain ~9x** (ARD asymmetric model preferred over equal-rates,
+  dAIC ~ 20) — dichromatism is evolutionarily labile, lost far more readily than
+  gained. This cross-check reproduces the `module_selection/` result.
+- **Module selection does NOT co-evolve with dichromatism.** For both the
+  pigmentation and sex-hormone modules the **independent** model is AIC-preferred
+  (dAIC 3.7 and 5.7; LR p 0.37 and 0.68). There is no lineage-level statistical
+  coupling between which module is under selection and whether a lineage is
+  dichromatic.
+
+**Interpretation & power caveat.** The negative fitPagel result reinforces the
+project's non-significant set-level contrast (p=0.87): the pigment and hormone
+modules are not differentially deployed in dichromatic lineages in any way this
+test can detect. But the test is **power-limited** — only 21 dichromatic tips,
+and module selection is common across the whole panel (most tips carry at least
+one selected gene), so the contingency table has little room to show
+association. A negative here is "no detectable coupling," not "coupling ruled
+out." The certified per-gene signals (TFAP2A, KITLG, EDN3; the steroid enzymes)
+remain the substantive result; the coupling this test looks for is a stronger,
+lineage-level claim the data cannot support either way.
+
+## 5. Replay-equality assertion
+
+Re-derives the committed result tables from the frozen inputs and asserts they
+match the values recorded when the notebook was frozen — proof the replay
+reproduces the checkpoint.
+
+```{r replay-assert}
+committed <- list(
+  lambda = 0.6547, lambda_p = 1.10e-6,
+  loss_over_gain = 9.10, dAIC_ARD_minus_ER = -19.79,
+  pig_p = 0.3661, hor_p = 0.6834,
+  pig_dAIC = -3.69, hor_dAIC = -5.71)
+stopifnot(
+  abs(lambda_res$lambda - committed$lambda) < 1e-3,
+  lambda_res$p < 1e-5,
+  abs(rate_res$loss_over_gain - committed$loss_over_gain) < 0.05,
+  abs(rate_res$dAIC_ARD_minus_ER - committed$dAIC_ARD_minus_ER) < 0.1,
+  abs(pagel_res$p[pagel_res$module == "pigmentation"] - committed$pig_p) < 1e-2,
+  abs(pagel_res$p[pagel_res$module == "hormone"]      - committed$hor_p) < 1e-2)
+cat("REPLAY OK — all frozen values reproduced.\n")
+```

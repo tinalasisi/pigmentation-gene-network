@@ -1,0 +1,4 @@
+test,statistic,p_value,indep_AIC,dep_AIC,dAIC_indep_minus_dep,preferred,n_tips,n_dichromatic
+Pagel_lambda_dichromatism,lambda=0.6547,1.0999580363995707e-6,NA,NA,NA,signal present (p<1e-6),102,21
+fitPagel_dichromatism_x_pigment_selection,LR=4.307,0.3660644703351853,216.08552295287757,219.7786437345649,-3.693120781687327,independent,102,21
+fitPagel_dichromatism_x_hormone_selection,LR=2.286,0.6833965475276956,199.55121366108852,205.26563850081612,-5.714424839727599,independent,102,21
