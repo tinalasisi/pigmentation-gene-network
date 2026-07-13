@@ -85,18 +85,25 @@ for s, t, axis, tier, mech in bridges:
     fig.add_trace(go.Scatter3d(x=[POS[s][0], POS[t][0]], y=[POS[s][1], POS[t][1]], z=[POS[s][2], POS[t][2]],
         mode="lines", line=dict(color="#c0186a", width=6), name="Cited sex-steroid bridge",
         legendgroup="b", legendrank=9, showlegend=first, hoverinfo="text", text=f"{s} → {t} · {axis} · {tier}<br>{mech}")); first = False
-# pigment<->hormone coupling — cross-module STRING links from the interface genes up into the hormone stack
-firstp = True
+# pigment<->hormone coupling — ALL cross-module STRING links (any pigment gene, not just the interface):
+# high (>=0.70) solid gold, medium (0.40-0.70) faint. Same >=0.40 floor as the within-module count, so a
+# medium association (e.g. BNC2<->ESR2 0.46) is shown rather than silently dropped by an asymmetric cutoff.
+firsthi = firstmed = True
 for r in csv.DictReader(open("data/processed/panel_string_edges.csv")):
     a, b, sc = r["gene_a"], r["gene_b"], float(r["score"])
-    if sc < 0.7: continue
-    pgene = a if a in INTERFACE else (b if b in INTERFACE else None)
-    hgene = a if a in hormset else (b if b in hormset else None)
-    if pgene and hgene:
-        fig.add_trace(go.Scatter3d(x=[POS[pgene][0], POS[hgene][0]], y=[POS[pgene][1], POS[hgene][1]],
-            z=[POS[pgene][2], POS[hgene][2]], mode="lines", line=dict(color="#d9930a", width=1.7),
-            opacity=0.45, name="Pigment↔hormone coupling (STRING)", legendgroup="pomc", legendrank=10, showlegend=firstp,
-            hoverinfo="text", text=f"{pgene} ↔ {hgene} · STRING")); firstp = False
+    if sc < 0.4: continue
+    pg = a if a in pigset else (b if b in pigset else None)
+    hg = a if a in hormset else (b if b in hormset else None)
+    if not (pg and hg): continue
+    hi = sc >= 0.7
+    fig.add_trace(go.Scatter3d(x=[POS[pg][0], POS[hg][0]], y=[POS[pg][1], POS[hg][1]], z=[POS[pg][2], POS[hg][2]],
+        mode="lines", line=dict(color="#d9930a", width=1.7 if hi else 0.7), opacity=0.5 if hi else 0.16,
+        name="Pigment↔hormone coupling · high (≥0.70)" if hi else "· medium (0.40–0.70)",
+        legendgroup="cup_hi" if hi else "cup_med", legendrank=10 if hi else 11,
+        showlegend=(firsthi if hi else firstmed), hoverinfo="text",
+        text=f"{pg} ↔ {hg} · STRING {sc:.2f} · {'high' if hi else 'medium'}"))
+    if hi: firsthi = False
+    else: firstmed = False
 # hormone nodes by group
 for ri, cat in enumerate(HC):
     gs = [g for g in hormset if panel[g][1] == cat]
@@ -148,13 +155,14 @@ fig.update_layout(
 # ---- per-gene dossier data ----
 import json
 names = {r["gene"]: r["full_name"] for r in csv.DictReader(open("data/processed/panel_gene_names.csv"))}
-wnb = {g: set() for g in panel}
-for es in (lay["h"], lay["p"]):
-    for a, b in es: wnb[a].add(b); wnb[b].add(a)
-xnb = {g: set() for g in panel}
+wnb = {g: {} for g in panel}   # within-module neighbour -> STRING score (>=0.40)
+xnb = {g: {} for g in panel}   # cross-module  neighbour -> STRING score (>=0.40) — same floor as within
 for r in csv.DictReader(open("data/processed/panel_string_edges.csv")):
     a, b, s = r["gene_a"], r["gene_b"], float(r["score"])
-    if s >= 0.7 and panel[a][0] != panel[b][0]: xnb[a].add(b); xnb[b].add(a)
+    if a not in panel or b not in panel or s < 0.4: continue
+    tgt = wnb if panel[a][0] == panel[b][0] else xnb
+    tgt[a][b] = s; tgt[b][a] = s
+def nlist(d): return [{"g": k, "s": round(v, 2), "hi": v >= 0.7} for k, v in sorted(d.items(), key=lambda kv: -kv[1])]
 BR = {}
 for r in csv.DictReader(open(BRIDGES)):
     if r["layer"] != "hormone_bridge": continue
@@ -172,7 +180,7 @@ def role(g):
 GENES = {g: {"name": names.get(g, ""),
              "module": "Sex-hormone axis" if panel[g][0] == "hormone" else "Pigmentation",
              "group": HL.get(panel[g][1], panel[g][1]) if panel[g][0] == "hormone" else panel[g][1].replace("_", " "),
-             "role": role(g), "deg": len(wnb[g]), "within": sorted(wnb[g]), "cross": sorted(xnb[g]),
+             "role": role(g), "deg": len(wnb[g]), "within": nlist(wnb[g]), "cross": nlist(xnb[g]),
              "bridges": BR.get(g, []),
              "mcol": "#a01560" if panel[g][0] == "hormone" else "#1f7a6e",
              "gcol": HC.get(panel[g][1], "#888") if panel[g][0] == "hormone" else ("#c9880a" if g in INTERFACE else "#2f9e8f")}
@@ -194,9 +202,13 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,san
 .d-sec{border-top:1px solid #eef0f2;padding-top:14px;margin-top:14px}
 .d-sec h3{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#98a0a6;margin:0 0 8px}
 .d-note{font-size:12px;color:#5c656b;margin-bottom:8px}
-.chip{display:inline-block;font-size:11px;padding:2px 8px;margin:2px;border-radius:6px;background:#f1f3f5;color:#333;cursor:pointer}
-.chip:hover{background:#e2e6ea}
-.chip.cross{background:#fbeccb;color:#7a5200}
+.chip{display:inline-block;font-size:11px;padding:2px 8px;margin:2px;border-radius:6px;background:#eef1f3;color:#334;cursor:pointer}
+.chip:hover{filter:brightness(0.95)}
+.chip .s{opacity:.6;font-variant-numeric:tabular-nums;margin-left:3px}
+.chip.hi{font-weight:600}
+.chip.within.hi{background:#d5dde3;color:#1a2a33}
+.chip.cross{background:#fdf3dd;color:#8a6d1a}
+.chip.cross.hi{background:#f2d485;color:#5a4200}
 .bridge{background:#fbe4ef;border-left:3px solid #c0186a;padding:9px 11px;border-radius:6px;margin:7px 0;font-size:12px;color:#3a2230}
 .bridge a{color:#c0186a;text-decoration:none}
 #dtoggle{position:fixed;top:16px;right:16px;z-index:25;background:#2f6d7a;color:#fff;border:none;padding:8px 15px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15)}
@@ -216,15 +228,16 @@ PANEL = """
 JS = """
 function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;');}
 function chip(g,cls){return '<span class="chip'+(cls?' '+cls:'')+'" data-gene="'+g+'">'+g+'</span>';}
+function schip(x,cls){return '<span class="chip '+cls+(x.hi?' hi':'')+'" data-gene="'+x.g+'">'+x.g+'<span class="s">'+x.s.toFixed(2)+'</span></span>';}
 function showGene(g){var d=GENES[g];if(!d)return;
  document.getElementById('d-sym').textContent=g;
  document.getElementById('d-name').textContent=d.name||'';
  document.getElementById('d-badges').innerHTML='<span class="badge" style="background:'+d.mcol+'">'+d.module+'</span><span class="badge" style="background:'+d.gcol+'">'+esc(d.group)+'</span>';
  document.getElementById('d-role').textContent=d.role;
- document.getElementById('d-links').innerHTML='<div class="d-note">'+d.deg+' STRING v12 link'+(d.deg==1?'':'s')+' (score &#8805;0.4) inside its module</div>'+(d.within.length?d.within.map(function(x){return chip(x)}).join(''):'<i>none</i>');
+ document.getElementById('d-links').innerHTML='<div class="d-note">'+d.deg+' STRING v12 link'+(d.deg==1?'':'s')+' inside its module (score &#8805;0.40; <b>bold</b> = high &#8805;0.70, drawn as a line)</div>'+(d.within.length?d.within.map(function(x){return schip(x,'within')}).join(''):'<i>none</i>');
  var cs='';d.bridges.forEach(function(b){cs+='<div class="bridge"><b>'+b.src+' &#8594; '+b.tgt+'</b> &middot; '+b.axis+' &middot; '+esc(b.tier)+'<br>'+esc(b.mech)+(b.pmid?('<br>'+b.pmid.split(';').map(function(p){p=p.trim();return '<a href="https://pubmed.ncbi.nlm.nih.gov/'+p+'/" target="_blank">PMID '+p+'</a>'}).join(', ')):'')+'</div>';});
- if(d.cross.length){cs+='<div class="d-note" style="margin-top:8px">STRING links to the other module (score &#8805;0.7):</div>'+d.cross.map(function(x){return chip(x,'cross')}).join('');}
- document.getElementById('d-coupling').innerHTML=cs||'<i>No direct hormone&#8596;pigment link.</i>';
+ if(d.cross.length){cs+='<div class="d-note" style="margin-top:8px">STRING links to the other module (score &#8805;0.40; <b>bold</b> = high &#8805;0.70, drawn as a solid gold line):</div>'+d.cross.map(function(x){return schip(x,'cross')}).join('');}
+ document.getElementById('d-coupling').innerHTML=cs||'<i>No pigment&#8596;hormone STRING link at &#8805;0.40.</i>';
  document.getElementById('dossier').classList.add('open');}
 document.querySelector('#dossier .close').onclick=function(){document.getElementById('dossier').classList.remove('open')};
 document.getElementById('dtoggle').onclick=function(){document.getElementById('dossier').classList.toggle('open')};

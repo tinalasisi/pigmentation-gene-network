@@ -63,6 +63,25 @@ melanin pathway (TYR, TYRP1, DCT, PMEL, MLANA, OCA2, SLC45A2) — and back down 
 thin edges are weak or regional.
 :::
 
+## How this network is built
+
+Every node and edge is set explicitly in [`scripts/make_coupled_network_3d.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_coupled_network_3d.py) — four rules turn the panel into the object on screen.
+
+**Nodes — the 80-gene selection panel.** Each node is a row of `gene_panel.csv`: **27 pigmentation** and **53 sex-hormone** genes, two disjoint sets assembled across [NB13](notebooks/13_sex_hormone_layer.ipynb) → [NB14](notebooks/14_hormone_pigment_interface.ipynb) → [NB15](notebooks/15_dichromatism_synthesis.ipynb). The hormone side is split by functional group into **six stacked sub-planes** (top → bottom: GnRH signaling 2, HPG axis 10, steroid biosynthesis 20, coactivators / carriers 7, androgen axis 7, estrogen axis 7). The pigment core sits on the bottom plane, and seven **interface** genes — the five with a high-confidence hormone link (EDNRB, KIT, PAX3, POMC, TFAP2A) plus the two cited-bridge targets (MITF, TYR) — are lifted onto a thin layer between the two.
+
+**Edges — STRING v12, reported at one floor, drawn by confidence.** All edges are **STRING v12** functional associations (`combined_score`, rescaled 0–1) from `panel_string_edges.csv`. Every link a gene has — inside its module *or* across to the other — is listed in its click-to-open dossier at a **single floor of ≥ 0.40**, with the score shown and tagged **high (≥ 0.70)** or **medium (0.40–0.70)**. What gets *drawn as a line* then depends on where the edge sits:
+
+- **Within a module**, only **high-confidence (≥ 0.70)** edges are drawn (275 hormone, 80 pigment lines). The full ≥ 0.40 set (477 hormone, 179 pigment) would collapse each module into a hairball, so the medium ones are counted and listed but not drawn.
+- **Across the modules** — the coupling, the whole point of the figure — **every** pigment ↔ hormone link ≥ 0.40 is drawn: **18 high-confidence** as solid gold, **35 medium** as faint gold. Nothing is hidden; a faint line is a real but medium-confidence association.
+
+This is why **BNC2** shows its hormone link **ESR2 (0.46)** right beside its pigment links **MC1R (0.48)** and **IRF4 (0.40)** — all medium, none dropped. Confidence is *encoded* (solid = high, faint = medium), not thresholded away, and the same ≥ 0.40 floor governs both modules so a dossier never reports "no link" for an association it would show within a module.
+
+**Cited bridges (magenta).** The three magenta edges are **not** from STRING. They are hand-curated, PMID-cited, *directed* mechanisms from the `hormone_bridge` rows of `nb13_hormone_interlayer_edges.csv` — **GPER1 → MITF** and **ESR2 → MITF** (estrogen) and **AR → TYR** (androgen) — each carrying its own mechanism and PubMed IDs.
+
+**Layout.** Each module is positioned independently by **networkx `spring_layout`** (force-directed, fixed seed) over its own ≥ 0.40 edge set; connectivity sets *x, y*, then *z* is imposed by rule (hormone genes to their six slabs, pigment genes to the core, interface genes to the intermediate layer). The stacking is imposed, not emergent.
+
+**The pathway figure is built differently.** The hourglass in *From signal to pigment* is not a STRING projection — its edges are the curated [Raghunath](notebooks/01_reconstruct_published_network.ipynb) directed melanogenesis model plus four hand-specified signal → receptor → MITF arms ([`make_coupled_pathway_3d.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_coupled_pathway_3d.py)). It shows *direction of signal flow*, where the coupled-network figure shows *undirected functional association*.
+
 ## Reading the evidence
 
 **Two very different kinds of hormone ↔ pigment link are on screen — don't conflate them.**

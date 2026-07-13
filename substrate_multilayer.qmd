@@ -56,6 +56,20 @@ legibility; they are all present in the underlying data.
 </div>
 ```
 
+## How this network is built
+
+The view is built by [`scripts/make_multilayer_interactive.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_multilayer_interactive.py) from the harmonized substrate assembled in [NB7](notebooks/07_harmonized_substrate.ipynb).
+
+**Node universe — 803 genes.** Every gene carried by any evidence layer in the harmonized substrate (`data/processed/nb7_substrate_nodes.csv`).
+
+**Four network planes** (bottom → top): **STRING v12** functional association (our STRING pull merged with D'Arcy et al.'s Tables S4/S5 network), **OmniPath** literature validation, the **GRN** — MITF / SOX10 / PAX3 regulon targets — and the **Raghunath 2015** mechanistic melanogenesis backbone. OmniPath membership is *edge-derived*: a gene sits on that plane only if it is an endpoint of an OmniPath-validated edge. KEGG and Reactome pathway memberships are in the substrate but carry no gene–gene edges, so they are not drawn as planes. OMIM disease status, melanocyte-proteome detection, and the Bajpai CRISPR screen are node **annotations** (rings and diamonds) — by design they never add a node or an edge, only decorate genes already wired in.
+
+**Inclusion rule — ≥ 2 of the 4 planes → 162 genes.** A gene is shown only if it lands on at least two network planes. Of the 803, **539 sit on a single plane** (almost all STRING-only) and **102 on none** (KEGG/Reactome membership only) — present in the underlying data, omitted here for legibility. Every one of the 162 shown is on **both** the STRING and Raghunath planes; the GRN and OmniPath planes are what stack on top. Node size encodes this convergence — the more planes a gene is on, the larger it is drawn.
+
+**Edges.** Each edge (`nb7_substrate_edges.csv`) is an unordered gene-pair tagged with every layer that asserts it; it is drawn on a plane whenever that layer is among its supporting layers (so one pair can appear on several planes) and only when **both endpoints survive the ≥ 2-plane node cut**. The view adds no further score filter and fabricates no edges.
+
+**Layout.** All four planes share **one** 2D `spring_layout` (deterministic seed): a gene keeps the same *x, y* on every plane it occupies and only its height changes, so the vertical stitch lines read as one gene threaded through its layers. Edge weights are tuned by layer selectivity — Raghunath and GRN pull at full strength, OmniPath at 0.85, STRING's dense mesh at only 0.12 — so STRING's thousands of associations don't collapse every gene toward the centre.
+
 ## The flattened view
 
 The same convergence story as a single two-dimensional network — useful when you want every link at
