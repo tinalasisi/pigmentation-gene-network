@@ -71,6 +71,11 @@ __pycache__/
 # Declutter escape hatch — anything here is deliberately kept out of the public repo.
 internal/untracked/
 
+# 2026-07-13: network×evolution exploration bundle (handoff copy of the
+# pigmentation-network-evo-explore side repo). Kept LOCAL only — NOT published to the
+# public repo. Hand off by sharing the folder directly. See internal/network-evo-explore/HANDOFF.md.
+internal/network-evo-explore/
+
 # Archived documents — retired working docs, renamed with a z_archived_ prefix.
 # Standing convention (internal/project_dashboard.md §6): a retired document is renamed
 # z_archived_<name> and moved to internal/archive/. These are never committed to the
