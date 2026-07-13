@@ -88,10 +88,11 @@ def draw_panel(ax,genes,module_name,modc):
         dv=sum(1 for g in p["sd"] if gmod.get(g)==key); mv=sum(1 for g in p["sm"] if gmod.get(g)==key)
         ax.text(mx+0.3,yy,f"D: {dv}    M: {mv}",ha="left",va="center",fontsize=6.6,
                 color=(RED if dv>mv else ("#333" if dv==mv else GY)),fontfamily="monospace")
-    ax.set_xlim(-6.0,ncol+7.0); ax.set_ylim(nrow_units+1.2,top-2.2)
+    ax.set_xlim(-6.0,ncol+7.0); ax.set_ylim(nrow_units+1.2,top-3.4)
     ax.set_xticks([]); ax.set_yticks([])
     for s in ax.spines.values(): s.set_visible(False)
-    ax.text((ncol)/2,top-1.6,module_name.upper(),ha="center",fontsize=13,color=modc,fontweight="bold")
+    # module title as a clean top-left panel header, well clear of the rotated gene labels
+    ax.text(-6.0,top-2.9,f"{module_name.upper()} MODULE",ha="left",va="bottom",fontsize=14,color=modc,fontweight="bold")
     return top
 
 # two stacked panels: pigmentation on top, hormone below.
@@ -106,25 +107,21 @@ fig,(axP,axH)=plt.subplots(2,1,figsize=(fig_w,panel_h*2+2.6),
 topP=draw_panel(axP,pig_g,"Pigmentation",PIG)
 topH=draw_panel(axH,hor_g,"Hormone",HOR)
 
-# shared legend + faded-encoding key (top panel), title, totals
+# shared legend (bottom of top panel) + faded-encoding glyph in the top-left header row,
+# placed to the RIGHT of the module title so nothing overlaps the rotated gene labels.
 axP.legend(handles=[Patch(fc=PIG,label="pigmentation gene under selection"),
                     Patch(fc=HOR,label="hormone gene under selection"),
                     Patch(fc=BLANK,label="not under selection")],
-           loc="lower right",frameon=False,fontsize=8.0,bbox_to_anchor=(1.0,-0.02))
-kx,ky=max(0,len(pig_g)-13),topP-1.7
+           loc="lower right",frameon=False,fontsize=8.0,bbox_to_anchor=(1.0,-0.10))
+kx,ky=6.0,topP-2.7
 axP.add_patch(Polygon(tl(kx,ky,0.9),closed=True,facecolor=PIG,edgecolor="none"))
 axP.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=PIG,alpha=0.32,edgecolor="none"))
 axP.plot([kx,kx+0.9],[ky+0.45,ky-0.45],color="white",lw=0.6)
-axP.text(kx+1.3,ky,"left = dichromatic (solid)   right = mono sister (faded)",fontsize=8.0,va="center",color="#333")
-fig.suptitle("Selection in each dichromatic taxon vs its closest monochromatic relative, grouped by clade",
-             fontsize=13,fontweight="bold",x=0.01,ha="left",y=0.998)
-def _mc(key,mod): return sum(1 for p in pairs for g in p[key] if gmod.get(g)==mod)
-dPa,dHa,mPa,mHa=_mc("sd","pigmentation"),_mc("sd","hormone"),_mc("sm","pigmentation"),_mc("sm","hormone")
-_enr="NOT enriched in dichromats" if (dPa+dHa)<=(mPa+mHa) else "higher in dichromats"
-_tot=(f"Each cell splits diagonally (lower-left = dichromatic taxon, upper-right = mono sister); a colored triangle = that gene is under episodic selection. "
-      f"Across {len(pairs)} pairs: dichromats {dPa+dHa} events ({dPa} pig + {dHa} hormone) vs monochromatic sisters {mPa+mHa} ({mPa} pig + {mHa} hormone) - selection is {_enr}.")
-fig.text(0.01,0.978,_tot,fontsize=8.5,color="#444",ha="left",fontstyle="italic")
-fig.tight_layout(rect=[0,0.0,1,0.958])
+axP.text(kx+1.3,ky,"left triangle = dichromatic taxon (solid)   right = monochromatic sister (faded)",
+         fontsize=8.0,va="center",color="#333")
+# No title / totals text baked into the figure — those live in the notebook caption (below the
+# figure). Keeping only the in-figure keys (legend, module labels, faded-encoding glyph).
+fig.tight_layout(rect=[0,0.0,1,1.0])
 fig.savefig(f"{base}/fig_sister_pair_contrast.png",dpi=200,bbox_inches="tight"); plt.close(fig)
 
 # ---- Figure B: per-pair network with FIXED layout ----
