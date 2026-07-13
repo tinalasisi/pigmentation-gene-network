@@ -224,8 +224,8 @@ def build_figure(nodes, layer_edges, pos, deg):
     fig.update_layout(
         title=dict(
             text="<b>The harmonized substrate, layer by layer</b><br>"
-                 f"<span style='font-size:13px;color:#5c656b'>{n} genes supported by ≥2 of four "
-                 "network layers — each gene sits only on the layers that carry it. "
+                 f"<span style='font-size:13px;color:#5c656b'>{n} genes on ≥2 of four network layers — "
+                 "each sits only on the layers that carry it.<br>"
                  "Drag to rotate · hover a gene · click the legend to isolate a layer.</span>",
             x=0.5, xanchor="center", font=dict(color=INK, size=20, family="system-ui")),
         scene=dict(
@@ -235,7 +235,7 @@ def build_figure(nodes, layer_edges, pos, deg):
             bgcolor="white"),
         legend=dict(groupclick="togglegroup", orientation="h", yanchor="bottom", y=-0.02,
                     xanchor="center", x=0.5, font=dict(size=11, color=INK)),
-        paper_bgcolor="white", margin=dict(l=0, r=0, t=70, b=0), height=760)
+        paper_bgcolor="white", margin=dict(l=0, r=0, t=98, b=0), height=760)
     return fig
 
 
