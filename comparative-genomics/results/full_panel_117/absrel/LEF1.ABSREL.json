@@ -1,0 +1,3267 @@
+{
+ "Site Log Likelihood":{
+   "tested":{
+    },
+   "unconstrained":    [
+[-7.521177326026742, -5.711950843728673, -5.808252081885425, -7.929707533381623, -7.088945771626024, -7.929707533381623, -7.929707533381623, -5.646228853286836, -9.625442907699291, -9.72810176710431, -5.424168523026256, -34.73419792235872, -7.485101961189621, -5.424168523026256, -6.662989369763896, -8.020112021009336, -11.66941659422939, -6.884185813082724, -7.435837739517989, -7.016390089780843, -7.198419772804941, -5.931457950108855, -10.79978147914104, -7.808398478587543, -5.982514150613464, -5.457346654666113, -6.451293404107773, -12.0186161450378, -7.052351426153474, -8.175277256490533, -14.78419294105385, -9.174305601441736, -11.01314473836247, -9.540086891301907, -5.457346654666113, -11.98778358546345, -7.052421961672336, -10.17323566514606, -5.622562269974426, -7.714372729654468, -7.808437339361834, -9.700628959699026, -5.537593355530678, -10.24143276841387, -8.236653891374116, -7.886758380775317, -9.924886198018443, -9.096826181930002, -7.437513148507811, -6.940438957684866, -9.417523312012912, -10.21836048748652, -6.883054865851272, -5.765154760500452, -7.249520244555343, -15.21483635854171, -9.628304596543762, -10.80297329375174, -5.916595844296264, -11.61627744550256, -13.28606966735574, -7.507421792183201, -11.73424417392034, -7.799519634486535, -12.95589381866177, -7.480659312050414, -12.63962952596649, -5.642912268948175, -7.035902165029126, -9.385592353925126, -9.556351407587792, -6.940438957684866, -7.688480005384751, -8.236653891374116, -5.500320805959401, -5.207655276187977, -7.332267377725226, -5.66108405487193, -7.018633467470086, -7.770458407389228, -5.758045295081081, -7.35159569913707, -7.035902165029126, -19.8115866324763, -8.149769674603021, -7.881459311618227, -6.494775105306345, -9.023490277325797, -7.877956261667398, -6.881085951745308, -5.94183108084974, -7.103028357413426, -12.44921465836669, -10.54819810277465, -8.120588658750977, -12.58243996501803, -7.506950559054026, -7.818771609328484, -9.029903008605848, -7.429631867805027, -15.34744996402319, -7.429631867805027, -9.05130092713685, -6.460045089704264, -14.94369930572167, -7.969923689735263, -9.397810525795817, -5.002201746017185, -13.36400083166161, -7.246373722675818, -13.67907896187961, -8.268451410317063, -9.218373161704562, -12.48658244586083, -10.12767999985593, -5.467719785407064, -7.362881476836004, -6.966787457378525, -8.027256537418271, -7.072184293617995, -6.678186986914747, -5.417752485143962, -7.074239405691204, -7.025676421141726, -6.986241224788556, -7.969675250079347, -7.433526490454776, -6.940438957684866, -10.69160409334597, -7.506950559054026, -5.821074045681718, -9.375624354325556, -5.562111512486053, -10.67938140252525, -14.12136267980709, -12.58301313748348, -23.26702310750562, -5.815126443804266, -16.37133658804723, -8.648286860661266, -11.17900700418419, -9.285651511835674, -10.79951208907069, -13.59065640103758, -13.99658677421116, -11.77053215884574, -8.059239701157347, -7.710309700569998, -7.998089399787903, -12.60559588387421, -10.08768267992033, -6.003687949707431, -5.997369352198538, -9.249315746100956, -5.997369352198538, -11.60244195398335, -5.828152141282674, -10.36785120253532, -6.678186986914747, -5.467719785407064, -6.986241224788556, -6.003687949707431, -5.985638087563162, -6.181863321580685, -8.078319014885787, -5.571589125678342, -7.366004240980093, -6.3109489018927, -5.002201746017185, -8.94349802745535, -6.100255506247263, -5.002201746017185, -5.839123919780249, -5.832803228787022, -5.002201746017185, -9.134236569316624, -7.607212891440851, -8.229556183903988, -7.506950559054026, -12.47377699386462, -6.529366211739032, -6.015561038137029, -6.768176523862413, -7.143119735468745, -12.83698827642812, -5.821074045681718, -11.52660848392665, -6.558750940864763, -7.691130795357449, -7.000830329945679, -7.035902165029126, -5.755403847595386, -5.66108405487193, -6.798655139869166, -14.39382270103437, -8.494775947853546, -8.767703457804378, -9.05130092713685, -5.500320805959401, -4.95664607818148, -7.458151297263249, -8.02555792539852, -7.878526013486401, -8.664013466011898, -5.5621050082843, -11.55410734721487, -5.642905761251258, -7.365999222634779, -5.550408815125217, -5.758042200853011, -5.916592750068195, -5.839968226057875, -12.63715636622896, -11.87214672835977, -8.831569931035038, -5.839117415578497, -5.839968226057875, -8.76769314075702, -5.661077547175013, -7.983909515093584, -5.283899423418471, -5.002201746017185, -16.84140703473369, -7.797793226375084, -5.758042200853011, -7.10301902841544, -8.027250398410876, -5.500320805959401, -7.231350040243023, -7.492551827104341, -9.113282972584276, -5.948964470701247, -5.571586031450273, -11.30040524292403] 
+    ]
+  },
+ "analysis":{
+   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution group",
+   "citation":"\n                                Less Is More: An Adaptive Branch-Site Random Effects Model for Efficient Detection of Episodic Diversifying Selection (2015). \n                                Mol Biol Evol 32 (5): 1342-1353. \n                            ",
+   "contact":"spond@temple.edu",
+   "info":"aBSREL (Adaptive branch-site random effects likelihood)\n                            uses an adaptive random effects branch-site model framework\n                            to test whether each branch has evolved under positive selection,\n                            using a procedure which infers an optimal number of rate categories per branch. v2.2 adds support for multiple-hit models. v2.3 adds support for SRV. v2.5 adds support for ancestral state reconstruction, identification of sites contributing to selection signal, and some diagnostics. v2.6 adds tree reports and ASCII art",
+   "requirements":"in-frame codon alignment and a phylogenetic tree",
+   "settings":{
+     "multiple-hit":"None",
+     "srv":0
+    },
+   "version":"2.6"
+  },
+ "branch attributes":{
+   "0":{
+     "Allenopithecus_nigroviridis":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Allenopithecus_nigroviridis"
+      },
+     "Ateles_belzebuth":{
+       "Baseline MG94xREV":2.770379971084958e-12,
+       "Baseline MG94xREV omega ratio":0.9720161285078234,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Ateles_belzebuth"
+      },
+     "Ateles_chamek":{
+       "Baseline MG94xREV":2.750371377372306e-12,
+       "Baseline MG94xREV omega ratio":0.9670928849457823,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Ateles_chamek"
+      },
+     "Ateles_marginatus":{
+       "Baseline MG94xREV":2.750371377372306e-12,
+       "Baseline MG94xREV omega ratio":0.9670928849457823,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Ateles_marginatus"
+      },
+     "Cacajao_calvus":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cacajao_calvus"
+      },
+     "Cacajao_melanocephalus":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cacajao_melanocephalus"
+      },
+     "Callicebus_brunneus":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Callicebus_brunneus"
+      },
+     "Callicebus_caligatus":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Callicebus_caligatus"
+      },
+     "Callicebus_cinerascens":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Callicebus_cinerascens"
+      },
+     "Callicebus_moloch":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Callicebus_moloch"
+      },
+     "Cercocebus_torquatus":{
+       "Baseline MG94xREV":2.770380272432381e-12,
+       "Baseline MG94xREV omega ratio":0.9720157747951574,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercocebus_torquatus"
+      },
+     "Cercopithecus_ascanius":{
+       "Baseline MG94xREV":0.001104839752236836,
+       "Baseline MG94xREV omega ratio":7.222185177151843e-10,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0006222436419264533,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.0006222436419264533,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_ascanius"
+      },
+     "Cercopithecus_campbelli":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_campbelli"
+      },
+     "Cercopithecus_cephus":{
+       "Baseline MG94xREV":2.770380272432381e-12,
+       "Baseline MG94xREV omega ratio":0.9720157747951574,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_cephus"
+      },
+     "Cercopithecus_diana":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_diana"
+      },
+     "Cercopithecus_hamlyni":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_hamlyni"
+      },
+     "Cercopithecus_lhoesti":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_lhoesti"
+      },
+     "Cercopithecus_mitis":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_mitis"
+      },
+     "Cercopithecus_mona":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_mona"
+      },
+     "Cercopithecus_preussi":{
+       "Baseline MG94xREV":2.770380272432381e-12,
+       "Baseline MG94xREV omega ratio":0.9720157747951574,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Cercopithecus_preussi"
+      },
+     "Chiropotes_chiropotes":{
+       "Baseline MG94xREV":2.76888474643321e-12,
+       "Baseline MG94xREV omega ratio":0.9708669920311401,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Chiropotes_chiropotes"
+      },
+     "Colobus_guereza":{
+       "Baseline MG94xREV":2.750324120804625e-12,
+       "Baseline MG94xREV omega ratio":0.9673358431659127,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Colobus_guereza"
+      },
+     "Colobus_polykomos":{
+       "Baseline MG94xREV":2.770351416820922e-12,
+       "Baseline MG94xREV omega ratio":0.9720496458239343,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Colobus_polykomos"
+      },
+     "Eulemur_coronatus":{
+       "Baseline MG94xREV":2.747265644463356e-12,
+       "Baseline MG94xREV omega ratio":0.9715759755277664,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Eulemur_coronatus"
+      },
+     "Eulemur_flavifrons":{
+       "Baseline MG94xREV":2.749139974291316e-12,
+       "Baseline MG94xREV omega ratio":0.970561279791295,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Eulemur_flavifrons"
+      },
+     "Eulemur_macaco":{
+       "Baseline MG94xREV":2.749139974291316e-12,
+       "Baseline MG94xREV omega ratio":0.970561279791295,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Eulemur_macaco"
+      },
+     "Eulemur_rubriventer":{
+       "Baseline MG94xREV":2.747265644463356e-12,
+       "Baseline MG94xREV omega ratio":0.9715759755277664,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Eulemur_rubriventer"
+      },
+     "Hylobates_klossii":{
+       "Baseline MG94xREV":2.770154999836653e-12,
+       "Baseline MG94xREV omega ratio":0.9723391382712008,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Hylobates_klossii"
+      },
+     "Hylobates_moloch":{
+       "Baseline MG94xREV":2.764018430087601e-12,
+       "Baseline MG94xREV omega ratio":0.9707818219081737,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Hylobates_moloch"
+      },
+     "Lophocebus_aterrimus":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Lophocebus_aterrimus"
+      },
+     "Macaca_arctoides":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Macaca_arctoides"
+      },
+     "Macaca_radiata":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Macaca_radiata"
+      },
+     "Macaca_thibetana":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Macaca_thibetana"
+      },
+     "Macaca_tonkeana":{
+       "Baseline MG94xREV":2.770380272432381e-12,
+       "Baseline MG94xREV omega ratio":0.9720157747951574,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Macaca_tonkeana"
+      },
+     "Mandrillus_leucophaeus":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Mandrillus_leucophaeus"
+      },
+     "Mandrillus_sphinx":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Mandrillus_sphinx"
+      },
+     "Node11":{
+       "Baseline MG94xREV":0.003843526128818832,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003766557570788494,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.003766557570788494,
+       "LRT":0,
+       "Nucleotide GTR":0.003430655048926606,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node110":{
+       "Baseline MG94xREV":0.0004057156359148517,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0008698614557523173,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.0008698614557523173,
+       "LRT":0,
+       "Nucleotide GTR":0.001436355741227408,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node2":{
+       "Baseline MG94xREV":93.74064387420009,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.2110412221202292,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.2110412221202292,
+       "LRT":0,
+       "Nucleotide GTR":73.27040920240681,
+       "Rate Distributions":        [
+[3.532922059056919e-22, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node24":{
+       "Baseline MG94xREV":17.97355175471354,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.007585655856655664,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.007585655856655662,
+       "LRT":0,
+       "Nucleotide GTR":17.41390474664607,
+       "Rate Distributions":        [
+[0, 1],
+        [0.4334053730819018, 0] 
+        ],
+       "Rate classes":2,
+       "Uncorrected P-value":1
+      },
+     "Node31":{
+       "Baseline MG94xREV":0.007203112939736418,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00606602039943913,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.00606602039943913,
+       "LRT":0,
+       "Nucleotide GTR":0.006490374223982341,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node36":{
+       "Baseline MG94xREV":0.001248606572259903,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":8.316632837477779e-23,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":0.001857272944747947,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node37":{
+       "Baseline MG94xREV":0.004975142674236964,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.004579510794208329,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.004579510794208329,
+       "LRT":0,
+       "Nucleotide GTR":0.004389345350143559,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node40":{
+       "Baseline MG94xREV":0.001497951618100966,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00148737366503315,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.00148737366503315,
+       "LRT":0,
+       "Nucleotide GTR":0.001425845355200501,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node48":{
+       "Baseline MG94xREV":0.001211409676753872,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.001430770447299413,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.001430770447299413,
+       "LRT":0,
+       "Nucleotide GTR":0.001375688674332833,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node5":{
+       "Baseline MG94xREV":569.7689500823709,
+       "Baseline MG94xREV omega ratio":0.3361633482601223,
+       "Corrected P-value":1,
+       "Full adaptive model":0.4775211524989877,
+       "Full adaptive model (non-synonymous subs/site)":0.1320735185402167,
+       "Full adaptive model (synonymous subs/site)":0.3454476339587711,
+       "LRT":0,
+       "Nucleotide GTR":736.7375290766175,
+       "Rate Distributions":        [
+[0.1433604431970019, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node60":{
+       "Baseline MG94xREV":0.001520888945175876,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.001488798473153349,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.001488798473153349,
+       "LRT":0,
+       "Nucleotide GTR":0.001436341001031028,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node65":{
+       "Baseline MG94xREV":0.001894595446792038,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.001876395703661553,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.001876395703661553,
+       "LRT":0,
+       "Nucleotide GTR":0.001710604088480872,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node68":{
+       "Baseline MG94xREV":0.0004048345545042078,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0008665441603363283,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.0008665441603363283,
+       "LRT":0,
+       "Nucleotide GTR":0.001433435239296912,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node71":{
+       "Baseline MG94xREV":0.003075415424569541,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.002999115389454709,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.002999115389454709,
+       "LRT":0,
+       "Nucleotide GTR":0.002885180820354156,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node74":{
+       "Baseline MG94xREV":0.003077481894873781,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.003000820708505694,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.003000820708505694,
+       "LRT":0,
+       "Nucleotide GTR":0.00288768292873879,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Node8":{
+       "Baseline MG94xREV":124.496257398679,
+       "Baseline MG94xREV omega ratio":0.02485010723121506,
+       "Corrected P-value":1,
+       "Full adaptive model":4.70650600470654,
+       "Full adaptive model (non-synonymous subs/site)":0.009670030764084875,
+       "Full adaptive model (synonymous subs/site)":4.696835973942454,
+       "LRT":0,
+       "Nucleotide GTR":108.3064214591935,
+       "Rate Distributions":        [
+[0, 0.9817950990555813],
+        [0.04240625799933126, 0.01820490094441873] 
+        ],
+       "Rate classes":2,
+       "Uncorrected P-value":1
+      },
+     "Node9":{
+       "Baseline MG94xREV":0.008104758223256844,
+       "Baseline MG94xREV omega ratio":1.868905665858456e-34,
+       "Corrected P-value":1,
+       "Full adaptive model":0.009140197810692563,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.009140197810692563,
+       "LRT":0,
+       "Nucleotide GTR":0.006320915149285814,
+       "Rate Distributions":        [
+[4.948348620808215e-34, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1
+      },
+     "Nomascus_concolor":{
+       "Baseline MG94xREV":2.749951289806451e-12,
+       "Baseline MG94xREV omega ratio":0.9675855390453845,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Nomascus_concolor"
+      },
+     "Nomascus_gabriellae":{
+       "Baseline MG94xREV":2.749951289806451e-12,
+       "Baseline MG94xREV omega ratio":0.9675855390453845,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Nomascus_gabriellae"
+      },
+     "Nomascus_leucogenys":{
+       "Baseline MG94xREV":2.749951289806451e-12,
+       "Baseline MG94xREV omega ratio":0.9675855390453845,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Nomascus_leucogenys"
+      },
+     "Papio_anubis":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Papio_anubis"
+      },
+     "Papio_cynocephalus":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Papio_cynocephalus"
+      },
+     "Papio_papio":{
+       "Baseline MG94xREV":2.750218669772244e-12,
+       "Baseline MG94xREV omega ratio":0.9672719134298516,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Papio_papio"
+      },
+     "Presbytis_comata":{
+       "Baseline MG94xREV":2.783162435879433e-12,
+       "Baseline MG94xREV omega ratio":0.9757248495928862,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Presbytis_comata"
+      },
+     "Presbytis_melalophos":{
+       "Baseline MG94xREV":2.768934136897364e-12,
+       "Baseline MG94xREV omega ratio":0.9708817577145854,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Presbytis_melalophos"
+      },
+     "Pygathrix_cinerea":{
+       "Baseline MG94xREV":0.001105710431134015,
+       "Baseline MG94xREV omega ratio":7.216495475658874e-10,
+       "Corrected P-value":1,
+       "Full adaptive model":0.0006220038742350023,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.0006220038742350023,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Pygathrix_cinerea"
+      },
+     "Saimiri_boliviensis":{
+       "Baseline MG94xREV":2.769723474934339e-12,
+       "Baseline MG94xREV omega ratio":0.9719369640854573,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Saimiri_boliviensis"
+      },
+     "Saimiri_oerstedii":{
+       "Baseline MG94xREV":2.770226271436677e-12,
+       "Baseline MG94xREV omega ratio":0.9721957882898533,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Saimiri_oerstedii"
+      },
+     "Saimiri_sciureus":{
+       "Baseline MG94xREV":2.770226582990091e-12,
+       "Baseline MG94xREV omega ratio":0.9721959442370885,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Saimiri_sciureus"
+      },
+     "Saimiri_ustus":{
+       "Baseline MG94xREV":2.770226271436677e-12,
+       "Baseline MG94xREV omega ratio":0.9721957882898533,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Saimiri_ustus"
+      },
+     "Simias_concolor":{
+       "Baseline MG94xREV":2.770351416820922e-12,
+       "Baseline MG94xREV omega ratio":0.9720496458239343,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Simias_concolor"
+      },
+     "Symphalangus_syndactylus":{
+       "Baseline MG94xREV":2.749951289806451e-12,
+       "Baseline MG94xREV omega ratio":0.9675855390453845,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Symphalangus_syndactylus"
+      },
+     "Trachypithecus_auratus":{
+       "Baseline MG94xREV":2.768885657415836e-12,
+       "Baseline MG94xREV omega ratio":0.9708667047131295,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_auratus"
+      },
+     "Trachypithecus_cristatus":{
+       "Baseline MG94xREV":2.768885657415836e-12,
+       "Baseline MG94xREV omega ratio":0.9708667047131295,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_cristatus"
+      },
+     "Trachypithecus_geei":{
+       "Baseline MG94xREV":2.750267995492274e-12,
+       "Baseline MG94xREV omega ratio":0.9672140786166404,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_geei"
+      },
+     "Trachypithecus_johnii":{
+       "Baseline MG94xREV":2.750267995492274e-12,
+       "Baseline MG94xREV omega ratio":0.9672140786166404,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_johnii"
+      },
+     "Trachypithecus_obscurus":{
+       "Baseline MG94xREV":2.770490258861859e-12,
+       "Baseline MG94xREV omega ratio":0.9718866931774739,
+       "Corrected P-value":1,
+       "Full adaptive model":0,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":1e-10,
+       "LRT":0,
+       "Nucleotide GTR":1e-06,
+       "Rate Distributions":        [
+[1, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_obscurus"
+      },
+     "Trachypithecus_pileatus":{
+       "Baseline MG94xREV":0.001520890055470949,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.00148879847309799,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.00148879847309799,
+       "LRT":0,
+       "Nucleotide GTR":0.001437695920238574,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_pileatus"
+      },
+     "Trachypithecus_vetulus":{
+       "Baseline MG94xREV":0.001520890453447592,
+       "Baseline MG94xREV omega ratio":0,
+       "Corrected P-value":1,
+       "Full adaptive model":0.001488797790920555,
+       "Full adaptive model (non-synonymous subs/site)":1e-10,
+       "Full adaptive model (synonymous subs/site)":0.001488797790920555,
+       "LRT":0,
+       "Nucleotide GTR":0.001434756832228186,
+       "Rate Distributions":        [
+[0, 1] 
+        ],
+       "Rate classes":1,
+       "Uncorrected P-value":1,
+       "original name":"Trachypithecus_vetulus"
+      }
+    },
+   "attributes":{
+     "Baseline MG94xREV":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Baseline MG94xREV omega ratio":{
+       "attribute type":"branch label",
+       "display order":1
+      },
+     "Corrected P-value":{
+       "attribute type":"branch label",
+       "display order":6
+      },
+     "Full adaptive model":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "Full adaptive model (non-synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":10
+      },
+     "Full adaptive model (synonymous subs/site)":{
+       "attribute type":"branch label",
+       "display order":9
+      },
+     "LRT":{
+       "attribute type":"branch label",
+       "display order":4
+      },
+     "Nucleotide GTR":{
+       "attribute type":"branch length",
+       "display order":0
+      },
+     "Rate Distributions":{
+       "attribute type":"branch label",
+       "display order":3
+      },
+     "Rate classes":{
+       "attribute type":"branch label",
+       "display order":2
+      },
+     "Uncorrected P-value":{
+       "attribute type":"branch label",
+       "display order":5
+      },
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "posterior":{
+       "attribute type":"branch annotations",
+       "display order":-1
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "coverage":      [
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233] 
+      ],
+     "name":"absrel.filter.default"
+    }
+  },
+ "fits":{
+   "Baseline MG94xREV":{
+     "AIC-c":4929.756585407396,
+     "Equilibrium frequencies":      [
+[0.02293050445634379],
+      [0.0227478707224976],
+      [0.01980061051144769],
+      [0.02695221404860955],
+      [0.01960063002363669],
+      [0.01944451761652547],
+      [0.01692524652547047],
+      [0.02303832333433505],
+      [0.009468116894916377],
+      [0.009392706537315963],
+      [0.008175768451584645],
+      [0.01112870035959651],
+      [0.01400493142395502],
+      [0.01389338686883691],
+      [0.01209333152234906],
+      [0.01646121262587869],
+      [0.02875628175442021],
+      [0.02852724766935062],
+      [0.02483119967381268],
+      [0.0337997562401136],
+      [0.02458041167811778],
+      [0.02438463698974152],
+      [0.0212253140255186],
+      [0.0288914933473385],
+      [0.01187360869589059],
+      [0.01177903940743522],
+      [0.0102529232010692],
+      [0.0139560838580915],
+      [0.01756305687671723],
+      [0.0174231730524754],
+      [0.01516579145776587],
+      [0.02064338659406289],
+      [0.02133759382721911],
+      [0.02116764708926672],
+      [0.01842512385318898],
+      [0.02507992779698301],
+      [0.0182390353861688],
+      [0.01809376762109758],
+      [0.01574950243565744],
+      [0.02143792286402089],
+      [0.00881039634330702],
+      [0.008740224508059939],
+      [0.007607823315768477],
+      [0.01035562425370907],
+      [0.01303205251639098],
+      [0.01292825661363273],
+      [0.01125324549806846],
+      [0.01531770352384542],
+      [0.01624383734998358],
+      [0.01924608182314688],
+      [0.01399645047860558],
+      [0.01388497347135666],
+      [0.01208600818168933],
+      [0.01645124423400017],
+      [0.006707159502071243],
+      [0.005838166330324858],
+      [0.00794680085724268],
+      [0.01000066471818869],
+      [0.009921012796797083],
+      [0.008635626281900155],
+      [0.01175465008308747] 
+      ],
+     "Log Likelihood":-2298.859944079844,
+     "Rate Distributions":{
+       "Per-branch omega":{
+         "2.5%":0,
+         "97.5%":7.222185177151843e-10,
+         "Mean":0.7605926605617592,
+         "Median":0.9712288666211759
+        }
+      },
+     "display order":1,
+     "estimated parameters":164
+    },
+   "Full adaptive model":{
+     "AIC-c":4282.217724010054,
+     "Log Likelihood":-1970.990530288247,
+     "Rate Distributions":{
+      },
+     "display order":2,
+     "estimated parameters":168
+    },
+   "Nucleotide GTR":{
+     "AIC-c":5505.543042830092,
+     "Equilibrium frequencies":      [
+[0.2765473260829299],
+      [0.2990394538382155],
+      [0.1993331745653727],
+      [0.225080045513482] 
+      ],
+     "Log Likelihood":-2631.407871614583,
+     "Rate Distributions":{
+       "Substitution rate from nucleotide A to nucleotide C":8.839834729415957e-05,
+       "Substitution rate from nucleotide A to nucleotide G":1,
+       "Substitution rate from nucleotide A to nucleotide T":0,
+       "Substitution rate from nucleotide C to nucleotide G":0,
+       "Substitution rate from nucleotide C to nucleotide T":0.0001615754561279295,
+       "Substitution rate from nucleotide G to nucleotide T":0.0001025760984867404
+      },
+     "display order":0,
+     "estimated parameters":121
+    }
+  },
+ "input":{
+   "file name":"/gpfs/accounts/tlasisi_root/tlasisi0/tlasisi/pgn_run117/absrel_in/LEF1.clean.fa",
+   "number of sequences":58,
+   "number of sites":234,
+   "partition count":1,
+   "trees":{
+     "0":"((Eulemur_macaco:1.288806826,Eulemur_flavifrons:1.288806826)Node2:2.701341917,(Eulemur_coronatus:3.925595371,Eulemur_rubriventer:3.925595371)Node5:0.06455340548000001,(((Callicebus_moloch:2.8692528709,Callicebus_caligatus:2.8692531448,Callicebus_brunneus:1.468526638,Callicebus_cinerascens:1.46852657)Node11:8.4740399739,Chiropotes_chiropotes:5.317213327999999,Cacajao_calvus:2.269742751,Cacajao_melanocephalus:2.269743094,(Saimiri_boliviensis:1.32576307,Saimiri_oerstedii:1.10944007,Saimiri_ustus:0.9558324844,Saimiri_sciureus:0.9558326558)Node24:14.5242411554,(Ateles_chamek:1.067300731,Ateles_marginatus:0.7831741712,Ateles_belzebuth:0.7831741712)Node31:14.7827014394)Node9:16.74005621,((Symphalangus_syndactylus:4.290160163,(Hylobates_moloch:0.8904845617,Hylobates_klossii:0.8904845617)Node40:3.3996739907,Nomascus_concolor:1.679493442,Nomascus_leucogenys:1.39016185,Nomascus_gabriellae:1.390161507)Node37:17.152352367,((Macaca_tonkeana:4.37347742874,Macaca_arctoides:3.4099362171,Macaca_radiata:2.177321804,Macaca_thibetana:2.1773221475,Lophocebus_aterrimus:3.584469507,Papio_cynocephalus:1.7743857941,Papio_papio:1.693325083,Papio_anubis:1.6933250835,Cercocebus_torquatus:3.705560603,Mandrillus_sphinx:2.315995043,Mandrillus_leucophaeus:2.315995043,Allenopithecus_nigroviridis:7.576811664,Cercopithecus_hamlyni:6.862460808,Cercopithecus_diana:5.201998212,Cercopithecus_mona:3.560649071,Cercopithecus_campbelli:3.5606501,Cercopithecus_mitis:4.449276823,(Cercopithecus_cephus:2.363959152,Cercopithecus_ascanius:2.3639590142)Node110:0.5466223278,Cercopithecus_lhoesti:1.791308577,Cercopithecus_preussi:1.791308577)Node74:2.296543613,(Colobus_guereza:1.791308577,Colobus_polykomos:2.363959152)Node71:2.3639590142,(Pygathrix_cinerea:5.201998212,Simias_concolor:3.560649071)Node68:3.5606501,(Presbytis_comata:2.315995043,Presbytis_melalophos:2.315995043)Node65:3.705560603,(Trachypithecus_geei:1.7743857941,Trachypithecus_johnii:2.1773221475,Trachypithecus_vetulus:3.4099362171)Node60:1.693325083,Trachypithecus_pileatus:4.37347742874,Trachypithecus_obscurus:2.363959152,Trachypithecus_auratus:3.560649071,Trachypithecus_cristatus:3.5606501)Node48:11.32117353)Node36:12.38253055)Node8:31.455420255)"
+    }
+  },
+ "runtime":"2.5.100",
+ "substitutions":{
+   "0":{
+     "0":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"TCG",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCA"
+      },
+     "1":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"AAC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"AAT"
+      },
+     "10":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CAC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAT"
+      },
+     "100":{
+       "Hylobates_moloch":"---",
+       "Node5":"ATG",
+       "Node8":"ATG",
+       "root":"GTG"
+      },
+     "101":{
+       "Hylobates_moloch":"---",
+       "root":"TCC"
+      },
+     "102":{
+       "Hylobates_moloch":"---",
+       "root":"AGG"
+      },
+     "103":{
+       "Node5":"TTC",
+       "root":"TTT"
+      },
+     "104":{
+       "Node5":"CCT",
+       "Node74":"TCT",
+       "root":"TCC"
+      },
+     "105":{
+       "Node5":"CCC",
+       "root":"CAT"
+      },
+     "106":{
+       "Node24":"CAC",
+       "root":"CAT"
+      },
+     "107":{
+       "root":"ATG"
+      },
+     "108":{
+       "Node24":"ATC",
+       "Node5":"GTC",
+       "root":"ATT"
+      },
+     "109":{
+       "Node5":"CCA",
+       "Node8":"CCC",
+       "root":"CCT"
+      },
+     "11":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node2":"GCG",
+       "Node5":"CAT",
+       "Node60":"GCA",
+       "Node65":"---",
+       "Node74":"GCA",
+       "Node8":"GCG",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "Trachypithecus_pileatus":"GCA",
+       "Trachypithecus_vetulus":"GCG",
+       "root":"GCT"
+      },
+     "110":{
+       "Node5":"CCT",
+       "root":"GGT"
+      },
+     "111":{
+       "Node5":"CAT",
+       "root":"CCT"
+      },
+     "112":{
+       "Node2":"CCG",
+       "Node5":"CAT",
+       "root":"CCT"
+      },
+     "113":{
+       "Node5":"ACT",
+       "root":"GGT"
+      },
+     "114":{
+       "Node5":"CTG",
+       "root":"CCC"
+      },
+     "115":{
+       "root":"CAC"
+      },
+     "116":{
+       "Node5":"ACG",
+       "root":"ACA"
+      },
+     "117":{
+       "Node5":"ACC",
+       "root":"ACT"
+      },
+     "118":{
+       "root":"GGC"
+      },
+     "119":{
+       "Node5":"ATT",
+       "root":"ATC"
+      },
+     "12":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GTC"
+      },
+     "120":{
+       "Node5":"CCC",
+       "root":"CCT"
+      },
+     "121":{
+       "Node5":"CAT",
+       "Node8":"CAT",
+       "root":"CAC"
+      },
+     "122":{
+       "Node5":"CCG",
+       "root":"CCA"
+      },
+     "123":{
+       "Node5":"GCC",
+       "root":"GCT"
+      },
+     "124":{
+       "Node5":"ATA",
+       "Node8":"ATT",
+       "root":"ATC"
+      },
+     "125":{
+       "Node5":"GTC",
+       "Node8":"GTA",
+       "root":"GTG"
+      },
+     "126":{
+       "Node8":"ACA",
+       "root":"ACG"
+      },
+     "127":{
+       "Node5":"CCG",
+       "root":"CCT"
+      },
+     "128":{
+       "Node5":"ACA",
+       "root":"CAG"
+      },
+     "129":{
+       "root":"GTC"
+      },
+     "13":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CAC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAT"
+      },
+     "130":{
+       "Node5":"AAA",
+       "Node8":"AAA",
+       "root":"AAG"
+      },
+     "131":{
+       "Node9":"CAA",
+       "root":"CAG"
+      },
+     "132":{
+       "root":"GAA"
+      },
+     "133":{
+       "Node5":"TCC",
+       "Node8":"CAT",
+       "root":"CAC"
+      },
+     "134":{
+       "Node24":"CCA",
+       "Node5":"TCC",
+       "root":"CCC"
+      },
+     "135":{
+       "Node31":"CAT",
+       "Node5":"CAG",
+       "root":"CAC"
+      },
+     "136":{
+       "Node11":"ACA",
+       "Node5":"AGT",
+       "Node8":"ACT",
+       "Node9":"ACG",
+       "root":"AGC"
+      },
+     "137":{
+       "root":"GAC"
+      },
+     "138":{
+       "Node31":"AGC",
+       "Node5":"GTT",
+       "Node8":"AGT",
+       "root":"AGC"
+      },
+     "139":{
+       "Node5":"GGC",
+       "root":"GAC"
+      },
+     "14":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCT"
+      },
+     "140":{
+       "Node2":"CTG",
+       "Node5":"TCA",
+       "Node8":"CTA",
+       "root":"TTG"
+      },
+     "141":{
+       "Node5":"CTC",
+       "root":"ATG"
+      },
+     "142":{
+       "Node5":"CAT",
+       "Node71":"CAT",
+       "root":"CAC"
+      },
+     "143":{
+       "Node5":"AGC",
+       "root":"GTG"
+      },
+     "144":{
+       "Node5":"TCA",
+       "root":"AAG"
+      },
+     "145":{
+       "Node5":"AAG",
+       "root":"CCT"
+      },
+     "146":{
+       "Node5":"CAT",
+       "root":"CAG"
+      },
+     "147":{
+       "Node5":"CAG",
+       "root":"CAT"
+      },
+     "148":{
+       "Node5":"GAC",
+       "root":"GAA"
+      },
+     "149":{
+       "Node5":"TCC",
+       "root":"CAG"
+      },
+     "15":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CTC",
+       "Node65":"---",
+       "Node8":"CTC",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CTG"
+      },
+     "150":{
+       "Node5":"AAA",
+       "root":"AGA"
+      },
+     "151":{
+       "root":"AAG"
+      },
+     "152":{
+       "Node5":"GAA",
+       "root":"GAG"
+      },
+     "153":{
+       "Node5":"GAA",
+       "root":"CAG"
+      },
+     "154":{
+       "Node5":"GAA",
+       "root":"GAG"
+      },
+     "155":{
+       "Node5":"AAG",
+       "root":"CCA"
+      },
+     "156":{
+       "Node5":"AAG",
+       "root":"AAA"
+      },
+     "157":{
+       "Node5":"AAG",
+       "root":"AGA"
+      },
+     "158":{
+       "Node5":"CCC",
+       "root":"CCT"
+      },
+     "159":{
+       "root":"CAC"
+      },
+     "16":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"ACG",
+       "Node65":"---",
+       "Node9":"ACT",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"ACC"
+      },
+     "160":{
+       "Node5":"ATA",
+       "Node8":"ATT",
+       "root":"ATC"
+      },
+     "161":{
+       "root":"AAG"
+      },
+     "162":{
+       "Node5":"AAA",
+       "root":"AAG"
+      },
+     "163":{
+       "root":"CCT"
+      },
+     "164":{
+       "Node2":"CTG",
+       "Node8":"CTG",
+       "root":"CTT"
+      },
+     "165":{
+       "Node8":"AAT",
+       "root":"AAC"
+      },
+     "166":{
+       "Node5":"GCA",
+       "root":"GCT"
+      },
+     "167":{
+       "Node8":"TTT",
+       "root":"TTC"
+      },
+     "168":{
+       "root":"ATG"
+      },
+     "169":{
+       "Node5":"TTG",
+       "root":"TTA"
+      },
+     "17":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCT",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCC"
+      },
+     "170":{
+       "Node5":"TAT",
+       "root":"TAC"
+      },
+     "171":{
+       "root":"ATG"
+      },
+     "172":{
+       "Node8":"AAA",
+       "root":"AAG"
+      },
+     "173":{
+       "Node5":"GAA",
+       "Node8":"GAA",
+       "root":"GAG"
+      },
+     "174":{
+       "root":"ATG"
+      },
+     "175":{
+       "Node5":"AGA",
+       "Node8":"AGA",
+       "root":"CGG"
+      },
+     "176":{
+       "Node5":"GCA",
+       "root":"GCG"
+      },
+     "177":{
+       "Node5":"AAG",
+       "Node8":"AAT",
+       "root":"AAC"
+      },
+     "178":{
+       "root":"GTC"
+      },
+     "179":{
+       "Node37":"GTT",
+       "Node5":"GTA",
+       "Node8":"GTC",
+       "root":"GTG"
+      },
+     "18":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CTT",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CTC"
+      },
+     "180":{
+       "root":"GCT"
+      },
+     "181":{
+       "root":"GAG"
+      },
+     "182":{
+       "Node8":"TGT",
+       "root":"TGC"
+      },
+     "183":{
+       "Node5":"ACA",
+       "Node8":"ACT",
+       "root":"ACG"
+      },
+     "184":{
+       "Node31":"CTG",
+       "Node5":"TTG",
+       "root":"CTA"
+      },
+     "185":{
+       "Node5":"AAA",
+       "Node8":"AAA",
+       "root":"AAG"
+      },
+     "186":{
+       "Node40":"GAG",
+       "Node5":"GAG",
+       "root":"GAA"
+      },
+     "187":{
+       "Node8":"AGT",
+       "root":"AGC"
+      },
+     "188":{
+       "Node5":"GCG",
+       "Node8":"GCA",
+       "root":"GCC"
+      },
+     "189":{
+       "Node8":"GCT",
+       "root":"GCC"
+      },
+     "19":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"ATC"
+      },
+     "190":{
+       "root":"ATC"
+      },
+     "191":{
+       "root":"AAC"
+      },
+     "192":{
+       "root":"CAG"
+      },
+     "193":{
+       "Node5":"ATC",
+       "root":"ATT"
+      },
+     "194":{
+       "Node2":"TTG",
+       "Node5":"CTC",
+       "Node71":"CTT",
+       "Node8":"CTC",
+       "root":"CTG"
+      },
+     "195":{
+       "Node5":"GGG",
+       "root":"GGC"
+      },
+     "196":{
+       "Node5":"CGA",
+       "root":"AGA"
+      },
+     "197":{
+       "root":"AGG"
+      },
+     "198":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TGG"
+      },
+     "199":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CAT"
+      },
+     "2":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"AAA",
+       "Node65":"---",
+       "Node8":"AAA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"AAG"
+      },
+     "20":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Node8":"ACT",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"ACG"
+      },
+     "200":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"GCA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GCC"
+      },
+     "201":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CTG",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CTC"
+      },
+     "202":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"TCC",
+       "Node8":"TCC",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TCG"
+      },
+     "203":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"AGA",
+       "Node8":"CGT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CGG"
+      },
+     "204":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GAA"
+      },
+     "205":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node68":"GAA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GAG"
+      },
+     "206":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CAA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CAG"
+      },
+     "207":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"GCA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GCT"
+      },
+     "208":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"AAA"
+      },
+     "209":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"TAT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TAC"
+      },
+     "21":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TAC"
+      },
+     "210":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"TAC",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TAT"
+      },
+     "211":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"GAG",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GAA"
+      },
+     "212":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node24":"CTA",
+       "Node8":"TTA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CTG"
+      },
+     "213":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node31":"GCC",
+       "Node5":"GCC",
+       "Node8":"GCA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GCT"
+      },
+     "214":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CGG"
+      },
+     "215":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"AAA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"AAG"
+      },
+     "216":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"GAG",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GAA"
+      },
+     "217":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CGA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"AGA"
+      },
+     "218":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CAG"
+      },
+     "219":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CTT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CTA"
+      },
+     "22":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Node8":"AGT",
+       "Node9":"AGC",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"AGC"
+      },
+     "220":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"CAT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CAC"
+      },
+     "221":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"ATG"
+      },
+     "222":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node110":"CAG",
+       "Node48":"CAA",
+       "Node5":"CAG",
+       "Node8":"CAG",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CAA"
+      },
+     "223":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CTG",
+       "Node8":"CTT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CTC"
+      },
+     "224":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"TAT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TAC"
+      },
+     "225":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"CCC",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CCA"
+      },
+     "226":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GGC"
+      },
+     "227":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TGG"
+      },
+     "228":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"TCT",
+       "Node8":"TCT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TCC"
+      },
+     "229":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"GCA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GCG"
+      },
+     "23":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"AAC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GAC"
+      },
+     "230":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"AGG",
+       "Node8":"AGA",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"CGA"
+      },
+     "231":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node5":"GAT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"GAC"
+      },
+     "232":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node8":"AAT",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"AAC"
+      },
+     "233":{
+       "Ateles_belzebuth":"---",
+       "Cercocebus_torquatus":"---",
+       "Cercopithecus_cephus":"---",
+       "Cercopithecus_preussi":"---",
+       "Colobus_polykomos":"---",
+       "Hylobates_klossii":"---",
+       "Macaca_tonkeana":"---",
+       "Node65":"TAC",
+       "Saimiri_oerstedii":"---",
+       "Saimiri_sciureus":"---",
+       "Saimiri_ustus":"---",
+       "Simias_concolor":"---",
+       "Trachypithecus_obscurus":"---",
+       "root":"TAT"
+      },
+     "24":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"GAA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GAG"
+      },
+     "25":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAC"
+      },
+     "26":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"TTC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TTT"
+      },
+     "27":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"ACC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCT"
+      },
+     "28":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCG",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCA"
+      },
+     "29":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"GGA",
+       "Node65":"---",
+       "Node8":"GGA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GGG"
+      },
+     "3":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GTG"
+      },
+     "30":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node2":"TCA",
+       "Node5":"AAC",
+       "Node65":"---",
+       "Node8":"TCA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCC"
+      },
+     "31":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAC"
+      },
+     "32":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCT",
+       "Node65":"---",
+       "Node9":"CCA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCG"
+      },
+     "33":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCA"
+      },
+     "34":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAC"
+      },
+     "35":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"TTA",
+       "Node65":"---",
+       "Node8":"ATC",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"ATT"
+      },
+     "36":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCA",
+       "Node65":"---",
+       "Node8":"CCA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCG"
+      },
+     "37":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"GCC",
+       "Node65":"---",
+       "Node8":"TCA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCC"
+      },
+     "38":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Node8":"GAT",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GAC"
+      },
+     "39":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"GTA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GTC"
+      },
+     "4":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCC"
+      },
+     "40":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"GAC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"AAC"
+      },
+     "41":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCC",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCC"
+      },
+     "42":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"AAA"
+      },
+     "43":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"ACA",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAA"
+      },
+     "44":{
+       "Node5":"GGA",
+       "Presbytis_comata":"---",
+       "root":"GGC"
+      },
+     "45":{
+       "Node5":"ATC",
+       "Presbytis_comata":"---",
+       "root":"ATG"
+      },
+     "46":{
+       "Node5":"CCA",
+       "Presbytis_comata":"---",
+       "root":"TCC"
+      },
+     "47":{
+       "Node5":"CGG",
+       "Presbytis_comata":"---",
+       "root":"AGA"
+      },
+     "48":{
+       "Node5":"CCT",
+       "Presbytis_comata":"---",
+       "root":"CAT"
+      },
+     "49":{
+       "Node5":"CCG",
+       "Presbytis_comata":"---",
+       "root":"CCT"
+      },
+     "5":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GTG"
+      },
+     "50":{
+       "Node2":"CCA",
+       "Node5":"CAC",
+       "Node8":"CCA",
+       "Presbytis_comata":"---",
+       "root":"CCC"
+      },
+     "51":{
+       "Node5":"CCT",
+       "Node8":"GCT",
+       "Presbytis_comata":"---",
+       "root":"GCC"
+      },
+     "52":{
+       "Node5":"CCA",
+       "Node8":"CCT",
+       "Presbytis_comata":"---",
+       "root":"CCC"
+      },
+     "53":{
+       "Node5":"GAT",
+       "Node8":"GAT",
+       "Presbytis_comata":"---",
+       "root":"GAC"
+      },
+     "54":{
+       "Node5":"ATA",
+       "Presbytis_comata":"---",
+       "root":"ATC"
+      },
+     "55":{
+       "Node37":"CCG",
+       "Node5":"TCC",
+       "Node8":"CCT",
+       "Presbytis_comata":"---",
+       "root":"CCG"
+      },
+     "56":{
+       "Node5":"CCG",
+       "Node8":"ACT",
+       "Presbytis_comata":"---",
+       "root":"ACC"
+      },
+     "57":{
+       "Node5":"TAT",
+       "Presbytis_comata":"---",
+       "root":"TTT"
+      },
+     "58":{
+       "Node5":"TAC",
+       "Presbytis_comata":"---",
+       "root":"TAT"
+      },
+     "59":{
+       "Node24":"CCT",
+       "Node5":"CCG",
+       "Presbytis_comata":"---",
+       "root":"CCC"
+      },
+     "6":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"GTG"
+      },
+     "60":{
+       "Node37":"TTG",
+       "Node5":"CTA",
+       "Presbytis_comata":"---",
+       "root":"CTG"
+      },
+     "61":{
+       "Node5":"TCA",
+       "Presbytis_comata":"---",
+       "root":"TCT"
+      },
+     "62":{
+       "Node5":"CCC",
+       "Node9":"CCT",
+       "Presbytis_comata":"---",
+       "root":"CCG"
+      },
+     "63":{
+       "Node8":"GGT",
+       "Presbytis_comata":"---",
+       "root":"GGC"
+      },
+     "64":{
+       "Node5":"ACC",
+       "Node8":"GGT",
+       "Presbytis_comata":"---",
+       "root":"GGC"
+      },
+     "65":{
+       "Node5":"GTA",
+       "Node8":"GTT",
+       "Presbytis_comata":"---",
+       "root":"GTG"
+      },
+     "66":{
+       "Node11":"GGG",
+       "Presbytis_comata":"---",
+       "root":"GGA"
+      },
+     "67":{
+       "Node5":"CAA",
+       "Presbytis_comata":"---",
+       "root":"CAG"
+      },
+     "68":{
+       "Presbytis_comata":"---",
+       "root":"ATC"
+      },
+     "69":{
+       "Node5":"CCC",
+       "Presbytis_comata":"---",
+       "root":"ACC"
+      },
+     "7":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CAG"
+      },
+     "70":{
+       "Node2":"CCA",
+       "Node5":"CAT",
+       "Node8":"CCA",
+       "Presbytis_comata":"---",
+       "root":"CCC"
+      },
+     "71":{
+       "Node5":"CCG",
+       "Presbytis_comata":"---",
+       "root":"CCT"
+      },
+     "72":{
+       "Node5":"CTA",
+       "Presbytis_comata":"---",
+       "root":"CTT"
+      },
+     "73":{
+       "Node5":"GGA",
+       "Presbytis_comata":"---",
+       "root":"GGC"
+      },
+     "74":{
+       "Presbytis_comata":"---",
+       "root":"TGG"
+      },
+     "75":{
+       "Hylobates_moloch":"---",
+       "root":"CAA"
+      },
+     "76":{
+       "Hylobates_moloch":"---",
+       "root":"GGT"
+      },
+     "77":{
+       "Hylobates_moloch":"---",
+       "root":"CAG"
+      },
+     "78":{
+       "Hylobates_moloch":"---",
+       "Node5":"CCA",
+       "root":"CCT"
+      },
+     "79":{
+       "Hylobates_moloch":"---",
+       "Node8":"GTA",
+       "root":"GTG"
+      },
+     "8":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node2":"CCG",
+       "Node5":"CAC",
+       "Node65":"---",
+       "Node8":"CCA",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"CCC"
+      },
+     "80":{
+       "Hylobates_moloch":"---",
+       "Node8":"TAT",
+       "root":"TAC"
+      },
+     "81":{
+       "Hylobates_moloch":"---",
+       "Node5":"CCG",
+       "root":"CCC"
+      },
+     "82":{
+       "Hylobates_moloch":"---",
+       "root":"ATC"
+      },
+     "83":{
+       "Hylobates_moloch":"---",
+       "Node5":"ACA",
+       "Node8":"ACG",
+       "root":"TCG"
+      },
+     "84":{
+       "Hylobates_moloch":"---",
+       "Node5":"GGA",
+       "root":"GGT"
+      },
+     "85":{
+       "Hylobates_moloch":"---",
+       "root":"GGA"
+      },
+     "86":{
+       "Hylobates_moloch":"---",
+       "root":"TTC"
+      },
+     "87":{
+       "Hylobates_moloch":"---",
+       "Node5":"AGA",
+       "root":"AGG"
+      },
+     "88":{
+       "Hylobates_moloch":"---",
+       "Node5":"CAC",
+       "Node8":"CAA",
+       "root":"CAG"
+      },
+     "89":{
+       "Hylobates_moloch":"---",
+       "root":"CCC"
+      },
+     "9":{
+       "Cacajao_calvus":"---",
+       "Cacajao_melanocephalus":"---",
+       "Chiropotes_chiropotes":"---",
+       "Node11":"---",
+       "Node5":"CCT",
+       "Node65":"---",
+       "Trachypithecus_auratus":"---",
+       "Trachypithecus_cristatus":"---",
+       "root":"TCC"
+      },
+     "90":{
+       "Hylobates_moloch":"---",
+       "root":"TAC"
+      },
+     "91":{
+       "Hylobates_moloch":"---",
+       "Node5":"CCC",
+       "root":"CCA"
+      },
+     "92":{
+       "Hylobates_moloch":"---",
+       "Node5":"ACA",
+       "root":"TCC"
+      },
+     "93":{
+       "Hylobates_moloch":"---",
+       "Node5":"GCT",
+       "root":"TCA"
+      },
+     "94":{
+       "Hylobates_moloch":"---",
+       "root":"CTG"
+      },
+     "95":{
+       "Hylobates_moloch":"---",
+       "Node5":"ACT",
+       "root":"TCA"
+      },
+     "96":{
+       "Hylobates_moloch":"---",
+       "root":"GTC"
+      },
+     "97":{
+       "Hylobates_moloch":"---",
+       "Node5":"AAC",
+       "root":"GAC"
+      },
+     "98":{
+       "Hylobates_moloch":"---",
+       "Node5":"GCT",
+       "Node8":"ACT",
+       "root":"ACC"
+      },
+     "99":{
+       "Hylobates_moloch":"---",
+       "root":"TCC"
+      }
+    }
+  },
+ "test results":{
+   "P-value threshold":0.05,
+   "positive test results":0,
+   "tested":75
+  },
+ "tested":{
+   "0":{
+     "Allenopithecus_nigroviridis":"test",
+     "Ateles_belzebuth":"test",
+     "Ateles_chamek":"test",
+     "Ateles_marginatus":"test",
+     "Cacajao_calvus":"test",
+     "Cacajao_melanocephalus":"test",
+     "Callicebus_brunneus":"test",
+     "Callicebus_caligatus":"test",
+     "Callicebus_cinerascens":"test",
+     "Callicebus_moloch":"test",
+     "Cercocebus_torquatus":"test",
+     "Cercopithecus_ascanius":"test",
+     "Cercopithecus_campbelli":"test",
+     "Cercopithecus_cephus":"test",
+     "Cercopithecus_diana":"test",
+     "Cercopithecus_hamlyni":"test",
+     "Cercopithecus_lhoesti":"test",
+     "Cercopithecus_mitis":"test",
+     "Cercopithecus_mona":"test",
+     "Cercopithecus_preussi":"test",
+     "Chiropotes_chiropotes":"test",
+     "Colobus_guereza":"test",
+     "Colobus_polykomos":"test",
+     "Eulemur_coronatus":"test",
+     "Eulemur_flavifrons":"test",
+     "Eulemur_macaco":"test",
+     "Eulemur_rubriventer":"test",
+     "Hylobates_klossii":"test",
+     "Hylobates_moloch":"test",
+     "Lophocebus_aterrimus":"test",
+     "Macaca_arctoides":"test",
+     "Macaca_radiata":"test",
+     "Macaca_thibetana":"test",
+     "Macaca_tonkeana":"test",
+     "Mandrillus_leucophaeus":"test",
+     "Mandrillus_sphinx":"test",
+     "Node11":"test",
+     "Node110":"test",
+     "Node2":"test",
+     "Node24":"test",
+     "Node31":"test",
+     "Node36":"test",
+     "Node37":"test",
+     "Node40":"test",
+     "Node48":"test",
+     "Node5":"test",
+     "Node60":"test",
+     "Node65":"test",
+     "Node68":"test",
+     "Node71":"test",
+     "Node74":"test",
+     "Node8":"test",
+     "Node9":"test",
+     "Nomascus_concolor":"test",
+     "Nomascus_gabriellae":"test",
+     "Nomascus_leucogenys":"test",
+     "Papio_anubis":"test",
+     "Papio_cynocephalus":"test",
+     "Papio_papio":"test",
+     "Presbytis_comata":"test",
+     "Presbytis_melalophos":"test",
+     "Pygathrix_cinerea":"test",
+     "Saimiri_boliviensis":"test",
+     "Saimiri_oerstedii":"test",
+     "Saimiri_sciureus":"test",
+     "Saimiri_ustus":"test",
+     "Simias_concolor":"test",
+     "Symphalangus_syndactylus":"test",
+     "Trachypithecus_auratus":"test",
+     "Trachypithecus_cristatus":"test",
+     "Trachypithecus_geei":"test",
+     "Trachypithecus_johnii":"test",
+     "Trachypithecus_obscurus":"test",
+     "Trachypithecus_pileatus":"test",
+     "Trachypithecus_vetulus":"test"
+    }
+  },
+ "timers":{
+   "Baseline model fitting":{
+     "order":2,
+     "timer":6
+    },
+   "Complexity analysis":{
+     "order":3,
+     "timer":1783910445
+    },
+   "Full adaptive model fitting":{
+     "order":4,
+     "timer":20
+    },
+   "Overall":{
+     "order":0,
+     "timer":452
+    },
+   "Preliminary model fitting":{
+     "order":1,
+     "timer":0
+    },
+   "Testing for selection":{
+     "order":5,
+     "timer":0
+    }
+  }
+}
