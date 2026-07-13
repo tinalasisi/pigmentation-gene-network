@@ -28,6 +28,7 @@ project:
     - notebooks/12_direction_law_expanded.ipynb
     - notebooks/13_sex_hormone_layer.ipynb
     - notebooks/14_hormone_pigment_interface.ipynb
+    - notebooks/15_dichromatism_synthesis.ipynb
 
 website:
   title: "Pigmentation gene network"
@@ -72,6 +73,8 @@ website:
         href: walkthrough.qmd
       - text: "Sexual dichromatism across primates"
         href: dichromatism.qmd
+      - text: "NB15 · Dichromatism synthesis (results)"
+        href: notebooks/15_dichromatism_synthesis.ipynb
       - text: "Interactive · layered substrate"
         href: substrate_multilayer.qmd
       - section: "Foundation — the network"
