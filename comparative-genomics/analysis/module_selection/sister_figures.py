@@ -94,11 +94,15 @@ def draw_panel(ax,genes,module_name,modc):
     ax.text((ncol)/2,top-1.6,module_name.upper(),ha="center",fontsize=13,color=modc,fontweight="bold")
     return top
 
-# two stacked panels: pigmentation on top, hormone below; each panel gets full width for its genes
+# two stacked panels: pigmentation on top, hormone below.
+# Legibility is governed by rendered-font = font_pt * display_width / (72 * fig_width_in):
+# a 30-in-wide figure shrinks 8pt labels to ~1px at notebook width, so we keep the figure NARROW
+# (~13 in) and let it render near 1:1. Height carries the two 21-row panels (portrait).
 maxcol=max(len(pig_g),len(hor_g))
-panel_h=nrow_units*0.42
-fig,(axP,axH)=plt.subplots(2,1,figsize=(maxcol*0.62+10,panel_h*2+3.0),
-                           gridspec_kw={"hspace":0.14})
+fig_w=maxcol*0.26+5.2               # ~13.8 in for 33 cols — narrow enough to render legibly
+panel_h=nrow_units*0.30
+fig,(axP,axH)=plt.subplots(2,1,figsize=(fig_w,panel_h*2+2.6),
+                           gridspec_kw={"hspace":0.12})
 topP=draw_panel(axP,pig_g,"Pigmentation",PIG)
 topH=draw_panel(axH,hor_g,"Hormone",HOR)
 
@@ -106,23 +110,21 @@ topH=draw_panel(axH,hor_g,"Hormone",HOR)
 axP.legend(handles=[Patch(fc=PIG,label="pigmentation gene under selection"),
                     Patch(fc=HOR,label="hormone gene under selection"),
                     Patch(fc=BLANK,label="not under selection")],
-           loc="lower right",frameon=False,fontsize=7.5,bbox_to_anchor=(1.0,-0.02))
-kx,ky=len(pig_g)-11,topP-1.6
+           loc="lower right",frameon=False,fontsize=8.0,bbox_to_anchor=(1.0,-0.02))
+kx,ky=max(0,len(pig_g)-13),topP-1.7
 axP.add_patch(Polygon(tl(kx,ky,0.9),closed=True,facecolor=PIG,edgecolor="none"))
 axP.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=PIG,alpha=0.32,edgecolor="none"))
 axP.plot([kx,kx+0.9],[ky+0.45,ky-0.45],color="white",lw=0.6)
-axP.text(kx+1.3,ky,"left = dichromatic taxon (solid)    right = monochromatic sister (faded)",fontsize=7.0,va="center",color="#333")
+axP.text(kx+1.3,ky,"left = dichromatic (solid)   right = mono sister (faded)",fontsize=8.0,va="center",color="#333")
 fig.suptitle("Selection in each dichromatic taxon vs its closest monochromatic relative, grouped by clade",
-             fontsize=15,fontweight="bold",x=0.02,ha="left",y=0.995)
+             fontsize=13,fontweight="bold",x=0.01,ha="left",y=0.998)
 def _mc(key,mod): return sum(1 for p in pairs for g in p[key] if gmod.get(g)==mod)
 dPa,dHa,mPa,mHa=_mc("sd","pigmentation"),_mc("sd","hormone"),_mc("sm","pigmentation"),_mc("sm","hormone")
 _enr="NOT enriched in dichromats" if (dPa+dHa)<=(mPa+mHa) else "higher in dichromats"
-_tot=(f"Each cell splits diagonally: lower-left = dichromatic species (solid), upper-right = nearest monochromatic sister (faded); colored = gene under episodic selection. "
-      f"Totals across {len(pairs)} pairs: dichromats {dPa+dHa} events ({dPa} pigmentation + {dHa} hormone), "
-      f"monochromatic sisters {mPa+mHa} ({mPa} pigmentation + {mHa} hormone) - selection is {_enr}.")
-fig.text(0.02,0.975,_tot,fontsize=8.0,color="#444",ha="left",fontstyle="italic")
-fig.text(0.01,0.004,"aBSREL episodic selection (corrected p<0.05). Bold gene = selected in dichromatic taxon of >=3 pairs. Trachypithecus block shares one sister (T. vetulus). Column margin = # pairs with that gene selected (red=dichromat D, grey=mono sister M); right margin = per-pair gene counts for this module. Marks lineage-specific selection, not proven causation.",fontsize=6.4,color="#777")
-fig.tight_layout(rect=[0,0.015,1,0.965])
+_tot=(f"Each cell splits diagonally (lower-left = dichromatic taxon, upper-right = mono sister); a colored triangle = that gene is under episodic selection. "
+      f"Across {len(pairs)} pairs: dichromats {dPa+dHa} events ({dPa} pig + {dHa} hormone) vs monochromatic sisters {mPa+mHa} ({mPa} pig + {mHa} hormone) - selection is {_enr}.")
+fig.text(0.01,0.978,_tot,fontsize=8.5,color="#444",ha="left",fontstyle="italic")
+fig.tight_layout(rect=[0,0.0,1,0.958])
 fig.savefig(f"{base}/fig_sister_pair_contrast.png",dpi=200,bbox_inches="tight"); plt.close(fig)
 
 # ---- Figure B: per-pair network with FIXED layout ----
