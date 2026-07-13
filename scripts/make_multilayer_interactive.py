@@ -155,7 +155,7 @@ def build_figure(nodes, layer_edges, pos, deg):
         for g in members:
             d = nodes[g]
             nx_.append(pos[g][0]); ny_.append(pos[g][1]); nz_.append(z)
-            size.append(6 + 4.5 * (len(d["planes"]) - 1))
+            size.append(7 + 5 * (len(d["planes"]) - 1))
             fl = []
             if d["hypo"]: fl.append("OMIM hypopigmentation")
             elif d["omim"]: fl.append("OMIM disease")
@@ -233,9 +233,10 @@ def build_figure(nodes, layer_edges, pos, deg):
             aspectmode="manual", aspectratio=dict(x=2.0, y=2.0, z=1.6),
             camera=dict(eye=dict(x=1.55, y=1.55, z=1.05)),
             bgcolor="white"),
-        legend=dict(groupclick="togglegroup", orientation="h", yanchor="bottom", y=-0.02,
-                    xanchor="center", x=0.5, font=dict(size=11, color=INK)),
-        paper_bgcolor="white", margin=dict(l=0, r=0, t=98, b=0), height=760)
+        legend=dict(groupclick="togglegroup", orientation="h", yanchor="top", y=0,
+                    xanchor="center", x=0.5, font=dict(size=11, color=INK),
+                    bgcolor="rgba(255,255,255,0.65)"),
+        paper_bgcolor="white", margin=dict(l=0, r=0, t=96, b=58), height=700)
     return fig
 
 
