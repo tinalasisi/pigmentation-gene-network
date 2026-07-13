@@ -16,7 +16,7 @@ fam_order=["hylobatidae","cercopithecidae","cebidae","lemuridae"]
 fam_disp={f:f.capitalize() for f in fam_order}
 sel=BR[(BR.selected_flag==True)&(BR.is_tip==True)].merge(OA[["species","origin_id"]],left_on="branch",right_on="species")
 relax_sig=set(zip(K[K.p_BH<0.05].origin_id,K[K.p_BH<0.05].gene))
-bal=sel.groupby("origin_id").apply(lambda s:pd.Series({"nP":s[s.set=="pigmentation"].gene.nunique(),"nH":s[s.set=="hormone"].gene.nunique()})).reset_index()
+bal=sel.groupby("origin_id").apply(lambda s:pd.Series({"nP":s[s.gene.map(gmod)=="pigmentation"].gene.nunique(),"nH":s[s.gene.map(gmod)=="hormone"].gene.nunique()})).reset_index()
 bal["balance"]=(bal.nP-bal.nH)/(bal.nP+bal.nH)
 meta=OA.groupby("origin_id").agg(family=("family","first"),sp=("species","first"),n=("species","size")).reset_index()
 bal=bal.merge(meta,on="origin_id")

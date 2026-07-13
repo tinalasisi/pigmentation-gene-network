@@ -16,7 +16,7 @@
 # **This is the results notebook for the dichromatism project — start here.** It reports the
 # central finding: sexual hair dichromatism has arisen and been lost repeatedly across the
 # primate radiation, and where we can test its genetic basis, each origin is built through a
-# *different* combination of two coupled gene modules — pigmentation and sex-hormone signalling.
+# *different* combination of two coupled gene modules — pigmentation and sex-hormone signaling.
 #
 # It reads two things:
 #
@@ -116,6 +116,34 @@ INPUTS = {
         "source": "HYPHY RELAX, pooled foreground (HPC); panel justified in NB13/NB14",
         "produced_by": "Selection pipeline (pulled from HPC)",
     },
+    # --- Pre-built figures (aBSREL tip-level module views over ALL origins, incl. single-species) ---
+    # These four are rendered by scripts in comparative-genomics/analysis/module_selection/ from the
+    # SAME final panel this notebook loads (branch_rates.csv, 105 genes; module column, NOT set).
+    # They are read here as image inputs, exactly as NB15 reads NB13/NB14 figures.
+    "fig_module_balance": {
+        "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_module_balance.png",
+        "what": "Per-origin module balance (aBSREL tip-level, all 14 origins) as a diverging bar chart",
+        "source": "aBSREL episodic selection on the 105-gene panel (HPC)",
+        "produced_by": "comparative-genomics/analysis/module_selection/figures.py",
+    },
+    "fig_circular_tree": {
+        "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_circular_tree_balance.png",
+        "what": "The same module-balance metric painted on the circular primate tree (per-tip)",
+        "source": "aBSREL episodic selection on the 105-gene panel (HPC)",
+        "produced_by": "comparative-genomics/analysis/module_selection/tree_figures.R",
+    },
+    "fig_sister_contrast": {
+        "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_sister_pair_contrast.png",
+        "what": "Selection in each dichromatic taxon vs its closest monochromatic sister, gene x taxon matrix",
+        "source": "aBSREL episodic selection (HPC); sister pairs from the phenotype tree",
+        "produced_by": "comparative-genomics/analysis/module_selection/sister_figures.py",
+    },
+    "fig_sister_network": {
+        "path": "comparative-genomics/analysis/dichromatism_synthesis/figures/nb15_fig_sister_network_diff.png",
+        "what": "Where the dichromatic-vs-sister selection difference sits in the coupled gene network",
+        "source": "aBSREL episodic selection (HPC); STRING v12 human edges (score>=0.4)",
+        "produced_by": "comparative-genomics/analysis/module_selection/sister_figures.py",
+    },
 }
 
 def _sha(path):
@@ -147,7 +175,7 @@ GENOME    = load_input("coding_genome")
 # %% [markdown]
 # ## 1 — The headline
 #
-# Sexual dichromatism — males and females differing in hair or pelage colour — is scattered
+# Sexual dichromatism — males and females differing in hair or pelage color — is scattered
 # across the primate tree, not clustered in one clade. Coded across 238 species, it appears in
 # lemurs (*Eulemur*), colobines (*Trachypithecus*, *Colobus*), gibbons (*Nomascus*, *Hylobates*),
 # and a handful of other lineages, separated by long monochromatic stretches. That distribution
@@ -159,7 +187,7 @@ GENOME    = load_input("coding_genome")
 # of that needs sequence data. The reason we sequenced is a question the tree cannot answer: **what
 # molecular change happened when dichromatism arose** — and here the answer is genuinely
 # surprising. In birds, sexual dichromatism repeatedly evolves through **MC1R**, a single
-# large-effect coat-colour gene. In primates, MC1R is **not** the recurrent route: across the panel
+# large-effect coat-color gene. In primates, MC1R is **not** the recurrent route: across the panel
 # it shows no pooled selection signal (K = 0.45, n.s.), surfacing in just one lineage (§4). There is
 # no single "dichromatism gene." Instead, the origins we can test recruited **different gene sets
 # from a coupled pigmentation–hormone system**, with no shared molecular signature where the
@@ -178,7 +206,7 @@ GENOME    = load_input("coding_genome")
 #
 # **Two codings, one trait.** Dichromatism is scored at full taxonomic resolution across
 # **238 species** (`coding_full`), using `hair_dichromatism_any` as the binary trait (1 = males
-# and females differ in hair colour). A **117-species subset** (`coding_genome`) marks the
+# and females differ in hair color). A **117-species subset** (`coding_genome`) marks the
 # species that *also* have a sequenced genome — these are the ones a selection scan can actually
 # run on. The two codings agree on the phenotype; they differ only in taxonomic coverage, and
 # that difference matters for one number (the origin count, §3), so both scopes are reported
@@ -286,7 +314,7 @@ if ORIGINS is not None:
 #
 # We test (ii) directly with a leave-one-out check: predict each species's state from the **rest of
 # the tree** — its parent node's ancestral reconstruction propagated down its own branch — and
-# compare to what is observed. This asks each species to be explained by its neighbours, not by
+# compare to what is observed. This asks each species to be explained by its neighbors, not by
 # itself, so it cannot be circular. `nb15_phylo.R` computes it (`nb15_loo_surprise.csv`); the most
 # surprising species are shown in Table 2.
 #
@@ -346,9 +374,9 @@ else:
 # predicted dichromatic): Trachypithecus delacouri, embedded in the dichromatic langur radiation.
 
 # %% [markdown]
-# ### The surprising origins are whole developmental programs, not just adult colour
+# ### The surprising origins are whole developmental programs, not just adult color
 #
-# The surprising dichromatic origins do not merely have differently-coloured adult males and
+# The surprising dichromatic origins do not merely have differently-colored adult males and
 # females — they carry a full ontogenetic program: a distinct infant **natal coat** that then
 # matures into the sex-specific adult pattern. Almost every dichromatic species in the tree carries
 # a natal coat (24 of 25) versus ~6% of monochromatic species (11 of 199), and the surprising and
@@ -362,7 +390,7 @@ else:
 # and `male_maturation`, i.e. dichromatism is reached by **sex-specific maturation away from a
 # shared juvenile coat**, not by males and females differing from birth. That means each of these
 # scattered origins switched on the same *kind* of developmental module — a coordinated
-# natal-coat-to-adult trajectory — rather than an ad-hoc adult-colour change. It reframes the
+# natal-coat-to-adult trajectory — rather than an ad-hoc adult-color change. It reframes the
 # lability finding: what is gained and lost ~15 times is a developmental program, not a paint job.
 
 # %% [markdown]
@@ -386,19 +414,19 @@ else:
 # *What the data are.* The tree is the 224-species primate phylogeny used throughout this notebook
 # (the intersection of the 235-tip phylogeny and our 238-species dichromatism coding, §2); 25 of
 # those species are coded dichromatic. The trait is `hair_dichromatism_any` (males and females
-# differ in hair colour: yes/no).
+# differ in hair color: yes/no).
 #
-# *What a density map is.* Every branch of the tree is coloured by how likely it is that
+# *What a density map is.* Every branch of the tree is colored by how likely it is that
 # dichromatism was present along that branch. To estimate this we simulate the trait's evolution
 # down the tree 500 times (stochastic character maps under the best-fitting ARD model from §3) and
 # average the results, so a branch that comes out dichromatic in most simulations is painted red
 # and one that is rarely dichromatic stays blue.
 #
-# Branch colour runs from blue (probability ≈ 0, monochromatic) through magenta to red
+# Branch color runs from blue (probability ≈ 0, monochromatic) through magenta to red
 # (probability ≈ 1, dichromatic); the scale bar is at lower-left. A red dot at a tip marks a
 # living species that is **actually observed / coded** dichromatic — this is the reality check on
 # the reconstruction: the painted-red branches should end in red-dotted tips, and they do, so the
-# model is tracking the real states rather than inventing signal. The coloured strip on the right
+# model is tracking the real states rather than inventing signal. The colored strip on the right
 # labels the major primate groups for orientation (Old World monkeys, apes, gibbons, New World
 # monkeys, tarsiers, lemurs, lorises & galagos). Individual species names are left off so the
 # 224-species tree stays legible (§2).
@@ -412,7 +440,7 @@ else:
 # is expected by construction and is not evidence on its own (see "Reading the density map without
 # circularity" above). The non-circular readout — which species are unexpected given their
 # relatives — is in **Table 2**: the red patches are overwhelmingly single-species gains their
-# neighbours would not predict, with essentially one reversal.
+# neighbors would not predict, with essentially one reversal.
 
 # %% [markdown]
 # ## 4 — Per-origin architecture
@@ -542,7 +570,7 @@ else:
 # (built and justified in NB14) for signatures of natural selection, using coding sequences
 # extracted from 117 published primate genomes. Selection was tested with **RELAX** (HyPhy), which
 # asks whether selection on a gene became *stronger* (intensified) or *weaker* (relaxed) along a
-# specified set of branches; its statistic *K* summarises that shift, and we plot log₂ K so that
+# specified set of branches; its statistic *K* summarizes that shift, and we plot log₂ K so that
 # intensification (K > 1) and relaxation (K < 1) are symmetric about zero. Values are read from
 # `results/perorigin_v1/per_origin_K.csv` (per-origin fits) cross-checked against
 # `relax_pooled_results.csv` (all origins pooled).
@@ -556,7 +584,7 @@ else:
 # *How to read a bar.* Each bar is one gene that shifted significantly in selection at that origin
 # (Benjamini–Hochberg p_BH < 0.05). Bar length = log₂ K: bars pointing **right** = selection
 # **intensified**, bars pointing **left** = selection **relaxed** (the ← relaxed / intensified →
-# guides sit under each axis). Colour = which module the gene belongs to (**orange = pigmentation,
+# guides sit under each axis). Color = which module the gene belongs to (**orange = pigmentation,
 # blue = sex-hormone**). **Solid** bar = the shift is also significant in the independent pooled
 # analysis (corroborated); **hatched** bar = significant only within that one origin, so weaker
 # evidence. A panel reading *"no gene passes p(BH) < 0.05"* (Eulemur) means no gene reached
@@ -631,7 +659,66 @@ else:
     print("Awaiting per-origin tables with module + p_BH columns.")
 
 # %% [markdown]
-# ## 5b — POMC at the pigmentation–hormone interface
+# ### Figure 5 — Module balance across every origin (branch-level view)
+#
+# Table 3 scores module balance only at the three RELAX-*powered* origins. The two figures below
+# take the complementary **branch-level** view: they use the aBSREL per-tip episodic-selection
+# calls (which exist for *every* dichromatic lineage, including the single-species origins RELAX
+# cannot test), and for each lineage count how many pigmentation vs sex-hormone genes are under
+# selection. Full captions follow each figure.
+
+# %%
+from IPython.display import Image, display
+_mb = os.path.join(SYN, "figures", "nb15_fig_module_balance.png")
+if os.path.exists(_mb):
+    display(Image(filename=_mb))
+else:
+    print("nb15_fig_module_balance.png not built - run analysis/module_selection/figures.py")
+
+# %% [markdown]
+# **Figure 5. Each dichromatism origin tilts toward a different module.**
+#
+# *What the data are.* aBSREL episodic-selection calls (corrected p < 0.05) on the tip branches of
+# each dichromatic origin, from `results/perorigin_v1/branch_rates.csv` (105-gene pigmentation +
+# sex-hormone panel; module assigned from the panel's own `module` column, not `set`). Built by
+# `analysis/module_selection/figures.py`. Origins are grouped by family (bold headers) and, within
+# a family, ordered by their balance.
+#
+# *How to read it.* Each bar is one origin. Bar direction and colour give the **module balance** =
+# (nP − nH)/(nP + nH): bars to the **right (orange) = pigmentation-tilted**, to the **left (blue) =
+# hormone-tilted**, length = how lopsided. The `NP/NH` label on each bar is the raw count of
+# pigmentation and hormone genes under selection at that origin. A **black outline** marks the three
+# origins with ≥ 2 sequenced dichromatic species (the RELAX-powered origins of Table 3 and Fig 4);
+# all others are single-species origins seen only at the branch level. The single-species origins
+# sit near ±1 because they rest on very few selected genes — read those as suggestive, not as
+# resolved module assignments.
+#
+# *What it shows.* There is no shared module: some origins are pigmentation-tilted, others
+# hormone-tilted, spread across the primate tree. Even the two best-powered origins differ —
+# *Trachypithecus* (origin 7) leans hormone, *Nomascus* (origin 8) leans pigmentation — the
+# per-origin divergence quantified in §6.
+
+# %%
+_ct = os.path.join(SYN, "figures", "nb15_fig_circular_tree_balance.png")
+if os.path.exists(_ct):
+    display(Image(filename=_ct))
+else:
+    print("nb15_fig_circular_tree_balance.png not built - run analysis/module_selection/tree_figures.R")
+
+# %% [markdown]
+# **Figure 5b′. The same module balance, painted on the primate tree.**
+#
+# *What the data are.* The identical per-tip module-balance metric as Figure 5, drawn on the
+# 117-genome primate phylogeny (circular fan layout). Built by
+# `analysis/module_selection/tree_figures.R` from the same `branch_rates.csv`.
+#
+# *How to read it.* Each tip carries a dot. **Dot colour** is the module balance on that lineage —
+# **blue = hormone-tilted, orange = pigmentation-tilted, pale = even** (colour bar at centre). **Dot
+# size** scales with how many genes are under selection on that lineage (few → many). Tip **labels
+# in red bold** are the dichromatic species; grey labels are monochromatic. This places the balance
+# in phylogenetic context: dichromatic lineages do not share a colour, and the module tilt varies
+# even among close relatives (e.g. within the *Trachypithecus* langurs), reinforcing that each
+# origin remodels a different part of the coupled network.
 #
 # The module-balance metric (§5) scores each gene into exactly one module, and the panel assigns
 # **POMC to pigmentation** (receptor_signaling; OMIM hypopigmentation phenotype). That is defensible
@@ -648,7 +735,7 @@ else:
 # **What the data show.** POMC shows a significant per-origin RELAX **intensification** in
 # *Nomascus* (origin 8; K = 3.4, p_BH < 0.001 — selection intensified, not relaxed) and episodic
 # diversifying selection (aBSREL, corrected p < 0.05) on **five branches**. Figure 5b shows these
-# explicitly, coloured by dichromatism state, because the pattern is mixed and that mix is the
+# explicitly, colored by dichromatism state, because the pattern is mixed and that mix is the
 # point: two of the selected tips — *Nomascus concolor* and *N. gabriellae* — are **dichromatic**
 # and fall exactly on the origin-8 lineage, but a third, *Macaca mulatta*, is **monochromatic**,
 # and the two remaining selected branches are internal *Macaca* clades — resolved from the POMC
@@ -691,16 +778,16 @@ else:
 # hormones), so if it were the gene coupling the two modules to produce dichromatism, its selected
 # branches should be the dichromatic ones.
 #
-# *How to read the two panels.* **(A)** The 224-species tree (as in Fig 3). Each tip is coloured by
-# its coded dichromatism state (**red = dichromatic, grey = monochromatic**); every branch that
+# *How to read the two panels.* **(A)** The 224-species tree (as in Fig 3). Each tip is colored by
+# its coded dichromatism state (**red = dichromatic, gray = monochromatic**); every branch that
 # aBSREL flags as under selection carries a **star** — **red star** if that branch is dichromatic,
 # **dark star** if monochromatic. **(B)** The five selected branches ranked by significance; the
 # x-axis is **−log₁₀(corrected p-value)**, so longer bars = stronger evidence, and each bar is
-# labelled by the branch's dichromatism state.
+# labeled by the branch's dichromatism state.
 #
 # *What it shows.* Of the five POMC-selected branches, only two are dichromatic (the *Nomascus*
 # gibbons *N. concolor* and *N. gabriellae*); the other three are monochromatic macaque lineages —
-# the *M. mulatta* tip and two internal *Macaca* clades (labelled by the clade each contains, since
+# the *M. mulatta* tip and two internal *Macaca* clades (labeled by the clade each contains, since
 # aBSREL's internal "NodeNN" names are per-gene and not comparable across genes). So POMC selection
 # overlaps one dichromatism origin (the gibbons) but is **not** confined to dichromatic lineages —
 # the same lesson as the whole-panel branch scan.
@@ -790,12 +877,84 @@ else:
     print("Awaiting per-origin tables with p_BH for the overlap recompute.")
 
 # %% [markdown]
+# ### Figure 6 — The dichromat-vs-sister contrast, gene by gene
+#
+# Table 5 counts *shared* genes between origins. The two figures below make the underlying contrast
+# explicit at the finest resolution the data allow: for each dichromatic taxon, they compare its
+# selected genes against those of its **closest monochromatic relative** on the tree. If a gene is
+# selected in the dichromat but not its sister, that lineage-specific difference is a candidate for
+# where the phenotype's genetic basis sits (a difference marks lineage-specific selection, not proven
+# causation). Full captions follow each figure.
+
+# %%
+_sc = os.path.join(SYN, "figures", "nb15_fig_sister_pair_contrast.png")
+if os.path.exists(_sc):
+    display(Image(filename=_sc))
+else:
+    print("nb15_fig_sister_pair_contrast.png not built - run analysis/module_selection/sister_figures.py")
+
+# %% [markdown]
+# **Figure 6. Selection in each dichromatic taxon vs its closest monochromatic sister, by gene.**
+#
+# *What the data are.* aBSREL episodic-selection calls (corrected p < 0.05) from
+# `results/perorigin_v1/branch_rates.csv` (105-gene panel), for 21 dichromatic species and their
+# nearest monochromatic sister taxon (sister pairs in
+# `analysis/module_selection/sister_pairs.csv`, taken from the phenotype tree). Built by
+# `analysis/module_selection/sister_figures.py`.
+#
+# *How to read it.* Rows are dichromatic taxa, grouped by clade (bold clade headers; the small grey
+# line under each taxon names its monochromatic sister). Columns are genes, split into the
+# **pigmentation module (left half, orange)** and the **sex-hormone module (right half, blue)** by
+# the vertical divider. Each cell is split on the diagonal: the **lower-left triangle = the
+# dichromatic species, upper-right triangle = its sister**. A **solid** triangle = that gene is under
+# episodic selection in that taxon; a **faded/pale** triangle = selected in the sister only; an empty
+# grey cell = selected in neither. So a solid-orange lower-left triangle with an empty upper-right is
+# a pigmentation gene selected in the dichromat but not its sister — a lineage-specific difference.
+#
+# *What it shows.* The filled cells do not line up into shared columns: different dichromatic taxa
+# light up different genes, and few genes are selected in a dichromat *and* absent in its sister
+# across more than one clade. The *Trachypithecus* langurs (a single origin, many sequenced species)
+# form the densest block and share genes among themselves, but that block does not repeat in the
+# gibbons, guenons, howlers or lemurs — the by-eye version of the zero cross-origin overlap in
+# Table 5.
+
+# %%
+_sn = os.path.join(SYN, "figures", "nb15_fig_sister_network_diff.png")
+if os.path.exists(_sn):
+    display(Image(filename=_sn))
+else:
+    print("nb15_fig_sister_network_diff.png not built - run analysis/module_selection/sister_figures.py")
+
+# %% [markdown]
+# **Figure 6b′. Where the dichromat-vs-sister difference sits in the coupled network.**
+#
+# *What the data are.* The same dichromat-vs-sister selection contrast as Figure 6, for four
+# representative pairs, drawn on the coupled pigmentation–hormone gene network instead of a matrix.
+# Node positions come from a fixed layout (`network_layout.json`) so genes sit in the **same place in
+# every panel**; edges are human protein–protein interactions from STRING v12 (score ≥ 0.4). Built by
+# `analysis/module_selection/sister_figures.py`.
+#
+# *How to read it.* Each of the four panels is one dichromatic taxon (named top-left) vs its sister.
+# Genes are nodes: the **pigmentation module fills the left (cream) box, the hormone module the right
+# (pale-blue) box**. A node is **red-ringed and filled = selected in the dichromatic species only**
+# (the lineage-specific variation), **grey-filled = selected in both taxa**, **open/hollow = selected
+# in the sister only**, and **faint = selected in neither**. Because the layout is shared, you can
+# scan the same gene across panels.
+#
+# *What it shows.* The red-ringed (dichromat-specific) genes fall in different parts of the network
+# in each pair — *Trachypithecus francoisi* lights up a broad pigmentation+hormone spread, *Nomascus
+# concolor* a pigmentation-side cluster around POMC/SOX10, *Cercopithecus hamlyni* a small
+# pigmentation set, *Alouatta caraya* a hormone-side cluster — again the divergence story: the same
+# phenotype, reached by perturbing different nodes of one coupled system.
+
+# %% [markdown]
 # ## 7 — Synthesis
 #
 # Sexual dichromatism in primates is a **labile, polygenic trait built from two coupled modules**.
 # It has arisen on the order of 15–19 times and is lost far faster than it is gained (§3). At the
 # two origins where its genetic basis can actually be tested, the signalled gene sets do not
-# overlap (§4, §6) and differ in module balance (§5) — divergence where the comparison is powered.
+# overlap (§4, §6, Fig 6) and differ in module balance (§5, Fig 5) — divergence where the
+# comparison is powered.
 # Whether origins differ *systematically* in architecture across the clade is an open question the
 # current sampling cannot resolve (only two of ~15–19 origins carry a per-origin signal), so it is
 # framed as underpowered rather than claimed.

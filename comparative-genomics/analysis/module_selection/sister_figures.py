@@ -53,7 +53,9 @@ for yy,p in layout:
         modc=PIG if gmod.get(g)=="pigmentation" else HOR
         ax.add_patch(Rectangle((j,yy-0.45),0.9,0.9,facecolor="white",edgecolor="#dedede",lw=0.4,zorder=1))
         ax.add_patch(Polygon(tl(j,yy),closed=True,facecolor=modc if g in p["sd"] else BLANK,edgecolor="none",zorder=2))
-        ax.add_patch(Polygon(tr(j,yy),closed=True,facecolor=modc if g in p["sm"] else BLANK,edgecolor="none",zorder=2))
+        # monochromatic sister triangle drawn faded (alpha) so the solid dichromatic triangle stands out
+        ax.add_patch(Polygon(tr(j,yy),closed=True,facecolor=(modc if g in p["sm"] else BLANK),
+                             alpha=(0.32 if g in p["sm"] else 1.0),edgecolor="none",zorder=2))
         ax.plot([j,j+0.9],[yy+0.45,yy-0.45],color="white",lw=0.6,zorder=3)
 ax.axvline(len(pig_g),color="#333",lw=1.5,zorder=6)
 top=-1.0
@@ -74,11 +76,11 @@ for s in ax.spines.values(): s.set_visible(False)
 ax.legend(handles=[Patch(fc=PIG,label="pigmentation gene under selection"),Patch(fc=HOR,label="hormone gene under selection"),Patch(fc=BLANK,label="not under selection")],loc="lower right",frameon=False,fontsize=5.6,bbox_to_anchor=(1.0,-0.02))
 kx,ky=ncol-9,top-2.1
 ax.add_patch(Polygon(tl(kx,ky,0.9),closed=True,facecolor=HOR,edgecolor="none"))
-ax.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=BLANK,edgecolor="none"))
+ax.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=HOR,alpha=0.32,edgecolor="none"))
 ax.plot([kx,kx+0.9],[ky+0.45,ky-0.45],color="white",lw=0.6)
-ax.text(kx+1.2,ky,"left = dichromatic taxon    right = monochromatic sister",fontsize=5.2,va="center",color="#333")
+ax.text(kx+1.2,ky,"left = dichromatic taxon (solid)    right = monochromatic sister (faded)",fontsize=5.2,va="center",color="#333")
 ax.text(-0.5,top-4.2,"Selection in each dichromatic taxon vs its closest monochromatic relative, grouped by clade",fontsize=10,fontweight="bold",ha="left")
-ax.text(-0.5,top-3.55,"each cell split diagonally: left = the dichromatic species, right = its nearest monochromatic sister; colored = gene under episodic selection",fontsize=5.6,color="#555",ha="left")
+ax.text(-0.5,top-3.55,"each cell split diagonally: lower-left = the dichromatic species (solid), upper-right = its nearest monochromatic sister (faded); colored = gene under episodic selection",fontsize=5.6,color="#555",ha="left")
 fig.text(0.01,0.004,"aBSREL episodic selection (corrected p<0.05). Bold gene = selected in dichromatic taxon of >=3 pairs. Trachypithecus block shares one sister (T. vetulus). Marks lineage-specific selection, not proven causation.",fontsize=4.4,color="#777")
 fig.tight_layout(rect=[0,0.02,1,1])
 fig.savefig(f"{base}/fig_sister_pair_contrast.png",dpi=300,bbox_inches="tight"); plt.close(fig)

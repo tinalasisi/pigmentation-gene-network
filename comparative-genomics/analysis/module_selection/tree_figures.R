@@ -14,9 +14,11 @@ PIG<-"#C97B0A"; HOR<-"#2E6E9E"
 ramp <- colorRampPalette(c(HOR,"#f2f2f2",PIG))
 col_for <- function(b) if(is.na(b)) "#e8e8e8" else ramp(101)[round((b+1)/2*100)+1]
 
-sel <- BR %>% filter(selected_flag==TRUE, is_tip==TRUE)
+GM <- read_csv(file.path(dd,"gene_modules.csv"), show_col_types=FALSE)
+gmod <- setNames(GM$module, GM$gene)
+sel <- BR %>% filter(selected_flag==TRUE, is_tip==TRUE) %>% mutate(module=gmod[gene])
 tipbal <- sel %>% group_by(branch) %>%
-  summarise(nP=n_distinct(gene[set=="pigmentation"]), nH=n_distinct(gene[set=="hormone"]), .groups="drop") %>%
+  summarise(nP=n_distinct(gene[module=="pigmentation"]), nH=n_distinct(gene[module=="hormone"]), .groups="drop") %>%
   mutate(balance=(nP-nH)/(nP+nH), n_sel=nP+nH)
 dich <- COD %>% filter(dichromatic==1) %>% pull(species)
 gtips <- unique(BR$branch[BR$is_tip]); trg <- keep.tip(tr, intersect(tr$tip.label, gtips))
@@ -52,11 +54,11 @@ dev.off()
 # --- Fig: phylo.heatmap ---
 origin_sp <- OA$species[OA$species %in% trg$tip.label]
 trh <- keep.tip(trg, origin_sp)
-sel_tip <- BR %>% filter(selected_flag==TRUE, is_tip==TRUE, branch %in% origin_sp)
-genes_h <- sel_tip %>% count(gene, set) %>% arrange(set, desc(n))
+sel_tip <- BR %>% filter(selected_flag==TRUE, is_tip==TRUE, branch %in% origin_sp) %>% mutate(module=gmod[gene])
+genes_h <- sel_tip %>% count(gene, module) %>% arrange(module, desc(n))
 M <- matrix(0, nrow=length(origin_sp), ncol=nrow(genes_h), dimnames=list(origin_sp, genes_h$gene))
-for(i in 1:nrow(sel_tip)) M[sel_tip$branch[i], sel_tip$gene[i]] <- if(sel_tip$set[i]=="pigmentation") 1 else -1
-gord <- c(genes_h$gene[genes_h$set=="hormone"], genes_h$gene[genes_h$set=="pigmentation"]); M <- M[, gord]
+for(i in 1:nrow(sel_tip)) M[sel_tip$branch[i], sel_tip$gene[i]] <- if(sel_tip$module[i]=="pigmentation") 1 else -1
+gord <- c(genes_h$gene[genes_h$module=="hormone"], genes_h$gene[genes_h$module=="pigmentation"]); M <- M[, gord]
 png(file.path(base,"fig_phylo_heatmap.png"), width=3000, height=2200, res=300)
 phylo.heatmap(trh, M, fsize=c(0.5,0.55,0.7), colors=c(HOR,"#f7f7f7",PIG),
               standardize=FALSE, labels=TRUE, split=c(0.35,0.65), lwd=1.2)
