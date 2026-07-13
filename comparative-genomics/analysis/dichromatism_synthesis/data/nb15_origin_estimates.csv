@@ -1,0 +1,6 @@
+"scope","n_origins","method"
+"full coding (238 species)",19,"maximal dichromatic clades (topology, model-free)"
+"full coding, genome-sampled clades",18,"clades with >=1 genome-sampled tip"
+"genome-subset coding (117 species)",15,"maximal dichromatic clades (topology, model-free)"
+"ML-ASR ARD",NA,"marginal ancestral states (deep-origin collapse)"
+"stochastic map ARD (mean)",31.494,"500 simmaps (flicker-inflated by high loss rate)"

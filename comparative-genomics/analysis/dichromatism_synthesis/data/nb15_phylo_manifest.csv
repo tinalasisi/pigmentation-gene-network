@@ -1,0 +1,4 @@
+"input","path","sha256_16","note"
+"primate_phenotype_tree.nex","/Users/tlasisi/GitHub/pigmentation-gene-network/comparative-genomics/analysis/coevolution_test/data/primate_phenotype_tree.nex","07caa91774b83f58","235 tips"
+"primate_dichromatism_coding.csv","/Users/tlasisi/GitHub/pigmentation-gene-network/comparative-genomics/config/primate_dichromatism_coding.csv","7b8a36e3036a1e53","238 species"
+"OVERLAP","tree cap coding (hair_dichromatism_any)","","224 tips, 25 dichromatic"
