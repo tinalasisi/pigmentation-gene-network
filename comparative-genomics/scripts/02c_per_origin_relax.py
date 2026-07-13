@@ -65,18 +65,19 @@ def load_origins(path):
     all_dich = set().union(*origins.values()) if origins else set()
     return origins, all_dich
 
-def ensure_alignment(gene, cds_dir, aln_dir, gap_col_thresh, outlier_k):
+def ensure_alignment(gene, cds_dir, aln_dir, gap_col_thresh, outlier_k, threads=1):
     """Reuse aln/<gene>.codon.aln.fa if present (from script 02); else build it."""
     nuc = os.path.join(aln_dir, f"{gene}.codon.aln.fa")
     if os.path.exists(nuc):
         tips = [rec.split()[0][1:] for rec in open(nuc) if rec.startswith(">")]
         return nuc, tips
     built, info = codon_align(gene, cds_dir, aln_dir,
-                              gap_col_thresh=gap_col_thresh, outlier_k=outlier_k)
+                              gap_col_thresh=gap_col_thresh, outlier_k=outlier_k, threads=threads)
     return built, (info.get("tips") if built else None)
 
 def run_one(gene, oid, origins, all_dich, args):
-    nuc, tips = ensure_alignment(gene, args.cds, args.aln, args.gap_col_thresh, args.outlier_k)
+    nuc, tips = ensure_alignment(gene, args.cds, args.aln, args.gap_col_thresh, args.outlier_k,
+                                 threads=int(getattr(args, "threads", 1)))
     row = {"origin_id": oid, "gene": gene}
     if not nuc or not tips:
         row["status"] = "no_alignment"; return row

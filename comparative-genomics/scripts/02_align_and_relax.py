@@ -57,7 +57,7 @@ def drop_outlier_tips(codon, k=4.0, min_tips=4):
     if len(keep)<min_tips: return codon, []                         # never break the gene
     return {t:codon[t] for t in keep}, outliers
 
-def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5, outlier_k=4.0):
+def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5, outlier_k=4.0, threads=1):
     files=glob.glob(os.path.join(cds_dir,gene,"*.cds.fna"))
     seqs={}
     for f in files:
@@ -77,7 +77,7 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5, outlier_
     with open(prot,"w") as o:
         for sp,s in seqs.items(): o.write(f">{sp}\n{Seq(s).translate()}\n")
     aln_prot=os.path.join(aln_dir,f"{gene}.prot.aln.fa")
-    with open(aln_prot,"w") as o: sh(["mafft","--quiet","--auto",prot],stdout=o)
+    with open(aln_prot,"w") as o: sh(["mafft","--thread",str(threads),"--quiet","--auto",prot],stdout=o)
     codon={}
     for rec in SeqIO.parse(aln_prot,"fasta"):
         aa=str(rec.seq); s=seqs[rec.id]; codons=[s[i:i+3] for i in range(0,len(s),3)]
@@ -157,7 +157,7 @@ def main():
             w.writeheader(); w.writerows(rows)
     qc_rows=[]
     for gene in panel:
-        nuc,info=codon_align(gene,a.cds,a.aln,gap_col_thresh=a.gap_col_thresh,outlier_k=a.outlier_k)
+        nuc,info=codon_align(gene,a.cds,a.aln,gap_col_thresh=a.gap_col_thresh,outlier_k=a.outlier_k,threads=int(a.threads))
         row={"gene":gene,"set":panel[gene],**{k:v for k,v in info.items() if k!="tips"}}
         if nuc:
             tips=info["tips"]
