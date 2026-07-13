@@ -118,6 +118,35 @@ write.csv(est, file.path(here, "data/nb15_origin_estimates.csv"), row.names = FA
 cat(sprintf("origins: full-238=%d (genomic %d) | 117-subset=%d | simmap mean=%.1f\n",
             n_full, n_full_genomic, n_117, mean(origins)))
 
+# --- non-circular "surprise" test: predict each tip from its neighbours ---
+# The density map is fitted to the observed tip states, so a red-painted branch ending in a red
+# observed dot is close to tautological. The informative, NON-circular question is whether each
+# species matches what its RELATIVES predict. We fit ancestral states once (ARD marginal
+# reconstruction, ancr), then predict each tip's P(dichromatic) from its PARENT node's
+# reconstruction propagated down the tip's own pendant branch via expm(Q * branch_length). The
+# parent reconstruction is dominated by the rest of the tree (the tip contributes little), so a
+# large |observed - predicted| flags a species that is surprising given its neighbourhood.
+suppressMessages(library(expm))
+Q  <- as.Qmatrix(ard); Q <- matrix(as.numeric(Q), 2, 2, dimnames = list(c("0","1"), c("0","1")))
+AM <- ancr(ard)$ace                                   # rows named by internal node number
+ed <- trO$edge; Ntt <- Ntip(trO)
+parent_of <- function(i) ed[ed[,2] == i, 1]
+pend_len  <- function(i) trO$edge.length[ed[,2] == i]
+pred <- setNames(rep(NA_real_, Ntt), trO$tip.label)
+for (i in seq_len(Ntt)) {
+  p <- parent_of(i); ap <- as.numeric(AM[as.character(p), ]); P <- expm(Q * pend_len(i))
+  pred[i] <- ap[1] * P[1, 2] + ap[2] * P[2, 2]
+}
+sur <- data.frame(tip = trO$tip.label, observed = as.integer(x[trO$tip.label]),
+                  predicted = round(pred, 3))
+sur$surprise <- round(abs(sur$observed - sur$predicted), 3)
+sur <- sur[order(-sur$surprise), ]
+write.csv(sur, file.path(here, "data/nb15_loo_surprise.csv"), row.names = FALSE)
+n_unexp_gain <- sum(sur$observed == 1 & sur$predicted < 0.5)
+n_unexp_loss <- sum(sur$observed == 0 & sur$predicted > 0.5)
+cat(sprintf("surprise: %d/%d dichromatic species unexpected (pred<0.5); %d monochromatic reversal candidates (pred>0.5)\n",
+            n_unexp_gain, sum(sur$observed == 1), n_unexp_loss))
+
 # --- densityMap figure: state posterior on the tree + right-side clade bar + clean legend ---
 dm <- densityMap(smap, states = c("0", "1"), plot = FALSE)
 

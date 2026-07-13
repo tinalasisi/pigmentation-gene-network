@@ -275,6 +275,60 @@ if ORIGINS is not None:
 # the clade is sampled — which is itself part of the lability story.
 
 # %% [markdown]
+# ### Reading the density map without circularity
+#
+# A fair objection to the map below (Fig 3): it is a reconstruction *fitted to the observed tip
+# states*, so at the tips the posterior is pinned to what we coded — a red-painted branch ending in
+# a red observed dot is close to tautological, and proves nothing on its own. The map carries real
+# information in two places that are **not** circular: (i) at *internal* branches, where it infers
+# where gains and losses happened; and (ii) in flagging species whose state is *unexpected given
+# their relatives*.
+#
+# We test (ii) directly with a leave-one-out check: predict each species's state from the **rest of
+# the tree** — its parent node's ancestral reconstruction propagated down its own branch — and
+# compare to what is observed. This asks each species to be explained by its neighbours, not by
+# itself, so it cannot be circular. `nb15_phylo.R` computes it (`nb15_loo_surprise.csv`); the most
+# surprising species are shown in Table 2.
+#
+# One caveat stated plainly: because the fitted model already says gains are rare and recent
+# (loss:gain ≈ 9×), it will call most *gains* "surprising" by construction — so the count of
+# surprising gains is not independent of the lability result, it is the same signal per species.
+# What the test adds is *which* species, and the asymmetry (many surprising gains, almost no
+# surprising losses) as an independent readout of the same high-loss dynamic. A fully out-of-sample
+# version — predicting primates *not* in our sample and scoring against their known coats — is the
+# clean next step and is noted in the limitations.
+
+# %%
+# Load the leave-one-out surprise table (computed reproducibly in nb15_phylo.R) and show the
+# species whose observed state most disagrees with the prediction from the rest of the tree.
+_surf = os.path.join(SYN, "data", "nb15_loo_surprise.csv")
+if os.path.exists(_surf):
+    SUR = pd.read_csv(_surf)
+    _lab = {1: "dichromatic", 0: "monochromatic"}
+    top = SUR.head(12).copy()
+    top["observed"] = top["observed"].map(_lab)
+    print("Most phylogenetically surprising species (|observed - predicted-from-neighbours|):\n")
+    print(top.to_string(index=False))
+    ng = int(((SUR.observed == 1) & (SUR.predicted < 0.5)).sum())
+    nd = int((SUR.observed == 1).sum())
+    nl = int(((SUR.observed == 0) & (SUR.predicted > 0.5)).sum())
+    print(f"\nUnexpected dichromatic origins (dichromatic, predicted < 0.5): {ng} of {nd}")
+    print(f"Reversal candidates (monochromatic, predicted > 0.5): {nl}")
+else:
+    print("nb15_loo_surprise.csv not built yet - run nb15_phylo.R")
+
+# %% [markdown]
+# **Table 2. The phylogenetically surprising species (leave-one-out).** From
+# `nb15_loo_surprise.csv`. `observed` = the coded state; `predicted` = P(dichromatic) estimated
+# from the rest of the tree (parent-node reconstruction propagated down the species' own branch);
+# `surprise` = |observed − predicted|, so 1.0 = maximally unexpected. The top of the list is
+# dominated by **dichromatic species sitting in otherwise-monochromatic genera** (Macaca
+# arctoides, Alouatta caraya, Erythrocebus patas, Pithecia pithecia, …) — the single-species
+# independent origins that make dichromatism look scattered. Only one clear **reversal** appears
+# (a monochromatic species predicted dichromatic): Trachypithecus delacouri, embedded in the
+# dichromatic langur radiation.
+
+# %% [markdown]
 # ### Figure 3 — Where gains and losses fall (stochastic density map)
 #
 # The figure below paints, on the primate tree, how likely dichromatism was along each branch —
@@ -316,6 +370,12 @@ else:
 # monkeys, the *Nomascus*/*Hylobates* gibbons, and *Eulemur* among the lemurs — separated by long
 # blue (monochromatic) internodes. That scattering, rather than one deep red clade, is the visual
 # signature of the many-independent-origins, high-loss pattern quantified in §3.
+#
+# *On circularity.* At the tips this map is pinned to the observed states, so the tip-level match
+# is expected by construction and is not evidence on its own (see "Reading the density map without
+# circularity" above). The non-circular readout — which species are unexpected given their
+# relatives — is in **Table 2**: the red patches are overwhelmingly single-species gains their
+# neighbours would not predict, with essentially one reversal.
 
 # %% [markdown]
 # ## 4 — Per-origin architecture
@@ -499,7 +559,7 @@ else:
 # pigmentation genes were tested. This section computes balance as a rate ratio; NB14's +0.036 is
 # the panel's *count* balance and is not the same quantity (the two must not be conflated).
 #
-# **Table 2.** Module balance for each testable origin. `sigP`/`sigH` = number of pigmentation /
+# **Table 3.** Module balance for each testable origin. `sigP`/`sigH` = number of pigmentation /
 # hormone genes under selection; `rateP`/`rateH` = those counts divided by how many genes of each
 # module were actually tested (the panel-composition correction); `rate_balance` = the headline
 # number, running from −1 (all hormone) through 0 (even) to +1 (all pigmentation). `count_balance`
@@ -609,7 +669,7 @@ else:
 # the same lesson as the whole-panel branch scan.
 
 # %% [markdown]
-# **Table 3.** POMC's per-origin RELAX result, read from `results/perorigin_v1/per_origin_K.csv`.
+# **Table 4.** POMC's per-origin RELAX result, read from `results/perorigin_v1/per_origin_K.csv`.
 # One row per testable origin: `module` = the panel's module assignment for POMC (pigmentation);
 # `K` = the RELAX selection-intensity statistic (K > 1 intensified, K < 1 relaxed); `p_BH` =
 # Benjamini–Hochberg-corrected p-value. POMC is significantly intensified at the *Nomascus* origin
@@ -657,7 +717,7 @@ if BRANCH is not None and "absrel_corrected_p" in BRANCH.columns:
 # divergence result is robust unless a new gene happens to hit both origins).
 
 # %% [markdown]
-# **Table 4.** Gene-set overlap between the independent origins, computed from the significant
+# **Table 5.** Gene-set overlap between the independent origins, computed from the significant
 # genes (p_BH < 0.05) in `results/perorigin_v1/per_origin_K.csv`. For each powered origin the
 # printout lists its selected gene set, then reports the intersection between every pair of
 # signalled origins. "ZERO overlap" means the two origins share no gene under selection — direct
