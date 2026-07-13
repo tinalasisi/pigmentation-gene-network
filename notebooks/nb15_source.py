@@ -108,6 +108,14 @@ INPUTS = {
         "source": "HYPHY aBSREL on codon alignments (HPC); panel justified in NB13/NB14",
         "produced_by": "Selection pipeline (pulled from HPC)",
     },
+    "relax_pooled": {
+        "path": "comparative-genomics/results/perorigin_v1/relax_pooled_results.csv",
+        "what": "Pooled RELAX (all dichromatic origins as one foreground set) per gene, used as a "
+                "QC cross-check on the per-origin fits: a per-origin hit with an extreme boundary "
+                "K that is null when pooled is treated as a boundary artifact",
+        "source": "HYPHY RELAX, pooled foreground (HPC); panel justified in NB13/NB14",
+        "produced_by": "Selection pipeline (pulled from HPC)",
+    },
 }
 
 def _sha(path):
@@ -259,10 +267,12 @@ if ORIGINS is not None:
 # **Figure 3.** Posterior probability that each branch of the primate phylogeny was sexually
 # dichromatic, summarised over 500 stochastic character maps under the ARD model (§3). Branch
 # colour runs from blue (P ≈ 0, monochromatic) through magenta to red (P ≈ 1, dichromatic); the
-# scale bar is at lower-left. The coloured strip on the right marks the major primate clades for
-# orientation (Old World monkeys, apes, gibbons, New World monkeys, tarsiers, lemurs, lorises &
-# galagos). Per-species tip labels are omitted for legibility — the analysis runs on the full
-# 224-tip intersection tree (§2).
+# scale bar is at lower-left. A red dot at a tip marks a species **observed / coded** dichromatic —
+# the check on the reconstruction: the painted-red branches should terminate in red-dotted tips,
+# and they do (the posterior tracks the observed states rather than inventing signal). The coloured
+# strip on the right marks the major primate clades for orientation (Old World monkeys, apes,
+# gibbons, New World monkeys, tarsiers, lemurs, lorises & galagos). Per-species tip labels are
+# omitted for legibility — the analysis runs on the full 224-tip intersection tree (§2).
 #
 # Red concentrates in short, terminal patches — the *Trachypithecus* langurs within the Old World
 # monkeys, the *Nomascus*/*Hylobates* gibbons, and *Eulemur* among the lemurs — separated by long
@@ -316,15 +326,30 @@ else:
 # **Figure 4.** For each of the three powered origins, the panel genes with a significant
 # per-origin selection-intensity shift (RELAX, p_BH < 0.05), coloured by module (orange =
 # pigmentation, blue = hormone). Bar length is log₂ K: bars to the right mark *intensified*
-# selection (K > 1), to the left *relaxed* (K < 1). *Trachypithecus* recruits many genes from both
-# modules; *Nomascus* a small pigmentation set (HRAS, POMC, HGF); *Eulemur* none passing
-# threshold. The three sets do not overlap (§6).
+# selection (K > 1), to the left *relaxed* (K < 1). Solid bars are corroborated by the pooled
+# RELAX analysis; hatched bars are origin-specific (significant per-origin but not pooled).
+# *Trachypithecus* recruits many genes from both modules; *Nomascus* a small pigmentation set
+# (HRAS, POMC, HGF); *Eulemur* none passing threshold. The three sets do not overlap (§6).
+#
+# **QC.** Per-origin RELAX can return an extreme boundary K on a single origin's few branches.
+# We cross-check every per-origin hit against the pooled RELAX fit and drop any whose extreme K
+# is null when pooled — **HPS4** is the clear case (per-origin K ≈ 30 in *Trachypithecus* but
+# pooled K = 1.05, p_BH = 1.0), so it is removed as a boundary artifact. **HRAS** is the opposite:
+# its per-origin K is boundary-inflated, but pooled RELAX gives a clean K = 4.3 (p_BH = 4×10⁻⁶),
+# so it is retained and plotted at the pooled value. Bars are drawn at the pooled K wherever a
+# per-origin K is boundary-inflated, so the figure shows de-inflated, corroborated effect sizes.
 
 # %%
+# QC gate (from the cluster's pooled-RELAX evaluation): a per-origin hit with an extreme K
+# (K>20 or K<0.05) that is NULL in the pooled analysis is a boundary artifact and is dropped
+# (e.g. HPS4: per-origin K=30 but pooled K=1.05, p_BH=1.0). Bars are plotted at the pooled K where
+# a pooled estimate exists (so a boundary K is shown at its de-inflated value), and marked by
+# whether the pooled analysis corroborates the hit.
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 _arch = os.path.join(SYN, "figures", "nb15_per_origin_arch.png")
+POOL = load_input("relax_pooled")
 if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
     _labels = {"origin_7": "Trachypithecus\n(origin 7, 8 tips)",
                "origin_8": "Nomascus\n(origin 8, 3 tips)",
@@ -332,9 +357,29 @@ if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
     _sig = PER_ORIGIN[PER_ORIGIN.p_BH < 0.05].copy()
     _gmod = PER_ORIGIN.drop_duplicates("gene").set_index("gene")["module"].to_dict()
     _mc = {"pigmentation": "#c0662e", "hormone": "#3b6ea5"}
+    # pooled lookup for QC + de-inflation
+    _pl = POOL.set_index("gene")[["K", "p_BH"]].to_dict("index") if POOL is not None else {}
+
+    def _keep(row):  # drop boundary-K hits that pooled analysis calls null
+        k = row["K"]; pk = _pl.get(row["gene"], {})
+        boundary = (k > 20) or (k < 0.05)
+        pooled_null = pk.get("p_BH", 0) > 0.05
+        return not (boundary and pooled_null)
+
+    _sig = _sig[_sig.apply(_keep, axis=1)].copy()
+    # plot K: use pooled K when the per-origin K is boundary-inflated and a pooled value exists
+    def _plotK(row):
+        k = row["K"]; pk = _pl.get(row["gene"], {})
+        if (k > 20 or k < 0.05) and "K" in pk and pk["K"] == pk["K"]:
+            return pk["K"]
+        return k
+    _sig["plotK"] = _sig.apply(_plotK, axis=1)
+    _sig["corrob"] = _sig["gene"].map(  # pooled corroborates the intensification/relaxation?
+        lambda g: _pl.get(g, {}).get("p_BH", 1.0) < 0.05)
+
     _origs = [o for o in _labels if o in PER_ORIGIN.origin_id.values]
-    fig, axes = plt.subplots(1, len(_origs), figsize=(4.3 * len(_origs), 5.2),
-                             gridspec_kw={"wspace": 0.55})
+    fig, axes = plt.subplots(1, len(_origs), figsize=(4.5 * len(_origs), 5.4),
+                             gridspec_kw={"wspace": 0.6})
     if len(_origs) == 1:
         axes = [axes]
     for ax, o in zip(axes, _origs):
@@ -343,23 +388,31 @@ if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
             ax.text(0.5, 0.5, "no gene passes\np(BH) < 0.05", ha="center", va="center",
                     transform=ax.transAxes, fontsize=12, color="#7f8c8d", style="italic")
             ax.set_title(_labels[o], fontsize=12, fontweight="bold"); ax.axis("off"); continue
-        s["logK"] = np.log2(s["K"].clip(lower=0.05))
+        s["logK"] = np.log2(s["plotK"].clip(lower=0.05))
         s = s.sort_values(["module", "logK"])
         y = np.arange(len(s))
-        ax.barh(y, s["logK"], color=[_mc[_gmod.get(g, "pigmentation")] for g in s.gene],
-                edgecolor="black", linewidth=0.5, height=0.7)
+        # filled bar = pooled-corroborated; hatched/pale = origin-specific (not corroborated pooled)
+        for yi, (_, r) in zip(y, s.iterrows()):
+            col = _mc[_gmod.get(r.gene, "pigmentation")]
+            ax.barh(yi, r["logK"], color=col if r["corrob"] else "white",
+                    edgecolor=col, linewidth=1.6, height=0.7,
+                    hatch=None if r["corrob"] else "///")
         ax.set_yticks(y); ax.set_yticklabels(s.gene, fontsize=9, fontstyle="italic")
         ax.axvline(0, color="black", lw=0.8)
         ax.set_title(_labels[o], fontsize=12, fontweight="bold")
         ax.set_xlabel("log$_2$ K  (right = intensified, left = relaxed)", fontsize=9)
         ax.spines[["top", "right"]].set_visible(False)
     fig.suptitle("Per-origin selection architecture: which genes shift, in which module",
-                 fontsize=13, fontweight="bold", y=1.02)
+                 fontsize=13, fontweight="bold", y=1.03)
     fig.legend(handles=[Patch(facecolor=_mc["pigmentation"], edgecolor="black", label="pigmentation"),
-                        Patch(facecolor=_mc["hormone"], edgecolor="black", label="hormone")],
-               loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, -0.07), fontsize=10)
+                        Patch(facecolor=_mc["hormone"], edgecolor="black", label="hormone"),
+                        Patch(facecolor="white", edgecolor="#555", hatch="///",
+                              label="not corroborated by pooled RELAX (origin-specific)")],
+               loc="lower center", ncol=3, frameon=False, bbox_to_anchor=(0.5, -0.10), fontsize=9)
     fig.savefig(_arch, dpi=150, bbox_inches="tight")
     plt.show()
+    print("dropped as boundary+pooled-null:",
+          sorted(set(PER_ORIGIN[PER_ORIGIN.p_BH < 0.05].gene) - set(_sig.gene)) or "none")
 else:
     print("Per-origin architecture figure builds when the tables are present.")
 
@@ -423,16 +476,29 @@ else:
 #
 # **What the data show.** POMC shows a significant per-origin RELAX **intensification** in
 # *Nomascus* (origin 8; K = 3.4, p_BH < 0.001 — selection intensified, not relaxed) and episodic
-# diversifying selection (aBSREL, corrected p < 0.05) on **five branches**: both dichromatic
-# *Nomascus* gibbons (*N. concolor*, *N. gabriellae*), *Macaca mulatta*, and two internal nodes
-# within the macaques. The gibbon signal coincides exactly with origin 8 — the interface gene is
-# under selection on the very lineage where that origin's dichromatism arose. This does not prove
-# POMC *causes* the phenotype (aBSREL marks lineage-specific selection, not causation), but it is
-# the kind of interface-gene signal the two-module hypothesis predicts and is a concrete target for
-# follow-up.
+# diversifying selection (aBSREL, corrected p < 0.05) on **five branches**. Figure 5b shows these
+# explicitly, coloured by dichromatism state, because the pattern is mixed and that mix is the
+# point: two of the selected tips — *Nomascus concolor* and *N. gabriellae* — are **dichromatic**
+# and fall exactly on the origin-8 lineage, but a third, *Macaca mulatta*, is **monochromatic**,
+# and the two remaining selected branches are internal nodes within the macaques whose descendants
+# are almost all monochromatic. So POMC is under selection on the origin-8 dichromatic lineage,
+# **but selection on POMC is not confined to dichromatic lineages** — the same conclusion the
+# whole-panel aBSREL scan reached (episodic selection hits dichromatic and monochromatic tips at
+# indistinguishable rates). The honest reading is: POMC is an interface gene that is evolving in
+# several primate lineages, one of which (the *Nomascus* gibbons) is a dichromatism origin. That
+# co-localisation is a concrete follow-up target, not evidence that POMC *causes* the phenotype —
+# aBSREL marks lineage-specific selection, not causation, and the *Macaca* signal shows the two
+# do not track each other one-to-one.
 
 # %% [markdown]
 # ### Figure 5b — POMC selection across the primate order
+#
+# **Figure 5b.** (A) The primate phylogeny with every tip's dichromatism state (red = dichromatic,
+# grey = monochromatic) and the branches under episodic POMC selection starred — red star where
+# that branch is dichromatic, dark star where it is monochromatic. (B) The five POMC-selected
+# branches ranked by aBSREL significance and labelled by state. Two are dichromatic *Nomascus*
+# gibbons, one is monochromatic *Macaca mulatta*, and two are internal macaque nodes — so POMC
+# selection overlaps one dichromatism origin but is not restricted to dichromatic lineages.
 
 # %%
 from IPython.display import Image, display

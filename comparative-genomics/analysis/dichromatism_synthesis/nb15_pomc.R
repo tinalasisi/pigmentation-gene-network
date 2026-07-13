@@ -35,39 +35,70 @@ cat("DEBUG sel rows:", nrow(pom_sel), "tips:", length(sel_tips), "\n")
 # tip colours: dichromatic vs mono; ring marks POMC-selected tips
 dich_col <- ifelse(x[trO$tip.label] == 1, "#c0392b", "#c9ced6")
 
-png(file.path(here, "figures/nb15_pomc_tree.png"), width = 1900, height = 2300, res = 200)
-par(mar = c(4, 1, 4, 12))                       # generous right margin for star labels
-plot(trO, type = "phylogram", show.tip.label = FALSE, edge.color = "#7f8c8d",
-     edge.width = 1.4, no.margin = FALSE, x.lim = c(0, max(nodeHeights(trO)) * 1.35))
+# dichromatism status of each POMC-selected TIP (the point the user flagged: mixed).
+sel_state <- x[sel_tips]                          # 1 = dichromatic, 0 = mono
+# order selected tips: dichromatic first, then by name, for a clean lollipop panel
+sel_df <- data.frame(tip = sel_tips, dich = sel_state[sel_tips], stringsAsFactors = FALSE)
+sel_df <- sel_df[order(-sel_df$dich, sel_df$tip), ]
+
+# TWO-PANEL figure: (left) small phylogram flagging only the selected clade region;
+# (right) an explicit lollipop of the selected branches coloured by dichromatism state.
+png(file.path(here, "figures/nb15_pomc_tree.png"), width = 2200, height = 1500, res = 200)
+par(oma = c(0, 0, 3, 0))
+layout(matrix(c(1, 2), nrow = 1), widths = c(1.5, 1))
+
+## panel 1: whole tree, POMC-selected tips starred, dichromatism dot at every tip
+par(mar = c(4, 1, 4, 9))
+plot(trO, type = "phylogram", show.tip.label = FALSE, edge.color = "#95a5a6",
+     edge.width = 1.1, x.lim = c(0, max(nodeHeights(trO)) * 1.30))
 pp <- get("last_plot.phylo", envir = .PlotPhyloEnv)
 xmax <- max(pp$xx[1:Ntip(trO)])
-# dichromatism status dot at each tip
-for (i in seq_len(Ntip(trO))) {
-  points(pp$xx[i] + xmax*0.01, pp$yy[i], pch = 15, cex = 0.35, col = dich_col[i], xpd = NA)
+for (i in seq_len(Ntip(trO)))
+  points(pp$xx[i] + xmax*0.012, pp$yy[i], pch = 15, cex = 0.32, col = dich_col[i], xpd = NA)
+for (t in sel_tips) {
+  i <- which(trO$tip.label == t)
+  star_col <- if (x[t] == 1) "#c0392b" else "#2c3e50"   # star coloured by the tip's own state
+  points(pp$xx[i] + xmax*0.05, pp$yy[i], pch = 8, cex = 1.3, col = star_col, lwd = 2.2, xpd = NA)
 }
-# POMC-selected tips: purple star + name; stagger labels vertically to avoid overlap
-sel_y <- sapply(sel_tips, function(t) pp$yy[which(trO$tip.label == t)])
-ord   <- order(sel_y)
-sel_tips_o <- sel_tips[ord]; sel_y_o <- sel_y[ord]
-# minimum vertical gap between labels
-gap <- Ntip(trO) * 0.035
-lab_y <- sel_y_o
-for (k in 2:length(lab_y)) if (lab_y[k] - lab_y[k-1] < gap) lab_y[k] <- lab_y[k-1] + gap
-for (k in seq_along(sel_tips_o)) {
-  i <- which(trO$tip.label == sel_tips_o[k])
-  points(pp$xx[i] + xmax*0.04, pp$yy[i], pch = 8, cex = 1.2, col = "#8e44ad", lwd = 2, xpd = NA)
-  segments(pp$xx[i] + xmax*0.05, pp$yy[i], xmax*1.12, lab_y[k], col = "#c39bd3", lwd = 0.8, xpd = NA)
-  text(xmax*1.13, lab_y[k], gsub("_", " ", sel_tips_o[k]), adj = 0, cex = 0.85,
-       font = 3, col = "#8e44ad", xpd = NA)
-}
-legend("bottomleft", inset = c(0.02, 0.02), bty = "n", cex = 0.95,
-       pch = c(15, 15, 8), pt.cex = c(1.1, 1.1, 1.1),
-       col = c("#c0392b", "#c9ced6", "#8e44ad"),
-       legend = c("dichromatic", "monochromatic", "POMC under episodic selection (aBSREL)"))
-title(main = "POMC selection across the primate order",
-      sub = "star = branch with episodic diversifying selection on POMC; dot = dichromatism state",
-      cex.main = 1.1, cex.sub = 0.85)
+legend("bottomleft", inset = c(0, 0.02), bty = "n", cex = 0.8,
+       pch = c(15, 15, 8, 8), pt.cex = c(1, 1, 1.2, 1.2),
+       col = c("#c0392b", "#c9ced6", "#c0392b", "#2c3e50"),
+       legend = c("tip: dichromatic", "tip: monochromatic",
+                  "POMC-selected & dichromatic", "POMC-selected & monochromatic"))
+title(main = "A  POMC episodic selection on the tree", cex.main = 1.0, adj = 0)
+
+## panel 2: explicit lollipop of the 5 selected branches, coloured by dichromatism state
+par(mar = c(4, 9, 4, 2))
+allsel <- rbind(
+  data.frame(branch = sel_df$tip, dich = sel_df$dich, is_tip = TRUE),
+  data.frame(branch = sel_nodes,  dich = NA,           is_tip = FALSE))
+allsel$cp <- pom_sel$acp[match(allsel$branch, pom_sel$branch)]
+allsel$nlp <- -log10(pmax(allsel$cp, 1e-16))
+allsel <- allsel[order(allsel$is_tip, allsel$dich, allsel$nlp), ]
+yy <- seq_len(nrow(allsel))
+lab_col <- ifelse(!allsel$is_tip, "#7f8c8d",
+                  ifelse(allsel$dich == 1, "#c0392b", "#2c3e50"))
+xr <- max(allsel$nlp)
+# state annotation sits INSIDE the panel, so extend the x-limit to hold it
+plot(NA, xlim = c(0, xr*1.75), ylim = c(0.5, nrow(allsel)+0.5),
+     yaxt = "n", xaxt = "n", xlab = "", ylab = "", bty = "n")
+axis(1, at = pretty(c(0, xr)))
+mtext(expression(-log[10]~italic(p)~"(aBSREL, corrected)"), side = 1, line = 2.5, cex = 0.85)
+segments(0, yy, allsel$nlp, yy, col = lab_col, lwd = 2.5)
+points(allsel$nlp, yy, pch = 19, cex = 1.5, col = lab_col)
+labs <- ifelse(allsel$is_tip, gsub("_", " ", allsel$branch),
+               paste0(allsel$branch, " (internal)"))
+axis(2, at = yy, labels = labs, las = 1, cex.axis = 0.85,
+     col.axis = "black", font = 3, tick = FALSE)
+st <- ifelse(!allsel$is_tip, "internal node",
+             ifelse(allsel$dich == 1, "DICHROMATIC", "monochromatic"))
+text(allsel$nlp + xr*0.05, yy, st, adj = 0, cex = 0.78, col = lab_col, font = 2, xpd = NA)
+title(main = "B  Selected branches, by state", cex.main = 1.0, adj = 0)
+
+mtext("POMC across the primate order: episodic selection is not confined to dichromatic lineages",
+      outer = TRUE, line = 0.3, cex = 1.05, font = 2)
 dev.off()
 
-cat("POMC selected tips on analysis tree:", paste(sel_tips, collapse = ", "), "\n")
+cat("POMC selected tips (state):",
+    paste(sprintf("%s=%s", sel_df$tip, ifelse(sel_df$dich==1,"dich","mono")), collapse = ", "), "\n")
 cat("POMC selected internal branches:", paste(sel_nodes, collapse = ", "), "\n")

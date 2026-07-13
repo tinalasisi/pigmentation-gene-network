@@ -141,17 +141,26 @@ clade_cols <- setNames(c("#4e79a7","#f28e2b","#e15759","#59a14f",
                          "#b07aa1","#9c755f","#edc948"), clade_levels)
 
 png(file.path(here, "figures/nb15_densitymap.png"), width = 1700, height = 2300, res = 200)
-# leave room at right for the clade bar + labels; suppress tiny per-species labels and the
-# default (squished) legend — both are redrawn cleanly below.
+# leave room at right for the observed-state dots + clade bar + labels; suppress tiny per-species
+# labels and the default (squished) legend — both are redrawn cleanly below.
 plot(dm, lwd = 3, outline = TRUE, ftype = "off", legend = FALSE,
      mar = c(2.5, 1.0, 2.5, 9.0),
      colors = setNames(c("#3b5ba5", "#c0392b"), c("0", "1")))
 pp <- get("last_plot.phylo", envir = .PlotPhyloEnv)
 xmax <- max(pp$xx[1:Ntip(trO)]); yr <- range(pp$yy[1:Ntip(trO)])
-bx0 <- xmax * 1.02; bx1 <- xmax * 1.05           # clade colour strip
-# one coloured segment per tip
+# observed (coded) state at each tip — the "tell": does the painted posterior actually land on
+# tips that are known to be dichromatic?
+obs <- x[trO$tip.label]
+ox  <- xmax * 1.015                              # observed-state dot column
+bx0 <- xmax * 1.04; bx1 <- xmax * 1.07           # clade colour strip
 for (i in seq_len(Ntip(trO))) {
   yy <- pp$yy[i]
+  # filled red dot only where the species is coded dichromatic; faint tick otherwise
+  if (!is.na(obs[i]) && obs[i] == 1) {
+    points(ox, yy, pch = 19, cex = 0.5, col = "#c0392b", xpd = NA)
+  } else {
+    points(ox, yy, pch = 19, cex = 0.18, col = "#d6dbdf", xpd = NA)
+  }
   rect(bx0, yy - 0.5, bx1, yy + 0.5, col = clade_cols[clade[trO$tip.label[i]]],
        border = NA, xpd = NA)
 }
@@ -166,14 +175,20 @@ for (k in seq_along(runs$lengths)) {
     text(bx1 + xmax * 0.015, ymid, runs$values[k], adj = 0, cex = 0.85, xpd = NA)
   pos <- pos + runs$lengths[k]
 }
-# clean legend: gradient bar bottom-left, clearly labelled
+# clean legend: gradient bar bottom-left, title ABOVE the bar so it doesn't collide with 0/1
 add.color.bar(leg = xmax * 0.35, cols = dm$cols,
-              title = "posterior P(dichromatic)",
-              lims = c(0, 1), digits = 1, prompt = FALSE,
-              x = 0, y = yr[1] - (yr[2]-yr[1]) * 0.04,
+              title = "", lims = c(0, 1), digits = 1, prompt = FALSE,
+              x = 0, y = yr[1] - (yr[2]-yr[1]) * 0.03,
               subtitle = "", lwd = 10, fsize = 0.9)
-title(main = "Sexual dichromatism painted on the primate phylogeny",
-      cex.main = 1.1, line = 0.5)
+text(0, yr[1] + (yr[2]-yr[1]) * 0.005, "branch colour = posterior P(dichromatic)",
+     adj = 0, cex = 0.9, font = 2, xpd = NA)
+# observed-state legend (the tell): red dot = species CODED dichromatic
+points(0, yr[1] - (yr[2]-yr[1]) * 0.075, pch = 19, cex = 0.6, col = "#c0392b", xpd = NA)
+text(xmax * 0.02, yr[1] - (yr[2]-yr[1]) * 0.075,
+     "red dot at tip = species observed / coded dichromatic",
+     adj = 0, cex = 0.85, xpd = NA)
+title(main = "Sexual dichromatism: reconstructed posterior vs. observed tip states",
+      cex.main = 1.05, line = 0.5)
 dev.off()
 
 # --- provenance manifest ---
