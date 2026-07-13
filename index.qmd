@@ -1,20 +1,22 @@
 ---
 title: "The architecture of pigmentation genetics"
 subtitle: "One coupled pigmentation–hormone gene network, pointed at two questions — human association grading, and the evolution of primate sexual dichromatism"
-description: "A model-system project on the genotype→phenotype map for pigmentation: a clade-wide test showing primate sexual dichromatism is polygenic and arose ~15 times independently (unlike birds, where dichromatism maps to genes of major effect — MC1R for melanin in galliforms, BCO2 for carotenoid in finches), and a convergence method grading how context-dependent human pigmentation associations are."
+description: "A model-system project on the genotype→phenotype map for pigmentation: a clade-wide test showing primate sexual dichromatism is polygenic and arose ~15 times independently across a coupled pigmentation–sex-hormone network, and a convergence method grading how context-dependent human pigmentation associations are."
 toc: false
 ---
 
 ::: {.callout-important}
 ## The headline finding
-**Sexual dichromatism** — males and females of a species differing in color — **has no single
-genetic basis in primates.** Where the same trait maps to genes of major effect in birds
-(*MC1R* for melanin in galliforms, [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174);
-*BCO2* for carotenoid in finches, [Gazda et al. 2020](https://doi.org/10.1126/science.aba0803)),
-in primates it **arose ~15 times independently** and is **polygenic in every origin tested**
-(*MC1R* is not the hit). This is the first clade-wide, multi-gene selection test of the genomic
-basis of primate sexual dichromatism. Whether the architecture is shared or heterogeneous across
-origins is currently underpowered to resolve (see the finding page). **→ [Read the finding](dichromatism.qmd)**
+**Sexual dichromatism** — males and females of a species differing in color — **arose ~15 times
+independently across the primate radiation and is polygenic in every origin tested**, behaving like
+a coupled pigmentation–sex-hormone system with several accessible routes rather than a single
+switch (*MC1R* is not the hit). This is the first clade-wide, multi-gene selection test of the
+genomic basis of primate sexual dichromatism. (For contrast, the best-studied bird cases rest on a
+gene of major effect — *MC1R*/melanin in galliforms, [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174);
+*BCO2*/carotenoid in finches, [Gazda et al. 2020](https://doi.org/10.1126/science.aba0803) — a
+useful cross-taxon comparison, not the main result.) Whether the architecture is shared or
+heterogeneous across origins is currently underpowered to resolve (see the finding page).
+**→ [Read the finding](dichromatism.qmd)**
 :::
 
 This project builds **one thing** — a curated, coupled pigmentation gene network (with its
@@ -23,8 +25,7 @@ genetics, the network grades how much to trust a claimed variant→phenotype lin
 independent evidence layers converge. Pointed at *evolution*, the **same network** yields a
 genuine discovery: primate sexual dichromatism is not one gene but a **polygenic, coupled
 pigmentation–hormone trait** — which is why it arose ~15 times independently and is so readily
-lost, rather than sitting on a single gene of major effect as in birds. Same object, same
-one-gene-is-not-enough lesson, two scales.
+lost. Same object, same one-gene-is-not-enough lesson, two scales.
 
 ```{=html}
 <div style="text-align:right;margin:0 0 0.4rem;">

@@ -19,15 +19,17 @@ kernel, no network, no withheld data.
 
 ## The question
 
-Sexual dichromatism — males and females of a species differing in color — in birds often traces to
-a **gene of major effect** for one pigment system in one clade. In galliforms,
-[Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174) showed the trait correlates with dN/dS
-at essentially **one** melanin locus, *MC1R*; in finches, [Gazda et al. 2020, *Science*](https://doi.org/10.1126/science.aba0803)
-showed carotenoid dichromatism is controlled by *BCO2* — different large-effect genes for different
-pigment chemistries, and both hormonally regulated ([Griffith et al. 2026](https://doi.org/10.1093/icb/icag079)).
+*What does a curated pigmentation-gene-network approach reveal when you point it at evolution
+instead of at human association?* We put it to a concrete test: how is **sexual dichromatism** —
+males and females of a species differing in color — built across the primate radiation? Is it one
+gene, or a network?
 
-**Does that hold in primates?** And more generally: *what does a curated pigmentation-gene-network
-approach reveal when you point it at evolution instead of at human association?*
+A cross-taxon reference point makes the question sharp: in the best-studied birds the trait traces
+to a **gene of major effect** for one pigment system in one clade — *MC1R*/melanin in galliforms
+([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)), *BCO2*/carotenoid in finches
+([Gazda et al. 2020, *Science*](https://doi.org/10.1126/science.aba0803)), both hormonally
+regulated ([Griffith et al. 2026](https://doi.org/10.1093/icb/icag079)). **Does anything like a
+single large-effect locus hold in primates?**
 
 ## The finding, in one line
 
