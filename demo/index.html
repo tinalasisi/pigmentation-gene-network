@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pigmentation as a gene network — a walkthrough</title>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#faf8f5; --card:#ffffff; --ink:#201b17; --muted:#6b625a; --line:#e8ded2;
+    --accent:#b26a2e; --accent-soft:#f4e7d8; --hpc:#3a6ea5; --hpc-soft:#e6eff8;
+    --ok:#3d7a4e; --ok-soft:#e6f1e9; --hormone:#8a4b8f; --hormone-soft:#f0e6f1;
+    --radius:16px; --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:Georgia,"Times New Roman",serif;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --bg:#181511;--card:#231e18;--ink:#f1eae0;--muted:#a99f93;--line:#37302a;
+    --accent:#e0964f;--accent-soft:#3a2d1d;--hpc:#7bb0e0;--hpc-soft:#1f2b38;
+    --ok:#7bc48c;--ok-soft:#1e2c22;--hormone:#c78fcb;--hormone-soft:#2e2130;}}
+  :root[data-theme="dark"]{--bg:#181511;--card:#231e18;--ink:#f1eae0;--muted:#a99f93;--line:#37302a;
+    --accent:#e0964f;--accent-soft:#3a2d1d;--hpc:#7bb0e0;--hpc-soft:#1f2b38;--ok:#7bc48c;--ok-soft:#1e2c22;--hormone:#c78fcb;--hormone-soft:#2e2130;}
+  :root[data-theme="light"]{--bg:#faf8f5;--card:#ffffff;--ink:#201b17;--muted:#6b625a;--line:#e8ded2;
+    --accent:#b26a2e;--accent-soft:#f4e7d8;--hpc:#3a6ea5;--hpc-soft:#e6eff8;--ok:#3d7a4e;--ok-soft:#e6f1e9;--hormone:#8a4b8f;--hormone-soft:#f0e6f1;}
+  *{box-sizing:border-box}
+  body{margin:0}
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+  .page{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:940px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  /* hero */
+  .hero{padding:52px 0 40px}
+  .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 12px}
+  .hero h1{font-family:var(--serif);font-size:clamp(30px,5vw,46px);line-height:1.12;margin:0 0 14px;font-weight:700;letter-spacing:-.01em}
+  .hero .lede{font-size:clamp(16px,2.2vw,19px);color:var(--muted);max-width:60ch;margin:0 0 26px}
+  .heroimg{width:100%;border-radius:var(--radius);border:1px solid var(--line);display:block;box-shadow:0 6px 30px rgba(0,0,0,.10)}
+  figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+  figcaption b{color:var(--ink);font-weight:650}
+  /* act structure */
+  .act{padding:34px 0;border-top:1px solid var(--line)}
+  .act .tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin:0 0 8px}
+  .a-net .tag{color:var(--accent)} .a-horm .tag{color:var(--hormone)} .a-pipe .tag{color:var(--hpc)} .a-res .tag{color:var(--ok)}
+  .act h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);line-height:1.2;margin:0 0 12px;font-weight:700}
+  .act p{font-size:16px;margin:0 0 14px;max-width:64ch}
+  .act p .hl{background:var(--accent-soft);padding:1px 5px;border-radius:5px;font-weight:600}
+  /* photo trio */
+  .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 6px}
+  .trio figure{margin:0}
+  .trio img{width:100%;aspect-ratio:1/.86;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+  .trio figcaption{text-align:center}
+  @media (max-width:640px){.trio{grid-template-columns:1fr 1fr}.trio figure:first-child{grid-column:1/-1}}
+  /* link chips */
+  .links{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 2px}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-size:13.5px;font-weight:600;
+    border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 13px;border-radius:22px}
+  .chip:hover{border-color:var(--accent);text-decoration:none}
+  .chip .ar{color:var(--accent)}
+  /* pipeline flow (the infographic, embedded) */
+  .flow{list-style:none;margin:20px 0 0;padding:0}
+  .fstep{display:grid;grid-template-columns:40px 1fr;gap:13px;padding:0 0 14px}
+  .frail{display:flex;flex-direction:column;align-items:center}
+  .fnum{width:32px;height:32px;border-radius:50%;background:var(--hpc);color:#fff;font-weight:700;font-size:14px;
+    display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 0 0 4px var(--hpc-soft)}
+  .fbar{flex:1;width:2px;background:var(--line);margin-top:4px}
+  .fstep:last-child .fbar{display:none}
+  .fcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px}
+  .fcard h3{margin:0 0 2px;font-size:15px;font-weight:680;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+  .fcard p{font-size:13.5px;margin:0;max-width:none}
+  .tool{font-size:10.5px;font-weight:600;color:var(--hpc);background:var(--hpc-soft);padding:2px 7px;border-radius:16px}
+  /* callouts */
+  .callout{display:grid;grid-template-columns:30px 1fr;gap:12px;border-radius:12px;padding:13px 15px;margin:16px 0 0;border:1px solid var(--line)}
+  .callout.warn{background:var(--ok-soft);border-color:transparent}
+  .callout .ci{font-size:19px} .callout p{margin:0;font-size:13.5px;color:var(--muted)} .callout b{color:var(--ink)}
+  /* explore grid */
+  .explore{padding:36px 0 10px;border-top:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:16px}
+  .gcard{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--card);color:var(--ink)}
+  .gcard:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px);transition:.12s}
+  .gcard .gt{font-weight:680;font-size:14.5px;margin:0 0 3px;display:flex;align-items:center;gap:7px}
+  .gcard .gd{font-size:12.5px;color:var(--muted);margin:0}
+  footer{padding:26px 0 46px;color:var(--muted);font-size:12.5px;text-align:center;border-top:1px solid var(--line);margin-top:22px}
+</style>
+<div class="page">
+<div class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">Life Sciences hackathon · built with Claude</p>
+    <h1>Reading pigmentation as a gene network</h1>
+    <p class="lede">From one gibbon's out-of-place light patch to a selection scan across <b>117 primate genomes</b> — a walkthrough of what I built this week.</p>
+    <figure>
+      <img class="heroimg" src="howard.jpg" alt="Howard, a pileated gibbon, with a light patch on his back">
+      <figcaption><b>Howard</b>, a pileated gibbon at the Gibbon Conservation Center, Santa Clarita, CA.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ACT 1 — the hook -->
+  <section class="act">
+    <p class="tag" style="color:var(--muted)">The question that started it</p>
+    <h2>Why does Howard look wrong?</h2>
+    <p>An adult male pileated gibbon should be almost completely <b>black</b> — like Truman. Howard isn't. He keeps a persistent patch of <b>light hair</b> on his back, and still reads a little more like a female of his species, like Tuk, who shares his enclosure.</p>
+    <p>The reason is almost too good: Howard had serious FOMO about the little treats Tuk was getting, and one day he grabbed one before anyone could stop him. Those treats were <span class="hl">hormonal contraceptives</span> — birth control. And his coat changed.</p>
+    <div class="trio">
+      <figure><img src="howard.jpg" alt="Howard with a light patch"><figcaption><b>Howard</b> — light patch, not solid black</figcaption></figure>
+      <figure><img src="truman.jpg" alt="Truman, a typical adult male"><figcaption><b>Truman</b> — a typical adult male</figcaption></figure>
+      <figure><img src="tuk.jpg" alt="Tuk, an adult female"><figcaption><b>Tuk</b> — an adult female</figcaption></figure>
+    </div>
+    <p style="margin-top:20px">Hormones reached in and changed pigmentation. That's the whole reason I study this: pigmentation is a beautiful biological system that does <b>unexpected</b> things — and it talks to <b>other</b> systems. This week I set out to map that.</p>
+  </section>
+
+  <!-- ACT 2 — the network -->
+  <section class="act a-net">
+    <p class="tag">Act 1 · The network</p>
+    <h2>Pigmentation is polygenic — so which genes matter?</h2>
+    <p>Lots of genes drive pigmentation, and picking the ones we should care about is not simple. So I started from a <b>literature-curated melanogenesis pathway</b> — how keratinocytes (skin cells) and melanocytes (pigment cells) signal — and used Claude to query database after database, working <i>backwards</i> from that molecular signaling to build out the genes involved while keeping the pathway's <b>directionality</b>.</p>
+    <p>The result is a <span class="hl">multi-layer network across 5 functional layers</span> — now the first stop for students in my lab to learn which gene interactions actually matter for our research. Claude Code + Claude Science turned it into an immersive, database-linked app.</p>
+    <div class="links">
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/networks.html">Explore the network <span class="ar">→</span></a>
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/02_resolve_network_to_genes.html">NB02 · resolve to genes <span class="ar">→</span></a>
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/07_harmonized_substrate.html">NB07 · harmonized substrate <span class="ar">→</span></a>
+    </div>
+  </section>
+
+  <!-- ACT 3 — hormones -->
+  <section class="act a-horm">
+    <p class="tag">Act 2 · Coupling the hormones</p>
+    <h2>Wiring the sex-hormone axis into pigmentation</h2>
+    <p>Because of Howard, I wanted hormones in the picture. I pulled the sex-hormone gene set from <span class="hl">KEGG</span> — steroid-hormone biosynthesis and GnRH signaling — and used <span class="hl">STRING</span> to draw how those hormone genes wire into the pigmentation network. The result is a <b>coupled network</b>: a concrete map of how sex hormones are known to touch pigmentation genes through documented pathways.</p>
+    <div class="links">
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/13_sex_hormone_layer.html">NB13 · sex-hormone layer <span class="ar">→</span></a>
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/14_hormone_pigment_interface.html">NB14 · the coupled panel <span class="ar">→</span></a>
+    </div>
+  </section>
+
+  <!-- ACT 4 — the pipeline (infographic embedded) -->
+  <section class="act a-pipe">
+    <p class="tag">Act 3 · The evolution test</p>
+    <h2>Does any of this show up across evolution?</h2>
+    <p>To find out, I built a <b>phylogenetic bioinformatics pipeline</b> and ran it on the cluster. These 7 steps run for <b>all 110 genes</b> (pigmentation + hormone), each across <b>117 primate species</b>:</p>
+    <ol class="flow">
+      <li class="fstep"><div class="frail"><div class="fnum">1</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>🧬 Download the genomes <span class="tool">NCBI</span></h3><p>The full DNA of 117 primate species (~700 GB) — each genome ~2.6–3 billion letters.</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">2</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>✂️ Find &amp; cut out each gene <span class="tool">miniprot</span></h3><p>Locate each gene inside every genome and extract its DNA — matching the human protein where there's no gene map.</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">3</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>📊 Line the copies up <span class="tool">MAFFT</span></h3><p>Stack all 117 species' versions of a gene so matching positions align.</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">4</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>🌳 Bring in the family tree <span class="tool">phylogeny</span></h3><p>Use the primate tree so the math accounts for shared ancestry — close cousins resemble each other for free.</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">5</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>🔬 Test for selection <span class="tool">RELAX</span><span class="tool">aBSREL</span></h3><p>For each gene, ask whether natural selection is intensified in dichromatic species, and on which lineages.</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">6</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>🔀 Compare the independent origins <span class="tool">per-origin</span></h3><p>Dichromatism arose ~14 times — did evolution reuse the same genes, or different ones?</p></div></li>
+      <li class="fstep"><div class="frail"><div class="fnum">7</div><div class="fbar"></div></div>
+        <div class="fcard"><h3>📋 Collect &amp; label results</h3><p>Every gene's selection stats, tagged by functional group, into readable tables.</p></div></li>
+    </ol>
+    <div class="callout warn"><div class="ci">✓</div><div><p>It all runs <b>in parallel</b> on Michigan's Great Lakes supercomputer — total time equals the single slowest gene, not the sum. And every step is <b>checked</b>: a job saying "done" isn't the same as a job being right.</p></div></div>
+  </section>
+
+  <!-- ACT 5 — the result -->
+  <section class="act a-res">
+    <p class="tag">Act 3 · What came out</p>
+    <h2>A labile trait — and one gene that echoes Howard</h2>
+    <p>Sexual dichromatism turns out to be evolutionarily <b>labile</b>: it has ~14 independent origins across the primates and is <b>lost far more readily than it's gained</b>. It's a polygenic trait whose architecture is hard to pin down with the number of dichromatic lineages we have.</p>
+    <p>But the single gene that rises to the top of the cross-species scan is <span class="hl">AKR1C4</span> — a <b>steroid-hormone-metabolism</b> gene. It's <b>preliminary</b> (24 dichromatic species; a suggestive, not established, signal). Yet if it holds, it's a straight line back to Howard: the exact place where <b>hormones and pigmentation meet</b>.</p>
+    <div class="links">
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/15_dichromatism_synthesis.html">NB15 · dichromatism synthesis <span class="ar">→</span></a>
+      <a class="chip" href="https://github.com/tinalasisi/pigmentation-gene-network/blob/main/notebooks/16_cross_species_gwas.ipynb">NB16 · cross-species GWAS <span class="ar">→</span></a>
+      <a class="chip" href="https://tinalasisi.github.io/pigmentation-gene-network/dichromatism.html">Dichromatism overview <span class="ar">→</span></a>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="explore">
+    <p class="tag" style="color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-weight:700;font-size:12px">Explore everything</p>
+    <div class="grid">
+      <a class="gcard" href="https://tinalasisi.github.io/pigmentation-gene-network/"><p class="gt">🏠 The full site</p><p class="gd">Overview, methods, and all 16 notebooks.</p></a>
+      <a class="gcard" href="https://tinalasisi.github.io/pigmentation-gene-network/networks.html"><p class="gt">🕸️ The gene network</p><p class="gd">The 5-layer pigmentation network + hormone coupling.</p></a>
+      <a class="gcard" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/14_hormone_pigment_interface.html"><p class="gt">🧬 Coupled panel (NB14)</p><p class="gd">The 110-gene two-module panel, tested for selection.</p></a>
+      <a class="gcard" href="https://tinalasisi.github.io/pigmentation-gene-network/notebooks/15_dichromatism_synthesis.html"><p class="gt">🐒 Dichromatism (NB15)</p><p class="gd">A labile, two-module trait across the primates.</p></a>
+      <a class="gcard" href="https://github.com/tinalasisi/pigmentation-gene-network/blob/main/notebooks/16_cross_species_gwas.ipynb"><p class="gt">📈 Cross-species GWAS (NB16)</p><p class="gd">Phylogeny-controlled association — the AKR1C4 hit.</p></a>
+      <a class="gcard" href="https://github.com/tinalasisi/pigmentation-gene-network"><p class="gt">💻 The code</p><p class="gd">Everything on GitHub — pipeline, data provenance, notebooks.</p></a>
+    </div>
+  </section>
+
+  <footer>
+    Tina Lasisi · Pigmentation gene-network project · Built with Claude · Life Sciences hackathon<br>
+    Howard, Tuk &amp; Truman photographed at the Gibbon Conservation Center, Santa Clarita, CA.
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
