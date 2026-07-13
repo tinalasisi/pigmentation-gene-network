@@ -44,14 +44,18 @@ for yy,r in rows:
     elif b>=0.99: ax.text(b*0.88,yy,lbl,va="center",ha="right",fontsize=5.4,color="white",zorder=5)
     else: ax.text(b+(0.035 if b>=0 else -0.035),yy,lbl,va="center",ha="left" if b>=0 else "right",fontsize=5.4)
 ax.axvline(0,color="#444",lw=1,zorder=2)
-for yy,f in hd: ax.text(-1.40,yy,f,fontweight="bold",fontsize=7,va="center")
+for yy,f in hd: ax.text(-1.52,yy,f,fontweight="bold",fontsize=7,va="center")
+import textwrap as _tw
 for yy,(nm,n,oid) in zip(yt,yl):
-    if n>1:
-        spp=OA[OA.origin_id==oid].species.tolist(); genera=set(s.split("_")[0] for s in spp)
-        lab=f"all {list(genera)[0]} ({int(n)} spp)" if len(genera)==1 else nm+f" +{int(n)-1}"
-    else: lab=nm
-    ax.text(-1.40,yy,f"   {lab}",fontstyle="italic",fontsize=6,va="center")
-ax.set_ylim(y,-1);ax.set_xlim(-1.48,1.42);ax.set_yticks([])
+    spp=sorted(OA[OA.origin_id==oid].species.tolist())
+    if n==1: lab, fs = spp[0].replace("_"," "), 6.0
+    else:
+        g=spp[0].split("_")[0]; epis=[s.split("_")[1] for s in spp]
+        full=f"{g} "+", ".join(epis)
+        if len(full)<=34: lab, fs = full, 5.6
+        else: lab, fs = g+"\n"+_tw.fill(", ".join(epis),width=42), 4.8
+    ax.text(-1.52,yy,f"   {lab}",fontstyle="italic",fontsize=fs,va="center")
+ax.set_ylim(y,-1);ax.set_xlim(-1.60,1.42);ax.set_yticks([])
 for s in ["left","right","top"]: ax.spines[s].set_visible(False)
 ax.set_xlabel("<- hormone module          pigmentation module ->",labelpad=6)
 ax.set_xticks([-1,-.5,0,.5,1]);ax.set_xticklabels(["-1","","0","","+1"])

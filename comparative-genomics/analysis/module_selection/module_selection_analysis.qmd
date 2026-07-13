@@ -151,6 +151,45 @@ absorbing state (zero exit rate). Dichromatism shows the mirror-image dynamic: a
 reconstruction + directional rate asymmetry) on our own trait; we do not use
 their mating-system data, which is unavailable.
 
+## 4. Sister-pair contrast (where the trait difference sits)
+
+For each dichromatic taxon, find its **closest monochromatic relative** by
+patristic distance, then list the genes under episodic selection (aBSREL) in the
+dichromatic tip that its sister lacks — candidate loci for the trait difference.
+
+```{r sister-pairs}
+gtips <- unique(BR$branch[BR$is_tip]); trg <- keep.tip(tr, intersect(tr$tip.label, gtips))
+dich <- COD %>% mutate(species=gsub(" ","_",species)) %>% filter(dichromatic==1) %>% pull(species)
+dich_g <- intersect(trg$tip.label, dich); mono_g <- setdiff(trg$tip.label, dich)
+D <- cophenetic(trg)
+pairs <- lapply(dich_g, function(d){
+  dd <- D[d, mono_g]; data.frame(dich=d, sister_mono=names(which.min(dd)), patristic=min(dd))
+}) %>% bind_rows() %>% arrange(patristic)
+gene_set_of <- function(sp) BR %>% filter(branch==sp, selected_flag==TRUE, is_tip==TRUE) %>%
+  select(gene, set) %>% deframe()
+contrast <- lapply(seq_len(nrow(pairs)), function(i){
+  d<-pairs$dich[i]; m<-pairs$sister_mono[i]; gd<-gene_set_of(d); gm<-gene_set_of(m)
+  only_d <- setdiff(names(gd), names(gm))
+  data.frame(dich=d, sister_mono=m, patristic=round(pairs$patristic[i],2),
+    dich_only_pig=paste(sort(only_d[gd[only_d]=="pigmentation"]),collapse=","),
+    dich_only_hor=paste(sort(only_d[gd[only_d]=="hormone"]),collapse=","))
+}) %>% bind_rows()
+knitr::kable(contrast, caption="Genes selected in dichromatic tip but not its closest monochromatic sister")
+write_csv(contrast, "sister_pair_contrast.csv"); write_csv(pairs, "sister_pairs.csv")
+```
+
+**KITLG** recurs on the pigmentation side across independent lineages (*Hylobates*,
+*Trachypithecus* ×4, *Colobus*, *Erythrocebus*, *Alouatta*) — a candidate repeated
+axis. *Trachypithecus francoisi* shows the richest differential (14 genes across
+both modules). Two pairs (*Macaca arctoides*, *Eulemur flavifrons*) show no
+differential genes — dichromatism there is not explained by selection at these
+loci. Figures: `fig_sister_pair_contrast.png`, `fig_sister_network_diff.png`
+(the latter maps the difference onto the STRING coupled network per pair; built
+in `figures.py` / from `data/string_diff_edges.tsv`).
+
+**Caveat:** aBSREL detects episodic selection at tips; a between-sister
+difference marks lineage-specific selection, not proven causation of the phenotype.
+
 ## Session info
 
 ```{r sessioninfo}

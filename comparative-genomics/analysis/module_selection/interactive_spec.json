@@ -1,0 +1,3412 @@
+{
+ "meta": {
+  "title": "Primate hair dichromatism \u2014 module selection (interactive spec)",
+  "description": "Data decomposition of the module-selection figures for interactive rendering. Each figure block carries the data + encoding so another agent can render HTML/D3/plotly and embed primate photos. static_figure points to the code-generated PNG in the repo.",
+  "data_provenance": "HPC commit 4c07317 (full-panel aBSREL branch_rates + per-origin RELAX K) + own ASR origins + STRING v12 human edges (score>=400)",
+  "colors": {
+   "pigmentation": "#C97B0A",
+   "hormone": "#2E6E9E",
+   "dichromatic": "#B22222",
+   "neutral": "#e8e8e8"
+  },
+  "caveat": "aBSREL episodic selection at tips; a gene 'difference' marks lineage-specific selection, NOT proven causation of the phenotype."
+ },
+ "figures": {
+  "module_balance": {
+   "static_figure": "comparative-genomics/analysis/module_selection/fig_module_balance.png",
+   "chart_type": "diverging_bar",
+   "x": "balance",
+   "x_range": [
+    -1,
+    1
+   ],
+   "x_label": "< hormone module   |   pigmentation module >",
+   "group_by": "family",
+   "family_order": [
+    "hylobatidae",
+    "cercopithecidae",
+    "cebidae",
+    "lemuridae"
+   ],
+   "photo_anchor": "species",
+   "rows": [
+    {
+     "origin_id": "origin_10",
+     "family": "hylobatidae",
+     "species": [
+      "Hylobates_pileatus"
+     ],
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_selected": 6,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_8",
+     "family": "hylobatidae",
+     "species": [
+      "Nomascus_concolor",
+      "Nomascus_gabriellae",
+      "Nomascus_leucogenys"
+     ],
+     "n_pig": 7,
+     "n_hor": 5,
+     "balance": 0.1667,
+     "n_selected": 12,
+     "powered": true
+    },
+    {
+     "origin_id": "origin_5",
+     "family": "cercopithecidae",
+     "species": [
+      "Colobus_guereza"
+     ],
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_selected": 4,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_7",
+     "family": "cercopithecidae",
+     "species": [
+      "Trachypithecus_auratus",
+      "Trachypithecus_cristatus",
+      "Trachypithecus_francoisi",
+      "Trachypithecus_geei",
+      "Trachypithecus_johnii",
+      "Trachypithecus_obscurus",
+      "Trachypithecus_phayrei",
+      "Trachypithecus_pileatus"
+     ],
+     "n_pig": 8,
+     "n_hor": 18,
+     "balance": -0.3846,
+     "n_selected": 26,
+     "powered": true
+    },
+    {
+     "origin_id": "origin_1",
+     "family": "cercopithecidae",
+     "species": [
+      "Erythrocebus_patas"
+     ],
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_selected": 3,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_2",
+     "family": "cercopithecidae",
+     "species": [
+      "Cercopithecus_hamlyni"
+     ],
+     "n_pig": 4,
+     "n_hor": 2,
+     "balance": 0.3333,
+     "n_selected": 6,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_6",
+     "family": "cercopithecidae",
+     "species": [
+      "Colobus_angolensis"
+     ],
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_selected": 3,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_11",
+     "family": "cebidae",
+     "species": [
+      "Alouatta_caraya"
+     ],
+     "n_pig": 2,
+     "n_hor": 6,
+     "balance": -0.5,
+     "n_selected": 8,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_12",
+     "family": "cebidae",
+     "species": [
+      "Pithecia_pithecia"
+     ],
+     "n_pig": 2,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_selected": 2,
+     "powered": false
+    },
+    {
+     "origin_id": "origin_14",
+     "family": "lemuridae",
+     "species": [
+      "Eulemur_flavifrons",
+      "Eulemur_macaco"
+     ],
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_selected": 1,
+     "powered": true
+    },
+    {
+     "origin_id": "origin_13",
+     "family": "lemuridae",
+     "species": [
+      "Eulemur_mongoz"
+     ],
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_selected": 2,
+     "powered": false
+    }
+   ]
+  },
+  "per_lineage_genes": {
+   "static_figure": "comparative-genomics/analysis/module_selection/fig_per_lineage_genes.png",
+   "chart_type": "dot_matrix",
+   "rows": "origin",
+   "cols": "gene",
+   "encoding": {
+    "color": "module",
+    "ring": "relax_confirmed"
+   },
+   "photo_anchor": "species",
+   "data": [
+    {
+     "origin_id": "origin_11",
+     "species": [
+      "Alouatta_caraya"
+     ],
+     "family": "cebidae",
+     "genes": [
+      {
+       "gene": "AKR1C1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "CYP11B1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "CYP11B2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "CYP7B1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "STS",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "TYR",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_12",
+     "species": [
+      "Pithecia_pithecia"
+     ],
+     "family": "cebidae",
+     "genes": [
+      {
+       "gene": "SLC24A4",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SLC24A5",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_5",
+     "species": [
+      "Colobus_guereza"
+     ],
+     "family": "cercopithecidae",
+     "genes": [
+      {
+       "gene": "AKR1C8",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "GNRH1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_7",
+     "species": [
+      "Trachypithecus_auratus",
+      "Trachypithecus_cristatus",
+      "Trachypithecus_francoisi",
+      "Trachypithecus_geei",
+      "Trachypithecus_johnii",
+      "Trachypithecus_obscurus",
+      "Trachypithecus_phayrei",
+      "Trachypithecus_pileatus"
+     ],
+     "family": "cercopithecidae",
+     "genes": [
+      {
+       "gene": "AKR1C8",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "CGA",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "CYP7B1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "EDN3",
+       "module": "pigmentation",
+       "relax_K": 1.41
+      },
+      {
+       "gene": "EDNRB",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "ESR1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "FSHR",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "GNRH1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "HSD17B1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "HSD17B2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "HSD17B3",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "HSD17B7",
+       "module": "hormone",
+       "relax_K": 1.96
+      },
+      {
+       "gene": "KISS1R",
+       "module": "hormone",
+       "relax_K": 15.06
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "NCOA2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "NCOA3",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "NCOR2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "PAX3",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "PMEL",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": 1.32
+      },
+      {
+       "gene": "SLC24A5",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SRD5A1",
+       "module": "hormone",
+       "relax_K": 7.29
+      },
+      {
+       "gene": "SRD5A3",
+       "module": "hormone",
+       "relax_K": 2.31
+      },
+      {
+       "gene": "STS",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "TFAP2A",
+       "module": "pigmentation",
+       "relax_K": 5.07
+      },
+      {
+       "gene": "TYR",
+       "module": "pigmentation",
+       "relax_K": 4.03
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_1",
+     "species": [
+      "Erythrocebus_patas"
+     ],
+     "family": "cercopithecidae",
+     "genes": [
+      {
+       "gene": "HSD17B3",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_2",
+     "species": [
+      "Cercopithecus_hamlyni"
+     ],
+     "family": "cercopithecidae",
+     "genes": [
+      {
+       "gene": "EDNRB",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "ESR1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "MFSD12",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "PAX3",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "SOX10",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_6",
+     "species": [
+      "Colobus_angolensis"
+     ],
+     "family": "cercopithecidae",
+     "genes": [
+      {
+       "gene": "CGA",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "EDN3",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "TFAP2A",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_10",
+     "species": [
+      "Hylobates_pileatus"
+     ],
+     "family": "hylobatidae",
+     "genes": [
+      {
+       "gene": "AKR1C4",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "AKR1C8",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "STS",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "TFAP2A",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_8",
+     "species": [
+      "Nomascus_concolor",
+      "Nomascus_gabriellae",
+      "Nomascus_leucogenys"
+     ],
+     "family": "hylobatidae",
+     "genes": [
+      {
+       "gene": "CYP7B1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "EDN3",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "ESR1",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "ESR2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "FSHR",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "KITLG",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "NCOA3",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "POMC",
+       "module": "pigmentation",
+       "relax_K": 3.39
+      },
+      {
+       "gene": "SLC24A4",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SLC24A5",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "SOX10",
+       "module": "pigmentation",
+       "relax_K": null
+      },
+      {
+       "gene": "TFAP2A",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_14",
+     "species": [
+      "Eulemur_flavifrons",
+      "Eulemur_macaco"
+     ],
+     "family": "lemuridae",
+     "genes": [
+      {
+       "gene": "SCARB1",
+       "module": "hormone",
+       "relax_K": null
+      }
+     ]
+    },
+    {
+     "origin_id": "origin_13",
+     "species": [
+      "Eulemur_mongoz"
+     ],
+     "family": "lemuridae",
+     "genes": [
+      {
+       "gene": "ESR2",
+       "module": "hormone",
+       "relax_K": null
+      },
+      {
+       "gene": "IRF4",
+       "module": "pigmentation",
+       "relax_K": null
+      }
+     ]
+    }
+   ]
+  },
+  "circular_tree": {
+   "static_figure": "comparative-genomics/analysis/module_selection/fig_circular_tree_balance.png",
+   "chart_type": "radial_tree",
+   "newick": "(((((Nycticebus_coucang:4.003210169,(Nycticebus_pygmaeus:2.001604913,Nycticebus_bengalensis:2.001604913):2.001604913):9.736859,(Loris_tardigradus:6.870035785,Loris_lydekkerianus:6.870035785):6.870035785):7.738421324,(((((Galago_matschiei:3.010450919,(Galago_moholi:0.8285722688,(Galago_senegalensis:0.4955050358,Galago_gallarum:0.4955050358):0.3330671988):2.18187865):5.042996039,(((Otolemur_garnettii:2.429437329,Otolemur_crassicaudatus:2.429437329):2.830482937,Sciurocheirus_alleni:5.259920335):1.050926045,Galagoides_zanzibaricus:6.310846311):1.742600647):1.726002815,(Galagoides_thomasi:4.8897245445,Galagoides_demidoff:4.8897245445):4.8897245445):3.327607926,(Euoticus_pallidus:2.974642284,Euoticus_elegantulus:2.974642284):10.13241747):5.378428417,(Perodicticus_potto:12.46048092,(Arctocebus_calabarensis:5.826897578,Arctocebus_aureus:5.826897578):6.633583345):6.025004164):2.993007462):24.98210255,(Daubentonia_madagascariensis:38.21621549,((Indri_indri:10.95198814,(((Propithecus_tattersalli:1.988298746,Propithecus_verreauxi:1.988298745):1.987491854,(Propithecus_diadema:1.9878953,(Propithecus_coquereli:0.99394765,(Propithecus_deckenii:0.496973825,(Propithecus_edwardsi:0.2484869125,Propithecus_perrieri:0.2484869125):0.2484869125):0.496973825):0.99394765):1.9878953):5.908028901,(Avahi_laniger:4.9419092365,Avahi_peyrierasi:4.9419092365):4.9419092365):1.068170693):10.87048285,((((Lemur_catta:4.894917408,(Prolemur_simus:4.611696459,(Hapalemur_griseus:3.469071209,(Hapalemur_aureus:1.7345355035,(Hapalemur_alaotrensis:0.86726775175,(Hapalemur_meridionalis:0.433633875875,Hapalemur_occidentalis:0.433633875875):0.433633875875):0.86726775175):1.7345355035):1.142624766):0.2832226974):4.185535069,((Eulemur_flavifrons:1.288806826,(Eulemur_macaco:0.644403413,(Eulemur_albifrons:0.3222017065,(Eulemur_rufifrons:0.16110085325,(Eulemur_rufus:0.080550426625,Eulemur_sanfordi:0.080550426625):0.080550426625):0.16110085325):0.3222017065):0.644403413):2.701341917,(Eulemur_coronatus:3.925595371,((Eulemur_rubriventer:1.268989654,Eulemur_mongoz:1.268989654):1.230995488,Eulemur_fulvus:2.49998528):1.425610229):0.06455340548):5.090305791):2.566621898,(Varecia_variegata:5.823538905,Varecia_rubra:5.823538905):5.823538905):8.26638026,((Phaner_furcifer:16.96532316,((((Lepilemur_edwardsi:2.549956436,(Lepilemur_septentrionalis:2.25178239,Lepilemur_dorsalis:2.251782733):0.2981738746):0.3573024263,(Lepilemur_microdon:1.453629311,Lepilemur_ankaranensis:1.453629311):1.453629311):1.104919902,(Lepilemur_ruficaudatus:2.611200421,Lepilemur_leucopus:2.611200421):1.400978103):2.627400292,Lepilemur_mustelinus:6.639579845):10.32574578):0.4044078843,((Cheirogaleus_medius:4.509686735,Cheirogaleus_major:4.509687763):8.262648815,(((Microcebus_rufus:1.796383527,(Microcebus_myoxinus:0.898191729,(Microcebus_griseorufus:0.4490958645,(Microcebus_jonahi:0.22454793225,(Microcebus_lehilahytsara:0.112273966125,(Microcebus_ravelobensis:0.0561369830625,Microcebus_tavaratra:0.0561369830625):0.0561369830625):0.112273966125):0.22454793225):0.4490958645):0.898191729):4.0624759,Microcebus_murinus:5.858858911):5.212843943,Allocebus_trichotis:11.07170217):1.700632352):4.597395902):2.543723868):1.909013264):16.39375102):8.244373787):19.71354368,((((Tarsius_bancanus:6.29334184,(Tarsius_syrichta:3.14667092,(Tarsius_lariang:1.57333546,Tarsius_wallacei:1.57333546):1.57333546):3.14667092):6.131521374,Tarsius_tarsier:12.42486321):0.831669923,(Tarsius_dentatus:7.319902197,Tarsius_pumilus:7.319903808):5.936630014):49.61463191,((((((((Callicebus_cupreus:1.239357132,(Callicebus_moloch:0.8814804211,Callicebus_hoffmannsi:0.8814807296):0.3578765738):1.629895876,(Callicebus_donacophilus:2.384183882,Callicebus_caligatus:2.384183882):0.4850692628):3.223721853,Callicebus_personatus:6.092974861):2.037645607,(Callicebus_dubius:6.950777715,(Callicebus_brunneus:1.468526638,Callicebus_cinerascens:1.46852657):5.482249773):1.179843576):0.9486976309,Callicebus_torquatus:9.07931995):7.525342343,((((Pithecia_aequatorialis:0.6260278144,(Pithecia_albicans:0.3130139586,(Pithecia_chrysocephala:0.1565069793,(Pithecia_hirsuta:0.07825348965,(Pithecia_mittermeieri:0.039126744825,(Pithecia_pissinatti:0.0195633724125,Pithecia_vanzolinii:0.0195633724125):0.0195633724125):0.039126744825):0.07825348965):0.1565069793):0.3130139586):2.322211192,(Pithecia_monachus:0.443868783,Pithecia_irrorata:0.443868783):2.504370258):1.337264187,Pithecia_pithecia:4.285504359):5.577981512,(((Chiropotes_albinasus:0.7177806594,Chiropotes_satanas:0.7177806594):1.4810883,(Chiropotes_chiropotes:1.099434308,Chiropotes_sagulatus:1.099434308):1.099434308):3.118344712,(Cacajao_melanocephalus:2.269743094,(Cacajao_calvus:1.1348713755,(Cacajao_ayresi:0.56743568775,Cacajao_hosomi:0.56743568775):0.56743568775):1.1348713755):3.047470577):4.546271069):6.741176868):1.374000027,((((((((Callithrix_aurita:0.8106516694,Callithrix_kuhlii:0.8106516694):3.38543163,((((Callithrix_flaviceps:0.4697256429,(Mico_mauesi:0.23486277,(Mico_argentatus:0.117431385,Mico_humilis:0.117431385):0.117431385):0.23486277):0.2427867421,Mico_humeralifer:0.7125122136):1.258135285,Callithrix_penicillata:1.970647567):1.057238239,Mico_nigriceps:3.027885807):1.168197808):1.570893876,(Callithrix_jacchus:0.5139779821,Callithrix_geoffroyi:0.5139781878):5.25299896):2.60591518,Callimico_goeldii:8.372893699):1.326686505,(((Leontopithecus_chrysomelas:0.07463666908,Leontopithecus_caissara:0.07463666908):0.0941494908,Leontopithecus_rosalia:0.1687861599):0.5174844293,Leontopithecus_chrysopygus:0.6862707606):9.013306359):1.14828706,(((((Saguinus_mystax:0.7345646182,Saguinus_labiatus:0.7345646182):0.7438983708,Saguinus_inustus:1.478462989):1.425764478,Saguinus_imperator:2.904227467):2.622861613,((Saguinus_midas:2.272570642,(Saguinus_oedipus:0.6061208018,Saguinus_geoffroyi:0.6061208018):1.66644984):0.8116587412,(Saguinus_bicolor:1.327933519,Saguinus_leucopus:1.327933862):1.756295521):2.44286004):0.6792833002,(Leontocebus_nigricollis:1.783329812,(Leontocebus_tripartitus:1.530876209,Leontocebus_fuscicollis:1.530876415):0.2524533974):4.423043596):4.641493513):2.986789187,((((((Saimiri_vanzolinii:0.6247663695,Saimiri_sciureus:0.6247663695):0.3310662863,(Saimiri_ustus:0.4779162422,(Saimiri_cassiquiarensis:0.2389581211,Saimiri_macrodon:0.2389581211):0.2389581211):0.4779162422):0.1536074489,Saimiri_oerstedii:1.10944007):0.2163229997,Saimiri_boliviensis:1.32576307):11.45988413,(Sapajus_apella:4.447017596,((Cebus_olivaceus:1.329788958,(Cebus_albifrons:0.6648943075,(Cebus_imitator:0.33244715375,Cebus_unicolor:0.33244715375):0.33244715375):0.6648943075):0.4014919007,Cebus_capucinus:1.731280859):2.715736737):8.338629949):0.595345682,(Aotus_nigriceps:2.385471241,(Aotus_trivirgatus:1.192735689,(Aotus_azarai:0.5963678445,(Aotus_griseimembra:0.29818392225,(Aotus_nancymaae:0.149091961125,Aotus_vociferans:0.149091961125):0.149091961125):0.29818392225):0.5963678445):1.192735689):10.99552051):0.4536635674):2.015347776,((((Ateles_fusciceps:0.9484703713,(Ateles_geoffroyi:0.47423518565,Ateles_hybridus:0.47423518565):0.47423518565):1.631207811,(Ateles_paniscus:2.044139472,(Ateles_chamek:1.067300731,(Ateles_marginatus:0.7831741712,Ateles_belzebuth:0.7831741712):0.2841265598):0.9768390836):0.5355387108):4.376385117,((Lagothrix_lagotricha:1.178029373,Oreonax_flavicauda:1.178029613):1.745489552,(Brachyteles_arachnoides:1.461759582,Brachyteles_hypoxanthus:1.461759582):1.461759582):4.032544478):3.625753281,(((Alouatta_palliata:1.30111929,(Alouatta_pigra:0.650559645,(Alouatta_discolor:0.3252798225,(Alouatta_juara:0.16263991125,Alouatta_macconnelli:0.16263991125):0.16263991125):0.3252798225):0.650559645):2.03461068,((Alouatta_guariba:2.726460783,Alouatta_belzebul:2.726460783):0.417102542,Alouatta_caraya:3.143563192):0.1921668503):1.654672619,(Alouatta_sara:2.117378066,Alouatta_seniculus:2.117378066):2.873025037):5.591414849):5.268185247):2.128659121):16.74005621,((((Symphalangus_syndactylus:4.290160163,(Hylobates_pileatus:2.344071712,(Hylobates_lar:1.751818542,((Hylobates_muelleri:1.451750564,(Hylobates_moloch:0.8904845617,Hylobates_klossii:0.8904845617):0.5612660019):0.1002785408,Hylobates_agilis:1.552028933):0.1997895406):0.5922531694):1.946086738):0.8936740794,(((Nomascus_gabriellae:1.390161507,(Nomascus_leucogenys:0.695080925,(Nomascus_annamensis:0.3475404625,Nomascus_siki:0.3475404625):0.3475404625):0.695080925):0.2893316608,Nomascus_concolor:1.679493442):3.057928287,(Hoolock_hoolock:2.3687115505,Hoolock_leuconedys:2.3687115505):2.3687115505):0.4464111423):6.906185137,((Pongo_pygmaeus:2.395535206,Pongo_abelii:2.395535206):6.583983859,((Pan_troglodytes:1.37137026,Pan_paniscus:1.37137026):3.885565467,(Gorilla_gorilla:1.097321617,Gorilla_beringei:1.097321617):4.159614453):3.722583681):3.110499629):10.24616723,((((((((Trachypithecus_cristatus:1.713596774,(Trachypithecus_auratus:0.856798421,(Trachypithecus_germaini:0.4283992105,(Trachypithecus_hatinhensis:0.21419960525,(Trachypithecus_laotum:0.107099802625,(Trachypithecus_poliocephalus:0.0535499013125,Trachypithecus_shortridgei:0.0535499013125):0.0535499013125):0.107099802625):0.21419960525):0.4283992105):0.856798421):0.6267856548,((Trachypithecus_phayrei:1.272157269,Trachypithecus_obscurus:1.272157577):0.9330252901,(Trachypithecus_francoisi:2.150850349,Trachypithecus_delacouri:2.150850213):0.05433248361):0.135199801):0.1528398051,Trachypithecus_pileatus:2.493222097):3.682564745,(((Trachypithecus_johnii:1.477890555,(Semnopithecus_entellus:0.738945449,(Semnopithecus_hypoleucos:0.3694727245,(Semnopithecus_priam:0.18473636225,Semnopithecus_schistaceus:0.18473636225):0.18473636225):0.3694727245):0.738945449):1.168899228,Trachypithecus_vetulus:2.646790023):0.8513804914,Trachypithecus_geei:3.498169144):2.677616087):1.487553714,(Presbytis_thomasi:5.234579624,(Presbytis_frontata:5.005137612,((Presbytis_potenziani:0.1862257437,Presbytis_hosei:0.1862257437):1.414929372,(Presbytis_rubicunda:1.551166999,((Presbytis_femoralis:0.1383539102,Presbytis_comata:0.1383539102):0.5752282401,Presbytis_melalophos:0.7135820132):0.8375848416):0.04998798681):3.403981194):0.2294426637):2.428761035):0.5877953856,((((Rhinopithecus_roxellana:1.697407186,Rhinopithecus_brelichi:1.697407186):0.4969028706,Rhinopithecus_avunculus:2.194310057):0.844989116,(Rhinopithecus_bieti:1.5196495865,Rhinopithecus_strykeri:1.5196495865):1.5196495865):3.999483866,(((Pygathrix_nigripes:1.657983993,Pygathrix_nemaeus:1.657983993):0.2390717166,Pygathrix_cinerea:1.897055915):3.431132713,(Simias_concolor:1.276718536,Nasalis_larvatus:1.276718536):4.051469064):1.710594068):1.212353691):0.6392948714,((((Procolobus_rufomitratus:0.5905596573,Procolobus_pennantii:0.5905598629):1.712216146,(Procolobus_verus:0.3108835801,Procolobus_preussi:0.3108835801):1.991892052):2.348346111,Procolobus_badius:4.651122394):2.830631701,((Colobus_angolensis:0.4212871344,Colobus_vellerosus:0.4212871344):1.932604041,(Colobus_satanas:1.09474121,(Colobus_guereza:0.4732928983,Colobus_polykomos:0.4732928983):0.6214483113):1.259149966):5.127863605):1.408676821):2.124581474,(((((((Macaca_sinica:0.471419635,Macaca_nigrescens:0.471419635):1.650184499,((Macaca_tonkeana:1.893625084,(Macaca_hecki:1.766183541,Macaca_maura:1.766183541):0.1274414062):0.1456747875,Macaca_ochreata:2.039299837):0.08230433144):0.9144050878,(Macaca_silenus:1.147337917,Macaca_nemestrina:1.147337917):1.888671408):1.337468138,((Macaca_radiata:2.177321804,(Macaca_assamensis:1.774409446,Macaca_thibetana:1.774409446):0.4029127015):1.23261407,((((Macaca_mulatta:1.27364282,(Macaca_fuscata:1.003840468,Macaca_nigra:1.003840468):0.2698023859):0.04705822366,Macaca_cyclopis:1.320700975):1.043750744,Macaca_arctoides:2.364451719):0.6390751528,Macaca_fascicularis:3.003526872):0.4064093453):0.9635414854):0.9850385951,(Macaca_sylvanus:2.67925832,(Macaca_leonina:1.33962916,Macaca_siberu:1.33962916):1.33962916):2.67925832):2.202902731,(((Lophocebus_aterrimus:3.584469507,((Papio_cynocephalus:0.9664447863,(Papio_ursinus:0.48322239315,Papio_kindae:0.48322239315):0.48322239315):0.8079410078,(Papio_papio:1.693325083,(Papio_hamadryas:1.236384248,Papio_anubis:1.236384248):0.4569408355):0.08106064232):1.810083405):0.4365913352,Theropithecus_gelada:4.021061528):2.069654585,((Mandrillus_sphinx:2.315995043,Mandrillus_leucophaeus:2.315995043):1.389565765,(((Lophocebus_albigena:0.1518719125,Cercocebus_torquatus:0.1518719125):2.048548239,(Cercocebus_atys:1.100210007,(Cercocebus_chrysogaster:0.5501050035,Cercocebus_lunulatus:0.5501050035):0.5501050035):1.100210007):0.3777797815,(Cercocebus_agilis:0.2439450118,Cercocebus_galeritus:0.2439450118):2.334254647):1.12736067):2.38515462):1.4707036):1.15704975,(((((Cercopithecus_neglectus:3.275385528,Cercopithecus_diana:3.275385528):1.926612684,((Cercopithecus_mona:1.059605441,Cercopithecus_pogonias:1.059605441):2.50104363,Cercopithecus_campbelli:3.5606501):1.641349484):1.187979331,((Erythrocebus_patas:4.920683775,(((Cercopithecus_sclateri:0.945222959,(Chlorocebus_aethiops:0.47261146235,(Chlorocebus_pygerythrus:0.236305731175,Chlorocebus_sabaeus:0.236305731175):0.236305731175):0.47261146235):0.4748641771,Cercopithecus_dryas:1.42008693):0.6220282859,Cercopithecus_solatus:2.042115388):2.878569073):0.9203145221,(((Cercopithecus_lhoesti:1.791308577,Cercopithecus_preussi:1.791308577):1.11927256,(Cercopithecus_cephus:2.363959152,((Cercopithecus_erythrotis:1.575971739,Cercopithecus_ascanius:1.575971739):0.2395862899,(Cercopithecus_petaurista:1.260892632,Cercopithecus_erythrogaster:1.260892632):0.554665534):0.5484009853):0.5466223278):1.538695686,(Cercopithecus_mitis:2.238643839,Cercopithecus_nictitans:2.238643839):2.210632984):1.391721474):0.548979246):0.4724839502,(Cercopithecus_hamlyni:3.431230404,(Cercopithecus_albogularis:1.715615202,Cercopithecus_roloway:1.715615202):1.715615202):3.431230404):0.7143515422,(Allenopithecus_nigroviridis:6.469216064,(Miopithecus_talapoin:3.2346083755,Miopithecus_ogouensis:3.2346083755):3.2346083755):1.1075956):1.141655399):2.296543613):11.32117353):12.38253055):28.15245234):3.302967915);\nEND;",
+   "n_tips": 102,
+   "encoding": {
+    "node_color": "balance",
+    "node_size": "n_sel",
+    "label_highlight": "dichromatic"
+   },
+   "photo_anchor": "species",
+   "tips": [
+    {
+     "species": "Allenopithecus_nigroviridis",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Alouatta_belzebul",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Alouatta_caraya",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 6,
+     "balance": -0.5,
+     "n_sel": 8
+    },
+    {
+     "species": "Alouatta_palliata",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 3
+    },
+    {
+     "species": "Alouatta_seniculus",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Ateles_belzebuth",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Ateles_chamek",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Ateles_fusciceps",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 3,
+     "balance": -1.0,
+     "n_sel": 3
+    },
+    {
+     "species": "Ateles_geoffroyi",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Ateles_marginatus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Ateles_paniscus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Brachyteles_arachnoides",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Cacajao_calvus",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Cacajao_melanocephalus",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Callicebus_brunneus",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 5,
+     "balance": -1.0,
+     "n_sel": 5
+    },
+    {
+     "species": "Callicebus_caligatus",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 4,
+     "balance": -1.0,
+     "n_sel": 4
+    },
+    {
+     "species": "Callicebus_cinerascens",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Callicebus_donacophilus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Callicebus_hoffmannsi",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Callicebus_moloch",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Cebus_albifrons",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Cebus_olivaceus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Cercocebus_atys",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 5,
+     "balance": -0.4286,
+     "n_sel": 7
+    },
+    {
+     "species": "Cercocebus_torquatus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 5,
+     "balance": -0.4286,
+     "n_sel": 7
+    },
+    {
+     "species": "Cercopithecus_ascanius",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 5,
+     "balance": -0.4286,
+     "n_sel": 7
+    },
+    {
+     "species": "Cercopithecus_campbelli",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Cercopithecus_cephus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Cercopithecus_diana",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 6,
+     "balance": -1.0,
+     "n_sel": 6
+    },
+    {
+     "species": "Cercopithecus_hamlyni",
+     "dichromatic": true,
+     "n_pig": 4,
+     "n_hor": 2,
+     "balance": 0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Cercopithecus_lhoesti",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Cercopithecus_mitis",
+     "dichromatic": false,
+     "n_pig": 5,
+     "n_hor": 4,
+     "balance": 0.1111,
+     "n_sel": 9
+    },
+    {
+     "species": "Cercopithecus_mona",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Cercopithecus_neglectus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Cercopithecus_nictitans",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 3,
+     "balance": -1.0,
+     "n_sel": 3
+    },
+    {
+     "species": "Cercopithecus_petaurista",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Cercopithecus_pogonias",
+     "dichromatic": false,
+     "n_pig": 4,
+     "n_hor": 4,
+     "balance": 0.0,
+     "n_sel": 8
+    },
+    {
+     "species": "Cercopithecus_preussi",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Cercopithecus_solatus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Chiropotes_chiropotes",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Colobus_angolensis",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Colobus_guereza",
+     "dichromatic": true,
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Colobus_polykomos",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Erythrocebus_patas",
+     "dichromatic": true,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Eulemur_coronatus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Eulemur_flavifrons",
+     "dichromatic": true,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Eulemur_fulvus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Eulemur_macaco",
+     "dichromatic": true,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Eulemur_mongoz",
+     "dichromatic": true,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Eulemur_rubriventer",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Hapalemur_griseus",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Hylobates_agilis",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 2,
+     "balance": 0.2,
+     "n_sel": 5
+    },
+    {
+     "species": "Hylobates_klossii",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 1,
+     "balance": 0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Hylobates_moloch",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Hylobates_pileatus",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Lagothrix_lagotricha",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Lemur_catta",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Lophocebus_aterrimus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Macaca_arctoides",
+     "dichromatic": true,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Macaca_cyclopis",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Macaca_fuscata",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 8,
+     "balance": -0.7778,
+     "n_sel": 9
+    },
+    {
+     "species": "Macaca_mulatta",
+     "dichromatic": false,
+     "n_pig": 6,
+     "n_hor": 8,
+     "balance": -0.1429,
+     "n_sel": 14
+    },
+    {
+     "species": "Macaca_nemestrina",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Macaca_nigra",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Macaca_radiata",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 6,
+     "balance": -0.7143,
+     "n_sel": 7
+    },
+    {
+     "species": "Macaca_thibetana",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 3,
+     "balance": -0.2,
+     "n_sel": 5
+    },
+    {
+     "species": "Macaca_tonkeana",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 7,
+     "balance": -0.75,
+     "n_sel": 8
+    },
+    {
+     "species": "Mandrillus_leucophaeus",
+     "dichromatic": false,
+     "n_pig": 4,
+     "n_hor": 5,
+     "balance": -0.1111,
+     "n_sel": 9
+    },
+    {
+     "species": "Mandrillus_sphinx",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Nomascus_concolor",
+     "dichromatic": true,
+     "n_pig": 3,
+     "n_hor": 5,
+     "balance": -0.25,
+     "n_sel": 8
+    },
+    {
+     "species": "Nomascus_gabriellae",
+     "dichromatic": true,
+     "n_pig": 3,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 3
+    },
+    {
+     "species": "Nomascus_leucogenys",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Papio_anubis",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 7,
+     "balance": -0.4,
+     "n_sel": 10
+    },
+    {
+     "species": "Papio_cynocephalus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 2,
+     "balance": 0.0,
+     "n_sel": 4
+    },
+    {
+     "species": "Papio_papio",
+     "dichromatic": false,
+     "n_pig": 0,
+     "n_hor": 2,
+     "balance": -1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Papio_ursinus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Pithecia_albicans",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Pithecia_pithecia",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Presbytis_comata",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Presbytis_melalophos",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Presbytis_potenziani",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Prolemur_simus",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Pygathrix_cinerea",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 4,
+     "balance": -0.1429,
+     "n_sel": 7
+    },
+    {
+     "species": "Pygathrix_nemaeus",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 3,
+     "balance": -0.2,
+     "n_sel": 5
+    },
+    {
+     "species": "Rhinopithecus_bieti",
+     "dichromatic": false,
+     "n_pig": 4,
+     "n_hor": 3,
+     "balance": 0.1429,
+     "n_sel": 7
+    },
+    {
+     "species": "Rhinopithecus_roxellana",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Saimiri_boliviensis",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Saimiri_oerstedii",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 3,
+     "balance": -0.5,
+     "n_sel": 4
+    },
+    {
+     "species": "Saimiri_sciureus",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    },
+    {
+     "species": "Saimiri_ustus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Sapajus_apella",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 0,
+     "balance": 1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Simias_concolor",
+     "dichromatic": false,
+     "n_pig": 5,
+     "n_hor": 4,
+     "balance": 0.1111,
+     "n_sel": 9
+    },
+    {
+     "species": "Symphalangus_syndactylus",
+     "dichromatic": false,
+     "n_pig": 1,
+     "n_hor": 1,
+     "balance": 0.0,
+     "n_sel": 2
+    },
+    {
+     "species": "Theropithecus_gelada",
+     "dichromatic": false,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Trachypithecus_auratus",
+     "dichromatic": true,
+     "n_pig": 0,
+     "n_hor": 1,
+     "balance": -1.0,
+     "n_sel": 1
+    },
+    {
+     "species": "Trachypithecus_cristatus",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 1,
+     "balance": 0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Trachypithecus_francoisi",
+     "dichromatic": true,
+     "n_pig": 6,
+     "n_hor": 10,
+     "balance": -0.25,
+     "n_sel": 16
+    },
+    {
+     "species": "Trachypithecus_geei",
+     "dichromatic": true,
+     "n_pig": 0,
+     "n_hor": 3,
+     "balance": -1.0,
+     "n_sel": 3
+    },
+    {
+     "species": "Trachypithecus_johnii",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 2,
+     "balance": 0.0,
+     "n_sel": 4
+    },
+    {
+     "species": "Trachypithecus_obscurus",
+     "dichromatic": true,
+     "n_pig": 2,
+     "n_hor": 4,
+     "balance": -0.3333,
+     "n_sel": 6
+    },
+    {
+     "species": "Trachypithecus_pileatus",
+     "dichromatic": true,
+     "n_pig": 1,
+     "n_hor": 2,
+     "balance": -0.3333,
+     "n_sel": 3
+    },
+    {
+     "species": "Trachypithecus_vetulus",
+     "dichromatic": false,
+     "n_pig": 3,
+     "n_hor": 4,
+     "balance": -0.1429,
+     "n_sel": 7
+    },
+    {
+     "species": "Varecia_variegata",
+     "dichromatic": false,
+     "balance": null,
+     "n_sel": 0
+    }
+   ]
+  },
+  "sister_pair_contrast": {
+   "static_figure": "comparative-genomics/analysis/module_selection/fig_sister_pair_contrast.png",
+   "chart_type": "diverging_gene_bar",
+   "photo_anchor": "both_taxa",
+   "headline": "Genes under selection in a dichromatic taxon but NOT its closest monochromatic relative \u2014 candidate loci for the trait difference.",
+   "recurrent_gene": "KITLG (pigmentation-side; recurs across Hylobates, Trachypithecus x4, Colobus, Erythrocebus, Alouatta)",
+   "pairs": [
+    {
+     "dichromatic": "Colobus_guereza",
+     "sister_monochromatic": "Colobus_polykomos",
+     "family": "cercopithecidae",
+     "patristic": 0.95,
+     "dich_only_pigmentation": [
+      "KITLG"
+     ],
+     "dich_only_hormone": [
+      "AKR1C8",
+      "GNRH1",
+      "SCARB1"
+     ],
+     "shared": [],
+     "n_dich_only": 4
+    },
+    {
+     "dichromatic": "Eulemur_mongoz",
+     "sister_monochromatic": "Eulemur_rubriventer",
+     "family": "lemuridae",
+     "patristic": 2.54,
+     "dich_only_pigmentation": [
+      "IRF4"
+     ],
+     "dich_only_hormone": [
+      "ESR2"
+     ],
+     "shared": [],
+     "n_dich_only": 2
+    },
+    {
+     "dichromatic": "Hylobates_pileatus",
+     "sister_monochromatic": "Hylobates_agilis",
+     "family": "hylobatidae",
+     "patristic": 4.69,
+     "dich_only_pigmentation": [
+      "KITLG",
+      "TFAP2A"
+     ],
+     "dich_only_hormone": [
+      "AKR1C4",
+      "AKR1C8",
+      "SCARB1",
+      "STS"
+     ],
+     "shared": [],
+     "n_dich_only": 6
+    },
+    {
+     "dichromatic": "Colobus_angolensis",
+     "sister_monochromatic": "Colobus_polykomos",
+     "family": "cercopithecidae",
+     "patristic": 4.71,
+     "dich_only_pigmentation": [
+      "EDN3",
+      "TFAP2A"
+     ],
+     "dich_only_hormone": [
+      "CGA"
+     ],
+     "shared": [],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Macaca_arctoides",
+     "sister_monochromatic": "Macaca_cyclopis",
+     "family": "cercopithecidae",
+     "patristic": 4.73,
+     "dich_only_pigmentation": [],
+     "dich_only_hormone": [],
+     "shared": [],
+     "n_dich_only": 0
+    },
+    {
+     "dichromatic": "Trachypithecus_johnii",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 5.29,
+     "dich_only_pigmentation": [
+      "KITLG"
+     ],
+     "dich_only_hormone": [
+      "HSD17B3",
+      "SRD5A1"
+     ],
+     "shared": [
+      "PMEL"
+     ],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Alouatta_caraya",
+     "sister_monochromatic": "Alouatta_belzebul",
+     "family": "cebidae",
+     "patristic": 6.29,
+     "dich_only_pigmentation": [
+      "KITLG",
+      "TYR"
+     ],
+     "dich_only_hormone": [
+      "AKR1C1",
+      "CYP11B1",
+      "CYP11B2",
+      "CYP7B1",
+      "SCARB1",
+      "STS"
+     ],
+     "shared": [],
+     "n_dich_only": 8
+    },
+    {
+     "dichromatic": "Trachypithecus_geei",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 7.0,
+     "dich_only_pigmentation": [],
+     "dich_only_hormone": [
+      "AKR1C8",
+      "HSD17B2",
+      "NCOA3"
+     ],
+     "shared": [],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Eulemur_flavifrons",
+     "sister_monochromatic": "Eulemur_coronatus",
+     "family": "lemuridae",
+     "patristic": 7.98,
+     "dich_only_pigmentation": [],
+     "dich_only_hormone": [],
+     "shared": [],
+     "n_dich_only": 0
+    },
+    {
+     "dichromatic": "Eulemur_macaco",
+     "sister_monochromatic": "Eulemur_coronatus",
+     "family": "lemuridae",
+     "patristic": 7.98,
+     "dich_only_pigmentation": [],
+     "dich_only_hormone": [
+      "SCARB1"
+     ],
+     "shared": [],
+     "n_dich_only": 1
+    },
+    {
+     "dichromatic": "Pithecia_pithecia",
+     "sister_monochromatic": "Pithecia_albicans",
+     "family": "cebidae",
+     "patristic": 8.57,
+     "dich_only_pigmentation": [
+      "SLC24A4",
+      "SLC24A5"
+     ],
+     "dich_only_hormone": [],
+     "shared": [],
+     "n_dich_only": 2
+    },
+    {
+     "dichromatic": "Erythrocebus_patas",
+     "sister_monochromatic": "Cercopithecus_solatus",
+     "family": "cercopithecidae",
+     "patristic": 9.84,
+     "dich_only_pigmentation": [
+      "KITLG"
+     ],
+     "dich_only_hormone": [
+      "HSD17B3"
+     ],
+     "shared": [
+      "SCARB1"
+     ],
+     "n_dich_only": 2
+    },
+    {
+     "dichromatic": "Nomascus_gabriellae",
+     "sister_monochromatic": "Hylobates_agilis",
+     "family": "hylobatidae",
+     "patristic": 10.37,
+     "dich_only_pigmentation": [
+      "KITLG",
+      "POMC",
+      "SLC24A5"
+     ],
+     "dich_only_hormone": [],
+     "shared": [],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Nomascus_concolor",
+     "sister_monochromatic": "Hylobates_agilis",
+     "family": "hylobatidae",
+     "patristic": 10.37,
+     "dich_only_pigmentation": [
+      "POMC",
+      "SLC24A4",
+      "SOX10"
+     ],
+     "dich_only_hormone": [
+      "CYP7B1",
+      "ESR1",
+      "ESR2",
+      "NCOA3"
+     ],
+     "shared": [
+      "FSHR"
+     ],
+     "n_dich_only": 7
+    },
+    {
+     "dichromatic": "Nomascus_leucogenys",
+     "sister_monochromatic": "Hylobates_agilis",
+     "family": "hylobatidae",
+     "patristic": 10.37,
+     "dich_only_pigmentation": [
+      "EDN3",
+      "TFAP2A"
+     ],
+     "dich_only_hormone": [],
+     "shared": [],
+     "n_dich_only": 2
+    },
+    {
+     "dichromatic": "Trachypithecus_pileatus",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 12.35,
+     "dich_only_pigmentation": [
+      "KITLG"
+     ],
+     "dich_only_hormone": [
+      "CGA",
+      "GNRH1"
+     ],
+     "shared": [],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Trachypithecus_cristatus",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 12.35,
+     "dich_only_pigmentation": [
+      "SLC24A5"
+     ],
+     "dich_only_hormone": [
+      "SCARB1"
+     ],
+     "shared": [
+      "PMEL"
+     ],
+     "n_dich_only": 2
+    },
+    {
+     "dichromatic": "Trachypithecus_auratus",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 12.35,
+     "dich_only_pigmentation": [],
+     "dich_only_hormone": [
+      "FSHR"
+     ],
+     "shared": [],
+     "n_dich_only": 1
+    },
+    {
+     "dichromatic": "Trachypithecus_francoisi",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 12.35,
+     "dich_only_pigmentation": [
+      "EDN3",
+      "EDNRB",
+      "SLC24A5",
+      "TFAP2A",
+      "TYR"
+     ],
+     "dich_only_hormone": [
+      "CGA",
+      "ESR1",
+      "GNRH1",
+      "HSD17B1",
+      "HSD17B7",
+      "KISS1R",
+      "SCARB1",
+      "SRD5A1",
+      "STS"
+     ],
+     "shared": [
+      "PMEL",
+      "SRD5A3"
+     ],
+     "n_dich_only": 14
+    },
+    {
+     "dichromatic": "Trachypithecus_obscurus",
+     "sister_monochromatic": "Trachypithecus_vetulus",
+     "family": "cercopithecidae",
+     "patristic": 12.35,
+     "dich_only_pigmentation": [
+      "KITLG"
+     ],
+     "dich_only_hormone": [
+      "FSHR",
+      "NCOR2"
+     ],
+     "shared": [
+      "CYP7B1",
+      "NCOA2",
+      "PAX3"
+     ],
+     "n_dich_only": 3
+    },
+    {
+     "dichromatic": "Cercopithecus_hamlyni",
+     "sister_monochromatic": "Cercopithecus_neglectus",
+     "family": "cercopithecidae",
+     "patristic": 13.72,
+     "dich_only_pigmentation": [
+      "EDNRB",
+      "MFSD12",
+      "PAX3",
+      "SOX10"
+     ],
+     "dich_only_hormone": [
+      "ESR1",
+      "SCARB1"
+     ],
+     "shared": [],
+     "n_dich_only": 6
+    }
+   ]
+  },
+  "sister_network_diff": {
+   "static_figure": "comparative-genomics/analysis/module_selection/fig_sister_network_diff.png",
+   "chart_type": "network_per_pair",
+   "layout": "force",
+   "edges": [
+    {
+     "source": "HSD17B2",
+     "target": "ESR1",
+     "score": 0.514
+    },
+    {
+     "source": "HSD17B2",
+     "target": "AKR1C1",
+     "score": 0.515
+    },
+    {
+     "source": "HSD17B2",
+     "target": "ESR2",
+     "score": 0.574
+    },
+    {
+     "source": "HSD17B2",
+     "target": "STS",
+     "score": 0.65
+    },
+    {
+     "source": "HSD17B2",
+     "target": "CYP11B2",
+     "score": 0.927
+    },
+    {
+     "source": "HSD17B2",
+     "target": "CYP11B1",
+     "score": 0.938
+    },
+    {
+     "source": "HSD17B2",
+     "target": "SRD5A3",
+     "score": 0.953
+    },
+    {
+     "source": "HSD17B2",
+     "target": "HSD17B7",
+     "score": 0.961
+    },
+    {
+     "source": "HSD17B2",
+     "target": "SRD5A1",
+     "score": 0.977
+    },
+    {
+     "source": "HSD17B2",
+     "target": "HSD17B3",
+     "score": 0.998
+    },
+    {
+     "source": "HSD17B2",
+     "target": "HSD17B1",
+     "score": 0.999
+    },
+    {
+     "source": "STS",
+     "target": "ESR2",
+     "score": 0.478
+    },
+    {
+     "source": "STS",
+     "target": "SRD5A1",
+     "score": 0.485
+    },
+    {
+     "source": "STS",
+     "target": "HSD17B3",
+     "score": 0.497
+    },
+    {
+     "source": "STS",
+     "target": "ESR1",
+     "score": 0.534
+    },
+    {
+     "source": "STS",
+     "target": "HSD17B1",
+     "score": 0.797
+    },
+    {
+     "source": "STS",
+     "target": "CYP7B1",
+     "score": 0.9
+    },
+    {
+     "source": "HSD17B1",
+     "target": "GNRH1",
+     "score": 0.404
+    },
+    {
+     "source": "HSD17B1",
+     "target": "AKR1C1",
+     "score": 0.548
+    },
+    {
+     "source": "HSD17B1",
+     "target": "AKR1C4",
+     "score": 0.58
+    },
+    {
+     "source": "HSD17B1",
+     "target": "CYP11B2",
+     "score": 0.588
+    },
+    {
+     "source": "HSD17B1",
+     "target": "FSHR",
+     "score": 0.595
+    },
+    {
+     "source": "HSD17B1",
+     "target": "ESR1",
+     "score": 0.611
+    },
+    {
+     "source": "HSD17B1",
+     "target": "CYP11B1",
+     "score": 0.612
+    },
+    {
+     "source": "HSD17B1",
+     "target": "ESR2",
+     "score": 0.613
+    },
+    {
+     "source": "HSD17B1",
+     "target": "SRD5A1",
+     "score": 0.638
+    },
+    {
+     "source": "HSD17B1",
+     "target": "HSD17B3",
+     "score": 0.984
+    },
+    {
+     "source": "HSD17B1",
+     "target": "HSD17B7",
+     "score": 0.991
+    },
+    {
+     "source": "KISS1R",
+     "target": "SOX10",
+     "score": 0.4
+    },
+    {
+     "source": "KISS1R",
+     "target": "FSHR",
+     "score": 0.439
+    },
+    {
+     "source": "KISS1R",
+     "target": "ESR2",
+     "score": 0.47
+    },
+    {
+     "source": "KISS1R",
+     "target": "ESR1",
+     "score": 0.56
+    },
+    {
+     "source": "KISS1R",
+     "target": "POMC",
+     "score": 0.666
+    },
+    {
+     "source": "KISS1R",
+     "target": "GNRH1",
+     "score": 0.969
+    },
+    {
+     "source": "HSD17B7",
+     "target": "SRD5A1",
+     "score": 0.418
+    },
+    {
+     "source": "HSD17B7",
+     "target": "HSD17B3",
+     "score": 0.602
+    },
+    {
+     "source": "HSD17B7",
+     "target": "CYP7B1",
+     "score": 0.708
+    },
+    {
+     "source": "SCARB1",
+     "target": "CYP7B1",
+     "score": 0.411
+    },
+    {
+     "source": "SCARB1",
+     "target": "SRD5A1",
+     "score": 0.426
+    },
+    {
+     "source": "SCARB1",
+     "target": "EDNRB",
+     "score": 0.456
+    },
+    {
+     "source": "SCARB1",
+     "target": "HSD17B3",
+     "score": 0.542
+    },
+    {
+     "source": "SCARB1",
+     "target": "ESR1",
+     "score": 0.613
+    },
+    {
+     "source": "TYR",
+     "target": "MFSD12",
+     "score": 0.402
+    },
+    {
+     "source": "TYR",
+     "target": "IRF4",
+     "score": 0.515
+    },
+    {
+     "source": "TYR",
+     "target": "EDN3",
+     "score": 0.57
+    },
+    {
+     "source": "TYR",
+     "target": "EDNRB",
+     "score": 0.691
+    },
+    {
+     "source": "TYR",
+     "target": "KITLG",
+     "score": 0.697
+    },
+    {
+     "source": "TYR",
+     "target": "SLC24A4",
+     "score": 0.739
+    },
+    {
+     "source": "TYR",
+     "target": "POMC",
+     "score": 0.777
+    },
+    {
+     "source": "TYR",
+     "target": "PAX3",
+     "score": 0.844
+    },
+    {
+     "source": "TYR",
+     "target": "SOX10",
+     "score": 0.884
+    },
+    {
+     "source": "TYR",
+     "target": "SLC24A5",
+     "score": 0.907
+    },
+    {
+     "source": "TYR",
+     "target": "PMEL",
+     "score": 0.989
+    },
+    {
+     "source": "SRD5A3",
+     "target": "CYP11B2",
+     "score": 0.924
+    },
+    {
+     "source": "SRD5A3",
+     "target": "CYP11B1",
+     "score": 0.93
+    },
+    {
+     "source": "SRD5A3",
+     "target": "HSD17B3",
+     "score": 0.95
+    },
+    {
+     "source": "SRD5A3",
+     "target": "AKR1C1",
+     "score": 0.951
+    },
+    {
+     "source": "SRD5A3",
+     "target": "AKR1C4",
+     "score": 0.963
+    },
+    {
+     "source": "SRD5A3",
+     "target": "SRD5A1",
+     "score": 0.996
+    },
+    {
+     "source": "SRD5A1",
+     "target": "CYP11B2",
+     "score": 0.936
+    },
+    {
+     "source": "SRD5A1",
+     "target": "CYP11B1",
+     "score": 0.945
+    },
+    {
+     "source": "SRD5A1",
+     "target": "AKR1C4",
+     "score": 0.961
+    },
+    {
+     "source": "SRD5A1",
+     "target": "AKR1C1",
+     "score": 0.975
+    },
+    {
+     "source": "SRD5A1",
+     "target": "HSD17B3",
+     "score": 0.978
+    },
+    {
+     "source": "GNRH1",
+     "target": "NCOA3",
+     "score": 0.449
+    },
+    {
+     "source": "GNRH1",
+     "target": "HSD17B3",
+     "score": 0.466
+    },
+    {
+     "source": "GNRH1",
+     "target": "EDNRB",
+     "score": 0.563
+    },
+    {
+     "source": "GNRH1",
+     "target": "EDN3",
+     "score": 0.577
+    },
+    {
+     "source": "GNRH1",
+     "target": "ESR1",
+     "score": 0.726
+    },
+    {
+     "source": "GNRH1",
+     "target": "FSHR",
+     "score": 0.779
+    },
+    {
+     "source": "GNRH1",
+     "target": "ESR2",
+     "score": 0.785
+    },
+    {
+     "source": "GNRH1",
+     "target": "POMC",
+     "score": 0.867
+    },
+    {
+     "source": "CYP11B1",
+     "target": "AKR1C4",
+     "score": 0.409
+    },
+    {
+     "source": "CYP11B1",
+     "target": "CYP7B1",
+     "score": 0.415
+    },
+    {
+     "source": "CYP11B1",
+     "target": "FSHR",
+     "score": 0.527
+    },
+    {
+     "source": "CYP11B1",
+     "target": "POMC",
+     "score": 0.863
+    },
+    {
+     "source": "CYP11B1",
+     "target": "CYP11B2",
+     "score": 0.912
+    },
+    {
+     "source": "CYP11B1",
+     "target": "AKR1C1",
+     "score": 0.918
+    },
+    {
+     "source": "CYP11B1",
+     "target": "HSD17B3",
+     "score": 0.97
+    },
+    {
+     "source": "CYP11B2",
+     "target": "FSHR",
+     "score": 0.438
+    },
+    {
+     "source": "CYP11B2",
+     "target": "POMC",
+     "score": 0.826
+    },
+    {
+     "source": "CYP11B2",
+     "target": "AKR1C1",
+     "score": 0.911
+    },
+    {
+     "source": "CYP11B2",
+     "target": "HSD17B3",
+     "score": 0.961
+    },
+    {
+     "source": "EDN3",
+     "target": "KITLG",
+     "score": 0.698
+    },
+    {
+     "source": "EDN3",
+     "target": "PAX3",
+     "score": 0.702
+    },
+    {
+     "source": "EDN3",
+     "target": "SOX10",
+     "score": 0.876
+    },
+    {
+     "source": "EDN3",
+     "target": "EDNRB",
+     "score": 0.999
+    },
+    {
+     "source": "SLC24A5",
+     "target": "KITLG",
+     "score": 0.569
+    },
+    {
+     "source": "SLC24A5",
+     "target": "MFSD12",
+     "score": 0.608
+    },
+    {
+     "source": "SLC24A5",
+     "target": "IRF4",
+     "score": 0.623
+    },
+    {
+     "source": "SLC24A5",
+     "target": "PMEL",
+     "score": 0.695
+    },
+    {
+     "source": "ESR2",
+     "target": "HSD17B3",
+     "score": 0.446
+    },
+    {
+     "source": "ESR2",
+     "target": "POMC",
+     "score": 0.582
+    },
+    {
+     "source": "ESR2",
+     "target": "FSHR",
+     "score": 0.663
+    },
+    {
+     "source": "ESR2",
+     "target": "NCOR2",
+     "score": 0.908
+    },
+    {
+     "source": "ESR2",
+     "target": "NCOA2",
+     "score": 0.993
+    },
+    {
+     "source": "ESR2",
+     "target": "NCOA3",
+     "score": 0.997
+    },
+    {
+     "source": "ESR2",
+     "target": "ESR1",
+     "score": 0.998
+    },
+    {
+     "source": "MFSD12",
+     "target": "PMEL",
+     "score": 0.428
+    },
+    {
+     "source": "NCOA3",
+     "target": "NCOR2",
+     "score": 0.917
+    },
+    {
+     "source": "NCOA3",
+     "target": "NCOA2",
+     "score": 0.997
+    },
+    {
+     "source": "NCOA3",
+     "target": "ESR1",
+     "score": 0.999
+    },
+    {
+     "source": "HSD17B3",
+     "target": "ESR1",
+     "score": 0.456
+    },
+    {
+     "source": "HSD17B3",
+     "target": "AKR1C4",
+     "score": 0.548
+    },
+    {
+     "source": "HSD17B3",
+     "target": "FSHR",
+     "score": 0.637
+    },
+    {
+     "source": "HSD17B3",
+     "target": "AKR1C1",
+     "score": 0.687
+    },
+    {
+     "source": "EDNRB",
+     "target": "PMEL",
+     "score": 0.439
+    },
+    {
+     "source": "EDNRB",
+     "target": "PAX3",
+     "score": 0.648
+    },
+    {
+     "source": "EDNRB",
+     "target": "POMC",
+     "score": 0.765
+    },
+    {
+     "source": "EDNRB",
+     "target": "KITLG",
+     "score": 0.881
+    },
+    {
+     "source": "EDNRB",
+     "target": "SOX10",
+     "score": 0.908
+    },
+    {
+     "source": "IRF4",
+     "target": "KITLG",
+     "score": 0.525
+    },
+    {
+     "source": "IRF4",
+     "target": "SLC24A4",
+     "score": 0.7
+    },
+    {
+     "source": "PAX3",
+     "target": "NCOA2",
+     "score": 0.435
+    },
+    {
+     "source": "PAX3",
+     "target": "PMEL",
+     "score": 0.437
+    },
+    {
+     "source": "PAX3",
+     "target": "TFAP2A",
+     "score": 0.595
+    },
+    {
+     "source": "PAX3",
+     "target": "SOX10",
+     "score": 0.997
+    },
+    {
+     "source": "SOX10",
+     "target": "POMC",
+     "score": 0.558
+    },
+    {
+     "source": "SOX10",
+     "target": "PMEL",
+     "score": 0.561
+    },
+    {
+     "source": "SOX10",
+     "target": "TFAP2A",
+     "score": 0.657
+    },
+    {
+     "source": "NCOR2",
+     "target": "NCOA2",
+     "score": 0.877
+    },
+    {
+     "source": "NCOR2",
+     "target": "ESR1",
+     "score": 0.993
+    },
+    {
+     "source": "POMC",
+     "target": "ESR1",
+     "score": 0.692
+    },
+    {
+     "source": "POMC",
+     "target": "CGA",
+     "score": 0.849
+    },
+    {
+     "source": "POMC",
+     "target": "FSHR",
+     "score": 0.93
+    },
+    {
+     "source": "FSHR",
+     "target": "KITLG",
+     "score": 0.436
+    },
+    {
+     "source": "FSHR",
+     "target": "ESR1",
+     "score": 0.717
+    },
+    {
+     "source": "FSHR",
+     "target": "CGA",
+     "score": 0.99
+    },
+    {
+     "source": "NCOA2",
+     "target": "ESR1",
+     "score": 0.999
+    },
+    {
+     "source": "ESR1",
+     "target": "TFAP2A",
+     "score": 0.879
+    },
+    {
+     "source": "SLC24A4",
+     "target": "KITLG",
+     "score": 0.589
+    },
+    {
+     "source": "CGA",
+     "target": "TFAP2A",
+     "score": 0.755
+    }
+   ],
+   "nodes": [
+    {
+     "gene": "AKR1C1",
+     "module": "hormone"
+    },
+    {
+     "gene": "AKR1C4",
+     "module": "hormone"
+    },
+    {
+     "gene": "CGA",
+     "module": "hormone"
+    },
+    {
+     "gene": "CYP11B1",
+     "module": "hormone"
+    },
+    {
+     "gene": "CYP11B2",
+     "module": "hormone"
+    },
+    {
+     "gene": "CYP7B1",
+     "module": "hormone"
+    },
+    {
+     "gene": "EDN3",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "EDNRB",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "ESR1",
+     "module": "hormone"
+    },
+    {
+     "gene": "ESR2",
+     "module": "hormone"
+    },
+    {
+     "gene": "FSHR",
+     "module": "hormone"
+    },
+    {
+     "gene": "GNRH1",
+     "module": "hormone"
+    },
+    {
+     "gene": "HSD17B1",
+     "module": "hormone"
+    },
+    {
+     "gene": "HSD17B2",
+     "module": "hormone"
+    },
+    {
+     "gene": "HSD17B3",
+     "module": "hormone"
+    },
+    {
+     "gene": "HSD17B7",
+     "module": "hormone"
+    },
+    {
+     "gene": "IRF4",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "KISS1R",
+     "module": "hormone"
+    },
+    {
+     "gene": "KITLG",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "MFSD12",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "NCOA2",
+     "module": "hormone"
+    },
+    {
+     "gene": "NCOA3",
+     "module": "hormone"
+    },
+    {
+     "gene": "NCOR2",
+     "module": "hormone"
+    },
+    {
+     "gene": "PAX3",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "PMEL",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "POMC",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "SCARB1",
+     "module": "hormone"
+    },
+    {
+     "gene": "SLC24A4",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "SLC24A5",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "SOX10",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "SRD5A1",
+     "module": "hormone"
+    },
+    {
+     "gene": "SRD5A3",
+     "module": "hormone"
+    },
+    {
+     "gene": "STS",
+     "module": "hormone"
+    },
+    {
+     "gene": "TFAP2A",
+     "module": "pigmentation"
+    },
+    {
+     "gene": "TYR",
+     "module": "pigmentation"
+    }
+   ],
+   "node_state_per_pair": {
+    "Colobus_guereza__vs__Colobus_polykomos": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "dich_only",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "mono_only"
+    },
+    "Eulemur_mongoz__vs__Eulemur_rubriventer": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "dich_only",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "dich_only",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "mono_only",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Hylobates_pileatus__vs__Hylobates_agilis": {
+     "AKR1C1": "neither",
+     "AKR1C4": "dich_only",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "mono_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "mono_only",
+     "IRF4": "mono_only",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "dich_only",
+     "TFAP2A": "dich_only",
+     "TYR": "mono_only"
+    },
+    "Colobus_angolensis__vs__Colobus_polykomos": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "dich_only",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "dich_only",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "dich_only",
+     "TYR": "mono_only"
+    },
+    "Macaca_arctoides__vs__Macaca_cyclopis": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Trachypithecus_johnii__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "dich_only",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "both",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "dich_only",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Alouatta_caraya__vs__Alouatta_belzebul": {
+     "AKR1C1": "dich_only",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "dich_only",
+     "CYP11B2": "dich_only",
+     "CYP7B1": "dich_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "mono_only",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "dich_only",
+     "TFAP2A": "neither",
+     "TYR": "dich_only"
+    },
+    "Trachypithecus_geei__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "dich_only",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "dich_only",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "mono_only",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Eulemur_flavifrons__vs__Eulemur_coronatus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "mono_only",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Eulemur_macaco__vs__Eulemur_coronatus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "mono_only",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Pithecia_pithecia__vs__Pithecia_albicans": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "dich_only",
+     "SLC24A5": "dich_only",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Erythrocebus_patas__vs__Cercopithecus_solatus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "mono_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "dich_only",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "both",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "mono_only",
+     "TYR": "neither"
+    },
+    "Nomascus_gabriellae__vs__Hylobates_agilis": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "mono_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "mono_only",
+     "IRF4": "mono_only",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "dich_only",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "dich_only",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "mono_only"
+    },
+    "Nomascus_concolor__vs__Hylobates_agilis": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "dich_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "dich_only",
+     "ESR2": "dich_only",
+     "FSHR": "both",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "mono_only",
+     "IRF4": "mono_only",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "dich_only",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "dich_only",
+     "SCARB1": "neither",
+     "SLC24A4": "dich_only",
+     "SLC24A5": "neither",
+     "SOX10": "dich_only",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "mono_only"
+    },
+    "Nomascus_leucogenys__vs__Hylobates_agilis": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "neither",
+     "EDN3": "dich_only",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "mono_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "mono_only",
+     "IRF4": "mono_only",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "neither",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "dich_only",
+     "TYR": "mono_only"
+    },
+    "Trachypithecus_pileatus__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "dich_only",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "dich_only",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "mono_only",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Trachypithecus_cristatus__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "both",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "dich_only",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Trachypithecus_auratus__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "dich_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "mono_only",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Trachypithecus_francoisi__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "dich_only",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "mono_only",
+     "EDN3": "dich_only",
+     "EDNRB": "dich_only",
+     "ESR1": "dich_only",
+     "ESR2": "neither",
+     "FSHR": "neither",
+     "GNRH1": "dich_only",
+     "HSD17B1": "dich_only",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "dich_only",
+     "IRF4": "neither",
+     "KISS1R": "dich_only",
+     "KITLG": "neither",
+     "MFSD12": "neither",
+     "NCOA2": "mono_only",
+     "NCOA3": "neither",
+     "NCOR2": "neither",
+     "PAX3": "mono_only",
+     "PMEL": "both",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "dich_only",
+     "SOX10": "neither",
+     "SRD5A1": "dich_only",
+     "SRD5A3": "both",
+     "STS": "dich_only",
+     "TFAP2A": "dich_only",
+     "TYR": "dich_only"
+    },
+    "Trachypithecus_obscurus__vs__Trachypithecus_vetulus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "neither",
+     "CYP7B1": "both",
+     "EDN3": "neither",
+     "EDNRB": "neither",
+     "ESR1": "neither",
+     "ESR2": "neither",
+     "FSHR": "dich_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "neither",
+     "KISS1R": "neither",
+     "KITLG": "dich_only",
+     "MFSD12": "neither",
+     "NCOA2": "both",
+     "NCOA3": "neither",
+     "NCOR2": "dich_only",
+     "PAX3": "both",
+     "PMEL": "mono_only",
+     "POMC": "neither",
+     "SCARB1": "neither",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "neither",
+     "SRD5A1": "neither",
+     "SRD5A3": "mono_only",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    },
+    "Cercopithecus_hamlyni__vs__Cercopithecus_neglectus": {
+     "AKR1C1": "neither",
+     "AKR1C4": "neither",
+     "CGA": "neither",
+     "CYP11B1": "neither",
+     "CYP11B2": "mono_only",
+     "CYP7B1": "neither",
+     "EDN3": "neither",
+     "EDNRB": "dich_only",
+     "ESR1": "dich_only",
+     "ESR2": "neither",
+     "FSHR": "mono_only",
+     "GNRH1": "neither",
+     "HSD17B1": "neither",
+     "HSD17B2": "neither",
+     "HSD17B3": "neither",
+     "HSD17B7": "neither",
+     "IRF4": "mono_only",
+     "KISS1R": "neither",
+     "KITLG": "neither",
+     "MFSD12": "dich_only",
+     "NCOA2": "neither",
+     "NCOA3": "neither",
+     "NCOR2": "mono_only",
+     "PAX3": "dich_only",
+     "PMEL": "neither",
+     "POMC": "neither",
+     "SCARB1": "dich_only",
+     "SLC24A4": "neither",
+     "SLC24A5": "neither",
+     "SOX10": "dich_only",
+     "SRD5A1": "neither",
+     "SRD5A3": "neither",
+     "STS": "neither",
+     "TFAP2A": "neither",
+     "TYR": "neither"
+    }
+   },
+   "state_encoding": {
+    "dich_only": "filled + red ring (THE VARIATION)",
+    "both": "filled grey ring",
+    "mono_only": "open",
+    "neither": "faint"
+   },
+   "photo_anchor": "pair",
+   "source": "STRING v12 human, score>=400"
+  }
+ }
+}
