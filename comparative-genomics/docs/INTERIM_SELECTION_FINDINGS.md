@@ -18,7 +18,7 @@ hormone seed (53 genes, axis-annotated).
 Hair dichromatism arose **four independent times** across the 117 primates with usable
 genomes: Lemuridae (*Eulemur*), Cebidae, Hylobatidae (gibbons, the flagship clade), and
 Cercopithecidae. Independent origins — not species count — are what a convergence-based
-test draws on. The Leakey species topology was cross-checked against an independent Open
+test draws on. The species topology (compiled from the literature) was cross-checked against an independent Open
 Tree of Life synthesis: all four dichromatism clades are monophyletic in both trees, so the
 branching structure the analysis rests on is not a local-source artifact. Neither RELAX nor
 RERconverge uses the tree's (time-dated) branch lengths — both re-estimate substitution
