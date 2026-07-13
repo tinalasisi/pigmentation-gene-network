@@ -11,7 +11,7 @@ NOTHING here needs the raw genomes/alignments — it reads only fit outputs and 
 The three files together are a few KB: they carry every number needed to iterate
 without transferring data. Paste SUMMARY.md (or attach summary.json) back.
 """
-import json, glob, os, csv, math
+import json, glob, os, csv, math, argparse
 os.makedirs("report",exist_ok=True)
 
 def bh(pvals):
@@ -19,6 +19,54 @@ def bh(pvals):
     for rank,i in enumerate(reversed(idx),start=1):
         k=n-rank+1; adj=min(prev, pvals[i]*n/k); out[i]=adj; prev=adj
     return out
+
+def extract_K(path):
+    """Pull (K, p, LRT, n_seqs, n_sites) from one RELAX JSON."""
+    j=json.load(open(path)); tr=j.get("test results",{}); inp=j.get("input",{})
+    return {"K":tr.get("relaxation or intensification parameter"),
+            "p_value":tr.get("p-value"),"LRT":tr.get("LRT"),
+            "n_seqs":inp.get("number of sequences"),"n_sites":inp.get("number of sites")}
+
+def per_origin_summary(relax_dir, qc_dir, panel_path):
+    """Walk relax_per_origin/<origin>/<gene>.RELAX.json, join per-(origin,gene) QC,
+    BH-correct WITHIN each origin, write report/per_origin_K.csv."""
+    panel={r["gene"]:r["set"] for r in csv.DictReader(open(panel_path))}
+    qc={}
+    for f in glob.glob(os.path.join(qc_dir,"*.csv")):
+        for r in csv.DictReader(open(f)):
+            qc[(r.get("origin_id"),r.get("gene"))]=r
+    rows=[]
+    for oj in sorted(glob.glob(os.path.join(relax_dir,"*","*.RELAX.json"))):
+        origin=os.path.basename(os.path.dirname(oj)); gene=os.path.basename(oj).split(".")[0]
+        try: k=extract_K(oj)
+        except Exception: continue
+        q=qc.get((origin,gene),{})
+        rows.append({"origin_id":origin,"gene":gene,"set":panel.get(gene,"?"),**k,
+                     "n_fg":q.get("n_fg"),"n_tips_kept":q.get("n_tips_kept"),"status":q.get("status","ok")})
+    # BH within each origin separately
+    by_origin={}
+    for r in rows: by_origin.setdefault(r["origin_id"],[]).append(r)
+    for oid,rs in by_origin.items():
+        have=[r for r in rs if isinstance(r["p_value"],(int,float))]
+        for r,pa in zip(have, bh([r["p_value"] for r in have])): r["p_BH"]=round(pa,4)
+    cols=["origin_id","gene","set","K","p_value","p_BH","LRT","n_fg","n_tips_kept","n_sites","status"]
+    with open("report/per_origin_K.csv","w",newline="") as f:
+        w=csv.DictWriter(f,fieldnames=cols,extrasaction="ignore"); w.writeheader()
+        for r in sorted(rows,key=lambda x:(x["origin_id"],x["set"],x.get("p_value") or 1)):
+            w.writerow(r)
+    n_sig=sum(1 for r in rows if isinstance(r.get("p_BH"),(int,float)) and r["p_BH"]<0.05)
+    print(f"wrote report/per_origin_K.csv ({len(rows)} (origin,gene) fits, {len(by_origin)} origins, BH<0.05: {n_sig})")
+
+_ap=argparse.ArgumentParser()
+_ap.add_argument("--per-origin",dest="per_origin",action="store_true",
+                 help="summarize relax_per_origin/ instead of pooled relax/")
+_ap.add_argument("--relax-dir",dest="relax_dir",default="relax_per_origin")
+_ap.add_argument("--qc-dir",dest="qc_dir",default="qc/per_origin")
+_ap.add_argument("--panel",default="gene_panel.csv")
+_args=_ap.parse_args()
+if _args.per_origin:
+    per_origin_summary(_args.relax_dir,_args.qc_dir,_args.panel)
+    raise SystemExit(0)
 
 rows=[]
 for f in sorted(glob.glob("relax/*.RELAX.json")):
