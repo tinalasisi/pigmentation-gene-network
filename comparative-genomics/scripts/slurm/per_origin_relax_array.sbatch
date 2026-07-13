@@ -31,6 +31,6 @@ ORIGIN=$(tail -n +2 "$ORIGINS_CSV" | cut -d, -f3 | sort -u | sed -n "$((ORIG_IDX
 echo "[$(date +%T)] task $TID -> gene=$GENE origin=$ORIGIN"
 python "$REPO/scripts/02c_per_origin_relax.py" --gene "$GENE" --origin "$ORIGIN" \
   --aln aln --out relax_per_origin --qc qc/per_origin \
-  --panel "$PANEL" --tree "$REPO/config/leakey_primate_tree.nex" \
+  --panel "$PANEL" --tree "$REPO/config/primate_species_tree.nex" \
   --origins "$ORIGINS_CSV" --threads ${SLURM_CPUS_PER_TASK:-4}
 echo "[$(date +%T)] task $TID done (gene=$GENE origin=$ORIGIN)"

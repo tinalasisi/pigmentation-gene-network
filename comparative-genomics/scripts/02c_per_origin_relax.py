@@ -22,7 +22,7 @@ IDENTICAL to the pooled run. Alignments are reused if aln/<gene>.codon.aln.fa al
 Reads:
   aln/<gene>.codon.aln.fa            (reused if present; else built from cds/)
   <panel>  (gene,set)                default gene_panel.csv
-  <tree>   primate species tree      default leakey_primate_tree.nex
+  <tree>   primate species tree      default primate_species_tree.nex
   <origins> origin_assignments.csv   columns: species, origin_id  (from the phylo audit)
 
 Writes:
@@ -36,7 +36,7 @@ Tools: mafft, hyphy, python(biopython,dendropy) on PATH — same env as script 0
 Usage:
   # single (origin,gene) for a 2-D SLURM array:
   python 02c_per_origin_relax.py --gene TFAP2A --origin origin_2 \
-     --panel config/gene_panel.csv --tree config/leakey_primate_tree.nex \
+     --panel config/gene_panel.csv --tree config/primate_species_tree.nex \
      --origins config/origin_assignments.csv
   # all origins for one gene:
   python 02c_per_origin_relax.py --gene TFAP2A --origins config/origin_assignments.csv
@@ -113,7 +113,7 @@ def main():
     ap.add_argument("--cds", default="cds"); ap.add_argument("--aln", default="aln")
     ap.add_argument("--out", default="relax_per_origin"); ap.add_argument("--qc", default="qc/per_origin")
     ap.add_argument("--panel", default="gene_panel.csv")
-    ap.add_argument("--tree", default="leakey_primate_tree.nex")
+    ap.add_argument("--tree", default="primate_species_tree.nex")
     ap.add_argument("--origins", default="origin_assignments.csv",
                     help="CSV with columns species,origin_id (from the phylo audit)")
     ap.add_argument("--gene", default=None, help="run only this gene")
