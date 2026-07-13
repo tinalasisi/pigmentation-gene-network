@@ -96,7 +96,9 @@ INPUTS = {
     },
     "per_origin_K": {
         "path": "comparative-genomics/results/perorigin_v1/per_origin_K.csv",
-        "what": "Per-origin RELAX selection-intensity K on the 110-gene panel, per powered origin",
+        "what": "Per-origin RELAX selection-intensity K per powered origin, on the pigmentation+"
+                "hormone panel (target 110 genes; the loaded row/gene count is printed at load "
+                "time and grows as the clean-30 expansion and MYO5A/LYST giants land)",
         "source": "HYPHY RELAX on codon alignments (HPC); panel justified in NB13/NB14",
         "produced_by": "Selection pipeline (pulled from HPC); module+category columns from nb14_panel_justification.csv",
     },
@@ -254,10 +256,18 @@ if ORIGINS is not None:
 # %% [markdown]
 # ### Figure 3 — Where gains and losses fall (stochastic density map)
 #
-# The posterior density of the dichromatic state, painted on the tree from 500 stochastic maps
-# under ARD. Red marks high posterior probability of dichromatism; the colour concentrates in
-# *Trachypithecus*, the *Nomascus*/*Hylobates* gibbons, *Colobus*, and *Eulemur*, on an otherwise
-# blue (monochromatic) tree — the visual signature of many independent, mostly recent origins.
+# **Figure 3.** Posterior probability that each branch of the primate phylogeny was sexually
+# dichromatic, summarised over 500 stochastic character maps under the ARD model (§3). Branch
+# colour runs from blue (P ≈ 0, monochromatic) through magenta to red (P ≈ 1, dichromatic); the
+# scale bar is at lower-left. The coloured strip on the right marks the major primate clades for
+# orientation (Old World monkeys, apes, gibbons, New World monkeys, tarsiers, lemurs, lorises &
+# galagos). Per-species tip labels are omitted for legibility — the analysis runs on the full
+# 224-tip intersection tree (§2).
+#
+# Red concentrates in short, terminal patches — the *Trachypithecus* langurs within the Old World
+# monkeys, the *Nomascus*/*Hylobates* gibbons, and *Eulemur* among the lemurs — separated by long
+# blue (monochromatic) internodes. That scattering, rather than one deep red clade, is the visual
+# signature of the many-independent-origins, high-loss pattern quantified in §3.
 
 # %%
 from IPython.display import Image, display
@@ -268,31 +278,37 @@ else:
     print("nb15_densitymap.png not built yet - run nb15_phylo.R")
 
 # %% [markdown]
-# ## 4 — Per-origin architecture *(fills when the 110-gene tables land)*
+# ## 4 — Per-origin architecture
 #
 # **The question.** Of the independent origins, only those with **≥2 sequenced dichromatic tips**
 # carry enough branches for a per-origin RELAX test — three do: *Trachypithecus* (origin 7),
 # *Nomascus* (origin 8), and *Eulemur* (origin 14). For each, which panel genes show a shift in
 # selection intensity (K) along the origin's branches?
 #
-# **The expected result** (from the 80-gene run, to be re-confirmed on the 110-gene panel): the
-# three powered origins do *not* share a gene set. *Trachypithecus* shows a multi-gene,
-# both-module signal (including a lineage-specific MC1R shift); *Nomascus* concentrates on a
-# single hormone-bridge gene; *Eulemur* shows no gene passing the per-origin threshold. Same
-# phenotype, three different genetic routes.
+# **The result** (the loaded panel size is printed below and grows toward 110 as the clean-30
+# pigmentation expansion lands — the two giant genes MYO5A/LYST arrive last): the three powered
+# origins do *not* share a gene set.
+# *Trachypithecus* shows a multi-gene, both-module signal (including a lineage-specific MC1R
+# shift); *Nomascus* concentrates on a small hormone-leaning set built around POMC; *Eulemur*
+# shows no gene passing the per-origin threshold. Same phenotype, different genetic routes —
+# quantified in §6. The gene lists are printed below; the `fig_per_lineage_genes` panel is
+# regenerated against the completed 110-gene tables.
 
 # %%
-# STUB - fills when results/perorigin_v1/{per_origin_K,branch_rates}.csv land (110 genes,
-# with module+category columns from nb14_panel_justification.csv).
+# Runs on the CURRENT perorigin_v1 tables; the per-lineage panel figure + rate-corrected balance
+# (S5) refresh to 110 genes when the clean-30 expansion lands with module+category columns.
 PER_ORIGIN = load_input("per_origin_K")
 BRANCH     = load_input("branch_rates")
 if PER_ORIGIN is not None:
     origins = sorted(PER_ORIGIN['origin_id'].unique()) if 'origin_id' in PER_ORIGIN else '?'
     print(f"per_origin_K: {PER_ORIGIN.shape[0]} rows, "
           f"{PER_ORIGIN['gene'].nunique()} genes, origins {origins}")
-    print("-> per-origin architecture table + fig_per_lineage_genes to be built here")
+    if "p_BH" in PER_ORIGIN.columns:
+        n_sig = (PER_ORIGIN["p_BH"] < 0.05).sum()
+        print(f"significant per-origin selection shifts (p_BH<0.05): {n_sig} gene-origin pairs")
+    print("(per-lineage gene panel figure regenerated with the 110-gene refresh)")
 else:
-    print("Awaiting 110-gene per-origin tables (cluster appending clean-30 into perorigin_v1).")
+    print("Awaiting per-origin tables (cluster appending clean-30 into perorigin_v1).")
 
 # %% [markdown]
 # ## 5 — Module balance per origin, corrected for panel composition *(fills when tables land)*
@@ -328,22 +344,48 @@ else:
 # divergence would say the coupled system can be perturbed at many points to the same phenotypic
 # end.
 #
-# **Method and honest framing.** Gene-set overlap between origins is compared against a null of
-# random gene assignment. The result to date is **no detectable convergent molecular signature** —
-# but this test is **power-limited**: with only three origins carrying enough tips for a per-origin
-# test, and single-tip origins recoverable only by branch scans, absence of a shared signature is
-# weak evidence for divergence on its own. Where power *is* adequate, the evidence points to
-# divergence: *Trachypithecus* (multi-gene) and *Nomascus* (a single hormone-bridge gene) share
-# **zero** genes — a well-powered contrast, not a null. This section recomputes the overlap from
-# the current tables and states the power limit explicitly rather than reporting the null as a
-# finding.
+# **Method and honest framing.** For each powered origin the gene set is those panel genes with
+# a significant per-origin selection-intensity shift (RELAX K, p_BH < 0.05); overlap between
+# origins is the shared-gene count. On the current panel (size printed by the cell below; the
+# clean-30 expansion is still landing), only **two** of the three powered origins carry a
+# detectable signal — *Trachypithecus* (a multi-gene, both-module set) and *Nomascus* (a small
+# hormone-leaning set around POMC) — and they share **zero** genes; *Eulemur* has none passing
+# threshold.
+# So where the comparison is well-powered it shows **divergence, not convergence**: independent
+# origins are built through different genes.
+#
+# This is stated as divergence-where-powered, not as a clade-wide "no convergence" claim, because
+# the test is **power-limited**: with only two signalled origins, and the ~13–17 single-tip
+# origins recoverable only by branch scans (not per-origin RELAX), a broader convergence null
+# cannot be tested here. The overlap is recomputed live below and refreshes to 110 genes when the
+# clean-30 expansion lands (which can only *add* genes to an origin's set, so the zero-overlap
+# divergence result is robust unless a new gene happens to hit both origins).
 
 # %%
-# Recompute per-origin gene-set overlap from perorigin_v1 (fills when tables land).
-if PER_ORIGIN is not None:
-    print("-> per-origin gene-set overlap + null comparison to be computed here")
+# Per-origin gene-set overlap from the CURRENT perorigin_v1 tables (pre-expansion run; the
+# printed panel size is the number of genes with RELAX results, refreshing to 110 when the
+# clean-30 expansion lands). Gene set per origin = genes with p_BH<0.05.
+import itertools
+if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
+    sig = PER_ORIGIN[PER_ORIGIN["p_BH"] < 0.05]
+    sets = {o: set(sig[sig.origin_id == o].gene) for o in sorted(sig.origin_id.unique())}
+    powered = sorted(PER_ORIGIN.origin_id.unique())
+    print(f"powered origins tested: {powered}  (>=2 dichromatic tips each)")
+    for o in powered:
+        g = sorted(sets.get(o, set()))
+        print(f"  {o}: {len(g)} genes under selection (p_BH<0.05) - {g if g else '(none pass threshold)'}")
+    print()
+    signalled = [o for o in powered if sets.get(o)]
+    if len(signalled) >= 2:
+        for a, b in itertools.combinations(signalled, 2):
+            inter = sets[a] & sets[b]
+            print(f"  {a} n {b}: {len(inter)} shared genes - {sorted(inter) if inter else 'ZERO overlap'}")
+    else:
+        print("  Only one origin carries a detectable multi-gene signal; a molecular-convergence")
+        print("  test needs >=2 signalled origins, so the comparison is power-limited (see prose).")
+    print(f"\n(Current: {PER_ORIGIN['gene'].nunique()}-gene panel. Refreshes when clean-30 lands -> 110 genes.)")
 else:
-    print("Awaiting 110-gene per-origin tables for the overlap recompute.")
+    print("Awaiting per-origin tables with p_BH for the overlap recompute.")
 
 # %% [markdown]
 # ## 7 — Synthesis

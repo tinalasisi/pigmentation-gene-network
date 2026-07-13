@@ -118,11 +118,62 @@ write.csv(est, file.path(here, "data/nb15_origin_estimates.csv"), row.names = FA
 cat(sprintf("origins: full-238=%d (genomic %d) | 117-subset=%d | simmap mean=%.1f\n",
             n_full, n_full_genomic, n_117, mean(origins)))
 
-# --- densityMap figure ---
+# --- densityMap figure: state posterior on the tree + right-side clade bar + clean legend ---
 dm <- densityMap(smap, states = c("0", "1"), plot = FALSE)
-png(file.path(here, "figures/nb15_densitymap.png"), width = 1500, height = 2200, res = 200)
-plot(dm, lwd = 2, outline = TRUE, fsize = c(0.35, 0.8), legend = 0.6,
-     colors = setNames(c("#dfe6e9", "#c0662e"), c("0", "1")))
+
+# map each tip to a recognizable major clade (for the orientation bar)
+fam <- setNames(cod$family[match(trO$tip.label, cod$tip)], trO$tip.label)
+clade_of <- function(f) {
+  if (is.na(f)) return("Other")
+  if (f == "Cercopithecidae") "Old World monkeys"
+  else if (f == "Hominidae")   "Apes"
+  else if (f == "Hylobatidae") "Gibbons"
+  else if (f %in% c("Atelidae","Cebidae","Callitrichidae","Pitheciidae","Aotidae")) "New World monkeys"
+  else if (f %in% c("Lemuridae","Cheirogaleidae","Lepilemuridae","Indriidae","Daubentoniidae")) "Lemurs"
+  else if (f %in% c("Lorisidae","Galagidae")) "Lorises & galagos"
+  else if (f == "Tarsiidae") "Tarsiers"
+  else "Other"
+}
+clade <- vapply(fam, clade_of, character(1))
+clade_levels <- c("Old World monkeys","Apes","Gibbons","New World monkeys",
+                  "Lemurs","Lorises & galagos","Tarsiers")
+clade_cols <- setNames(c("#4e79a7","#f28e2b","#e15759","#59a14f",
+                         "#b07aa1","#9c755f","#edc948"), clade_levels)
+
+png(file.path(here, "figures/nb15_densitymap.png"), width = 1700, height = 2300, res = 200)
+# leave room at right for the clade bar + labels; suppress tiny per-species labels and the
+# default (squished) legend — both are redrawn cleanly below.
+plot(dm, lwd = 3, outline = TRUE, ftype = "off", legend = FALSE,
+     mar = c(2.5, 1.0, 2.5, 9.0),
+     colors = setNames(c("#3b5ba5", "#c0392b"), c("0", "1")))
+pp <- get("last_plot.phylo", envir = .PlotPhyloEnv)
+xmax <- max(pp$xx[1:Ntip(trO)]); yr <- range(pp$yy[1:Ntip(trO)])
+bx0 <- xmax * 1.02; bx1 <- xmax * 1.05           # clade colour strip
+# one coloured segment per tip
+for (i in seq_len(Ntip(trO))) {
+  yy <- pp$yy[i]
+  rect(bx0, yy - 0.5, bx1, yy + 0.5, col = clade_cols[clade[trO$tip.label[i]]],
+       border = NA, xpd = NA)
+}
+# label each contiguous clade run at its vertical midpoint
+tip_clade <- clade[trO$tip.label]           # in tip index order (1..Ntip)
+runs <- rle(tip_clade)
+pos <- 1
+for (k in seq_along(runs$lengths)) {
+  idx <- pos:(pos + runs$lengths[k] - 1)
+  ymid <- mean(pp$yy[idx])
+  if (runs$lengths[k] >= 3)   # only label runs big enough to read
+    text(bx1 + xmax * 0.015, ymid, runs$values[k], adj = 0, cex = 0.85, xpd = NA)
+  pos <- pos + runs$lengths[k]
+}
+# clean legend: gradient bar bottom-left, clearly labelled
+add.color.bar(leg = xmax * 0.35, cols = dm$cols,
+              title = "posterior P(dichromatic)",
+              lims = c(0, 1), digits = 1, prompt = FALSE,
+              x = 0, y = yr[1] - (yr[2]-yr[1]) * 0.04,
+              subtitle = "", lwd = 10, fsize = 0.9)
+title(main = "Sexual dichromatism painted on the primate phylogeny",
+      cex.main = 1.1, line = 0.5)
 dev.off()
 
 # --- provenance manifest ---
