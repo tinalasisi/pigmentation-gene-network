@@ -1,0 +1,1570 @@
+{
+ "ACD": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.89991,
+  "hits": [
+   {
+    "_id": "65057",
+    "_score": 17.89991,
+    "entrezgene": "65057",
+    "symbol": "ACD",
+    "uniprot": {
+     "Swiss-Prot": "Q96AP0",
+     "TrEMBL": [
+      "R4GND4",
+      "A0A8Q3WM11",
+      "A0A8Q3WKU3",
+      "R4GNJ5",
+      "A0A8Q3SI48",
+      "A0ACI8R317",
+      "A0ACI8V2S7",
+      "A0A8Q3WKN9",
+      "A0ACI8TZZ0",
+      "A0ACI8V2V2",
+      "A0A8Q3WLR8",
+      "A0A8Q3SI54",
+      "A0A8Q3WKP5",
+      "A0ACI8TZY4",
+      "R4GMR6",
+      "A0ACI8V2U1",
+      "A0A8Q3SI32",
+      "A0ACI8RX80",
+      "A0A8Q3WKP4",
+      "A0A8Q3WM19",
+      "A0A8Q3WLT1",
+      "A0A8Q3SHY4",
+      "A0A8Q3SI14",
+      "A0A8Q3SHZ0",
+      "A0A8Q3SHY1"
+     ]
+    }
+   }
+  ]
+ },
+ "ADAR": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.041239,
+  "hits": [
+   {
+    "_id": "103",
+    "_score": 17.041239,
+    "entrezgene": "103",
+    "symbol": "ADAR",
+    "uniprot": {
+     "Swiss-Prot": "P55265",
+     "TrEMBL": [
+      "A0A7P0T812",
+      "A0AAQ5BGH8",
+      "A0A7P0Z4F9",
+      "A0ACI8VQG3",
+      "A0A3B3ISX1",
+      "A0A3B3ISU1",
+      "A0AAQ5BGK3",
+      "A0AAQ5BGJ4",
+      "A0AAQ5BGJ1",
+      "A0AAQ5BGJ0",
+      "A0A7P0Z4K3",
+      "A0AAG2TPY2",
+      "A0AAG2TPR9",
+      "A0AAQ5BGL3",
+      "A0AAG2U823",
+      "A0AAG2U5V6",
+      "A0AAQ5BGJ3",
+      "A0A7P0TA14"
+     ]
+    }
+   }
+  ]
+ },
+ "APC2": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.353842,
+  "hits": [
+   {
+    "_id": "10297",
+    "_score": 17.353842,
+    "entrezgene": "10297",
+    "symbol": "APC2",
+    "uniprot": {
+     "Swiss-Prot": "O95996",
+     "TrEMBL": [
+      "B5MDS5",
+      "K7ERC5",
+      "K7EN62",
+      "K7ELQ3"
+     ]
+    }
+   }
+  ]
+ },
+ "ATP7A": {
+  "took": 7,
+  "total": 1,
+  "max_score": 17.580217,
+  "hits": [
+   {
+    "_id": "538",
+    "_score": 17.580217,
+    "entrezgene": "538",
+    "symbol": "ATP7A",
+    "uniprot": {
+     "Swiss-Prot": "Q04656",
+     "TrEMBL": [
+      "Q762B6",
+      "B4DRW0",
+      "A0A8I5KWH1",
+      "A0A8I5KU46",
+      "A0A8I5KQ07",
+      "A0A8I5KZ63",
+      "A0A8I5KST1",
+      "A0A2R8YD60",
+      "A0A8I5KVB6",
+      "A0A8I5KY05",
+      "A0A8I5KQ62",
+      "A0A8I5QKR3",
+      "A0A8I5KPN6",
+      "A0A8I5KVT9",
+      "A0A8I5KXV0",
+      "A0A8J9FM07",
+      "A0A8I5QJP0",
+      "A0A8I5KR00",
+      "A0A8I5KWA8"
+     ]
+    }
+   }
+  ]
+ },
+ "ATP7B": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.57661,
+  "hits": [
+   {
+    "_id": "540",
+    "_score": 17.57661,
+    "entrezgene": "540",
+    "symbol": "ATP7B",
+    "uniprot": {
+     "Swiss-Prot": "P35670",
+     "TrEMBL": [
+      "F5H748",
+      "A0ACI8PQU0",
+      "A0A669KB88",
+      "A0AAQ5BGL6",
+      "A0AAQ5BGP2",
+      "B7ZLR4",
+      "E7ET55",
+      "F5H562",
+      "B7ZLR3",
+      "A0ACI8R3X3",
+      "A0A0U1RQY8",
+      "A0A0U1RRG1",
+      "A0A669KB21"
+     ]
+    }
+   }
+  ]
+ },
+ "CBS": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.3981,
+  "hits": [
+   {
+    "_id": "875",
+    "_score": 18.3981,
+    "entrezgene": "875",
+    "symbol": "CBS",
+    "uniprot": {
+     "Swiss-Prot": "P35520",
+     "TrEMBL": [
+      "A0ACI8U1C5",
+      "B7Z2D6",
+      "A0ACI8R7V8",
+      "A0ACI8RPC9",
+      "A0ACI8V484",
+      "A0ACI8Q758",
+      "H7C1W6",
+      "A0ACI8U0P6",
+      "H7C2W0",
+      "A0ACI8U0R4",
+      "A0ACI8QBW1",
+      "A0ACI8U0P7",
+      "A0ACI8Q760",
+      "A0ACI8QP86",
+      "C9JMA6",
+      "A0ACI8V448",
+      "H7C2H4",
+      "A0ACI8QYZ6",
+      "A0ACI8U0U1",
+      "A0ACI8U0N4"
+     ]
+    }
+   }
+  ]
+ },
+ "CTC1": {
+  "took": 8,
+  "total": 1,
+  "max_score": 17.59109,
+  "hits": [
+   {
+    "_id": "80169",
+    "_score": 17.59109,
+    "entrezgene": "80169",
+    "symbol": "CTC1",
+    "uniprot": {
+     "Swiss-Prot": "Q2NKJ3",
+     "TrEMBL": [
+      "J3KSZ1",
+      "A0A8V8TQB6",
+      "A0A8V8TP86",
+      "A0A2R8Y574",
+      "A0ACI8TQJ0",
+      "A0ACI8VGX4",
+      "A0ACI8TQQ5",
+      "A0A8V8TNY5",
+      "A0A8V8TQP4",
+      "A0ACI8TQZ2",
+      "A0ACI8QW29",
+      "J3QKT7",
+      "J3KSR1",
+      "A0A8V8TQN9"
+     ]
+    }
+   }
+  ]
+ },
+ "CTNS": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.06178,
+  "hits": [
+   {
+    "_id": "1497",
+    "_score": 17.06178,
+    "entrezgene": "1497",
+    "symbol": "CTNS",
+    "uniprot": {
+     "Swiss-Prot": "O60931",
+     "TrEMBL": [
+      "I3L4A9",
+      "A0A669KB82",
+      "A0A0S2Z3K3",
+      "A0A0S2Z3I9",
+      "A0A669KAZ5",
+      "I3L484",
+      "C9JMM9",
+      "A8MXW3",
+      "I3L0Z6",
+      "I3L1K8"
+     ]
+    }
+   }
+  ]
+ },
+ "CYP11A1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 19.37609,
+  "hits": [
+   {
+    "_id": "1583",
+    "_score": 19.37609,
+    "entrezgene": "1583",
+    "symbol": "CYP11A1",
+    "uniprot": {
+     "Swiss-Prot": "P05108",
+     "TrEMBL": [
+      "C9JPU9",
+      "A0A0S2Z3R3",
+      "H3BSZ1",
+      "E7EPP8",
+      "H3BS93",
+      "C9JXV4",
+      "A0ACI8UPG4",
+      "A0ACI8UP62",
+      "A0ACI8UNR4"
+     ]
+    }
+   }
+  ]
+ },
+ "DDX3X": {
+  "took": 3,
+  "total": 1,
+  "max_score": 18.266167,
+  "hits": [
+   {
+    "_id": "1654",
+    "_score": 18.266167,
+    "entrezgene": "1654",
+    "symbol": "DDX3X",
+    "uniprot": {
+     "Swiss-Prot": "O00571",
+     "TrEMBL": [
+      "A0A2R8YFS5",
+      "A0A2R8YDT5",
+      "A0A0D9SG12",
+      "A0A2R8Y5G6",
+      "A0A2R8YF31",
+      "A0A2R8Y7T2",
+      "F6S8Q4",
+      "A0A0D9SF53",
+      "A0A2R8YF78",
+      "A0ACI8RZB6",
+      "A0A2R8Y4D2",
+      "A0ACI8RS00",
+      "A0A087WX09",
+      "A0A2R8Y4A4",
+      "A0ACI8Q4M7",
+      "A0ACI8RUZ6",
+      "A0ACI8QX70",
+      "A0ACI8RHN0",
+      "A0ACI8QHT8",
+      "A0A2R8YF89",
+      "A0A2R8YFR4",
+      "A0A2R8YDH3",
+      "A0A2R8YCU0",
+      "A0ACI8V6Y3",
+      "A0A0D9SFB3",
+      "A0A087WVZ1",
+      "A0ACI8PTB2",
+      "A0A2R8Y770",
+      "A0A2R8Y645",
+      "A0A2R8YGJ1",
+      "A0A2R8Y650",
+      "A0A2U3TZJ9",
+      "A0A0J9YVQ7",
+      "A0ACI8QAI8",
+      "A0ACI8PVF6",
+      "A0A2R8YCW1"
+     ]
+    }
+   }
+  ]
+ },
+ "DKC1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.516544,
+  "hits": [
+   {
+    "_id": "1736",
+    "_score": 17.516544,
+    "entrezgene": "1736",
+    "symbol": "DKC1",
+    "uniprot": {
+     "Swiss-Prot": "O60832",
+     "TrEMBL": [
+      "A0ACI8U0Z4",
+      "A0A8Q3SIY6",
+      "A0A8Q3WLW8",
+      "A0A8V8TKY9",
+      "A0A8Q3SIX2",
+      "H7C2Q2",
+      "A0A8Q3WLC8",
+      "C9IYT0",
+      "A0ACI8U0W2",
+      "A0A8Q3WLE5",
+      "A0ACI8U0X1",
+      "A0A8Q3WLE4",
+      "A0ACI8UVM1",
+      "A0A8Q3WLG7",
+      "A0A8Q3SJE8",
+      "A0A8Q3WLD1",
+      "A0A8Q3SIS9"
+     ]
+    }
+   }
+  ]
+ },
+ "DNAJC12": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.490768,
+  "hits": [
+   {
+    "_id": "56521",
+    "_score": 17.490768,
+    "entrezgene": "56521",
+    "symbol": "DNAJC12",
+    "uniprot": {
+     "Swiss-Prot": "Q9UKB3",
+     "TrEMBL": [
+      "A0ACI8RTG5",
+      "Q6IAH1",
+      "S4R3E2",
+      "S4R3W0",
+      "S4R368",
+      "A0ACI8PCB8"
+     ]
+    }
+   }
+  ]
+ },
+ "EDN3": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.297394,
+  "hits": [
+   {
+    "_id": "1908",
+    "_score": 18.297394,
+    "entrezgene": "1908",
+    "symbol": "EDN3",
+    "uniprot": {
+     "Swiss-Prot": "P14138",
+     "TrEMBL": [
+      "Q4FAT2",
+      "F8W8K2",
+      "A0A5F9ZHX0",
+      "A0ACI8PYT5",
+      "A0ACI8QTU2",
+      "A0A2R8Y214"
+     ]
+    }
+   }
+  ]
+ },
+ "EPG5": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.043795,
+  "hits": [
+   {
+    "_id": "57724",
+    "_score": 17.043795,
+    "entrezgene": "57724",
+    "symbol": "EPG5",
+    "uniprot": {
+     "Swiss-Prot": "Q9HCE0",
+     "TrEMBL": [
+      "Q9BTI0",
+      "A0A8Q3SIU6",
+      "A0A8Q3SIJ2",
+      "K7EM87",
+      "A0A8Q3SIJ4",
+      "K7EPN4",
+      "K7ENK5",
+      "A0A8Q3SIP5",
+      "A0ACI8PLI0",
+      "A0A8Q3SJD2",
+      "A0ACI8TXF6",
+      "A0A8Q3WLI3"
+     ]
+    }
+   }
+  ]
+ },
+ "ERCC4": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.477194,
+  "hits": [
+   {
+    "_id": "2072",
+    "_score": 17.477194,
+    "entrezgene": "2072",
+    "symbol": "ERCC4",
+    "uniprot": {
+     "Swiss-Prot": "Q92889",
+     "TrEMBL": [
+      "A0A804HKF9",
+      "A0A1W1GSK9",
+      "B4DXD8",
+      "I3NI48",
+      "A0A804HIY2",
+      "I3L4K0",
+      "A0A804HI16"
+     ]
+    }
+   }
+  ]
+ },
+ "ESCO2": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.622309,
+  "hits": [
+   {
+    "_id": "157570",
+    "_score": 17.622309,
+    "entrezgene": "157570",
+    "symbol": "ESCO2",
+    "uniprot": {
+     "Swiss-Prot": "Q56NI9",
+     "TrEMBL": [
+      "E5RFP7",
+      "H0YB88",
+      "E5RIE3",
+      "E5RFE4"
+     ]
+    }
+   }
+  ]
+ },
+ "FLNA": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.911045,
+  "hits": [
+   {
+    "_id": "2316",
+    "_score": 17.911045,
+    "entrezgene": "2316",
+    "symbol": "FLNA",
+    "uniprot": {
+     "Swiss-Prot": "P21333",
+     "TrEMBL": [
+      "A0ACM8Q5Q1",
+      "Q60FE5",
+      "Q6NXF2",
+      "A0ACI8S2V8",
+      "A0ACI8QTE6",
+      "A0ACI8Q9H2",
+      "A0A7I2V3E6",
+      "H0Y5F3",
+      "A0A087WWY3",
+      "A0A7P0NMY4",
+      "A0ACI8VGE7",
+      "F8WE98",
+      "H7C2E7",
+      "A0ACI8QZA9",
+      "H0Y5C6",
+      "A0ACI8QBB2",
+      "A0ACI8Q9H6",
+      "A0ACI8S7Y1",
+      "A0A669KBC6",
+      "A0ACI8VFA3",
+      "A0ACI8TT19"
+     ]
+    }
+   }
+  ]
+ },
+ "FMR1": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.002205,
+  "hits": [
+   {
+    "_id": "2332",
+    "_score": 17.002205,
+    "entrezgene": "2332",
+    "symbol": "FMR1",
+    "uniprot": {
+     "Swiss-Prot": "Q06787",
+     "TrEMBL": [
+      "A0A087WWR6",
+      "A0A087WTF8",
+      "G3V0J0",
+      "A0A087X1M7",
+      "A0ACI8UAM3",
+      "A0ACI8UAU2",
+      "A0ACI8U9W0",
+      "A0A8I5KT56",
+      "A0A8I5KTZ9",
+      "A0ACI8UAL6",
+      "A0A087WVL8",
+      "A0ACI8UAW2",
+      "A0ACI8QGE1",
+      "A0ACI8UB16",
+      "A0A8I5KUC2",
+      "A0A8I5KS01",
+      "A0A8I5KYA7",
+      "A0ACI8UAS2",
+      "A0A8I5KZ21",
+      "A0A087WWU4",
+      "A0A087WXI3",
+      "A0ACI8UA79",
+      "A0A8I5KWH0",
+      "A0A8I5KTT6",
+      "A8MQB8",
+      "A0A087WY29"
+     ]
+    }
+   }
+  ]
+ },
+ "FRAS1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.539236,
+  "hits": [
+   {
+    "_id": "80144",
+    "_score": 17.539236,
+    "entrezgene": "80144",
+    "symbol": "FRAS1",
+    "uniprot": {
+     "Swiss-Prot": "Q86XX4",
+     "TrEMBL": [
+      "A0A804HL50",
+      "A0A804HI32",
+      "H0Y8V2",
+      "A0ACI8SSB1"
+     ]
+    }
+   }
+  ]
+ },
+ "FREM2": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.361807,
+  "hits": [
+   {
+    "_id": "341640",
+    "_score": 18.361807,
+    "entrezgene": "341640",
+    "symbol": "FREM2",
+    "uniprot": {
+     "Swiss-Prot": "Q5SZK8"
+    }
+   }
+  ]
+ },
+ "GRIP1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.540995,
+  "hits": [
+   {
+    "_id": "23426",
+    "_score": 17.540995,
+    "entrezgene": "23426",
+    "symbol": "GRIP1",
+    "uniprot": {
+     "Swiss-Prot": "Q9Y3R0",
+     "TrEMBL": [
+      "H0YFY3",
+      "A0A8V8TLS6",
+      "F5H3F9",
+      "F5H4Q7",
+      "F5H4P8",
+      "F5H4M4",
+      "H0YGM4",
+      "F5H4N6",
+      "H0YFK8",
+      "F5H3G9",
+      "A0ACI8VEG5",
+      "F5H5I0",
+      "A0A2R8Y6S7",
+      "H0YGF1",
+      "F5H424"
+     ]
+    }
+   }
+  ]
+ },
+ "HGD": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.465412,
+  "hits": [
+   {
+    "_id": "3081",
+    "_score": 17.465412,
+    "entrezgene": "3081",
+    "symbol": "HGD",
+    "uniprot": {
+     "Swiss-Prot": "Q93099",
+     "TrEMBL": [
+      "A0ACI8S3M6",
+      "B3KW64",
+      "H7C576",
+      "A0ACI8RWL2",
+      "A0ACI8R934",
+      "A0ACI8SAJ7",
+      "A0ACI8S931",
+      "A0ACI8SD07",
+      "A0ACI8S4N9",
+      "A0ACI8QPW7",
+      "H7C5G7",
+      "C9JTX9",
+      "A0ACI8RCR5",
+      "H7C4R8",
+      "A0ACI8SCL5",
+      "A0ACI8R1S1",
+      "A0ACI8QQI0",
+      "A0ACI8SG25",
+      "A0ACI8QR81",
+      "A0ACI8RQ44",
+      "A0ACI8UXJ6"
+     ]
+    }
+   }
+  ]
+ },
+ "IKBKG": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.834728,
+  "hits": [
+   {
+    "_id": "8517",
+    "_score": 17.834728,
+    "entrezgene": "8517",
+    "symbol": "IKBKG",
+    "uniprot": {
+     "Swiss-Prot": "Q9Y6K9",
+     "TrEMBL": [
+      "A0ACI8R3J5",
+      "A0A087X1B1",
+      "A0ACI8S2N3",
+      "A0ACI8SH84",
+      "A0A8I5KQX5",
+      "A0A087WWQ9",
+      "A0A8I5KRU9",
+      "A0ACI8S1B4",
+      "A0A8I5KYQ7",
+      "A0A8I5KQX1",
+      "D3DWY0",
+      "A0ACI8VMF6",
+      "A0A087X1K7",
+      "A0A087X0G7",
+      "C9J2V2",
+      "A0ACI8TYU3",
+      "A0A087WUW6",
+      "A0ACI8SFN0"
+     ]
+    }
+   }
+  ]
+ },
+ "LRMDA": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.424055,
+  "hits": [
+   {
+    "_id": "83938",
+    "_score": 17.424055,
+    "entrezgene": "83938",
+    "symbol": "LRMDA",
+    "uniprot": {
+     "Swiss-Prot": "Q9H2I8",
+     "TrEMBL": [
+      "M0R2H0",
+      "A0A087WWI0"
+     ]
+    }
+   }
+  ]
+ },
+ "MC2R": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.578413,
+  "hits": [
+   {
+    "_id": "4158",
+    "_score": 17.578413,
+    "entrezgene": "4158",
+    "symbol": "MC2R",
+    "uniprot": {
+     "Swiss-Prot": "Q01718",
+     "TrEMBL": "R4GMM0"
+    }
+   }
+  ]
+ },
+ "MCM4": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.385363,
+  "hits": [
+   {
+    "_id": "4173",
+    "_score": 17.385363,
+    "entrezgene": "4173",
+    "symbol": "MCM4",
+    "uniprot": {
+     "Swiss-Prot": "P33991",
+     "TrEMBL": [
+      "B3KMX0",
+      "B4DLA6",
+      "A0ACI8Q4L3",
+      "A0A3B3IT92",
+      "A0ACI8TYV2",
+      "E5RFR3",
+      "A0ACI8TYS7",
+      "A0ACI8TXL3",
+      "E5RG53",
+      "A0ACI8S6A9",
+      "A0A3B3ITP6",
+      "A0A8V8TKP2",
+      "E5RG31",
+      "E5RHP5",
+      "A0A3B3IS57",
+      "A0A3B3IS88",
+      "A0ACI8TXV2",
+      "A0A3B3IU45",
+      "A0A3B3IRR8",
+      "A0A3B3ISC1",
+      "A0ACI8TYL7"
+     ]
+    }
+   }
+  ]
+ },
+ "MLPH": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.213665,
+  "hits": [
+   {
+    "_id": "79083",
+    "_score": 18.213665,
+    "entrezgene": "79083",
+    "symbol": "MLPH",
+    "uniprot": {
+     "Swiss-Prot": "Q9BV36",
+     "TrEMBL": [
+      "A0ACI8PS90",
+      "A0ACI8UQI1",
+      "A0ACI8QNU4",
+      "H7C3K9",
+      "A0ACI8ULS9",
+      "H7C2D8",
+      "A0ACI8UQD2",
+      "A0ACI8ULR2",
+      "A0ACI8ULQ1",
+      "A0ACI8PW87",
+      "A0ACI8ULS7",
+      "A0ACI8UR86",
+      "A0ACI8QEA4",
+      "A0ACI8SVA7",
+      "H7C190",
+      "A0ACI8RP76",
+      "A0ACI8ULV2",
+      "C9JKV5",
+      "A0ACI8ULT1",
+      "A0ACI8ULV7",
+      "A0ACI8ULT6",
+      "A0ACI8ULV0",
+      "A0ACI8PSK4",
+      "A0ACI8ULS3",
+      "A0ACI8S273",
+      "H7C052",
+      "C9JI01",
+      "H7C371",
+      "A0ACI8UM33",
+      "A0ACI8PQ33",
+      "A0ACI8ULX7",
+      "A0ACI8SV92"
+     ]
+    }
+   }
+  ]
+ },
+ "MRAP": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.515676,
+  "hits": [
+   {
+    "_id": "56246",
+    "_score": 18.515676,
+    "entrezgene": "56246",
+    "symbol": "MRAP",
+    "uniprot": {
+     "Swiss-Prot": "Q8TCY5",
+     "TrEMBL": "A0ACI8V8Q8"
+    }
+   }
+  ]
+ },
+ "MSH2": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.238138,
+  "hits": [
+   {
+    "_id": "4436",
+    "_score": 17.238138,
+    "entrezgene": "4436",
+    "symbol": "MSH2",
+    "uniprot": {
+     "Swiss-Prot": "P43246",
+     "TrEMBL": [
+      "E9PHA6",
+      "A0AAQ5BH31",
+      "A0A2R8Y6P0",
+      "A0A2R8YFH0",
+      "A0A2R8YG02",
+      "A0ACI8SWH5",
+      "A0ACI8SX47",
+      "A0ACI8SHN2",
+      "A0ACI8SWI1",
+      "A0AAQ5BH55",
+      "A0A2R8Y7S8",
+      "A0AAQ5BH41",
+      "A0ACI8SWY1",
+      "A0ACI8SWT4",
+      "A0ACI8SWH4",
+      "A0AAQ5BH33",
+      "A0ACI8SWL1",
+      "A0ACI8SX46",
+      "A0ACI8UE83",
+      "A0ACI8SWG9",
+      "A0AAQ5BH48",
+      "A0A2R8Y713"
+     ]
+    }
+   }
+  ]
+ },
+ "MSH6": {
+  "took": 2,
+  "total": 1,
+  "max_score": 16.819431,
+  "hits": [
+   {
+    "_id": "2956",
+    "_score": 16.819431,
+    "entrezgene": "2956",
+    "symbol": "MSH6",
+    "uniprot": {
+     "Swiss-Prot": "P52701",
+     "TrEMBL": [
+      "A0A8V8TPJ4",
+      "A0A494C0M1",
+      "Q3SWU9",
+      "A0ACI8S2F0",
+      "A0ACI8TXW4",
+      "F8WAX8",
+      "A0A8V8TPR2",
+      "F8W7G9",
+      "A0A8V8TQJ0",
+      "A0ACI8TY03",
+      "A0ACI8TYH3",
+      "A0ACI8RLM0",
+      "A0ACI8TY01",
+      "A0A8V8TQW9",
+      "A0ACI8QWG9"
+     ]
+    }
+   }
+  ]
+ },
+ "MYO5A": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.126505,
+  "hits": [
+   {
+    "_id": "4644",
+    "_score": 18.126505,
+    "entrezgene": "4644",
+    "symbol": "MYO5A",
+    "uniprot": {
+     "Swiss-Prot": "Q9Y4I1",
+     "TrEMBL": [
+      "A0A8I5KTF1",
+      "A0A8J8YWI7",
+      "Q9UES4",
+      "A8CDT9",
+      "G3V3C9",
+      "A0A8I5KYM3",
+      "A0A8I5KXS5",
+      "A0A8I5QJF6",
+      "A0A8I5KYS5",
+      "A0A8I5KTM5",
+      "A0A8I5KV14",
+      "E7ERV5",
+      "A0A8I5KVK9",
+      "A0A8I5QKS7",
+      "A0A8I5KWM1",
+      "A0A8I5KWE1",
+      "A0A8I5KQ70",
+      "A0A8I5KXP8",
+      "G3V394",
+      "A0A8I5KRP9",
+      "H0Y3R0",
+      "A0A8I5KX10",
+      "A0A8I5KUG0",
+      "A0A8I5QJE6",
+      "A0A8I5KRS2",
+      "A0A8I5KRL5",
+      "A0A8I5KXW9",
+      "A0A8I5QJA8",
+      "A0A8I5KRA4",
+      "A0A8I5QKR9"
+     ]
+    }
+   }
+  ]
+ },
+ "NHP2": {
+  "took": 2,
+  "total": 1,
+  "max_score": 16.874556,
+  "hits": [
+   {
+    "_id": "55651",
+    "_score": 16.874556,
+    "entrezgene": "55651",
+    "symbol": "NHP2",
+    "uniprot": {
+     "Swiss-Prot": "Q9NX24",
+     "TrEMBL": [
+      "A0ACI8QCE7",
+      "J3QSY4",
+      "D6RC52",
+      "A0ACI8U3L7",
+      "D6RCB9",
+      "A0ACI8U3S2"
+     ]
+    }
+   }
+  ]
+ },
+ "NNT": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.594728,
+  "hits": [
+   {
+    "_id": "23530",
+    "_score": 17.594728,
+    "entrezgene": "23530",
+    "symbol": "NNT",
+    "uniprot": {
+     "Swiss-Prot": "Q13423",
+     "TrEMBL": [
+      "A0ACI8VEH3",
+      "E9PCX7",
+      "A0ACI8QLT1",
+      "H0Y9R2",
+      "A0A590UJI3",
+      "A0ACI8VGF6",
+      "A0A590UK29",
+      "A0A590UJM2",
+      "A0A590UJA4",
+      "A0ACI8QCB5",
+      "A0ACI8PNP9",
+      "A0A590UJV8",
+      "D6RCR6",
+      "A0A590UJM7",
+      "A0ACI8VGD4",
+      "A0ACI8T3A4",
+      "A0A590UKC7",
+      "D6RAI5",
+      "A0ACI8VGG1",
+      "A0ACI8VGC4",
+      "A0A590UK15",
+      "D6RHU2",
+      "A0ACI8VE33"
+     ]
+    }
+   }
+  ]
+ },
+ "NOP10": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.125082,
+  "hits": [
+   {
+    "_id": "55505",
+    "_score": 17.125082,
+    "entrezgene": "55505",
+    "symbol": "NOP10",
+    "uniprot": {
+     "Swiss-Prot": "Q9NPE3",
+     "TrEMBL": [
+      "A0A8V8TP28",
+      "A0A8V8TQE5",
+      "A0A8V8TPD4",
+      "A0A8V8TQE9",
+      "H0YM60",
+      "A0A8V8TQT0",
+      "A0A8V8TPK8"
+     ]
+    }
+   }
+  ]
+ },
+ "NR0B1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.665577,
+  "hits": [
+   {
+    "_id": "190",
+    "_score": 17.665577,
+    "entrezgene": "190",
+    "symbol": "NR0B1",
+    "uniprot": {
+     "Swiss-Prot": "P51843",
+     "TrEMBL": [
+      "A6NNU8",
+      "F1D8P4"
+     ]
+    }
+   }
+  ]
+ },
+ "PAH": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.477194,
+  "hits": [
+   {
+    "_id": "5053",
+    "_score": 17.477194,
+    "entrezgene": "5053",
+    "symbol": "PAH",
+    "uniprot": {
+     "Swiss-Prot": "P00439",
+     "TrEMBL": [
+      "F8W0A0",
+      "A0A0U1RQY4",
+      "A0A0U1RQI3",
+      "A0ACI8S8A6",
+      "A0ACI8RC57",
+      "A0ACI8SH73",
+      "J3KND8",
+      "F8W1D4",
+      "A0ACI8RXH2",
+      "A0ACI8S8Z6"
+     ]
+    }
+   }
+  ]
+ },
+ "PARN": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.437172,
+  "hits": [
+   {
+    "_id": "5073",
+    "_score": 17.437172,
+    "entrezgene": "5073",
+    "symbol": "PARN",
+    "uniprot": {
+     "Swiss-Prot": "O95453",
+     "TrEMBL": [
+      "A0A494C1K5",
+      "A0A494C0Q2",
+      "A0A494C1N1",
+      "B3KN69",
+      "H3BRK1",
+      "H3BVG1",
+      "H3BT23",
+      "F5H1Z4",
+      "A0ACI8RJM2",
+      "A0ACI8TN69",
+      "A0ACI8S5S3",
+      "A0A494C0W0",
+      "A0A494C1G3",
+      "A0ACI8RG65",
+      "A0ACI8QV67",
+      "A0A494C0K5",
+      "A0A494C008",
+      "A0A494BZW7",
+      "A0A494BZU6",
+      "A0ACI8PRZ3",
+      "A0ACI8TN90",
+      "A0A494C156",
+      "A0A494C0N0",
+      "A0A494C0Q6",
+      "A0ACI8V250",
+      "A0A8V8TMN8",
+      "A0ACI8Q2X2",
+      "A0A494C002",
+      "A0ACI8V246",
+      "A0ACI8TMQ1",
+      "A0A494C0P9",
+      "A0ACI8RTS0",
+      "A0ACI8TMY2",
+      "A0ACI8R5D5"
+     ]
+    }
+   }
+  ]
+ },
+ "PMS2": {
+  "took": 3,
+  "total": 1,
+  "max_score": 16.972645,
+  "hits": [
+   {
+    "_id": "5395",
+    "_score": 16.972645,
+    "entrezgene": "5395",
+    "symbol": "PMS2",
+    "uniprot": {
+     "Swiss-Prot": "P54278",
+     "TrEMBL": [
+      "A0A8V8TQI1",
+      "A0A2R8Y6S3",
+      "A0A8V8TP84",
+      "C9J167",
+      "A0A8V8TQS5",
+      "A0A8V8TP61",
+      "A0A8V8TPE1",
+      "A0A8V8TQ50",
+      "A0A8V8TNX6",
+      "A0A8V8TNY8",
+      "A0A8V8TQG9",
+      "A0A8V8TQ92",
+      "B4DGM0",
+      "A0A8V8TQT4",
+      "A0A8V8TNV6",
+      "A0A8V8TP66",
+      "A0A8V8TPJ6",
+      "A0A8V8TNX1",
+      "A0A8V8TQ41",
+      "A0A8V8TQ88",
+      "A0A8V8TQR6",
+      "A0A8V8TQM5",
+      "A0A8V8TNQ7",
+      "A0A8V8TP72",
+      "A0A8V8TNR7",
+      "A0A8V8TP79",
+      "A0A8V8TPK2",
+      "A0A8V8TNZ8",
+      "A0A8V8TNW1",
+      "A0A8V8TQN0",
+      "A0A8V8TPD1",
+      "A0A8V8TQH3",
+      "A0A8V8TP55",
+      "A0ACI8TPH8",
+      "A0A8V8TNR3",
+      "A0A8V8TQH7",
+      "A0A8V8TP89",
+      "A0A8V8TPE7"
+     ]
+    }
+   }
+  ]
+ },
+ "POLA1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.386957,
+  "hits": [
+   {
+    "_id": "5422",
+    "_score": 17.386957,
+    "entrezgene": "5422",
+    "symbol": "POLA1",
+    "uniprot": {
+     "Swiss-Prot": "P09884",
+     "TrEMBL": [
+      "A0ACI8TR13",
+      "A6NMQ1",
+      "A0ACI8RQL3",
+      "A0ACI8TQ93",
+      "A0ACI8TNT6",
+      "A0A7I2V2V3",
+      "A0ACI8VSA4",
+      "A0ACI8TQF0",
+      "A0A5F9ZHW2",
+      "A0ACI8VST8"
+     ]
+    }
+   }
+  ]
+ },
+ "POMC": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.288815,
+  "hits": [
+   {
+    "_id": "5443",
+    "_score": 18.288815,
+    "entrezgene": "5443",
+    "symbol": "POMC",
+    "uniprot": {
+     "Swiss-Prot": "P01189",
+     "TrEMBL": "E9PHK5"
+    }
+   }
+  ]
+ },
+ "RTEL1": {
+  "took": 3,
+  "total": 1,
+  "max_score": 17.04763,
+  "hits": [
+   {
+    "_id": "51750",
+    "_score": 17.04763,
+    "entrezgene": "51750",
+    "symbol": "RTEL1",
+    "uniprot": {
+     "Swiss-Prot": "Q9NZ71",
+     "TrEMBL": [
+      "A0A8V8TLB5",
+      "R4IXY3",
+      "A0ACI8TWR3",
+      "A0ACI8TX92",
+      "A0ACI8TWV1",
+      "A0A0C4DGC7",
+      "A0A2R8YD56",
+      "A0ACI8V6J3",
+      "A0ACI8TXD4",
+      "A0A2R8Y7H5",
+      "A0ACI8TWT6",
+      "A0ACI8V6K0",
+      "A0ACI8V6I1",
+      "A0ACI8QQ30",
+      "X6R5I7",
+      "A0A8V8TLQ6"
+     ]
+    }
+   }
+  ]
+ },
+ "SGPL1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.504463,
+  "hits": [
+   {
+    "_id": "8879",
+    "_score": 17.504463,
+    "entrezgene": "8879",
+    "symbol": "SGPL1",
+    "uniprot": {
+     "Swiss-Prot": "O95470",
+     "TrEMBL": [
+      "A0A8V8TLB6",
+      "A0A8V8TN35",
+      "A0ABB0MV32",
+      "A0A8V8TN38",
+      "A0A8V8TLU3",
+      "H7BXL7",
+      "A0A8V8TLU8"
+     ]
+    }
+   }
+  ]
+ },
+ "SLC29A3": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.511356,
+  "hits": [
+   {
+    "_id": "55315",
+    "_score": 17.511356,
+    "entrezgene": "55315",
+    "symbol": "SLC29A3",
+    "uniprot": {
+     "Swiss-Prot": "Q9BZD2",
+     "TrEMBL": [
+      "A0A2R8Y4B7",
+      "A0A2R8YDR8",
+      "A0A2R8Y4I0",
+      "A0A2R8YDA4",
+      "A0A2R8Y657",
+      "A0A2R8Y863",
+      "A0A2R8Y5R8",
+      "A0A2R8YGC2",
+      "A0A2R8Y5U2"
+     ]
+    }
+   }
+  ]
+ },
+ "SMARCAL1": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.53047,
+  "hits": [
+   {
+    "_id": "50485",
+    "_score": 17.53047,
+    "entrezgene": "50485",
+    "symbol": "SMARCAL1",
+    "uniprot": {
+     "Swiss-Prot": "Q9NZC9",
+     "TrEMBL": [
+      "A0A8V8TLB3",
+      "A0A8V8TLD4",
+      "A0ACI8PZU6",
+      "A0A8V8TMS6",
+      "A0ACI8TMS7",
+      "A0ACI8UVM6",
+      "A0ACI8PK87",
+      "A0ACI8TN08",
+      "A0ACI8TMV0",
+      "H7C1I3",
+      "A0ACI8UVP6",
+      "C9JHQ1",
+      "C9JP32",
+      "H7BYI2",
+      "H7C051"
+     ]
+    }
+   }
+  ]
+ },
+ "STAR": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.539236,
+  "hits": [
+   {
+    "_id": "6770",
+    "_score": 17.539236,
+    "entrezgene": "6770",
+    "symbol": "STAR",
+    "uniprot": {
+     "Swiss-Prot": "P49675",
+     "TrEMBL": [
+      "A0ACI8TD60",
+      "Q6IBK0",
+      "E5RH12",
+      "A0ACI8VMW3",
+      "H0YB94"
+     ]
+    }
+   }
+  ]
+ },
+ "TERT": {
+  "took": 4,
+  "total": 1,
+  "max_score": 17.219429,
+  "hits": [
+   {
+    "_id": "7015",
+    "_score": 17.219429,
+    "entrezgene": "7015",
+    "symbol": "TERT",
+    "uniprot": {
+     "Swiss-Prot": "O14746",
+     "TrEMBL": [
+      "A0A590UK92",
+      "A0ACI8T647",
+      "A0ACI8T627"
+     ]
+    }
+   }
+  ]
+ },
+ "USP9X": {
+  "took": 2,
+  "total": 1,
+  "max_score": 18.26898,
+  "hits": [
+   {
+    "_id": "8239",
+    "_score": 18.26898,
+    "entrezgene": "8239",
+    "symbol": "USP9X",
+    "uniprot": {
+     "Swiss-Prot": "Q93008",
+     "TrEMBL": [
+      "A0A994J6S4",
+      "A0A994J4R6",
+      "Q86X58",
+      "Q6P468",
+      "A0A994J4T3",
+      "A0A994J4K9",
+      "A0A994J583",
+      "A0A994J7K1",
+      "A0A994J766",
+      "A0A994J588",
+      "A0A994J4T8"
+     ]
+    }
+   }
+  ]
+ },
+ "UVSSA": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.53748,
+  "hits": [
+   {
+    "_id": "57654",
+    "_score": 17.53748,
+    "entrezgene": "57654",
+    "symbol": "UVSSA",
+    "uniprot": {
+     "Swiss-Prot": "Q2YD98",
+     "TrEMBL": [
+      "A0ACI8TUH7",
+      "A0A7I2V4K1",
+      "H0Y924",
+      "A0ACI8TTW9",
+      "A0A7I2V3L2",
+      "A0ACI8TUF8",
+      "A0A7I2V554"
+     ]
+    }
+   }
+  ]
+ },
+ "WRAP53": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.735823,
+  "hits": [
+   {
+    "_id": "55135",
+    "_score": 17.735823,
+    "entrezgene": "55135",
+    "symbol": "WRAP53",
+    "uniprot": {
+     "Swiss-Prot": "Q9BUR4",
+     "TrEMBL": [
+      "E9PMG4",
+      "A0ACI8PLL5",
+      "E9PMR3",
+      "A0A8V8TM47",
+      "A0ACI8S272",
+      "A0A8V8TM74",
+      "A0A8V8TMM9",
+      "A0ACI8TN20",
+      "K7EJ50",
+      "A0ACI8TN24",
+      "A0A8V8TNM2",
+      "A0A8V8TM44",
+      "A0A8V8TNY4"
+     ]
+    }
+   }
+  ]
+ },
+ "ZMPSTE24": {
+  "took": 2,
+  "total": 1,
+  "max_score": 17.494179,
+  "hits": [
+   {
+    "_id": "10269",
+    "_score": 17.494179,
+    "entrezgene": "10269",
+    "symbol": "ZMPSTE24",
+    "uniprot": {
+     "Swiss-Prot": "O75844",
+     "TrEMBL": [
+      "A0ACI8S2B6",
+      "A0A6Q8PHG9",
+      "A0ACI8PLR4",
+      "A0A6Q8PH40",
+      "A0ACI8RUH6",
+      "A0A6Q8PF67",
+      "A0ACI8RDR4",
+      "A0ACI8Q0V2",
+      "A0ACI8QXD3",
+      "A0ACI8QWD8"
+     ]
+    }
+   }
+  ]
+ }
+}

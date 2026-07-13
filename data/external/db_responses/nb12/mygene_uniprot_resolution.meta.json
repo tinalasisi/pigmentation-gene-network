@@ -1,0 +1,10 @@
+{
+  "artifact": "mygene_uniprot_resolution.json",
+  "description": "Frozen MyGene.info query responses for the 50 NB12 uncovered LoF genes (no NB10 network direction call). One entry per gene symbol; each value is the verbatim {took, total, max_score, hits:[...]} response. Used to resolve each gene's Swiss-Prot UniProt accession for the downstream QuickGO pull (notebook Step 3).",
+  "queried_utc": "2026-07-13T19:23:37Z",
+  "endpoint": "https://mygene.info/v3/query",
+  "query_template": "q=symbol:{gene}&species=human&fields=symbol,entrezgene,uniprot",
+  "n_genes": 50,
+  "n_resolved": 50,
+  "gene_list_source": "data/processed/nb12_direction_law_expanded.csv, rows where regulator_call is NaN (the 50-gene expansion target defined in notebook cell 6)"
+}

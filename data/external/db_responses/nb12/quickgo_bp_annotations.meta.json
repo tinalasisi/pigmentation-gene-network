@@ -1,0 +1,14 @@
+{
+  "artifact": "quickgo_bp_annotations.json",
+  "description": "Frozen QuickGO annotation-search responses (biological_process aspect) for the UniProt accession of each of the 50 NB12 uncovered genes. One entry per gene symbol; each value is the verbatim {numberOfHits, results:[...]} response used by the notebook's Step-3 rule-based mechanism classifier (positive/negative/not_melanin_regulator) frozen per-gene in data/processed/nb12_direction_law_expanded.csv (mech_call/mech_conf/mech_reason columns).",
+  "queried_utc": "2026-07-13T19:23:37Z",
+  "endpoint": "https://www.ebi.ac.uk/QuickGO/services/annotation/search",
+  "query_template": "geneProductId=UniProtKB:{accession}&aspect=biological_process&limit=100",
+  "accession_source": "mygene_uniprot_resolution.json (Swiss-Prot accession of the top scoring hit per gene)",
+  "n_genes": 50,
+  "n_with_bp_terms": 49,
+  "n_without_bp_terms": 1,
+  "genes_without_bp_terms": [
+    "DNAJC12"
+  ]
+}
