@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,RAB27A,melanosome_biogenesis,pigmentation,?,1.358321574050675,1,1.0,-0.00554661178830429,2,76,218,ok
+origin_7,RAB27A,melanosome_biogenesis,pigmentation,?,1.412175656788374,0.1052000168781945,0.4665,2.624886659144977,6,80,218,ok
+origin_8,RAB27A,melanosome_biogenesis,pigmentation,?,0.8182607263116932,0.5747122742195684,1.0,0.3148613517550984,3,77,218,ok

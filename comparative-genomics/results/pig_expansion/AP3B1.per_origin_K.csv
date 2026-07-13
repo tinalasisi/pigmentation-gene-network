@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,AP3B1,melanosome_biogenesis,pigmentation,?,1.358321574050675,1,1.0,-0.04678903213789454,2,76,487,ok
+origin_7,AP3B1,melanosome_biogenesis,pigmentation,?,1.002723420692895,0.9588228771185614,1.0,0.002665739521034993,6,80,487,ok
+origin_8,AP3B1,melanosome_biogenesis,pigmentation,?,1.000362228025252,1,1.0,-0.07238548087480012,3,77,487,ok

@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,MYO5A,melanosome_biogenesis,pigmentation,?,1.358321574050675,0.999998478155974,1.0,3.637978807091713e-12,2,65,556,ok
+origin_7,MYO5A,melanosome_biogenesis,pigmentation,?,0.9920319042553616,0.903448722786039,1.0,0.01471512879652437,6,69,556,ok
+origin_8,MYO5A,melanosome_biogenesis,pigmentation,?,3.171147770321614,0.1785797535910792,0.8193,1.809403905852378,2,65,556,ok

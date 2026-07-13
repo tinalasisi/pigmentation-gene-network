@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,CDH2,melanogenesis_regulation,pigmentation,?,0.1488427675480952,0.6031180386742694,1.0,0.270318740458606,2,72,549,ok
+origin_7,CDH2,melanogenesis_regulation,pigmentation,?,0.08901613656972483,0.2904373459080617,0.8464,1.117592946142395,6,76,549,ok
+origin_8,CDH2,melanogenesis_regulation,pigmentation,?,4.129776315085498e-06,0.3433539529139974,1.0,0.8978682596571161,3,73,549,ok

@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,HGF,melanogenesis_regulation,pigmentation,?,1,1,1.0,-0.02712044252257328,2,71,614,ok
+origin_7,HGF,melanogenesis_regulation,pigmentation,?,1,1,1.0,-0.07159499030967709,6,75,614,ok
+origin_8,HGF,melanogenesis_regulation,pigmentation,?,0.6394989485271299,1.698432467334143e-06,0.0,22.90912958670378,3,72,614,ok

@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,GPR143,melanosome_biogenesis,pigmentation,?,3.048555587090913,0.4301946410206012,1.0,0.6222979287404087,2,76,227,ok
+origin_7,GPR143,melanosome_biogenesis,pigmentation,?,0.905414011596,1,1.0,-0.001463717240767437,5,79,227,ok
+origin_8,GPR143,melanosome_biogenesis,pigmentation,?,1.801608523155722,0.202741957886145,0.8193,1.622511444313204,3,77,227,ok

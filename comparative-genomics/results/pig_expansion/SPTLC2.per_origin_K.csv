@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,SPTLC2,melanogenesis_regulation,pigmentation,?,1.358321574050675,1,1.0,-5.528359906747937e-05,2,78,328,ok
+origin_7,SPTLC2,melanogenesis_regulation,pigmentation,?,2.76116560459612,6.167011504465414e-06,0.0002,20.43565343138107,6,82,328,ok
+origin_8,SPTLC2,melanogenesis_regulation,pigmentation,?,2.782371745010155,0.1795837550448172,0.8193,1.801065330331767,2,78,328,ok

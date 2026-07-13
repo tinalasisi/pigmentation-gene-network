@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,HRAS,melanogenesis_regulation,pigmentation,?,0.8300413277095718,0.8489378740574995,1.0,0.03628026745172974,2,79,189,ok
+origin_7,HRAS,melanogenesis_regulation,pigmentation,?,0.8401103340748951,0.7116100091611117,1.0,0.1366741435349468,6,83,189,ok
+origin_8,HRAS,melanogenesis_regulation,pigmentation,?,26.82295861465579,0,0.0,86.20932566672491,3,80,189,ok

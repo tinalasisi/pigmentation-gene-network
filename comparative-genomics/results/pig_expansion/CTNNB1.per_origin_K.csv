@@ -1,0 +1,3 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,CTNNB1,melanogenesis_regulation,pigmentation,?,1.358321574050675,1,1.0,-1.551597961224616e-09,2,70,777,ok
+origin_7,CTNNB1,melanogenesis_regulation,pigmentation,?,0.9999999999690792,1,1.0,0,6,74,777,ok

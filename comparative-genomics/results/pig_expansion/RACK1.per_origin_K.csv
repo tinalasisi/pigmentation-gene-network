@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,RACK1,melanogenesis_regulation,pigmentation,?,2.25,0.9999992390779869,1.0,9.094947017729282e-13,2,72,317,ok
+origin_7,RACK1,melanogenesis_regulation,pigmentation,?,1.145051720857383,0.488598753888327,1.0,0.4796105954210361,6,76,317,ok
+origin_8,RACK1,melanogenesis_regulation,pigmentation,?,9.909110557596166e-10,0.2131310944834313,0.8193,1.5500294424819,2,72,317,ok

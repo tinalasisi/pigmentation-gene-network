@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,EP300,melanogenesis_regulation,pigmentation,?,2.628165846485466,0.864735319788005,1.0,0.02901893696616753,2,70,1129,ok
+origin_7,EP300,melanogenesis_regulation,pigmentation,?,0.8186390211757852,0.6262470958104562,1.0,0.2371844421504647,6,74,1129,ok
+origin_8,EP300,melanogenesis_regulation,pigmentation,?,1.027833666202747,0.8812135523836782,1.0,0.02232962357084034,3,71,1129,ok

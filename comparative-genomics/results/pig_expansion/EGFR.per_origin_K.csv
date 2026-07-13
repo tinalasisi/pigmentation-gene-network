@@ -1,0 +1,3 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_7,EGFR,melanogenesis_regulation,pigmentation,?,0.9371741384099276,0.7003572655208112,1.0,0.1481004710112757,6,74,700,ok
+origin_8,EGFR,melanogenesis_regulation,pigmentation,?,2.396348973483734,0.5658064408497119,1.0,0.3297498190659098,2,70,700,ok

@@ -1,0 +1,3 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,SLC44A4,melanosome_biogenesis,pigmentation,?,1.302498771738403,0.7771621150444774,1.0,0.08009987049990741,2,76,681,ok
+origin_7,SLC44A4,melanosome_biogenesis,pigmentation,?,0.8614029755471482,0.7271440474956712,1.0,0.1217501136379724,6,80,681,ok

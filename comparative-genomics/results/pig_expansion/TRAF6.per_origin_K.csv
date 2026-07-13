@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,TRAF6,melanogenesis_regulation,pigmentation,?,0.903606798,1,1.0,-3.117747837677598e-09,2,64,522,ok
+origin_7,TRAF6,melanogenesis_regulation,pigmentation,?,6.672186879257748,0.5023352757896433,1.0,0.4499993232275301,3,65,522,ok
+origin_8,TRAF6,melanogenesis_regulation,pigmentation,?,2.25,1,1.0,0,2,64,522,ok

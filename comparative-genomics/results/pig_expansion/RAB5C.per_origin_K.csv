@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,RAB5C,melanosome_biogenesis,pigmentation,?,0.905414011596,1,1.0,-9.567884262651205e-10,2,30,249,ok
+origin_7,RAB5C,melanosome_biogenesis,pigmentation,?,1,1,1.0,-5.498611699294997e-06,3,31,249,ok
+origin_8,RAB5C,melanosome_biogenesis,pigmentation,?,1,1,1.0,-3.191164978488814e-06,3,31,249,ok

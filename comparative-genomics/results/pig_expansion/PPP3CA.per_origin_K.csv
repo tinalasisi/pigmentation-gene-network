@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,PPP3CA,melanogenesis_regulation,pigmentation,?,2.337026757021713,0.8007059326007048,1.0,0.06372272190856165,2,68,302,ok
+origin_7,PPP3CA,melanogenesis_regulation,pigmentation,?,0.9669470504099196,0.7778387558790187,1.0,0.07960107143662754,6,72,302,ok
+origin_8,PPP3CA,melanogenesis_regulation,pigmentation,?,1.022578121089814,0.8951939066409904,1.0,0.01735410826950101,3,69,302,ok

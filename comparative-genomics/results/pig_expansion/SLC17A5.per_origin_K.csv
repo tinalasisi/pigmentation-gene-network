@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,SLC17A5,melanosome_biogenesis,pigmentation,?,0.03119723577337531,1,1.0,0,2,59,244,ok
+origin_7,SLC17A5,melanosome_biogenesis,pigmentation,?,1.358321574050675,1,1.0,0,5,62,244,ok
+origin_8,SLC17A5,melanosome_biogenesis,pigmentation,?,1.547825745225236,0.6520346610475243,1.0,0.2033445465358454,3,60,244,ok

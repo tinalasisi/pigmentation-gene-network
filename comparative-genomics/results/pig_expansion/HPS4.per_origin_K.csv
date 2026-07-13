@@ -1,0 +1,2 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_7,HPS4,melanosome_biogenesis,pigmentation,?,30.0512815567062,0.0006221697283324001,0.0079,11.70844849019886,6,33,473,ok

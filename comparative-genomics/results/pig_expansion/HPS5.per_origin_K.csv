@@ -1,0 +1,4 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,HPS5,melanosome_biogenesis,pigmentation,?,0.4694983446426302,0.3145941941414629,1.0,1.011289160349406,2,74,816,ok
+origin_7,HPS5,melanosome_biogenesis,pigmentation,?,1.286252082456474,0.4653519692665595,1.0,0.5329912845409126,6,78,816,ok
+origin_8,HPS5,melanosome_biogenesis,pigmentation,?,1.008032096256642,0.9767543013730444,1.0,0.0008490396794513799,3,75,816,ok

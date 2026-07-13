@@ -1,0 +1,3 @@
+origin_id,gene,category,module,set,K,p_value,p_BH,LRT,n_fg,n_tips_kept,n_sites,status
+origin_14,BLOC1S6,melanosome_biogenesis,pigmentation,?,1.358321574050675,1,1.0,0,2,26,97,ok
+origin_7,BLOC1S6,melanosome_biogenesis,pigmentation,?,1.358321574050675,1,1.0,-2.34194885706529e-11,2,26,97,ok
