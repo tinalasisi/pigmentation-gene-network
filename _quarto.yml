@@ -82,7 +82,7 @@ website:
         href: coupled-network.qmd
       - text: "Interactive · layered substrate"
         href: substrate_multilayer.qmd
-      - section: "Foundation — the network"
+      - section: "1 · Building the pigmentation network"
         contents:
           - text: "NB1 · Reconstruct the network"
             href: notebooks/01_reconstruct_published_network.ipynb
@@ -90,8 +90,6 @@ website:
             href: notebooks/02_resolve_network_to_genes.ipynb
           - text: "NB3 · Validation cases"
             href: notebooks/03_assemble_validation_cases.ipynb
-      - section: "Networks & substrate"
-        contents:
           - text: "NB4 · Unified association base"
             href: notebooks/04_unified_association_base.ipynb
           - text: "NB5 · Compare candidate networks"
@@ -100,37 +98,37 @@ website:
             href: notebooks/06_gene_regulatory_network.ipynb
           - text: "NB7 · Harmonized substrate"
             href: notebooks/07_harmonized_substrate.ipynb
-      - section: "Rescue screen"
-        contents:
-          - text: "NB8 · Rescue diagnostic"
-            href: notebooks/08_rescue_screen_diagnostic.ipynb
-          - text: "NB9 · Bajpai orphan reconciliation"
-            href: notebooks/09_bajpai_reconciliation.ipynb
-      - section: "Direction & ancestry"
-        contents:
-          - text: "NB10 · Mechanism→direction law"
-            href: notebooks/10_mechanism_direction_law.ipynb
-          - text: "NB11 · Cross-ancestry conditionality"
-            href: notebooks/11_cross_ancestry_conditionality.ipynb
-          - text: "NB12 · Direction law, expanded"
-            href: notebooks/12_direction_law_expanded.ipynb
-      - section: "Sex hormones & evolution"
+      - section: "2 · Adding the hormone axis"
         contents:
           - text: "NB13 · Sex-hormone layer"
             href: notebooks/13_sex_hormone_layer.ipynb
           - text: "NB14 · Gene panel (two coupled networks)"
             href: notebooks/14_hormone_pigment_interface.ipynb
+      - section: "3 · Evolutionary questions"
+        contents:
           - text: "NB15 · Dichromatism synthesis (results)"
             href: notebooks/15_dichromatism_synthesis.ipynb
+      - section: "Sidequests"
+        contents:
+          - text: "Rescue-screen diagnostic"
+            href: notebooks/08_rescue_screen_diagnostic.ipynb
+          - text: "Bajpai orphan reconciliation"
+            href: notebooks/09_bajpai_reconciliation.ipynb
+          - text: "Mechanism → direction law"
+            href: notebooks/10_mechanism_direction_law.ipynb
+          - text: "Cross-ancestry conditionality"
+            href: notebooks/11_cross_ancestry_conditionality.ipynb
+          - text: "Direction law, expanded"
+            href: notebooks/12_direction_law_expanded.ipynb
       - section: "Appendix — data extraction"
         contents:
-          - text: "NB1a · Bajpai CRISPR screen"
+          - text: "Bajpai CRISPR screen"
             href: notebooks/01a_extract_bajpai_crispr.ipynb
-          - text: "NB1b · Baxter gene list"
+          - text: "Baxter gene list"
             href: notebooks/01b_extract_baxter_genes.ipynb
-          - text: "NB1c · HIrisPlex markers"
+          - text: "HIrisPlex markers"
             href: notebooks/01c_extract_hirisplex_markers.ipynb
-          - text: "NB1d · GWAS Catalog pull"
+          - text: "GWAS Catalog pull"
             href: notebooks/01d_reproduce_gwas_catalog.ipynb
 
 format:

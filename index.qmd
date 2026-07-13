@@ -112,9 +112,9 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
   network to grade how much to trust human pigmentation genotype→phenotype claims by making
   independent evidence layers converge.
 
-## Building the network, and reading it in humans
+## The build, in three parts
 
-### Foundation — the network
+### 1 · Building the pigmentation network
 - **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the
   [Raghunath et al. 2015](https://doi.org/10.1186/s13104-015-1128-6) melanogenesis model as a
   **signed, directed** network, typing and signing every
@@ -124,11 +124,9 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
   gate fails the build if anything is uncited.
 - **[NB3 · Validation cases](notebooks/03_assemble_validation_cases.ipynb)** — pulls published genotype→phenotype
   discordance cases from curated papers, counted paper-by-paper, reproduced from committed extracts.
-
-### Networks & substrate
 - **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — a claim-faithful
-  effector-status re-read of 105 curated loci: **14 genuinely effector-uncertain** (the rescue target;
-  34 with Kim 2024 folded in) vs 75 canonical-effector variant-gaps — correcting an earlier coarse
+  effector-status re-read of 105 curated loci: **14 genuinely effector-uncertain**
+  (34 with Kim 2024 folded in) vs 75 canonical-effector variant-gaps — correcting an earlier coarse
   "author-unexplained" tag that overstated the open set ~6×.
 - **[NB5 · Compare candidate networks](notebooks/05_compare_candidate_networks.ipynb)** — *"the network you
   choose changes the answer"*: how STRING drift and source choice move which genes are in play.
@@ -137,37 +135,47 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 - **[NB7 · Harmonized substrate](notebooks/07_harmonized_substrate.ipynb)** — merges all layers into one tagged
   node/edge table with per-edge provenance and tier.
 
-### Rescue screen
-- **[NB8 · Rescue diagnostic](notebooks/08_rescue_screen_diagnostic.ipynb)** — the pivot: the network
-  rescue yielded no novel effector; the real result is that **melanocyte-vs-bulk eQTL correction retracts false
-  causal-gene calls** — the tissue you resolve in changes the answer.
-- **[NB9 · Bajpai orphan reconciliation](notebooks/09_bajpai_reconciliation.ipynb)** — a symmetric STRING seed
-  reconnects **93 of 142** CRISPR "orphans" to the core (vs 0/142 under a curated-only seed) — *seeding changes
-  the answer*; the residue is the knowledge gap.
-
-### Direction & ancestry
-- **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** — a functional melanin screen
-  orders the *direction* of Mendelian pigmentation disorders: positive regulator + loss-of-function allele →
-  hypopigmentation (**22/22**, base rate 54%, p < 1×10⁻⁵), robust to the study-bias confound.
-- **[NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)** — some
-  pigmentation genes are discovered through *different, population-private variants* in different ancestries,
-  quantified with Hudson F~ST~ against a genome-wide baseline.
-- **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
-  (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
-
-### Sex hormones & evolution
+### 2 · Adding the hormone axis
 - **[NB13 · Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)** — layers the **sex-hormone axis** onto the
   pigmentation substrate through cited **hormone → melanocyte-receptor → MITF** bridges, each gated on melanocyte
   expression (Zhang eQTL). The estrogen bridge runs through membrane **GPER** (not ERα — melanocytes are
-  ERα-negative), converging on the *same* cAMP→CREB→MITF node as melanocortin. A separate, additive layer:
-  **NB1–7 are unchanged.**
+  ERα-negative), converging on the *same* cAMP→CREB→MITF node as melanocortin. It is a separate, additive layer:
+  the pigmentation network built above is unchanged.
+- **[NB14 · Gene panel — two coupled networks](notebooks/14_hormone_pigment_interface.ipynb)** — assembles the
+  combined pigmentation + sex-hormone gene panel used for the cross-species work, with each gene's
+  ortholog-mapping confidence flagged so comparisons rest on clean one-to-one orthologs.
+
+### 3 · Evolutionary questions
+- **[NB15 · Dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** — brings the evolutionary
+  results together: how many times primate sexual dichromatism arose independently, whether its genetic
+  architecture is polygenic rather than a single gene of major effect, and how labile the trait is across the tree.
+
+### Sidequests
+Self-contained detours, kept out of the main build. Each is a question we followed up on and answered on its own
+terms; none is required to follow the three parts above.
+
+- **[Rescue-screen diagnostic](notebooks/08_rescue_screen_diagnostic.ipynb)** — can a locus whose causal gene is
+  unknown be *rescued* by linking it into the melanogenesis network through an independent line of evidence? No
+  novel effector emerges; the durable result is that resolving eQTLs in **melanocytes rather than bulk skin**
+  retracts false causal-gene calls — the tissue you resolve in changes the answer.
+- **[Bajpai orphan reconciliation](notebooks/09_bajpai_reconciliation.ipynb)** — a symmetric STRING seed
+  reconnects **93 of 142** CRISPR "orphans" to the core (vs 0/142 under a curated-only seed) — *seeding changes
+  the answer*; the residue is the knowledge gap.
+- **[Mechanism → direction law](notebooks/10_mechanism_direction_law.ipynb)** — a functional melanin screen
+  orders the *direction* of Mendelian pigmentation disorders: positive regulator + loss-of-function allele →
+  hypopigmentation (**22/22**, base rate 54%, p < 1×10⁻⁵), robust to the study-bias confound.
+- **[Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)** — some
+  pigmentation genes are discovered through *different, population-private variants* in different ancestries,
+  quantified with Hudson F~ST~ against a genome-wide baseline.
+- **[Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
+  (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
 
 ### Appendix — data extraction
 Reproducible pulls of each external dataset, frozen for provenance:
-[NB1a · Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
-[NB1b · Baxter gene list](notebooks/01b_extract_baxter_genes.ipynb) ·
-[NB1c · HIrisPlex markers](notebooks/01c_extract_hirisplex_markers.ipynb) ·
-[NB1d · GWAS Catalog pull](notebooks/01d_reproduce_gwas_catalog.ipynb).
+[Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
+[Baxter gene list](notebooks/01b_extract_baxter_genes.ipynb) ·
+[HIrisPlex markers](notebooks/01c_extract_hirisplex_markers.ipynb) ·
+[GWAS Catalog pull](notebooks/01d_reproduce_gwas_catalog.ipynb).
 
 ## Reproducibility
 
