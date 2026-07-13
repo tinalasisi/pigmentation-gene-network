@@ -84,6 +84,19 @@ dichromatism marked at the tips — gives the cleanest single image of the resul
 The visual non-correspondence between the red dichromatic tips and the black selection stars *is*
 the finding: no single gene tracks the trait the way *MC1R* does in birds.
 
+This holds up under formal test. A phylogenetic correlated-evolution test (Pagel's method, fitPagel)
+asks whether selection on either module *co-evolves with the trait itself*, and prefers the
+**independent** model for both — pigmentation ΔAIC ≈ 5.9 (*p* ≈ 0.72), sex-hormone ΔAIC ≈ 7.0
+(*p* ≈ 0.90): module selection and dichromatism evolve independently. What *does* show a signal is
+the two modules **co-evolving with each other** — per-lineage selection on the pigmentation and
+hormone modules is concordant (PGLS β ≈ 0.42, *p* ≈ 1×10⁻⁴; tree-structured permutation
+*p* ≈ 0.002). The network is coupled to itself, not to the phenotype. And run as a cross-species
+association scan — dichromatic/monochromatic as case/control, per-lineage ω as the "genotype," the
+phylogeny standing in for the population-structure control of a human GWAS — a single gene surfaces
+as a lead after multiple-testing correction: **AKR1C4**, a sex-hormone-module steroid reductase
+(*p*~BH~ ≈ 0.045, permutation *p* ≈ 5×10⁻⁴). One suggestive candidate at 24 dichromatic origins —
+a lead to chase on expanded data, not an established locus.
+
 ## The signal is modular, split across two coupled networks
 
 The selection hits that pass the significance and alignment-QC gate are not scattered noise — they
@@ -95,9 +108,13 @@ concentrate in functional modules, on **both** halves of the network:
 
 The two networks are physically coupled, and **POMC** is the clearest bridge: the same pro-hormone
 is cleaved into α-MSH (driving pigmentation via MC1R) **and** ACTH (driving the adrenal steroid
-axis). The open question the per-origin design tests directly is whether the pigmentation module is
-remodeled in some origins while the hormone module is remodeled in others — different lineages
-reaching the same phenotype through different parts of one coupled system.
+axis). The per-origin design tests whether the pigmentation module is remodeled in some origins
+while the hormone module is remodeled in others — different lineages reaching the same phenotype
+through different parts of one coupled system. The lineage-level test now has a partial answer:
+selection on the two modules is *concordant* across lineages (they intensify and relax together),
+even though neither module's selection tracks the dichromatic phenotype itself — so the coupling is
+real at the network level, but which specific part carries the signal in any one origin remains
+underpowered to resolve at the current number of origins.
 
 → Full detail, methods, and limitations on **[the dichromatism page](dichromatism.qmd)**.
 
@@ -139,7 +156,9 @@ of major effect, as the best-studied bird cases do — grounded in specific prio
 [Gazda et al. 2020](https://doi.org/10.1126/science.aba0803) (*BCO2*/carotenoid in finches).
 
 **The data and tools** are a 238-species primate hair-trait table and a dated primate tree; a
-curated 80-gene panel (27 pigmentation + 53 sex-hormone); and ~117 primate genome assemblies.
+curated selection panel (80 genes — 27 pigmentation + 53 sex-hormone — for the certified-hit
+analysis, expanded to ~105 for the per-origin and cross-species-GWAS layers after the pigmentation
+module was widened); and ~117 primate genome assemblies.
 Trait history comes from ancestral-state reconstruction (`ape`/`phytools`, ARD/ER Mk models,
 stochastic mapping); coding sequences from homology-based extraction (miniprot); codon alignment
 from MAFFT; and selection inference from the HyPhy suite (RELAX per origin, aBSREL per branch)
@@ -148,7 +167,9 @@ plus RERconverge — run on an HPC cluster via a committed, parameterized protoc
 **The finding** is discrete and reproducible: primate sexual dichromatism is polyphyletic
 (~15 origins), labile (loss ≈ 9× gain), and polygenic with no single shared signature — unlike the
 avian genes-of-major-effect model (MC1R, BCO2), and novel against the published literature and
-2023–2026 preprints.
+2023–2026 preprints. Formal phylogenetic tests add that selection on the pigment and hormone modules
+is concordant with *each other* but not with the trait, and a phylogeny-controlled association scan
+flags one suggestive candidate (*AKR1C4*, hormone module) rather than an established locus.
 
 **The design choice that makes it work** is taking the independent origin of dichromatism, not the
 dichromatic species, as the unit of selection testing — the only unit at which a selection test can
