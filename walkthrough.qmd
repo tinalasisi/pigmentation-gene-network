@@ -126,23 +126,23 @@ The human arm builds the network and demonstrates *how* to grade a genotype→ph
 a **methodological** demonstration on well-characterized pigmentation biology, and it is what makes
 the evolution arm's network principled rather than an arbitrary gene list.
 
-- **Build the network.** [NB1 · Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
+- **Build the network.** [Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
   rebuilds the [Raghunath et al. 2015](https://doi.org/10.1186/s13104-015-1128-6) melanogenesis
   model as a signed, directed graph with a citation per edge;
-  [NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb) maps every entity to a gene
+  [Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb) maps every entity to a gene
   and re-validates against OmniPath.
-- **Assemble the evidence.** [NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)
+- **Assemble the evidence.** [Unified association base](notebooks/04_unified_association_base.ipynb)
   harmonizes reported pigmentation associations from independent sources (extracted in
-  [NB1a–01d](notebooks/01a_extract_bajpai_crispr.ipynb)) into one claim-faithful table.
-- **The core result.** [NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)
+  [the data-extraction appendix](notebooks/01a_extract_bajpai_crispr.ipynb)) into one claim-faithful table.
+- **The core result.** [Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)
   shows a functional melanin screen predicts the *direction* of Mendelian pigmentation disorders
-  (22/22, permutation p < 1×10⁻⁵); [NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)
+  (22/22, permutation p < 1×10⁻⁵); [Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)
   extends it to 29/33 in a pre-registered expansion and locates the failure boundary — the misses
   act through systemic routes.
-- **Context-dependence.** [NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)
+- **Context-dependence.** [Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)
   shows the same variant can be causal in one population and silent in another — the human echo of
   the primate result.
-- **The bridge to evolution.** [NB13 · Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)
+- **The bridge to evolution.** [Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)
   layers the sex-hormone axis onto the pigmentation substrate — the same coupled network the
   dichromatism analysis then tests for selection.
 

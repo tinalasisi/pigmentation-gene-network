@@ -10,9 +10,8 @@ project:
   render:
     - index.qmd
     - walkthrough.qmd
+    - networks.qmd
     - dichromatism.qmd
-    - substrate_multilayer.qmd
-    - coupled-network.qmd
     - notebooks/01_reconstruct_published_network.ipynb
     - notebooks/01a_extract_bajpai_crispr.ipynb
     - notebooks/01b_extract_baxter_genes.ipynb
@@ -57,13 +56,9 @@ website:
       - href: index.qmd
         text: Overview
       - href: walkthrough.qmd
-        text: Walkthrough
-      - href: dichromatism.qmd
-        text: Dichromatism
-      - href: coupled-network.qmd
-        text: "Coupled network"
-      - href: substrate_multilayer.qmd
-        text: Interactive
+        text: About
+      - href: networks.qmd
+        text: Networks
     right:
       - icon: github
         href: https://github.com/tinalasisi/pigmentation-gene-network
@@ -74,39 +69,37 @@ website:
     contents:
       - text: Overview
         href: index.qmd
-      - text: "Walkthrough (start here)"
+      - text: "About (start here)"
         href: walkthrough.qmd
-      - text: "Sexual dichromatism across primates"
-        href: dichromatism.qmd
-      - text: "Coupled pigmentation–hormone network"
-        href: coupled-network.qmd
-      - text: "Interactive · layered substrate"
-        href: substrate_multilayer.qmd
+      - text: "Networks"
+        href: networks.qmd
       - section: "1 · Building the pigmentation network"
         contents:
-          - text: "NB1 · Reconstruct the network"
+          - text: "Reconstruct the network"
             href: notebooks/01_reconstruct_published_network.ipynb
-          - text: "NB2 · Resolve to genes"
+          - text: "Resolve to genes"
             href: notebooks/02_resolve_network_to_genes.ipynb
-          - text: "NB3 · Validation cases"
+          - text: "Validation cases"
             href: notebooks/03_assemble_validation_cases.ipynb
-          - text: "NB4 · Unified association base"
+          - text: "Unified association base"
             href: notebooks/04_unified_association_base.ipynb
-          - text: "NB5 · Compare candidate networks"
+          - text: "Compare candidate networks"
             href: notebooks/05_compare_candidate_networks.ipynb
-          - text: "NB6 · Gene-regulatory network"
+          - text: "Gene-regulatory network"
             href: notebooks/06_gene_regulatory_network.ipynb
-          - text: "NB7 · Harmonized substrate"
+          - text: "Harmonized substrate"
             href: notebooks/07_harmonized_substrate.ipynb
       - section: "2 · Adding the hormone axis"
         contents:
-          - text: "NB13 · Sex-hormone layer"
+          - text: "Sex-hormone layer"
             href: notebooks/13_sex_hormone_layer.ipynb
-          - text: "NB14 · Gene panel (two coupled networks)"
+          - text: "Gene panel (two coupled networks)"
             href: notebooks/14_hormone_pigment_interface.ipynb
       - section: "3 · Evolutionary questions"
         contents:
-          - text: "NB15 · Dichromatism synthesis (results)"
+          - text: "Sexual dichromatism across primates (narrative)"
+            href: dichromatism.qmd
+          - text: "Dichromatism synthesis (results)"
             href: notebooks/15_dichromatism_synthesis.ipynb
       - section: "Sidequests"
         contents:

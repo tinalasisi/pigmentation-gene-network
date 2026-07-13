@@ -48,7 +48,7 @@ Two things fall out of the network framing that a single-gene scan would miss:
   confined to dichromatic lineages** — only two of the five selected branches are dichromatic (the
   *Nomascus* gibbons); the other three are monochromatic macaque lineages. So the bridge gene
   overlaps one dichromatism origin without tracking the trait one-to-one — the same lesson as the
-  whole-panel scan below. See §5 of [NB15](notebooks/15_dichromatism_synthesis.ipynb).
+  whole-panel scan below. See §5 of the [dichromatism-synthesis notebook](notebooks/15_dichromatism_synthesis.ipynb).
 - **Selection localizes to modules, and modules to branches.** The signal that passes the
   significance and alignment-QC gate is not
   scattered noise: on the pigmentation side it concentrates in the melanoblast-development module
@@ -202,7 +202,7 @@ relative-rate scan has not been run and is not reported as a result here.
   PGLS is an anticonservative linear-probability model, this is a **single suggestive candidate**,
   not an established locus: one hit among ~100 genes with only ~24 cases, and the binding constraint
   is the number of independent dichromatic lineages, which no method can inflate. See
-  [NB16](notebooks/16_cross_species_gwas.ipynb).
+  the [cross-species GWAS notebook](notebooks/16_cross_species_gwas.ipynb).
 - **Shared vs. heterogeneous architecture is currently underpowered to resolve.** A χ² homogeneity
   test across the 11 origins with any detectable selection does not reject a single shared
   architecture (*p* ≈ 0.42; Monte-Carlo *p* ≈ 0.45), and the two "pure-module" poles (*Eulemur*,
@@ -218,10 +218,10 @@ relative-rate scan has not been run and is not reported as a result here.
 The two results notebooks are the executable version of this page, each self-contained and rendered
 from stored outputs:
 
-- **[NB15 — Sexual dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** recomputes
+- **[Sexual dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** recomputes
   the lability and origin-count analyses from the tree, and reports the per-origin module-balance,
   circular-tree, and sister-pair contrasts.
-- **[NB16 — Cross-species GWAS](notebooks/16_cross_species_gwas.ipynb)** runs the phylogeny-controlled
+- **[Cross-species GWAS](notebooks/16_cross_species_gwas.ipynb)** runs the phylogeny-controlled
   association scan (PGLS + phyloglm) and produces the *AKR1C4* result.
 
 The full pipeline (miniprot → MAFFT → RELAX / aBSREL; RERconverge staged but not yet run), the

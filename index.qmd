@@ -66,7 +66,7 @@ sexual dichromatism arose ~15 times independently across primates and is polygen
 tested (unlike birds, where dichromatism maps to genes of major effect like MC1R and BCO2), tested with per-origin RELAX, per-branch aBSREL,
 and RERconverge.
 
-Then, for the human-pigmentation method, follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with NB12, which extends the result to 29/33 and locates its failure boundary. The human arm is a **methodological** demonstration of the convergence thesis on well-characterized pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
+Then, for the human-pigmentation method, follow **[Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[Unified association base](notebooks/04_unified_association_base.ipynb)** → **[Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. The direction-law notebook shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with its expansion, which extends the result to 29/33 and locates its failure boundary. The human arm is a **methodological** demonstration of the convergence thesis on well-characterized pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
 :::
 
 ## What this is
@@ -115,38 +115,38 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 ## The build, in three parts
 
 ### 1 · Building the pigmentation network
-- **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the
+- **[Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the
   [Raghunath et al. 2015](https://doi.org/10.1186/s13104-015-1128-6) melanogenesis model as a
   **signed, directed** network, typing and signing every
   interaction from the published file, with a resolvable citation per edge.
-- **[NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** — resolves entities to genes
+- **[Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** — resolves entities to genes
   (UniProt / HGNC / Ensembl / GRCh38) and validates every edge against OmniPath as a separate check; a closing
   gate fails the build if anything is uncited.
-- **[NB3 · Validation cases](notebooks/03_assemble_validation_cases.ipynb)** — pulls published genotype→phenotype
+- **[Validation cases](notebooks/03_assemble_validation_cases.ipynb)** — pulls published genotype→phenotype
   discordance cases from curated papers, counted paper-by-paper, reproduced from committed extracts.
-- **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** — a claim-faithful
+- **[Unified association base](notebooks/04_unified_association_base.ipynb)** — a claim-faithful
   effector-status re-read of 105 curated loci: **14 genuinely effector-uncertain**
   (34 with Kim 2024 folded in) vs 75 canonical-effector variant-gaps — correcting an earlier coarse
   "author-unexplained" tag that overstated the open set ~6×.
-- **[NB5 · Compare candidate networks](notebooks/05_compare_candidate_networks.ipynb)** — *"the network you
+- **[Compare candidate networks](notebooks/05_compare_candidate_networks.ipynb)** — *"the network you
   choose changes the answer"*: how STRING drift and source choice move which genes are in play.
-- **[NB6 · Gene-regulatory network](notebooks/06_gene_regulatory_network.ipynb)** — 58 curated, signed TF→target
+- **[Gene-regulatory network](notebooks/06_gene_regulatory_network.ipynb)** — 58 curated, signed TF→target
   regulon edges (MITF / PAX3 / SOX10), every edge cited.
-- **[NB7 · Harmonized substrate](notebooks/07_harmonized_substrate.ipynb)** — merges all layers into one tagged
+- **[Harmonized substrate](notebooks/07_harmonized_substrate.ipynb)** — merges all layers into one tagged
   node/edge table with per-edge provenance and tier.
 
 ### 2 · Adding the hormone axis
-- **[NB13 · Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)** — layers the **sex-hormone axis** onto the
+- **[Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)** — layers the **sex-hormone axis** onto the
   pigmentation substrate through cited **hormone → melanocyte-receptor → MITF** bridges, each gated on melanocyte
   expression (Zhang eQTL). The estrogen bridge runs through membrane **GPER** (not ERα — melanocytes are
   ERα-negative), converging on the *same* cAMP→CREB→MITF node as melanocortin. It is a separate, additive layer:
   the pigmentation network built above is unchanged.
-- **[NB14 · Gene panel — two coupled networks](notebooks/14_hormone_pigment_interface.ipynb)** — assembles the
+- **[Gene panel — two coupled networks](notebooks/14_hormone_pigment_interface.ipynb)** — assembles the
   combined pigmentation + sex-hormone gene panel used for the cross-species work, with each gene's
   ortholog-mapping confidence flagged so comparisons rest on clean one-to-one orthologs.
 
 ### 3 · Evolutionary questions
-- **[NB15 · Dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** — brings the evolutionary
+- **[Dichromatism synthesis](notebooks/15_dichromatism_synthesis.ipynb)** — brings the evolutionary
   results together: how many times primate sexual dichromatism arose independently, whether its genetic
   architecture is polygenic rather than a single gene of major effect, and how labile the trait is across the tree.
 
