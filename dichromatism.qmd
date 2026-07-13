@@ -181,10 +181,13 @@ hormone module that carries the selection signal** — and does that differ from
 - **A phylogeny-controlled cross-species association scan finds one suggestive gene.** Treating the
   origins as a cross-species GWAS — dichromatic/monochromatic as case/control, per-lineage dN/dS as
   the per-gene marker, and phylogenetic covariance (per-gene Pagel's λ) as the stratification
-  control — one gene survives multiple-testing correction: *AKR1C4*, a sex-hormone-module steroid
-  reductase, with elevated dN/dS on dichromatic lineages (BH *p* ≈ 0.04, confirmed by a
-  tree-structured permutation test, *p* ≈ 5e-4). This is a **single suggestive candidate**, not an
-  established locus: one hit among ~80 genes with only ~24 cases, and the binding constraint is the
+  control — the strongest association is *AKR1C4*, a sex-hormone-module steroid reductase, with
+  elevated dN/dS on dichromatic lineages. It is consistent in **direction** across three tests
+  (PGLS, canonical binary phyloglm, and a tree-structured permutation, perm *p* ≈ 5e-4), but its
+  survival of multiple-testing correction is **model-dependent**: it clears BH under PGLS
+  (*p* ≈ 0.04) but not under the more appropriate binary model, phyloglm (*p*_BH = 1.0). Since PGLS
+  is an anticonservative linear-probability model, this is a **single suggestive candidate**, not an
+  established locus: one hit among ~90 genes with only ~24 cases, and the binding constraint is the
   number of independent dichromatic lineages, which no method can inflate. See
   `notebooks/16_cross_species_gwas.ipynb`.
 - **Shared vs. heterogeneous architecture is currently underpowered to resolve.** A χ² homogeneity
