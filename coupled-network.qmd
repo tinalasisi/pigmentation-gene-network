@@ -1,0 +1,86 @@
+---
+title: "The coupled pigmentation–hormone network"
+subtitle: "The 80-gene selection panel as two coupled molecular modules — the object the dichromatism test is built on"
+toc: true
+---
+
+Both halves of this project run on **one object**: a curated network that couples the
+**pigmentation core** to its physically-linked **sex-hormone axis**. The macroevolutionary arm
+tests *this network* for signatures of selection across primates
+([the dichromatism finding](dichromatism.qmd)); this page **is** that network — the 80-gene panel
+assembled in [NB13](notebooks/13_sex_hormone_layer.ipynb) →
+[NB14](notebooks/14_hormone_pigment_interface.ipynb) →
+[NB15](notebooks/15_dichromatism_synthesis.ipynb) — shown two ways: as two coupled networks, and
+as the signalling pathway that runs through them.
+
+## Two coupled networks
+
+The panel is **27 pigmentation genes** and **53 sex-hormone genes** — two disjoint gene sets that
+share no members, joined only where hormones actually reach the melanocyte. Each module is drawn as
+its own **STRING v12** network (the hormone side split into its six functional groups as stacked
+sub-planes); a thin **interface layer** holds the pigment genes that couple to the hormone axis
+(POMC, MITF, TYR, …), and the coupling itself is drawn on top.
+
+```{=html}
+<iframe src="interactive/coupled_network_3d.html"
+        title="Two coupled 3D networks: the sex-hormone axis over the pigmentation core"
+        loading="lazy"
+        style="width:100%; height:800px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
+</iframe>
+```
+
+::: {style="color:#5c656b; font-size:0.95rem; margin-top:0.4rem;"}
+**Drag to rotate · click any gene** for a side panel with its full name, role, connections, and the
+cited coupling (with PubMed links). The **magenta** links are the three hand-curated, PMID-cited
+mechanisms; the **gold** links are STRING functional associations (see *Reading the evidence* below).
+:::
+
+## From signal to pigment — the pathway
+
+The same coupling as a directed **hourglass**: four diffusible signals (melanocortin, estrogen,
+androgen, endothelin) funnel *down* onto **MITF** at the waist; MITF and SOX10 then fan *out* to the
+melanogenesis genes — the curated [Raghunath](notebooks/01_reconstruct_published_network.ipynb)
+melanin pathway (TYR, TYRP1, DCT, PMEL, MLANA, OCA2, SLC45A2) — and back down to **melanin**.
+
+```{=html}
+<iframe src="interactive/coupled_pathway_3d.html"
+        title="From signal to pigment: the hormone-to-melanogenesis pathway in 3D"
+        loading="lazy"
+        style="width:100%; height:800px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
+</iframe>
+```
+
+::: {style="color:#5c656b; font-size:0.95rem; margin-top:0.4rem;"}
+**Click any node** for its role, mechanism, citation, and signal flow. Thick edges are established;
+thin edges are weak or regional.
+:::
+
+## Reading the evidence
+
+**Two very different kinds of hormone ↔ pigment link are on screen — don't conflate them.**
+
+- **Cited sex-steroid bridges (magenta / thick).** Three hand-curated, literature-backed mechanisms
+  from NB13: **GPER1 → MITF** and **ESR2 → MITF** (estrogen) and **AR → TYR** (androgen). Each is a
+  specific *directed* interaction with a PMID and a spelled-out mechanism, and each passed a
+  melanocyte-expression gate.
+- **STRING coupling (gold / thin).** STRING v12 *functional associations* (score ≥ 0.7) between the
+  modules — broad, statistical "these genes co-function" evidence, **not** individually verified
+  mechanisms. POMC is the standout hub here: cleaved into α-MSH (→ MC1R, pigment) *and* ACTH
+  (→ adrenal steroidogenesis), it wires the melanocortin/pigment axis to the steroid axis.
+
+And the sex-steroid arm is **deliberately hedged**: estrogen via GPER is paper-supported (Natale
+2016, +208 % melanin), while ESR2 and the androgen (AR) arm are weak or regional — the panel is a
+*hypothesis about coupling*, not a claim of settled human biology.
+
+## Provenance & reproducibility
+
+| Component | Source |
+|---|---|
+| 80-gene panel (module + functional group) | `comparative-genomics/config/gene_panel.csv` — [NB14](notebooks/14_hormone_pigment_interface.ipynb) / [NB15](notebooks/15_dichromatism_synthesis.ipynb) |
+| Cited hormone → pigment bridges (PMID-gated) | `data/processed/nb13_hormone_interlayer_edges.csv` — [NB13](notebooks/13_sex_hormone_layer.ipynb) |
+| Within/between-module network edges | STRING v12 · `data/processed/panel_string_edges.csv` |
+| Pigment pathway (directed) | Raghunath melanogenesis model · [NB1](notebooks/01_reconstruct_published_network.ipynb) |
+
+Both figures regenerate from the committed tables (no kernel, no network) with
+[`scripts/make_coupled_network_3d.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_coupled_network_3d.py)
+and [`scripts/make_coupled_pathway_3d.py`](https://github.com/tinalasisi/pigmentation-gene-network/blob/main/scripts/make_coupled_pathway_3d.py).
