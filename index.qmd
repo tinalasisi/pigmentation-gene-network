@@ -8,7 +8,8 @@ toc: false
 ::: {.callout-important}
 ## The headline finding
 **Sexual dichromatism in primates has no single genetic basis.** Where the same trait is nearly
-a one-gene switch in birds (*MC1R*), in primates it **arose ~15 times independently** and is built
+a one-gene switch in birds (*MC1R*; [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)),
+in primates it **arose ~15 times independently** and is built
 by **different genes in different lineages** — a heterogeneous, origin-specific architecture. This
 is the first clade-wide, multi-gene selection test of the genomic basis of primate sexual
 dichromatism. **→ [Read the finding](dichromatism.qmd)**
@@ -57,7 +58,7 @@ Short on time? Read the **[dichromatism finding](dichromatism.qmd)** first — i
 sexual dichromatism arose ~15 times independently across primates and is built by different genes
 in different origins, tested with per-origin RELAX, per-branch aBSREL, and RERconverge.
 
-Then, for the human-pigmentation method, follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with NB12, which states plainly what is and isn't novel. That human arm is deliberately **methodological** — a bounded demonstration of the convergence thesis, not a claim of new pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
+Then, for the human-pigmentation method, follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with NB12, which extends the result to 29/33 and locates its failure boundary. The human arm is a **methodological** demonstration of the convergence thesis on well-characterized pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
 :::
 
 ## What this is
@@ -105,7 +106,8 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 
 ### Foundation — the network
 - **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** — rebuilds the
-  Raghunath et al. 2015 melanogenesis model as a **signed, directed** network, typing and signing every
+  [Raghunath et al. 2015](https://doi.org/10.1186/s13104-015-1128-6) melanogenesis model as a
+  **signed, directed** network, typing and signing every
   interaction from the published file, with a resolvable citation per edge.
 - **[NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb)** — resolves entities to genes
   (UniProt / HGNC / Ensembl / GRCh38) and validates every edge against OmniPath as a separate check; a closing

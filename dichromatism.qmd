@@ -21,10 +21,11 @@ Two things fall out of the network framing that a single-gene scan would miss:
   coupled.** The clearest bridge is **POMC**: the same pro-hormone is cleaved into α-MSH, which
   drives pigmentation through the melanocortin receptor, **and** ACTH, which drives the adrenal
   steroid axis. A gene sitting on both networks is exactly where a sexually dimorphic,
-  hormone-linked colour trait would be expected to act. (POMC's *own* selection signal doesn't
+  hormone-linked color trait would be expected to act. (POMC's *own* selection signal doesn't
   survive our alignment QC in this run — a truncated extraction, flagged not interpreted — which
   is precisely the kind of gene a denser genome set would let us re-test.)
-- **Selection localizes to modules, and modules to branches.** The certified signal is not
+- **Selection localizes to modules, and modules to branches.** The signal that passes the
+  significance and alignment-QC gate is not
   scattered noise: on the pigmentation side it concentrates in the melanoblast-development module
   (KITLG–EDN3–TFAP2A); on the hormone side in steroid-metabolism enzymes (HSD17B1/12/7, SRD5A1,
   CYP7B1) — not the receptors. The open question the per-origin design tests directly is whether
@@ -48,10 +49,10 @@ dichromatism being reachable by several different **pigmentation × sex-hormone*
 rather than one canonical switch.
 
 ::: {.callout-note}
-## Why this is the pitch
+## Why this is novel
 This is the first clade-wide, multi-gene, selection-inference test of the genomic basis of
 sexual dichromatism in primates. Prior primate work is single-gene (MC1R) and framed as coat
-colour, not sexual dichromatism; no published study or 2023–2026 preprint tests it as a
+color, not sexual dichromatism; no published study or 2023–2026 preprint tests it as a
 network-level, per-origin question. The contribution is a **shift in the unit of analysis** —
 from "dichromatic species" to "independent origin of dichromatism" — and the finding that the
 architecture is heterogeneous across those origins.
@@ -59,11 +60,11 @@ architecture is heterogeneous across those origins.
 
 ## Dichromatism is not one event — it is ~15
 
-The earlier version of this analysis pooled every dichromatic species into a single foreground
-and asked "does selection intensify in dichromatic lineages." That presupposes a shared,
-convergent architecture — the very thing in question. Reconstructing the trait's history from
-the raw 238-species trait table and tree (our own ancestral-state reconstruction, not inherited
-from any prior result) shows why pooling is the wrong frame:
+Sexual dichromatism is not a single event to be pooled across species: pooling every dichromatic
+species into one foreground and asking "does selection intensify in dichromatic lineages"
+presupposes a shared, convergent architecture — the very thing in question. Reconstructing the
+trait's history from the raw 238-species trait table and tree, by ancestral-state reconstruction,
+shows why the independent origin, not the species, is the right unit:
 
 ![Hair dichromatism arose ~15 times independently across the primate tree](comparative-genomics/results/figures/fig_origins.png)
 
@@ -88,7 +89,7 @@ tips and 8 of 67 monochromatic tips**. It is scattered across the tree, not conc
 dichromatic lineages. *TFAP2A* is a widely re-used gene under episodic selection in many
 primates; being dichromatic does not predict selection on it.
 
-![TFAP2A dN/dS across the primate tree — the bird figure's grammar, inverted. Branches painted by dN/dS (ω = 1 neutral at the colour centre), dichromatic tips marked red, episodic selection starred. In galliforms (Nadeau 2007) one gene, MC1R, showed elevated dN/dS specifically in the dichromatic clades; here TFAP2A is conserved almost everywhere and the selected branches (★) are scattered across dichromatic and monochromatic lineages alike.](comparative-genomics/results/figures/fig_tfap2a_tree.png)
+![TFAP2A dN/dS across the primate tree — the bird figure's grammar, inverted. Branches painted by dN/dS (ω = 1 neutral at the color center), dichromatic tips marked red, episodic selection starred. In galliforms (Nadeau 2007) one gene, MC1R, showed elevated dN/dS specifically in the dichromatic clades; here TFAP2A is conserved almost everywhere and the selected branches (★) are scattered across dichromatic and monochromatic lineages alike.](comparative-genomics/results/figures/fig_tfap2a_tree.png)
 
 ::: {.column-margin}
 Compare Nadeau et al. (2007), Fig. 1 — the same tree-with-dN/dS-and-dichromatism layout for
@@ -125,11 +126,11 @@ hormone module that carries the selection signal** — and does that differ from
 | | birds (galliforms) | primates |
 |---|---|---|
 | genetic basis | ~monogenic — *MC1R* (Nadeau 2007) | polygenic; *MC1R* is **not** the hit |
-| pigmentation signal sits at | the melanocortin receptor switch | melanoblast development / signalling (KITLG–EDN3–TFAP2A) — a different node |
+| pigmentation signal sits at | the melanocortin receptor switch | melanoblast development / signaling (KITLG–EDN3–TFAP2A) — a different node |
 | architecture across origins | a shared switch | **heterogeneous — origin-specific** |
 | trait stability | — | labile; loss ≈ 9× faster than gain |
 
-## Honest limits
+## Limitations
 
 - Per-origin RELAX is statistically powered only for the 3 multi-tip origins; the 11 single-tip
   origins are testable via aBSREL (per branch) and RERconverge (relative rates). All three are

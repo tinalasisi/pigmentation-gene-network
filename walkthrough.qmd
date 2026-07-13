@@ -19,7 +19,7 @@ kernel, no network, no withheld data.
 
 ## The question
 
-Sexual dichromatism — males and females of a species differing in colour — has a famously simple
+Sexual dichromatism — males and females of a species differing in color — has a famously simple
 genetic basis in birds. In galliforms, [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)
 showed the trait correlates with dN/dS at essentially **one** locus: *MC1R*, the melanocortin
 switch. One trait, one gene, a clean signal that lights up the dichromatic clades.
@@ -55,22 +55,22 @@ one-gene-one-trait; you have to read the genes as a coupled network.**
 
 # The discovery: dichromatism across primates
 
-## Beat 1 — dichromatism is not one event, it is ~15
+## Dichromatism arose ~15 times, not once
 
-The earlier version of this analysis pooled every dichromatic species into a single foreground and
-asked "does selection intensify in dichromatic lineages." That presupposes a shared, convergent
-architecture — the very thing in question. So we reconstructed the trait's history ourselves, from
-the raw 238-species trait table and the primate tree (our own ancestral-state reconstruction, not
-inherited from any prior result):
+Sexual dichromatism is not a single event to be pooled across species: pooling every dichromatic
+species into one foreground would presuppose a shared, convergent architecture — the very thing in
+question. Reconstructing the trait's history on the dated primate tree — from the raw 238-species
+trait table, by ancestral-state reconstruction — shows why the independent origin, not the species,
+is the right unit of analysis:
 
 ![Hair dichromatism arose ~15 times independently across the primate tree; 14 origins are captured genomically. Stars mark gains, × marks reversals. The *Trachypithecus* block is a single gain sampled eight times — the pooling problem, made visible.](comparative-genomics/results/figures/fig_origins.png)
 
 The 24 genomically-sampled dichromatic species collapse to only **14 independent origins**, of
 which **11 are single tips**; *Trachypithecus* alone carried a third of the pooled foreground
-weight. The correct unit of analysis is the **origin**, not the species — so we test selection per
-origin.
+weight (the foreground being the set of branches tested for selection). The correct unit of
+analysis is the **origin**, not the species — so selection is tested per origin.
 
-## Beat 2 — selection does not track the trait
+## Selection does not track the trait
 
 Rebuilding the Nadeau bird figure for primates — a phylogeny with branches painted by dN/dS and
 dichromatism marked at the tips — gives the cleanest single image of the result:
@@ -80,10 +80,10 @@ dichromatism marked at the tips — gives the cleanest single image of the resul
 The visual non-correspondence between the red dichromatic tips and the black selection stars *is*
 the finding: no single gene tracks the trait the way *MC1R* does in birds.
 
-## Beat 3 — the signal is modular, and split across two coupled networks
+## The signal is modular, split across two coupled networks
 
-The certified selection hits are not scattered noise — they concentrate in functional modules, on
-**both** halves of the network:
+The selection hits that pass the significance and alignment-QC gate are not scattered noise — they
+concentrate in functional modules, on **both** halves of the network:
 
 - **Pigmentation:** the melanoblast-development module — *KITLG*, *EDN3*, *TFAP2A*.
 - **Sex-hormone:** steroid-metabolism enzymes — the *HSD17B* family, *SRD5A1*, *CYP7B1* — the
@@ -95,19 +95,19 @@ axis). The open question the per-origin design tests directly is whether the pig
 remodeled in some origins while the hormone module is remodeled in others — different lineages
 reaching the same phenotype through different parts of one coupled system.
 
-→ Full detail, methods, and honest limits on **[the dichromatism page](dichromatism.qmd)**.
+→ Full detail, methods, and limitations on **[the dichromatism page](dichromatism.qmd)**.
 
 ---
 
 # The method: reading the network in humans
 
 The human arm builds the network and demonstrates *how* to grade a genotype→phenotype claim. It is
-deliberately **methodological** — a bounded demonstration on textbook pigmentation biology, not a
-claim of new human-pigmentation biology — and it is what makes the evolution arm's network
-principled rather than an arbitrary gene list.
+a **methodological** demonstration on well-characterized pigmentation biology, and it is what makes
+the evolution arm's network principled rather than an arbitrary gene list.
 
 - **Build the network.** [NB1 · Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
-  rebuilds the Raghunath melanogenesis model as a signed, directed graph with a citation per edge;
+  rebuilds the [Raghunath et al. 2015](https://doi.org/10.1186/s13104-015-1128-6) melanogenesis
+  model as a signed, directed graph with a citation per edge;
   [NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb) maps every entity to a gene
   and re-validates against OmniPath.
 - **Assemble the evidence.** [NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)
@@ -116,7 +116,8 @@ principled rather than an arbitrary gene list.
 - **The core result.** [NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)
   shows a functional melanin screen predicts the *direction* of Mendelian pigmentation disorders
   (22/22, permutation p < 1×10⁻⁵); [NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)
-  pushes it until it breaks and states plainly what is and isn't novel.
+  extends it to 29/33 in a pre-registered expansion and locates the failure boundary — the misses
+  act through systemic routes.
 - **Context-dependence.** [NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)
   shows the same variant can be causal in one population and silent in another — the human echo of
   the primate result.
@@ -126,27 +127,29 @@ principled rather than an arbitrary gene list.
 
 ---
 
-# For the judges: how this maps to the brief
+# How the study was built
 
-**A biological question.** Is the genetic basis of sexual dichromatism in primates simple (as in
-birds) or not? Grounded in a specific, citable prior result (Nadeau 2007, *MC1R* in galliforms).
+**The question** is whether the genetic basis of sexual dichromatism in primates is simple, as it
+is in birds, grounded in a specific prior result — [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174),
+*MC1R* in galliforms.
 
-**Datasets and tools, found and combined.** A 238-species primate hair-trait table and a dated
-primate tree; a curated 80-gene panel (27 pigmentation + 53 sex-hormone); ~117 primate genome
-assemblies. Tools: ancestral-state reconstruction (`ape`/`phytools`, ARD/ER Mk models,
-stochastic mapping), homology-based CDS extraction (miniprot), codon alignment (MAFFT), and the
-HyPhy selection suite (RELAX per origin, aBSREL per branch) plus RERconverge — run on an HPC
-cluster via a committed, parameterized protocol.
+**The data and tools** are a 238-species primate hair-trait table and a dated primate tree; a
+curated 80-gene panel (27 pigmentation + 53 sex-hormone); and ~117 primate genome assemblies.
+Trait history comes from ancestral-state reconstruction (`ape`/`phytools`, ARD/ER Mk models,
+stochastic mapping); coding sequences from homology-based extraction (miniprot); codon alignment
+from MAFFT; and selection inference from the HyPhy suite (RELAX per origin, aBSREL per branch)
+plus RERconverge — run on an HPC cluster via a committed, parameterized protocol.
 
-**A discrete, reproducible finding.** Primate sexual dichromatism is polyphyletic (~15 origins),
-labile (loss ≈ 9× gain), and polygenic with no single shared signature — the inverse of the avian
-single-gene model. Established as novel against the published literature and 2023–2026 preprints.
+**The finding** is discrete and reproducible: primate sexual dichromatism is polyphyletic
+(~15 origins), labile (loss ≈ 9× gain), and polygenic with no single shared signature — the
+inverse of the avian single-gene model, and novel against the published literature and 2023–2026
+preprints.
 
-**How Claude Science got us there.** The trajectory is itself part of the result: an over-simple
-pooled analysis was caught (it presupposed the convergence it was meant to test), the
-pseudoreplication was quantified, the design was reframed to the per-origin unit, the novelty was
-checked against the literature, the pipeline was made reproducible from frozen inputs, and the
-selection re-run was specified and handed to a cluster — all traceable in this repository.
+**The design choice that makes it work** is taking the independent origin of dichromatism, not the
+dichromatic species, as the unit of selection testing — the only unit at which a selection test can
+ask whether the architecture is shared across origins or heterogeneous. The pipeline runs from two
+committed inputs plus a cluster protocol, and its novelty was checked against the published
+literature and 2023–2026 preprints; every step is traceable in this repository.
 
 ## Reproducibility
 
@@ -159,6 +162,6 @@ selection re-run was specified and handed to a cluster — all traceable in this
 - **Novelty** is documented in `dichromatism_novelty_assessment.md` (published literature) and
   `preprint_novelty_scan.md` (2023–2026 preprints).
 
-*The multi-gene per-origin selection matrix is computing on the cluster as of this writing; the
-finding above stands on the phylogenetics and the TFAP2A demonstration regardless, and the matrix
-upgrades the module-by-origin question from hypothesis to result when it lands.*
+*Whether the pigmentation module or the hormone module carries the selection signal in each origin
+is a hypothesis tested directly by the per-origin RELAX layer; the ~15-origin phylogenetic result
+and the TFAP2A demonstration stand independently of that per-origin matrix.*
