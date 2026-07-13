@@ -218,6 +218,13 @@ if TREE_PATH is not None and CODING is not None:
 # origin count is read from stochastic character maps under the preferred model, and cross-checked
 # against a model-free count of maximal dichromatic clades. All of this is recomputed by
 # `nb15_phylo.R`; its result tables are read below.
+#
+# **Table 1.** Model comparison for how dichromatism changes over evolutionary time. ER = one rate
+# for gains and losses; ARD = separate gain and loss rates. Lower AIC = better-fitting model; a
+# gap (ΔAIC) above ~4 is decisive. ARD wins by ΔAIC ≈ 20, and its two rates show that the trait is
+# **lost far faster than it is gained** (loss:gain ≈ 9×). The origin count — how many separate
+# times dichromatism appeared — is read from simulations under the winning model and reported for
+# both coding scopes, because that one number depends on how many species are included.
 
 # %%
 # Read the recomputed lability fits + origin estimates (from nb15_phylo.R).
@@ -270,11 +277,18 @@ if ORIGINS is not None:
 # %% [markdown]
 # ### Figure 3 — Where gains and losses fall (stochastic density map)
 #
-# **Figure 3.** This is a *density map*: the tree of primate species, with every branch coloured by
-# how likely it is that dichromatism was present along that branch. To estimate this we simulate
-# the trait's evolution down the tree many times (500 stochastic character maps under the
-# best-fitting ARD model, §3) and average the result, so a branch that is dichromatic in most
-# simulations is painted red and one that is rarely dichromatic stays blue.
+# **Figure 3. Where on the primate tree dichromatism was gained and lost (density map).**
+#
+# *What the data are.* The tree is the 224-species primate phylogeny used throughout this notebook
+# (the intersection of the 235-tip phylogeny and our 238-species dichromatism coding, §2); 25 of
+# those species are coded dichromatic. The trait is `hair_dichromatism_any` (males and females
+# differ in hair colour: yes/no).
+#
+# *What a density map is.* Every branch of the tree is coloured by how likely it is that
+# dichromatism was present along that branch. To estimate this we simulate the trait's evolution
+# down the tree 500 times (stochastic character maps under the best-fitting ARD model from §3) and
+# average the results, so a branch that comes out dichromatic in most simulations is painted red
+# and one that is rarely dichromatic stays blue.
 #
 # Branch colour runs from blue (probability ≈ 0, monochromatic) through magenta to red
 # (probability ≈ 1, dichromatic); the scale bar is at lower-left. A red dot at a tip marks a
@@ -334,20 +348,36 @@ else:
 # %% [markdown]
 # ### Figure 4 — Per-origin selection architecture
 #
-# **Figure 4.** Which genes were under selection at each origin of dichromatism? We can only ask
-# this at the three origins that contain enough species to test (the *powered* origins); the other
-# ~12–16 origins are single species and cannot be tested per-origin. Each panel is one origin. Each
-# bar is a gene that shows a significant shift in selection there, coloured by which module it
-# belongs to (orange = pigmentation, blue = hormone).
+# **Figure 4. Genes under selection at each independent origin of dichromatism.**
 #
-# The test is RELAX, which asks whether selection on a gene became **stronger** or **weaker** on
-# these branches; its statistic *K* measures that, and we plot log₂ K so the direction is
-# symmetric — bars pointing **right** = selection intensified, bars pointing **left** = selection
-# relaxed (weakened). **Solid** bars are confirmed by an independent pooled analysis; **hatched**
-# bars are significant only within that one origin (weaker evidence). Reading across the panels:
-# *Trachypithecus* recruits many genes from both modules, *Nomascus* a small pigmentation set
-# (HRAS, POMC, HGF), and *Eulemur* has none passing the threshold. Crucially, the three gene sets
-# do not overlap (§6) — each origin used different genes.
+# *What the data are.* We scanned a curated panel of ~110 pigmentation and sex-hormone genes
+# (built and justified in NB14) for signatures of natural selection, using coding sequences
+# extracted from 117 published primate genomes. Selection was tested with **RELAX** (HyPhy), which
+# asks whether selection on a gene became *stronger* (intensified) or *weaker* (relaxed) along a
+# specified set of branches; its statistic *K* summarises that shift, and we plot log₂ K so that
+# intensification (K > 1) and relaxation (K < 1) are symmetric about zero. Values are read from
+# `results/perorigin_v1/per_origin_K.csv` (per-origin fits) cross-checked against
+# `relax_pooled_results.csv` (all origins pooled).
+#
+# *What the panels are.* Dichromatism arose ~15 times (§3), but only origins containing **≥ 2
+# sequenced dichromatic species** have enough branches to test — three do, one panel each:
+# *Trachypithecus* (origin 7, 8 tips), *Nomascus* (origin 8, 3 tips) and *Eulemur* (origin 14, 2
+# tips); the heading of each panel gives its origin ID and the number of sequenced species (tips)
+# it contains. The other ~12 origins are single species and cannot be tested this way.
+#
+# *How to read a bar.* Each bar is one gene that shifted significantly in selection at that origin
+# (Benjamini–Hochberg p_BH < 0.05). Bar length = log₂ K: bars pointing **right** = selection
+# **intensified**, bars pointing **left** = selection **relaxed** (the ← relaxed / intensified →
+# guides sit under each axis). Colour = which module the gene belongs to (**orange = pigmentation,
+# blue = sex-hormone**). **Solid** bar = the shift is also significant in the independent pooled
+# analysis (corroborated); **hatched** bar = significant only within that one origin, so weaker
+# evidence. A panel reading *"no gene passes p(BH) < 0.05"* (Eulemur) means no gene reached
+# significance there — not that the origin is absent.
+#
+# *What it shows.* The three origins use **different, non-overlapping gene sets** (quantified in
+# §6): *Trachypithecus* recruits many genes from both modules, *Nomascus* a small pigmentation set
+# (HRAS, POMC, HGF), and *Eulemur* none. There is no shared "dichromatism gene" — each origin
+# reached the same phenotype through different parts of the coupled system.
 #
 # **QC.** Per-origin RELAX can return an extreme boundary K on a single origin's few branches.
 # We cross-check every per-origin hit against the pooled RELAX fit and drop any whose extreme K
@@ -459,6 +489,13 @@ else:
 # a raw count, so that an origin is not scored pigmentation-leaning simply because more
 # pigmentation genes were tested. This section computes balance as a rate ratio; NB14's +0.036 is
 # the panel's *count* balance and is not the same quantity (the two must not be conflated).
+#
+# **Table 2.** Module balance for each testable origin. `sigP`/`sigH` = number of pigmentation /
+# hormone genes under selection; `rateP`/`rateH` = those counts divided by how many genes of each
+# module were actually tested (the panel-composition correction); `rate_balance` = the headline
+# number, running from −1 (all hormone) through 0 (even) to +1 (all pigmentation). `count_balance`
+# is the same idea without the correction, shown alongside so the effect of correcting is visible.
+# NaN means no gene of either module reached significance at that origin.
 
 # %%
 # Module balance as a per-gene selection RATE per origin, using the module column the collector
@@ -525,19 +562,29 @@ else:
 # %% [markdown]
 # ### Figure 5b — POMC selection across the primate order
 #
-# **Figure 5b.** Where in the primate order is POMC itself under selection? Here we use aBSREL, a
-# test that scans every branch of the tree and flags the ones showing *episodic* positive
-# selection (a burst of adaptive change on that branch specifically). If POMC selection drove
-# dichromatism, those flagged branches should be the dichromatic ones.
+# **Figure 5b. Selection on POMC across the primate order.**
 #
-# (A) The tree with each tip's dichromatism state (red = dichromatic, grey = monochromatic) and
-# every POMC-selected branch starred — a red star where that branch is dichromatic, a dark star
-# where it is monochromatic. (B) The five selected branches ranked by statistical significance and
-# labelled by state. Two are dichromatic *Nomascus* gibbons, one is monochromatic *Macaca mulatta*,
-# and two are internal branches of (essentially monochromatic) *Macaca* clades — named by the
-# clade each contains rather than by the software's internal "NodeNN" label, which is not
-# meaningful across genes. The point: POMC selection overlaps one dichromatism origin (the gibbons)
-# but is **not** restricted to dichromatic lineages — most flagged branches are monochromatic.
+# *What the data are.* POMC coding sequence from the 117 sequenced primate genomes, tested for
+# selection with **aBSREL** (HyPhy), which scans *every* branch of the tree and flags the ones
+# showing *episodic* positive selection — a burst of adaptive change confined to that branch.
+# Results are from `results/full_panel_117/absrel/POMC.ABSREL.json`. POMC is singled out because
+# it sits at the pigmentation–hormone interface (α-MSH drives pigment; ACTH/β-endorphin are
+# hormones), so if it were the gene coupling the two modules to produce dichromatism, its selected
+# branches should be the dichromatic ones.
+#
+# *How to read the two panels.* **(A)** The 224-species tree (as in Fig 3). Each tip is coloured by
+# its coded dichromatism state (**red = dichromatic, grey = monochromatic**); every branch that
+# aBSREL flags as under selection carries a **star** — **red star** if that branch is dichromatic,
+# **dark star** if monochromatic. **(B)** The five selected branches ranked by significance; the
+# x-axis is **−log₁₀(corrected p-value)**, so longer bars = stronger evidence, and each bar is
+# labelled by the branch's dichromatism state.
+#
+# *What it shows.* Of the five POMC-selected branches, only two are dichromatic (the *Nomascus*
+# gibbons *N. concolor* and *N. gabriellae*); the other three are monochromatic macaque lineages —
+# the *M. mulatta* tip and two internal *Macaca* clades (labelled by the clade each contains, since
+# aBSREL's internal "NodeNN" names are per-gene and not comparable across genes). So POMC selection
+# overlaps one dichromatism origin (the gibbons) but is **not** confined to dichromatic lineages —
+# the same lesson as the whole-panel branch scan.
 
 # %%
 from IPython.display import Image, display
@@ -546,6 +593,14 @@ if os.path.exists(_pomc):
     display(Image(filename=_pomc))
 else:
     print("nb15_pomc_tree.png not built yet - run nb15_pomc.R")
+
+# %% [markdown]
+# **Table 3.** POMC's per-origin RELAX result, read from `results/perorigin_v1/per_origin_K.csv`.
+# One row per testable origin: `module` = the panel's module assignment for POMC (pigmentation);
+# `K` = the RELAX selection-intensity statistic (K > 1 intensified, K < 1 relaxed); `p_BH` =
+# Benjamini–Hochberg-corrected p-value. POMC is significantly intensified at the *Nomascus* origin
+# (origin 8, K ≈ 3.4, p_BH < 0.001) and not at the others — the per-origin counterpart to the
+# branch-level scan in Fig 5b.
 
 # %%
 # POMC-specific selection evidence, printed from the frozen tables (panel-agnostic).
@@ -586,6 +641,16 @@ if BRANCH is not None and "absrel_corrected_p" in BRANCH.columns:
 # cannot be tested here. The overlap is recomputed live below and refreshes to 110 genes when the
 # clean-30 expansion lands (which can only *add* genes to an origin's set, so the zero-overlap
 # divergence result is robust unless a new gene happens to hit both origins).
+
+# %% [markdown]
+# **Table 4.** Gene-set overlap between the independent origins, computed from the significant
+# genes (p_BH < 0.05) in `results/perorigin_v1/per_origin_K.csv`. For each powered origin the
+# printout lists its selected gene set, then reports the intersection between every pair of
+# signalled origins. "ZERO overlap" means the two origins share no gene under selection — direct
+# evidence of *divergence* (different molecular routes to the same phenotype) rather than
+# convergence. Only two of the three tested origins carry a multi-gene signal, so this comparison
+# is power-limited (see the prose above); it is reported as divergence-where-powered, not a
+# clade-wide claim.
 
 # %%
 # Per-origin gene-set overlap from the CURRENT perorigin_v1 tables (pre-expansion run; the
