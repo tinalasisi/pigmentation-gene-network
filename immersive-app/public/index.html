@@ -954,7 +954,7 @@ function renderPanel(){
     <div class="d-meta">
       <span class="flagchip">${e.n_channels}/${CHANNELS.length} layers</span>
       <span class="flagchip">${impl} mechanism · ${strands.length-impl} context</span>
-      ${e.flags&&e.flags.on_watchlist?`<span class="flagchip">watchlist${e.flags.watchlist_class?' · '+esc(e.flags.watchlist_class):''}</span>`:''}
+      ${e.flags&&e.flags.on_watchlist?`<span class="flagchip">OMIM disease gene</span>`:''}
       ${e.flags&&e.flags.physical_evidence?`<span class="flagchip">physical evidence</span>`:''}
       ${(e.provenance||[]).slice(0,4).map(refChip).join('')}
     </div>

@@ -223,5 +223,10 @@ sub1("<td>${TIERS[tierOf(e,state.ctx)].label}</td>", "", literal=True)          
 sub1("fill=\"var(${TIERS[tierOf(e,state.ctx)].v})\"",
      "fill=\"var(--accent)\"", literal=True)                                          # glyph centre dot -> neutral
 
+# 11) relabel the last detective-metaphor chip: "watchlist" (+ opaque "· priority"/"· disease_gene"
+#     suffix) -> plain "OMIM disease gene". Display-only; the internal on_watchlist flag is unchanged.
+sub1("<span class=\"flagchip\">watchlist${e.flags.watchlist_class?' · '+esc(e.flags.watchlist_class):''}</span>",
+     "<span class=\"flagchip\">OMIM disease gene</span>", literal=True)
+
 open(OUT, "w").write(h)
 print(f"wrote {OUT} ({len(h)//1024} KB)")
