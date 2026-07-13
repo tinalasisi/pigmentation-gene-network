@@ -41,3 +41,14 @@ your "suggestive, not established" framing (and the binding constraint remains 2
   branch_rates update, then I re-run this). BH threshold will shift slightly with 14 more genes.
 - **Internal-branch ω** (you used tips only) ≈ doubles the data — real enhancement but a deliberate script
   change (the `is_tip==TRUE` filter); I'll do it as an explicit follow-up if you want, not silently.
+
+## UPDATE — full 107-gene panel re-run (your requested re-run once MYO5A/LYST landed)
+Re-ran on the final `branch_rates.csv` (107 genes; +LYST/SLC44A4 aBSREL folded in; CDC42+TRAF6
+excluded — too conserved for aBSREL). **Conclusion unchanged and robust:**
+- **AKR1C4: PGLS p=5.4e-4, p_BH=0.046 (still survives, closer to 0.05 with more tests); phyloglm
+  p=0.047, p_BH=1.0 (still nominal only).** Same +direction (β_pgls=0.019, β_phyloglm=0.060), perm_p=5e-4.
+- Adding the 17 pigmentation genes did not knock AKR1C4 out and did not create any new BH-surviving hit.
+- **Net for the writeup:** AKR1C4 is the single BH-surviving gene under PGLS on the full 110-panel; the
+  canonical phyloglm agrees on direction + nominal significance but not BH-survival. Suggestive hormone-
+  module association, binding constraint = 24 dichromatic lineages. Delivered `results/gwas_v1/` (updated).
+- Internal-branch ω (tips-only currently) remains the one real lever to add data — deliberate follow-up if wanted.
