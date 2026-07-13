@@ -1,6 +1,6 @@
 # Project dashboard — pigmentation gene-network build
 
-**Status: MAINTAINED (first version created 2026-07-12T01:41Z; last reconciled 2026-07-12T~16:48Z).** Snapshot / control surface for the project. This
+**Status: MAINTAINED (first version created 2026-07-12T01:41Z; last reconciled 2026-07-13T15:08Z).** Snapshot / control surface for the project. This
 is one of the three tracking documents described in `START_HERE.md`; it is **not** a plan and **not** a
 history. It gives a one-screen orientation and then **points at** the living documents — it does not copy
 them.
@@ -26,9 +26,40 @@ them.
 | Approved plan | Claude Science artifact `083f9097-0134-4490-abe9-33ad4ed7c9da` (version `d135912f-6112-48f4-95c1-545c46cabfba`), `plan_convergence-graded-rescue-screen-as-self_8a368b7b.json` | The exact phase/step text for the NB4–NB8 build. Read the artifact directly. |
 | Provenance manifest | `DATA_SOURCES.md` (repo root) | Per-source licensing, query provenance, and redistribution policy. |
 
-## Where the project is now (as of 2026-07-12T~16:48Z, corrected during end-of-build bookkeeping)
+## Where the project is now (as of 2026-07-13T15:08Z)
 
-- **Execution route settled and PI-approved:** the convergence-graded rescue screen, built as notebooks
+- **⚠️ FLAGSHIP HAS MOVED — read this before anything below.** As of 2026-07-13, the flagship is the
+  **per-origin module-selection architecture of primate sexual dichromatism**: hair dichromatism arose
+  ~15 times independently across primates, and each origin tilts toward pigmentation-module or
+  sex-hormone-module selection differently across the full range from pure-hormone to pure-pigmentation,
+  with the trait lost ~9x faster than gained. This supersedes the "flagship framing is up in the air"
+  status recorded below and in `START_HERE.md`/`TODO.md` (2026-07-12) — those documents have **not yet
+  been updated** to reflect this move; see the changelog-gap note this session flagged. Source:
+  `comparative-genomics/analysis/module_selection/` (notebook `module_selection_analysis.qmd`,
+  `README.md`, commit `715fcce`), a per-lineage supporting analysis
+  `comparative-genomics/analysis/coevolution_test/` (fitPagel correlated-evolution test, commit range
+  through `2219a32`+ working tree), and the independent numerical verification at
+  `internal/handoffs/notes/2026-07-13_independent_check_module_selection.md` (module-balance metric and
+  Opie-analog transition rates both reproduced exactly from raw `results/perorigin_v1/` data, commit
+  `4c07317`). The repo-root `README.md` has been updated to lead with this finding (this session); the
+  comparative-genomics-level docs (`comparative-genomics/README.md`, `dichromatism.qmd`, `index.qmd`,
+  `walkthrough.qmd`, `internal/PITCH.md`) still describe the prior "~15 independent origins, heterogeneous
+  architecture, no flagship locked" framing and have **not** been reconciled to the module-balance result
+  by this session (out of this session's scope — flagged for the next session/PI, per `changelog_gap_note`
+  in this session's structured output).
+- **Numbers to cite for this flagship (verified against `module_balance_results.csv` and
+  `opie_analog_results.csv`; do not retype without re-reading those files):** 11 dichromatism origins
+  carry a module-balance score `(nP-nH)/(nP+nH)` over aBSREL-significant (p<0.05) genes on that origin's
+  tip branches; Eulemur (`origin_14`) is pure hormone (0 pigmentation / 1 hormone gene, balance −1.0);
+  Pithecia (`origin_12`) is pure pigmentation (2/0, +1.0); Alouatta (`origin_11`, −0.5) and Colobus
+  guereza (`origin_5`, −0.5) are hormone-tilted; Trachypithecus (`origin_7`) is the richest origin at
+  8 pigmentation + 18 hormone genes (balance −0.385), and is one of 3 RELAX-powered (≥2-tip) origins
+  alongside Nomascus (`origin_8`, POMC only) and Eulemur (`origin_14`, none). Trait dynamics
+  (Opie-analog): gain rate 0.0273, loss rate 0.248 — loss ≈9.1x gain — ARD model preferred over
+  equal-rates (dAIC 19.79). Both sets of numbers were independently recomputed from the raw
+  `results/perorigin_v1/` data and matched exactly (see the verification note above).
+- **Prior execution route (below) is superseded as the flagship but remains built and committed.**
+  The convergence-graded rescue screen, built as notebooks
   **NB4–NB9** (unified association base → compare candidate networks → harmonized multi-layer substrate →
   resolution/rescue-screen diagnostic → optional population conditionality → Bajpai orphan reconciliation).
   Six decisions behind it are in `CHANGELOG.md` 2026-07-12T00:29Z; phase tracking is in `TODO.md`.
@@ -53,10 +84,10 @@ them.
   Martin et al. 2017 KhoeSan as a third population axis, 51 loci extracted, `EXTRACT_Martin2017_loci.csv`).
   This discharges the `TODO.md` "Deferred" item on the Martin pull. Detail in `CHANGELOG.md` 2026-07-12T12:36Z;
   status tracker in `TODO.md`'s new "Cross-ancestry / population-conditionality track (NB11, DONE)" section.
-- **⚠️ FLAGSHIP FRAMING IS STILL UP IN THE AIR.** No flagship is locked. Three candidate threads are now live:
-  the direction result (NB10+NB12, leading *demonstration* candidate), the cross-ancestry portability result
-  (NB11, new), and a **primate-phylogenetics** evolutionary direction under parallel exploration by the PI. Do
-  not treat any single thread as the settled headline.
+- **SUPERSEDED by the 2026-07-13 flagship move above.** The note below ("flagship framing is up in the air,"
+  three candidate threads, none locked) was accurate as of 2026-07-12T~17:00Z. It is kept for continuity of
+  the record, not as current status — the primate-phylogenetics thread it named as a parallel exploration is
+  what has since become the module-selection flagship described at the top of this section.
 - **NB10 + NB12 (mechanism→direction result) — leading demonstration candidate, framing softened
   (2026-07-12T17:00Z).** A positive melanin regulator mutated by a loss-of-function allele tends toward
   hypopigmentation — 22/22 network-called recessive/X-linked genes; a pre-registered expansion (NB12) adds a
@@ -150,6 +181,30 @@ Naming every processed-CSV stem here also keeps the plan-sync checker's orphan s
 
 **Frozen DB responses (`data/external/db_responses/`, tracked)** — NB2 offline inputs (restored in `95f1969`); NB11 adds `data/external/db_responses/nb11/` (1000G pulls) and `data/external/db_responses/nb11_screen/` (screen-wave pulls):
 - `uniprot_annotation_direct.json` (+ `.meta.json`), `hgnc_gene_groups.json`, `pomc_cleavage_refs.json`, `omnipath_internal.json` (+ `omnipath.meta.json`), `kegg_hsa04916.json`.
+
+**Comparative-genomics tree (`comparative-genomics/`, self-contained; see its own `README.md` for the
+full pipeline/HPC layout) — NEW this reconciliation pass, current flagship source:**
+- `analysis/module_selection/` (tracked, commit `715fcce`) — the flagship notebook
+  `module_selection_analysis.qmd`, `figures.py`, `README.md`, 6 frozen inputs under `data/` (branch_rates,
+  per_origin_K, origin_assignments, gene_modules, species_coding, primate_species_tree), and the two
+  committed result tables `module_balance_results.csv` / `opie_analog_results.csv` plus
+  `fig_module_balance.png` / `fig_per_lineage_genes.png`. **Untracked on disk as of this pass:**
+  `data/tree_viz_inputs.rds`, `fig_circular_tree_balance.png` (disposition for the owning session, not
+  decided here).
+- `analysis/coevolution_test/` (tracked; `coevolution_test.qmd` modified and `README.md` untracked as of
+  this pass) — the fitPagel correlated-evolution test and Pagel's lambda, a sibling check to
+  module_selection, sharing its frozen `data/` inputs.
+- `results/perorigin_v1/` (tracked, commit `4c07317`) — the raw per-origin RELAX (`per_origin_K.csv`) and
+  full-panel aBSREL (`branch_rates.csv`, 9,229 branches × 78 genes) tables the module-balance metric and
+  the independent verification note both recompute from.
+- `results/figures/` — `fig_origins.png`, `fig_pooling.png`, `fig_tfap2a_tree.png`,
+  `fig_tfap2a_branches.png` (the ~15-origins / pooling-problem / per-branch selection figures cited by
+  `comparative-genomics/README.md`, `dichromatism.qmd`, `walkthrough.qmd`).
+- Public-facing pages that still describe the **pre-module-selection** framing (heterogeneous
+  architecture, no flagship locked) and have not yet been reconciled to the module-balance result:
+  `dichromatism.qmd`, `index.qmd`, `walkthrough.qmd`, `internal/PITCH.md`,
+  `comparative-genomics/README.md`. Flagged for the next session/PI, not corrected by this pass (see
+  `changelog_gap_note`).
 
 **GWAS Catalog (`data/external/gwas_catalog/`, tracked):** `pigmentation_gwas_catalog.csv` (+ `.meta.json`) — widened 2026-07-12T10:34Z (`REPORTED GENE(S)` + split initial/replication ancestry, `16bacb3`); `gwas_pigmentation_associations.csv` — gene-level replication source. **Untracked on disk:** `versions/pigmentation_gwas_catalog_refresh_20260712_20260712T144518Z.csv` (a timestamped archive snapshot from the widening refresh) — disposition (commit vs. scratch) is for the owning session.
 
