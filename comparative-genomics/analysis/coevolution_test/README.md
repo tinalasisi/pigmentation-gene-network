@@ -28,10 +28,10 @@ reproduce.
 All copied verbatim from repo-tracked sources; see the provenance table in the
 notebook. `branch_rates.csv` = `results/perorigin_v1/` (commit 4c07317);
 `species_coding.csv`, `gene_modules.csv`, `primate_species_tree.nex` = copies of
-`../module_selection/data/`; `leakey_pruned_tree.nex` +
-`leakey_dichromatism_coding.csv` = the 235-tip Leakey phenotype tree and a
-2-column extract (species_binom, hair_dichromatism_any) of
-`Leakey2025/data/primate_prelim_complete.csv`.
+`../module_selection/data/`; `primate_phenotype_tree.nex` +
+`dichromatism_coding.csv` = the 235-tip primate phenotype tree and a
+2-column extract (species_binom, hair_dichromatism_any) of the curated
+primate phenotype scoring table.
 
 ## Relationship to other work
 - `../module_selection/` — per-lineage module-balance metric + Opie

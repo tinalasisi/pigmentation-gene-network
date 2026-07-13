@@ -43,10 +43,10 @@ pigment-vs-hormone contrast (which was not significant, permutation p=0.87).
 | `data/gene_modules.csv` | curated panel | gene -> module (pigmentation / hormone) |
 | `data/species_coding.csv` | genomic-panel phenotype | 117 species -> dichromatic 0/1 |
 | `data/primate_species_tree.nex` | pruned genomic tree | 304-tip tree for the genome-sampled set |
-| `data/leakey_pruned_tree.nex` | Leakey2025 phenotype tree | 235-tip primate tree |
-| `data/leakey_dichromatism_coding.csv` | Leakey2025 `primate_prelim_complete.csv` (2 cols) | species_binom, hair_dichromatism_any |
+| `data/primate_phenotype_tree.nex` | curated primate phenotype tree | 235-tip primate tree |
+| `data/dichromatism_coding.csv` | curated dichromatism phenotype scoring (2 cols) | species_binom, hair_dichromatism_any |
 
-The **lambda and transition-rate** tests use the 235-tip Leakey phenotype tree
+The **lambda and transition-rate** tests use the 235-tip primate phenotype tree
 (not the genome-sampled set, which is ascertainment-biased toward dichromatic
 species). The **fitPagel** test needs both traits per tip, so it uses the
 genomic panel (species with an aBSREL result).
@@ -58,14 +58,14 @@ BR  <- read_csv(file.path(dd, "branch_rates.csv"), show_col_types = FALSE)
 GM  <- read_csv(file.path(dd, "gene_modules.csv"), show_col_types = FALSE)
 SC  <- read_csv(file.path(dd, "species_coding.csv"), show_col_types = FALSE)
 gtr <- read.nexus(file.path(dd, "primate_species_tree.nex"))
-ltr <- read.nexus(file.path(dd, "leakey_pruned_tree.nex"))
-LC  <- read_csv(file.path(dd, "leakey_dichromatism_coding.csv"), show_col_types = FALSE)
+ltr <- read.nexus(file.path(dd, "primate_phenotype_tree.nex"))
+LC  <- read_csv(file.path(dd, "dichromatism_coding.csv"), show_col_types = FALSE)
 ```
 
 ## 1. Pagel's lambda — phylogenetic signal in dichromatism
 
 Opie reported lambda = 0.996 for mating systems (near-maximal signal). We
-estimate lambda for hair dichromatism on the Leakey phenotype tree, treating the
+estimate lambda for hair dichromatism on the primate phenotype tree, treating the
 0/1 trait as continuous (a standard proxy for a binary trait), with a
 likelihood-ratio test against lambda = 0.
 
