@@ -5,7 +5,7 @@ rule, or does it depend on context?** This project asks that question at two ver
 scales — across millions of years of primate evolution, and within a single human genome — and
 finds the same answer both times: context decides.
 
-## The flagship finding: many separate origins, many different genetic routes
+## The flagship finding: dichromatism arose ~15 times, polygenically, and is readily lost
 
 **Dichromatism** means males and females of the same species look different in color (in this
 case, hair color). In birds, this trait is close to a single genetic on/off switch: one gene,
@@ -28,17 +28,25 @@ given branch of the family tree to the rate expected if the gene were evolving w
 consequence; a significantly faster or altered rate is evidence that natural selection acted on
 that gene on that branch.
 
-**The result: no two origins built dichromatism the same way.** Of the origins with genomes to
-test, the 11 that carry at least one gene under detectable selection each fall somewhere on a
-spectrum from "entirely driven by pigmentation-module genes" to "entirely driven by
-sex-hormone-module genes," and different origins land in very different places on that spectrum.
-At one extreme, the lemur genus *Eulemur* shows selection only in the sex-hormone module. At the
-opposite extreme, the monkey genus *Pithecia* shows selection only in the pigmentation module. In
-between, lineages such as the howler monkey genus *Alouatta* and the colobus monkey *Colobus
-guereza* lean toward the hormone module, while the langur genus *Trachypithecus* — the
-richest-sampled origin — shows selection in both, with more hormone genes than pigmentation genes
-involved. In short: the same visible trait, dichromatism, is being built by different genetic
-machinery in different lineages, rather than through one shared, conserved pathway.
+**The result: dichromatism is polygenic in every origin we could test, and *MC1R* — the bird
+switch — is not the gene.** Of the origins with genomes to test, the 11 that carry at least one
+gene under detectable selection each fall somewhere on a descriptive spectrum from "only
+pigmentation-module genes selected" to "only sex-hormone-module genes selected." The lemur genus
+*Eulemur* shows selection only in the sex-hormone module; the monkey genus *Pithecia* only in the
+pigmentation module; the richest-sampled origin, the langur genus *Trachypithecus*, shows both.
+
+**What we can and cannot yet conclude from that spread.** It is tempting to read the spread as a
+*heterogeneous, origin-specific architecture* — different genes building the same trait in
+different lineages. The data do not currently support that stronger claim. Only 3 origins have
+enough foreground tips for the powered selection test (RELAX); the rest rest on single-tip aBSREL,
+and the two "pure" poles (*Eulemur*, *Pithecia*) are each defined by just one or two selected
+genes — a small-sample funnel effect, not a measured contrast. A homogeneity test across all 11
+origins does **not** reject a single shared architecture (χ² p = 0.42), and the apparent
+hormone-tilt disappears once the panel's own 2:1 hormone:pigmentation gene ratio is accounted for
+(binomial p = 0.17). The honest statement is that **whether the genetic architecture is shared or
+heterogeneous across origins is currently underpowered to resolve** — what is established is that
+the trait is polygenic, not a single-gene switch. (Power detail:
+[`comparative-genomics/results/perorigin_v1/README.md`](comparative-genomics/results/perorigin_v1/README.md).)
 
 We also asked how easily the trait is gained versus lost over evolutionary time, using a method
 modeled on prior work analyzing the evolution of mating systems (Opie et al. 2012). We found that
@@ -46,9 +54,12 @@ dichromatism is lost roughly **9 times more readily than it is gained** — cons
 that can be built through several alternative genetic routes (so it is easy to lose any one of
 them) rather than through one fixed, hard-to-remove mechanism.
 
-**Why this matters.** It shows that a visible, evolutionarily important trait can arise repeatedly
-without a shared genetic blueprint — the same outcome reached by different molecular paths in
-different lineages. The full pipeline, data, and figures are in
+**Why this matters.** A trait that is nearly a single-gene switch in one vertebrate class (birds,
+*MC1R*) is, in primates, polygenic, not driven by *MC1R*, and evolutionarily labile — arising ~15
+times and readily lost. That alone reframes sexual dichromatism as a network-level rather than
+single-locus trait; whether the network is remodeled at the *same* points across origins or
+different ones is the open question this design sets up but is not yet powered to answer. The full
+pipeline, data, and figures are in
 [`comparative-genomics/`](comparative-genomics/); the specific analysis behind this finding is in
 [`comparative-genomics/analysis/module_selection/`](comparative-genomics/analysis/module_selection/).
 

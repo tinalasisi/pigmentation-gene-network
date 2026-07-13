@@ -11,7 +11,7 @@ execute:
 ::: {.callout-note appearance="simple"}
 The map from genotype to pigmentation is not one-gene-one-trait. This project builds one curated,
 coupled pigmentation–sex-hormone gene network and reads it at two scales: across primates, where
-sexual dichromatism turns out to be polygenic and origin-specific rather than a single-gene switch,
+sexual dichromatism turns out to be polygenic rather than a single-gene switch,
 and within humans, where the same network grades how much to trust a claimed variant→phenotype link.
 Every notebook is a self-contained mini-manuscript that renders from its own stored outputs — no
 kernel, no network, no withheld data.
@@ -45,7 +45,7 @@ physically-linked sex-hormone axis — and asks two questions with it.
 |---|---|---|
 | Question | how much can we trust a claimed variant→phenotype link? | how is sexual dichromatism built across the primate tree? |
 | Approach | make independent evidence layers converge on each gene | test selection on the network per independent origin |
-| Context that changes the answer | ancestry (an allele causal in one population is silent in another) | lineage (different origins recruit different genes) |
+| Context that changes the answer | ancestry (an allele causal in one population is silent in another) | lineage (the trait is polygenic; whether origins recruit the same or different genes is the open question) |
 | Where | the notebooks below | [the dichromatism page](dichromatism.qmd) + `comparative-genomics/` |
 
 Same object, same lesson at two scales: **the map from genotype to pigmentation is not

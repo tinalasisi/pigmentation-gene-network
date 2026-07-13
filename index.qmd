@@ -1,7 +1,7 @@
 ---
 title: "The architecture of pigmentation genetics"
 subtitle: "One coupled pigmentation–hormone gene network, pointed at two questions — human association grading, and the evolution of primate sexual dichromatism"
-description: "A model-system project on the genotype→phenotype map for pigmentation: a clade-wide test showing sexual dichromatism has a heterogeneous, per-origin genetic architecture across primates, and a convergence method grading how context-dependent human pigmentation associations are."
+description: "A model-system project on the genotype→phenotype map for pigmentation: a clade-wide test showing primate sexual dichromatism is polygenic and arose ~15 times independently (not the single-gene MC1R switch seen in birds), and a convergence method grading how context-dependent human pigmentation associations are."
 toc: false
 ---
 
@@ -10,19 +10,19 @@ toc: false
 **Sexual dichromatism** — males and females of a species differing in color — **has no single
 genetic basis in primates.** Where the same trait is nearly
 a one-gene switch in birds (*MC1R*; [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)),
-in primates it **arose ~15 times independently** and is built
-by **different genes in different lineages** — a heterogeneous, origin-specific architecture. This
-is the first clade-wide, multi-gene selection test of the genomic basis of primate sexual
-dichromatism. **→ [Read the finding](dichromatism.qmd)**
+in primates it **arose ~15 times independently** and is **polygenic in every origin tested**
+(*MC1R* is not the hit). This is the first clade-wide, multi-gene selection test of the genomic
+basis of primate sexual dichromatism. Whether the architecture is shared or heterogeneous across
+origins is currently underpowered to resolve (see the finding page). **→ [Read the finding](dichromatism.qmd)**
 :::
 
 This project builds **one thing** — a curated, coupled pigmentation gene network (with its
 physically-linked sex-hormone axis) — and points it at two questions. Pointed at *human*
 genetics, the network grades how much to trust a claimed variant→phenotype link by making
 independent evidence layers converge. Pointed at *evolution*, the **same network** yields a
-genuine discovery: primate sexual dichromatism is not one gene but a **coupled
-pigmentation–hormone system remodeled at different points in different lineages** — which is why
-the trait arose ~15 times independently and is so readily lost. Same object, same
+genuine discovery: primate sexual dichromatism is not one gene but a **polygenic, coupled
+pigmentation–hormone trait** — which is why it arose ~15 times independently and is so readily
+lost, rather than sitting on a single switch as in birds. Same object, same
 one-gene-is-not-enough lesson, two scales.
 
 ```{=html}
@@ -56,8 +56,9 @@ Drag to rotate · hover a gene.
 ::: {.callout-tip}
 ## Start here
 Short on time? Read the **[dichromatism finding](dichromatism.qmd)** first — it is the discovery:
-sexual dichromatism arose ~15 times independently across primates and is built by different genes
-in different origins, tested with per-origin RELAX, per-branch aBSREL, and RERconverge.
+sexual dichromatism arose ~15 times independently across primates and is polygenic in every origin
+tested (not the single-gene MC1R switch of birds), tested with per-origin RELAX, per-branch aBSREL,
+and RERconverge.
 
 Then, for the human-pigmentation method, follow **[NB1 · Reconstruct the network](notebooks/01_reconstruct_published_network.ipynb)** → **[NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)** → **[NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)** → **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)**. NB10 shows a functional screen ordering the *direction* of Mendelian pigmentation disorders (22/22, permutation p < 1×10⁻⁵); read it with NB12, which extends the result to 29/33 and locates its failure boundary. The human arm is a **methodological** demonstration of the convergence thesis on well-characterized pigmentation biology. Every code cell is folded — click *"Show code"* to expand it.
 :::
@@ -69,9 +70,10 @@ applied to two questions that make the same point: **the map from genotype to pi
 one-gene-one-trait; you have to read the genes as a coupled network.**
 
 **Across primates (the discovery).** Sexual dichromatism — a trait that is nearly a single-gene
-switch in birds — turns out to have **arisen ~15 times independently** in primates and to be built
-by **different pigmentation × sex-hormone gene combinations in different origins**. The context
-that changes the genetic basis is the evolutionary lineage. **[See the finding →](dichromatism.qmd)**
+switch in birds — turns out to have **arisen ~15 times independently** in primates and to be
+**polygenic in every origin tested**, drawing on the coupled pigmentation × sex-hormone network
+rather than *MC1R*. Whether different origins recruit the *same* or *different* parts of that
+network is the open, currently-underpowered question. **[See the finding →](dichromatism.qmd)**
 
 **Within humans (the method).** To know how much to trust a claimed variant→phenotype link, make
 independent lines of evidence converge — statistical association, mechanistic pathway knowledge,
@@ -96,8 +98,9 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 
 - **Pointed at evolution — [sexual dichromatism across primates](dichromatism.qmd)** (the
   discovery): using the coupled pigmentation–hormone network to test selection across ~15
-  independent origins, and finding the architecture is heterogeneous — different modules
-  remodeled in different lineages. Pipeline and cluster protocol in
+  independent origins, establishing the trait is polygenic (not the bird *MC1R* switch) and
+  labile, while treating shared-vs-heterogeneous architecture as an open, power-limited question.
+  Pipeline and cluster protocol in
   [`comparative-genomics/`](https://github.com/tinalasisi/pigmentation-gene-network/tree/main/comparative-genomics).
 - **Pointed at human genetics — the convergence method** (the notebooks below): using the same
   network to grade how much to trust human pigmentation genotype→phenotype claims by making

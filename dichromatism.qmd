@@ -62,12 +62,16 @@ accessible failure/remodeling points*, which is why it can be gained and lost so
 
 In birds, sexual dichromatism is nearly a single-gene switch — the melanocortin receptor
 *MC1R* ([Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)). **In primates it is
-not.** Hair dichromatism has arisen **~15 times independently** across the primate radiation,
-is **polygenic in every origin** (and *MC1R* is not the hit), and shows **no single shared
-genetic signature** across those origins — the architecture is origin-specific. The trait is
-also evolutionarily labile, lost roughly **9× more readily than it is gained**, consistent with
-dichromatism being reachable by several different **pigmentation × sex-hormone** genetic routes
-rather than one canonical switch.
+not.** Hair dichromatism has arisen **~15 times independently** across the primate radiation and
+is **polygenic in every origin** (and *MC1R* is not the hit). The trait is also evolutionarily
+labile, lost roughly **9× more readily than it is gained**, consistent with dichromatism being
+reachable through the coupled **pigmentation × sex-hormone** network rather than one canonical
+switch. Whether the *same* or *different* parts of that network are recruited across origins — a
+shared versus heterogeneous architecture — is **not yet resolvable with the current data**: only 3
+origins are powered for the selection test, and a homogeneity test across the 11 origins with any
+detectable selection does not reject a single shared architecture (χ² p = 0.42). We therefore
+report the polygenic, labile, non-*MC1R* result as the finding, and leave shared-vs-heterogeneous
+as an explicitly open question (see *Limitations*).
 
 ::: {.callout-note}
 ## Why this is novel
@@ -76,7 +80,9 @@ sexual dichromatism in primates. Prior primate work is single-gene (MC1R) and fr
 color, not sexual dichromatism; no published study or 2023–2026 preprint tests it as a
 network-level, per-origin question. The contribution is a **shift in the unit of analysis** —
 from "dichromatic species" to "independent origin of dichromatism" — and the finding that the
-architecture is heterogeneous across those origins.
+trait is polygenic and non-*MC1R* in every origin tested. (Whether the architecture is *shared*
+or *heterogeneous* across origins is set up by this design but is not yet powered to resolve; see
+*Limitations*.)
 :::
 
 ## Dichromatism is not one event — it is ~15
@@ -148,7 +154,7 @@ hormone module that carries the selection signal** — and does that differ from
 |---|---|---|
 | genetic basis | ~monogenic — *MC1R* (Nadeau 2007) | polygenic; *MC1R* is **not** the hit |
 | pigmentation signal sits at | the melanocortin receptor switch | melanoblast development / signaling (KITLG–EDN3–TFAP2A) — a different node |
-| architecture across origins | a shared switch | **heterogeneous — origin-specific** |
+| architecture across origins | a shared switch | polygenic; shared-vs-heterogeneous **underpowered to resolve** (χ² p = 0.42) |
 | trait stability | — | labile; loss ≈ 9× faster than gain |
 
 ## Limitations
@@ -159,8 +165,18 @@ hormone module that carries the selection signal** — and does that differ from
 - One phenotypic origin (*Presbytis hosei*) has no genome; a targeted genome-expansion round adds
   a *Presbytis* proxy and recovers the *Hoolock* origin at genus level.
 - The pigmentation-vs-hormone **set-level** contrast is not significant (permutation *p* ≈ 0.87)
-  and is **not** claimed. The finding is about *architecture* — which genes, in which origins —
-  not about one gene set dominating.
+  and is **not** claimed. The apparent hormone-tilt in the pooled selected set (≈59% hormone) is
+  consistent with the panel's own 2:1 hormone:pigmentation gene ratio (binomial *p* ≈ 0.17), not
+  with preferential selection on either module.
+- **Shared vs. heterogeneous architecture is currently underpowered to resolve.** A χ² homogeneity
+  test across the 11 origins with any detectable selection does not reject a single shared
+  architecture (*p* ≈ 0.42; Monte-Carlo *p* ≈ 0.45), and the two "pure-module" poles (*Eulemur*,
+  *Pithecia*) are each defined by only 1–2 selected genes — a small-sample funnel effect, not a
+  measured contrast. Gene count per origin is ≈92% explained by foreground-tip count. The
+  established finding is that the trait is **polygenic and non-*MC1R***; "different genes in
+  different lineages" is a hypothesis this data cannot yet confirm or reject. A rank-based
+  cross-lineage test (e.g. PicMin) on the 14 origins, and a network-subgraph test (e.g. signet),
+  are the powered next steps — see `internal/lit_review/phylo-grn/`.
 
 ## Reproducibility
 
