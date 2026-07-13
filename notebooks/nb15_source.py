@@ -116,6 +116,18 @@ INPUTS = {
         "source": "HYPHY RELAX, pooled foreground (HPC); panel justified in NB13/NB14",
         "produced_by": "Selection pipeline (pulled from HPC)",
     },
+    "sister_pairs": {
+        "path": "comparative-genomics/analysis/module_selection/sister_pairs.csv",
+        "what": "Each dichromatic taxon paired with its closest monochromatic relative on the tree",
+        "source": "Nearest-monochromatic-sister search on the phenotype tree",
+        "produced_by": "analysis/module_selection (sister-pair construction)",
+    },
+    "gene_modules": {
+        "path": "comparative-genomics/analysis/module_selection/data/gene_modules.csv",
+        "what": "Module label (pigmentation / hormone) for every gene in the 105-gene panel",
+        "source": "Panel definition (NB13/NB14)",
+        "produced_by": "analysis/module_selection (panel module map)",
+    },
     # --- Pre-built figures (aBSREL tip-level module views over ALL origins, incl. single-species) ---
     # These four are rendered by scripts in comparative-genomics/analysis/module_selection/ from the
     # SAME final panel this notebook loads (branch_rates.csv, 105 genes; module column, NOT set).
@@ -911,12 +923,71 @@ else:
 # grey cell = selected in neither. So a solid-orange lower-left triangle with an empty upper-right is
 # a pigmentation gene selected in the dichromat but not its sister — a lineage-specific difference.
 #
+# *Margins (added for counting).* The **right margin** gives each pair's row totals — the number of
+# genes under selection in the dichromat (D) and in its sister (M), split into pigmentation (P) and
+# hormone (H); the pair is printed in red where the dichromat has more selected genes than its
+# sister. The **bottom margin** gives each gene's column totals — the number of sister-pairs in which
+# that gene is selected in the dichromat (red, top) vs the sister (grey, below). The italic line under
+# the matrix sums these across all 21 pairs.
+#
 # *What it shows.* The filled cells do not line up into shared columns: different dichromatic taxa
 # light up different genes, and few genes are selected in a dichromat *and* absent in its sister
 # across more than one clade. The *Trachypithecus* langurs (a single origin, many sequenced species)
 # form the densest block and share genes among themselves, but that block does not repeat in the
 # gibbons, guenons, howlers or lemurs — the by-eye version of the zero cross-origin overlap in
 # Table 5.
+
+# %% [markdown]
+# #### Counting the contrast: is there more selection in dichromats or in their sisters?
+#
+# The figure's margins invite a direct count. Summed over all 21 sister-pairs, and split by module,
+# the totals answer whether episodic selection is *concentrated* on the dichromatic lineages.
+
+# %%
+# Reproduce the exact per-cell selection calls the figure uses, then total them by module.
+_SP  = load_input("sister_pairs")
+_GM  = load_input("gene_modules")
+_gmod = dict(zip(_GM.gene, _GM.module))
+def _selset(sp):  # genes under episodic selection on that tip branch (aBSREL corrected p<0.05)
+    return set(BRANCH[(BRANCH.branch == sp) & (BRANCH.selected_flag == True) &
+                      (BRANCH.is_tip == True)].gene)
+_rows = []
+for _, _r in _SP.iterrows():
+    _sd, _sm = _selset(_r.dich), _selset(_r.sister_mono)
+    def _mc(gs, mod): return sum(1 for g in gs if _gmod.get(g) == mod)
+    _rows.append(dict(dichromat=_r.dich.replace("_", " "), sister=_r.sister_mono.replace("_", " "),
+                      dich_pig=_mc(_sd, "pigmentation"), dich_hor=_mc(_sd, "hormone"),
+                      mono_pig=_mc(_sm, "pigmentation"), mono_hor=_mc(_sm, "hormone")))
+_cnt = pd.DataFrame(_rows)
+_summary = pd.DataFrame({
+    "module": ["pigmentation", "hormone", "ALL"],
+    "dichromat_selection_events": [_cnt.dich_pig.sum(), _cnt.dich_hor.sum(),
+                                   _cnt.dich_pig.sum() + _cnt.dich_hor.sum()],
+    "monochromatic_sister_events": [_cnt.mono_pig.sum(), _cnt.mono_hor.sum(),
+                                    _cnt.mono_pig.sum() + _cnt.mono_hor.sum()],
+})
+_summary["difference_(dich-mono)"] = (_summary.dichromat_selection_events
+                                      - _summary.monochromatic_sister_events)
+print("Selection events across", len(_SP), "dichromatic-vs-sister pairs:\n")
+print(_summary.to_string(index=False))
+
+# %% [markdown]
+# **Table 5b. Episodic-selection events in dichromatic taxa vs their monochromatic sisters, by
+# module.**
+#
+# *What the data are.* Counts of gene-level episodic-selection calls (aBSREL corrected p < 0.05,
+# `results/perorigin_v1/branch_rates.csv`) summed over the 21 dichromatic-vs-sister pairs in
+# `analysis/module_selection/sister_pairs.csv`, split by gene module (`gene_modules.csv`). A
+# "selection event" is one gene under selection on one taxon's terminal branch; the same gene
+# counts once per taxon it is selected in.
+#
+# *What it shows.* Selection is **not concentrated on the dichromatic lineages**: dichromats carry
+# 111 selection events (60 pigmentation + 51 hormone) against 121 in their monochromatic sisters
+# (72 pigmentation + 49 hormone). The dichromats have marginally *fewer* pigmentation events and a
+# near-identical hormone count. This is the pairwise, module-resolved counterpart to the
+# phylogenetically-controlled test (whole-tree contrast: null after correcting for tree structure) —
+# the difference that makes a lineage dichromatic is in *which* genes are selected (Figure 6), not in
+# *how many*.
 
 # %%
 _sn = os.path.join(SYN, "figures", "nb15_fig_sister_network_diff.png")

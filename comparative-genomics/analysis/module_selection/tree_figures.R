@@ -27,9 +27,15 @@ bal_v <- setNames(rep(NA_real_, Ntip(trg)), trg$tip.label); bal_v[tipbal$branch]
 labcol <- ifelse(trg$tip.label %in% dich, "#B22222", "grey55")
 
 # --- Fig: circular fan tree ---
-png(file.path(base,"fig_circular_tree_balance.png"), width=3000, height=2900, res=300)
+png(file.path(base,"fig_circular_tree_balance.png"), width=3200, height=3200, res=300)
 par(mar=c(0,0,0,0), xpd=NA)
-plotTree(trg, type="fan", fsize=0.001, lwd=0.7, part=0.88, color="grey45")
+# compute the tree radius first, then set symmetric limits ~1.5x larger so long tip
+# labels (e.g. Allenopithecus nigroviridis) are not clipped at the device edge.
+plotTree(trg, type="fan", fsize=0.001, lwd=0.7, part=0.95, color="grey45")
+obj<-get("last_plot.phylo", envir=.PlotPhyloEnv); rng<-max(abs(c(obj$xx,obj$yy)),na.rm=TRUE)
+lim<-rng*1.55
+plot.new(); plot.window(xlim=c(-lim,lim), ylim=c(-lim,lim), asp=1)
+plotTree(trg, type="fan", fsize=0.001, lwd=0.7, part=0.95, color="grey45", add=TRUE)
 obj<-get("last_plot.phylo", envir=.PlotPhyloEnv); rng<-max(abs(c(obj$xx,obj$yy)),na.rm=TRUE)
 for(i in 1:Ntip(trg)){ ns<-n_sel_v[trg$tip.label[i]]
   cex_i<-if(ns>0) 0.55+1.7*sqrt(ns)/sqrt(max(n_sel_v)) else 0.45
