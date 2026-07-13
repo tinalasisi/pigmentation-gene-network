@@ -25,6 +25,7 @@ project:
     - notebooks/10_mechanism_direction_law.ipynb
     - notebooks/11_cross_ancestry_conditionality.ipynb
     - notebooks/12_direction_law_expanded.ipynb
+    - notebooks/13_sex_hormone_layer.ipynb
 
 website:
   title: "Pigmentation gene network"
@@ -99,6 +100,10 @@ website:
             href: notebooks/11_cross_ancestry_conditionality.ipynb
           - text: "NB12 · Direction law, expanded"
             href: notebooks/12_direction_law_expanded.ipynb
+      - section: "Sex hormones & evolution"
+        contents:
+          - text: "NB13 · Sex-hormone layer"
+            href: notebooks/13_sex_hormone_layer.ipynb
       - section: "Appendix — data extraction"
         contents:
           - text: "NB1a · Bajpai CRISPR screen"

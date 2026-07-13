@@ -1,0 +1,7 @@
+pmid,first_author,year,journal,doi,finding,tier
+27115344,Natale CA,2016,eLife,10.7554/eLife.15104,Primary human melanocytes express GPER (membrane estrogen receptor) but LACK classical ERα/ERβ; 17β-estradiol raises melanin ~208% via GPER→cAMP→pCREB→MITF; GPER knockout abolishes it. The melasma/pregnancy mechanism.,paper_supported
+11773440,Filardo EJ,2002,Mol Endocrinol,10.1210/mend.16.1.0758,Estrogen via GPER (GPR30) raises intracellular cAMP — the same second messenger as the MC1R→PKA→CREB→MITF axis.,paper_supported
+34833446,Spałkowska M,2021,Medicina (Kaunas),10.3390/medicina57111228,ERβ (ESR2) protein detected by IHC in ~90% of epidermal melanocytes in healthy skin margins.,paper_supported
+9326383,Tadokoro T,1997,J Invest Dermatol,10.1111/1523-1747.ep12336630,"AR expressed (nuclear IHC + mRNA) in cultured human GENITAL melanocytes; androgen (T→DHT) increases tyrosinase activity, blocked by AR antagonist. Regional, not general-epidermal.",paper_supported
+17326004,Zouboulis CC,2007,Horm Metab Res,10.1055/s-2007-961807,Human skin locally synthesizes sex steroids (aromatase in sebaceous/sweat/dermal-papilla cells) — a paracrine estrogen source; melanocyte-intrinsic aromatase NOT shown.,paper_supported
+11850590,Im S,2002,J Korean Med Sci,10.3346/jkms.2002.17.1.58,Cultured melanocytes stain for generic 'ER' but ERα identity not distinguished; multiple later IHC studies find normal melanocytes ERα-NEGATIVE. ESR1 role is contested/weak.,weak_or_indirect

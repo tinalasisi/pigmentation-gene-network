@@ -143,6 +143,13 @@ no network, and no withheld data. **Code is folded by default** — click *"Show
 - **[NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)** — a pre-registered expansion
   (**29/33**) that also *locates the failure boundary*: the misses act through systemic routes.
 
+### Sex hormones & evolution
+- **[NB13 · Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)** — layers the **sex-hormone axis** onto the
+  pigmentation substrate through cited **hormone → melanocyte-receptor → MITF** bridges, each gated on melanocyte
+  expression (Zhang eQTL). The estrogen bridge runs through membrane **GPER** (not ERα — melanocytes are
+  ERα-negative), converging on the *same* cAMP→CREB→MITF node as melanocortin. A separate, additive layer:
+  **NB1–7 are unchanged.**
+
 ### Appendix — data extraction
 Reproducible pulls of each external dataset, frozen for provenance:
 [NB1a · Bajpai CRISPR screen](notebooks/01a_extract_bajpai_crispr.ipynb) ·
