@@ -296,8 +296,6 @@ else:
 # tables.
 
 # %%
-# Runs on the CURRENT perorigin_v1 tables; the per-lineage panel figure + rate-corrected balance
-# (S5) refresh to 110 genes when the clean-30 expansion lands with module+category columns.
 PER_ORIGIN = load_input("per_origin_K")
 BRANCH     = load_input("branch_rates")
 if PER_ORIGIN is not None:
@@ -305,11 +303,65 @@ if PER_ORIGIN is not None:
     print(f"per_origin_K: {PER_ORIGIN.shape[0]} rows, "
           f"{PER_ORIGIN['gene'].nunique()} genes, origins {origins}")
     if "p_BH" in PER_ORIGIN.columns:
-        n_sig = (PER_ORIGIN["p_BH"] < 0.05).sum()
-        print(f"significant per-origin selection shifts (p_BH<0.05): {n_sig} gene-origin pairs")
-    print("(per-lineage gene panel figure regenerated with the 110-gene refresh)")
+        sig = PER_ORIGIN[PER_ORIGIN.p_BH < 0.05]
+        for o in origins:
+            g = sorted(sig[sig.origin_id == o].gene)
+            print(f"  {o}: {len(g)} genes p_BH<0.05 - {g if g else '(none)'}")
 else:
     print("Awaiting per-origin tables (cluster appending clean-30 into perorigin_v1).")
+
+# %% [markdown]
+# ### Figure 4 — Per-origin selection architecture
+#
+# **Figure 4.** For each of the three powered origins, the panel genes with a significant
+# per-origin selection-intensity shift (RELAX, p_BH < 0.05), coloured by module (orange =
+# pigmentation, blue = hormone). Bar length is log₂ K: bars to the right mark *intensified*
+# selection (K > 1), to the left *relaxed* (K < 1). *Trachypithecus* recruits many genes from both
+# modules; *Nomascus* a small pigmentation set (HRAS, POMC, HGF); *Eulemur* none passing
+# threshold. The three sets do not overlap (§6).
+
+# %%
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Patch
+_arch = os.path.join(SYN, "figures", "nb15_per_origin_arch.png")
+if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
+    _labels = {"origin_7": "Trachypithecus\n(origin 7, 8 tips)",
+               "origin_8": "Nomascus\n(origin 8, 3 tips)",
+               "origin_14": "Eulemur\n(origin 14, 2 tips)"}
+    _sig = PER_ORIGIN[PER_ORIGIN.p_BH < 0.05].copy()
+    _gmod = PER_ORIGIN.drop_duplicates("gene").set_index("gene")["module"].to_dict()
+    _mc = {"pigmentation": "#c0662e", "hormone": "#3b6ea5"}
+    _origs = [o for o in _labels if o in PER_ORIGIN.origin_id.values]
+    fig, axes = plt.subplots(1, len(_origs), figsize=(4.3 * len(_origs), 5.2),
+                             gridspec_kw={"wspace": 0.55})
+    if len(_origs) == 1:
+        axes = [axes]
+    for ax, o in zip(axes, _origs):
+        s = _sig[_sig.origin_id == o].copy()
+        if len(s) == 0:
+            ax.text(0.5, 0.5, "no gene passes\np(BH) < 0.05", ha="center", va="center",
+                    transform=ax.transAxes, fontsize=12, color="#7f8c8d", style="italic")
+            ax.set_title(_labels[o], fontsize=12, fontweight="bold"); ax.axis("off"); continue
+        s["logK"] = np.log2(s["K"].clip(lower=0.05))
+        s = s.sort_values(["module", "logK"])
+        y = np.arange(len(s))
+        ax.barh(y, s["logK"], color=[_mc[_gmod.get(g, "pigmentation")] for g in s.gene],
+                edgecolor="black", linewidth=0.5, height=0.7)
+        ax.set_yticks(y); ax.set_yticklabels(s.gene, fontsize=9, fontstyle="italic")
+        ax.axvline(0, color="black", lw=0.8)
+        ax.set_title(_labels[o], fontsize=12, fontweight="bold")
+        ax.set_xlabel("log$_2$ K  (right = intensified, left = relaxed)", fontsize=9)
+        ax.spines[["top", "right"]].set_visible(False)
+    fig.suptitle("Per-origin selection architecture: which genes shift, in which module",
+                 fontsize=13, fontweight="bold", y=1.02)
+    fig.legend(handles=[Patch(facecolor=_mc["pigmentation"], edgecolor="black", label="pigmentation"),
+                        Patch(facecolor=_mc["hormone"], edgecolor="black", label="hormone")],
+               loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, -0.07), fontsize=10)
+    fig.savefig(_arch, dpi=150, bbox_inches="tight")
+    plt.show()
+else:
+    print("Per-origin architecture figure builds when the tables are present.")
 
 # %% [markdown]
 # ## 5 — Module balance per origin, corrected for panel composition
