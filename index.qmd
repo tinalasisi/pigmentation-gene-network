@@ -27,6 +27,10 @@ lost, rather than sitting on a single gene of major effect as in birds. Same obj
 one-gene-is-not-enough lesson, two scales.
 
 ```{=html}
+<div style="text-align:right;margin:0 0 0.4rem;">
+  <a href="interactive/substrate_multilayer.html" target="_blank" rel="noopener"
+     style="font-size:0.88rem;font-weight:600;color:#2f6d7a;text-decoration:none;">Open full screen &#8599;</a>
+</div>
 <iframe src="interactive/substrate_multilayer.html"
         title="Interactive 3D multilayer view of the pigmentation gene substrate"
         loading="eager"

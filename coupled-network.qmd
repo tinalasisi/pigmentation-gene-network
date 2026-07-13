@@ -22,6 +22,10 @@ sub-planes); a thin **interface layer** holds the pigment genes that couple to t
 (POMC, MITF, TYR, …), and the coupling itself is drawn on top.
 
 ```{=html}
+<div style="text-align:right;margin:0 0 0.4rem;">
+  <a href="interactive/coupled_network_3d.html" target="_blank" rel="noopener"
+     style="font-size:0.88rem;font-weight:600;color:#2f6d7a;text-decoration:none;">Open full screen &#8599;</a>
+</div>
 <iframe src="interactive/coupled_network_3d.html"
         title="Two coupled 3D networks: the sex-hormone axis over the pigmentation core"
         loading="lazy"
@@ -43,6 +47,10 @@ melanogenesis genes — the curated [Raghunath](notebooks/01_reconstruct_publish
 melanin pathway (TYR, TYRP1, DCT, PMEL, MLANA, OCA2, SLC45A2) — and back down to **melanin**.
 
 ```{=html}
+<div style="text-align:right;margin:0 0 0.4rem;">
+  <a href="interactive/coupled_pathway_3d.html" target="_blank" rel="noopener"
+     style="font-size:0.88rem;font-weight:600;color:#2f6d7a;text-decoration:none;">Open full screen &#8599;</a>
+</div>
 <iframe src="interactive/coupled_pathway_3d.html"
         title="From signal to pigment: the hormone-to-melanogenesis pathway in 3D"
         loading="lazy"

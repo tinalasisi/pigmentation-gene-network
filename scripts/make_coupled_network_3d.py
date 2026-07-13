@@ -35,19 +35,28 @@ for r in csv.DictReader(open("data/processed/panel_string_edges.csv")):
     if s >= LAY: lay[side].append((a, b))
     if s >= DRAW: draw[side].append((a, b))
 
-def xy(genes, edges, seed, R):
+def xy(genes, edges, seed, R, mode="stretch", keep=85, cap=1.15):
     G = nx.Graph(); G.add_nodes_from(genes); G.add_edges_from(edges)
     hub = max(dict(G.degree()), key=lambda g: G.degree(g))
     for g in list(genes):
         if G.degree(g) == 0: G.add_edge(g, hub)
     pos = nx.spring_layout(G, seed=seed, k=2.5/np.sqrt(len(genes)), iterations=800)
-    xs = np.array([p[0] for p in pos.values()]); ys = np.array([p[1] for p in pos.values()])
-    xl, xh = np.percentile(xs, [1, 99]); yl, yh = np.percentile(ys, [1, 99])
-    nrm = lambda v, lo, hi: float(np.clip((v-lo)/((hi-lo) or 1), 0, 1))
-    return {g: (R*(2*nrm(pos[g][0], xl, xh)-1), R*(2*nrm(pos[g][1], yl, yh)-1)) for g in pos}
+    if mode == "stretch":                          # per-axis min-max → fills a square (hormone stack)
+        xs = np.array([p[0] for p in pos.values()]); ys = np.array([p[1] for p in pos.values()])
+        xl, xh = np.percentile(xs, [1, 99]); yl, yh = np.percentile(ys, [1, 99])
+        nrm = lambda v, lo, hi: float(np.clip((v-lo)/((hi-lo) or 1), 0, 1))
+        return {g: (R*(2*nrm(pos[g][0], xl, xh)-1), R*(2*nrm(pos[g][1], yl, yh)-1)) for g in pos}
+    # compact → keep the spring layout's natural cluster, scale so the keep-th pctl radius == R,
+    # cap outliers at R*cap so a few weakly-tied genes don't blow the plane up / stretch edges
+    gl = list(genes)
+    P = np.array([pos[g] for g in gl], float); P -= P.mean(0)
+    r = np.hypot(P[:, 0], P[:, 1]); P *= R / (np.percentile(r, keep) or 1)
+    r = np.hypot(P[:, 0], P[:, 1]); over = r > R*cap
+    if over.any(): P[over] *= (R*cap / r[over])[:, None]
+    return {g: (float(P[i, 0]), float(P[i, 1])) for i, g in enumerate(gl)}
 
 hxy = xy(hormset, lay["h"], 4, 4.5)
-pxy = xy(pigset, lay["p"], 11, 4.2)
+pxy = xy(pigset, lay["p"], 11, 3.0, mode="compact")   # compact core: no forced-square stretch, outliers capped
 hdeg = {g: sum(g in e for e in lay["h"]) for g in hormset}
 pdeg = {g: sum(g in e for e in lay["p"]) for g in pigset}
 # 3D positions: hormone z by group (+ jitter); pigment on its own plane
@@ -75,7 +84,7 @@ first = True
 for s, t, axis, tier, mech in bridges:
     fig.add_trace(go.Scatter3d(x=[POS[s][0], POS[t][0]], y=[POS[s][1], POS[t][1]], z=[POS[s][2], POS[t][2]],
         mode="lines", line=dict(color="#c0186a", width=6), name="Cited sex-steroid bridge",
-        legendgroup="b", showlegend=first, hoverinfo="text", text=f"{s} → {t} · {axis} · {tier}<br>{mech}")); first = False
+        legendgroup="b", legendrank=9, showlegend=first, hoverinfo="text", text=f"{s} → {t} · {axis} · {tier}<br>{mech}")); first = False
 # pigment<->hormone coupling — cross-module STRING links from the interface genes up into the hormone stack
 firstp = True
 for r in csv.DictReader(open("data/processed/panel_string_edges.csv")):
@@ -86,16 +95,16 @@ for r in csv.DictReader(open("data/processed/panel_string_edges.csv")):
     if pgene and hgene:
         fig.add_trace(go.Scatter3d(x=[POS[pgene][0], POS[hgene][0]], y=[POS[pgene][1], POS[hgene][1]],
             z=[POS[pgene][2], POS[hgene][2]], mode="lines", line=dict(color="#d9930a", width=1.7),
-            opacity=0.45, name="Pigment↔hormone coupling (STRING)", legendgroup="pomc", showlegend=firstp,
+            opacity=0.45, name="Pigment↔hormone coupling (STRING)", legendgroup="pomc", legendrank=10, showlegend=firstp,
             hoverinfo="text", text=f"{pgene} ↔ {hgene} · STRING")); firstp = False
 # hormone nodes by group
-for cat in HC:
+for ri, cat in enumerate(HC):
     gs = [g for g in hormset if panel[g][1] == cat]
     if not gs: continue
     fig.add_trace(go.Scatter3d(x=[H[g][0] for g in gs], y=[H[g][1] for g in gs], z=[H[g][2] for g in gs],
         mode="markers", marker=dict(size=[6 + 1.5*np.sqrt(hdeg[g]) + (5 if g in receptors else 0) for g in gs],
             color=HC[cat], line=dict(color="white", width=0.6)),
-        name=HL[cat], customdata=gs, hoverinfo="text",
+        name=HL[cat], legendrank=ri+1, customdata=gs, hoverinfo="text",
         hovertext=[f"<b>{g}</b> · {HL[cat]}" + (" · receptor → bridge" if g in receptors else "") + f" · {hdeg[g]} links" for g in gs]))
 # pigment CORE nodes (not coupled to hormones) — split OMIM, on the bottom plane
 core = [g for g in pigset if g not in INTERFACE]
@@ -105,15 +114,15 @@ for sub, lc, lw, sl in [([g for g in core if g not in omim], "white", 0.6, True)
     fig.add_trace(go.Scatter3d(x=[Pp[g][0] for g in sub], y=[Pp[g][1] for g in sub], z=[Pp[g][2] for g in sub],
         mode="markers", marker=dict(size=[6 + 1.5*np.sqrt(pdeg[g]) for g in sub], color="#2f9e8f",
             line=dict(color=lc, width=lw)), name="Pigmentation gene" + ("" if sl else " (OMIM)"), customdata=sub,
-        showlegend=sl, hoverinfo="text", hovertext=[f"<b>{g}</b> · pigmentation · {panel[g][1]} · {pdeg[g]} links" for g in sub]))
+        legendrank=8, showlegend=sl, hoverinfo="text", hovertext=[f"<b>{g}</b> · pigmentation · {panel[g][1]} · {pdeg[g]} links" for g in sub]))
 # INTERFACE genes — pigment genes coupled to the hormone module — on the interface layer, thin gold ring
 ig = sorted(INTERFACE)
 fig.add_trace(go.Scatter3d(x=[Pp[g][0] for g in ig], y=[Pp[g][1] for g in ig], z=[Pp[g][2] for g in ig],
     mode="markers", marker=dict(size=[8 + 1.5*np.sqrt(pdeg[g]) for g in ig], color="#2f9e8f",
-        line=dict(color="#d9930a", width=2)), name="Pigment gene coupled to hormones", customdata=ig, hoverinfo="text",
+        line=dict(color="#d9930a", width=2)), name="Pigment gene coupled to hormones", legendrank=7, customdata=ig, hoverinfo="text",
     hovertext=[f"<b>{g}</b> · pigmentation · {panel[g][1]} · couples to the hormone axis · {pdeg[g]} links" for g in ig]))
-fig.add_trace(go.Scatter3d(x=[5.4], y=[5.2], z=[POMCZ], mode="text", text=["Pigment ↔ hormone interface"],
-    textfont=dict(size=9.5, color="#c9880a"), hoverinfo="skip", showlegend=False))
+# Layer identity is carried by the legend (ordered top→bottom to match the stack via legendrank), not floating
+# 3D text — eight stacked slabs can't all get a collision-free in-scene label. Only per-gene names float (below).
 # labels
 PIGLAB = {"MITF", "TYR", "TYRP1", "DCT", "OCA2", "SOX10", "PAX3", "KIT", "MC1R", "EDNRB",
           "SLC45A2", "POMC", "ASIP", "KITLG", "MRAP2", "TFAP2A"}
@@ -122,24 +131,20 @@ labs = [(g, H[g]) for g in set(hhub) | receptors] + [(g, Pp[g]) for g in pigset 
 fig.add_trace(go.Scatter3d(x=[p[0] for _, p in labs], y=[p[1] for _, p in labs], z=[p[2]+0.12 for _, p in labs],
     mode="text", text=[f"<b>{g}</b>" if g in receptors or g in {"MITF", "TYR"} else g for g, _ in labs],
     textfont=dict(size=9.5, color=INK), hoverinfo="skip", showlegend=False))
-# sub-plane labels on the right edge
-for cat, z in GZ.items():
-    fig.add_trace(go.Scatter3d(x=[5.4], y=[5.2], z=[z], mode="text", text=[HL[cat]],
-        textfont=dict(size=9.5, color=HC[cat]), hoverinfo="skip", showlegend=False))
-fig.add_trace(go.Scatter3d(x=[5.4], y=[5.2], z=[PIGZ], mode="text", text=["Pigmentation core"],
-    textfont=dict(size=10, color="#1f7a6e"), hoverinfo="skip", showlegend=False))
 
 fig.update_layout(
-    title=dict(text="<b>Two coupled 3D networks: the sex-hormone axis over the pigmentation core</b><br>"
-        "<span style='font-size:13px;color:#5c656b'>Hormone module split into 6 group sub-planes (STRING v12), pigment core below, "
-        "3 cited receptor→pigment bridges. Drag to rotate · hover any gene.</span>",
+    title=dict(text="<b>Two coupled 3D networks: the sex-hormone axis<br>over the pigmentation core</b><br>"
+        "<span style='font-size:13px;color:#5c656b'>Hormone module split into 6 group sub-planes (STRING v12),<br>"
+        "pigment core below, 3 cited receptor→pigment bridges.<br>Drag to rotate · hover any gene.</span>",
         x=0.5, xanchor="center", font=dict(color=INK, size=18)),
-    scene=dict(xaxis=dict(visible=False), yaxis=dict(visible=False), zaxis=dict(visible=False),
+    scene=dict(xaxis=dict(visible=False, range=[-5.0, 5.0]), yaxis=dict(visible=False, range=[-5.0, 5.0]),
+        zaxis=dict(visible=False, range=[-0.9, 2.9]),   # fixed ranges → stable framing
         aspectmode="manual", aspectratio=dict(x=2, y=2, z=1.5),
         camera=dict(eye=dict(x=1.55, y=1.55, z=0.55)), bgcolor="white"),
     paper_bgcolor="white", height=760,
-    legend=dict(orientation="v", yanchor="top", y=1.0, xanchor="left", x=0.0, font=dict(size=9), itemsizing="constant"),
-    margin=dict(l=0, r=0, t=84, b=0))
+    legend=dict(orientation="v", yanchor="top", y=0.98, xanchor="left", x=0.0, font=dict(size=9), itemsizing="constant",
+        title=dict(text="<b>Layers (top → bottom)</b>", font=dict(size=9.5, color="#5c656b"))),
+    margin=dict(l=0, r=0, t=150, b=0))
 # ---- per-gene dossier data ----
 import json
 names = {r["gene"]: r["full_name"] for r in csv.DictReader(open("data/processed/panel_gene_names.csv"))}
