@@ -11,7 +11,7 @@ quarto render module_selection_analysis.qmd     # or: Rscript -e 'knitr::purl(..
 # figures (Python, needs pandas/matplotlib)
 python figures.py
 ```
-All inputs are frozen in `data/` (HPC commit 4c07317 + own ASR + Leakey phenotype).
+All inputs are frozen in `data/` (HPC commit 4c07317 + own ASR + primate phenotype scoring).
 No network access required.
 
 ## Outputs
@@ -47,6 +47,6 @@ Rscript tree_figures.R    # fig_circular_tree_balance.png, fig_phylo_heatmap.png
 ## Method notes / caveats
 - Module balance uses aBSREL tip-branch selection (all origins) with RELAX
   overlay for the 3 powered origins (>=2 tips). Single-tip origins are aBSREL-only.
-- Rate/ASR (analysis 3) uses the **224-tip Leakey phenotype tree**, not the
+- Rate/ASR (analysis 3) uses the **224-tip primate phenotype tree**, not the
   genome-sampled 117 set, to avoid ascertainment bias inflating the gain rate.
 - Opie et al. 2012 = Commun Integr Biol 5(5):458-461, doi:10.4161/cib.20821.

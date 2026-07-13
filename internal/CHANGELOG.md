@@ -1640,3 +1640,94 @@ its two audit columns are live in `discordance_loci_effector_classified.csv`, an
 documented in that file's spec and in these CHANGELOG entries. Nothing in the live repo reads it; the
 lockstep docs and the NB4 cell-3 comment were updated to describe it as removed (recoverable from git
 history) rather than archived.
+
+---
+
+## 2026-07-13T15:21Z — Phylo-GRN methods review landed; two-tier runnable-analysis plan proposed (not yet run)
+
+**What landed.** The PI orchestrator (Claude Science, frame `9c7c28bf`) delegated a methods review of
+gene-(regulatory)-network analysis on a phylogenetic (cross-species) scale, asking how to run one on this
+project's existing primate selection data. Two specialists ran in sequence — GENETICS_LIT_REVIEWER (methods
+survey) and MOL_EVO_SPECIALIST (feasibility mapping against our actual data) — synthesized by the PI into a
+two-tier recommendation. All output lives under `internal/lit_review/phylo_grn_methods/`
+(`survey/phylo_grn_methods_survey.md` + `survey/phylo_grn_methods_papers.csv`,
+`feasibility/feasibility_matrix.csv` + `feasibility/TIERED_PLAN.md`, `CONCLUSION.md`, `README.md`), a
+self-contained workspace that does not touch `comparative-genomics/analysis/module_selection/` (current
+flagship) or `internal/network-evo-explore/` (prior/parallel exploration). Nothing outside that folder was
+modified; nothing has been run; no commit was made in this pass.
+
+**The survey.** 25 PMID-verified papers organized into 5 method families, each checked against our actual
+data inventory (cross-species RELAX/aBSREL selection statistics on an ~80-gene panel across 117 primates,
+codon alignments, a signed directed 168-node melanogenesis GRN, a species tree with 14 independent
+dichromatism origins — but no cross-species expression data, which rules out WGCNA/GENIE3/SCENIC-style
+expression-GRN inference and per-species rewiring analyses outright). Verdicts: network/pathway-aware
+selection tests (PolySel-style) and coevolution-of-interacting-partners (mirrortree/ERC/RERconverge) are
+feasible now; PGLS-on-network-position is caveated by the literature's own confound (expression level, not
+connectivity, dominates evolutionary rate — Zhang & Yang 2015, PMID 26055156 — uncontrollable here);
+GRN-rewiring/topology-evolution and network-propagation methods are ruled out as infeasible on this data.
+
+**The binding number.** Independently re-counted (both by the delegated specialist and, in this bookkeeping
+pass, directly against `data/processed/gene_network_nodes.csv` / `gene_network_edges.csv`): of 77 genes with
+a RELAX result, only 16 are nodes in the 168-node signed melanogenesis GRN, and only **n=15** directed
+non-self edges connect two panel genes — 13 distinct connected genes (LEF1, POMC, TFAP2A are panel-gene GRN
+nodes with no within-panel edge). An 18-edge sensitivity check exists on the denser 803-node multilayer
+substrate; the connected-gene set does not change. This small edge count, not the choice of statistic, is
+flagged as the binding constraint at both tiers.
+
+**The two-tier recommendation (PROPOSED, not yet run — see `TODO.md`'s new section):**
+- **Tier 1** — GRN-neighbor selection-similarity permutation: do direct regulator→effector pairs show more
+  correlated RELAX K than non-adjacent pairs, under a degree-preserving double-edge-swap null (10,000
+  rewirings) on the 13-node/15-edge subgraph, with an 18-edge robustness check. Runnable locally now from
+  frozen outputs; no new data, no cluster time.
+- **Tier 2** — pairwise ERC/mirrortree coevolution test on the same GRN edges: replace each gene's single K
+  with a full per-branch relative-evolutionary-rate vector (extends the not-yet-run `04_rerconverge.R`),
+  build per-gene ML trees for all 77 panel genes (SLURM array), and test the 15–18 true edges against the
+  ~2,900 non-edge pairs. A short Great Lakes cluster job, under an hour end-to-end once submitted. A cheap
+  adjacent add-on is flagged: filling the remaining 11 of 14 dichromatism origins for per-origin RELAX, to
+  retest a positive signal within each independent origin.
+
+**Bookkeeping performed in this pass (Project Manager close-out, no content changes to the deliverable):**
+`internal/TODO.md` gained a new section recording both tiers as proposed/not-yet-run;
+`internal/project_dashboard.md`'s "Where the project is now" section gained a pointer to this deliverable
+(its `as of` timestamp bumped to 2026-07-13T15:21Z) without altering the module-selection flagship or the
+network-evo-explore/parallel-phylogenetics notes; this CHANGELOG entry. `check_plan_sync()` was re-run: 0
+`DRIFT`/`missing_file` against the 7 pinned Key-metrics rows (unchanged — this deliverable introduces no new
+processed CSV and pins no new Key-metrics number), 23 pre-existing `orphan_file` soft warnings (older
+EXTRACT_*/nb13/effector-classification files predating this session, out of its scope). The n=15/13/16
+figures above were independently re-derived from the committed CSVs, not retyped from the deliverable's
+own prose.
+
+---
+
+## 2026-07-13T15:40Z — "Leakey" naming scrubbed from public-facing analysis files (PI directive re-confirmed still standing)
+
+**Context.** During a science-communication + clarity pass, the pre-push compliance gate (REPO_COMPLIANCE_GATE)
+flagged that a concurrent session's push had put the string **"Leakey"** back onto public `main`, in two new
+data files and their surrounding prose — violating the standing PI directive recorded in
+`internal/handoffs/notes/20260712T233549Z__claude-science__operon-0d1cda86__dfdcd6.md`
+("The PI wants the name 'Leakey' removed from the project ... before anything is shared"). `Leakey2025` is the
+PI's own repo for an active grant proposal; the directive is that the association must not appear in the public
+showcase repo. **The PI was asked and re-confirmed the directive still stands.**
+
+**Remediation applied (this session).**
+- Renamed `comparative-genomics/analysis/coevolution_test/data/leakey_pruned_tree.nex` →
+  `primate_phenotype_tree.nex` and `leakey_dichromatism_coding.csv` → `dichromatism_coding.csv`
+  (matching the neutral naming already used in the sibling `module_selection/data/`).
+- Scrubbed all "Leakey" prose/path references from the public-facing analysis files:
+  `coevolution_test/coevolution_test.qmd`, `coevolution_test/README.md`,
+  `module_selection/README.md`, `module_selection/module_selection_analysis.qmd`. The hardcoded
+  `../../../../Leakey2025/` external paths in the module-selection notebook were replaced with a
+  `PHENO_TREE_DIR` environment variable (neutral default path; the owning session can still point at
+  its local copy) — this removes the name and decouples the notebook from one machine's layout.
+- Added a `DATA_SOURCES.md` entry (source 11) for the STRING v12.0 pull backing
+  `module_selection/data/string_diff_edges.tsv` (score ≥ 0.4, CC BY 4.0), closing a documentation gap
+  the gate flagged.
+
+**Not touched:** the `internal/handoffs/notes/` files still contain "Leakey" — they are the append-only
+audit trail (one of them *is* the directive), and scrubbing them would destroy the record. Flagged for the
+PI to decide whether the internal note history also needs redaction before any repo-history rewrite.
+
+**Note on the live remote.** The offending files had already reached public `origin/main` (pushed by a
+concurrent session while the gate audit ran). This remediation removes the name going forward; it does **not**
+rewrite the already-published history. If the grant-proposal association must be expunged from the git history
+too, that requires a separate, coordinated history-rewrite decision by the PI (not done here).
