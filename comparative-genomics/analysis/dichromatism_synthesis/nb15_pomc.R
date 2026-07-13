@@ -25,12 +25,47 @@ x   <- setNames(as.integer(cod$hair_dichromatism_any[match(sp, cod$tip)]), sp)
 sp  <- names(x)[!is.na(x)]; x <- x[sp]; trO <- keep.tip(tr, sp)
 
 # POMC selected branches: aBSREL corrected p < 0.05 (selected_flag is a "True"/"False" string).
-pom$acp   <- suppressWarnings(as.numeric(pom$absrel_corrected_p))
+pom$acp   <- suppressMessages(suppressWarnings(as.numeric(pom$absrel_corrected_p)))
 pom$istip <- pom$is_tip %in% c(TRUE, "True", "true", 1, "1")
 pom_sel   <- pom[!is.na(pom$acp) & pom$acp < 0.05, ]
 sel_tips  <- intersect(pom_sel$branch[pom_sel$istip], trO$tip.label)
 sel_nodes <- pom_sel$branch[!pom_sel$istip]
+
+# HYPHY names internal branches NodeNN in each gene's OWN aBSREL tree — those numbers are not
+# comparable across genes and mean nothing on the phenotype tree. Resolve each selected internal
+# node to the clade it subtends by reading the labelled gene tree from POMC's aBSREL JSON, so the
+# figure names a real clade (e.g. "Macaca clade") instead of an opaque "Node45".
+resolve_node <- function(node_name) {
+  jf <- file.path(REPO, "comparative-genomics/results/full_panel_117/absrel/POMC.ABSREL.json")
+  if (!file.exists(jf)) return(node_name)
+  jtree <- tryCatch(jsonlite::fromJSON(jf)$input$trees[["0"]], error = function(e) NULL)
+  if (is.null(jtree)) return(node_name)
+  gt <- tryCatch(read.tree(text = paste0(jtree, ";")), error = function(e) NULL)
+  if (is.null(gt) || !(node_name %in% gt$node.label)) return(node_name)
+  ni  <- Ntip(gt) + which(gt$node.label == node_name)
+  tips <- gt$tip.label[Descendants(gt, ni, type = "tips")[[1]]]
+  genera <- unique(sub("_.*", "", tips))
+  if (length(genera) == 1) sprintf("%s clade (%d spp.)", genera, length(tips))
+  else sprintf("%s clade (%d spp.)", paste(genera, collapse = "/"), length(tips))
+}
+suppressMessages(suppressWarnings({library(jsonlite); library(phangorn)}))
+node_labels <- setNames(vapply(sel_nodes, resolve_node, character(1)), sel_nodes)
+# dichromatic fraction within each resolved internal clade (for a data-driven state annotation)
+node_dichfrac <- function(node_name) {
+  jf <- file.path(REPO, "comparative-genomics/results/full_panel_117/absrel/POMC.ABSREL.json")
+  jtree <- tryCatch(jsonlite::fromJSON(jf)$input$trees[["0"]], error = function(e) NULL)
+  gt <- tryCatch(read.tree(text = paste0(jtree, ";")), error = function(e) NULL)
+  if (is.null(gt) || !(node_name %in% gt$node.label)) return(NA_real_)
+  ni <- Ntip(gt) + which(gt$node.label == node_name)
+  tips <- gt$tip.label[Descendants(gt, ni, type = "tips")[[1]]]
+  st <- x[intersect(tips, names(x))]
+  if (!length(st)) return(NA_real_)
+  mean(st == 1)
+}
+node_frac <- setNames(vapply(sel_nodes, node_dichfrac, numeric(1)), sel_nodes)
 cat("DEBUG sel rows:", nrow(pom_sel), "tips:", length(sel_tips), "\n")
+cat("resolved internal nodes:", paste(sprintf("%s=%s (dich frac %.2f)",
+    names(node_labels), node_labels, node_frac[names(node_labels)]), collapse="; "), "\n")
 
 # tip colours: dichromatic vs mono; ring marks POMC-selected tips
 dich_col <- ifelse(x[trO$tip.label] == 1, "#c0392b", "#c9ced6")
@@ -79,18 +114,25 @@ yy <- seq_len(nrow(allsel))
 lab_col <- ifelse(!allsel$is_tip, "#7f8c8d",
                   ifelse(allsel$dich == 1, "#c0392b", "#2c3e50"))
 xr <- max(allsel$nlp)
-# state annotation sits INSIDE the panel, so extend the x-limit to hold it
-plot(NA, xlim = c(0, xr*1.75), ylim = c(0.5, nrow(allsel)+0.5),
+# state annotation sits INSIDE the panel, so extend the x-limit to hold the longest label
+plot(NA, xlim = c(0, xr*2.0), ylim = c(0.5, nrow(allsel)+0.5),
      yaxt = "n", xaxt = "n", xlab = "", ylab = "", bty = "n")
-axis(1, at = pretty(c(0, xr)))
+axis(1, at = seq(0, ceiling(xr/5)*5, by = 5))
 mtext(expression(-log[10]~italic(p)~"(aBSREL, corrected)"), side = 1, line = 2.5, cex = 0.85)
 segments(0, yy, allsel$nlp, yy, col = lab_col, lwd = 2.5)
 points(allsel$nlp, yy, pch = 19, cex = 1.5, col = lab_col)
 labs <- ifelse(allsel$is_tip, gsub("_", " ", allsel$branch),
-               paste0(allsel$branch, " (internal)"))
+               ifelse(allsel$branch %in% names(node_labels),
+                      node_labels[allsel$branch], paste0(allsel$branch, " (internal)")))
 axis(2, at = yy, labels = labs, las = 1, cex.axis = 0.85,
      col.axis = "black", font = 3, tick = FALSE)
-st <- ifelse(!allsel$is_tip, "internal node",
+node_state <- function(b) {
+  fr <- node_frac[b]
+  if (is.na(fr)) "internal branch"
+  else if (fr == 0) "all-monochromatic clade"
+  else sprintf("mostly mono (%.0f%% dich.)", 100*fr)
+}
+st <- ifelse(!allsel$is_tip, vapply(allsel$branch, node_state, character(1)),
              ifelse(allsel$dich == 1, "DICHROMATIC", "monochromatic"))
 text(allsel$nlp + xr*0.05, yy, st, adj = 0, cex = 0.78, col = lab_col, font = 2, xpd = NA)
 title(main = "B  Selected branches, by state", cex.main = 1.0, adj = 0)

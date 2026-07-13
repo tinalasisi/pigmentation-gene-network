@@ -480,15 +480,19 @@ else:
 # explicitly, coloured by dichromatism state, because the pattern is mixed and that mix is the
 # point: two of the selected tips — *Nomascus concolor* and *N. gabriellae* — are **dichromatic**
 # and fall exactly on the origin-8 lineage, but a third, *Macaca mulatta*, is **monochromatic**,
-# and the two remaining selected branches are internal nodes within the macaques whose descendants
-# are almost all monochromatic. So POMC is under selection on the origin-8 dichromatic lineage,
+# and the two remaining selected branches are internal *Macaca* clades — resolved from the POMC
+# gene tree in the aBSREL output (one an 8-species macaque clade that is 12% dichromatic, one a
+# 2-species clade with no dichromatic members), i.e. an essentially monochromatic macaque
+# radiation. (HYPHY labels internal branches "NodeNN" in each gene's own tree; those numbers are
+# not comparable across genes, so the figure names the clade each subtends rather than the raw
+# label.) So POMC is under selection on the origin-8 dichromatic lineage,
 # **but selection on POMC is not confined to dichromatic lineages** — the same conclusion the
 # whole-panel aBSREL scan reached (episodic selection hits dichromatic and monochromatic tips at
-# indistinguishable rates). The honest reading is: POMC is an interface gene that is evolving in
-# several primate lineages, one of which (the *Nomascus* gibbons) is a dichromatism origin. That
-# co-localisation is a concrete follow-up target, not evidence that POMC *causes* the phenotype —
-# aBSREL marks lineage-specific selection, not causation, and the *Macaca* signal shows the two
-# do not track each other one-to-one.
+# indistinguishable rates). The reading is: POMC is an interface gene evolving in several primate
+# lineages, one of which (the *Nomascus* gibbons) is a dichromatism origin. That co-localisation
+# is a concrete follow-up target, not evidence that POMC *causes* the phenotype — aBSREL marks
+# lineage-specific selection, not causation, and the *Macaca* signal shows the two do not track
+# each other one-to-one.
 
 # %% [markdown]
 # ### Figure 5b — POMC selection across the primate order
@@ -497,8 +501,10 @@ else:
 # grey = monochromatic) and the branches under episodic POMC selection starred — red star where
 # that branch is dichromatic, dark star where it is monochromatic. (B) The five POMC-selected
 # branches ranked by aBSREL significance and labelled by state. Two are dichromatic *Nomascus*
-# gibbons, one is monochromatic *Macaca mulatta*, and two are internal macaque nodes — so POMC
-# selection overlaps one dichromatism origin but is not restricted to dichromatic lineages.
+# gibbons, one is monochromatic *Macaca mulatta*, and two are internal branches of (essentially
+# monochromatic) *Macaca* clades, named by the clade each subtends rather than by HYPHY's
+# per-gene-tree "NodeNN" label — so POMC selection overlaps one dichromatism origin but is not
+# restricted to dichromatic lineages.
 
 # %%
 from IPython.display import Image, display
