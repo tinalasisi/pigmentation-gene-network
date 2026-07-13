@@ -277,6 +277,19 @@ if ORIGINS is not None:
 # %% [markdown]
 # ### Figure 3 — Where gains and losses fall (stochastic density map)
 #
+# The figure below paints, on the primate tree, how likely dichromatism was along each branch —
+# so gains and losses of the trait are visible as where red appears and disappears. Full caption
+# follows the figure.
+
+# %%
+from IPython.display import Image, display
+_dm = os.path.join(SYN, "figures", "nb15_densitymap.png")
+if os.path.exists(_dm):
+    display(Image(filename=_dm))
+else:
+    print("nb15_densitymap.png not built yet - run nb15_phylo.R")
+
+# %% [markdown]
 # **Figure 3. Where on the primate tree dichromatism was gained and lost (density map).**
 #
 # *What the data are.* The tree is the 224-species primate phylogeny used throughout this notebook
@@ -303,14 +316,6 @@ if ORIGINS is not None:
 # monkeys, the *Nomascus*/*Hylobates* gibbons, and *Eulemur* among the lemurs — separated by long
 # blue (monochromatic) internodes. That scattering, rather than one deep red clade, is the visual
 # signature of the many-independent-origins, high-loss pattern quantified in §3.
-
-# %%
-from IPython.display import Image, display
-_dm = os.path.join(SYN, "figures", "nb15_densitymap.png")
-if os.path.exists(_dm):
-    display(Image(filename=_dm))
-else:
-    print("nb15_densitymap.png not built yet - run nb15_phylo.R")
 
 # %% [markdown]
 # ## 4 — Per-origin architecture
@@ -348,44 +353,8 @@ else:
 # %% [markdown]
 # ### Figure 4 — Per-origin selection architecture
 #
-# **Figure 4. Genes under selection at each independent origin of dichromatism.**
-#
-# *What the data are.* We scanned a curated panel of ~110 pigmentation and sex-hormone genes
-# (built and justified in NB14) for signatures of natural selection, using coding sequences
-# extracted from 117 published primate genomes. Selection was tested with **RELAX** (HyPhy), which
-# asks whether selection on a gene became *stronger* (intensified) or *weaker* (relaxed) along a
-# specified set of branches; its statistic *K* summarises that shift, and we plot log₂ K so that
-# intensification (K > 1) and relaxation (K < 1) are symmetric about zero. Values are read from
-# `results/perorigin_v1/per_origin_K.csv` (per-origin fits) cross-checked against
-# `relax_pooled_results.csv` (all origins pooled).
-#
-# *What the panels are.* Dichromatism arose ~15 times (§3), but only origins containing **≥ 2
-# sequenced dichromatic species** have enough branches to test — three do, one panel each:
-# *Trachypithecus* (origin 7, 8 tips), *Nomascus* (origin 8, 3 tips) and *Eulemur* (origin 14, 2
-# tips); the heading of each panel gives its origin ID and the number of sequenced species (tips)
-# it contains. The other ~12 origins are single species and cannot be tested this way.
-#
-# *How to read a bar.* Each bar is one gene that shifted significantly in selection at that origin
-# (Benjamini–Hochberg p_BH < 0.05). Bar length = log₂ K: bars pointing **right** = selection
-# **intensified**, bars pointing **left** = selection **relaxed** (the ← relaxed / intensified →
-# guides sit under each axis). Colour = which module the gene belongs to (**orange = pigmentation,
-# blue = sex-hormone**). **Solid** bar = the shift is also significant in the independent pooled
-# analysis (corroborated); **hatched** bar = significant only within that one origin, so weaker
-# evidence. A panel reading *"no gene passes p(BH) < 0.05"* (Eulemur) means no gene reached
-# significance there — not that the origin is absent.
-#
-# *What it shows.* The three origins use **different, non-overlapping gene sets** (quantified in
-# §6): *Trachypithecus* recruits many genes from both modules, *Nomascus* a small pigmentation set
-# (HRAS, POMC, HGF), and *Eulemur* none. There is no shared "dichromatism gene" — each origin
-# reached the same phenotype through different parts of the coupled system.
-#
-# **QC.** Per-origin RELAX can return an extreme boundary K on a single origin's few branches.
-# We cross-check every per-origin hit against the pooled RELAX fit and drop any whose extreme K
-# is null when pooled — **HPS4** is the clear case (per-origin K ≈ 30 in *Trachypithecus* but
-# pooled K = 1.05, p_BH = 1.0), so it is removed as a boundary artifact. **HRAS** is the opposite:
-# its per-origin K is boundary-inflated, but pooled RELAX gives a clean K = 4.3 (p_BH = 4×10⁻⁶),
-# so it is retained and plotted at the pooled value. Bars are drawn at the pooled K wherever a
-# per-origin K is boundary-inflated, so the figure shows de-inflated, corroborated effect sizes.
+# For each origin of dichromatism that contains enough sequenced species to test, the figure below
+# shows which panel genes shifted in selection and in which module. Full caption follows the figure.
 
 # %%
 # QC gate (from the cluster's pooled-RELAX evaluation): a per-origin hit with an extreme K
@@ -468,6 +437,46 @@ if PER_ORIGIN is not None and "p_BH" in PER_ORIGIN.columns:
           sorted(set(PER_ORIGIN[PER_ORIGIN.p_BH < 0.05].gene) - set(_sig.gene)) or "none")
 else:
     print("Per-origin architecture figure builds when the tables are present.")
+
+# %% [markdown]
+# **Figure 4. Genes under selection at each independent origin of dichromatism.**
+#
+# *What the data are.* We scanned a curated panel of ~110 pigmentation and sex-hormone genes
+# (built and justified in NB14) for signatures of natural selection, using coding sequences
+# extracted from 117 published primate genomes. Selection was tested with **RELAX** (HyPhy), which
+# asks whether selection on a gene became *stronger* (intensified) or *weaker* (relaxed) along a
+# specified set of branches; its statistic *K* summarises that shift, and we plot log₂ K so that
+# intensification (K > 1) and relaxation (K < 1) are symmetric about zero. Values are read from
+# `results/perorigin_v1/per_origin_K.csv` (per-origin fits) cross-checked against
+# `relax_pooled_results.csv` (all origins pooled).
+#
+# *What the panels are.* Dichromatism arose ~15 times (§3), but only origins containing **≥ 2
+# sequenced dichromatic species** have enough branches to test — three do, one panel each:
+# *Trachypithecus* (origin 7, 8 tips), *Nomascus* (origin 8, 3 tips) and *Eulemur* (origin 14, 2
+# tips); the heading of each panel gives its origin ID and the number of sequenced species (tips)
+# it contains. The other ~12 origins are single species and cannot be tested this way.
+#
+# *How to read a bar.* Each bar is one gene that shifted significantly in selection at that origin
+# (Benjamini–Hochberg p_BH < 0.05). Bar length = log₂ K: bars pointing **right** = selection
+# **intensified**, bars pointing **left** = selection **relaxed** (the ← relaxed / intensified →
+# guides sit under each axis). Colour = which module the gene belongs to (**orange = pigmentation,
+# blue = sex-hormone**). **Solid** bar = the shift is also significant in the independent pooled
+# analysis (corroborated); **hatched** bar = significant only within that one origin, so weaker
+# evidence. A panel reading *"no gene passes p(BH) < 0.05"* (Eulemur) means no gene reached
+# significance there — not that the origin is absent.
+#
+# *What it shows.* The three origins use **different, non-overlapping gene sets** (quantified in
+# §6): *Trachypithecus* recruits many genes from both modules, *Nomascus* a small pigmentation set
+# (HRAS, POMC, HGF), and *Eulemur* none. There is no shared "dichromatism gene" — each origin
+# reached the same phenotype through different parts of the coupled system.
+#
+# **QC.** Per-origin RELAX can return an extreme boundary K on a single origin's few branches.
+# We cross-check every per-origin hit against the pooled RELAX fit and drop any whose extreme K
+# is null when pooled — **HPS4** is the clear case (per-origin K ≈ 30 in *Trachypithecus* but
+# pooled K = 1.05, p_BH = 1.0), so it is removed as a boundary artifact. **HRAS** is the opposite:
+# its per-origin K is boundary-inflated, but pooled RELAX gives a clean K = 4.3 (p_BH = 4×10⁻⁶),
+# so it is retained and plotted at the pooled value. Bars are drawn at the pooled K wherever a
+# per-origin K is boundary-inflated, so the figure shows de-inflated, corroborated effect sizes.
 
 # %% [markdown]
 # ## 5 — Module balance per origin, corrected for panel composition
@@ -562,6 +571,19 @@ else:
 # %% [markdown]
 # ### Figure 5b — POMC selection across the primate order
 #
+# The figure below asks where in the primate order POMC — a gene at the pigmentation–hormone
+# interface — is itself under selection, and whether those branches are the dichromatic ones. Full
+# caption follows the figure.
+
+# %%
+from IPython.display import Image, display
+_pomc = os.path.join(SYN, "figures", "nb15_pomc_tree.png")
+if os.path.exists(_pomc):
+    display(Image(filename=_pomc))
+else:
+    print("nb15_pomc_tree.png not built yet - run nb15_pomc.R")
+
+# %% [markdown]
 # **Figure 5b. Selection on POMC across the primate order.**
 #
 # *What the data are.* POMC coding sequence from the 117 sequenced primate genomes, tested for
@@ -585,14 +607,6 @@ else:
 # aBSREL's internal "NodeNN" names are per-gene and not comparable across genes). So POMC selection
 # overlaps one dichromatism origin (the gibbons) but is **not** confined to dichromatic lineages —
 # the same lesson as the whole-panel branch scan.
-
-# %%
-from IPython.display import Image, display
-_pomc = os.path.join(SYN, "figures", "nb15_pomc_tree.png")
-if os.path.exists(_pomc):
-    display(Image(filename=_pomc))
-else:
-    print("nb15_pomc_tree.png not built yet - run nb15_pomc.R")
 
 # %% [markdown]
 # **Table 3.** POMC's per-origin RELAX result, read from `results/perorigin_v1/per_origin_K.csv`.
