@@ -1,0 +1,161 @@
+---
+title: "Project walkthrough"
+subtitle: "One coupled pigmentation–hormone gene network, pointed at two questions — a guided tour for readers and judges"
+description: "A single-page walkthrough of the project: the biological question, the datasets and tools, the discrete finding, and how each notebook contributes."
+toc: true
+toc-depth: 2
+execute:
+  enabled: false
+---
+
+::: {.callout-note appearance="simple"}
+This page is the guided tour. It states the question, the finding, and the evidence once, and
+links each notebook at the point where it does its work. Every notebook is a self-contained
+mini-manuscript that renders from its own stored outputs — no kernel, no network, no withheld data.
+:::
+
+## The question
+
+Sexual dichromatism — males and females of a species differing in colour — has a famously simple
+genetic basis in birds. In galliforms, [Nadeau et al. 2007](https://doi.org/10.1098/rspb.2007.0174)
+showed the trait correlates with dN/dS at essentially **one** locus: *MC1R*, the melanocortin
+switch. One trait, one gene, a clean signal that lights up the dichromatic clades.
+
+**Does that hold in primates?** And more generally: *what does a curated pigmentation-gene-network
+approach reveal when you point it at evolution instead of at human association?*
+
+## The finding, in one line
+
+**In primates it is the opposite of birds.** Hair dichromatism arose **~15 times independently**
+across the primate radiation, is **polygenic in every origin** (and *MC1R* is not the hit), and is
+**lost ~9× more readily than it is gained**. It behaves not like a gene but like a **coupled
+pigmentation–sex-hormone system with several accessible routes in and out** — which is why it
+recurs and disappears so freely. This is the first clade-wide, multi-gene, selection-inference test
+of the genomic basis of sexual dichromatism in primates.
+
+## One network, two questions
+
+The project builds a single object — a curated, coupled pigmentation gene network with its
+physically-linked sex-hormone axis — and asks two questions with it.
+
+| | **Human arm — the method** | **Evolution arm — the discovery** |
+|---|---|---|
+| Question | how much can we trust a claimed variant→phenotype link? | how is sexual dichromatism built across the primate tree? |
+| Approach | make independent evidence layers converge on each gene | test selection on the network per independent origin |
+| Context that changes the answer | ancestry (an allele causal in one population is silent in another) | lineage (different origins recruit different genes) |
+| Where | the notebooks below | [the dichromatism page](dichromatism.qmd) + `comparative-genomics/` |
+
+Same object, same lesson at two scales: **the map from genotype to pigmentation is not
+one-gene-one-trait; you have to read the genes as a coupled network.**
+
+---
+
+# The discovery: dichromatism across primates
+
+## Beat 1 — dichromatism is not one event, it is ~15
+
+The earlier version of this analysis pooled every dichromatic species into a single foreground and
+asked "does selection intensify in dichromatic lineages." That presupposes a shared, convergent
+architecture — the very thing in question. So we reconstructed the trait's history ourselves, from
+the raw 238-species trait table and the primate tree (our own ancestral-state reconstruction, not
+inherited from any prior result):
+
+![Hair dichromatism arose ~15 times independently across the primate tree; 14 origins are captured genomically. Stars mark gains, × marks reversals. The *Trachypithecus* block is a single gain sampled eight times — the pooling problem, made visible.](comparative-genomics/results/figures/fig_origins.png)
+
+The 24 genomically-sampled dichromatic species collapse to only **14 independent origins**, of
+which **11 are single tips**; *Trachypithecus* alone carried a third of the pooled foreground
+weight. The correct unit of analysis is the **origin**, not the species — so we test selection per
+origin.
+
+## Beat 2 — selection does not track the trait
+
+Rebuilding the Nadeau bird figure for primates — a phylogeny with branches painted by dN/dS and
+dichromatism marked at the tips — gives the cleanest single image of the result:
+
+![The bird figure's grammar, inverted. In galliforms one gene (MC1R) showed elevated dN/dS specifically in the dichromatic clades. Here the primate pigmentation candidate *TFAP2A* is conserved almost everywhere, and episodic selection (★, corrected p<0.05) falls on 4 of 21 dichromatic and 8 of 67 monochromatic lineages — scattered across the tree, not concentrated on the dichromatic (red) branches.](comparative-genomics/results/figures/fig_tfap2a_tree.png)
+
+The visual non-correspondence between the red dichromatic tips and the black selection stars *is*
+the finding: no single gene tracks the trait the way *MC1R* does in birds.
+
+## Beat 3 — the signal is modular, and split across two coupled networks
+
+The certified selection hits are not scattered noise — they concentrate in functional modules, on
+**both** halves of the network:
+
+- **Pigmentation:** the melanoblast-development module — *KITLG*, *EDN3*, *TFAP2A*.
+- **Sex-hormone:** steroid-metabolism enzymes — the *HSD17B* family, *SRD5A1*, *CYP7B1* — the
+  *machinery*, not the receptors.
+
+The two networks are physically coupled, and **POMC** is the clearest bridge: the same pro-hormone
+is cleaved into α-MSH (driving pigmentation via MC1R) **and** ACTH (driving the adrenal steroid
+axis). The open question the per-origin design tests directly is whether the pigmentation module is
+remodeled in some origins while the hormone module is remodeled in others — different lineages
+reaching the same phenotype through different parts of one coupled system.
+
+→ Full detail, methods, and honest limits on **[the dichromatism page](dichromatism.qmd)**.
+
+---
+
+# The method: reading the network in humans
+
+The human arm builds the network and demonstrates *how* to grade a genotype→phenotype claim. It is
+deliberately **methodological** — a bounded demonstration on textbook pigmentation biology, not a
+claim of new human-pigmentation biology — and it is what makes the evolution arm's network
+principled rather than an arbitrary gene list.
+
+- **Build the network.** [NB1 · Reconstruct the published network](notebooks/01_reconstruct_published_network.ipynb)
+  rebuilds the Raghunath melanogenesis model as a signed, directed graph with a citation per edge;
+  [NB2 · Resolve to genes](notebooks/02_resolve_network_to_genes.ipynb) maps every entity to a gene
+  and re-validates against OmniPath.
+- **Assemble the evidence.** [NB4 · Unified association base](notebooks/04_unified_association_base.ipynb)
+  harmonizes reported pigmentation associations from independent sources (extracted in
+  [NB1a–01d](notebooks/01a_extract_bajpai_crispr.ipynb)) into one claim-faithful table.
+- **The core result.** [NB10 · Mechanism→direction law](notebooks/10_mechanism_direction_law.ipynb)
+  shows a functional melanin screen predicts the *direction* of Mendelian pigmentation disorders
+  (22/22, permutation p < 1×10⁻⁵); [NB12 · Direction law, expanded](notebooks/12_direction_law_expanded.ipynb)
+  pushes it until it breaks and states plainly what is and isn't novel.
+- **Context-dependence.** [NB11 · Cross-ancestry conditionality](notebooks/11_cross_ancestry_conditionality.ipynb)
+  shows the same variant can be causal in one population and silent in another — the human echo of
+  the primate result.
+- **The bridge to evolution.** [NB13 · Sex-hormone layer](notebooks/13_sex_hormone_layer.ipynb)
+  layers the sex-hormone axis onto the pigmentation substrate — the same coupled network the
+  dichromatism analysis then tests for selection.
+
+---
+
+# For the judges: how this maps to the brief
+
+**A biological question.** Is the genetic basis of sexual dichromatism in primates simple (as in
+birds) or not? Grounded in a specific, citable prior result (Nadeau 2007, *MC1R* in galliforms).
+
+**Datasets and tools, found and combined.** A 238-species primate hair-trait table and a dated
+primate tree; a curated 80-gene panel (27 pigmentation + 53 sex-hormone); ~117 primate genome
+assemblies. Tools: ancestral-state reconstruction (`ape`/`phytools`, ARD/ER Mk models,
+stochastic mapping), homology-based CDS extraction (miniprot), codon alignment (MAFFT), and the
+HyPhy selection suite (RELAX per origin, aBSREL per branch) plus RERconverge — run on an HPC
+cluster via a committed, parameterized protocol.
+
+**A discrete, reproducible finding.** Primate sexual dichromatism is polyphyletic (~15 origins),
+labile (loss ≈ 9× gain), and polygenic with no single shared signature — the inverse of the avian
+single-gene model. Established as novel against the published literature and 2023–2026 preprints.
+
+**How Claude Science got us there.** The trajectory is itself part of the result: an over-simple
+pooled analysis was caught (it presupposed the convergence it was meant to test), the
+pseudoreplication was quantified, the design was reframed to the per-origin unit, the novelty was
+checked against the literature, the pipeline was made reproducible from frozen inputs, and the
+selection re-run was specified and handed to a cluster — all traceable in this repository.
+
+## Reproducibility
+
+- **The human arm** renders entirely from committed notebook outputs — clone and render, no kernel
+  or network needed.
+- **The evolution arm** reconstructs the ~15 origins and the lability result from two committed
+  inputs (trait table + tree) in a single script run; the per-origin selection layer runs on the
+  cluster from a committed accession roster and pastes back small summary tables. Genomes and
+  alignments stay on scratch and are never committed — only the recipe is.
+- **Novelty** is documented in `dichromatism_novelty_assessment.md` (published literature) and
+  `preprint_novelty_scan.md` (2023–2026 preprints).
+
+*The multi-gene per-origin selection matrix is computing on the cluster as of this writing; the
+finding above stands on the phylogenetics and the TFAP2A demonstration regardless, and the matrix
+upgrades the module-by-origin question from hypothesis to result when it lands.*

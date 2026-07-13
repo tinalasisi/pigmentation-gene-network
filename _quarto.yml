@@ -7,6 +7,7 @@ project:
   # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
     - index.qmd
+    - walkthrough.qmd
     - dichromatism.qmd
     - substrate_multilayer.qmd
     - notebooks/01_reconstruct_published_network.ipynb
@@ -50,6 +51,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: walkthrough.qmd
+        text: Walkthrough
       - href: dichromatism.qmd
         text: Dichromatism
       - href: substrate_multilayer.qmd
@@ -64,6 +67,8 @@ website:
     contents:
       - text: Overview
         href: index.qmd
+      - text: "Walkthrough (start here)"
+        href: walkthrough.qmd
       - text: "Sexual dichromatism across primates"
         href: dichromatism.qmd
       - text: "Interactive · layered substrate"
