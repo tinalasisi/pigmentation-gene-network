@@ -1,0 +1,8 @@
+test,value,verdict
+raw Spearman (all 289 branches),rho=0.235,inflated by branch power
+power-partialled (all branches),rho=0.144,signal persists
+power-partialled (102 tips),rho=0.337,signal persists
+phylo-structured permutation p (tips),p=0.0015,SURVIVES tree structure
+"PGLS Brownian pigment coeff p (tips, +power covariate)",p=0.0001,SURVIVES tree structure (independent method)
+PGLS pigment coefficient,beta=0.424 (SE 0.103),positive concordance
+Moran's I on OLS residuals (phylo signal present?),"I=0.044, p=0.0051",phylo correction was warranted
