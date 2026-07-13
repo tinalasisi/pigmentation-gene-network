@@ -289,10 +289,11 @@ else:
 # pigmentation expansion lands — the two giant genes MYO5A/LYST arrive last): the three powered
 # origins do *not* share a gene set.
 # *Trachypithecus* shows a multi-gene, both-module signal (including a lineage-specific MC1R
-# shift); *Nomascus* concentrates on a small hormone-leaning set built around POMC; *Eulemur*
-# shows no gene passing the per-origin threshold. Same phenotype, different genetic routes —
-# quantified in §6. The gene lists are printed below; the `fig_per_lineage_genes` panel is
-# regenerated against the completed 110-gene tables.
+# shift); *Nomascus* concentrates on a small pigmentation set — POMC, HGF, HRAS — of which POMC
+# (§5b) sits at the pigmentation–hormone interface; *Eulemur* shows no gene passing the per-origin
+# threshold. Same phenotype, different genetic routes — quantified in §6. The gene lists are
+# printed below; the `fig_per_lineage_genes` panel is regenerated against the completed 110-gene
+# tables.
 
 # %%
 # Runs on the CURRENT perorigin_v1 tables; the per-lineage panel figure + rate-corrected balance
@@ -311,7 +312,7 @@ else:
     print("Awaiting per-origin tables (cluster appending clean-30 into perorigin_v1).")
 
 # %% [markdown]
-# ## 5 — Module balance per origin, corrected for panel composition *(fills when tables land)*
+# ## 5 — Module balance per origin, corrected for panel composition
 #
 # **The metric.** For each origin, module balance = (nP − nH) / (nP + nH), where nP and nH are
 # the pigmentation and hormone genes under episodic selection along the origin's branches
@@ -327,13 +328,80 @@ else:
 # the panel's *count* balance and is not the same quantity (the two must not be conflated).
 
 # %%
-# STUB - module balance as a per-gene selection RATE per origin, using the module+category
-# columns the collector adds to perorigin_v1. Regenerates fig_module_balance / contmap /
-# phylomorphospace against the 110-gene tables.
-if PER_ORIGIN is not None and "module" in PER_ORIGIN.columns:
-    print("module column present - computing rate-corrected per-origin balance")
+# Module balance as a per-gene selection RATE per origin, using the module column the collector
+# adds to perorigin_v1. rate_M = (genes of module M with p_BH<0.05) / (genes of module M tested);
+# balance = (rate_P - rate_H) / (rate_P + rate_H), in [-1 (hormone), +1 (pigmentation)].
+if PER_ORIGIN is not None and "module" in PER_ORIGIN.columns and "p_BH" in PER_ORIGIN.columns:
+    bal_rows = []
+    for o in sorted(PER_ORIGIN.origin_id.unique()):
+        sub = PER_ORIGIN[PER_ORIGIN.origin_id == o]
+        tP = sub[sub.module == "pigmentation"].gene.nunique()
+        tH = sub[sub.module == "hormone"].gene.nunique()
+        sP = sub[(sub.module == "pigmentation") & (sub.p_BH < 0.05)].gene.nunique()
+        sH = sub[(sub.module == "hormone") & (sub.p_BH < 0.05)].gene.nunique()
+        rP = sP / tP if tP else 0.0
+        rH = sH / tH if tH else 0.0
+        bal = (rP - rH) / (rP + rH) if (rP + rH) > 0 else float("nan")
+        cbal = (sP - sH) / (sP + sH) if (sP + sH) > 0 else float("nan")
+        bal_rows.append(dict(origin=o, sigP=sP, sigH=sH,
+                             rateP=round(rP, 3), rateH=round(rH, 3),
+                             rate_balance=round(bal, 3), count_balance=round(cbal, 3)))
+    BAL = pd.DataFrame(bal_rows)
+    print(BAL.to_string(index=False))
+    print("\nRate balance: +1 = purely pigmentation, -1 = purely hormone, NaN = no gene significant.")
+    print("count_balance shown alongside to expose where the panel-composition correction matters.")
+    print("NB14's +0.036 is the whole-panel COUNT balance (a different quantity - do not conflate).")
 else:
-    print("Awaiting 110-gene tables with module+category columns.")
+    print("Awaiting per-origin tables with module + p_BH columns.")
+
+# %% [markdown]
+# ## 5b — POMC at the pigmentation–hormone interface
+#
+# The module-balance metric (§5) scores each gene into exactly one module, and the panel assigns
+# **POMC to pigmentation** (receptor_signaling; OMIM hypopigmentation phenotype). That is defensible
+# — POMC is the precursor of α-MSH, the MC1R ligand that drives eumelanin — but it is only half of
+# POMC's biology. The same pro-hormone is cleaved into **ACTH and β-endorphin**, the HPA-axis and
+# opioid peptides. POMC is therefore a genuine **interface gene**: a single locus whose products
+# act in both the pigmentation and the endocrine modules. A one-module label is an accounting
+# choice, not a statement that POMC is "not hormonal."
+#
+# So POMC is worth a dedicated cross-primate view, independent of which module bucket it lands in.
+# Below we ask where in the order POMC itself is under selection — not just within the three
+# powered origins, but across every branch the full-panel aBSREL scan covers.
+#
+# **What the data show.** POMC shows a significant per-origin RELAX **intensification** in
+# *Nomascus* (origin 8; K = 3.4, p_BH < 0.001 — selection intensified, not relaxed) and episodic
+# diversifying selection (aBSREL, corrected p < 0.05) on **five branches**: both dichromatic
+# *Nomascus* gibbons (*N. concolor*, *N. gabriellae*), *Macaca mulatta*, and two internal nodes
+# within the macaques. The gibbon signal coincides exactly with origin 8 — the interface gene is
+# under selection on the very lineage where that origin's dichromatism arose. This does not prove
+# POMC *causes* the phenotype (aBSREL marks lineage-specific selection, not causation), but it is
+# the kind of interface-gene signal the two-module hypothesis predicts and is a concrete target for
+# follow-up.
+
+# %% [markdown]
+# ### Figure 5b — POMC selection across the primate order
+
+# %%
+from IPython.display import Image, display
+_pomc = os.path.join(SYN, "figures", "nb15_pomc_tree.png")
+if os.path.exists(_pomc):
+    display(Image(filename=_pomc))
+else:
+    print("nb15_pomc_tree.png not built yet - run nb15_pomc.R")
+
+# %%
+# POMC-specific selection evidence, printed from the frozen tables (panel-agnostic).
+if PER_ORIGIN is not None:
+    pk = PER_ORIGIN[PER_ORIGIN.gene == "POMC"][["origin_id", "module", "K", "p_BH"]]
+    print("POMC per-origin RELAX:")
+    print(pk.to_string(index=False))
+if BRANCH is not None and "absrel_corrected_p" in BRANCH.columns:
+    pb = BRANCH[BRANCH.gene == "POMC"].copy()
+    pb["cp"] = pd.to_numeric(pb["absrel_corrected_p"], errors="coerce")
+    sel = pb[pb.cp < 0.05][["branch", "is_tip", "cp"]]
+    print(f"\nPOMC branches under episodic selection (aBSREL corrected p<0.05): {len(sel)}")
+    print(sel.to_string(index=False))
 
 # %% [markdown]
 # ## 6 — Convergence and divergence across independent origins
