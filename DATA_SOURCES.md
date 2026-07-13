@@ -309,8 +309,9 @@ validation authorities (attach gene identity and relationships, then check them)
   extracted loci" — now revisitable, since the 26-lead-variant summary stats are present locally.
 
 ### 9. Zhang et al. 2018 — primary-melanocyte cis-eQTL (*Genome Research*)
-- **Identity:** *Genome Res* 28(11):1621–1635 (2018); DOI 10.1101/gr.233304.117 (**PMID to confirm — not yet
-  verified**). Brown lab (NCI DCEG); Pavan co-author. *(Article page 1 read to confirm identity.)*
+- **Identity:** *Genome Res* 28(11):1621–1635 (2018); DOI 10.1101/gr.233304.117; **PMID 30333196**
+  (verified against NCBI esummary 2026-07-13: title "Cell-type-specific eQTL of primary melanocytes...",
+  first author Zhang T, Choi J, Kovacs MA, Shi J). Brown lab (NCI DCEG); Pavan co-author.
 - **What it is:** cis-eQTL in **106 primary melanocyte cultures (newborn males)** — 597,335 cis-eQTL SNPs,
   4,997 eGenes; >⅓ of melanocyte eGenes (incl. key melanin-synthesis genes) are unique vs GTEx skin / TCGA; a
   trans-eQTL links a pigmentation SNP to IRF4. **The tissue-correct eQTL resource for pigmentation** — bulk
