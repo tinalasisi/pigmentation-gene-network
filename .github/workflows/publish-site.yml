@@ -12,10 +12,13 @@ permissions:
   pages: write
   id-token: write
 
-# One in-flight deploy at a time; don't cancel a running publish.
+# Deploy only the newest commit: a new push supersedes an in-flight or queued
+# publish. On a busy repo this prevents a slow/hung render from jamming the queue
+# ("Canceling since a higher priority waiting request for pages exists") — the
+# latest main always wins, which is all a static site needs.
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
