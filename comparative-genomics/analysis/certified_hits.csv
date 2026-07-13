@@ -1,0 +1,10 @@
+gene,set,K,direction,p_BH,flag
+HSD17B1,hormone,2.93188262931127,intensified,0.0,clean
+HSD17B12,hormone,2.52438021620289,intensified,0.0,clean
+SRD5A1,hormone,2.323385093487047,intensified,0.0,gaps_gt_20pct
+CYP7B1,hormone,1.373692906983252,intensified,0.0078,clean
+SHBG,hormone,0.2394352082210147,relaxed,0.0293,clean
+HSD17B7,hormone,1.315245687562477,intensified,0.0402,clean
+TFAP2A,pigmentation,1.928375906095212,intensified,0.0001,clean
+KITLG,pigmentation,1.301217849556824,intensified,0.0015,clean
+EDN3,pigmentation,1.283117844988927,intensified,0.0015,branch_len_blowup
