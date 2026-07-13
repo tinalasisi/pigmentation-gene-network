@@ -30,13 +30,27 @@ functional flags · click a layer in the legend to isolate it. Best viewed on a 
 <iframe src="interactive/substrate_multilayer.html"
         title="Interactive 3D multilayer view of the pigmentation gene substrate"
         loading="lazy"
-        style="width:100%; height:820px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
+        style="width:100%; height:720px; border:1px solid #e8e2d6; border-radius:10px; background:white;">
 </iframe>
 ```
 
 This shows the **162 genes supported by at least two of the four network layers**. A further ~530
 genes appear in a single layer — almost all STRING-only associations — and are omitted here for
 legibility; they are all present in the underlying data.
+
+```{=html}
+<div style="text-align:center; margin:1.2rem 0 0.3rem;">
+  <a href="https://pigmentation-gene-network.vercel.app/" target="_blank" rel="noopener"
+     style="display:inline-block; padding:0.75rem 1.5rem; font-weight:600; font-size:1.05rem;
+            color:#fff; background:#2f6d7a; border-radius:999px; text-decoration:none;
+            box-shadow:0 6px 18px rgba(47,109,122,.35);">
+    Explore the full immersive network ↗
+  </a>
+  <div style="font-size:0.9rem; color:#5c656b; margin-top:0.55rem;">
+    The full six-layer substrate — all 803 genes, dark, with fly-to on click — opens in a new tab.
+  </div>
+</div>
+```
 
 ## The flattened view
 
