@@ -878,7 +878,7 @@ function tip(n,cx,cy){
   if (!t){ t=document.createElement('div'); t.className='gtip'; document.body.appendChild(t); }
   const e=byId[n.id];
   t.innerHTML=`<div class="tt-name">${esc(e.codename)}</div>
-    <div class="tt-sub">${e.n_channels}/${CHANNELS.length} layers · ${implCount(e)} mechanism · ${TIERS[tierOf(e,state.ctx)].label}</div>`;
+    <div class="tt-sub">${e.n_channels}/${CHANNELS.length} layers · ${implCount(e)} mechanism</div>`;
   t.style.left=Math.min(cx+14,innerWidth-240)+'px';
   t.style.top=(cy+12)+'px';
 }
@@ -924,7 +924,7 @@ function glyphSVG(e,sizePx){
       stroke-width="${seen?(st==='implicates'?3.2:2):1}" stroke-linecap="round" fill="none"
       opacity="${seen?(st==='implicates'?1:.5):.15}"/>`;
   });
-  const anchor=e.flags&&e.flags.on_watchlist?`<circle cx="${c}" cy="${c}" r="2.8" fill="var(${TIERS[tierOf(e,state.ctx)].v})"/>`
+  const anchor=e.flags&&e.flags.on_watchlist?`<circle cx="${c}" cy="${c}" r="2.8" fill="var(--accent)"/>`
     :`<circle cx="${c}" cy="${c}" r="2.2" fill="none" stroke="currentColor" opacity=".35"/>`;
   return `<svg width="${sizePx}" height="${sizePx}" viewBox="0 0 ${sizePx} ${sizePx}" role="img"
     aria-label="${esc(e.codename)}: ${e.n_channels} of ${CHANNELS.length} layers">${segs}${anchor}</svg>`;
@@ -949,8 +949,8 @@ function renderPanel(){
   el.innerHTML=`
     <button class="close" aria-label="Close dossier">×</button>
     <div class="d-head">${glyphSVG(e,62)}
-      <div><h2>${esc(e.codename)}${e.id&&e.id!==e.codename?` <span class="id">${e.id}</span>`:''}</h2>${e.full_name?`<div class="d-fullname">${esc(e.full_name)}</div>`:''}${tierChip(t)}</div></div>
-    <p class="d-sum">${esc(e.verdict.summary||'')}</p>
+      <div><h2>${esc(e.codename)}${e.id&&e.id!==e.codename?` <span class="id">${e.id}</span>`:''}</h2>${e.full_name?`<div class="d-fullname">${esc(e.full_name)}</div>`:''}</div></div>
+    
     <div class="d-meta">
       <span class="flagchip">${e.n_channels}/${CHANNELS.length} layers</span>
       <span class="flagchip">${impl} mechanism · ${strands.length-impl} context</span>
@@ -1133,10 +1133,10 @@ document.getElementById('tabletoggle').addEventListener('click',()=>{
   div.innerHTML=`<button class="close" aria-label="close">×</button>
     <h3 style="margin:0 0 4px">All ${ENTS.length} entities</h3>
     <p style="font-size:12px;color:var(--ink-3);margin:0 0 12px">The complete non-visual reading of the stack, single-layer majority included.</p>
-    <table><thead><tr><th>entity</th><th>tier</th><th>layers</th><th>mechanism</th><th>links</th></tr></thead>
+    <table><thead><tr><th>entity</th><th>layers</th><th>mechanism</th><th>links</th></tr></thead>
     <tbody>${rows.map(e=>`<tr><td><button data-sel="${e.id}" style="color:var(--accent-ink);font-weight:600">${esc(e.codename)}</button>
         <span class="mono" style="color:var(--ink-3);font-size:10px">${e.id}</span></td>
-        <td>${TIERS[tierOf(e,state.ctx)].label}</td>
+        
         <td class="num">${e.n_channels}</td>
         <td class="num">${implCount(e)}</td>
         <td class="num">${(neighbors[e.id]||[]).length}</td></tr>`).join('')}</tbody></table>`;

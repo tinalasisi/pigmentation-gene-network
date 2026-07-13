@@ -209,5 +209,19 @@ sub1(".d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}",
      ".d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}\n"
      ".d-fullname{font-size:13px;color:var(--ink-2);margin:1px 0 8px;font-weight:500}", literal=True)
 
+# 10) remove the verdict tiers from the UI. The courtroom labels ("Circumstantial", "Implicated",
+#     "Cleared") are a leftover from the detective-themed toy and overclaim on real genes; they are
+#     also redundant with the raw evidence already shown (mechanism/context counts, OMIM flag,
+#     per-layer strands). Display-only removal: the tier is still computed and still quietly drives
+#     the "keep important single-layer genes visible" recede heuristic — nothing verdict-like shows.
+sub1("${tierChip(t)}", "", literal=True)                                              # dossier chip
+sub1("<p class=\"d-sum\">${esc(e.verdict.summary||'')}</p>", "", literal=True)        # dossier verdict summary
+sub1(" · ${TIERS[tierOf(e,state.ctx)].label}</div>", "</div>", literal=True)     # hover tooltip label
+sub1("<th>entity</th><th>tier</th><th>layers</th>",
+     "<th>entity</th><th>layers</th>", literal=True)                                  # entity-table header
+sub1("<td>${TIERS[tierOf(e,state.ctx)].label}</td>", "", literal=True)               # entity-table cell
+sub1("fill=\"var(${TIERS[tierOf(e,state.ctx)].v})\"",
+     "fill=\"var(--accent)\"", literal=True)                                          # glyph centre dot -> neutral
+
 open(OUT, "w").write(h)
 print(f"wrote {OUT} ({len(h)//1024} KB)")
