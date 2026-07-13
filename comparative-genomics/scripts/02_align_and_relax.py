@@ -61,7 +61,10 @@ def codon_align(gene, cds_dir, aln_dir, min_tips=4, gap_col_thresh=0.5, outlier_
     files=glob.glob(os.path.join(cds_dir,gene,"*.cds.fna"))
     seqs={}
     for f in files:
-        rec=next(SeqIO.parse(f,"fasta"))
+        try:
+            rec=next(SeqIO.parse(f,"fasta"))
+        except StopIteration:
+            continue   # empty/malformed CDS file for this species (e.g. miniprot no-hit) — skip, don't crash the gene
         s=str(rec.seq).upper().replace("N","")
         # QC: must be near-multiple of 3; trim trailing partial codon
         s=s[:len(s)-(len(s)%3)]
