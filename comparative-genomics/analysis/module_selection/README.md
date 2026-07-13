@@ -21,8 +21,10 @@ No network access required.
 - `opie_analog_results.csv` — Opie 2012 method applied to dichromatism
 
 ## Key results
-- **Module balance spans the full range.** Origins tilt all the way to hormone
-  (Eulemur, Alouatta, Colobus guereza) and all the way to pigmentation (Pithecia).
+- **Module balance spans the full range.** One origin sits at each pole —
+  Eulemur (origin_14) is pure hormone (0P/1H, balance −1.0) and Pithecia
+  (origin_12) is pure pigmentation (2P/0H, +1.0) — with the rest distributed
+  between (e.g. Alouatta and Colobus guereza hormone-tilted at −0.5).
   Trachypithecus (origin_7) is richest: 8 pigmentation + 18 hormone genes.
 - **RELAX confirms the powered origins:** Trachypithecus 12 genes both modules,
   Nomascus POMC only, Eulemur none.
