@@ -1,0 +1,101 @@
+{
+ "id": "seq_azure",
+ "context": "azure_room",
+ "label": "Reconstructed sequence \u2014 The Azure Room",
+ "note": "6 directed links, each grounded to a source.",
+ "steps": [
+  {
+   "order": 1,
+   "from": "tip-off",
+   "to": "casing",
+   "actor": "Alphard",
+   "actor_id": "S00",
+   "sign": "+",
+   "channels": [
+    "witnesses",
+    "comms"
+   ],
+   "provenance": [
+    "CF-1062"
+   ]
+  },
+  {
+   "order": 2,
+   "from": "casing",
+   "to": "inside access",
+   "actor": "Sheratan",
+   "actor_id": "S42",
+   "sign": "-",
+   "channels": [
+    "surveillance",
+    "comms",
+    "informants"
+   ],
+   "provenance": [
+    "CF-1423"
+   ]
+  },
+  {
+   "order": 3,
+   "from": "inside access",
+   "to": "vault breach",
+   "actor": "Nashira",
+   "actor_id": "S02",
+   "sign": "-",
+   "channels": [
+    "informants"
+   ],
+   "provenance": [
+    "CF-1997"
+   ]
+  },
+  {
+   "order": 4,
+   "from": "vault breach",
+   "to": "extraction",
+   "actor": "Vindem",
+   "actor_id": "S03",
+   "sign": "-",
+   "channels": [
+    "surveillance",
+    "forensics",
+    "comms"
+   ],
+   "provenance": [
+    "CF-1088"
+   ]
+  },
+  {
+   "order": 5,
+   "from": "extraction",
+   "to": "handoff",
+   "actor": "Alioth",
+   "actor_id": "S08",
+   "sign": "-",
+   "channels": [
+    "witnesses",
+    "finance",
+    "forensics"
+   ],
+   "provenance": [
+    "CF-1947"
+   ]
+  },
+  {
+   "order": 6,
+   "from": "handoff",
+   "to": "fence",
+   "actor": "Rasalgethi",
+   "actor_id": "S12",
+   "sign": "+",
+   "channels": [
+    "surveillance",
+    "forensics",
+    "comms"
+   ],
+   "provenance": [
+    "CF-1497"
+   ]
+  }
+ ]
+}

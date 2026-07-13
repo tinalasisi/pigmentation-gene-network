@@ -1,0 +1,1215 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>
+<title>Pigmentation substrate — layer stack</title>
+<style>
+:root{
+  --bg:#f4f6f5; --surface:#fcfcfb; --panel:#eef1ef; --panel-2:#e5e9e6;
+  --ink:#14171b; --ink-2:#4d5560; --ink-3:#87909b;
+  --line:rgba(20,23,27,.13); --line-soft:rgba(20,23,27,.07);
+  --accent:#2a78d6; --accent-ink:#1c5cab;
+  --ch-0:#2a78d6; --ch-1:#1baf7a; --ch-2:#eda100; --ch-3:#008300; --ch-4:#4a3aa7; --ch-5:#e34948;
+  --t-im:#d03b3b; --t-ia:#ec835a; --t-ci:#c8830a; --t-cl:#0ca30c; --t-dc:#0ca30c;
+  --thread:#31404f; --stage-a:#e9edf2; --stage-b:#f6f8f7;
+  --glow-gain:.4; --card-shadow:0 1px 2px rgba(20,23,27,.06),0 8px 28px rgba(20,23,27,.07);
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#07090d; --surface:#131a21; --panel:#19212a; --panel-2:#202a35;
+  --ink:#edf1f5; --ink-2:#a6afba; --ink-3:#6e7783;
+  --line:rgba(237,241,245,.14); --line-soft:rgba(237,241,245,.07);
+  --accent:#3987e5; --accent-ink:#6da7ec;
+  --ch-0:#3987e5; --ch-1:#1fb27e; --ch-2:#c98500; --ch-3:#2f9e2f; --ch-4:#9085e9; --ch-5:#e66767;
+  --t-im:#e05252; --t-ia:#ec835a; --t-ci:#fab219; --t-cl:#25b325; --t-dc:#25b325;
+  --thread:#cfe0ef; --stage-a:#04060a; --stage-b:#0a0f15;
+  --glow-gain:1; --card-shadow:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{
+  --bg:#07090d; --surface:#131a21; --panel:#19212a; --panel-2:#202a35;
+  --ink:#edf1f5; --ink-2:#a6afba; --ink-3:#6e7783;
+  --line:rgba(237,241,245,.14); --line-soft:rgba(237,241,245,.07);
+  --accent:#3987e5; --accent-ink:#6da7ec;
+  --ch-0:#3987e5; --ch-1:#1fb27e; --ch-2:#c98500; --ch-3:#2f9e2f; --ch-4:#9085e9; --ch-5:#e66767;
+  --t-im:#e05252; --t-ia:#ec835a; --t-ci:#fab219; --t-cl:#25b325; --t-dc:#25b325;
+  --thread:#cfe0ef; --stage-a:#04060a; --stage-b:#0a0f15;
+  --glow-gain:1; --card-shadow:0 1px 2px rgba(0,0,0,.4),0 10px 34px rgba(0,0,0,.4);
+}
+:root[data-theme="light"]{
+  --bg:#f4f6f5; --surface:#fcfcfb; --panel:#eef1ef; --panel-2:#e5e9e6;
+  --ink:#14171b; --ink-2:#4d5560; --ink-3:#87909b;
+  --line:rgba(20,23,27,.13); --line-soft:rgba(20,23,27,.07);
+  --accent:#2a78d6; --accent-ink:#1c5cab;
+  --ch-0:#2a78d6; --ch-1:#1baf7a; --ch-2:#eda100; --ch-3:#008300; --ch-4:#4a3aa7; --ch-5:#e34948;
+  --t-im:#d03b3b; --t-ia:#ec835a; --t-ci:#c8830a; --t-cl:#0ca30c; --t-dc:#0ca30c;
+  --thread:#31404f; --stage-a:#e9edf2; --stage-b:#f6f8f7;
+  --glow-gain:.4; --card-shadow:0 1px 2px rgba(20,23,27,.06),0 8px 28px rgba(20,23,27,.07);
+}
+
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14.5px;
+  line-height:1.5;-webkit-font-smoothing:antialiased;overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;padding:0}
+a{color:var(--accent-ink);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.mono{font-family:var(--mono)}
+
+#stagewrap{position:fixed;inset:0}
+#stage{display:block;width:100%;height:100%;cursor:grab;
+  background:radial-gradient(120% 90% at 50% 30%,var(--stage-b),var(--stage-a))}
+#stage.dragging{cursor:grabbing}
+
+/* ---------- top bar ---------- */
+.bar{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;gap:12px;
+  padding:10px 16px;pointer-events:none}
+.bar>*{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:9px;font-weight:650;letter-spacing:-.01em;white-space:nowrap;
+  background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(10px);
+  padding:7px 12px;border-radius:10px;border:1px solid var(--line-soft)}
+.brand small{font-family:var(--mono);font-weight:400;font-size:10px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase}
+.searchwrap{position:relative}
+.searchwrap input{width:240px;padding:8px 12px;font:inherit;font-size:13px;color:var(--ink);
+  background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:9px;outline:none}
+.searchwrap input:focus{border-color:var(--accent)}
+.searchdrop{position:absolute;top:calc(100% + 6px);left:0;width:300px;max-height:300px;overflow-y:auto;
+  background:var(--surface);border:1px solid var(--line);border-radius:11px;box-shadow:var(--card-shadow);padding:5px;z-index:40}
+.sd-item{display:flex;align-items:center;gap:9px;width:100%;text-align:left;padding:7px 10px;border-radius:8px;font-size:13px}
+.sd-item:hover,.sd-item[aria-selected="true"]{background:var(--panel)}
+.sd-item .id{font-family:var(--mono);font-size:10px;color:var(--ink-3)}
+.sd-item .nch{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--ink-3)}
+.exrow{display:flex;gap:6px;margin-left:2px}
+.exchip{font-size:11.5px;color:var(--ink-2);background:color-mix(in srgb,var(--bg) 72%,transparent);
+  backdrop-filter:blur(10px);border:1px solid var(--line-soft);border-radius:999px;padding:5px 11px}
+.exchip:hover{border-color:var(--accent);color:var(--accent-ink)}
+.bar-spacer{flex:1}
+.ctxswitch{display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;
+  background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(10px)}
+.ctxswitch button{padding:7px 11px;font-size:12px;font-weight:550;color:var(--ink-3)}
+.ctxswitch button[aria-pressed="true"]{background:var(--panel-2);color:var(--ink)}
+
+/* ---------- layer rail ---------- */
+.layerrail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:25;display:flex;
+  flex-direction:column;gap:6px;align-items:stretch}
+.lr-chip{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:9px;font-size:12px;
+  background:color-mix(in srgb,var(--bg) 74%,transparent);backdrop-filter:blur(9px);
+  border:1px solid var(--line-soft);color:var(--ink-2);text-align:left}
+.lr-chip .dot{width:9px;height:9px;border-radius:50%;flex:none}
+.lr-chip .n{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ink-3)}
+.lr-chip[aria-pressed="false"]{opacity:.38}
+.lr-chip:hover{border-color:var(--ink-3)}
+.lr-head{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-3);text-align:right;padding:0 4px 2px}
+
+/* ---------- controls (bottom center) ---------- */
+.controls{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:36;display:flex;flex-wrap:wrap;justify-content:center;max-width:min(94vw,980px);row-gap:8px;
+  gap:8px;align-items:center;background:color-mix(in srgb,var(--bg) 74%,transparent);
+  backdrop-filter:blur(9px);border:1px solid var(--line-soft);border-radius:12px;padding:8px 12px}
+.controls .cbtn{font-size:12px;color:var(--ink-2);padding:5px 11px;border-radius:8px;border:1px solid var(--line)}
+.controls .cbtn:hover{border-color:var(--ink-3);color:var(--ink)}
+.controls .cbtn[aria-pressed="true"]{background:var(--panel-2);color:var(--ink);border-color:var(--ink-3)}
+.minch{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink-2);padding:0 4px}
+.minch input{accent-color:var(--accent);width:110px}
+.minch .val{font-family:var(--mono);font-size:11px;min-width:38px}
+
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:transparent}
+.seg button{padding:5px 10px;font-size:11.5px;color:var(--ink-3)}
+.seg button[aria-pressed="true"]{background:var(--panel-2);color:var(--ink)}
+.ctl-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding:0 2px}
+.morepop{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(100% + 12px);z-index:37;display:flex;flex-direction:column;gap:14px;align-items:flex-start;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(11px);border:1px solid var(--line-soft);border-radius:12px;padding:15px 17px;box-shadow:0 14px 44px rgba(0,0,0,.5);min-width:232px}
+.morepop[hidden]{display:none}
+.morebtn[aria-expanded="true"]{background:var(--panel-2);color:var(--ink);border-color:var(--ink-3)}
+
+/* ---------- guided intro ---------- */
+.guide-card{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);z-index:46;
+  width:min(460px,92vw);background:color-mix(in srgb,var(--surface) 96%,transparent);
+  border:1px solid var(--line);border-radius:14px;box-shadow:var(--card-shadow);padding:16px 18px}
+.guide-card .gstep{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.guide-card h3{margin:6px 0 5px;font-size:15.5px;letter-spacing:-.01em}
+.guide-card p{margin:0;font-size:13px;color:var(--ink-2);line-height:1.55}
+.guide-nav{display:flex;gap:8px;margin-top:13px;align-items:center}
+.guide-nav .skip{color:var(--ink-3);font-size:12px}
+.guide-nav .skip:hover{color:var(--ink)}
+.guide-nav .spacer{flex:1}
+.guide-nav .primary{background:var(--accent);color:#fff;padding:6px 15px;border-radius:8px;font-weight:600;font-size:12.5px}
+.guide-nav .ghost{padding:6px 12px;border-radius:8px;border:1px solid var(--line);font-size:12.5px;color:var(--ink-2)}
+.guidebtn{position:fixed;left:14px;top:100px;z-index:25;font-size:11.5px;color:var(--ink-2);
+  background:color-mix(in srgb,var(--bg) 74%,transparent);backdrop-filter:blur(9px);
+  border:1px solid var(--line-soft);border-radius:9px;padding:6px 11px}
+.guidebtn:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+/* ---------- slice bar ---------- */
+.slicebar{position:fixed;top:60px;left:50%;transform:translateX(-50%);z-index:26;display:flex;
+  gap:10px;align-items:center;background:color-mix(in srgb,var(--bg) 78%,transparent);
+  backdrop-filter:blur(9px);border:1px solid var(--line-soft);border-radius:12px;padding:8px 12px}
+.slicebar .step{font-size:16px;color:var(--ink-2);padding:2px 10px;border-radius:8px;border:1px solid var(--line)}
+.slicebar .step:hover{color:var(--ink);border-color:var(--ink-3)}
+.slicebar .sname{font-weight:650;font-size:14px;min-width:230px;text-align:center}
+.slicebar .sname .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.slicebar .smeta{font-family:var(--mono);font-size:10px;color:var(--ink-3);text-align:center}
+.slicebar .spos{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);padding:0 4px}
+
+/* ---------- legend ---------- */
+.legend{position:fixed;left:14px;bottom:14px;z-index:25;max-width:300px;font-size:11.5px;color:var(--ink-2);
+  background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(9px);
+  border:1px solid var(--line-soft);border-radius:11px;padding:11px 13px}
+.legend b{color:var(--ink);font-weight:650}
+.legend .lrow{display:flex;gap:7px;align-items:baseline;margin-top:4px}
+.legend .muted{opacity:.75}
+
+/* ---------- dossier panel ---------- */
+.dossier{position:fixed;top:0;right:0;bottom:0;width:min(390px,92vw);z-index:35;overflow-y:auto;
+  background:color-mix(in srgb,var(--surface) 96%,transparent);border-left:1px solid var(--line);
+  box-shadow:-18px 0 50px rgba(0,0,0,.25);padding:18px 18px 30px;box-sizing:border-box;
+  transform:translateX(102%);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.dossier.open{transform:none}
+@media (prefers-reduced-motion:reduce){.dossier{transition:none}}
+.dossier .close{position:absolute;top:12px;right:14px;color:var(--ink-3);font-size:17px;line-height:1}
+.dossier .close:hover{color:var(--ink)}
+.d-head{display:flex;gap:13px;align-items:center;margin:4px 0 6px}
+.d-head h2{margin:0;font-size:19px;letter-spacing:-.01em;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.d-head .id{font-family:var(--mono);font-size:11px;color:var(--ink-3);font-weight:400}
+.tier{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;margin:4px 0 8px;
+  padding:2px 9px;border-radius:6px;border:1px solid}
+.tier.dashed{border-style:dashed}
+.d-sum{font-size:13px;color:var(--ink-2);margin:0 0 10px}
+.d-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.flagchip{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:5px;background:var(--panel);color:var(--ink-2);border:1px solid var(--line-soft)}
+.d-sec{border-top:1px solid var(--line-soft);padding-top:12px;margin-top:12px}
+.d-sec h3{margin:0 0 3px;font-size:13px;font-weight:650}
+.d-sec .sub{font-size:11.5px;color:var(--ink-3);margin:0 0 9px}
+.strand{display:grid;grid-template-columns:12px 1fr;gap:9px;padding:8px 0;border-top:1px solid var(--line-soft)}
+.strand:first-of-type{border-top:none}
+.strand .rail{width:4px;border-radius:2px;justify-self:center;margin-top:2px}
+.strand h4{margin:0;font-size:11.5px;display:flex;gap:7px;align-items:center;font-weight:600}
+.stance{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;
+  padding:1px 6px;border-radius:4px;border:1px solid var(--line)}
+.stance.implicates{color:var(--t-im);border-color:color-mix(in srgb,var(--t-im) 45%,transparent)}
+.stance.notes{color:var(--ink-3)}
+.strand p{margin:3px 0 0;font-size:12.5px;color:var(--ink-2)}
+.ref{display:inline-block;font-family:var(--mono);font-size:10px;padding:1px 7px;border-radius:4px;
+  background:var(--panel);border:1px solid var(--line-soft);color:var(--ink-2);cursor:pointer;margin-top:5px}
+.ref:hover{border-color:var(--accent);color:var(--accent-ink)}
+.neigh{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid var(--line-soft);font-size:12px}
+.neigh:first-of-type{border-top:none}
+.neigh .etype{font-family:var(--mono);font-size:10px;color:var(--ink-3);min-width:92px}
+.neigh .sign{font-family:var(--mono);font-size:10.5px;width:14px;text-align:center}
+.neigh .conflict{color:var(--t-im);font-weight:700}
+.neigh button{color:var(--accent-ink);font-weight:600;font-size:12px}
+.neigh button:hover{text-decoration:underline}
+.neigh .lch{margin-left:auto;display:flex;gap:3px}
+.neigh .lch i{width:6px;height:6px;border-radius:2px;display:block}
+.rel-legend{display:flex;flex-wrap:wrap;gap:6px 12px;margin:2px 0 10px;font-size:10.5px;color:var(--ink-3)}
+.rel-legend span{display:inline-flex;align-items:center;gap:5px}
+.rel-legend .sg{font-family:var(--mono);font-size:11px;color:var(--ink-2);min-width:12px;text-align:center}
+.rel-legend .sg.fb{color:var(--t-im);font-weight:700}
+.rel-legend .sw{width:8px;height:8px;border-radius:2px;background:linear-gradient(90deg,var(--ch-0),var(--ch-3),var(--ch-5))}
+.edgedirs{margin:1px 0 5px 92px;display:flex;flex-direction:column;gap:3px}
+.edgedir{font-size:11px;color:var(--ink-2);display:flex;align-items:baseline;gap:6px}
+.edgedir .sign{font-family:var(--mono);width:12px;text-align:center;flex:none}
+.edgedir .esrc{color:var(--ink-3);font-size:10px}
+.ctxnote{font-size:11px;color:var(--ink-3);border-left:3px solid var(--line);padding:2px 0 2px 9px;margin-top:10px}
+
+/* ---------- tooltip / popover / toast ---------- */
+.gtip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);
+  border-radius:9px;padding:7px 10px;font-size:12px;box-shadow:var(--card-shadow);max-width:230px;z-index:50}
+.gtip .tt-name{font-weight:650}
+.gtip .tt-sub{color:var(--ink-3);font-size:10.5px;font-family:var(--mono);margin-top:2px}
+.popover{position:fixed;z-index:60;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--card-shadow);padding:11px 13px;max-width:290px;font-size:12px}
+.popover .pk{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.popover .pc{margin-top:4px}
+.popover .pnote{margin-top:7px;color:var(--ink-3);font-size:10.5px;border-top:1px solid var(--line-soft);padding-top:6px}
+.ctx-toast{position:fixed;bottom:70px;right:14px;z-index:45;width:min(330px,90vw);background:var(--surface);
+  border:1px solid var(--line);border-radius:12px;box-shadow:var(--card-shadow);padding:13px 15px}
+.ctx-toast h4{margin:0 0 2px;font-size:13px}
+.ctx-toast .sub{font-size:11px;color:var(--ink-3);margin-bottom:7px}
+.flip{display:flex;align-items:center;gap:7px;padding:4px 0;font-size:11.5px;border-top:1px solid var(--line-soft)}
+.flip button{color:var(--accent-ink);font-weight:600}
+.flip .fa{color:var(--ink-3);font-size:10.5px}
+.ctx-toast .close{position:absolute;top:8px;right:11px;color:var(--ink-3);font-size:14px}
+
+/* ---------- a11y table ---------- */
+.a11y-toggle{position:fixed;left:14px;top:64px;z-index:25;font-size:11.5px;color:var(--ink-2);
+  background:color-mix(in srgb,var(--bg) 74%,transparent);backdrop-filter:blur(9px);
+  border:1px solid var(--line-soft);border-radius:9px;padding:6px 11px}
+.a11y-sheet{position:fixed;inset:56px 14px 14px;z-index:55;overflow:auto;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;box-shadow:var(--card-shadow);padding:18px}
+.a11y-sheet table{border-collapse:collapse;width:100%;font-size:12.5px}
+.a11y-sheet th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-3);padding:6px 10px;border-bottom:1px solid var(--line)}
+.a11y-sheet td{padding:6px 10px;border-bottom:1px solid var(--line-soft)}
+.a11y-sheet .close{position:absolute;top:12px;right:16px;color:var(--ink-3);font-size:16px}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
+}
+@media (max-width:820px){
+  .searchwrap input{width:150px}
+  .exrow,.legend{display:none}
+  .layerrail{right:8px}
+}
+</style>
+
+<div id="stagewrap">
+  <canvas id="stage" role="img" aria-label="Stacked multilayer network: six evidence layers as translucent planes, entities threading through the layers that carry them. Use the entity table for a non-visual reading."></canvas>
+</div>
+
+<header class="bar">
+  <span class="brand">
+    <svg width="20" height="20" viewBox="0 0 22 22" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <ellipse cx="11" cy="6" rx="8" ry="2.8" opacity=".9"/>
+        <ellipse cx="11" cy="11" rx="8" ry="2.8" opacity=".55"/>
+        <ellipse cx="11" cy="16" rx="8" ry="2.8" opacity=".3"/>
+        <path d="M11 3.2v15.6" opacity=".85"/>
+      </g>
+    </svg>
+    Pigmentation substrate <small>preview · real data · provisional verdicts</small>
+  </span>
+  <div class="searchwrap">
+    <input id="search" type="text" placeholder="Search entities…" aria-label="Search entities" autocomplete="off"/>
+    <div class="searchdrop" id="searchdrop" hidden></div>
+  </div>
+  <div class="exrow" id="exrow"></div>
+  <div class="bar-spacer"></div>
+  <div class="ctxswitch" id="ctxswitch" role="group" aria-label="Case context"></div>
+</header>
+
+<button class="a11y-toggle" id="tabletoggle">Entity table</button>
+<button class="guidebtn" id="guidebtn">▸ Guide me</button>
+
+<div class="lr-wrap layerrail" id="layerrail" role="group" aria-label="Evidence layers"></div>
+
+<div class="slicebar" id="slicebar" hidden>
+  <button class="step" id="slicedown" aria-label="Layer below">▼</button>
+  <div><div class="sname" id="slicename"></div><div class="smeta" id="slicemeta"></div></div>
+  <button class="step" id="sliceup" aria-label="Layer above">▲</button>
+  <span class="spos" id="slicepos"></span>
+</div>
+
+<div class="controls">
+  <span class="ctl-label">view</span>
+  <div class="seg" id="viewctl" role="group" aria-label="View mode">
+    <button data-mode="stack" aria-pressed="true">stack</button>
+    <button data-mode="slices" aria-pressed="false">slices</button>
+  </div>
+  <span class="ctl-label" id="singleslabel">single-layer</span>
+  <div class="seg" id="singlesctl" role="group" aria-label="Single-layer entity display">
+    <button data-mode="recede" aria-pressed="true">recede</button>
+    <button data-mode="hide" aria-pressed="false">hide</button>
+    <button data-mode="full" aria-pressed="false">full</button>
+  </div>
+  <button class="cbtn morebtn" id="morebtn" aria-expanded="false" aria-controls="morepop" onclick="var p=document.getElementById('morepop'),o=p.hasAttribute('hidden');p.toggleAttribute('hidden');this.setAttribute('aria-expanded',o?'true':'false')">Display options &#9662;</button>
+  <div class="morepop" id="morepop" hidden role="group" aria-label="Display options">
+  <span class="ctl-label">threads</span>
+  <div class="seg" id="threadsctl" role="group" aria-label="Thread display">
+    <button data-mode="whisper" aria-pressed="false">whisper</button>
+    <button data-mode="off" aria-pressed="true">off</button>
+    <button data-mode="full" aria-pressed="false">full</button>
+  </div>
+  <button class="cbtn" id="spreadbtn" aria-pressed="false">Spread the stack</button>
+  <label class="minch">layers ≥
+    <input type="range" id="minch" min="1" max="6" value="1" step="1" aria-label="Minimum layer count"/>
+    <span class="val" id="minchval">1</span>
+  </label>
+  </div>
+  <button class="cbtn" id="homebtn">Reset view</button>
+</div>
+
+<div class="legend">
+  <b>Reading the stack</b>
+  <div class="lrow"><span>Each plane is one evidence layer — broad coverage at the base, selective above. A thread is one entity passing through the layers that carry it.</span></div>
+  <div class="lrow"><span>● filled = <b>mechanism</b> (a signed, directed interaction) · ○ hollow = <b>context</b> (co-occurrence or pathway membership — no direction). Every entity keeps the same position on every slice — flip slices and the persistent dots are the convergent ones; hover or select to draw a thread on demand.</span></div>
+  <div class="lrow"><span>Each layer’s own web is woven faintly into its plane — solo layers to bring it forward; exact links light on selection. Dashed = a feedback loop: the two genes regulate each other with opposite signs.</span></div>
+  <div class="lrow muted"><span id="legendstats"></span></div>
+  <div class="lrow muted"><span id="legendstats2"></span></div>
+  <div class="lrow muted"><span>Angle carries no meaning. Selecting glides the camera closer without turning it — your orientation is always preserved.</span></div>
+</div>
+
+<aside class="dossier" id="dossier" aria-label="Entity dossier"></aside>
+
+<script src="data/dataset.js"></script>
+<script>
+'use strict';
+/* ================= data ================= */
+const DB = window.__DATASET__;
+const CHANNELS = DB.channels;
+const CH_INDEX = Object.fromEntries(CHANNELS.map((c,i)=>[c.key,i]));
+const ENTS = DB.entities;
+const byId = Object.fromEntries(ENTS.map(e=>[e.id,e]));
+const EDGES = DB.edges;
+const REFS = DB.references || {};
+const CTXS = (DB.contexts&&DB.contexts.contexts)||[{id:'reference',label:'Reference'}];
+const crossById = Object.fromEntries(((DB.contexts&&DB.contexts.cross)||[]).map(c=>[c.id,c]));
+const NMAX = Math.max(...ENTS.map(e=>e.n_channels));
+const neighbors = {};
+for (const ed of EDGES){
+  (neighbors[ed.a] ||= []).push({edge:ed, other:ed.b});
+  (neighbors[ed.b] ||= []).push({edge:ed, other:ed.a});
+}
+const TIERS = {
+  implicated_multichannel:{label:'Implicated · multichannel', icon:'▲', v:'--t-im', rank:5},
+  implicated_anchored:   {label:'Implicated · anchored',      icon:'▲', v:'--t-ia', rank:4},
+  circumstantial:        {label:'Circumstantial',             icon:'◆', v:'--t-ci', rank:3},
+  cleared:               {label:'Cleared',                    icon:'●', v:'--t-cl', rank:2},
+  decoy_cleared:         {label:'Decoy · cleared',            icon:'◈', v:'--t-dc', rank:1, dashed:true},
+};
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cssVar = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tierOf = (e,ctx)=>{ const x=crossById[e.id]; return (x&&x[ctx])?x[ctx]:e.verdict.tier; };
+const stanceOf = {};
+ENTS.forEach(e=>{ stanceOf[e.id]={}; e.verdict.strands.forEach(s=>stanceOf[e.id][s.channel]=s.stance); });
+const implCount = e => e.verdict.strands.filter(s=>s.stance==='implicates').length;
+
+/* ================= layout: area-proportional bands =================
+   Annulus area per band ∝ band population, so density is uniform:
+   the 253-thread core gets room and the 550 singles spread wide. */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const LAYOUT=(()=>{
+  const rnd=mulberry32(42);
+  const bandCounts={}; ENTS.forEach(e=>bandCounts[e.n_channels]=(bandCounts[e.n_channels]||0)+1);
+  const range={}; let cum=0;
+  for (let n=NMAX;n>=1;n--){
+    const c=bandCounts[n]||0;
+    const r0=Math.sqrt(cum/ENTS.length); cum+=c;
+    const r1=Math.sqrt(cum/ENTS.length);
+    range[n]=[r0,r1];
+  }
+  const hashA=id=>{let h=0;for(const c of id)h=(h*31+c.charCodeAt(0))|0;return ((h>>>0)%3600)/3600*2*Math.PI};
+  const angle={};
+  for (let n=NMAX;n>=1;n--){
+    const band=ENTS.filter(e=>e.n_channels===n);
+    if (!band.length) continue;
+    const want=band.map(e=>{
+      const placed=(neighbors[e.id]||[]).map(x=>angle[x.other]).filter(a=>a!==undefined);
+      if (!placed.length) return {e,a:hashA(e.id)};
+      const sx=placed.reduce((s,a)=>s+Math.cos(a),0), sy=placed.reduce((s,a)=>s+Math.sin(a),0);
+      return {e,a:Math.atan2(sy,sx)};
+    }).sort((p,q)=>p.a-q.a);
+    const off=rnd()*2*Math.PI;
+    want.forEach((p,i)=>{ angle[p.e.id]=off+i*2*Math.PI/want.length+(rnd()-.5)*0.4/Math.max(1,want.length/8); });
+  }
+  const out={};
+  ENTS.forEach(e=>{
+    const [r0,r1]=range[e.n_channels];
+    const rr=Math.sqrt(r0*r0+(r1*r1-r0*r0)*(0.15+0.7*rnd()));   // area-uniform within annulus
+    out[e.id]={x:Math.cos(angle[e.id])*rr, z:Math.sin(angle[e.id])*rr};
+  });
+  return out;
+})();
+
+/* ================= state ================= */
+const state = {
+  ctx: CTXS[0].id,
+  selected: null,
+  muted: new Set(),
+  minch: 1,
+  spread: false,
+  singles: 'recede',           // recede | hide | full
+  threads: 'off',              // off | whisper | full — position IS the linkage; threads on demand
+  view: 'stack',               // stack | slices
+  slice: 0,                    // active layer index in slices view
+};
+const HOME = { theta:0.65, phi:0.50, rho:3.6, tx:0, tz:0 };
+const cam = { ...HOME };
+const camT = { ...HOME };      // eased target
+if (!reduceMotion){ cam.theta=0.1; cam.phi=1.1; cam.rho=4.9; }
+let gap = 0.38, gapTarget = 0.38;
+let hover = null, interactedAt = performance.now();
+
+function readURL(){
+  const id = (location.hash.match(/#\/g\/([A-Za-z0-9_-]+)/)||[])[1];
+  if (id && byId[id]) state.selected = id;
+  const params = new URLSearchParams((location.hash.split('?')[1])||'');
+  const mc = parseInt(params.get('minch')||'1'); if (mc>=1&&mc<=NMAX) state.minch = mc;
+  const muted = params.get('muted'); if (muted) muted.split(',').forEach(k=>{ if(CH_INDEX[k]!==undefined) state.muted.add(k); });
+  const sg = params.get('singles'); if (['recede','hide','full'].includes(sg)) state.singles = sg;
+  const th = params.get('threads'); if (['whisper','off','full'].includes(th)) state.threads = th;
+  const vw = params.get('view'); if (vw==='slices') state.view = 'slices';
+  const sl = params.get('slice'); if (sl && CH_INDEX[sl]!==undefined) state.slice = CH_INDEX[sl];
+}
+function writeURL(){
+  const p = new URLSearchParams();
+  if (state.minch>1) p.set('minch', state.minch);
+  if (state.muted.size) p.set('muted', [...state.muted].join(','));
+  if (state.singles!=='recede') p.set('singles', state.singles);
+  if (state.threads!=='off') p.set('threads', state.threads);
+  if (state.view==='slices'){ p.set('view','slices'); p.set('slice', CHANNELS[state.slice].key); }
+  const qs = p.toString();
+  history.replaceState(null,'', (state.selected?`#/g/${state.selected}`:'#/')+(qs?'?'+qs:''));
+}
+readURL();
+
+/* ================= camera / projection (with fly-to target) ================= */
+const cv = document.getElementById('stage');
+const g = cv.getContext('2d');
+let W=0,H=0,DPR=1;
+let needsDraw = true, drawPickList = [];
+function size(){ DPR=Math.min(devicePixelRatio||1,1.5); W=cv.clientWidth; H=cv.clientHeight;
+  cv.width=W*DPR; cv.height=H*DPR; needsDraw=true; }
+size(); addEventListener('resize', size);
+
+let C=[0,0,0], Rv=[1,0,0], Uv=[0,1,0], Fv=[0,0,1];
+function updCam(){
+  C = [cam.tx+cam.rho*Math.cos(cam.phi)*Math.sin(cam.theta),
+       cam.rho*Math.sin(cam.phi),
+       cam.tz+cam.rho*Math.cos(cam.phi)*Math.cos(cam.theta)];
+  const norm=v=>{const l=Math.hypot(...v);return [v[0]/l,v[1]/l,v[2]/l]};
+  Fv = norm([cam.tx-C[0], -C[1], cam.tz-C[2]]);
+  Rv = norm([-Fv[2],0,Fv[0]]);
+  Uv = [Rv[1]*Fv[2]-Rv[2]*Fv[1], Rv[2]*Fv[0]-Rv[0]*Fv[2], Rv[0]*Fv[1]-Rv[1]*Fv[0]];
+}
+const FL = 1.9;
+const panelOpen = ()=>!!state.selected;
+function proj(x,y,z){
+  const vx=x-C[0], vy=y-C[1], vz=z-C[2];
+  const zc = vx*Fv[0]+vy*Fv[1]+vz*Fv[2];
+  if (zc < 0.2) return null;
+  const xc = vx*Rv[0]+vy*Rv[1]+vz*Rv[2];
+  const yc = vx*Uv[0]+vy*Uv[1]+vz*Uv[2];
+  const s = FL/zc * Math.min(W,H)*0.42;
+  const cx = W/2 - (panelOpen()? Math.min(190, W*0.13) : 0);
+  return [cx + xc*s, H/2 - yc*s, zc, s];
+}
+const planeH = i => (i-(CHANNELS.length-1)/2) * gap;
+const fog = zc => Math.max(.3, Math.min(1, 1 - (zc-(cam.rho-1.1))/2.8));
+
+/* ================= scene prep ================= */
+const planeMembers = CHANNELS.map(c => ENTS.filter(e=>e.channels.includes(c.key)));
+const conflictEdges = EDGES.filter(ed=>ed.sign_conflict);
+const threads = ENTS.filter(e=>e.n_channels>=2).map(e=>{
+  const planes=e.channels.map(k=>CH_INDEX[k]).sort((a,b)=>a-b);
+  const segs=[];
+  for (let k=0;k<planes.length-1;k++) segs.push({a:planes[k], b:planes[k+1], gap:planes[k+1]-planes[k]>1});
+  return {e, planes, segs};
+});
+const singlesCount = ENTS.filter(e=>e.n_channels===1).length;
+const singleEdges = EDGES.filter(ed=>ed.n_channels===1).length;
+document.getElementById('legendstats').textContent =
+  `${singlesCount} of ${ENTS.length} entities rest on a single layer — the real denominator, receded by default, never deleted.`;
+document.getElementById('legendstats2').textContent =
+  `All ${EDGES.length.toLocaleString()} links are woven into their layers at rest, faded by each layer's density (${singleEdges.toLocaleString()} are single-source); a selection draws its exact links on top.`;
+document.getElementById('singleslabel').textContent = `${singlesCount} single-layer`;
+
+const visible = e => e.n_channels >= state.minch && !(state.singles==='hide' && e.n_channels===1);
+// tier/stance-aware recede (measured: 207/224 implicated_anchored entities are single-layer —
+// uniform dimming would bury nearly the whole implicated tier; implicating evidence never vanishes)
+function dotMode(e){
+  if (e.n_channels>1 || state.singles==='full') return 'n';
+  if (state.singles==='hide') return null;
+  const implicatedTier = tierOf(e,state.ctx).startsWith('implicated');
+  return (implicatedTier || implCount(e)>0) ? 's' : 'r';   // semi vs fully receded
+}
+const dimmed  = e => state.selected && e.id!==state.selected;
+
+/* ================= dot sprites (1,272 stamps/frame must be cheap) ================= */
+let SPR={};
+function makeSprites(){
+  SPR={};
+  const mk=(draw,px)=>{ const c=document.createElement('canvas'); c.width=c.height=px*2; // 2x for crispness
+    const x=c.getContext('2d'); x.scale(2,2); draw(x,px/2); return c; };
+  CHANNELS.forEach((ch,i)=>{
+    const col=cssVar('--ch-'+i);
+    SPR['n_imp_'+i]=mk((x,c)=>{ x.fillStyle=col; x.beginPath(); x.arc(c,c,3.4,0,7); x.fill(); },10);
+    SPR['n_note_'+i]=mk((x,c)=>{ x.strokeStyle=col; x.lineWidth=1.4; x.beginPath(); x.arc(c,c,2.8,0,7); x.stroke(); },10);
+    SPR['s_imp_'+i]=mk((x,c)=>{ x.globalAlpha=.55; x.fillStyle=col; x.beginPath(); x.arc(c,c,2.5,0,7); x.fill(); },8);
+    SPR['s_note_'+i]=mk((x,c)=>{ x.globalAlpha=.5; x.strokeStyle=col; x.lineWidth=1.2; x.beginPath(); x.arc(c,c,2.2,0,7); x.stroke(); },8);
+    SPR['r_imp_'+i]=mk((x,c)=>{ x.globalAlpha=.4; x.fillStyle=col; x.beginPath(); x.arc(c,c,1.9,0,7); x.fill(); },7);
+    SPR['r_note_'+i]=mk((x,c)=>{ x.globalAlpha=.3; x.strokeStyle=col; x.lineWidth=1; x.beginPath(); x.arc(c,c,1.6,0,7); x.stroke(); },7);
+  });
+}
+makeSprites();
+
+/* per-plane edge fabric: each layer's whole network baked once, warped onto its
+   plane per frame — the within-layer structure is present at rest, exact links
+   draw live on selection. Alpha is density-normalized per plane. */
+const TEXQ={T:1024, ext:1.15};
+let PLANETEX=[];
+function makePlaneTextures(){
+  PLANETEX = CHANNELS.map((c,i)=>{
+    const m = EDGES.filter(ed=>ed.channels.includes(c.key) && !ed.sign_conflict);
+    const t=document.createElement('canvas'); t.width=t.height=TEXQ.T;
+    const x=t.getContext('2d');
+    const q=TEXQ.T/(2*TEXQ.ext);
+    x.strokeStyle=cssVar('--ch-'+i); x.lineWidth=1.7; x.beginPath();
+    for (const ed of m){
+      const A=LAYOUT[ed.a], B=LAYOUT[ed.b];
+      x.moveTo((A.x+TEXQ.ext)*q,(A.z+TEXQ.ext)*q);
+      x.lineTo((B.x+TEXQ.ext)*q,(B.z+TEXQ.ext)*q);
+    }
+    x.stroke();
+    const alpha=Math.min(.55, Math.max(.06, 6/Math.sqrt(m.length||1)));
+    return {tex:t, alpha, count:m.length};
+  });
+}
+makePlaneTextures();
+
+/* ================= slices view =================
+   Shared positions mean identity needs no drawn link: flip slices and the
+   persistent dots ARE the convergent entities. One layer face-on, full detail. */
+const sliceView={zoom:1, px:0, py:0, prev:null, t:1};
+function stepSlice(d){
+  const n=CHANNELS.length;
+  sliceView.prev=state.slice; sliceView.t=reduceMotion?1:0;
+  state.slice=(state.slice+d+n)%n;
+  updateSlicebar(); writeURL(); needsDraw=true;
+}
+function sliceMap(){
+  const s=Math.min(W,H)*0.40*sliceView.zoom;
+  return {s, cx:W/2-(panelOpen()?Math.min(190,W*0.13):0)+sliceView.px, cy:H/2+sliceView.py};
+}
+function drawSlice(){
+  g.setTransform(DPR,0,0,DPR,0,0);
+  g.clearRect(0,0,W,H);
+  const {s,cx,cy}=sliceMap();
+  const ink=cssVar('--ink');
+  const pick=[];
+  const layer=(i,a,collect)=>{
+    const c=CHANNELS[i], col=cssVar('--ch-'+i);
+    g.globalAlpha=.045*a; g.fillStyle=col;
+    g.beginPath(); g.arc(cx,cy,1.12*s,0,7); g.fill();
+    g.globalAlpha=.3*a; g.strokeStyle=col; g.lineWidth=1.2; g.stroke();
+    const PT=PLANETEX[i];
+    if (PT&&PT.count){
+      g.globalAlpha=Math.min(.85, PT.alpha*1.8)*(state.selected?.3:1)*a;
+      g.drawImage(PT.tex, cx-TEXQ.ext*s, cy-TEXQ.ext*s, 2*TEXQ.ext*s, 2*TEXQ.ext*s);
+    }
+    const live=conflictEdges.filter(ed=>ed.channels.includes(c.key));
+    if (state.selected)
+      for (const {edge:ed} of (neighbors[state.selected]||[]))
+        if (!ed.sign_conflict && ed.channels.includes(c.key)) live.push(ed);
+    for (const ed of live){
+      const A=LAYOUT[ed.a], B=LAYOUT[ed.b];
+      if (ed.sign_conflict){ g.setLineDash([5,4]); g.strokeStyle=cssVar('--t-im'); g.lineWidth=1.8; g.globalAlpha=.95*a; }
+      else { g.strokeStyle=col; g.lineWidth=1.5; g.globalAlpha=.8*a; }
+      g.beginPath(); g.moveTo(cx+A.x*s, cy+A.z*s); g.lineTo(cx+B.x*s, cy+B.z*s); g.stroke();
+      g.setLineDash([]);
+    }
+    for (const e of planeMembers[i]){
+      const P=LAYOUT[e.id];
+      const x=cx+P.x*s, y=cy+P.z*s;
+      const sel=state.selected===e.id, hov=hover===e.id;
+      const dim=state.selected&&!sel;
+      const st=stanceOf[e.id][c.key]==='implicates'?'imp':'note';
+      const spr=SPR['n_'+st+'_'+i];
+      const sz=spr.width/2*(sel||hov?1.6:1.15);
+      g.globalAlpha=(dim?.15:1)*a;
+      g.drawImage(spr, x-sz/2, y-sz/2, sz, sz);
+      if (sel){ g.strokeStyle=ink; g.globalAlpha=a; g.lineWidth=1.4;
+        g.beginPath(); g.arc(x,y,sz/2+3,0,7); g.stroke(); }
+      if ((sel||hov) && a>.5){
+        g.globalAlpha=a; g.fillStyle=ink;
+        g.font='600 11px '+cssVar('--sans'); g.textAlign='center';
+        g.fillText(e.codename, x, y-sz/2-6);
+      }
+      if (collect) pick.push({sx:x, sy:y, r:8, id:e.id, pri:1});
+    }
+    g.globalAlpha=1;
+  };
+  if (sliceView.t<1 && sliceView.prev!==null && sliceView.prev!==state.slice){
+    layer(sliceView.prev, 1-sliceView.t, false);
+    layer(state.slice, sliceView.t, sliceView.t>.4);
+  } else layer(state.slice, 1, true);
+  drawPickList=pick;
+}
+function updateSlicebar(){
+  const bar=document.getElementById('slicebar');
+  bar.hidden = state.view!=='slices';
+  document.getElementById('viewctl').querySelectorAll('button').forEach(x=>
+    x.setAttribute('aria-pressed', String((x.dataset.mode==='slices')===(state.view==='slices'))));
+  if (bar.hidden) return;
+  const i=state.slice, c=CHANNELS[i];
+  document.getElementById('slicename').innerHTML=
+    `<span class="dot" style="background:var(--ch-${i})"></span>${esc(c.label||c.key)}`;
+  document.getElementById('slicemeta').textContent=
+    `${planeMembers[i].length} entities · ${(PLANETEX[i]?PLANETEX[i].count:0).toLocaleString()} links in this layer`;
+  document.getElementById('slicepos').textContent=`${i+1} / ${CHANNELS.length}`;
+}
+
+/* ================= render ================= */
+function draw(){
+  const __t0=performance.now();
+  if (state.view==='slices'){ drawSlice(); window.__drawMs=performance.now()-__t0; return; }
+  updCam();
+  g.setTransform(DPR,0,0,DPR,0,0);
+  g.clearRect(0,0,W,H);
+  const ink=cssVar('--ink'), ink3=cssVar('--ink-3'), thr=cssVar('--thread'),
+        acc=cssVar('--accent'), red=cssVar('--t-im');
+  const pick=[];
+  const selEdgeSet = new Set();
+  if (state.selected) for (const {edge} of (neighbors[state.selected]||[])) selEdgeSet.add(edge);
+
+  const order = CHANNELS.map((c,i)=>({i, d:(proj(0,planeH(i),0)||[0,0,99])[2]})).sort((a,b)=>b.d-a.d);
+  for (const {i} of order){
+    const c=CHANNELS[i], mutedP=state.muted.has(c.key), h=planeH(i);
+    const col=cssVar('--ch-'+i);
+    g.beginPath();
+    let first=true;
+    for (let a=0;a<=44;a++){
+      const p=proj(Math.cos(a/44*2*Math.PI)*1.10, h, Math.sin(a/44*2*Math.PI)*1.10);
+      if (!p){first=true;continue;}
+      if (first){g.moveTo(p[0],p[1]);first=false;} else g.lineTo(p[0],p[1]);
+    }
+    g.closePath();
+    g.globalAlpha=mutedP?.015:.05; g.fillStyle=col; g.fill();
+    g.globalAlpha=mutedP?.06:.25; g.strokeStyle=col; g.lineWidth=1; g.stroke();
+    const la=cam.theta+2.15+(i%3)*0.34;
+    const lp=proj(Math.cos(la)*1.24, h, Math.sin(la)*1.24);
+    if (lp){
+      g.globalAlpha=mutedP?.25:.9; g.fillStyle=col; g.font='600 11px '+cssVar('--sans'); g.textAlign='center';
+      g.fillText(c.label||c.key, lp[0], lp[1]);
+      g.globalAlpha=mutedP?.15:.5; g.fillStyle=ink3; g.font='9px '+cssVar('--mono');
+      g.fillText(`${planeMembers[i].length}/${ENTS.length} · ${Math.round(planeMembers[i].length/ENTS.length*100)}% · ${PLANETEX[i]?PLANETEX[i].count.toLocaleString():0} links`, lp[0], lp[1]+12);
+    }
+    if (mutedP){ g.globalAlpha=1; continue; }
+
+    // the layer's own web — baked once, warped onto the plane (affine approx)
+    const PT=PLANETEX[i];
+    const pC=proj(0,h,0), pXa=proj(1,h,0), pZa=proj(0,h,1);
+    if (PT && PT.count && pC && pXa && pZa){
+      const q=TEXQ.T/(2*TEXQ.ext);
+      const ax=pXa[0]-pC[0], ay=pXa[1]-pC[1], bx=pZa[0]-pC[0], by=pZa[1]-pC[1];
+      const visPlanes=CHANNELS.length-state.muted.size;
+      g.save();
+      g.transform(ax/q, ay/q, bx/q, by/q, pC[0]-(ax+bx)*TEXQ.ext, pC[1]-(ay+by)*TEXQ.ext);
+      g.globalAlpha=PT.alpha*(state.selected?.22:1)*(visPlanes<=3?1.9:1)*fog(pC[2]);
+      g.drawImage(PT.tex,0,0);
+      g.restore();
+    }
+
+    // live edges: the conflict edge always; the selection's exact links on top
+    const toDraw = conflictEdges.filter(ed=>ed.channels.includes(c.key));
+    if (state.selected)
+      for (const {edge:ed} of (neighbors[state.selected]||[]))
+        if (!ed.sign_conflict && ed.channels.includes(c.key)) toDraw.push(ed);
+    for (const ed of toDraw){
+      const A=LAYOUT[ed.a], B=LAYOUT[ed.b];
+      const p0=proj(A.x,h,A.z), p1=proj(B.x,h,B.z);
+      if (!p0||!p1) continue;
+      const f=fog((p0[2]+p1[2])/2);
+      const sel=selEdgeSet.has(ed);
+      if (ed.sign_conflict){
+        g.setLineDash([5,4]); g.strokeStyle=red; g.lineWidth=1.7;
+        g.globalAlpha=(state.selected&&!sel?.3:.95)*f;
+      } else {
+        g.strokeStyle=col; g.lineWidth=1.5;
+        g.globalAlpha=.75*f;
+      }
+      g.beginPath(); g.moveTo(p0[0],p0[1]); g.lineTo(p1[0],p1[1]); g.stroke();
+      g.setLineDash([]);
+    }
+
+    // dots (sprite stamps; tier/stance-aware recede)
+    for (const e of planeMembers[i]){
+      const mode0=dotMode(e); if(!mode0) continue;
+      const P=LAYOUT[e.id];
+      const p=proj(P.x,h,P.z); if(!p) continue;
+      const f=fog(p[2]);
+      const ghost=e.n_channels<state.minch, dim=dimmed(e), sel=state.selected===e.id, hov=hover===e.id;
+      const mode=(sel||hov)?'n':mode0;
+      const st=stanceOf[e.id][c.key]==='implicates'?'imp':'note';
+      const spr=SPR[mode+'_'+st+'_'+i];
+      const sc=(p[3]/(FL/cam.rho*Math.min(W,H)*0.42))*(sel||hov?1.5:1);
+      const s=(spr.width/2)*sc;
+      g.globalAlpha=(ghost?.05:dim?.08:1)*f;
+      g.drawImage(spr, p[0]-s/2, p[1]-s/2, s, s);
+      if (sel){ g.strokeStyle=ink; g.globalAlpha=f; g.lineWidth=1.3;
+        g.beginPath(); g.arc(p[0],p[1],s/2+3,0,7); g.stroke(); }
+      if (!ghost && !dim) pick.push({sx:p[0],sy:p[1],r:mode==='r'?5:8,id:e.id,pri:mode==='r'?0:1});
+    }
+    g.globalAlpha=1;
+  }
+
+  // threads: uniform width, no glow, per-gap dashing; depth-sorted back-to-front
+  const thrSorted=threads.map(t=>{
+    const P=LAYOUT[t.e.id];
+    const mid=proj(P.x,0,P.z);
+    return {...t,d:mid?mid[2]:99,P};
+  }).sort((a,b)=>b.d-a.d);
+  const baseA = state.threads==='full' ? .38 : .13;    // whisper: hairline scaffold only
+  for (const t of thrSorted){
+    const e=t.e;
+    if (e.n_channels<state.minch) continue;
+    const sel=state.selected===e.id, hov=hover===e.id, dim=dimmed(e);
+    if (state.threads==='off' && !sel && !hov) continue;   // dots still carry membership
+    const f=fog(t.d);
+    for (const sg2 of t.segs){
+      const p0=proj(t.P.x,planeH(sg2.a),t.P.z), p1=proj(t.P.x,planeH(sg2.b),t.P.z);
+      if (!p0||!p1) continue;
+      g.strokeStyle=sel?acc:thr;
+      g.lineWidth=(sel?2.2:hov?1.8:(state.threads==='full'?1:.7))*(sg2.gap?0.75:1);
+      g.globalAlpha=(sel?1:dim?.04:hov?.9:baseA)*(sg2.gap?.45:1)*f;
+      if (sg2.gap) g.setLineDash([2,6]);
+      g.beginPath(); g.moveTo(p0[0],p0[1]); g.lineTo(p1[0],p1[1]); g.stroke();
+      g.setLineDash([]);
+    }
+    if (!dim){
+      const top=proj(t.P.x,planeH(t.planes[t.planes.length-1]),t.P.z);
+      if (top){
+        for (let k=0;k<t.planes.length-1;k++){
+          const m0=proj(t.P.x,planeH(t.planes[k]),t.P.z), m1=proj(t.P.x,planeH(t.planes[k+1]),t.P.z);
+          if (m0&&m1) pick.push({sx:(m0[0]+m1[0])/2,sy:(m0[1]+m1[1])/2,r:7,id:e.id,pri:2,d:t.d});
+        }
+      }
+    }
+  }
+  // labels: rest for the deep core only, greedy de-collided; always for hover/selection
+  const labels=[];
+  const want=ENTS.filter(e=>(e.n_channels>=NMAX||state.selected===e.id||hover===e.id) && visible(e) && !dimmed(e))
+    .sort((a,b)=>b.n_channels-a.n_channels);
+  for (const e of want){
+    const P=LAYOUT[e.id];
+    const topPlane=Math.max(...e.channels.map(k=>CH_INDEX[k]));
+    const p=proj(P.x,planeH(topPlane),P.z);
+    if (!p) continue;
+    const y=p[1]-10;
+    if (labels.some(l=>Math.abs(l.y-y)<13 && Math.abs(l.x-p[0])<64)) continue;
+    labels.push({x:p[0],y});
+    const sel=state.selected===e.id;
+    g.globalAlpha=(sel||hover===e.id?1:.75)*fog(p[2]);
+    g.fillStyle=sel?ink:cssVar('--ink-2');
+    g.font=(sel?'650 ':'600 ')+'10.5px '+cssVar('--sans'); g.textAlign='center';
+    g.fillText(e.codename,p[0],y);
+  }
+  g.globalAlpha=1;
+  drawPickList=pick;
+  window.__drawMs=performance.now()-__t0;
+}
+
+/* ================= loop ================= */
+function tick(){
+  requestAnimationFrame(tick);
+  let moving=false;
+  const e=.085;
+  for (const k of ['theta','phi','rho','tx','tz']){
+    if (Math.abs(camT[k]-cam[k])>.0015){ cam[k]+=(camT[k]-cam[k])*(reduceMotion?1:e); moving=true; }
+    else cam[k]=camT[k];
+  }
+  if (Math.abs(gapTarget-gap)>.001){ gap+=(gapTarget-gap)*(reduceMotion?1:.12); moving=true; }
+  if (sliceView.t<1){ sliceView.t=Math.min(1, sliceView.t+(reduceMotion?1:.07)); moving=true; }
+  if (!reduceMotion && state.view==='stack' && !state.selected && performance.now()-interactedAt>6000){
+    camT.theta+=.0008; moving=true;
+  }
+  if (moving||needsDraw){ draw(); needsDraw=false; }
+}
+tick();
+
+/* ================= interaction ================= */
+let drag=null;
+cv.addEventListener('pointerdown', ev=>{
+  drag={x:ev.clientX,y:ev.clientY,theta:cam.theta,phi:cam.phi,px:sliceView.px,py:sliceView.py,moved:false};
+  cv.setPointerCapture(ev.pointerId); cv.classList.add('dragging');
+  interactedAt=performance.now();
+});
+cv.addEventListener('pointermove', ev=>{
+  if (drag){
+    const dx=ev.clientX-drag.x, dy=ev.clientY-drag.y;
+    if (Math.abs(dx)+Math.abs(dy)>3) drag.moved=true;
+    if (state.view==='slices'){ sliceView.px=drag.px+dx; sliceView.py=drag.py+dy; }
+    else {
+      camT.theta=cam.theta=drag.theta-dx*.0052;
+      camT.phi=cam.phi=Math.max(.24,Math.min(1.2,drag.phi+dy*.0042));
+    }
+    needsDraw=true;
+  } else {
+    const n=pickAt(ev.clientX,ev.clientY);
+    if ((n&&n.id)!==hover){ hover=n?n.id:null; needsDraw=true; }
+    cv.style.cursor=n?'pointer':'grab';
+    tip(n,ev.clientX,ev.clientY);
+  }
+  interactedAt=performance.now();
+});
+cv.addEventListener('pointerup', ev=>{
+  cv.classList.remove('dragging');
+  if (drag&&!drag.moved){
+    const n=pickAt(ev.clientX,ev.clientY);
+    if (n) select(n.id); else if (state.selected) select(null);
+  }
+  drag=null;
+});
+cv.addEventListener('pointerleave', ()=>{ hover=null; tip(null); needsDraw=true; });
+cv.addEventListener('wheel', ev=>{
+  ev.preventDefault();
+  if (state.view==='slices') sliceView.zoom=Math.max(.5,Math.min(4,sliceView.zoom*Math.exp(-ev.deltaY*.0014)));
+  else camT.rho=cam.rho=Math.max(1.6,Math.min(6.5,cam.rho*Math.exp(ev.deltaY*.0014)));
+  interactedAt=performance.now(); needsDraw=true;
+},{passive:false});
+addEventListener('keydown', ev=>{
+  if (ev.target.tagName==='INPUT'){ if(ev.key==='Escape') ev.target.blur(); return; }
+  if (state.view==='slices'){
+    if (ev.key==='ArrowUp'){ stepSlice(1); }
+    else if (ev.key==='ArrowDown'){ stepSlice(-1); }
+    else if (ev.key==='Escape'){ select(null); closeSheets(); return; }
+    else if (ev.key==='/'){ ev.preventDefault(); document.getElementById('search').focus(); return; }
+    else return;
+    interactedAt=performance.now(); return;
+  }
+  if (ev.key==='ArrowLeft'){ camT.theta-=.09; }
+  else if (ev.key==='ArrowRight'){ camT.theta+=.09; }
+  else if (ev.key==='ArrowUp'){ camT.phi=Math.min(1.2,camT.phi+.06); }
+  else if (ev.key==='ArrowDown'){ camT.phi=Math.max(.24,camT.phi-.06); }
+  else if (ev.key==='Escape'){ select(null); closeSheets(); return; }
+  else if (ev.key==='/'){ ev.preventDefault(); document.getElementById('search').focus(); return; }
+  else return;
+  interactedAt=performance.now(); needsDraw=true;
+});
+function pickAt(cx,cy){
+  const b=cv.getBoundingClientRect();
+  const mx=cx-b.left,my=cy-b.top;
+  let best=null,bd=1e9;
+  for (const p of drawPickList){
+    const d=(p.sx-mx)**2+(p.sy-my)**2;
+    if (d>p.r*p.r*2.8) continue;
+    const score=d-p.pri*400;                       // threads & full dots beat receded singles
+    if (score<bd){ bd=score; best=p; }
+  }
+  return best;
+}
+function tip(n,cx,cy){
+  let t=document.querySelector('.gtip');
+  if (!n){ t?.remove(); return; }
+  if (!t){ t=document.createElement('div'); t.className='gtip'; document.body.appendChild(t); }
+  const e=byId[n.id];
+  t.innerHTML=`<div class="tt-name">${esc(e.codename)}</div>
+    <div class="tt-sub">${e.n_channels}/${CHANNELS.length} layers · ${implCount(e)} mechanism · ${TIERS[tierOf(e,state.ctx)].label}</div>`;
+  t.style.left=Math.min(cx+14,innerWidth-240)+'px';
+  t.style.top=(cy+12)+'px';
+}
+
+/* ================= fly-to + selection ================= */
+function flyTo(e){
+  const P=LAYOUT[e.id];
+  // pivot-translate + dolly ONLY — azimuth stays user-owned, so "rotation
+  // carries no meaning" holds by construction (never yaw toward a selection)
+  camT.phi=Math.max(.40, camT.phi>.9?.55:camT.phi);  // legibility floor, no top-down select view
+  camT.rho=2.5;
+  camT.tx=P.x*.55; camT.tz=P.z*.55;                  // partial recenter — the stack stays in frame
+  if (reduceMotion){ Object.assign(cam,camT); }
+}
+function flyHome(){
+  camT.tx=0; camT.tz=0; camT.rho=HOME.rho; camT.phi=HOME.phi;
+  if (reduceMotion) Object.assign(cam,camT);
+}
+function select(id){
+  const was=state.selected;
+  state.selected=id;
+  hover=null; tip(null);
+  if (state.view==='stack'){ if (id) flyTo(byId[id]); else if (was) flyHome(); }
+  renderPanel(); writeURL(); needsDraw=true;
+  interactedAt=performance.now();
+}
+
+/* ================= dossier panel ================= */
+const GA={start:-90,span:44,gap:16};
+const segAngles=i=>{const a0=GA.start+i*(GA.span+GA.gap)+GA.gap/2;return [a0,a0+GA.span]};
+function arcPath(cx,cy,r,a0,a1){
+  const p=a=>[cx+r*Math.cos(a*Math.PI/180),cy+r*Math.sin(a*Math.PI/180)];
+  const [x0,y0]=p(a0),[x1,y1]=p(a1);
+  return `M${x0.toFixed(2)} ${y0.toFixed(2)} A${r} ${r} 0 0 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;
+}
+function glyphSVG(e,sizePx){
+  const r=sizePx/2-4,c=sizePx/2;
+  let segs='';
+  CHANNELS.forEach((ch,i)=>{
+    const [a0,a1]=segAngles(i);
+    const seen=e.channels.includes(ch.key), st=stanceOf[e.id][ch.key];
+    segs+=`<path d="${arcPath(c,c,r,a0,a1)}" stroke="${seen?`var(--ch-${i})`:'currentColor'}"
+      stroke-width="${seen?(st==='implicates'?3.2:2):1}" stroke-linecap="round" fill="none"
+      opacity="${seen?(st==='implicates'?1:.5):.15}"/>`;
+  });
+  const anchor=e.flags&&e.flags.on_watchlist?`<circle cx="${c}" cy="${c}" r="2.8" fill="var(${TIERS[tierOf(e,state.ctx)].v})"/>`
+    :`<circle cx="${c}" cy="${c}" r="2.2" fill="none" stroke="currentColor" opacity=".35"/>`;
+  return `<svg width="${sizePx}" height="${sizePx}" viewBox="0 0 ${sizePx} ${sizePx}" role="img"
+    aria-label="${esc(e.codename)}: ${e.n_channels} of ${CHANNELS.length} layers">${segs}${anchor}</svg>`;
+}
+const tierChip=t=>{const T=TIERS[t];return `<span class="tier ${T.dashed?'dashed':''}"
+  style="color:var(${T.v});border-color:color-mix(in srgb,var(${T.v}) 55%,transparent)">
+  <span aria-hidden="true">${T.icon}</span>${T.label}</span>`};
+const refChip=r=>`<button class="ref" data-ref="${esc(r)}">${esc(r)}</button>`;
+
+const NEIGH_CAP=14;
+function renderPanel(){
+  const el=document.getElementById('dossier');
+  if (!state.selected){ el.classList.remove('open'); el.setAttribute('aria-hidden','true'); return; }
+  const e=byId[state.selected], t=tierOf(e,state.ctx);
+  const ns=(neighbors[e.id]||[]).slice().sort((a,b)=>
+    (b.edge.sign_conflict?1:0)-(a.edge.sign_conflict?1:0) ||
+    b.edge.n_channels-a.edge.n_channels ||
+    byId[a.other].codename.localeCompare(byId[b.other].codename));
+  const shown=ns.slice(0,NEIGH_CAP);
+  const strands=e.verdict.strands.slice().sort((a,b)=>CH_INDEX[a.channel]-CH_INDEX[b.channel]);
+  const impl=implCount(e);
+  el.innerHTML=`
+    <button class="close" aria-label="Close dossier">×</button>
+    <div class="d-head">${glyphSVG(e,62)}
+      <div><h2>${esc(e.codename)} <span class="id">${e.id}</span></h2>${tierChip(t)}</div></div>
+    <p class="d-sum">${esc(e.verdict.summary||'')}</p>
+    <div class="d-meta">
+      <span class="flagchip">${e.n_channels}/${CHANNELS.length} layers</span>
+      <span class="flagchip">${impl} mechanism · ${strands.length-impl} context</span>
+      ${e.flags&&e.flags.on_watchlist?`<span class="flagchip">watchlist${e.flags.watchlist_class?' · '+esc(e.flags.watchlist_class):''}</span>`:''}
+      ${e.flags&&e.flags.physical_evidence?`<span class="flagchip">physical evidence</span>`:''}
+      ${(e.provenance||[]).slice(0,4).map(refChip).join('')}
+    </div>
+    <div class="d-sec"><h3>How it decided</h3>
+      <p class="sub">A layer that only places the gene in a <em>context</em> (no direction) never raises a verdict. Tiers here are a provisional derived rule.</p>
+      ${strands.map(s=>`<div class="strand">
+        <span class="rail" style="background:var(--ch-${CH_INDEX[s.channel]})"></span>
+        <div><h4><span style="color:var(--ch-${CH_INDEX[s.channel]})">${esc(CHANNELS[CH_INDEX[s.channel]].label||s.channel)}</span>
+          <span class="stance ${s.stance}">${({implicates:'mechanism',notes:'context'}[s.stance]||s.stance)}</span></h4>
+          <p>${esc(s.finding)}</p>${refChip(s.source)}</div></div>`).join('')}
+    </div>
+    <div class="d-sec"><h3>Relationships</h3>
+      <p class="sub">${ns.length} link${ns.length!==1?'s':''} · anomalies first, then by how many layers back each.</p>
+      <div class="rel-legend" aria-label="What the relationship marks mean">
+        <span><span class="sg">→</span>direction</span>
+        <span><span class="sg">+</span>activates</span>
+        <span><span class="sg">-</span>represses</span>
+        <span><span class="sg">·</span>association (no sign)</span>
+        <span><span class="sg fb">⇄</span>feedback loop</span>
+        <span><span class="sw"></span>evidence layers</span>
+      </div>
+      ${shown.map(({edge,other})=>{const o=byId[other];return `<div class="neigh">
+        <span class="etype">${esc(edge.type)}${edge.sign_conflict?'':edge.directed?(edge.a===e.id?' →':' ←'):''}</span>
+        <span class="sign ${edge.sign_conflict?'conflict':''}">${edge.sign_conflict?'⇄':esc(edge.sign||'·')}</span>
+        <button data-sel="${o.id}">${esc(o.codename)}</button>
+        ${edge.sign_conflict?'<span class="flagchip" style="color:var(--t-im)">feedback loop</span>':''}
+        <span class="lch">${edge.channels.map(k=>`<i style="background:var(--ch-${CH_INDEX[k]})" title="${esc(k)}"></i>`).join('')}</span>
+      </div>${(edge.sign_conflict&&edge.directions&&edge.directions.length)?`<div class="edgedirs">${edge.directions.map(d=>`<div class="edgedir"><span class="sign ${d.sign==='±'?'conflict':''}">${esc(d.sign)}</span><span><b>${esc((byId[d.from]||{}).codename||d.from)}</b> ${esc(d.verb)} <b>${esc((byId[d.to]||{}).codename||d.to)}</b> · <span class="esrc">${d.sources.map(esc).join(' · ')}</span></span></div>`).join('')}</div>`:''}`}).join('')||'<p class="sub">No recorded relationships.</p>'}
+      ${ns.length>NEIGH_CAP?`<p class="sub" style="margin-top:8px"><button id="allneigh" style="color:var(--accent-ink);font-weight:600">…and ${ns.length-NEIGH_CAP} more — open the entity table</button></p>`:''}
+    </div>`;
+  el.classList.add('open'); el.setAttribute('aria-hidden','false');
+  el.querySelector('.close').addEventListener('click',()=>select(null));
+  el.querySelectorAll('[data-sel]').forEach(b=>b.addEventListener('click',()=>select(b.dataset.sel)));
+  el.querySelector('#allneigh')?.addEventListener('click',()=>document.getElementById('tabletoggle').click());
+}
+document.addEventListener('click', ev=>{
+  const btn=ev.target.closest('.ref');
+  document.querySelector('.popover')?.remove();
+  if (!btn) return;
+  const r=REFS[btn.dataset.ref];
+  const pop=document.createElement('div'); pop.className='popover';
+  pop.innerHTML=r?`<div class="pk">${esc(r.kind||'source')}</div><div class="pc">${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener" style="color:var(--accent)">${esc(r.citation||btn.dataset.ref)} ↗</a>`:esc(r.citation||btn.dataset.ref)}</div>
+    <div class="pnote">${r.access==='public'?'Public source — opens the original record.':'Access: '+esc(r.access||'unknown')}</div>`
+    :`<div class="pk">source</div><div class="pc">${esc(btn.dataset.ref)}</div>
+    <div class="pnote">Placeholder in this toy — resolves publicly in production.</div>`;
+  document.body.appendChild(pop);
+  const b=btn.getBoundingClientRect();
+  pop.style.left=Math.min(b.left,innerWidth-pop.offsetWidth-12)+'px';
+  pop.style.top=Math.min(b.bottom+6,innerHeight-pop.offsetHeight-10)+'px';
+});
+
+/* ================= rails & controls ================= */
+function renderRail(){
+  const el=document.getElementById('layerrail');
+  el.innerHTML='<div class="lr-head">layers · top of stack</div>'+
+    CHANNELS.slice().reverse().map(c=>{
+      const i=CH_INDEX[c.key];
+      return `<button class="lr-chip" data-ch="${c.key}" aria-pressed="${!state.muted.has(c.key)}">
+        <span class="dot" style="background:var(--ch-${i})"></span>${esc(c.label||c.key)}
+        <span class="n">${planeMembers[i].length}</span></button>`;
+    }).join('')+'<div class="lr-head" style="padding-top:2px">base · broad coverage</div>';
+  el.querySelectorAll('[data-ch]').forEach(b=>b.addEventListener('click',()=>{
+    const k=b.dataset.ch;
+    if (state.view==='slices'){                      // in slices view the rail navigates
+      sliceView.prev=state.slice; sliceView.t=reduceMotion?1:0;
+      state.slice=CH_INDEX[k];
+      updateSlicebar(); writeURL(); needsDraw=true;
+      return;
+    }
+    state.muted.has(k)?state.muted.delete(k):state.muted.add(k);
+    if (state.muted.size===CHANNELS.length) state.muted.clear();
+    renderRail(); writeURL(); needsDraw=true;
+  }));
+}
+renderRail();
+document.getElementById('viewctl').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+  state.view = b.dataset.mode==='slices' ? 'slices' : 'stack';
+  updateSlicebar(); writeURL(); needsDraw=true;
+}));
+document.getElementById('sliceup').addEventListener('click',()=>stepSlice(1));
+document.getElementById('slicedown').addEventListener('click',()=>stepSlice(-1));
+document.getElementById('singlesctl').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+  state.singles=b.dataset.mode;
+  document.getElementById('singlesctl').querySelectorAll('button').forEach(x=>
+    x.setAttribute('aria-pressed', x.dataset.mode===state.singles));
+  writeURL(); needsDraw=true;
+}));
+document.getElementById('threadsctl').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+  state.threads=b.dataset.mode;
+  document.getElementById('threadsctl').querySelectorAll('button').forEach(x=>
+    x.setAttribute('aria-pressed', x.dataset.mode===state.threads));
+  writeURL(); needsDraw=true;
+}));
+document.getElementById('threadsctl').querySelectorAll('button').forEach(x=>
+  x.setAttribute('aria-pressed', x.dataset.mode===state.threads));
+document.getElementById('spreadbtn').addEventListener('click',ev=>{
+  state.spread=!state.spread;
+  gapTarget=state.spread?0.6:0.38;
+  ev.currentTarget.setAttribute('aria-pressed',state.spread);
+});
+document.getElementById('homebtn').addEventListener('click',()=>{
+  Object.assign(camT,HOME);
+  if (reduceMotion) Object.assign(cam,HOME);
+  gapTarget=.38; state.spread=false;
+  document.getElementById('spreadbtn').setAttribute('aria-pressed','false');
+  interactedAt=performance.now(); needsDraw=true;
+});
+const minchEl=document.getElementById('minch');
+minchEl.max=NMAX; minchEl.value=state.minch;
+const minchLabel=()=>{document.getElementById('minchval').textContent=state.minch;};
+minchLabel();
+minchEl.addEventListener('input',()=>{ state.minch=+minchEl.value; minchLabel(); writeURL(); needsDraw=true; });
+
+/* search */
+const searchEl=document.getElementById('search'), dropEl=document.getElementById('searchdrop');
+let sSel=0,sHits=[];
+function renderDrop(){
+  const q=searchEl.value.trim().toLowerCase();
+  if (!q){ dropEl.hidden=true; return; }
+  sHits=ENTS.filter(e=>e.codename.toLowerCase().includes(q)||e.id.toLowerCase().includes(q))
+    .sort((a,b)=>b.n_channels-a.n_channels).slice(0,8);
+  sSel=Math.min(sSel,Math.max(0,sHits.length-1));
+  dropEl.innerHTML=sHits.map((e,i)=>`<button class="sd-item" aria-selected="${i===sSel}" data-id="${e.id}">
+    <b>${esc(e.codename)}</b><span class="id">${e.id}</span>
+    <span class="nch">${e.n_channels}/${CHANNELS.length}</span></button>`).join('')
+    ||'<p style="padding:10px 12px;color:var(--ink-3);font-size:12px;margin:0">No match.</p>';
+  dropEl.hidden=false;
+  dropEl.querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>{
+    select(b.dataset.id); dropEl.hidden=true; searchEl.value='';
+  }));
+}
+searchEl.addEventListener('input',()=>{sSel=0;renderDrop();});
+searchEl.addEventListener('keydown',ev=>{
+  if (ev.key==='ArrowDown'){sSel=Math.min(sSel+1,sHits.length-1);renderDrop();ev.preventDefault();}
+  if (ev.key==='ArrowUp'){sSel=Math.max(sSel-1,0);renderDrop();ev.preventDefault();}
+  if (ev.key==='Enter'&&sHits[sSel]){select(sHits[sSel].id);dropEl.hidden=true;searchEl.value='';searchEl.blur();}
+  if (ev.key==='Escape'){dropEl.hidden=true;searchEl.blur();}
+});
+document.addEventListener('click',ev=>{ if(!ev.target.closest('.searchwrap')) dropEl.hidden=true; });
+
+/* example chips — computed from the data, never hardcoded ids */
+(function(){
+  const hero=ENTS.filter(e=>e.n_channels===NMAX).sort((a,b)=>implCount(b)-implCount(a))[0];
+  const confEdge=EDGES.find(ed=>ed.sign_conflict);
+  const confEnt=confEdge?[byId[confEdge.a],byId[confEdge.b]].sort((a,b)=>b.n_channels-a.n_channels)[0]:null;
+  const mixed=ENTS.filter(e=>e.n_channels>=4&&new Set(e.verdict.strands.map(s=>s.stance)).size>1)
+    .sort((a,b)=>b.n_channels-a.n_channels)[0];
+  const EX=[
+    hero&&{id:hero.id,label:`${hero.codename} — spans all ${NMAX} layers`},
+    confEnt&&{id:confEnt.id,label:`${confEnt.codename} — a feedback loop`},
+    mixed&&{id:mixed.id,label:`${mixed.codename} — mixed evidence (mechanism + context)`},
+  ].filter(Boolean);
+  document.getElementById('exrow').innerHTML=EX.map(x=>
+    `<button class="exchip" data-id="${x.id}">${esc(x.label)}</button>`).join('');
+  document.querySelectorAll('.exchip').forEach(b=>b.addEventListener('click',()=>select(b.dataset.id)));
+})();
+
+/* context switch: hidden for single-context data */
+(function(){
+  const el=document.getElementById('ctxswitch');
+  if (CTXS.length<2){ el.style.display='none'; return; }
+  el.innerHTML=CTXS.map(c=>`<button data-ctx="${c.id}" aria-pressed="${state.ctx===c.id}">${esc(c.label)}</button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+    state.ctx=b.dataset.ctx;
+    el.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.ctx===state.ctx));
+    renderPanel(); needsDraw=true;
+  }));
+})();
+
+/* a11y table */
+document.getElementById('tabletoggle').addEventListener('click',()=>{
+  closeSheets();
+  const div=document.createElement('div'); div.className='a11y-sheet'; div.setAttribute('role','dialog');
+  div.setAttribute('aria-label','All entities as a table');
+  const rows=ENTS.slice().sort((a,b)=>b.n_channels-a.n_channels||a.codename.localeCompare(b.codename));
+  div.innerHTML=`<button class="close" aria-label="close">×</button>
+    <h3 style="margin:0 0 4px">All ${ENTS.length} entities</h3>
+    <p style="font-size:12px;color:var(--ink-3);margin:0 0 12px">The complete non-visual reading of the stack, single-layer majority included.</p>
+    <table><thead><tr><th>entity</th><th>tier</th><th>layers</th><th>mechanism</th><th>links</th></tr></thead>
+    <tbody>${rows.map(e=>`<tr><td><button data-sel="${e.id}" style="color:var(--accent-ink);font-weight:600">${esc(e.codename)}</button>
+        <span class="mono" style="color:var(--ink-3);font-size:10px">${e.id}</span></td>
+        <td>${TIERS[tierOf(e,state.ctx)].label}</td>
+        <td class="num">${e.n_channels}</td>
+        <td class="num">${implCount(e)}</td>
+        <td class="num">${(neighbors[e.id]||[]).length}</td></tr>`).join('')}</tbody></table>`;
+  document.body.appendChild(div);
+  div.querySelector('.close').addEventListener('click',()=>div.remove());
+  div.querySelectorAll('[data-sel]').forEach(b=>b.addEventListener('click',()=>{select(b.dataset.sel);div.remove();}));
+});
+function closeSheets(){ document.querySelector('.a11y-sheet')?.remove(); }
+
+/* boot */
+new MutationObserver(()=>{ makeSprites(); makePlaneTextures(); needsDraw=true; })
+  .observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>{ makeSprites(); makePlaneTextures(); needsDraw=true; });
+if (state.selected){ renderPanel(); if (state.view==='stack'){ flyTo(byId[state.selected]); if (reduceMotion) Object.assign(cam,camT); } }
+updateSlicebar();
+needsDraw=true;
+
+/* ================= guided intro =================
+   The stack is the first thing seen; the guide walks the ideas one state at a
+   time. Declarative beats (each just sets app state) — the same list a
+   RecordMode would consume. Skippable always; auto-runs on first visit only. */
+(function(){
+  const hero=ENTS.filter(e=>e.n_channels===NMAX).sort((a,b)=>implCount(b)-implCount(a))[0];
+  const confEdge=EDGES.find(ed=>ed.sign_conflict);
+  const confEnt=confEdge?[byId[confEdge.a],byId[confEdge.b]].sort((a,b)=>b.n_channels-a.n_channels)[0]:null;
+  const surv=CHANNELS[0];
+  const baseline=()=>{
+    state.selected=null; renderPanel();
+    state.view='stack'; state.slice=0; state.singles='recede'; state.minch=1; state.muted.clear();
+    document.getElementById('singlesctl').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.mode==='recede'));
+    minchEl.value=1; state.minch=1; minchLabel();
+    renderRail(); updateSlicebar();
+    Object.assign(camT,HOME); if (reduceMotion) Object.assign(cam,HOME);
+    needsDraw=true;
+  };
+  const BEATS=[
+    {t:'The stack', b:`Six layers of evidence, one translucent plane each — broad coverage at the base (${planeMembers[0].length} of ${ENTS.length} entities on ${esc(surv.label||surv.key)}), selective layers above. Every mark is one entity as one layer sees it: ● filled means the layer gives a directed mechanism, ○ hollow means it only places the gene in a context. Drag to orbit — the angle never means anything.`,
+     apply:baseline},
+    {t:'The honest majority', b:`${singlesCount} of ${ENTS.length} entities appear on exactly one layer — the real denominator of this field. Here they all are at full strength. We never delete them…`,
+     apply:()=>{ baseline(); state.singles='full';
+       document.getElementById('singlesctl').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.mode==='full')); }},
+    {t:'…quieted, not removed', b:`…but by default they recede so structure stays readable — except any single-layer entity that has a mechanism layer, which never fades. The counts stay printed on every layer's rim, so nothing is hidden by silence.`,
+     apply:baseline},
+    {t:'One entity, every layer', b:`${esc(hero.codename)} sits at the same position on every slice — identity needs no drawn line. Selecting draws its thread on demand, glides the camera closer without turning it, and composes the dossier: which layers give a mechanism, which only give context, every claim with its source.`,
+     apply:()=>{ baseline(); select(hero.id); }},
+    ...(confEnt?[{t:'A feedback loop', b:`One pair here regulates itself both ways with opposite signs, one gene activating its partner while the partner represses it back. Each direction is independently and consistently sourced, so it is a feedback loop, not a data conflict. It is drawn dashed, never averaged away, never faded out — and it is pinned to the top of ${esc(confEnt.codename)}'s relationships, not buried.`,
+     apply:()=>{ baseline(); select(confEnt.id); }}]:[]),
+    {t:'Slice by slice', b:`Every layer is also a page of its own: its network face-on, nothing receded. Step layers with ▲▼ — entities that stay put across flips are the convergent ones. Two layers carry zero links; the label says so rather than pretending otherwise.`,
+     apply:()=>{ baseline(); state.view='slices'; state.slice=CHANNELS.length-1; updateSlicebar(); needsDraw=true; }},
+    {t:'It’s yours', b:`Search anything, click any dot, solo layers on the right, filter by convergence below. Every state you reach is a shareable URL. Nothing here is staged — every number is computed from the data in this page.`,
+     apply:baseline},
+  ];
+  let gi=-1, card=null;
+  function endGuide(){ gi=-1; card?.remove(); card=null; try{localStorage.setItem('cs_guide_seen','1');}catch(e){} }
+  function showBeat(){
+    const B=BEATS[gi];
+    if (!B){ endGuide(); return; }
+    B.apply();
+    if (!card){ card=document.createElement('div'); card.className='guide-card'; card.setAttribute('role','dialog'); document.body.appendChild(card); }
+    card.innerHTML=`<div class="gstep">guided intro · ${gi+1} / ${BEATS.length}</div>
+      <h3>${B.t}</h3><p>${B.b}</p>
+      <div class="guide-nav">
+        <button class="skip">Skip — let me explore</button><span class="spacer"></span>
+        ${gi>0?'<button class="ghost" data-d="-1">Back</button>':''}
+        <button class="primary" data-d="1">${gi===BEATS.length-1?'Done':'Next'}</button>
+      </div>`;
+    card.querySelector('.skip').addEventListener('click',()=>{ endGuide(); baseline(); });
+    card.querySelectorAll('[data-d]').forEach(x=>x.addEventListener('click',()=>{
+      gi+=+x.dataset.d;
+      if (gi>=BEATS.length){ endGuide(); } else showBeat();
+    }));
+  }
+  window.startGuide=()=>{ gi=0; showBeat(); };
+  document.getElementById('guidebtn').addEventListener('click',()=>startGuide());
+  addEventListener('keydown',ev=>{ if(ev.key==='Escape'&&gi>=0){ endGuide(); baseline(); } });
+  let seen=false; try{ seen=!!localStorage.getItem('cs_guide_seen'); }catch(e){}
+  const deepLinked = state.selected || state.view==='slices' || state.muted.size || state.minch>1;
+  if (!seen && !deepLinked) setTimeout(startGuide, reduceMotion?150:1400);
+})();
+
+</script></body></html>

@@ -1,0 +1,2840 @@
+[
+ {
+  "a": "S02",
+  "b": "S49",
+  "type": "shields",
+  "directed": true,
+  "sign": "conflict",
+  "sign_conflict": true,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-14",
+   "WT-50"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S22",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-66"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S25",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-43",
+   "WT-72"
+  ]
+ },
+ {
+  "a": "S21",
+  "b": "S42",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16",
+   "WT-37"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S50",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-41",
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S10",
+  "b": "S26",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-91"
+  ]
+ },
+ {
+  "a": "S39",
+  "b": "S17",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-36"
+  ]
+ },
+ {
+  "a": "S54",
+  "b": "S09",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-71"
+  ]
+ },
+ {
+  "a": "S05",
+  "b": "S47",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "finance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-34"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S50",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "informants",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-30",
+   "WT-49"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S04",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-56"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S06",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-11",
+   "WT-58"
+  ]
+ },
+ {
+  "a": "S30",
+  "b": "S15",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-88"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S34",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-34",
+   "WT-35"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S36",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-23"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S08",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S37",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-25"
+  ]
+ },
+ {
+  "a": "S27",
+  "b": "S32",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-52",
+   "WT-62"
+  ]
+ },
+ {
+  "a": "S46",
+  "b": "S25",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-34",
+   "WT-52"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S06",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-23",
+   "WT-88"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S49",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-74",
+   "WT-88"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S33",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-20"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S36",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-56"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S28",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-31",
+   "WT-52"
+  ]
+ },
+ {
+  "a": "S07",
+  "b": "S52",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-33"
+  ]
+ },
+ {
+  "a": "S51",
+  "b": "S04",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-58",
+   "WT-95"
+  ]
+ },
+ {
+  "a": "S40",
+  "b": "S51",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-14",
+   "WT-28"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S36",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-41",
+   "WT-82"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S41",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S38",
+  "b": "S06",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-69",
+   "WT-72"
+  ]
+ },
+ {
+  "a": "S54",
+  "b": "S44",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-77"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S26",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "forensics"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-58",
+   "WT-86"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S37",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "forensics",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-16",
+   "WT-70"
+  ]
+ },
+ {
+  "a": "S33",
+  "b": "S15",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-63",
+   "WT-79"
+  ]
+ },
+ {
+  "a": "S10",
+  "b": "S14",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-22"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S07",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses",
+   "surveillance"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-48"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S04",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-55"
+  ]
+ },
+ {
+  "a": "S14",
+  "b": "S02",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-51",
+   "WT-73"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S13",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-12",
+   "WT-70"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S34",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-49"
+  ]
+ },
+ {
+  "a": "S20",
+  "b": "S17",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-20",
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S07",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-40"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S37",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-26",
+   "WT-91"
+  ]
+ },
+ {
+  "a": "S29",
+  "b": "S04",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-10"
+  ]
+ },
+ {
+  "a": "S18",
+  "b": "S34",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-41"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S11",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-59",
+   "WT-84"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S03",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-51",
+   "WT-94"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S33",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-87"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S35",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-38",
+   "WT-79"
+  ]
+ },
+ {
+  "a": "S38",
+  "b": "S31",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-33",
+   "WT-51"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S38",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-13",
+   "WT-19"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S36",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-49"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S52",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-93"
+  ]
+ },
+ {
+  "a": "S10",
+  "b": "S24",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-50"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S44",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-28"
+  ]
+ },
+ {
+  "a": "S33",
+  "b": "S47",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics",
+   "witnesses"
+  ],
+  "n_channels": 4,
+  "tier": "corroborated",
+  "provenance": [
+   "WT-48",
+   "WT-81"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S02",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-47"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S26",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-53",
+   "WT-88"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S25",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-82",
+   "WT-98"
+  ]
+ },
+ {
+  "a": "S37",
+  "b": "S11",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16",
+   "WT-37"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S11",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-37",
+   "WT-86"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S30",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-19",
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S23",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms",
+   "forensics",
+   "surveillance"
+  ],
+  "n_channels": 3,
+  "tier": "corroborated",
+  "provenance": [
+   "WT-60",
+   "WT-75"
+  ]
+ },
+ {
+  "a": "S41",
+  "b": "S45",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-29"
+  ]
+ },
+ {
+  "a": "S49",
+  "b": "S23",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-12"
+  ]
+ },
+ {
+  "a": "S53",
+  "b": "S24",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-76",
+   "WT-95"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S38",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-14"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S27",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-67",
+   "WT-95"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S53",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-55",
+   "WT-76"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S08",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-11",
+   "WT-82"
+  ]
+ },
+ {
+  "a": "S47",
+  "b": "S19",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-57"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S05",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-72"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S18",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-35",
+   "WT-70"
+  ]
+ },
+ {
+  "a": "S22",
+  "b": "S42",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-29",
+   "WT-64"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S44",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms",
+   "surveillance"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-18",
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S31",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-13",
+   "WT-19"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S23",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-92"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S49",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-18",
+   "WT-45"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S28",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-97"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S31",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-39",
+   "WT-43"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S00",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-89"
+  ]
+ },
+ {
+  "a": "S53",
+  "b": "S44",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-12",
+   "WT-23"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S44",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-52"
+  ]
+ },
+ {
+  "a": "S31",
+  "b": "S51",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-78",
+   "WT-95"
+  ]
+ },
+ {
+  "a": "S03",
+  "b": "S23",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-18"
+  ]
+ },
+ {
+  "a": "S45",
+  "b": "S19",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-30"
+  ]
+ },
+ {
+  "a": "S26",
+  "b": "S30",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-42",
+   "WT-91"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S11",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-26",
+   "WT-92"
+  ]
+ },
+ {
+  "a": "S53",
+  "b": "S17",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-39",
+   "WT-93"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S30",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-42",
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S25",
+  "b": "S24",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-25"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S25",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-57"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S51",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "finance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-28",
+   "WT-83"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S28",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-25",
+   "WT-65"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S17",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-45",
+   "WT-51"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S12",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-18"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S21",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S35",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-47"
+  ]
+ },
+ {
+  "a": "S51",
+  "b": "S28",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-78"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S17",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-11",
+   "WT-36"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S00",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-49",
+   "WT-78"
+  ]
+ },
+ {
+  "a": "S49",
+  "b": "S51",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-42",
+   "WT-89"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S32",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-49",
+   "WT-55"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S38",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16"
+  ]
+ },
+ {
+  "a": "S34",
+  "b": "S19",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-29"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S25",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-36",
+   "WT-78"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S20",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-38",
+   "WT-70"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S52",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-55"
+  ]
+ },
+ {
+  "a": "S00",
+  "b": "S09",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-88"
+  ]
+ },
+ {
+  "a": "S28",
+  "b": "S54",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-98"
+  ]
+ },
+ {
+  "a": "S27",
+  "b": "S42",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-79",
+   "WT-86"
+  ]
+ },
+ {
+  "a": "S32",
+  "b": "S02",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-86"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S09",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-34",
+   "WT-70"
+  ]
+ },
+ {
+  "a": "S25",
+  "b": "S03",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-33"
+  ]
+ },
+ {
+  "a": "S41",
+  "b": "S50",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-18",
+   "WT-33"
+  ]
+ },
+ {
+  "a": "S45",
+  "b": "S21",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-64"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S41",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-19",
+   "WT-40"
+  ]
+ },
+ {
+  "a": "S54",
+  "b": "S03",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-22"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S14",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-97"
+  ]
+ },
+ {
+  "a": "S31",
+  "b": "S04",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-81"
+  ]
+ },
+ {
+  "a": "S27",
+  "b": "S24",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-45",
+   "WT-90"
+  ]
+ },
+ {
+  "a": "S13",
+  "b": "S44",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-26"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S22",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "finance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-11"
+  ]
+ },
+ {
+  "a": "S23",
+  "b": "S19",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-57",
+   "WT-64"
+  ]
+ },
+ {
+  "a": "S26",
+  "b": "S17",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-63",
+   "WT-75"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S18",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-38",
+   "WT-71"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S23",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-47",
+   "WT-94"
+  ]
+ },
+ {
+  "a": "S43",
+  "b": "S39",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-85"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S24",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-79"
+  ]
+ },
+ {
+  "a": "S29",
+  "b": "S13",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-13",
+   "WT-85"
+  ]
+ },
+ {
+  "a": "S22",
+  "b": "S52",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "tier": "corroborated",
+  "provenance": [
+   "WT-31",
+   "WT-69"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S42",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-39",
+   "WT-65"
+  ]
+ },
+ {
+  "a": "S44",
+  "b": "S07",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-76"
+  ]
+ },
+ {
+  "a": "S13",
+  "b": "S31",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-20"
+  ]
+ },
+ {
+  "a": "S46",
+  "b": "S30",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-12"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S53",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-62",
+   "WT-78"
+  ]
+ },
+ {
+  "a": "S07",
+  "b": "S49",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-82"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S32",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-41"
+  ]
+ },
+ {
+  "a": "S29",
+  "b": "S03",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses",
+   "forensics",
+   "comms",
+   "surveillance"
+  ],
+  "n_channels": 4,
+  "tier": "corroborated",
+  "provenance": [
+   "WT-28"
+  ]
+ },
+ {
+  "a": "S33",
+  "b": "S11",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-29"
+  ]
+ },
+ {
+  "a": "S07",
+  "b": "S47",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S34",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-20",
+   "WT-37"
+  ]
+ },
+ {
+  "a": "S21",
+  "b": "S31",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-48",
+   "WT-90"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S14",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-65",
+   "WT-93"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S03",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-38",
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S45",
+  "b": "S23",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-11",
+   "WT-57"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S00",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "informants"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-36",
+   "WT-48"
+  ]
+ },
+ {
+  "a": "S37",
+  "b": "S03",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16",
+   "WT-21"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S51",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-21",
+   "WT-61"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S05",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-14",
+   "WT-50"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S50",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16",
+   "WT-60"
+  ]
+ },
+ {
+  "a": "S35",
+  "b": "S08",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-52",
+   "WT-63"
+  ]
+ },
+ {
+  "a": "S52",
+  "b": "S04",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-67",
+   "WT-96"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S53",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-99"
+  ]
+ },
+ {
+  "a": "S35",
+  "b": "S07",
+  "type": "shields",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-25"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S31",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-80"
+  ]
+ },
+ {
+  "a": "S10",
+  "b": "S49",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-30",
+   "WT-93"
+  ]
+ },
+ {
+  "a": "S16",
+  "b": "S28",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-71"
+  ]
+ },
+ {
+  "a": "S25",
+  "b": "S20",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-62",
+   "WT-83"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S51",
+  "type": "tipped_off",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "comms",
+   "surveillance"
+  ],
+  "n_channels": 2,
+  "tier": "supported",
+  "provenance": [
+   "WT-65"
+  ]
+ },
+ {
+  "a": "S04",
+  "b": "S35",
+  "type": "rivals",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-25",
+   "WT-72"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S43",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "informants"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-30",
+   "WT-82"
+  ]
+ },
+ {
+  "a": "S12",
+  "b": "S51",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-78"
+  ]
+ },
+ {
+  "a": "S22",
+  "b": "S07",
+  "type": "rivals",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-51",
+   "WT-98"
+  ]
+ },
+ {
+  "a": "S08",
+  "b": "S38",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-55"
+  ]
+ },
+ {
+  "a": "S24",
+  "b": "S04",
+  "type": "pays",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-59"
+  ]
+ },
+ {
+  "a": "S02",
+  "b": "S39",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "finance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-16",
+   "WT-64"
+  ]
+ },
+ {
+  "a": "S23",
+  "b": "S41",
+  "type": "shields",
+  "directed": true,
+  "sign": "-",
+  "sign_conflict": false,
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-37",
+   "WT-54"
+  ]
+ },
+ {
+  "a": "S32",
+  "b": "S17",
+  "type": "handler_of",
+  "directed": true,
+  "sign": "+",
+  "sign_conflict": false,
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-83"
+  ]
+ },
+ {
+  "a": "S42",
+  "b": "S47",
+  "type": "coordinates_with",
+  "directed": false,
+  "sign": "",
+  "sign_conflict": false,
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "tier": "single_channel",
+  "provenance": [
+   "WT-34"
+  ]
+ }
+]

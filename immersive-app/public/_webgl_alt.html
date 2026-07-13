@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pigmentation substrate — immersive multilayer network</title>
+<style>
+  :root{ --ink:#e9eef3; --dim:#8a97a4; --line:#1c2731; --panel:#0b1219; --accent:#6db8cf; }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#05080b;color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+  #scene{position:fixed;inset:0}
+  .ov{position:fixed;z-index:5}
+  #title{top:16px;left:20px;max-width:430px;pointer-events:none}
+  #title .tag{font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.15em;
+    text-transform:uppercase;color:#5f6f7d}
+  #title h1{margin:4px 0 0;font-size:18px;font-weight:700;letter-spacing:-.01em}
+  #title p{margin:5px 0 0;font-size:12px;color:var(--dim);line-height:1.45}
+  #top{top:16px;left:470px;right:20px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  #search{background:rgba(11,18,25,.8);border:1px solid var(--line);color:var(--ink);
+    border-radius:8px;padding:7px 11px;font:inherit;font-size:13px;width:210px;backdrop-filter:blur(6px)}
+  .door{background:rgba(11,18,25,.8);border:1px solid var(--line);color:var(--ink);font:inherit;
+    font-size:12px;padding:7px 11px;border-radius:8px;cursor:pointer;backdrop-filter:blur(6px)}
+  .door:hover{border-color:#36505e;color:#fff}
+  .door b{color:var(--accent);font-weight:600}
+  #legend{position:fixed;bottom:16px;left:20px;background:rgba(11,18,25,.74);border:1px solid var(--line);
+    border-radius:10px;padding:11px 13px;pointer-events:auto;backdrop-filter:blur(7px);max-width:250px}
+  #legend .lrow{display:flex;align-items:center;gap:8px;margin:2px 0;font-size:12px;cursor:pointer;user-select:none}
+  #legend .lrow.off{opacity:.34}
+  #legend .lrow .sw{width:10px;height:10px;border-radius:50%;flex:none}
+  #legend .lrow .ct{margin-left:auto;color:var(--dim);font-size:10.5px;font-variant-numeric:tabular-nums}
+  #legend .key{display:flex;gap:14px;margin:9px 0 2px;font-size:10.5px;color:var(--dim)}
+  #legend .key i{font-style:normal}
+  #legend .dotf{display:inline-block;width:8px;height:8px;border-radius:50%;background:#cfe;vertical-align:-1px;margin-right:4px}
+  #legend .doto{display:inline-block;width:8px;height:8px;border-radius:50%;border:1.5px solid #9ab;vertical-align:-1px;margin-right:4px}
+  #legend .stat{font-size:10.5px;color:var(--dim);margin-top:8px;line-height:1.45;border-top:1px solid var(--line);padding-top:8px}
+  #ctrls{bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;
+    background:rgba(11,18,25,.74);border:1px solid var(--line);border-radius:10px;padding:8px 12px;backdrop-filter:blur(7px)}
+  #ctrls label{font-size:11.5px;color:var(--dim)}
+  #ctrls input[type=range]{width:120px;accent-color:var(--accent)}
+  #ctrls button{background:none;border:1px solid var(--line);color:var(--ink);font:inherit;font-size:11.5px;
+    padding:5px 9px;border-radius:7px;cursor:pointer}
+  #ctrls button:hover{border-color:#36505e}
+  #tip{position:fixed;z-index:8;pointer-events:none;background:#0b1219;border:1px solid var(--line);
+    border-radius:7px;padding:6px 9px;font-size:12px;display:none;max-width:230px;line-height:1.4}
+  #tip b{color:#fff}#tip .t2{color:var(--dim);font-size:11px}
+  #panel{position:fixed;z-index:9;top:0;right:0;height:100%;width:clamp(340px,30vw,460px);
+    background:var(--panel);border-left:1px solid var(--line);transform:translateX(100%);
+    transition:transform .28s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding:22px 22px 60px}
+  #panel.open{transform:none}
+  #panel .close{position:absolute;top:13px;right:15px;cursor:pointer;color:var(--dim);font-size:20px;background:none;border:none}
+  #panel .sub{color:var(--dim);font-size:12px;font-family:ui-monospace,Menlo,monospace}
+  #panel h2{margin:2px 0 2px;font-size:24px}
+  #panel .tier{display:inline-block;margin-top:9px;padding:3px 9px;border-radius:20px;font-size:12px;font-weight:600;border:1px solid}
+  #panel .summary{margin:12px 0 4px;font-size:13.5px;line-height:1.5;color:#c6cfd7}
+  #panel h3{margin:20px 0 8px;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim)}
+  .strand{border-left:3px solid;padding:2px 0 2px 11px;margin:11px 0}
+  .strand .sc{font-weight:600;font-size:13px}
+  .strand .stance{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:5px;margin-left:7px;border:1px solid}
+  .strand .imp{color:#e0a458;border-color:#e0a458}.strand .note{color:#8a97a4;border-color:#334}
+  .strand .f{font-size:12.5px;color:#b2bbc3;margin:4px 0 0;line-height:1.45}
+  .strand a{display:inline-block;margin-top:5px;font-size:11.5px;color:var(--accent);text-decoration:none}
+  .strand a:hover{text-decoration:underline}
+  .flags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .flags span{font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:5px;padding:2px 7px}
+  #loading{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:14px;z-index:20}
+  @media (prefers-reduced-motion: reduce){ #panel{transition:none} }
+</style>
+</head>
+<body>
+<div id="scene"></div>
+<div id="loading">Assembling the substrate…</div>
+<div id="title" class="ov">
+  <div class="tag">pigmentation gene network · real substrate</div>
+  <h1>The harmonized substrate, layer by layer</h1>
+  <p>Each plane is one evidence layer, broad coverage at the base. A gene rises through the layers
+     that carry it — the taller its thread, the more independent lines of evidence <em>converge</em>.</p>
+</div>
+<div id="top" class="ov">
+  <input id="search" placeholder="Search a gene…  (Enter to fly)" list="genelist" autocomplete="off">
+  <datalist id="genelist"></datalist>
+  <button class="door" data-door="core">Fly to <b>MITF</b> — the core column</button>
+  <button class="door" data-door="sparse">A gene on <b>one layer</b></button>
+  <button class="door" data-door="conflict">Where <b>sources disagree</b></button>
+</div>
+<div id="legend"></div>
+<div id="ctrls" class="ov">
+  <label>convergence ≥ <b id="kval">1</b> layer</label>
+  <input type="range" id="kslider" min="1" max="6" value="1" step="1">
+  <button id="reset">reset view</button>
+</div>
+<div id="tip"></div>
+<div id="panel"><button class="close" id="pclose">×</button><div id="pbody"></div></div>
+
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+/* main */
+const IMPLICATING = new Set(["mechanistic","regulon","validation"]);
+const LCOL = { mechanistic:0x35b3a4, regulon:0xe0a45a, validation:0xb083d6,
+               association:0x5f86a0, kegg:0x53b26f, reactome:0x4f83d6 };
+const TIERCOL = { implicated_multichannel:"#e0674a", implicated_anchored:"#e0a45a",
+                  circumstantial:"#c7a96e", cleared:"#7d97a6", decoy_cleared:"#6aa07c" };
+const S = 36, GAP = 15;
+
+fetch("network.json").then(r=>r.json()).then(DB=>{
+  const byId = Object.fromEntries(DB.nodes.map(n=>[n.id,n]));
+  const REFS = DB.references, layerMeta = Object.fromEntries(DB.layers.map(l=>[l.key,l]));
+  // plane order: broad coverage at base (y=0) -> selective at top
+  const cov = {}; DB.chorder.forEach(k=>cov[k]=0);
+  DB.nodes.forEach(n=>n.channels.forEach(c=>cov[c]++));
+  const order = [...DB.chorder].sort((a,b)=>cov[b]-cov[a]);   // base..top
+  const yOf = k => order.indexOf(k) * GAP;
+  const nlayers = order.length, topY = (nlayers-1)*GAP;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x05080b, 0.0022);
+  const camera = new THREE.PerspectiveCamera(48, innerWidth/innerHeight, 1, 5000);
+  const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.75));
+  renderer.setSize(innerWidth, innerHeight);
+  document.getElementById("scene").appendChild(renderer.domElement);
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true; controls.dampingFactor = .09; controls.enablePan = false;
+  controls.minPolarAngle = Math.PI*0.14; controls.maxPolarAngle = Math.PI*0.46;   // elevation clamp
+  controls.minDistance = S*1.3; controls.maxDistance = S*5;
+  controls.target.set(0, topY/2, 0);
+  camera.position.set(0, topY*1.25, S*3.1);
+  const home = {p:camera.position.clone(), t:controls.target.clone()};
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  controls.autoRotate = !reduce; controls.autoRotateSpeed = 0.45;   // gentle idle orbit
+  controls.addEventListener("start", ()=>controls.autoRotate=false);
+
+  // ---- sprite textures: filled glow + hollow ring ----
+  function tex(draw){ const c=document.createElement("canvas"); c.width=c.height=64;
+    const x=c.getContext("2d"); draw(x); const t=new THREE.CanvasTexture(c); t.needsUpdate=true; return t; }
+  const FILL = tex(x=>{ const g=x.createRadialGradient(32,32,0,32,32,32);
+    g.addColorStop(0,"rgba(255,255,255,.92)"); g.addColorStop(.22,"rgba(255,255,255,.42)");
+    g.addColorStop(1,"rgba(255,255,255,0)"); x.fillStyle=g; x.fillRect(0,0,64,64); });
+  const RING = tex(x=>{ x.strokeStyle="rgba(255,255,255,.95)"; x.lineWidth=6;
+    x.beginPath(); x.arc(32,32,20,0,7); x.stroke(); });
+
+  // ---- planes ----
+  const planeGroup={}, planeVisible={};
+  order.forEach((k,i)=>{
+    const g=new THREE.Group(); scene.add(g); planeGroup[k]=g; planeVisible[k]=true;
+    const geo=new THREE.PlaneGeometry(S*2.15,S*2.15);
+    const pm=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:LCOL[k],transparent:true,opacity:.045,side:THREE.DoubleSide,depthWrite:false}));
+    pm.rotation.x=-Math.PI/2; pm.position.y=i*GAP; g.add(pm);
+    const ed=new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:LCOL[k],transparent:true,opacity:.2}));
+    ed.rotation.x=-Math.PI/2; ed.position.y=i*GAP; g.add(ed);
+  });
+
+  // ---- build nodes + threads (rebuildable for the convergence filter) ----
+  const nodePts={};   // layer -> Points (for picking)
+  let threadSolid, threadDash;
+  function build(minK){
+    // clear old node points + threads
+    order.forEach(k=>{ if(nodePts[k]){ planeGroup[k].remove(nodePts[k]); nodePts[k].geometry.dispose(); } });
+    if(threadSolid){ scene.remove(threadSolid); threadSolid.geometry.dispose(); }
+    if(threadDash){ scene.remove(threadDash); threadDash.geometry.dispose(); }
+    const vis = DB.nodes.filter(n=>n.channels.length>=minK);
+    // nodes per layer, stance-styled
+    order.forEach(k=>{
+      const pos=[], ids=[]; const impl=IMPLICATING.has(k);
+      vis.forEach(n=>{ if(!n.channels.includes(k))return; pos.push(n.x*S, yOf(k), n.y*S); ids.push(n.id); });
+      const geo=new THREE.BufferGeometry().setAttribute("position",new THREE.Float32BufferAttribute(pos,3));
+      const mat=new THREE.PointsMaterial({color:LCOL[k], map: impl?FILL:RING, size: impl?3.4:3.0,
+        sizeAttenuation:true, transparent:true, depthWrite:false,
+        opacity: impl?.7:.6, blending: impl?THREE.AdditiveBlending:THREE.NormalBlending});
+      const pts=new THREE.Points(geo,mat); pts.userData={layer:k,ids}; planeGroup[k].add(pts); nodePts[k]=pts;
+    });
+    // threads: per gap — solid between adjacent member planes, dashed across skipped planes
+    const sp=[], dp=[];
+    vis.forEach(n=>{ const idx=n.channels.map(c=>order.indexOf(c)).sort((a,b)=>a-b);
+      for(let j=0;j<idx.length-1;j++){ const a=idx[j], b=idx[j+1];
+        const seg=[n.x*S,a*GAP,n.y*S, n.x*S,b*GAP,n.y*S];
+        (b-a===1?sp:dp).push(...seg); } });
+    threadSolid=new THREE.LineSegments(new THREE.BufferGeometry().setAttribute("position",new THREE.Float32BufferAttribute(sp,3)),
+      new THREE.LineBasicMaterial({color:0xbfe6f2,transparent:true,opacity:.10}));
+    scene.add(threadSolid);
+    const dg=new THREE.BufferGeometry().setAttribute("position",new THREE.Float32BufferAttribute(dp,3));
+    threadDash=new THREE.LineSegments(dg,new THREE.LineDashedMaterial({color:0x8fb0be,transparent:true,opacity:.09,dashSize:1.4,gapSize:1.4}));
+    threadDash.computeLineDistances(); scene.add(threadDash);
+  }
+  build(1);
+
+  // ---- labels for the convergent core (>=4 layers) ----
+  function labelSprite(t){ const c=document.createElement("canvas"),s=2; c.width=256*s;c.height=64*s;
+    const x=c.getContext("2d"); x.scale(s,s); x.font="600 30px system-ui"; x.fillStyle="#e9eff4";
+    x.textAlign="center"; x.textBaseline="middle"; x.fillText(t,128,32);
+    const tx=new THREE.CanvasTexture(c); tx.minFilter=THREE.LinearFilter;
+    const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:tx,transparent:true,depthWrite:false,opacity:.9}));
+    sp.scale.set(13,3.3,1); return sp; }
+  DB.nodes.filter(n=>n.channels.length>=4).forEach(n=>{ const sp=labelSprite(n.label);
+    sp.position.set(n.x*S, topY+3.2, n.y*S); scene.add(sp); });
+
+  // ---- legend (computed, honest) ----
+  const nMulti = DB.nodes.filter(n=>n.channels.length>=2).length;
+  const leg=document.getElementById("legend");
+  leg.innerHTML =
+    `<div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#5f6f7d;margin-bottom:6px">layers · seen-by count</div>`+
+    order.slice().reverse().map(k=>{ const L=layerMeta[k];
+      return `<div class="lrow" data-k="${k}"><span class="sw" style="background:#${LCOL[k].toString(16).padStart(6,'0')}"></span>${L.label}<span class="ct">${cov[k]}</span></div>`;
+    }).join("")+
+    `<div class="key"><span><i class="dotf"></i>implicates</span><span><i class="doto"></i>notes presence</span></div>`+
+    `<div class="stat">${nMulti} of ${DB.nodes.length} genes are seen by ≥2 layers. Thread height = how many. Rotation carries no meaning. "Seen by," not "confirmed by."</div>`;
+  leg.querySelectorAll(".lrow").forEach(row=>row.addEventListener("click",()=>{
+    const k=row.dataset.k; planeVisible[k]=row.classList.toggle("off")===false;
+    planeGroup[k].visible=planeVisible[k]; }));
+
+  // datalist for search
+  document.getElementById("genelist").innerHTML =
+    DB.nodes.slice().sort((a,b)=>b.channels.length-a.channels.length).map(n=>`<option value="${n.label}">`).join("");
+
+  // ---- picking ----
+  const ray=new THREE.Raycaster(); ray.params.Points.threshold=1.5;
+  const mouse=new THREE.Vector2(), tip=document.getElementById("tip");
+  function pick(ev){ mouse.x=(ev.clientX/innerWidth)*2-1; mouse.y=-(ev.clientY/innerHeight)*2+1;
+    ray.setFromCamera(mouse,camera); let best=null,bd=1e9;
+    order.forEach(k=>{ if(!planeGroup[k].visible||!nodePts[k])return;
+      const h=ray.intersectObject(nodePts[k]); if(h.length&&h[0].distanceToRay<bd){bd=h[0].distanceToRay;best={k,i:h[0].index};} });
+    return best; }
+  renderer.domElement.addEventListener("mousemove",ev=>{ const b=pick(ev);
+    if(b){ const n=byId[nodePts[b.k].userData.ids[b.i]]; tip.style.display="block";
+      tip.style.left=(ev.clientX+14)+"px"; tip.style.top=(ev.clientY+14)+"px";
+      tip.innerHTML=`<b>${n.label}</b> · seen by ${n.channels.length}/6 layers<br><span class="t2">${n.tier.replace(/_/g,' ')} — click for dossier</span>`;
+      renderer.domElement.style.cursor="pointer";
+    } else { tip.style.display="none"; renderer.domElement.style.cursor="grab"; } });
+  renderer.domElement.addEventListener("click",ev=>{ const b=pick(ev); if(b) openPanel(byId[nodePts[b.k].userData.ids[b.i]]); });
+
+  // ---- dossier ----
+  const panel=document.getElementById("panel"), pbody=document.getElementById("pbody");
+  function openPanel(n){ const col=TIERCOL[n.tier]||"#8a97a4";
+    const strands=n.strands.map(s=>{ const r=REFS[s.src];
+      const link=r&&r.url?`<a href="${r.url}" target="_blank" rel="noopener">${r.citation} ↗</a>`:(r?r.citation:s.src);
+      const L=layerMeta[s.c];
+      return `<div class="strand" style="border-color:#${(LCOL[s.c]||0x334).toString(16).padStart(6,'0')}">
+        <span class="sc">${L?L.label:s.c}</span><span class="stance ${s.st==='implicates'?'imp':'note'}">${s.st}</span>
+        <div class="f">${s.f}</div>${link}</div>`; }).join("");
+    const fl=[]; if(n.flags.on_watchlist)fl.push("OMIM disease gene"); if(n.flags.physical_evidence)fl.push("melanocyte proteome"); if(n.flags.field_flagged)fl.push("CRISPR melanin hit");
+    pbody.innerHTML=`<div class="sub">gene</div><h2>${n.label}</h2>
+      <span class="tier" style="color:${col};border-color:${col}">${n.tier.replace(/_/g,' ')}</span>
+      <p class="summary">${n.summary}</p><div class="flags">${fl.map(f=>`<span>${f}</span>`).join("")}</div>
+      <h3>How it decided · ${n.strands.filter(s=>s.st==='implicates').length} implicate, ${n.strands.filter(s=>s.st!=='implicates').length} note</h3>${strands}`;
+    panel.classList.add("open");
+    flyTo(n);
+  }
+  document.getElementById("pclose").addEventListener("click",()=>panel.classList.remove("open"));
+
+  // ---- camera fly-to ----
+  function flyTo(n){ controls.autoRotate=false; const tgt=new THREE.Vector3(n.x*S, topY/2, n.y*S);
+    const p=new THREE.Vector3(n.x*S, topY*1.15, n.y*S + S*2.0);
+    if(reduce){ controls.target.copy(tgt); camera.position.copy(p); controls.update(); return; }
+    const t0=performance.now(), dur=750, t1=controls.target.clone(), c1=camera.position.clone();
+    (function anim(t){ const u=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-u,3);
+      controls.target.lerpVectors(t1,tgt,e); camera.position.lerpVectors(c1,p,e); controls.update();
+      if(u<1) requestAnimationFrame(anim); })(t0);
+  }
+  const doors={ core:"MITF",
+    sparse:(DB.nodes.filter(n=>n.channels.length===1)[0]||{}).id,
+    conflict:(DB.edges.find(e=>e.sign==="conflict")||{}).a };
+  document.querySelectorAll(".door").forEach(b=>b.addEventListener("click",()=>{
+    const id=doors[b.dataset.door]; if(id&&byId[id]) openPanel(byId[id]); }));
+  document.getElementById("search").addEventListener("keydown",ev=>{ if(ev.key!=="Enter")return;
+    const v=ev.target.value.trim().toUpperCase(); const n=DB.nodes.find(x=>x.label.toUpperCase()===v);
+    if(n) openPanel(n); });
+
+  // ---- convergence slider ----
+  const ks=document.getElementById("kslider"), kv=document.getElementById("kval");
+  ks.addEventListener("input",()=>{ kv.textContent=ks.value; build(+ks.value); });
+
+  document.getElementById("reset").addEventListener("click",()=>{ controls.autoRotate=false;
+    camera.position.copy(home.p); controls.target.copy(home.t); controls.update(); });
+  addEventListener("resize",()=>{ camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth,innerHeight); });
+
+  window.__cam=camera; window.__ctrl=controls; window.__open=openPanel; window.__byId=byId;
+  window.__scene=scene; window.__rend=renderer; window.__np=nodePts; window.__order=order;
+  document.getElementById("loading").style.display="none";
+  (function loop(){ requestAnimationFrame(loop); controls.update(); renderer.render(scene,camera); })();
+}).catch(e=>{ document.getElementById("loading").textContent="Failed to load: "+e; });
+</script>
+</body>
+</html>

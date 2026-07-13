@@ -72,7 +72,7 @@ at 0 vs. free).
 |---|---|---|
 | Gene scope | 6 candidate loci | Curated **803-gene pigmentation network** + **53-gene hormone seed** |
 | Comparator | none (pigmentation loci only) | **pigmentation vs. sex-hormone network contrast** — the new claim |
-| Trait | graded plumage dichromatism | scored **hair dichromatism** (Leakey: binary + 5-state trajectory) |
+| Trait | graded plumage dichromatism | scored **hair dichromatism** (compiled from the literature: binary + 5-state trajectory) |
 | Selection test | GLS of dN/dS on dichromatism | HyPhy **RELAX/aBSREL** + **RERconverge** + **SUMSTAT** set test + PGLS |
 | Convergence | cross-tree correlation | **independent origins** (gibbons, cercopithecids, lemurs, cebids) explicit |
 | Level | single-gene | **systems / network / module** level |

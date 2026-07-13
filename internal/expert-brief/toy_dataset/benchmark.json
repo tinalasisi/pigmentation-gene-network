@@ -1,0 +1,251 @@
+{
+ "context": "azure_room",
+ "totals": {
+  "culprits_recovered": "18/18",
+  "innocents_cleared": "7/7",
+  "decoys_not_fooled": "5/5",
+  "errors": 0
+ },
+ "items": [
+  {
+   "id": "S00",
+   "codename": "Alphard",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S01",
+   "codename": "Alnilam",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S02",
+   "codename": "Nashira",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S03",
+   "codename": "Vindem",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S04",
+   "codename": "Antares",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S06",
+   "codename": "Izar",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S08",
+   "codename": "Alioth",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S09",
+   "codename": "Sabik",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S12",
+   "codename": "Rasalgethi",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S13",
+   "codename": "Merak",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S14",
+   "codename": "Acrux",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S15",
+   "codename": "Pollux",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S16",
+   "codename": "Cebalrai",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S19",
+   "codename": "Enif",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S21",
+   "codename": "Dubhe",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S23",
+   "codename": "Spica",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S29",
+   "codename": "Albireo",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_multichannel",
+   "pass": true
+  },
+  {
+   "id": "S35",
+   "codename": "Sadr",
+   "truth": "culprit",
+   "kind": "culprit",
+   "verdict_tier": "implicated_anchored",
+   "pass": true
+  },
+  {
+   "id": "S11",
+   "codename": "Bellatrix",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S25",
+   "codename": "Saiph",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S38",
+   "codename": "Mintaka",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S46",
+   "codename": "Tarazed",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S47",
+   "codename": "Elnath",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S49",
+   "codename": "Capella",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S53",
+   "codename": "Algenib",
+   "truth": "innocent",
+   "kind": "innocent",
+   "verdict_tier": "cleared",
+   "pass": true
+  },
+  {
+   "id": "S07",
+   "codename": "Menkar",
+   "truth": "innocent",
+   "kind": "adversarial_decoy",
+   "verdict_tier": "decoy_cleared",
+   "pass": true
+  },
+  {
+   "id": "S20",
+   "codename": "Regulus",
+   "truth": "innocent",
+   "kind": "adversarial_decoy",
+   "verdict_tier": "decoy_cleared",
+   "pass": true
+  },
+  {
+   "id": "S31",
+   "codename": "Lyra",
+   "truth": "innocent",
+   "kind": "adversarial_decoy",
+   "verdict_tier": "decoy_cleared",
+   "pass": true
+  },
+  {
+   "id": "S45",
+   "codename": "Peacock",
+   "truth": "innocent",
+   "kind": "adversarial_decoy",
+   "verdict_tier": "decoy_cleared",
+   "pass": true
+  },
+  {
+   "id": "S54",
+   "codename": "Thuban",
+   "truth": "innocent",
+   "kind": "adversarial_decoy",
+   "verdict_tier": "decoy_cleared",
+   "pass": true
+  }
+ ]
+}

@@ -5,7 +5,7 @@
 Reads:
   cds/<gene>/<species>.cds.fna    (from 01_fetch_and_extract.sh)
   gene_panel.csv                  (gene,set)
-  leakey_primate_tree.nex         (primate species tree; superset of tips)
+  primate_species_tree.nex         (primate species tree; superset of tips)
   --foreground dichromatic|<file> which tips are the RELAX {Test} branches
   species_states.csv              (species,dichromatism)  <- you provide/confirm
 
@@ -135,7 +135,7 @@ def main():
     ap.add_argument("--cds",default="cds"); ap.add_argument("--aln",default="aln")
     ap.add_argument("--relax",default="relax"); ap.add_argument("--qc",default="qc")
     ap.add_argument("--panel",default="gene_panel.csv")
-    ap.add_argument("--tree",default="leakey_primate_tree.nex")
+    ap.add_argument("--tree",default="primate_species_tree.nex")
     ap.add_argument("--states",default="species_states.csv")
     ap.add_argument("--threads",default="8")
     ap.add_argument("--gene",default=None,help="run only this gene (for SLURM array jobs)")

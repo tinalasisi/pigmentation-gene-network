@@ -1,0 +1,2252 @@
+[
+ {
+  "id": "S00",
+  "codename": "Alphard",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "forensics",
+   "informants"
+  ],
+  "n_channels": 5,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1481"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "5 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-324"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-466"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-773"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-843"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-434"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S01",
+  "codename": "Alnilam",
+  "channels": [
+   "surveillance",
+   "comms",
+   "finance"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1137"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-475"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-220"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-430"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S02",
+  "codename": "Nashira",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "finance"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1392",
+   "CF-1659"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-826"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-551"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-682"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-709"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S03",
+  "codename": "Vindem",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "forensics"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1102",
+   "CF-1590",
+   "CF-1657"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-803"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-385"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-548"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-642"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S04",
+  "codename": "Antares",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1015"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-412"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-569"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-425"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S05",
+  "codename": "Diphda",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1837"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-326"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-509"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S06",
+  "codename": "Izar",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1111"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-847"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-628"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-354"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S07",
+  "codename": "Menkar",
+  "channels": [
+   "surveillance",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1070",
+   "CF-1129",
+   "CF-1233"
+  ],
+  "verdict": {
+   "tier": "decoy_cleared",
+   "summary": "Looks active (physical evidence present) but no corroborating channel implicates \u2014 correctly cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-186"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-470"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S08",
+  "codename": "Alioth",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics",
+   "finance"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": true
+  },
+  "provenance": [
+   "CF-1288"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-474"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-124"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-472"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-793"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S09",
+  "codename": "Sabik",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1366",
+   "CF-1932"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-505"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-698"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-496"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S10",
+  "codename": "Aldeb",
+  "channels": [
+   "surveillance",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": true
+  },
+  "provenance": [
+   "CF-1045",
+   "CF-1376",
+   "CF-1754"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-299"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-856"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S11",
+  "codename": "Bellatrix",
+  "channels": [
+   "comms"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1809",
+   "CF-1966"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-677"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S12",
+  "codename": "Rasalgethi",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "informants"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1338",
+   "CF-1745"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-477"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-499"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-653"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-258"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S13",
+  "codename": "Merak",
+  "channels": [
+   "surveillance",
+   "comms",
+   "informants"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1115",
+   "CF-1509",
+   "CF-1798"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-705"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-676"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-281"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S14",
+  "codename": "Acrux",
+  "channels": [
+   "surveillance",
+   "witnesses",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1510",
+   "CF-1913"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-280"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-191"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-877"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S15",
+  "codename": "Pollux",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1139",
+   "CF-1214"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-565"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-388"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-122"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S16",
+  "codename": "Cebalrai",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics",
+   "finance"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1391",
+   "CF-1640"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-326"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-628"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-159"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-657"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S17",
+  "codename": "Mizar",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1287",
+   "CF-1584",
+   "CF-1725"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-262"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-681"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S18",
+  "codename": "Castor",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1644"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-402"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-122"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S19",
+  "codename": "Enif",
+  "channels": [
+   "surveillance",
+   "comms",
+   "informants"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1547",
+   "CF-1731"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-766"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-532"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-165"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S20",
+  "codename": "Regulus",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1089",
+   "CF-1229",
+   "CF-1927"
+  ],
+  "verdict": {
+   "tier": "decoy_cleared",
+   "summary": "Looks active (physical evidence present) but no corroborating channel implicates \u2014 correctly cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-695"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-659"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S21",
+  "codename": "Dubhe",
+  "channels": [
+   "surveillance",
+   "finance"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1101"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-412"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-658"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S22",
+  "codename": "Atria",
+  "channels": [
+   "surveillance",
+   "finance"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1268",
+   "CF-1931"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-186"
+    },
+    {
+     "channel": "finance",
+     "stance": "notes",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-442"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S23",
+  "codename": "Spica",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1035",
+   "CF-1819"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-183"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-380"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-854"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S24",
+  "codename": "Phecda",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics",
+   "finance"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1592",
+   "CF-1971"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "4 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-207"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-421"
+    },
+    {
+     "channel": "forensics",
+     "stance": "notes",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-186"
+    },
+    {
+     "channel": "finance",
+     "stance": "notes",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-126"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S25",
+  "codename": "Saiph",
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1319",
+   "CF-1687"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-749"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S26",
+  "codename": "Sheliak",
+  "channels": [
+   "surveillance",
+   "forensics"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1005",
+   "CF-1117",
+   "CF-1515"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-769"
+    },
+    {
+     "channel": "forensics",
+     "stance": "notes",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-247"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S27",
+  "codename": "Mira",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1953"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-199"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-863"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S28",
+  "codename": "Markab",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1324",
+   "CF-1537"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-764"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-532"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S29",
+  "codename": "Albireo",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "forensics"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1363",
+   "CF-1740"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-351"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-829"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-325"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-600"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S30",
+  "codename": "Rigel",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1384"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-883"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-634"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S31",
+  "codename": "Lyra",
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1139",
+   "CF-1238",
+   "CF-1877"
+  ],
+  "verdict": {
+   "tier": "decoy_cleared",
+   "summary": "Looks active (physical evidence present) but no corroborating channel implicates \u2014 correctly cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-446"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S32",
+  "codename": "Orion",
+  "channels": [
+   "comms",
+   "forensics"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1137"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-883"
+    },
+    {
+     "channel": "forensics",
+     "stance": "notes",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-570"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S33",
+  "codename": "Vega",
+  "channels": [
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1018",
+   "CF-1701",
+   "CF-1818"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-503"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-458"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S34",
+  "codename": "Sirius",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1822"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-445"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-440"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S35",
+  "codename": "Sadr",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1289"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-788"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-239"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-605"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S36",
+  "codename": "Megrez",
+  "channels": [
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1215",
+   "CF-1615"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-599"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-650"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S37",
+  "codename": "Altair",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "forensics"
+  ],
+  "n_channels": 4,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "priority",
+   "physical_evidence": false,
+   "field_flagged": true
+  },
+  "provenance": [
+   "CF-1331"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "4 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-838"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-174"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-825"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-732"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S38",
+  "codename": "Mintaka",
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1286",
+   "CF-1933"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-147"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S39",
+  "codename": "Draco",
+  "channels": [
+   "surveillance",
+   "witnesses",
+   "finance"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1211",
+   "CF-1739"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-520"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-875"
+    },
+    {
+     "channel": "finance",
+     "stance": "implicates",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-782"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S40",
+  "codename": "Polaris",
+  "channels": [
+   "surveillance",
+   "witnesses",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1221",
+   "CF-1675"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-457"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-103"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-487"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S41",
+  "codename": "Arcturus",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": true
+  },
+  "provenance": [
+   "CF-1110",
+   "CF-1242",
+   "CF-1756"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-191"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-575"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-654"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S42",
+  "codename": "Sheratan",
+  "channels": [
+   "surveillance",
+   "comms",
+   "witnesses",
+   "forensics",
+   "informants"
+  ],
+  "n_channels": 5,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1102",
+   "CF-1581",
+   "CF-1866"
+  ],
+  "verdict": {
+   "tier": "implicated_multichannel",
+   "summary": "5 independent channels converge, and on the watchlist. The confident call.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-755"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-124"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "implicates",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-636"
+    },
+    {
+     "channel": "forensics",
+     "stance": "implicates",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-470"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-827"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S43",
+  "codename": "Cygnus",
+  "channels": [
+   "surveillance",
+   "witnesses",
+   "informants"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1554",
+   "CF-1625"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "3 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-110"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-212"
+    },
+    {
+     "channel": "informants",
+     "stance": "notes",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-531"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S44",
+  "codename": "Scheat",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1679",
+   "CF-1733"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-530"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-249"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S45",
+  "codename": "Peacock",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1051",
+   "CF-1595"
+  ],
+  "verdict": {
+   "tier": "decoy_cleared",
+   "summary": "Looks active (physical evidence present) but no corroborating channel implicates \u2014 correctly cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-351"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-859"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S46",
+  "codename": "Tarazed",
+  "channels": [
+   "witnesses"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1147",
+   "CF-1479",
+   "CF-1931"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-266"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S47",
+  "codename": "Elnath",
+  "channels": [
+   "forensics"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1372"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "forensics",
+     "stance": "notes",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-750"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S48",
+  "codename": "Hamal",
+  "channels": [
+   "surveillance",
+   "comms",
+   "forensics"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1131",
+   "CF-1244",
+   "CF-1492"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "3 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-484"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-800"
+    },
+    {
+     "channel": "forensics",
+     "stance": "notes",
+     "finding": "Trace evidence consistent with direct involvement.",
+     "source": "FR-271"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S49",
+  "codename": "Capella",
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1245",
+   "CF-1285",
+   "CF-1771"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-428"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S50",
+  "codename": "Deneb",
+  "channels": [
+   "surveillance",
+   "comms",
+   "informants"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": true,
+   "watchlist_class": "person_of_interest",
+   "physical_evidence": true,
+   "field_flagged": true
+  },
+  "provenance": [
+   "CF-1104"
+  ],
+  "verdict": {
+   "tier": "implicated_anchored",
+   "summary": "On the watchlist with a curated anchor; corroboration present but thinner.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "implicates",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-309"
+    },
+    {
+     "channel": "comms",
+     "stance": "implicates",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-498"
+    },
+    {
+     "channel": "informants",
+     "stance": "implicates",
+     "finding": "Named by a registered informant as in-scope.",
+     "source": "FR-535"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S51",
+  "codename": "Gacrux",
+  "channels": [
+   "surveillance",
+   "comms",
+   "finance"
+  ],
+  "n_channels": 3,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1136",
+   "CF-1762"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "3 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-641"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-399"
+    },
+    {
+     "channel": "finance",
+     "stance": "notes",
+     "finding": "Fund flow aligns with the payout structure.",
+     "source": "FR-380"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S52",
+  "codename": "Alnitak",
+  "channels": [
+   "comms",
+   "witnesses"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1377"
+  ],
+  "verdict": {
+   "tier": "circumstantial",
+   "summary": "2 channels place this entity in scope; no anchoring watchlist entry.",
+   "strands": [
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-160"
+    },
+    {
+     "channel": "witnesses",
+     "stance": "notes",
+     "finding": "Independently named by a corroborating account.",
+     "source": "FR-582"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S53",
+  "codename": "Algenib",
+  "channels": [
+   "surveillance"
+  ],
+  "n_channels": 1,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": false,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1331",
+   "CF-1896"
+  ],
+  "verdict": {
+   "tier": "cleared",
+   "summary": "Single-channel presence only; nothing corroborating \u2014 cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-415"
+    }
+   ]
+  }
+ },
+ {
+  "id": "S54",
+  "codename": "Thuban",
+  "channels": [
+   "surveillance",
+   "comms"
+  ],
+  "n_channels": 2,
+  "flags": {
+   "on_watchlist": false,
+   "watchlist_class": null,
+   "physical_evidence": true,
+   "field_flagged": false
+  },
+  "provenance": [
+   "CF-1083",
+   "CF-1618",
+   "CF-1711"
+  ],
+  "verdict": {
+   "tier": "decoy_cleared",
+   "summary": "Looks active (physical evidence present) but no corroborating channel implicates \u2014 correctly cleared.",
+   "strands": [
+    {
+     "channel": "surveillance",
+     "stance": "notes",
+     "finding": "Placed at two linked locations on the timeline.",
+     "source": "FR-848"
+    },
+    {
+     "channel": "comms",
+     "stance": "notes",
+     "finding": "Contact pattern matches the coordinating cluster.",
+     "source": "FR-217"
+    }
+   ]
+  }
+ }
+]

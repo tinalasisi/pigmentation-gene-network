@@ -134,6 +134,27 @@ python $REPO/scripts/02b_branch_rates.py --aln aln --out absrel --panel $REPO/co
 ```
 → **paste back `report/branch_rates.csv`** (gene, branch, baseline_omega, absrel_corrected_p,
 selected_flag). This is the "which branches, which genes" layer.
+### Stage A — per-branch ω (aBSREL) — NO origin map needed, run in parallel with C-pooled
+Two arrays exist; both apply the stop-codon/non-triplet cleaning aBSREL requires (stops→`---`,
+trim to triplet, strip `{Test}` tags):
+- `absrel_array.sbatch` — the **9 v3-certified genes** (`--array=1-9`), the focused "who" run.
+- `absrel_full_panel_array.sbatch` — the **full 80-gene panel** (`--array=1-80`), needed for the
+  network-painting view and as RERconverge's per-branch companion.
+```
+# certified 9 (fast):
+WORK=$WORK sbatch --array=1-9  --dependency=afterok:<relax_array_jobid> $REPO/scripts/slurm/absrel_array.sbatch
+# full panel:
+WORK=$WORK sbatch --array=1-80 --dependency=afterok:<relax_array_jobid> $REPO/scripts/slurm/absrel_full_panel_array.sbatch
+# then flatten all aBSREL JSONs to one tidy CSV:
+python $REPO/scripts/02b_branch_rates.py --aln aln --out absrel --panel $REPO/config/gene_panel.csv
+```
+→ **paste back `report/branch_rates.csv`** (gene, branch, baseline_omega, absrel_corrected_p,
+selected_flag). This is the "which branches, which genes" layer — and the layer that **recovers
+all 11 single-tip origins** (each as its own tip branch), which Stage C cannot fit.
+> aBSREL ω can blow up to a huge value on a branch with near-zero synonymous change — that is
+> **undefined (dS≈0), not extreme positive selection**. Flag/drop such branches; read the
+> episodic-selection test (corrected p), not raw ω, on those. (Seen on TFAP2A: *Macaca tonkeana*,
+> *Mandrillus sphinx* — both monochromatic, non-selected.)
 
 ### Stage C — per-origin RELAX (needs `config/origin_assignments.csv`)
 ```
