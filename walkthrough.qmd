@@ -94,7 +94,7 @@ hormone modules is concordant (PGLS β ≈ 0.42, *p* ≈ 1×10⁻⁴; tree-struc
 association scan — dichromatic/monochromatic as case/control, per-lineage ω as the "genotype," the
 phylogeny standing in for the population-structure control of a human GWAS — a single gene surfaces
 as a lead after multiple-testing correction: **AKR1C4**, a sex-hormone-module steroid reductase
-(*p*~BH~ ≈ 0.042, permutation *p* ≈ 5×10⁻⁴). One suggestive candidate at 24 dichromatic origins —
+(*p*~BH~ ≈ 0.046, permutation *p* ≈ 5×10⁻⁴). One suggestive candidate at 24 dichromatic origins —
 a lead to chase on expanded data, not an established locus.
 
 ## The signal is modular, split across two coupled networks
