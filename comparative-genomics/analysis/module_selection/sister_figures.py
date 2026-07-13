@@ -38,75 +38,92 @@ pairs=sorted(pairs,key=fkey)
 fam_disp={"hylobatidae":"Hylobatidae (gibbons)","cercopithecidae":"Cercopithecidae (OW monkeys)",
           "cebidae":"Atelidae/Cebidae (NW monkeys)","lemuridae":"Lemuridae (lemurs)"}
 
-# ---- Figure A: split-cell matrix ----
+# ---- Figure A: split-cell matrix, STACKED as two module panels ----
+# Row layout (species order + family headers) is shared by both panels.
 layout=[]; y=0; fam_hdr=[]; cur=None
 for p in pairs:
     if p["family"]!=cur:
         cur=p["family"]; fam_hdr.append((y,fam_disp.get(cur,cur))); y+=1.1
     layout.append((y,p)); y+=1
-nrow_units=y; ncol=len(cols)
+nrow_units=y
 def tl(x,y,s=0.9): return [(x,y-s/2),(x+s,y-s/2),(x,y+s/2)]
 def tr(x,y,s=0.9): return [(x+s,y-s/2),(x+s,y+s/2),(x,y+s/2)]
-fig,ax=plt.subplots(figsize=(max(12,ncol*0.36+9),nrow_units*0.40+3.2))
-for yy,p in layout:
-    for j,g in enumerate(cols):
-        modc=PIG if gmod.get(g)=="pigmentation" else HOR
-        ax.add_patch(Rectangle((j,yy-0.45),0.9,0.9,facecolor="white",edgecolor="#dedede",lw=0.4,zorder=1))
-        ax.add_patch(Polygon(tl(j,yy),closed=True,facecolor=modc if g in p["sd"] else BLANK,edgecolor="none",zorder=2))
-        # monochromatic sister triangle drawn faded (alpha) so the solid dichromatic triangle stands out
-        ax.add_patch(Polygon(tr(j,yy),closed=True,facecolor=(modc if g in p["sm"] else BLANK),
-                             alpha=(0.32 if g in p["sm"] else 1.0),edgecolor="none",zorder=2))
-        ax.plot([j,j+0.9],[yy+0.45,yy-0.45],color="white",lw=0.6,zorder=3)
-ax.axvline(len(pig_g),color="#333",lw=1.5,zorder=6)
-top=-1.0
-botb=nrow_units-0.1  # y for per-column count strip, just below the last row
-for j,g in enumerate(cols):
-    modc=PIG if gmod.get(g)=="pigmentation" else HOR
-    ax.text(j+0.45,top,g,rotation=90,ha="center",va="bottom",fontsize=5.0,color=modc,fontweight="bold" if rec[g]>=3 else "normal")
-    # per-gene count: number of sister-pairs with the gene selected in dichromat / in mono sister
-    dc=sum(1 for p in pairs if g in p["sd"]); mc=sum(1 for p in pairs if g in p["sm"])
-    ax.text(j+0.45,botb,f"{dc}",ha="center",va="top",fontsize=4.4,color=RED,fontweight="bold")
-    ax.text(j+0.45,botb+0.5,f"{mc}",ha="center",va="top",fontsize=4.4,color=GY)
-ax.text(-0.5,botb,"D",ha="right",va="top",fontsize=4.6,color=RED,fontweight="bold")
-ax.text(-0.5,botb+0.5,"M",ha="right",va="top",fontsize=4.6,color=GY)
-ax.text(ncol+0.5,botb+0.25,"# pairs with\ngene selected",ha="left",va="top",fontsize=4.0,color="#777")
-ax.text(len(pig_g)/2,top-2.4,"PIGMENTATION",ha="center",fontsize=8,color=PIG,fontweight="bold")
-ax.text(len(pig_g)+len(hor_g)/2,top-2.4,"HORMONE",ha="center",fontsize=8,color=HOR,fontweight="bold")
-for yy,p in layout:
-    ax.text(-0.5,yy-0.12,p["dich"].replace("_"," "),ha="right",va="center",fontsize=5.8,color=RED,fontweight="bold",fontstyle="italic")
-    ax.text(-0.5,yy+0.26,f"vs {p['mono'].replace('_',' ')}",ha="right",va="center",fontsize=4.6,color=GY,fontstyle="italic")
-for yy,label in fam_hdr:
-    ax.text(-0.5,yy+0.15,label,ha="right",va="center",fontsize=6.8,fontweight="bold",color="#333")
-    ax.axhline(yy+0.6,color="#ccc",lw=0.6,zorder=0)
-# --- Row-margin counts: genes under selection in the dichromat (D) vs its sister (M), per module ---
-mx=ncol+0.5
-ax.text(mx+0.3,top+0.2,"row totals (genes under selection)",ha="left",va="bottom",fontsize=5.0,color="#333",fontweight="bold")
-ax.text(mx+0.3,top+1.1,"D = dichromat, M = mono sister; P = pigmentation, H = hormone",ha="left",va="bottom",fontsize=4.0,color="#777")
-for yy,p in layout:
-    dP=sum(1 for g in p["sd"] if gmod.get(g)=="pigmentation"); dH=sum(1 for g in p["sd"] if gmod.get(g)=="hormone")
-    mP=sum(1 for g in p["sm"] if gmod.get(g)=="pigmentation"); mH=sum(1 for g in p["sm"] if gmod.get(g)=="hormone")
-    ax.text(mx+0.3,yy,f"D: {dP}P+{dH}H = {dP+dH}     M: {mP}P+{mH}H = {mP+mH}",ha="left",va="center",
-            fontsize=4.8,color=(RED if (dP+dH)>(mP+mH) else ("#333" if (dP+dH)==(mP+mH) else GY)),fontfamily="monospace")
-ax.set_xlim(-4.0,ncol+11.5); ax.set_ylim(nrow_units+2.0,top-3.0)
-ax.set_xticks([]); ax.set_yticks([])
-for s in ax.spines.values(): s.set_visible(False)
-ax.legend(handles=[Patch(fc=PIG,label="pigmentation gene under selection"),Patch(fc=HOR,label="hormone gene under selection"),Patch(fc=BLANK,label="not under selection")],loc="lower right",frameon=False,fontsize=5.6,bbox_to_anchor=(1.0,-0.02))
-kx,ky=ncol-9,top-2.1
-ax.add_patch(Polygon(tl(kx,ky,0.9),closed=True,facecolor=HOR,edgecolor="none"))
-ax.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=HOR,alpha=0.32,edgecolor="none"))
-ax.plot([kx,kx+0.9],[ky+0.45,ky-0.45],color="white",lw=0.6)
-ax.text(kx+1.2,ky,"left = dichromatic taxon (solid)    right = monochromatic sister (faded)",fontsize=5.2,va="center",color="#333")
-ax.text(-0.5,top-4.2,"Selection in each dichromatic taxon vs its closest monochromatic relative, grouped by clade",fontsize=10,fontweight="bold",ha="left")
-ax.text(-0.5,top-3.55,"each cell split diagonally: lower-left = the dichromatic species (solid), upper-right = its nearest monochromatic sister (faded); colored = gene under episodic selection",fontsize=5.6,color="#555",ha="left")
+
+def draw_panel(ax,genes,module_name,modc):
+    """Draw the full 21-row species matrix for ONE module's gene set on `ax`."""
+    ncol=len(genes)
+    for yy,p in layout:
+        for j,g in enumerate(genes):
+            ax.add_patch(Rectangle((j,yy-0.45),0.9,0.9,facecolor="white",edgecolor="#dedede",lw=0.4,zorder=1))
+            ax.add_patch(Polygon(tl(j,yy),closed=True,facecolor=modc if g in p["sd"] else BLANK,edgecolor="none",zorder=2))
+            # monochromatic sister triangle drawn faded so the solid dichromatic triangle stands out
+            ax.add_patch(Polygon(tr(j,yy),closed=True,facecolor=(modc if g in p["sm"] else BLANK),
+                                 alpha=(0.32 if g in p["sm"] else 1.0),edgecolor="none",zorder=2))
+            ax.plot([j,j+0.9],[yy+0.45,yy-0.45],color="white",lw=0.6,zorder=3)
+    top=-1.0
+    botb=nrow_units-0.1  # per-column count strip, just below the last row
+    # gene labels (wider columns -> larger, legible font) + per-gene D/M pair counts
+    for j,g in enumerate(genes):
+        ax.text(j+0.45,top,g,rotation=90,ha="center",va="bottom",fontsize=8.0,color=modc,
+                fontweight="bold" if rec[g]>=3 else "normal")
+        dc=sum(1 for p in pairs if g in p["sd"]); mc=sum(1 for p in pairs if g in p["sm"])
+        ax.text(j+0.45,botb,f"{dc}",ha="center",va="top",fontsize=6.5,color=RED,fontweight="bold")
+        ax.text(j+0.45,botb+0.55,f"{mc}",ha="center",va="top",fontsize=6.5,color=GY)
+    ax.text(-0.5,botb,"D",ha="right",va="top",fontsize=6.8,color=RED,fontweight="bold")
+    ax.text(-0.5,botb+0.55,"M",ha="right",va="top",fontsize=6.8,color=GY)
+    ax.text(ncol+0.3,botb+0.3,"# pairs with\ngene selected",ha="left",va="top",fontsize=5.6,color="#777")
+    # species (row) labels + family headers on the left of EACH panel
+    for yy,p in layout:
+        ax.text(-0.5,yy-0.12,p["dich"].replace("_"," "),ha="right",va="center",fontsize=8.0,color=RED,fontweight="bold",fontstyle="italic")
+        ax.text(-0.5,yy+0.28,f"vs {p['mono'].replace('_',' ')}",ha="right",va="center",fontsize=6.4,color=GY,fontstyle="italic")
+    for yy,label in fam_hdr:
+        ax.text(-0.5,yy+0.15,label,ha="right",va="center",fontsize=8.0,fontweight="bold",color="#333")
+        ax.axhline(yy+0.6,color="#ccc",lw=0.6,zorder=0)
+    # per-pair, this-module row totals in the right margin
+    mx=ncol+0.3
+    ax.text(mx+0.3,top+0.1,f"{module_name} genes under selection",ha="left",va="bottom",fontsize=6.6,color=modc,fontweight="bold")
+    ax.text(mx+0.3,top+1.0,"D = dichromat   M = mono sister",ha="left",va="bottom",fontsize=5.6,color="#777")
+    key="pigmentation" if module_name.lower().startswith("pig") else "hormone"
+    for yy,p in layout:
+        dv=sum(1 for g in p["sd"] if gmod.get(g)==key); mv=sum(1 for g in p["sm"] if gmod.get(g)==key)
+        ax.text(mx+0.3,yy,f"D: {dv}    M: {mv}",ha="left",va="center",fontsize=6.6,
+                color=(RED if dv>mv else ("#333" if dv==mv else GY)),fontfamily="monospace")
+    ax.set_xlim(-6.0,ncol+7.0); ax.set_ylim(nrow_units+1.2,top-2.2)
+    ax.set_xticks([]); ax.set_yticks([])
+    for s in ax.spines.values(): s.set_visible(False)
+    ax.text((ncol)/2,top-1.6,module_name.upper(),ha="center",fontsize=13,color=modc,fontweight="bold")
+    return top
+
+# two stacked panels: pigmentation on top, hormone below; each panel gets full width for its genes
+maxcol=max(len(pig_g),len(hor_g))
+panel_h=nrow_units*0.42
+fig,(axP,axH)=plt.subplots(2,1,figsize=(maxcol*0.62+10,panel_h*2+3.0),
+                           gridspec_kw={"hspace":0.14})
+topP=draw_panel(axP,pig_g,"Pigmentation",PIG)
+topH=draw_panel(axH,hor_g,"Hormone",HOR)
+
+# shared legend + faded-encoding key (top panel), title, totals
+axP.legend(handles=[Patch(fc=PIG,label="pigmentation gene under selection"),
+                    Patch(fc=HOR,label="hormone gene under selection"),
+                    Patch(fc=BLANK,label="not under selection")],
+           loc="lower right",frameon=False,fontsize=7.5,bbox_to_anchor=(1.0,-0.02))
+kx,ky=len(pig_g)-11,topP-1.6
+axP.add_patch(Polygon(tl(kx,ky,0.9),closed=True,facecolor=PIG,edgecolor="none"))
+axP.add_patch(Polygon(tr(kx,ky,0.9),closed=True,facecolor=PIG,alpha=0.32,edgecolor="none"))
+axP.plot([kx,kx+0.9],[ky+0.45,ky-0.45],color="white",lw=0.6)
+axP.text(kx+1.3,ky,"left = dichromatic taxon (solid)    right = monochromatic sister (faded)",fontsize=7.0,va="center",color="#333")
+fig.suptitle("Selection in each dichromatic taxon vs its closest monochromatic relative, grouped by clade",
+             fontsize=15,fontweight="bold",x=0.02,ha="left",y=0.995)
 def _mc(key,mod): return sum(1 for p in pairs for g in p[key] if gmod.get(g)==mod)
 dPa,dHa,mPa,mHa=_mc("sd","pigmentation"),_mc("sd","hormone"),_mc("sm","pigmentation"),_mc("sm","hormone")
 _enr="NOT enriched in dichromats" if (dPa+dHa)<=(mPa+mHa) else "higher in dichromats"
-_tot=(f"Totals across {len(pairs)} pairs: dichromats {dPa+dHa} selection events ({dPa} pigmentation + {dHa} hormone), "
+_tot=(f"Each cell splits diagonally: lower-left = dichromatic species (solid), upper-right = nearest monochromatic sister (faded); colored = gene under episodic selection. "
+      f"Totals across {len(pairs)} pairs: dichromats {dPa+dHa} events ({dPa} pigmentation + {dHa} hormone), "
       f"monochromatic sisters {mPa+mHa} ({mPa} pigmentation + {mHa} hormone) - selection is {_enr}.")
-ax.text(-0.5,top-2.9,_tot,fontsize=5.4,color="#333",ha="left",fontstyle="italic")
-fig.text(0.01,0.004,"aBSREL episodic selection (corrected p<0.05). Bold gene = selected in dichromatic taxon of >=3 pairs. Trachypithecus block shares one sister (T. vetulus). Row margin = per-pair gene counts by module; column margin = # pairs with that gene selected (red=dichromat, grey=mono sister). Marks lineage-specific selection, not proven causation.",fontsize=4.4,color="#777")
-fig.tight_layout(rect=[0,0.02,1,1])
-fig.savefig(f"{base}/fig_sister_pair_contrast.png",dpi=300,bbox_inches="tight"); plt.close(fig)
+fig.text(0.02,0.975,_tot,fontsize=8.0,color="#444",ha="left",fontstyle="italic")
+fig.text(0.01,0.004,"aBSREL episodic selection (corrected p<0.05). Bold gene = selected in dichromatic taxon of >=3 pairs. Trachypithecus block shares one sister (T. vetulus). Column margin = # pairs with that gene selected (red=dichromat D, grey=mono sister M); right margin = per-pair gene counts for this module. Marks lineage-specific selection, not proven causation.",fontsize=6.4,color="#777")
+fig.tight_layout(rect=[0,0.015,1,0.965])
+fig.savefig(f"{base}/fig_sister_pair_contrast.png",dpi=200,bbox_inches="tight"); plt.close(fig)
 
 # ---- Figure B: per-pair network with FIXED layout ----
 se=pd.read_csv(f"{base}/data/string_diff_edges.tsv",sep="\t")

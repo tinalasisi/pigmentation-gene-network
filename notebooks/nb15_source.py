@@ -914,21 +914,22 @@ else:
 # `analysis/module_selection/sister_pairs.csv`, taken from the phenotype tree). Built by
 # `analysis/module_selection/sister_figures.py`.
 #
-# *How to read it.* Rows are dichromatic taxa, grouped by clade (bold clade headers; the small grey
-# line under each taxon names its monochromatic sister). Columns are genes, split into the
-# **pigmentation module (left half, orange)** and the **sex-hormone module (right half, blue)** by
-# the vertical divider. Each cell is split on the diagonal: the **lower-left triangle = the
-# dichromatic species, upper-right triangle = its sister**. A **solid** triangle = that gene is under
-# episodic selection in that taxon; a **faded/pale** triangle = selected in the sister only; an empty
-# grey cell = selected in neither. So a solid-orange lower-left triangle with an empty upper-right is
-# a pigmentation gene selected in the dichromat but not its sister — a lineage-specific difference.
+# *How to read it.* The figure is split into **two stacked panels** so every gene label is legible:
+# the **pigmentation module (top, orange)** and the **sex-hormone module (bottom, blue)**. Both
+# panels share the same rows — dichromatic taxa grouped by clade (bold clade headers; the small grey
+# line under each taxon names its monochromatic sister). Columns are the genes of that module.
+# Each cell is split on the diagonal: the **lower-left triangle = the dichromatic species, upper-right
+# triangle = its sister**. A **solid** triangle = that gene is under episodic selection in that taxon;
+# a **faded/pale** triangle = selected in the sister only; an empty grey cell = selected in neither.
+# So a solid-orange lower-left triangle with an empty upper-right (top panel) is a pigmentation gene
+# selected in the dichromat but not its sister — a lineage-specific difference.
 #
-# *Margins (added for counting).* The **right margin** gives each pair's row totals — the number of
-# genes under selection in the dichromat (D) and in its sister (M), split into pigmentation (P) and
-# hormone (H); the pair is printed in red where the dichromat has more selected genes than its
-# sister. The **bottom margin** gives each gene's column totals — the number of sister-pairs in which
-# that gene is selected in the dichromat (red, top) vs the sister (grey, below). The italic line under
-# the matrix sums these across all 21 pairs.
+# *Margins (added for counting).* In each panel the **right margin** gives that module's per-pair
+# totals — the number of genes under selection in the dichromat (D) and in its sister (M) for that
+# module; the pair is printed in red where the dichromat has more. The **bottom margin** gives each
+# gene's column totals — the number of sister-pairs in which that gene is selected in the dichromat
+# (red, D) vs the sister (grey, M). The italic line under the title sums the two modules across all
+# 21 pairs.
 #
 # *What it shows.* The filled cells do not line up into shared columns: different dichromatic taxa
 # light up different genes, and few genes are selected in a dichromat *and* absent in its sister
