@@ -17,8 +17,18 @@ No network access required.
 ## Outputs
 - `fig_module_balance.png` — diverging bar, 11 origins, −1 (all hormone) .. +1 (all pigmentation)
 - `fig_per_lineage_genes.png` — gene × origin dot-matrix, RELAX-confirmed genes ringed
+- `fig_circular_tree_balance.png` — circular (fan) primate tree, tips colored by module
+  balance and sized by number of selected genes; dichromatic species in red
+- `fig_phylo_heatmap.png` — species tree + gene×species selection matrix (phytools
+  `phylo.heatmap`), hormone-gene block | pigmentation-gene block
 - `module_balance_results.csv` — the metric per origin
 - `opie_analog_results.csv` — Opie 2012 method applied to dichromatism
+
+Regenerate figures:
+```
+python figures.py         # fig_module_balance.png, fig_per_lineage_genes.png
+Rscript tree_figures.R    # fig_circular_tree_balance.png, fig_phylo_heatmap.png
+```
 
 ## Key results
 - **Module balance spans the full range.** One origin sits at each pole —

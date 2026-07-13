@@ -33,7 +33,7 @@ for fam in fam_order:
     hd.append((y,fam_disp[fam]));y+=1
     for _,r in sub.iterrows():
         rows.append((y,r));yt.append(y)
-        yl.append((r.sp.replace("_"," "),r.n));y+=1
+        yl.append((r.sp.replace("_"," "),r.n,r.origin_id));y+=1
     y+=0.4
 fig,ax=plt.subplots(figsize=(8,6.4))
 for yy,r in rows:
@@ -44,9 +44,14 @@ for yy,r in rows:
     elif b>=0.99: ax.text(b*0.88,yy,lbl,va="center",ha="right",fontsize=5.4,color="white",zorder=5)
     else: ax.text(b+(0.035 if b>=0 else -0.035),yy,lbl,va="center",ha="left" if b>=0 else "right",fontsize=5.4)
 ax.axvline(0,color="#444",lw=1,zorder=2)
-for yy,f in hd: ax.text(-1.34,yy,f,fontweight="bold",fontsize=7,va="center")
-for yy,(nm,n) in zip(yt,yl): ax.text(-1.34,yy,f"   {nm}"+(f"  (+{int(n)-1} spp)" if n>1 else ""),fontstyle="italic",fontsize=6,va="center")
-ax.set_ylim(y,-1);ax.set_xlim(-1.42,1.42);ax.set_yticks([])
+for yy,f in hd: ax.text(-1.40,yy,f,fontweight="bold",fontsize=7,va="center")
+for yy,(nm,n,oid) in zip(yt,yl):
+    if n>1:
+        spp=OA[OA.origin_id==oid].species.tolist(); genera=set(s.split("_")[0] for s in spp)
+        lab=f"all {list(genera)[0]} ({int(n)} spp)" if len(genera)==1 else nm+f" +{int(n)-1}"
+    else: lab=nm
+    ax.text(-1.40,yy,f"   {lab}",fontstyle="italic",fontsize=6,va="center")
+ax.set_ylim(y,-1);ax.set_xlim(-1.48,1.42);ax.set_yticks([])
 for s in ["left","right","top"]: ax.spines[s].set_visible(False)
 ax.set_xlabel("<- hormone module          pigmentation module ->",labelpad=6)
 ax.set_xticks([-1,-.5,0,.5,1]);ax.set_xticklabels(["-1","","0","","+1"])
