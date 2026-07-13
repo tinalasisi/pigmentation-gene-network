@@ -1,0 +1,64 @@
+{
+ "contexts": [
+  {
+   "id": "azure_room",
+   "label": "The Azure Room",
+   "anchor": "The reference case \u2014 the fully reconstructed sequence lives here."
+  },
+  {
+   "id": "meridian_vault",
+   "label": "The Meridian Vault",
+   "anchor": "A second, partially-resolved case over the same cast."
+  }
+ ],
+ "cross": [
+  {
+   "id": "S12",
+   "codename": "Rasalgethi",
+   "azure_room": "implicated_multichannel",
+   "meridian_vault": "implicated_anchored"
+  },
+  {
+   "id": "S05",
+   "codename": "Diphda",
+   "azure_room": "circumstantial",
+   "meridian_vault": "circumstantial"
+  },
+  {
+   "id": "S44",
+   "codename": "Scheat",
+   "azure_room": "circumstantial",
+   "meridian_vault": "circumstantial"
+  },
+  {
+   "id": "S31",
+   "codename": "Lyra",
+   "azure_room": "decoy_cleared",
+   "meridian_vault": "circumstantial"
+  },
+  {
+   "id": "S01",
+   "codename": "Alnilam",
+   "azure_room": "implicated_anchored",
+   "meridian_vault": "implicated_anchored"
+  },
+  {
+   "id": "S35",
+   "codename": "Sadr",
+   "azure_room": "implicated_anchored",
+   "meridian_vault": "circumstantial"
+  },
+  {
+   "id": "S49",
+   "codename": "Capella",
+   "azure_room": "cleared",
+   "meridian_vault": "implicated_anchored"
+  },
+  {
+   "id": "S53",
+   "codename": "Algenib",
+   "azure_room": "cleared",
+   "meridian_vault": "decoy_cleared"
+  }
+ ]
+}

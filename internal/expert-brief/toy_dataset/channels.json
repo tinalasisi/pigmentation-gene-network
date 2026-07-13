@@ -1,0 +1,38 @@
+[
+ {
+  "key": "surveillance",
+  "label": "Surveillance",
+  "coverage_rate": 0.82,
+  "role": "broad"
+ },
+ {
+  "key": "comms",
+  "label": "Comms records",
+  "coverage_rate": 0.74,
+  "role": "broad"
+ },
+ {
+  "key": "witnesses",
+  "label": "Witnesses",
+  "coverage_rate": 0.34,
+  "role": "mid"
+ },
+ {
+  "key": "forensics",
+  "label": "Forensics",
+  "coverage_rate": 0.28,
+  "role": "mid"
+ },
+ {
+  "key": "finance",
+  "label": "Financial",
+  "coverage_rate": 0.22,
+  "role": "mid"
+ },
+ {
+  "key": "informants",
+  "label": "Informants",
+  "coverage_rate": 0.11,
+  "role": "selective"
+ }
+]
