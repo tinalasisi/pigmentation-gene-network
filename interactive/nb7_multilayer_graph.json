@@ -4,25 +4,25 @@
   {
    "key": "string",
    "label": "Functional association (STRING v12)",
-   "color": "#5c7d8a",
+   "color": "#440154",
    "z": 0.0
   },
   {
    "key": "omni",
    "label": "Literature validation (OmniPath)",
-   "color": "#6b4e71",
+   "color": "#3b528b",
    "z": 1.0
   },
   {
    "key": "grn",
    "label": "TF\u2192target regulon (MITF / SOX10 / PAX3)",
-   "color": "#b06a1e",
+   "color": "#21918c",
    "z": 2.0
   },
   {
    "key": "ragh",
    "label": "Mechanistic pathway (Raghunath 2015)",
-   "color": "#2f5d62",
+   "color": "#5ec962",
    "z": 3.0
   }
  ],

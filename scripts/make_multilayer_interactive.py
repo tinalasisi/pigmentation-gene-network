@@ -29,10 +29,12 @@ STRING_KEYS = {"STRING_ours", "DArcy_STRING"}
 
 # planes bottom (z=0) -> top; each = one network layer, with edges
 PLANES = [
-    ("string", "Functional association (STRING v12)", "#5c7d8a", 0.0),
-    ("omni",   "Literature validation (OmniPath)",    "#6b4e71", 1.0),
-    ("grn",    "TF→target regulon (MITF / SOX10 / PAX3)", "#b06a1e", 2.0),
-    ("ragh",   "Mechanistic pathway (Raghunath 2015)", "#2f5d62", 3.0),
+    # viridis samples (dark purple -> blue -> teal -> green), dropping the pale-yellow
+    # end that washes out on white; colorblind-safe and maximally separates the layers.
+    ("string", "Functional association (STRING v12)", "#440154", 0.0),
+    ("omni",   "Literature validation (OmniPath)",    "#3b528b", 1.0),
+    ("grn",    "TF→target regulon (MITF / SOX10 / PAX3)", "#21918c", 2.0),
+    ("ragh",   "Mechanistic pathway (Raghunath 2015)", "#5ec962", 3.0),
 ]
 PLANE_Z = {k: z for k, _l, _c, z in PLANES}
 PLANE_COLOR = {k: c for k, _l, c, _z in PLANES}
