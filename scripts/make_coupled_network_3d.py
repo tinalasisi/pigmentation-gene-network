@@ -149,9 +149,11 @@ fig.update_layout(
         aspectmode="manual", aspectratio=dict(x=2, y=2, z=1.5),
         camera=dict(eye=dict(x=1.55, y=1.55, z=0.55)), bgcolor="white"),
     paper_bgcolor="white", height=760,
-    legend=dict(orientation="v", yanchor="top", y=0.98, xanchor="left", x=0.0, font=dict(size=9), itemsizing="constant",
+    # Legend lives in a reserved right-hand gutter (not floating over the scene, where it hid nodes).
+    legend=dict(orientation="v", yanchor="middle", y=0.5, xanchor="left", x=1.0, font=dict(size=9), itemsizing="constant",
+        bgcolor="rgba(255,255,255,0.82)",
         title=dict(text="<b>Layers (top → bottom)</b>", font=dict(size=9.5, color="#5c656b"))),
-    margin=dict(l=0, r=0, t=150, b=0))
+    margin=dict(l=0, r=205, t=150, b=0))
 # ---- per-gene dossier data ----
 import json
 names = {r["gene"]: r["full_name"] for r in csv.DictReader(open("data/processed/panel_gene_names.csv"))}
