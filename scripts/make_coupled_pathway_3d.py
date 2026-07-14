@@ -94,8 +94,10 @@ fig.update_layout(
         aspectmode="manual", aspectratio=dict(x=1.55, y=1.55, z=1.4),
         camera=dict(eye=dict(x=1.55, y=1.55, z=0.62)), bgcolor="white"),
     paper_bgcolor="white", height=760, margin=dict(l=0, r=0, t=152, b=0), showlegend=True,
+    # Transparent legend, top-left, collapsible via #legtoggle (CSS/JS below): a see-through key
+    # rather than a white box that hides nodes; kept left so it never collides with the right dossier.
     legend=dict(orientation="v", yanchor="top", y=0.98, xanchor="left", x=0.0, font=dict(size=9.5),
-        itemsizing="constant", title=dict(text="<b>Node role</b>", font=dict(size=9.5, color="#5c656b"))))
+        itemsizing="constant", bgcolor="rgba(0,0,0,0)", title=dict(text="<b>Node role</b>", font=dict(size=9.5, color="#5c656b"))))
 
 # ---- dossier ----
 AXLBL = {"melanocortin": "Melanocortin axis", "estrogen": "Estrogen axis", "androgen": "Androgen axis",
@@ -126,8 +128,10 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,san
 .chip{display:inline-block;font-size:11px;padding:2px 8px;margin:2px;border-radius:6px;background:#f1f3f5;color:#333;cursor:pointer}
 .chip:hover{background:#e2e6ea}
 #dtoggle{position:fixed;top:16px;right:16px;z-index:25;background:#2f6d7a;color:#fff;border:none;padding:8px 15px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+#legtoggle{position:fixed;top:16px;left:16px;z-index:25;background:rgba(255,255,255,.82);color:#3a4348;border:1px solid #d5dbdf;padding:6px 13px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 """
 PANEL = """
+<button id='legtoggle'>&#9662; Legend</button>
 <button id='dtoggle'>Node info &#9656;</button>
 <aside id='dossier'>
  <button class='close'>&times;</button>
@@ -155,6 +159,7 @@ document.querySelector('#dossier .close').onclick=function(){document.getElement
 document.getElementById('dtoggle').onclick=function(){document.getElementById('dossier').classList.toggle('open')};
 document.getElementById('dossier').addEventListener('click',function(e){var c=e.target.closest('.chip');if(c&&c.dataset.node)showNode(c.dataset.node);});
 (function attach(){var gd=document.getElementById('graph');if(gd&&gd.on){gd.on('plotly_click',function(ev){var p=ev.points&&ev.points[0];if(p&&p.customdata)showNode(p.customdata);});}else{setTimeout(attach,200);}})();
+(function(){var shown=true,b=document.getElementById('legtoggle'),gd=document.getElementById('graph');if(!b)return;b.onclick=function(){shown=!shown;if(window.Plotly&&gd&&gd.data)Plotly.relayout(gd,{showlegend:shown});b.innerHTML=(shown?'\\u25be':'\\u25b8')+' Legend';};})();
 """
 html = ("<!doctype html><html><head><meta charset='utf-8'><title>Pathway (3D)</title><style>"
         + CSS + "</style></head><body>" + graph_html + PANEL
