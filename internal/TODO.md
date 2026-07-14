@@ -257,6 +257,41 @@ under the PI_ORCHESTRATOR verdict and are now DONE. One newly-surfaced reproduci
 
 ---
 
+## Phylo-GRN methods thread (`internal/lit_review/phylo_grn_methods/`, PI orchestrator frame `9c7c28bf`)
+
+Self-contained; does not touch `comparative-genomics/analysis/module_selection/` (current flagship) or
+`internal/network-evo-explore/`. Full detail in `internal/lit_review/phylo_grn_methods/CONCLUSION.md`
+and `CHANGELOG.md` 2026-07-13T15:21Z / 2026-07-13T16:29Z.
+
+- ✅ **Tier 1 — GRN-neighbor selection-similarity permutation + module enrichment (DONE, run
+  2026-07-13T16:24Z).** Core GRN (13 genes/15 edges): T_obs=0.137, p_perm=0.109. Multilayer substrate
+  (18 edges): T_obs=0.185, p_perm=0.093. Same direction in both — a suggestive but underpowered pilot,
+  not a null, at n=13 connected genes. Regulator-vs-effector module enrichment: real asymmetry at the
+  extremes (MITF/SOX10 near-neutral vs TYR/TYRP1 intensified) but diluted at the group median (n=3
+  regulators). Outputs: `results/track1_network_selection/RESULTS_track1.md`, `track1_figure.png`,
+  `neighbor_permutation_results.csv`, `module_enrichment_results.csv`.
+- ✅ **Tier 1 — partner-coevolution local pilot (mirrortree + ERC-from-aBSREL) (DONE, run
+  2026-07-13T16:24Z).** Mirrortree (2,870 pairs): edge pairs NOT more correlated than non-edge pairs,
+  p_perm=0.61, direction opposite the hypothesis in all four core/substrate × Pearson/Spearman checks —
+  a clean null, read as shared-ancestry rate covariation swamping any GRN-specific signal at this scale.
+  ERC-from-aBSREL (39 genes post-QC): p_perm=1.000, structurally degenerate (the 7-gene/6-edge covered
+  subgraph has exactly one realizable rewiring, so the null is a point mass by construction) — local
+  coevolution is uninformative by design at this edge count, which is why the definitive test is the
+  cluster job below. Outputs: `results/track2_coevolution/RESULTS_track2.md`, figure,
+  `mirrortree_pairs.csv`, `mirrortree_edge_vs_nonedge.csv`, `erc_absrel_pairs.csv`,
+  `erc_edge_vs_nonedge.csv`.
+- 🔄 **Tier 2 — definitive ERC/RERconverge coevolution test — DISPATCHED TO CLUSTER, awaiting
+  paste-back.** Run-spec written to
+  `internal/handoffs/notes/20260713T162412Z__claude-science__pi-orchestrator-9c7c28bf__a90131.md`,
+  addressed to `claude-code / greatlakes-hpc`: per-gene ML branch-length trees for all 77 panel genes
+  (Stage 1, SLURM array), full RERconverge RER transform + 77×77 ERC matrix + edge-vs-non-edge test
+  under a gene-label-permutation null (Stage 2 — the local rewiring null degenerated, see above), plus
+  cheaply-queued completion of the remaining 11 of 14 per-origin RELAX fits (Stage 3). Account
+  `tlasisi0`, partition `standard`; under an hour end-to-end once submitted. Not yet submitted as of
+  this bookkeeping pass.
+
+---
+
 ## Housekeeping
 
 - This ledger reconciles against `CHANGELOG.md` and the plan artifact cited above, not against memory.

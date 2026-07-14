@@ -72,6 +72,8 @@ website:
     contents:
       - text: Overview
         href: index.qmd
+      - text: Walkthrough
+        href: demo/walkthrough.html
       - text: "Networks"
         href: networks.qmd
       - section: "1 · Building the pigmentation network"

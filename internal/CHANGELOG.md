@@ -1731,3 +1731,43 @@ PI to decide whether the internal note history also needs redaction before any r
 concurrent session while the gate audit ran). This remediation removes the name going forward; it does **not**
 rewrite the already-published history. If the grant-proposal association must be expunged from the git history
 too, that requires a separate, coordinated history-rewrite decision by the PI (not done here).
+
+---
+
+## 2026-07-13T16:29:21Z — Phylo-GRN methods thread: Tier 1 pilots run; Tier 2 dispatched to cluster (Project Manager bookkeeping)
+
+**What landed (content, not touched by this bookkeeping pass — recorded by the PI orchestrator, frame
+`9c7c28bf`).** Since the 2026-07-13T15:21Z entry proposed a two-tier plan (not yet run), both Tier 1
+local analyses were executed and a Tier 2 cluster job was specced, all under
+`internal/lit_review/phylo_grn_methods/`.
+
+- `results/track1_network_selection/` — GRN-neighbor selection-similarity permutation (core GRN, 13
+  genes/15 edges: T_obs=0.137, p_perm=0.109; 18-edge multilayer-substrate check: T_obs=0.185,
+  p_perm=0.093 — same direction in both, a suggestive-but-underpowered pilot, not a null) plus
+  regulator-vs-effector module enrichment. `RESULTS_track1.md`, `track1_figure.png`,
+  `neighbor_permutation_results.csv`, `module_enrichment_results.csv`.
+- `results/track2_coevolution/` — mirrortree on 2,870 pairs (edge pairs not more correlated than
+  non-edge pairs, p_perm=0.61, null) and ERC-from-aBSREL (39 genes post-QC, p_perm=1.000, structurally
+  degenerate at 6 edges — the covered subgraph has exactly one realizable rewiring, so the null is a
+  point mass by construction). Local coevolution is uninformative by design at this edge count.
+  `RESULTS_track2.md`, figure, `mirrortree_pairs.csv`, `mirrortree_edge_vs_nonedge.csv`,
+  `erc_absrel_pairs.csv`, `erc_edge_vs_nonedge.csv`.
+- `CONCLUSION.md` gained an UPDATE section recording both results and what goes to the cluster.
+- A cluster run-spec was written to
+  `internal/handoffs/notes/20260713T162412Z__claude-science__pi-orchestrator-9c7c28bf__a90131.md`,
+  addressed to `claude-code/greatlakes-hpc`: the definitive ERC/RERconverge coevolution test (per-gene
+  ML trees array, 77×77 ERC matrix, gene-label-permutation null — the local rewiring null degenerated —
+  and filling the remaining 11 of 14 per-origin RELAX fits). Not yet submitted.
+
+**Bookkeeping performed in this pass (Project Manager close-out; no content changes to the
+deliverables):**
+- `internal/TODO.md` — added a "Phylo-GRN methods thread" section: Tier 1 (both local pilots) moved
+  from proposed to ✅ DONE with the one-line outcomes above; Tier 2 recorded as 🔄 DISPATCHED TO
+  CLUSTER, awaiting paste-back.
+- `internal/project_dashboard.md` — "Where the project is now" gained a pointer paragraph to this
+  thread's status (Tier 1 done, Tier 2 dispatched); heading `as of` timestamp bumped to
+  2026-07-13T16:29Z. Module-selection flagship prose and Key-metrics table untouched.
+- This `CHANGELOG.md` entry.
+
+No `git commit` was made in this pass — commits route through the pre-commit compliance gate per
+project convention.

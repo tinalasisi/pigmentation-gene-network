@@ -1,6 +1,6 @@
 # Project dashboard — pigmentation gene-network build
 
-**Status: MAINTAINED (first version created 2026-07-12T01:41Z; last reconciled 2026-07-13T15:08Z).** Snapshot / control surface for the project. This
+**Status: MAINTAINED (first version created 2026-07-12T01:41Z; last reconciled 2026-07-13T16:29Z).** Snapshot / control surface for the project. This
 is one of the three tracking documents described in `START_HERE.md`; it is **not** a plan and **not** a
 history. It gives a one-screen orientation and then **points at** the living documents — it does not copy
 them.
@@ -26,7 +26,7 @@ them.
 | Approved plan | Claude Science artifact `083f9097-0134-4490-abe9-33ad4ed7c9da` (version `d135912f-6112-48f4-95c1-545c46cabfba`), `plan_convergence-graded-rescue-screen-as-self_8a368b7b.json` | The exact phase/step text for the NB4–NB8 build. Read the artifact directly. |
 | Provenance manifest | `DATA_SOURCES.md` (repo root) | Per-source licensing, query provenance, and redistribution policy. |
 
-## Where the project is now (as of 2026-07-13T15:08Z)
+## Where the project is now (as of 2026-07-13T16:29Z)
 
 - **⚠️ FLAGSHIP HAS MOVED — read this before anything below.** As of 2026-07-13, the flagship is the
   **per-origin module-selection architecture of primate sexual dichromatism**: hair dichromatism arose
@@ -107,6 +107,16 @@ them.
 - **In parallel (PI, live): a primate-phylogenetics evolutionary direction** is being explored as another
   candidate. Not yet described on disk here; left untouched by this session to avoid conflicting with in-flight
   work.
+- **Phylo-GRN methods thread (`internal/lit_review/phylo_grn_methods/`) — Tier 1 pilots DONE, Tier 2
+  dispatched to cluster (2026-07-13T16:29Z).** Self-contained methods exploration, isolated from the
+  module-selection flagship and `network-evo-explore/`. Local pilots ran: a GRN-neighbor
+  selection-similarity permutation is a suggestive-but-underpowered positive (core 15 edges T_obs=0.137
+  p=0.109; 18-edge substrate check T_obs=0.185 p=0.093); local partner-coevolution (mirrortree, ERC-from-
+  aBSREL) is null/structurally degenerate at this edge count, by design. The definitive ERC/RERconverge
+  coevolution test has been specced and handed to `claude-code/greatlakes-hpc`
+  (`internal/handoffs/notes/20260713T162412Z__claude-science__pi-orchestrator-9c7c28bf__a90131.md`);
+  awaiting paste-back. Detail: `CONCLUSION.md` in that folder and `TODO.md`'s new "Phylo-GRN methods
+  thread" section.
 - **Shelved:** the GWAS common-variant axis (5/35 clean genes; see the 2026-07-12 specialist review).
 - **Dashboard status: maintained** (no longer first-version tentative). The phase-status detail lives in
   `TODO.md`, which is the authority. NB4–NB12 outputs are now committed and moved into the committed
