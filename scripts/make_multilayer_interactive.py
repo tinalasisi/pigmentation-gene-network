@@ -237,7 +237,7 @@ def build_figure(nodes, layer_edges, pos, deg):
             bgcolor="white"),
         legend=dict(groupclick="togglegroup", orientation="h", yanchor="top", y=0,
                     xanchor="center", x=0.5, font=dict(size=11, color=INK),
-                    bgcolor="rgba(255,255,255,0.65)"),
+                    bgcolor="rgba(0,0,0,0)"),   # transparent — no white box behind the layer key
         paper_bgcolor="white", margin=dict(l=0, r=0, t=96, b=58), height=700)
     return fig
 
