@@ -149,11 +149,13 @@ fig.update_layout(
         aspectmode="manual", aspectratio=dict(x=2, y=2, z=1.5),
         camera=dict(eye=dict(x=1.55, y=1.55, z=0.55)), bgcolor="white"),
     paper_bgcolor="white", height=760,
-    # Legend lives in a reserved right-hand gutter (not floating over the scene, where it hid nodes).
-    legend=dict(orientation="v", yanchor="middle", y=0.5, xanchor="left", x=1.0, font=dict(size=9), itemsizing="constant",
-        bgcolor="rgba(255,255,255,0.82)",
+    # Transparent legend, top-left, collapsible via the #legtoggle button (CSS/JS below): a see-through
+    # key rather than a white box that hides nodes, and one you can dismiss entirely — matters most in
+    # the tight iframe embeds. Kept left so it never collides with the right-side Gene-info dossier.
+    legend=dict(orientation="v", yanchor="top", y=0.98, xanchor="left", x=0.0, font=dict(size=9), itemsizing="constant",
+        bgcolor="rgba(0,0,0,0)",
         title=dict(text="<b>Layers (top → bottom)</b>", font=dict(size=9.5, color="#5c656b"))),
-    margin=dict(l=0, r=205, t=150, b=0))
+    margin=dict(l=0, r=0, t=150, b=0))
 # ---- per-gene dossier data ----
 import json
 names = {r["gene"]: r["full_name"] for r in csv.DictReader(open("data/processed/panel_gene_names.csv"))}
@@ -214,8 +216,10 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,san
 .bridge{background:#fbe4ef;border-left:3px solid #c0186a;padding:9px 11px;border-radius:6px;margin:7px 0;font-size:12px;color:#3a2230}
 .bridge a{color:#c0186a;text-decoration:none}
 #dtoggle{position:fixed;top:16px;right:16px;z-index:25;background:#2f6d7a;color:#fff;border:none;padding:8px 15px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+#legtoggle{position:fixed;top:16px;left:16px;z-index:25;background:rgba(255,255,255,.82);color:#3a4348;border:1px solid #d5dbdf;padding:6px 13px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 """
 PANEL = """
+<button id='legtoggle'>&#9662; Layers</button>
 <button id='dtoggle'>Gene info &#9656;</button>
 <aside id='dossier'>
  <button class='close' aria-label='Close'>&times;</button>
@@ -245,6 +249,7 @@ document.querySelector('#dossier .close').onclick=function(){document.getElement
 document.getElementById('dtoggle').onclick=function(){document.getElementById('dossier').classList.toggle('open')};
 document.getElementById('dossier').addEventListener('click',function(e){var c=e.target.closest('.chip');if(c&&c.dataset.gene)showGene(c.dataset.gene);});
 (function attach(){var gd=document.getElementById('graph');if(gd&&gd.on){gd.on('plotly_click',function(ev){var p=ev.points&&ev.points[0];if(p&&p.customdata)showGene(p.customdata);});}else{setTimeout(attach,200);}})();
+(function(){var shown=true,b=document.getElementById('legtoggle'),gd=document.getElementById('graph');if(!b)return;b.onclick=function(){shown=!shown;if(window.Plotly&&gd&&gd.data)Plotly.relayout(gd,{showlegend:shown});b.innerHTML=(shown?'\\u25be':'\\u25b8')+' Layers';};})();
 """
 html = ("<!doctype html><html><head><meta charset='utf-8'><title>Coupled network</title><style>"
         + CSS + "</style></head><body>" + graph_html + PANEL
