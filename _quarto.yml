@@ -5,6 +5,9 @@ project:
     - interactive/substrate_multilayer.html
     - interactive/coupled_network_3d.html
     - interactive/coupled_pathway_3d.html
+    # Self-contained standalone presentation (not Quarto-rendered) — copied verbatim
+    # into the site so the navbar can link to it.
+    - demo/walkthrough.html
   # Explicit render list — ALL notebooks. Rendered from STORED outputs
   # (execute.enabled=false below): no kernel, no network, no withheld data at render time.
   render:
@@ -55,6 +58,8 @@ website:
     left:
       - href: index.qmd
         text: Overview
+      - href: demo/walkthrough.html
+        text: Walkthrough
       - href: networks.qmd
         text: Networks
     right:
